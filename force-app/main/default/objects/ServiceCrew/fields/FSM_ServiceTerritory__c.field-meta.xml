@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ServiceTerritory__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Created as a part of SFS-3900</description>
+    <label>Service Territory</label>
+    <referenceTo>ServiceTerritory</referenceTo>
+    <relationshipLabel>Service Crews</relationshipLabel>
+    <relationshipName>Service_Crews</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

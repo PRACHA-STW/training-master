@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>H&amp;S Champ_Manual Handling</description>
+    <label>H&amp;S Champ_Manual Handling (Q50017978)</label>
+</Skill>

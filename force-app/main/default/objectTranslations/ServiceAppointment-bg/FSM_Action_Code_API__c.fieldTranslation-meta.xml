@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action Code API --></label>
+    <name>FSM_Action_Code_API__c</name>
+    <picklistValues>
+        <masterLabel>1ONE</masterLabel>
+        <translation><!-- 1ONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2TWO</masterLabel>
+        <translation><!-- 2TWO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3THR</masterLabel>
+        <translation><!-- 3THR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4FOR</masterLabel>
+        <translation><!-- 4FOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5FIV</masterLabel>
+        <translation><!-- 5FIV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A000</masterLabel>
+        <translation><!-- A000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A010</masterLabel>
+        <translation><!-- A010 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A020</masterLabel>
+        <translation><!-- A020 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A030</masterLabel>
+        <translation><!-- A030 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A040</masterLabel>
+        <translation><!-- A040 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A050</masterLabel>
+        <translation><!-- A050 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A060</masterLabel>
+        <translation><!-- A060 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A070</masterLabel>
+        <translation><!-- A070 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A080</masterLabel>
+        <translation><!-- A080 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A090</masterLabel>
+        <translation><!-- A090 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A100</masterLabel>
+        <translation><!-- A100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A110</masterLabel>
+        <translation><!-- A110 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A120</masterLabel>
+        <translation><!-- A120 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A130</masterLabel>
+        <translation><!-- A130 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A140</masterLabel>
+        <translation><!-- A140 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A150</masterLabel>
+        <translation><!-- A150 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A160</masterLabel>
+        <translation><!-- A160 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A170</masterLabel>
+        <translation><!-- A170 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A180</masterLabel>
+        <translation><!-- A180 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A190</masterLabel>
+        <translation><!-- A190 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A200</masterLabel>
+        <translation><!-- A200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACRC</masterLabel>
+        <translation><!-- ACRC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACRQ</masterLabel>
+        <translation><!-- ACRQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AL10</masterLabel>
+        <translation><!-- AL10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AVLB</masterLabel>
+        <translation><!-- AVLB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B15R</masterLabel>
+        <translation><!-- B15R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B22R</masterLabel>
+        <translation><!-- B22R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB15</masterLabel>
+        <translation><!-- BB15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB22</masterLabel>
+        <translation><!-- BB22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBAB</masterLabel>
+        <translation><!-- BBAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBAV</masterLabel>
+        <translation><!-- BBAV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBME</masterLabel>
+        <translation><!-- BBME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLKA</masterLabel>
+        <translation><!-- BLKA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BMEX</masterLabel>
+        <translation><!-- BMEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRAB</masterLabel>
+        <translation><!-- BRAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRBE</masterLabel>
+        <translation><!-- BRBE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRNC</masterLabel>
+        <translation><!-- BRNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BWFR</masterLabel>
+        <translation><!-- BWFR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CALI</masterLabel>
+        <translation><!-- CALI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCML</masterLabel>
+        <translation><!-- CCML --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COFW</masterLabel>
+        <translation><!-- COFW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COIF</masterLabel>
+        <translation><!-- COIF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COPP</masterLabel>
+        <translation><!-- COPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CORC</masterLabel>
+        <translation><!-- CORC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CORP</masterLabel>
+        <translation><!-- CORP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CURE</masterLabel>
+        <translation><!-- CURE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DILY</masterLabel>
+        <translation><!-- DILY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSAC</masterLabel>
+        <translation><!-- DSAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSAS</masterLabel>
+        <translation><!-- DSAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSAT</masterLabel>
+        <translation><!-- DSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSBC</masterLabel>
+        <translation><!-- DSBC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSBS</masterLabel>
+        <translation><!-- DSBS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSCC</masterLabel>
+        <translation><!-- DSCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSCD</masterLabel>
+        <translation><!-- DSCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSCS</masterLabel>
+        <translation><!-- DSCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSCW</masterLabel>
+        <translation><!-- DSCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSEL</masterLabel>
+        <translation><!-- DSEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSFC</masterLabel>
+        <translation><!-- DSFC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSFI</masterLabel>
+        <translation><!-- DSFI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSFM</masterLabel>
+        <translation><!-- DSFM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSFN</masterLabel>
+        <translation><!-- DSFN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSFV</masterLabel>
+        <translation><!-- DSFV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSLM</masterLabel>
+        <translation><!-- DSLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSLS</masterLabel>
+        <translation><!-- DSLS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSML</masterLabel>
+        <translation><!-- DSML --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSNC</masterLabel>
+        <translation><!-- DSNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSNO</masterLabel>
+        <translation><!-- DSNO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSPC</masterLabel>
+        <translation><!-- DSPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSPE</masterLabel>
+        <translation><!-- DSPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSPL</masterLabel>
+        <translation><!-- DSPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSRA</masterLabel>
+        <translation><!-- DSRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSRB</masterLabel>
+        <translation><!-- DSRB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSRC</masterLabel>
+        <translation><!-- DSRC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSRS</masterLabel>
+        <translation><!-- DSRS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSRW</masterLabel>
+        <translation><!-- DSRW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSSB</masterLabel>
+        <translation><!-- DSSB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSSC</masterLabel>
+        <translation><!-- DSSC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSSD</masterLabel>
+        <translation><!-- DSSD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSSP</masterLabel>
+        <translation><!-- DSSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSST</masterLabel>
+        <translation><!-- DSST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSTS</masterLabel>
+        <translation><!-- DSTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSUC</masterLabel>
+        <translation><!-- DSUC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMCD</masterLabel>
+        <translation><!-- EMCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMTP</masterLabel>
+        <translation><!-- EMTP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX15</masterLabel>
+        <translation><!-- EX15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX22</masterLabel>
+        <translation><!-- EX22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX28</masterLabel>
+        <translation><!-- EX28 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX32</masterLabel>
+        <translation><!-- EX32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX42</masterLabel>
+        <translation><!-- EX42 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXRM</masterLabel>
+        <translation><!-- EXRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F2WL</masterLabel>
+        <translation><!-- F2WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F3WL</masterLabel>
+        <translation><!-- F3WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F4WL</masterLabel>
+        <translation><!-- F4WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FBSR</masterLabel>
+        <translation><!-- FBSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCBB</masterLabel>
+        <translation><!-- FCBB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCIS</masterLabel>
+        <translation><!-- FCIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCOM</masterLabel>
+        <translation><!-- FCOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCSC</masterLabel>
+        <translation><!-- FCSC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCSV</masterLabel>
+        <translation><!-- FCSV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FMCL</masterLabel>
+        <translation><!-- FMCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FNDV</masterLabel>
+        <translation><!-- FNDV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FNES</masterLabel>
+        <translation><!-- FNES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPCR</masterLabel>
+        <translation><!-- FPCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPNC</masterLabel>
+        <translation><!-- FPNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPWN</masterLabel>
+        <translation><!-- FPWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRC4</masterLabel>
+        <translation><!-- FRC4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRCU</masterLabel>
+        <translation><!-- FRCU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRDV</masterLabel>
+        <translation><!-- FRDV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FREM</masterLabel>
+        <translation><!-- FREM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSO4</masterLabel>
+        <translation><!-- FSO4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSU4</masterLabel>
+        <translation><!-- FSU4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HAMO</masterLabel>
+        <translation><!-- HAMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEAR</masterLabel>
+        <translation><!-- HEAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ILUS</masterLabel>
+        <translation><!-- ILUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IN15</masterLabel>
+        <translation><!-- IN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IN22</masterLabel>
+        <translation><!-- IN22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INAP</masterLabel>
+        <translation><!-- INAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INCC</masterLabel>
+        <translation><!-- INCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INCM</masterLabel>
+        <translation><!-- INCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDC</masterLabel>
+        <translation><!-- INDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INFC</masterLabel>
+        <translation><!-- INFC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INLA</masterLabel>
+        <translation><!-- INLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INPS</masterLabel>
+        <translation><!-- INPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INRI</masterLabel>
+        <translation><!-- INRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INRO</masterLabel>
+        <translation><!-- INRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INST</masterLabel>
+        <translation><!-- INST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INTL</masterLabel>
+        <translation><!-- INTL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP03</masterLabel>
+        <translation><!-- IP03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP06</masterLabel>
+        <translation><!-- IP06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP12</masterLabel>
+        <translation><!-- IP12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP24</masterLabel>
+        <translation><!-- IP24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IPIA</masterLabel>
+        <translation><!-- IPIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JACS</masterLabel>
+        <translation><!-- JACS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L2WL</masterLabel>
+        <translation><!-- L2WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L3WL</masterLabel>
+        <translation><!-- L3WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L4WL</masterLabel>
+        <translation><!-- L4WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LBSR</masterLabel>
+        <translation><!-- LBSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCLM</masterLabel>
+        <translation><!-- LCLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCMD</masterLabel>
+        <translation><!-- LCMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCME</masterLabel>
+        <translation><!-- LCME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEAD</masterLabel>
+        <translation><!-- LEAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LECL</masterLabel>
+        <translation><!-- LECL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEND</masterLabel>
+        <translation><!-- LEND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LERN</masterLabel>
+        <translation><!-- LERN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLMC</masterLabel>
+        <translation><!-- LLMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLWD</masterLabel>
+        <translation><!-- LLWD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMAB</masterLabel>
+        <translation><!-- LMAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMCL</masterLabel>
+        <translation><!-- LMCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMFR</masterLabel>
+        <translation><!-- LMFR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMNC</masterLabel>
+        <translation><!-- LMNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMPU</masterLabel>
+        <translation><!-- LMPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMRR</masterLabel>
+        <translation><!-- LMRR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMTS</masterLabel>
+        <translation><!-- LMTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMWW</masterLabel>
+        <translation><!-- LMWW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LNFF</masterLabel>
+        <translation><!-- LNFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPCR</masterLabel>
+        <translation><!-- LPCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPNC</masterLabel>
+        <translation><!-- LPNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPRO</masterLabel>
+        <translation><!-- LPRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPWN</masterLabel>
+        <translation><!-- LPWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRAB</masterLabel>
+        <translation><!-- LRAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRBB</masterLabel>
+        <translation><!-- LRBB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRC4</masterLabel>
+        <translation><!-- LRC4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRCU</masterLabel>
+        <translation><!-- LRCU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LREE</masterLabel>
+        <translation><!-- LREE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LREI</masterLabel>
+        <translation><!-- LREI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LREP</masterLabel>
+        <translation><!-- LREP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRII</masterLabel>
+        <translation><!-- LRII --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSO4</masterLabel>
+        <translation><!-- LSO4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSU4</masterLabel>
+        <translation><!-- LSU4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LVOP</masterLabel>
+        <translation><!-- LVOP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDEL</masterLabel>
+        <translation><!-- MDEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDPE</masterLabel>
+        <translation><!-- MDPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEAS</masterLabel>
+        <translation><!-- MEAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSMF</masterLabel>
+        <translation><!-- MSMF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSTA</masterLabel>
+        <translation><!-- MSTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSTR</masterLabel>
+        <translation><!-- MSTR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NBAV</masterLabel>
+        <translation><!-- NBAV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCON</masterLabel>
+        <translation><!-- NCON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NERM</masterLabel>
+        <translation><!-- NERM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFAM</masterLabel>
+        <translation><!-- NFAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFCB</masterLabel>
+        <translation><!-- NFCB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFCC</masterLabel>
+        <translation><!-- NFCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFFI</masterLabel>
+        <translation><!-- NFFI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFIS</masterLabel>
+        <translation><!-- NFIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFQU</masterLabel>
+        <translation><!-- NFQU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFRB</masterLabel>
+        <translation><!-- NFRB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFRE</masterLabel>
+        <translation><!-- NFRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFSA</masterLabel>
+        <translation><!-- NFSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFSI</masterLabel>
+        <translation><!-- NFSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFST</masterLabel>
+        <translation><!-- NFST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLAB</masterLabel>
+        <translation><!-- NLAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLAT</masterLabel>
+        <translation><!-- NLAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLCD</masterLabel>
+        <translation><!-- NLCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLCE</masterLabel>
+        <translation><!-- NLCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLCI</masterLabel>
+        <translation><!-- NLCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLCL</masterLabel>
+        <translation><!-- NLCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLEE</masterLabel>
+        <translation><!-- NLEE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLEI</masterLabel>
+        <translation><!-- NLEI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLFR</masterLabel>
+        <translation><!-- NLFR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLII</masterLabel>
+        <translation><!-- NLII --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLLM</masterLabel>
+        <translation><!-- NLLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLMC</masterLabel>
+        <translation><!-- NLMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLMD</masterLabel>
+        <translation><!-- NLMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLME</masterLabel>
+        <translation><!-- NLME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLMI</masterLabel>
+        <translation><!-- NLMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLMW</masterLabel>
+        <translation><!-- NLMW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLNC</masterLabel>
+        <translation><!-- NLNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLND</masterLabel>
+        <translation><!-- NLND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLNF</masterLabel>
+        <translation><!-- NLNF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLPU</masterLabel>
+        <translation><!-- NLPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLQU</masterLabel>
+        <translation><!-- NLQU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLRA</masterLabel>
+        <translation><!-- NLRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLRB</masterLabel>
+        <translation><!-- NLRB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLRP</masterLabel>
+        <translation><!-- NLRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLRR</masterLabel>
+        <translation><!-- NLRR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLTC</masterLabel>
+        <translation><!-- NLTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLTP</masterLabel>
+        <translation><!-- NLTP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLTR</masterLabel>
+        <translation><!-- NLTR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLVP</masterLabel>
+        <translation><!-- NLVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLWD</masterLabel>
+        <translation><!-- NLWD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NMSA</masterLabel>
+        <translation><!-- NMSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NMSD</masterLabel>
+        <translation><!-- NMSD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NMST</masterLabel>
+        <translation><!-- NMST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOFW</masterLabel>
+        <translation><!-- NOFW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPAY</masterLabel>
+        <translation><!-- NPAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NREP</masterLabel>
+        <translation><!-- NREP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRER</masterLabel>
+        <translation><!-- NRER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRIN</masterLabel>
+        <translation><!-- NRIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRND</masterLabel>
+        <translation><!-- NRND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSAB</masterLabel>
+        <translation><!-- NSAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSAS</masterLabel>
+        <translation><!-- NSAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSAT</masterLabel>
+        <translation><!-- NSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSAV</masterLabel>
+        <translation><!-- NSAV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSBB</masterLabel>
+        <translation><!-- NSBB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSCE</masterLabel>
+        <translation><!-- NSCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSCI</masterLabel>
+        <translation><!-- NSCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSCL</masterLabel>
+        <translation><!-- NSCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSEB</masterLabel>
+        <translation><!-- NSEB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSEC</masterLabel>
+        <translation><!-- NSEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSEE</masterLabel>
+        <translation><!-- NSEE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSEI</masterLabel>
+        <translation><!-- NSEI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSEX</masterLabel>
+        <translation><!-- NSEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSFE</masterLabel>
+        <translation><!-- NSFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSIB</masterLabel>
+        <translation><!-- NSIB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSIE</masterLabel>
+        <translation><!-- NSIE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSII</masterLabel>
+        <translation><!-- NSII --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSLM</masterLabel>
+        <translation><!-- NSLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSMC</masterLabel>
+        <translation><!-- NSMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSMD</masterLabel>
+        <translation><!-- NSMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSMI</masterLabel>
+        <translation><!-- NSMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSMW</masterLabel>
+        <translation><!-- NSMW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSNC</masterLabel>
+        <translation><!-- NSNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSNF</masterLabel>
+        <translation><!-- NSNF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSPU</masterLabel>
+        <translation><!-- NSPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSQU</masterLabel>
+        <translation><!-- NSQU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSRA</masterLabel>
+        <translation><!-- NSRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSRB</masterLabel>
+        <translation><!-- NSRB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSRI</masterLabel>
+        <translation><!-- NSRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSRM</masterLabel>
+        <translation><!-- NSRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSTR</masterLabel>
+        <translation><!-- NSTR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSUB</masterLabel>
+        <translation><!-- NSUB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSVY</masterLabel>
+        <translation><!-- NSVY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSWD</masterLabel>
+        <translation><!-- NSWD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NUSD</masterLabel>
+        <translation><!-- NUSD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVOD</masterLabel>
+        <translation><!-- NVOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHE</masterLabel>
+        <translation><!-- OTHE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P2WL</masterLabel>
+        <translation><!-- P2WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P3WL</masterLabel>
+        <translation><!-- P3WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P4WL</masterLabel>
+        <translation><!-- P4WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PBSR</masterLabel>
+        <translation><!-- PBSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENS</masterLabel>
+        <translation><!-- PENS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PFFA</masterLabel>
+        <translation><!-- PFFA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIAB</masterLabel>
+        <translation><!-- PIAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIBD</masterLabel>
+        <translation><!-- PIBD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIEM</masterLabel>
+        <translation><!-- PIEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIRB</masterLabel>
+        <translation><!-- PIRB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIRD</masterLabel>
+        <translation><!-- PIRD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PISM</masterLabel>
+        <translation><!-- PISM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIWW</masterLabel>
+        <translation><!-- PIWW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMCL</masterLabel>
+        <translation><!-- PMCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPCR</masterLabel>
+        <translation><!-- PPCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPNC</masterLabel>
+        <translation><!-- PPNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPWN</masterLabel>
+        <translation><!-- PPWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRC4</masterLabel>
+        <translation><!-- PRC4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRCD</masterLabel>
+        <translation><!-- PRCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSO4</masterLabel>
+        <translation><!-- PSO4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU4</masterLabel>
+        <translation><!-- PSU4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Q10</masterLabel>
+        <translation><!-- Q10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REBW</masterLabel>
+        <translation><!-- REBW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RECH</masterLabel>
+        <translation><!-- RECH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RECO</masterLabel>
+        <translation><!-- RECO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REDE</masterLabel>
+        <translation><!-- REDE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REDF</masterLabel>
+        <translation><!-- REDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REIC</masterLabel>
+        <translation><!-- REIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REIN</masterLabel>
+        <translation><!-- REIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REIR</masterLabel>
+        <translation><!-- REIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPA</masterLabel>
+        <translation><!-- REPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERU</masterLabel>
+        <translation><!-- RERU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESE</masterLabel>
+        <translation><!-- RESE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMBB</masterLabel>
+        <translation><!-- RMBB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMST</masterLabel>
+        <translation><!-- RMST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RPRO</masterLabel>
+        <translation><!-- RPRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RQAU</masterLabel>
+        <translation><!-- RQAU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RQBR</masterLabel>
+        <translation><!-- RQBR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RQLR</masterLabel>
+        <translation><!-- RQLR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S2WL</masterLabel>
+        <translation><!-- S2WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S3WL</masterLabel>
+        <translation><!-- S3WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S4WL</masterLabel>
+        <translation><!-- S4WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASO</masterLabel>
+        <translation><!-- SASO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBSR</masterLabel>
+        <translation><!-- SBSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCLM</masterLabel>
+        <translation><!-- SCLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCMD</masterLabel>
+        <translation><!-- SCMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCME</masterLabel>
+        <translation><!-- SCME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCR2</masterLabel>
+        <translation><!-- SCR2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEBB</masterLabel>
+        <translation><!-- SEBB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SECL</masterLabel>
+        <translation><!-- SECL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEME</masterLabel>
+        <translation><!-- SEME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SFAM</masterLabel>
+        <translation><!-- SFAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIBB</masterLabel>
+        <translation><!-- SIBB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIMF</masterLabel>
+        <translation><!-- SIMF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLMC</masterLabel>
+        <translation><!-- SLMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLME</masterLabel>
+        <translation><!-- SLME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLWD</masterLabel>
+        <translation><!-- SLWD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMAB</masterLabel>
+        <translation><!-- SMAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMAM</masterLabel>
+        <translation><!-- SMAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMCL</masterLabel>
+        <translation><!-- SMCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMFE</masterLabel>
+        <translation><!-- SMFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMPU</masterLabel>
+        <translation><!-- SMPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMTS</masterLabel>
+        <translation><!-- SMTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMWW</masterLabel>
+        <translation><!-- SMWW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SNFF</masterLabel>
+        <translation><!-- SNFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPAB</masterLabel>
+        <translation><!-- SPAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPCR</masterLabel>
+        <translation><!-- SPCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPNC</masterLabel>
+        <translation><!-- SPNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPRO</masterLabel>
+        <translation><!-- SPRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPWN</masterLabel>
+        <translation><!-- SPWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRAB</masterLabel>
+        <translation><!-- SRAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRAT</masterLabel>
+        <translation><!-- SRAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRBB</masterLabel>
+        <translation><!-- SRBB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRC4</masterLabel>
+        <translation><!-- SRC4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRCU</masterLabel>
+        <translation><!-- SRCU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SREE</masterLabel>
+        <translation><!-- SREE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SREI</masterLabel>
+        <translation><!-- SREI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SREM</masterLabel>
+        <translation><!-- SREM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRIE</masterLabel>
+        <translation><!-- SRIE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRII</masterLabel>
+        <translation><!-- SRII --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRIM</masterLabel>
+        <translation><!-- SRIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSO4</masterLabel>
+        <translation><!-- SSO4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSU4</masterLabel>
+        <translation><!-- SSU4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAP</masterLabel>
+        <translation><!-- STAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUBA</masterLabel>
+        <translation><!-- SUBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SV20</masterLabel>
+        <translation><!-- SV20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SV30</masterLabel>
+        <translation><!-- SV30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SW20</masterLabel>
+        <translation><!-- SW20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNME</masterLabel>
+        <translation><!-- UNME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPDT</masterLabel>
+        <translation><!-- UPDT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VISL</masterLabel>
+        <translation><!-- VISL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VOCL</masterLabel>
+        <translation><!-- VOCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VOID</masterLabel>
+        <translation><!-- VOID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WITH</masterLabel>
+        <translation><!-- WITH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WOEP</masterLabel>
+        <translation><!-- WOEP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

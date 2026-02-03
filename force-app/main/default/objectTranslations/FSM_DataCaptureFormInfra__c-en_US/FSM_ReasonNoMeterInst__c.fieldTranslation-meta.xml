@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for no meter installed --></label>
+    <name>FSM_ReasonNoMeterInst__c</name>
+    <picklistValues>
+        <masterLabel>Chamber too shallow</masterLabel>
+        <translation><!-- Chamber too shallow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External billing meter</masterLabel>
+        <translation><!-- External billing meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal billing meter</masterLabel>
+        <translation><!-- Internal billing meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH</masterLabel>
+        <translation><!-- NHH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Operation</masterLabel>
+        <translation><!-- Network Operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Share supply</masterLabel>
+        <translation><!-- Share supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop Tap</masterLabel>
+        <translation><!-- Stop Tap --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

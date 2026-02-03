@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Time_Update</name>
+        <label>Time Update</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Start</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Start_Time_Add</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.End</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>End_Time_Subtract</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Absence_type</name>
+        <label>Absence type</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Rest_Period</name>
+            <conditionLogic>1 AND ( 2 OR  (3 OR 4 ) )</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rest Period</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>new</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Start</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.End</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Time_Update</targetReference>
+            </connector>
+            <label>Rest Period</label>
+        </rules>
+    </decisions>
+    <description>Created as part of SFL-141
+Updated as part of SFS-8892</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>End_Time_Subtract</name>
+        <dataType>DateTime</dataType>
+        <expression>{!$Record.End} - (2 / 1440)</expression>
+    </formulas>
+    <formulas>
+        <name>new</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>Start_Time_Add</name>
+        <dataType>DateTime</dataType>
+        <expression>{!$Record.Start} + (2 / 1440)</expression>
+    </formulas>
+    <interviewLabel>FSM Resource Absence - Before Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Resource Absence - Before Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Absence_type</targetReference>
+        </connector>
+        <object>ResourceAbsence</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

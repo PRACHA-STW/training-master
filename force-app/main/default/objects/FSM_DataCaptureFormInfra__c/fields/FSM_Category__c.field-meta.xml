@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Category__c</fullName>
+    <description>Created for SAL-1321</description>
+    <label>Meter Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_ModelNo__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D05_15MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D05_15MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D05_22MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D05_22MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D05_28MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D05_28MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D05_42MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D05_42MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D85_15MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D85_15MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D85_22MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D85_22MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D85_28MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D85_28MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Altair_V4_5D_D85_42MM</fullName>
+                <default>false</default>
+                <label>Diehl_Altair_V4_5D_D85_42MM</label>
+            </value>
+            <value>
+                <fullName>ITRON AQUADIS+_5D_15MM</fullName>
+                <default>false</default>
+                <label>ITRON AQUADIS+_5D_15MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_AQUADIS+_5D_22MM</fullName>
+                <default>false</default>
+                <label>ITRON_AQUADIS+_5D_22MM</label>
+            </value>
+            <value>
+                <fullName>ITRON AQUADIS+INT_5D_15MM</fullName>
+                <default>false</default>
+                <label>ITRON AQUADIS+INT_5D_15MM</label>
+            </value>
+            <value>
+                <fullName>ITRON AQUADIS+INT_5D_22MM</fullName>
+                <default>false</default>
+                <label>ITRON AQUADIS+INT_5D_22MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_AQUADIS+INT_5D_28MM</fullName>
+                <default>false</default>
+                <label>ITRON_AQUADIS+INT_5D_28MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_SINGLE_JET_6D_42MM</fullName>
+                <default>false</default>
+                <label>ITRON_SINGLE_JET_6D_42MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_SINGLE_JET_THREADED_6D_50MM</fullName>
+                <default>false</default>
+                <label>ITRON_SINGLE_JET_THREADED_6D_50MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_SINGLE_JET_FLANGED_6D_50MM</fullName>
+                <default>false</default>
+                <label>ITRON_SINGLE_JET_FLANGED_6D_50MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_SINGLE_JET_FLANGED_6D_80MM</fullName>
+                <default>false</default>
+                <label>ITRON_SINGLE_JET_FLANGED_6D_80MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_SINGLE_JET_FLANGED_6D_100MM</fullName>
+                <default>false</default>
+                <label>ITRON_SINGLE_JET_FLANGED_6D_100MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_SINGLE_JET_INT_5D_42MM</fullName>
+                <default>false</default>
+                <label>ITRON_SINGLE_JET_INT_5D_42MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_WOLTEX_6D_50MM</fullName>
+                <default>false</default>
+                <label>ITRON_WOLTEX_6D_50MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_WOLTEX_6D_80MM</fullName>
+                <default>false</default>
+                <label>ITRON_WOLTEX_6D_80MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_WOLTEX_6D_100MM</fullName>
+                <default>false</default>
+                <label>ITRON_WOLTEX_6D_100MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_WOLTEX_7D_150MM</fullName>
+                <default>false</default>
+                <label>ITRON_WOLTEX_7D_150MM</label>
+            </value>
+            <value>
+                <fullName>ITRON_WOLTEX_7D_200MM</fullName>
+                <default>false</default>
+                <label>ITRON_WOLTEX_7D_200MM</label>
+            </value>
+            <value>
+                <fullName>Kent_K05_5D</fullName>
+                <default>false</default>
+                <label>Kent_K05_5D</label>
+            </value>
+            <value>
+                <fullName>Radio_Actaris_R05_5D</fullName>
+                <default>false</default>
+                <label>Radio_Actaris_R05_5D</label>
+            </value>
+            <value>
+                <fullName>Radio_Actaris_R85_5D</fullName>
+                <default>false</default>
+                <label>Radio_Actaris_R85_5D</label>
+            </value>
+            <value>
+                <fullName>Schlumberger_S05_5D</fullName>
+                <default>false</default>
+                <label>Schlumberger_S05_5D</label>
+            </value>
+            <value>
+                <fullName>Schlumberger_S85_5D</fullName>
+                <default>false</default>
+                <label>Schlumberger_S85_5D</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D06_50MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D06_50MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D06_80MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D06_80MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D06_100MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D06_100MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D06_150MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D06_150MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D06_200MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D06_200MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D06_250MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D06_250MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D06_300MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D06_300MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D86_50MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D86_50MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D86_80MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D86_80MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D86_100MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D86_100MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D86_150MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D86_150MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D86_200MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D86_200MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D86_250MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D86_250MM</label>
+            </value>
+            <value>
+                <fullName>Diehl_Wesan_PG_6D_D86_300MM</fullName>
+                <default>false</default>
+                <label>Diehl_Wesan_PG_6D_D86_300MM</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_6D_40mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_6D_40mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_6D_50mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_6D_50mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_6D_65mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_6D_65mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_6D_80mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_6D_80mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_6D_100mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_6D_100mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_7D_125mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_7D_125mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_7D_150mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_7D_150mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_7D_200mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_7D_200mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_7D_250mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_7D_250mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell Elster_H4000_7D_300mm</fullName>
+                <default>false</default>
+                <label>Honeywell Elster_H4000_7D_300mm</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V210_Clip_NB-IoT_5D_DN15</fullName>
+                <default>false</default>
+                <label>Honeywell_V210_Clip_NB-IoT_5D_DN15</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V200_Clip_NB-IoT_5D_DN15</fullName>
+                <default>false</default>
+                <label>Honeywell_V200_Clip_NB-IoT_5D_DN15</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V210_Int_NB-IoT_6D_DN15</fullName>
+                <default>false</default>
+                <label>Honeywell_V210_Int_NB-IoT_6D_DN15</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V200_Int_NB-IoT_6D_DN15</fullName>
+                <default>false</default>
+                <label>Honeywell_V200_Int_NB-IoT_6D_DN15</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V210_Int_NB-IoT_6D_DN20</fullName>
+                <default>false</default>
+                <label>Honeywell_V210_Int_NB-IoT_6D_DN20</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V200_Int_NB-IoT_6D_DN20</fullName>
+                <default>false</default>
+                <label>Honeywell_V200_Int_NB-IoT_6D_DN20</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V210_Int_NB-IoT_6D_DN25</fullName>
+                <default>false</default>
+                <label>Honeywell_V210_Int_NB-IoT_6D_DN25</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V200_Int_NB-IoT_6D_DN25</fullName>
+                <default>false</default>
+                <label>Honeywell_V200_Int_NB-IoT_6D_DN25</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V200_Int_NB-IoT_6D_DN30</fullName>
+                <default>false</default>
+                <label>Honeywell_V200_Int_NB-IoT_6D_DN30</label>
+            </value>
+            <value>
+                <fullName>Honeywell_V200_Int_NB-IoT_6D_DN40</fullName>
+                <default>false</default>
+                <label>Honeywell_V200_Int_NB-IoT_6D_DN40</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V5_Con_LoRa_5D_DN15</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V5_Con_LoRa_5D_DN15</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_LoRa_5D_DN15</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_LoRa_5D_DN15</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V5_Con_LoRa_5D_DN20</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V5_Con_LoRa_5D_DN20</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V5_Inl_LoRa_5D_DN20</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V5_Inl_LoRa_5D_DN20</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_LoRa_5D_DN25</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_LoRa_5D_DN25</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_LoRa_5D_DN32</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_LoRa_5D_DN32</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_LoRa_6D_DN40</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_LoRa_6D_DN40</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_6D_DN50</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_6D_DN50</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_6D_DN65</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_6D_DN65</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_6D_DN80</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_6D_DN80</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_6D_DN100</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_6D_DN100</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_7D_DN150</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_7D_DN150</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_7D_DN200</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_7D_DN200</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_7D_DN205</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_7D_DN205</label>
+            </value>
+            <value>
+                <fullName>Diehl_WESAN_Inl_LoRa_7D_DN300</fullName>
+                <default>false</default>
+                <label>Diehl_WESAN_Inl_LoRa_7D_DN300</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V5_Con_NBio_5D_DN15</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V5_Con_NBio_5D_DN15</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl134_NBio_5D_DN15</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl134_NBio_5D_DN15</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl110_NBio_5D_DN15</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl110_NBio_5D_DN15</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl110_NBio_5D_DN20</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl110_NBio_5D_DN20</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Con_NBio_5D_DN20</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Con_NBio_5D_DN20</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_5D_DN25</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_5D_DN25</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_5D_DN32</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_5D_DN32</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_6D_DN40</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_6D_DN40</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_6D_DN50</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_6D_DN50</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_6D_DN65</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_6D_DN65</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_6D_DN80</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_6D_DN80</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_6D_DN100</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_6D_DN100</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_7D_DN150</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_7D_DN150</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_7D_DN200</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_7D_DN200</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_7D_DN205</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_7D_DN205</label>
+            </value>
+            <value>
+                <fullName>Diehl_ALTAIR V4_Inl_NBio_7D_DN300</fullName>
+                <default>false</default>
+                <label>Diehl_ALTAIR V4_Inl_NBio_7D_DN300</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_LoRa_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_LoRa_5D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_LoRa_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_LoRa_5D_DN25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_LoRa_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_LoRa_5D_DN32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV5_Inl_LoRa_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V5_Inl_LoRa_5D_DN20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_LoRa_6D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_LoRa_6D_DN40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_6D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_6D_DN50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_6D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_6D_DN65</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_6D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_6D_DN80</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_6D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_6D_DN100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_7D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_7D_DN150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_7D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_7D_DN200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_7D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_7D_DN205</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WESAN_I_LoRa_7D</controllingFieldValue>
+            <valueName>Diehl_WESAN_Inl_LoRa_7D_DN300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV5_Con_NBio_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V5_Con_NBio_5D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl134NB_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl134_NBio_5D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl110NB_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl110_NBio_5D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl110NB_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl110_NBio_5D_DN20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Con_NBio_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Con_NBio_5D_DN20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_5D_DN25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_5D_DN32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R85</controllingFieldValue>
+            <valueName>Radio_Actaris_R85_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_6D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_6D_DN40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_6D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_6D_DN50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_6D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_6D_DN65</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_6D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_6D_DN80</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_6D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_6D_DN100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S05</controllingFieldValue>
+            <valueName>Schlumberger_S05_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_7D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_7D_DN150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_7D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_7D_DN200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_7D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_7D_DN205</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV4_Inl_NBio_7D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V4_Inl_NBio_7D_DN300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S85</controllingFieldValue>
+            <valueName>Schlumberger_S85_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D06</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D06_50MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D06</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D06_80MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D06</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D06_100MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D06</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D06_150MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D06</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D06_200MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D06</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D06_250MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D06</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D06_300MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D86</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D86_50MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D86</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D86_80MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D86</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D86_100MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D86</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D86_150MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D86</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D86_200MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D86</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D86_250MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D86</controllingFieldValue>
+            <valueName>Diehl_Wesan_PG_6D_D86_300MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_6D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_6D_40mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_6D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_6D_50mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_6D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_6D_65mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_6D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_6D_80mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_6D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_6D_100mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_7D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_7D_125mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_7D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_7D_150mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_7D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_7D_200mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_7D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_7D_250mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H4000_7D</controllingFieldValue>
+            <valueName>Honeywell Elster_H4000_7D_300mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V210_Clp_NBI_5D</controllingFieldValue>
+            <valueName>Honeywell_V210_Clip_NB-IoT_5D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V200_Clp_NBI_5D</controllingFieldValue>
+            <valueName>Honeywell_V200_Clip_NB-IoT_5D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V210_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V210_Int_NB-IoT_6D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V210_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V210_Int_NB-IoT_6D_DN20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V210_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V210_Int_NB-IoT_6D_DN25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D05</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D05_15MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D05</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D05_22MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D05</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D05_28MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D05</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D05_42MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D85</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D85_15MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D85</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D85_22MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D85</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D85_28MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D85</controllingFieldValue>
+            <valueName>Diehl_Altair_V4_5D_D85_42MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AQUADIS+</controllingFieldValue>
+            <valueName>ITRON AQUADIS+_5D_15MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AQUADIS+</controllingFieldValue>
+            <valueName>ITRON_AQUADIS+_5D_22MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AQUADIS+INT</controllingFieldValue>
+            <valueName>ITRON AQUADIS+INT_5D_15MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AQUADIS+INT</controllingFieldValue>
+            <valueName>ITRON AQUADIS+INT_5D_22MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AQUADIS+INT</controllingFieldValue>
+            <valueName>ITRON_AQUADIS+INT_5D_28MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Jet</controllingFieldValue>
+            <valueName>ITRON_SINGLE_JET_6D_42MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Jet</controllingFieldValue>
+            <valueName>ITRON_SINGLE_JET_THREADED_6D_50MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Jet</controllingFieldValue>
+            <valueName>ITRON_SINGLE_JET_FLANGED_6D_50MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Jet</controllingFieldValue>
+            <valueName>ITRON_SINGLE_JET_FLANGED_6D_80MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Jet</controllingFieldValue>
+            <valueName>ITRON_SINGLE_JET_FLANGED_6D_100MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Jet INT</controllingFieldValue>
+            <valueName>ITRON_SINGLE_JET_INT_5D_42MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Woltex</controllingFieldValue>
+            <valueName>ITRON_WOLTEX_6D_50MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Woltex</controllingFieldValue>
+            <valueName>ITRON_WOLTEX_6D_80MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Woltex</controllingFieldValue>
+            <valueName>ITRON_WOLTEX_6D_100MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Woltex</controllingFieldValue>
+            <valueName>ITRON_WOLTEX_7D_150MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Woltex</controllingFieldValue>
+            <valueName>ITRON_WOLTEX_7D_200MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>K05</controllingFieldValue>
+            <valueName>Kent_K05_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R05</controllingFieldValue>
+            <valueName>Radio_Actaris_R05_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V200_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V200_Int_NB-IoT_6D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V200_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V200_Int_NB-IoT_6D_DN20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V200_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V200_Int_NB-IoT_6D_DN25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V200_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V200_Int_NB-IoT_6D_DN30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V200_Int_NBI_6D</controllingFieldValue>
+            <valueName>Honeywell_V200_Int_NB-IoT_6D_DN40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV5_Con_LoRa_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V5_Con_LoRa_5D_DN15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AV5_Con_LoRa_5D</controllingFieldValue>
+            <valueName>Diehl_ALTAIR V5_Con_LoRa_5D_DN20</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

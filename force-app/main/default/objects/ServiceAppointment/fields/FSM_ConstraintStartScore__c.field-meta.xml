@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ConstraintStartScore__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((FSM_SchedulingConstraintEndDateTime__c &lt; DATETIMEVALUE(TODAY())), 0 , IF ( (FSM_SchedulingConstraintEndDateTime__c &gt; (DATETIMEVALUE(TODAY())+4)),0,(4 - ((FSM_SchedulingConstraintEndDateTime__c - DATETIMEVALUE(TODAY()))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Constraint Start Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

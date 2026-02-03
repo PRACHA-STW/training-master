@@ -1,0 +1,21 @@
+<!--*******************************************************************************************************
+@Author      : Himanshu Dobriyal
+@description : Component created as part of SFI-1002.
+@Date        : 03-November-2023
+********************************************************************************************************-->
+<template>
+    <template if:true={isValidUserToSeeComponent}>
+        <lightning-card title="Platform Event Subscribed" icon-name="standard:contact" style="font-weight:bold;">
+            <div class="slds-m-around_medium">
+                <lightning-combobox label="Select Event to subscribe" value={selectedValue} options={picklistOptions}
+                    onchange={handlePicklistChange}></lightning-combobox>
+                <h1>Subscribed Platform Event :{subscribedChannel}</h1>
+                <div class="json-container">
+                    <pre class="json-content">
+            Event Payload :{eventPayload}
+        </pre>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pipe MIC --></label>
+    <name>FSM_PipeMIC__c</name>
+    <picklistValues>
+        <masterLabel>No point of interest found</masterLabel>
+        <translation><!-- No point of interest found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Point of interest found</masterLabel>
+        <translation><!-- Point of interest found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to deploy</masterLabel>
+        <translation><!-- Unable to deploy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

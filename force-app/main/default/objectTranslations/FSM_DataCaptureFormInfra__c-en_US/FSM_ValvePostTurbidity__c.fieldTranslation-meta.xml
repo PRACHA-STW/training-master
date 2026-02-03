@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the turbidity doesn’t fall below 2NTU please call Network Control --></help>
+    <label><!-- Post Turbidity (NTU) --></label>
+    <name>FSM_ValvePostTurbidity__c</name>
+</CustomFieldTranslation>

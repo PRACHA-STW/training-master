@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Method of work --></label>
+    <name>FSM_FWRMethodOfWork__c</name>
+    <picklistValues>
+        <masterLabel>Excavation</masterLabel>
+        <translation><!-- Excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Excavation</masterLabel>
+        <translation><!-- No Excavation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

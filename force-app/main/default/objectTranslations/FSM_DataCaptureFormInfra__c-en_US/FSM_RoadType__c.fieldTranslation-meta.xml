@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Ask yourself Can a HGV/Bus drive down the road? For Example :- a Low Bridge or weight limited bridge. If no then its classed as a standard road  --></help>
+    <label><!-- Road Type --></label>
+    <name>FSM_RoadType__c</name>
+    <picklistValues>
+        <masterLabel>Restricted</masterLabel>
+        <translation><!-- Restricted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard</masterLabel>
+        <translation><!-- Standard --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

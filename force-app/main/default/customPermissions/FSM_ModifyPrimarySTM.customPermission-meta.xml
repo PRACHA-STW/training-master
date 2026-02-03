@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Assigned to Business Admin user to control the field editability on the Lightning Page for Primary STM Address, Start Date &amp; End Date in line with the SFL-47 requirements</description>
+    <isLicensed>false</isLicensed>
+    <label>FSM_ModifyPrimarySTM</label>
+</CustomPermission>

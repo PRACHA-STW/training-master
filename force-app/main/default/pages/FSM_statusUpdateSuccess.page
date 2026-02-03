@@ -1,0 +1,5 @@
+<apex:page >
+    <apex:pageBlock >
+        <h1 style="color:green;"> Status updated successfully. </h1>
+    </apex:pageBlock>
+</apex:page>

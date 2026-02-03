@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Leak Responsibility Declaration --></label>
+    <name>FSM_LeakResponsibilityDeclaration__c</name>
+    <picklistValues>
+        <masterLabel>Accept that, following the work, black tarmacadam patches may be evident on the property that a repair has been completed.</masterLabel>
+        <translation><!-- Accept that, following the work, black tarmacadam patches may be evident on the property that a repair has been completed. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I wish to decline the black tarmacadam final reinstatement and will carry out my own reinstatement privately.</masterLabel>
+        <translation><!-- I wish to decline the black tarmacadam final reinstatement and will carry out my own reinstatement privately. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Asset__c</fullName>
+    <label>Asset</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>D 2</fullName>
+                <default>false</default>
+                <label>MAIN</label>
+            </value>
+            <value>
+                <fullName>D 3</fullName>
+                <default>false</default>
+                <label>SERVICE</label>
+            </value>
+            <value>
+                <fullName>D 4</fullName>
+                <default>false</default>
+                <label>BOUNDARY BOX AND METER</label>
+            </value>
+            <value>
+                <fullName>D 5</fullName>
+                <default>false</default>
+                <label>LONG COMM PIPE</label>
+            </value>
+            <value>
+                <fullName>D 6</fullName>
+                <default>false</default>
+                <label>SHORT COMM PIPE</label>
+            </value>
+            <value>
+                <fullName>D 7</fullName>
+                <default>false</default>
+                <label>SLUICE VALVE</label>
+            </value>
+            <value>
+                <fullName>D 8</fullName>
+                <default>false</default>
+                <label>HYDRANT</label>
+            </value>
+            <value>
+                <fullName>D 9</fullName>
+                <default>false</default>
+                <label>WASHOUT</label>
+            </value>
+            <value>
+                <fullName>D 10</fullName>
+                <default>false</default>
+                <label>STOP TAP</label>
+            </value>
+            <value>
+                <fullName>D 11</fullName>
+                <default>false</default>
+                <label>BOUNDARY BOX</label>
+            </value>
+            <value>
+                <fullName>D 12</fullName>
+                <default>false</default>
+                <label>METER</label>
+            </value>
+            <value>
+                <fullName>D 13</fullName>
+                <default>false</default>
+                <label>PSV</label>
+            </value>
+            <value>
+                <fullName>D 14</fullName>
+                <default>false</default>
+                <label>PRV</label>
+            </value>
+            <value>
+                <fullName>D 15</fullName>
+                <default>false</default>
+                <label>AIR VALVE</label>
+            </value>
+            <value>
+                <fullName>D 16</fullName>
+                <default>false</default>
+                <label>MARKER POST</label>
+            </value>
+            <value>
+                <fullName>D 17</fullName>
+                <default>false</default>
+                <label>LOGGER</label>
+            </value>
+            <value>
+                <fullName>D 18</fullName>
+                <default>false</default>
+                <label>RRU</label>
+            </value>
+            <value>
+                <fullName>D 19</fullName>
+                <default>false</default>
+                <label>TANKER</label>
+            </value>
+            <value>
+                <fullName>D 20</fullName>
+                <default>false</default>
+                <label>BOWSER</label>
+            </value>
+            <value>
+                <fullName>D 21</fullName>
+                <default>false</default>
+                <label>FILTER</label>
+            </value>
+            <value>
+                <fullName>D 22</fullName>
+                <default>false</default>
+                <label>CUSTOMER TAP</label>
+            </value>
+            <value>
+                <fullName>D 23</fullName>
+                <default>false</default>
+                <label>RESERVOIR</label>
+            </value>
+            <value>
+                <fullName>D 24</fullName>
+                <default>false</default>
+                <label>OVERLANDER</label>
+            </value>
+            <value>
+                <fullName>D 25</fullName>
+                <default>false</default>
+                <label>AQUEDUCT</label>
+            </value>
+            <value>
+                <fullName>D 26</fullName>
+                <default>false</default>
+                <label>REINSTATEMENT</label>
+            </value>
+            <value>
+                <fullName>D 27</fullName>
+                <default>false</default>
+                <label>SYSTEM</label>
+            </value>
+            <value>
+                <fullName>D 28</fullName>
+                <default>false</default>
+                <label>HOUSEHOLD PROPERTY</label>
+            </value>
+            <value>
+                <fullName>D 29</fullName>
+                <default>false</default>
+                <label>NON HOUSEHOLD PROPERTY</label>
+            </value>
+            <value>
+                <fullName>D 30</fullName>
+                <default>false</default>
+                <label>HOUSEHOLD SUPPLY PIPE</label>
+            </value>
+            <value>
+                <fullName>D 31</fullName>
+                <default>false</default>
+                <label>NON HOUSEHOLD SUPPLY PIPE</label>
+            </value>
+            <value>
+                <fullName>D 32</fullName>
+                <default>false</default>
+                <label>SMALL CHAMBER</label>
+            </value>
+            <value>
+                <fullName>D 33</fullName>
+                <default>false</default>
+                <label>LARGE CHAMBER</label>
+            </value>
+            <value>
+                <fullName>D 34</fullName>
+                <default>false</default>
+                <label>TRUNK MAIN CHAMBER</label>
+            </value>
+            <value>
+                <fullName>D 40</fullName>
+                <default>false</default>
+                <label>LGE DEV-STD CONN</label>
+            </value>
+            <value>
+                <fullName>D 41</fullName>
+                <default>false</default>
+                <label>LGE DEV-LGE DIA CONN</label>
+            </value>
+            <value>
+                <fullName>D 42</fullName>
+                <default>false</default>
+                <label>LGE DEV-MANIFOLD</label>
+            </value>
+            <value>
+                <fullName>D 43</fullName>
+                <default>false</default>
+                <label>FIRE DOMESTIC SPLITS</label>
+            </value>
+            <value>
+                <fullName>D 44</fullName>
+                <default>false</default>
+                <label>SML DEV-STD CONN</label>
+            </value>
+            <value>
+                <fullName>D 45</fullName>
+                <default>false</default>
+                <label>SML DEV-LGE DIA CONN</label>
+            </value>
+            <value>
+                <fullName>D 46</fullName>
+                <default>false</default>
+                <label>SML DEV-MANIFOLD</label>
+            </value>
+            <value>
+                <fullName>D 50</fullName>
+                <default>false</default>
+                <label>SHORT COMM AND BBOX INSTALL</label>
+            </value>
+            <value>
+                <fullName>D 60</fullName>
+                <default>false</default>
+                <label>NRT TANKERING</label>
+            </value>
+            <value>
+                <fullName>D 61</fullName>
+                <default>false</default>
+                <label>FERRULE</label>
+            </value>
+            <value>
+                <fullName>D 70</fullName>
+                <default>false</default>
+                <label>CAPITAL</label>
+            </value>
+            <value>
+                <fullName>D 71</fullName>
+                <default>false</default>
+                <label>SMART METER</label>
+            </value>
+            <value>
+                <fullName>S 0</fullName>
+                <default>false</default>
+                <label>Select One</label>
+            </value>
+            <value>
+                <fullName>S 1</fullName>
+                <default>false</default>
+                <label>Gravity sewer (up to 225mm)</label>
+            </value>
+            <value>
+                <fullName>S 2</fullName>
+                <default>false</default>
+                <label>Gravity sewer (300-450mm)</label>
+            </value>
+            <value>
+                <fullName>S 3</fullName>
+                <default>false</default>
+                <label>Gravity sewer (525-600mm)</label>
+            </value>
+            <value>
+                <fullName>S 4</fullName>
+                <default>false</default>
+                <label>Gravity sewer (over 600mm)</label>
+            </value>
+            <value>
+                <fullName>S 5</fullName>
+                <default>false</default>
+                <label>Rising main (up to 225mm)</label>
+            </value>
+            <value>
+                <fullName>S 7</fullName>
+                <default>false</default>
+                <label>Rising main (226-450mm)</label>
+            </value>
+            <value>
+                <fullName>S 8</fullName>
+                <default>false</default>
+                <label>Rising main (Over 450mm)</label>
+            </value>
+            <value>
+                <fullName>S 9</fullName>
+                <default>false</default>
+                <label>Manhole</label>
+            </value>
+            <value>
+                <fullName>S 10</fullName>
+                <default>false</default>
+                <label>Manhole cover and frame</label>
+            </value>
+            <value>
+                <fullName>S 11</fullName>
+                <default>false</default>
+                <label>Inspection cover and frame</label>
+            </value>
+            <value>
+                <fullName>S 12</fullName>
+                <default>false</default>
+                <label>Dual Manhole</label>
+            </value>
+            <value>
+                <fullName>S 13</fullName>
+                <default>false</default>
+                <label>Interceptor</label>
+            </value>
+            <value>
+                <fullName>S 14</fullName>
+                <default>false</default>
+                <label>NRV</label>
+            </value>
+            <value>
+                <fullName>S 15</fullName>
+                <default>false</default>
+                <label>CSO</label>
+            </value>
+            <value>
+                <fullName>S 16</fullName>
+                <default>false</default>
+                <label>Ancillary</label>
+            </value>
+            <value>
+                <fullName>S 17</fullName>
+                <default>false</default>
+                <label>Sewerage pumping station</label>
+            </value>
+            <value>
+                <fullName>S 18</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>S 19</fullName>
+                <default>false</default>
+                <label>Flood Mitigation (Non - NRV)</label>
+            </value>
+            <value>
+                <fullName>S 20</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

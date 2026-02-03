@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Immediate - Emergency Notice</fullName>
+        <default>false</default>
+        <label>Immediate - Emergency Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Immediate - Emergency Permit</fullName>
+        <default>false</default>
+        <label>Immediate - Emergency Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Immediate - Urgent Notice</fullName>
+        <default>false</default>
+        <label>Immediate - Urgent Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Immediate - Urgent Permit</fullName>
+        <default>false</default>
+        <label>Immediate - Urgent Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Major Notice</fullName>
+        <default>false</default>
+        <label>Major Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Major Permit</fullName>
+        <default>false</default>
+        <label>Major Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Minor Notice</fullName>
+        <default>false</default>
+        <label>Minor Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Minor Permit</fullName>
+        <default>false</default>
+        <label>Minor Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>No Notice Required</fullName>
+        <default>false</default>
+        <label>No Notice Required</label>
+    </customValue>
+    <customValue>
+        <fullName>Standard Notice</fullName>
+        <default>false</default>
+        <label>Standard Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Standard Permit</fullName>
+        <default>false</default>
+        <label>Standard Permit</label>
+    </customValue>
+    <masterLabel>Permit Notification type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PedestrianLights__c</fullName>
+    <inlineHelpText>What are the pedestrian lights onsite</inlineHelpText>
+    <label>Pedestrian Lights</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Pedestrian Light Switch Off</fullName>
+                <default>false</default>
+                <label>Pedestrian Light Switch Off</label>
+            </value>
+            <value>
+                <fullName>Pelican Crossing</fullName>
+                <default>false</default>
+                <label>Pelican Crossing</label>
+            </value>
+            <value>
+                <fullName>Perm Light Switch Off</fullName>
+                <default>false</default>
+                <label>Perm Light Switch Off</label>
+            </value>
+            <value>
+                <fullName>Zebra Crossing</fullName>
+                <default>false</default>
+                <label>Zebra Crossing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

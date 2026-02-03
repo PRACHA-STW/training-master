@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- If no, reason for no int. --></label>
+    <name>FSM_NoIntReason__c</name>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overlander</masterLabel>
+        <translation><!-- Overlander --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RRU and Tanker Supply</masterLabel>
+        <translation><!-- RRU and Tanker Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair Done Under Pressure</masterLabel>
+        <translation><!-- Repair Done Under Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rezone Implemented</masterLabel>
+        <translation><!-- Rezone Implemented --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

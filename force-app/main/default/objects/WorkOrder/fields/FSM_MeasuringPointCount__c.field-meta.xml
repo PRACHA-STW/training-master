@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MeasuringPointCount__c</fullName>
+    <description>This field shows the count of measuring points for the WO
+Updated as a part of SFS-5426</description>
+    <label>Measuring Point Count</label>
+    <summaryForeignKey>FSM_WOMeasuringPoint__c.FSM_WorkOrder__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

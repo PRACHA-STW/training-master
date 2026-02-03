@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Do we need to excavate to complete the repair, If you are unsure select yes. If you select no then the job will be built without an excavation and incur fines if an excavation does take place. --></help>
+    <label><!-- Is excavation required? --></label>
+    <name>FSM_IsExcavationRequired__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Service_Appointments</fullName>
+    <columns>FSM_SAPOrderOperationNumber__c</columns>
+    <columns>Name</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>Status</columns>
+    <columns>DurationInMinutes</columns>
+    <columns>FSM_SAPJobPriority__c</columns>
+    <columns>FSM_ServiceOrderType__c</columns>
+    <columns>LatestEndTime</columns>
+    <columns>WorkType</columns>
+    <columns>ServiceTerritory</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <label>New Service Appointments</label>
+    <sharedTo>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

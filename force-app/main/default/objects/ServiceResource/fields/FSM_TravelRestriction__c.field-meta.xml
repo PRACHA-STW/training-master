@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TravelRestriction__c</fullName>
+    <defaultValue>&quot;No Restriction&quot;</defaultValue>
+    <description>SFS-139</description>
+    <label>Travel Restriction</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Level 1</fullName>
+                <default>false</default>
+                <label>Level 1</label>
+            </value>
+            <value>
+                <fullName>Level 2</fullName>
+                <default>false</default>
+                <label>Level 2</label>
+            </value>
+            <value>
+                <fullName>Level 3</fullName>
+                <default>false</default>
+                <label>Level 3</label>
+            </value>
+            <value>
+                <fullName>Level 4</fullName>
+                <default>false</default>
+                <label>Level 4</label>
+            </value>
+            <value>
+                <fullName>No Restriction</fullName>
+                <default>true</default>
+                <label>No Restriction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

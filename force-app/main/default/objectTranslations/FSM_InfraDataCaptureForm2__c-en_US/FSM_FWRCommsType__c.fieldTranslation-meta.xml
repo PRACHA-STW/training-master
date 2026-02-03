@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Comm&apos;s Type --></label>
+    <name>FSM_FWRCommsType__c</name>
+    <picklistValues>
+        <masterLabel>Access Letter required</masterLabel>
+        <translation><!-- Access Letter required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance Warn</masterLabel>
+        <translation><!-- Advance Warn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interruption to supply</masterLabel>
+        <translation><!-- Interruption to supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise</masterLabel>
+        <translation><!-- Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise Letters required</masterLabel>
+        <translation><!-- Noise Letters required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-coning</masterLabel>
+        <translation><!-- Pre-coning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restricted Access</masterLabel>
+        <translation><!-- Restricted Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work awareness</masterLabel>
+        <translation><!-- Work awareness --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

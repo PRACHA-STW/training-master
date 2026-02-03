@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MandatoryOnSuspend__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, this DCF is mandatory for suspension. SFS-6571</description>
+    <inlineHelpText>If checked, this DCF is mandatory for suspension.</inlineHelpText>
+    <label>Mandatory On Suspend</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

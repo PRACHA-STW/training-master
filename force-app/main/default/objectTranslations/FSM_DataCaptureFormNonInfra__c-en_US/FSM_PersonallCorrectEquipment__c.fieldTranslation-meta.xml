@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- All personnel have the correct equipment --></label>
+    <name>FSM_PersonallCorrectEquipment__c</name>
+</CustomFieldTranslation>

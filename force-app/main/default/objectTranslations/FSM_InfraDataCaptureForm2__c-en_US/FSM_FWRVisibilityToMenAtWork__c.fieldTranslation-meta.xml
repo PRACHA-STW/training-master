@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Visbility to Men at Work --></label>
+    <name>FSM_FWRVisibilityToMenAtWork__c</name>
+    <picklistValues>
+        <masterLabel>50m</masterLabel>
+        <translation><!-- 50m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60m</masterLabel>
+        <translation><!-- 60m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60m+</masterLabel>
+        <translation><!-- 60m+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not visible on approach</masterLabel>
+        <translation><!-- Not visible on approach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not visible on both approaches</masterLabel>
+        <translation><!-- Not visible on both approaches --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

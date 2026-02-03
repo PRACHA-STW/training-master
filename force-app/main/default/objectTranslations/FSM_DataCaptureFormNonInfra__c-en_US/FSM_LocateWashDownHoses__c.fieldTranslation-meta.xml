@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Locate and check wash down hoses --></label>
+    <name>FSM_LocateWashDownHoses__c</name>
+</CustomFieldTranslation>

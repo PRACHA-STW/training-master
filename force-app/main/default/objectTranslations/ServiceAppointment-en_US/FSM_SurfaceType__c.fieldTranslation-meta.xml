@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Surface Type --></label>
+    <name>FSM_SurfaceType__c</name>
+    <picklistValues>
+        <masterLabel>Block paving</masterLabel>
+        <translation><!-- Block paving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concrete</masterLabel>
+        <translation><!-- Concrete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grass</masterLabel>
+        <translation><!-- Grass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravel</masterLabel>
+        <translation><!-- Gravel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slabs</masterLabel>
+        <translation><!-- Slabs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tarmac</masterLabel>
+        <translation><!-- Tarmac --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

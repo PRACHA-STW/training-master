@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ProblemCodeGroup__c</fullName>
+    <description>Created as part of SFS-5827</description>
+    <label>Problem Code Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CHASDIST</fullName>
+                <default>false</default>
+                <label>Distribution Chase</label>
+            </value>
+            <value>
+                <fullName>CHASWAST</fullName>
+                <default>false</default>
+                <label>Waste Water Chase</label>
+            </value>
+            <value>
+                <fullName>DEVSERV</fullName>
+                <default>false</default>
+                <label>Dev Services</label>
+            </value>
+            <value>
+                <fullName>EL</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>IN</fullName>
+                <default>false</default>
+                <label>Instrument</label>
+            </value>
+            <value>
+                <fullName>ME</fullName>
+                <default>false</default>
+                <label>Mechanical</label>
+            </value>
+            <value>
+                <fullName>MEBRAB</fullName>
+                <default>false</default>
+                <label>Battery - aborted jobs</label>
+            </value>
+            <value>
+                <fullName>MEBRCP</fullName>
+                <default>false</default>
+                <label>Battery - Work Completed</label>
+            </value>
+            <value>
+                <fullName>MEBRME</fullName>
+                <default>false</default>
+                <label>Battery - meter exchanged</label>
+            </value>
+            <value>
+                <fullName>MECLCM</fullName>
+                <default>false</default>
+                <label>Compulsary Metering</label>
+            </value>
+            <value>
+                <fullName>MECLFR</fullName>
+                <default>false</default>
+                <label>Free Meter</label>
+            </value>
+            <value>
+                <fullName>MECLNS</fullName>
+                <default>false</default>
+                <label>New Supplies - Work Completed</label>
+            </value>
+            <value>
+                <fullName>MECLTW</fullName>
+                <default>false</default>
+                <label>Problem with touchpad or wiring</label>
+            </value>
+            <value>
+                <fullName>MECLUR</fullName>
+                <default>false</default>
+                <label>No repair or exchange carried out</label>
+            </value>
+            <value>
+                <fullName>MENOAC</fullName>
+                <default>false</default>
+                <label>B3 - NHH Metering Accuracy Test</label>
+            </value>
+            <value>
+                <fullName>MENOCH</fullName>
+                <default>false</default>
+                <label>B7 or B10 - NHH Change of Meter</label>
+            </value>
+            <value>
+                <fullName>MENOIN</fullName>
+                <default>false</default>
+                <label>B1 - NHH Meter Installation</label>
+            </value>
+            <value>
+                <fullName>MENORP</fullName>
+                <default>false</default>
+                <label>B5 - NHH Metering Repair or Replace</label>
+            </value>
+            <value>
+                <fullName>MENOVR</fullName>
+                <default>false</default>
+                <label>C1 - NHH Metering Verification Requests</label>
+            </value>
+            <value>
+                <fullName>MECLME</fullName>
+                <default>false</default>
+                <label>Problem with meter</label>
+            </value>
+            <value>
+                <fullName>MECLPI</fullName>
+                <default>false</default>
+                <label>Problem with pipework or installation</label>
+            </value>
+            <value>
+                <fullName>MECLRR</fullName>
+                <default>false</default>
+                <label>Problem with radio read</label>
+            </value>
+            <value>
+                <fullName>NETIMP</fullName>
+                <default>false</default>
+                <label>Network Impact</label>
+            </value>
+            <value>
+                <fullName>NHINBEPR</fullName>
+                <default>false</default>
+                <label>NHH Inbound WIF Problem Code</label>
+            </value>
+            <value>
+                <fullName>NHINBIPR</fullName>
+                <default>false</default>
+                <label>NHH inbound bilateral Prob.Code-Iprocess</label>
+            </value>
+            <value>
+                <fullName>OP</fullName>
+                <default>false</default>
+                <label>Operational</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>SPSPSV</fullName>
+                <default>false</default>
+                <label>SPS Predictive Site Visit</label>
+            </value>
+            <value>
+                <fullName>STATP</fullName>
+                <default>false</default>
+                <label>Statutory - Problem</label>
+            </value>
+            <value>
+                <fullName>WASTE</fullName>
+                <default>false</default>
+                <label>Waster Water</label>
+            </value>
+            <value>
+                <fullName>WATER</fullName>
+                <default>false</default>
+                <label>Water</label>
+            </value>
+            <value>
+                <fullName>WDAQQU</fullName>
+                <default>false</default>
+                <label>Leakage Quantification</label>
+            </value>
+            <value>
+                <fullName>WDIPPR</fullName>
+                <default>false</default>
+                <label>Infra - Proactive</label>
+            </value>
+            <value>
+                <fullName>WDLEAD</fullName>
+                <default>false</default>
+                <label>Lead Replacement Work</label>
+            </value>
+            <value>
+                <fullName>WDSUPP</fullName>
+                <default>false</default>
+                <label>Number of Supplies</label>
+            </value>
+            <value>
+                <fullName>WMITRE</fullName>
+                <default>false</default>
+                <label>Waste Mitigation reasons</label>
+            </value>
+            <value>
+                <fullName>WQUAL</fullName>
+                <default>false</default>
+                <label>Water Quality Root Cause</label>
+            </value>
+            <value>
+                <fullName>WWOP</fullName>
+                <default>false</default>
+                <label>Waste Water Operational</label>
+            </value>
+            <value>
+                <fullName>MEOPME</fullName>
+                <default>false</default>
+                <label>Problem with meter MEOPME</label>
+            </value>
+            <value>
+                <fullName>MEOPPI</fullName>
+                <default>false</default>
+                <label>Problem with pipework or installation MEOPPI</label>
+            </value>
+            <value>
+                <fullName>MEOPRR</fullName>
+                <default>false</default>
+                <label>Problem with radio read MEOPRR</label>
+            </value>
+            <value>
+                <fullName>MEOPTW</fullName>
+                <default>false</default>
+                <label>Problem with touchpad or wiring MEOPTW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

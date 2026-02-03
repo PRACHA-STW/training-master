@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How long did cleanup take? (min) --></label>
+    <name>FSM_CleanupInMins__c</name>
+    <picklistValues>
+        <masterLabel>&lt;15</masterLabel>
+        <translation><!-- &lt;15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=15</masterLabel>
+        <translation><!-- &gt;=15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not done</masterLabel>
+        <translation><!-- Not done --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

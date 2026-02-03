@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_EquipmentUsed__c</fullName>
+    <description>Created as part of SFS-3007</description>
+    <label>Equipment used</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Van Pack</fullName>
+                <default>false</default>
+                <label>Van Pack</label>
+            </value>
+            <value>
+                <fullName>7.5t Jetter</fullName>
+                <default>false</default>
+                <label>7.5t Jetter</label>
+            </value>
+            <value>
+                <fullName>Jet/Vac</fullName>
+                <default>false</default>
+                <label>Jet/Vac</label>
+            </value>
+            <value>
+                <fullName>Jetter (Off-Road)</fullName>
+                <default>false</default>
+                <label>Jetter (Off-Road)</label>
+            </value>
+            <value>
+                <fullName>CCTV Van</fullName>
+                <default>false</default>
+                <label>CCTV Van</label>
+            </value>
+            <value>
+                <fullName>CCTV Van (Off-Road)</fullName>
+                <default>false</default>
+                <label>CCTV Van (Off-Road)</label>
+            </value>
+            <value>
+                <fullName>Cleanup Vehicle</fullName>
+                <default>false</default>
+                <label>Cleanup Vehicle</label>
+            </value>
+            <value>
+                <fullName>Road Sweeper</fullName>
+                <default>false</default>
+                <label>Road Sweeper</label>
+            </value>
+            <value>
+                <fullName>Repair Crew</fullName>
+                <default>false</default>
+                <label>Repair Crew</label>
+            </value>
+            <value>
+                <fullName>Repair Crew (with Mini-Digger)</fullName>
+                <default>false</default>
+                <label>Repair Crew (with Mini-Digger)</label>
+            </value>
+            <value>
+                <fullName>Manhole Crew</fullName>
+                <default>false</default>
+                <label>Manhole Crew</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

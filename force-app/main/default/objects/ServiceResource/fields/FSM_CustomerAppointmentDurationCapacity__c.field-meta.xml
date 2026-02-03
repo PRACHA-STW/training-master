@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CustomerAppointmentDurationCapacity__c</fullName>
+    <description>Created as a part of SFS-1793</description>
+    <inlineHelpText>Customer Appointment Duration Capacity Per Day</inlineHelpText>
+    <label>Customer Appointment Duration Capacity</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>60 Minutes</fullName>
+                <default>false</default>
+                <label>60 Minutes</label>
+            </value>
+            <value>
+                <fullName>90 Minutes</fullName>
+                <default>false</default>
+                <label>90 Minutes</label>
+            </value>
+            <value>
+                <fullName>120 Minutes</fullName>
+                <default>false</default>
+                <label>120 Minutes</label>
+            </value>
+            <value>
+                <fullName>330 Minutes</fullName>
+                <default>false</default>
+                <label>330 Minutes</label>
+            </value>
+            <value>
+                <fullName>480 Minutes</fullName>
+                <default>false</default>
+                <label>480 Minutes</label>
+            </value>
+            <value>
+                <fullName>180 Minutes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>180 Minutes</label>
+            </value>
+            <value>
+                <fullName>240 Minutes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>240 Minutes</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

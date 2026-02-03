@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- There are a number of different types of Access Deterrent Measure ADM. 	
+Most pipe bridges will have some form of access deterrent measure, and those that don&apos;t probably require it. 	
+This section is to determine if what is there is sufficient and what condition it is in. -->
+    </help>
+    <label><!-- Access Deterrent Measures (ADM) fitted? --></label>
+    <name>FSM_ConditionOfADM__c</name>
+    <picklistValues>
+        <masterLabel>ADM&apos;s fitted and appear to be in reasonable condition</masterLabel>
+        <translation><!-- ADM&apos;s fitted and appear to be in reasonable condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADM&apos;s fitted but condition poor / inadequate number of devices fitted.</masterLabel>
+        <translation><!-- ADM&apos;s fitted but condition poor / inadequate number of devices fitted. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No ADM&apos;s fitted and deemed not necessary</masterLabel>
+        <translation><!-- No ADM&apos;s fitted and deemed not necessary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No ADM&apos;s fitted but they are required</masterLabel>
+        <translation><!-- No ADM&apos;s fitted but they are required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge within secure compound / fencing and ADM&apos;s not required.</masterLabel>
+        <translation><!-- Pipe bridge within secure compound / fencing and ADM&apos;s not required. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

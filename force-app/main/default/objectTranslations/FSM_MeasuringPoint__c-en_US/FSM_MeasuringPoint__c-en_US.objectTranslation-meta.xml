@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Measuring Point</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Measuring Points</value>
+    </caseValues>
+    <layouts>
+        <layout>FSM Measuring Point Reading Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The maximum supported number of decimals is 15 --></errorMessage>
+        <name>FSM_Decimal_Cannot_be_greater_than_15</name>
+    </validationRules>
+</CustomObjectTranslation>

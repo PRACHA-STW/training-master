@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+    <ltng:require styles="{!$Resource.fsmDistributionFeedbackDesktopStylesheet}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:fsmDistributionFeedback recordId="{!v.recordId}"></c:fsmDistributionFeedback>
+</aura:component>

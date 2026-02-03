@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permission to dig? --></label>
+    <name>FSM_PermissionToDig__c</name>
+    <picklistValues>
+        <masterLabel>Customer does not wish to sign</masterLabel>
+        <translation><!-- Customer does not wish to sign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer not available to sign</masterLabel>
+        <translation><!-- Customer not available to sign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Form left with customer</masterLabel>
+        <translation><!-- Form left with customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - customer signed</masterLabel>
+        <translation><!-- Yes - customer signed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

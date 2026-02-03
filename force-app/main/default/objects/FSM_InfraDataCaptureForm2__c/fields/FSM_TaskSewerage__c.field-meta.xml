@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TaskSewerage__c</fullName>
+    <description>Created as part of sfs-7045</description>
+    <label>Task (Sewerage)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S 01</fullName>
+                <default>false</default>
+                <label>Repair</label>
+            </value>
+            <value>
+                <fullName>S 02</fullName>
+                <default>false</default>
+                <label>Reset</label>
+            </value>
+            <value>
+                <fullName>S 03</fullName>
+                <default>false</default>
+                <label>Construct</label>
+            </value>
+            <value>
+                <fullName>S 04</fullName>
+                <default>false</default>
+                <label>Remove</label>
+            </value>
+            <value>
+                <fullName>S 05</fullName>
+                <default>false</default>
+                <label>Sewer patch line</label>
+            </value>
+            <value>
+                <fullName>S 06</fullName>
+                <default>false</default>
+                <label>Sewer reline</label>
+            </value>
+            <value>
+                <fullName>S 07</fullName>
+                <default>false</default>
+                <label>Renew</label>
+            </value>
+            <value>
+                <fullName>S 08</fullName>
+                <default>false</default>
+                <label>Reactive CCTV</label>
+            </value>
+            <value>
+                <fullName>S 09</fullName>
+                <default>false</default>
+                <label>Planned CCTV</label>
+            </value>
+            <value>
+                <fullName>S 10</fullName>
+                <default>false</default>
+                <label>Reactive Sewer cleanse</label>
+            </value>
+            <value>
+                <fullName>S 11</fullName>
+                <default>false</default>
+                <label>Planned Sewer Cleanse</label>
+            </value>
+            <value>
+                <fullName>S 12</fullName>
+                <default>false</default>
+                <label>SSIP CCTV</label>
+            </value>
+            <value>
+                <fullName>S 13</fullName>
+                <default>false</default>
+                <label>SSIP Cleanse</label>
+            </value>
+            <value>
+                <fullName>S 14</fullName>
+                <default>false</default>
+                <label>SSIP Repair</label>
+            </value>
+            <value>
+                <fullName>S 15</fullName>
+                <default>false</default>
+                <label>Reactive Root cut</label>
+            </value>
+            <value>
+                <fullName>S 16</fullName>
+                <default>false</default>
+                <label>Cleanup</label>
+            </value>
+            <value>
+                <fullName>S 17</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>S 18</fullName>
+                <default>false</default>
+                <label>Unplanned inspection</label>
+            </value>
+            <value>
+                <fullName>S 19</fullName>
+                <default>false</default>
+                <label>Flooding related CCTV</label>
+            </value>
+            <value>
+                <fullName>S 20</fullName>
+                <default>false</default>
+                <label>Flooding related sewer cleanse</label>
+            </value>
+            <value>
+                <fullName>S 21</fullName>
+                <default>false</default>
+                <label>Reinstate</label>
+            </value>
+            <value>
+                <fullName>S 22</fullName>
+                <default>false</default>
+                <label>Rectify defective reinstatement</label>
+            </value>
+            <value>
+                <fullName>S 23</fullName>
+                <default>false</default>
+                <label>Traffic management only</label>
+            </value>
+            <value>
+                <fullName>S 24</fullName>
+                <default>false</default>
+                <label>Mapping</label>
+            </value>
+            <value>
+                <fullName>S 25</fullName>
+                <default>false</default>
+                <label>Reactive tankering</label>
+            </value>
+            <value>
+                <fullName>S 26</fullName>
+                <default>false</default>
+                <label>Planned tankering</label>
+            </value>
+            <value>
+                <fullName>S 27</fullName>
+                <default>false</default>
+                <label>Reactive Wet Well Cleanse</label>
+            </value>
+            <value>
+                <fullName>S 28</fullName>
+                <default>false</default>
+                <label>Planned Wet Well Cleanse</label>
+            </value>
+            <value>
+                <fullName>S 29</fullName>
+                <default>false</default>
+                <label>Planned inspection</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

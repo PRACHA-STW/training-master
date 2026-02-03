@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NoticeTypeScore__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(FSM_TMAPermit__r.FSM_NoticeType__c,&apos;01&apos;), 42, 
+IF(ISPICKVAL(FSM_TMAPermit__r.FSM_NoticeType__c,&apos;05&apos;), 41,
+IF(ISPICKVAL(FSM_TMAPermit__r.FSM_NoticeType__c,&apos;04&apos;), 41,
+IF(ISPICKVAL(FSM_TMAPermit__r.FSM_NoticeType__c,&apos;03&apos;), 40,
+IF(ISPICKVAL(FSM_TMAPermit__r.FSM_NoticeType__c,&apos;02&apos;), 40,0)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Notice Type Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

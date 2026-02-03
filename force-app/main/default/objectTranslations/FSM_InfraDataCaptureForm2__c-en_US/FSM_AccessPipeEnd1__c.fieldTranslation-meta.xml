@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Access to the end of the pipe may be possible, but with suitable precautions makes it difficult to cross and therefore deters people from doing so. 	
+- End 1 has been determined as the end from which the flows begin -->
+    </help>
+    <label><!-- Access to Pipe End1 --></label>
+    <name>FSM_AccessPipeEnd1__c</name>
+    <picklistValues>
+        <masterLabel>Difficult i.e. fencing present</masterLabel>
+        <translation><!-- Difficult i.e. fencing present --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Easy. Deterrents in place but not substantial</masterLabel>
+        <translation><!-- Easy. Deterrents in place but not substantial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not accessible (unlikely)</masterLabel>
+        <translation><!-- Not accessible (unlikely) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Possible i.e deterrents in place but access possible</masterLabel>
+        <translation><!-- Possible i.e deterrents in place but access possible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Very Easy - No deterrents present</masterLabel>
+        <translation><!-- Very Easy - No deterrents present --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

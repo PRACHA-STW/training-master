@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Impact Code Value --></label>
+    <name>FSM_Impact_Code_Value__c</name>
+    <picklistValues>
+        <masterLabel>Abandon Asset</masterLabel>
+        <translation><!-- Abandon Asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Afternoon appointment</masterLabel>
+        <translation><!-- Afternoon appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air testing</masterLabel>
+        <translation><!-- Air testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anytime appointment</masterLabel>
+        <translation><!-- Anytime appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Back drop been fitted</masterLabel>
+        <translation><!-- Back drop been fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Benching not completed</masterLabel>
+        <translation><!-- Benching not completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blocked</masterLabel>
+        <translation><!-- Blocked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder&apos;s standpipe not to specification</masterLabel>
+        <translation><!-- Builder&apos;s standpipe not to specification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COST</masterLabel>
+        <translation><!-- COST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CROSS case</masterLabel>
+        <translation><!-- CROSS case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Can visit without Retailer Involvement</masterLabel>
+        <translation><!-- Can visit without Retailer Involvement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chamber constructed in the wrong place</masterLabel>
+        <translation><!-- Chamber constructed in the wrong place --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chamber(s) not constructed</masterLabel>
+        <translation><!-- Chamber(s) not constructed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channels incorrect on foul connection</masterLabel>
+        <translation><!-- Channels incorrect on foul connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical Spillage</masterLabel>
+        <translation><!-- Chemical Spillage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conn. incorrect/Not to Approval Letter</masterLabel>
+        <translation><!-- Conn. incorrect/Not to Approval Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consent is given to contact customer</masterLabel>
+        <translation><!-- Consent is given to contact customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consent is not given to contact customer</masterLabel>
+        <translation><!-- Consent is not given to contact customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover and Slab Brick work incorrect</masterLabel>
+        <translation><!-- Cover and Slab Brick work incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer aware of service request</masterLabel>
+        <translation><!-- Customer aware of service request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer can be contacted via tel/email</masterLabel>
+        <translation><!-- Customer can be contacted via tel/email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer connected to wrong sewer</masterLabel>
+        <translation><!-- Customer connected to wrong sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer contact NOT reqd for site visit</masterLabel>
+        <translation><!-- Customer contact NOT reqd for site visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer contact required for site visit</masterLabel>
+        <translation><!-- Customer contact required for site visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer contact- any time of the day</masterLabel>
+        <translation><!-- Customer contact- any time of the day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer contact- first half of the day</masterLabel>
+        <translation><!-- Customer contact- first half of the day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer contact- second half of the day</masterLabel>
+        <translation><!-- Customer contact- second half of the day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer is not aware of service request</masterLabel>
+        <translation><!-- Customer is not aware of service request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer preferred contact method email</masterLabel>
+        <translation><!-- Customer preferred contact method email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer preferred contact method teleph</masterLabel>
+        <translation><!-- Customer preferred contact method teleph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DG6 case</masterLabel>
+        <translation><!-- DG6 case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DG8 case</masterLabel>
+        <translation><!-- DG8 case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developer not ready</masterLabel>
+        <translation><!-- Developer not ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discharge Consent Issue</masterLabel>
+        <translation><!-- Discharge Consent Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discharge chamb. not 5m from Conn. Point</masterLabel>
+        <translation><!-- Discharge chamb. not 5m from Conn. Point --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discharge on Site</masterLabel>
+        <translation><!-- Discharge on Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discolouration</masterLabel>
+        <translation><!-- Discolouration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Effluent Deteriation</masterLabel>
+        <translation><!-- Effluent Deteriation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical Failure</masterLabel>
+        <translation><!-- Electrical Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End Value</masterLabel>
+        <translation><!-- End Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental</masterLabel>
+        <translation><!-- Environmental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equip Not Safe to Operate</masterLabel>
+        <translation><!-- Equip Not Safe to Operate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equip Safe to Operate</masterLabel>
+        <translation><!-- Equip Safe to Operate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equip Safe to Operate for 30 days</masterLabel>
+        <translation><!-- Equip Safe to Operate for 30 days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equip Safe to Operate for 60 days</masterLabel>
+        <translation><!-- Equip Safe to Operate for 60 days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equip Safe to Operate for 90 days</masterLabel>
+        <translation><!-- Equip Safe to Operate for 90 days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Damage</masterLabel>
+        <translation><!-- Equipment Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Faulty</masterLabel>
+        <translation><!-- Equipment Faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment In Hand</masterLabel>
+        <translation><!-- Equipment In Hand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excessive debris in trench</masterLabel>
+        <translation><!-- Excessive debris in trench --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First appointment of the day</masterLabel>
+        <translation><!-- First appointment of the day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow control device in Demarc. Chamber</masterLabel>
+        <translation><!-- Flow control device in Demarc. Chamber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow control device not fitted on site</masterLabel>
+        <translation><!-- Flow control device not fitted on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health &amp; Safety</masterLabel>
+        <translation><!-- Health &amp; Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health &amp; Safety Impact</masterLabel>
+        <translation><!-- Health &amp; Safety Impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illegal Discharge</masterLabel>
+        <translation><!-- Illegal Discharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incomplete - property not constructed</masterLabel>
+        <translation><!-- Incomplete - property not constructed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect bed and surround</masterLabel>
+        <translation><!-- Incorrect bed and surround --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect cover size</masterLabel>
+        <translation><!-- Incorrect cover size --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect fall</masterLabel>
+        <translation><!-- Incorrect fall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect flow control device fitted</masterLabel>
+        <translation><!-- Incorrect flow control device fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect inspection chamber constructed</masterLabel>
+        <translation><!-- Incorrect inspection chamber constructed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect material for service pipe</masterLabel>
+        <translation><!-- Incorrect material for service pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect size sewer pipepwork/material</masterLabel>
+        <translation><!-- Incorrect size sewer pipepwork/material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect type of bricks used</masterLabel>
+        <translation><!-- Incorrect type of bricks used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect type of cover fitted</masterLabel>
+        <translation><!-- Incorrect type of cover fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrectly sized service pipe</masterLabel>
+        <translation><!-- Incorrectly sized service pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infill cover fitted on demarc. chamber</masterLabel>
+        <translation><!-- Infill cover fitted on demarc. chamber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingress of water</masterLabel>
+        <translation><!-- Ingress of water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingress of water flowing down channel</masterLabel>
+        <translation><!-- Ingress of water flowing down channel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Initiated by Arbitration Tribunal or TDC</masterLabel>
+        <translation><!-- Initiated by Arbitration Tribunal or TDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue was not with a pipe</masterLabel>
+        <translation><!-- Issue was not with a pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ladder not fitted</masterLabel>
+        <translation><!-- Ladder not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Entry letter not received by STW</masterLabel>
+        <translation><!-- Land Entry letter not received by STW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landing stage in chamber wrong size</masterLabel>
+        <translation><!-- Landing stage in chamber wrong size --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leakage - 2 hour response required</masterLabel>
+        <translation><!-- Leakage - 2 hour response required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaking</masterLabel>
+        <translation><!-- Leaking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lifting eyes not pointed</masterLabel>
+        <translation><!-- Lifting eyes not pointed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss Of Dosing Capacity</masterLabel>
+        <translation><!-- Loss Of Dosing Capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of Capacity / Functionality</masterLabel>
+        <translation><!-- Loss of Capacity / Functionality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low pressure investigation scheme</masterLabel>
+        <translation><!-- Low pressure investigation scheme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main not laid</masterLabel>
+        <translation><!-- Main not laid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main not live</masterLabel>
+        <translation><!-- Main not live --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main not pieced through</masterLabel>
+        <translation><!-- Main not pieced through --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Intervention Implication</masterLabel>
+        <translation><!-- Manual Intervention Implication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanical Failure</masterLabel>
+        <translation><!-- Mechanical Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanical cap end not fitted</masterLabel>
+        <translation><!-- Mechanical cap end not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter not fitted</masterLabel>
+        <translation><!-- Meter not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morning appointment</masterLabel>
+        <translation><!-- Morning appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple</masterLabel>
+        <translation><!-- Multiple --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Must visit with Retailer Involvement</masterLabel>
+        <translation><!-- Must visit with Retailer Involvement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Asset Found</masterLabel>
+        <translation><!-- No Asset Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Impact</masterLabel>
+        <translation><!-- No Impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Impact to Process</masterLabel>
+        <translation><!-- No Impact to Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Impact to Quality</masterLabel>
+        <translation><!-- No Impact to Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Inspection - Further Advice Requested</masterLabel>
+        <translation><!-- No Inspection - Further Advice Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Standby</masterLabel>
+        <translation><!-- No Standby --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No duct at POE</masterLabel>
+        <translation><!-- No duct at POE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No evidence of pipe depth</masterLabel>
+        <translation><!-- No evidence of pipe depth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No inspection -further advice requested</masterLabel>
+        <translation><!-- No inspection -further advice requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise</masterLabel>
+        <translation><!-- Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non return valve not fitted</masterLabel>
+        <translation><!-- Non return valve not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not bedded correctly</masterLabel>
+        <translation><!-- Not bedded correctly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not on site for inspection</masterLabel>
+        <translation><!-- Not on site for inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not ready for inspection</masterLabel>
+        <translation><!-- Not ready for inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Odour / Taste</masterLabel>
+        <translation><!-- Odour / Taste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opening in wrong position on slab</masterLabel>
+        <translation><!-- Opening in wrong position on slab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCV Exceedence</masterLabel>
+        <translation><!-- PCV Exceedence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Part inspection done</masterLabel>
+        <translation><!-- Part inspection done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penstock not fitted</masterLabel>
+        <translation><!-- Penstock not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe at incorrect boundry position</masterLabel>
+        <translation><!-- Pipe at incorrect boundry position --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe short of boundary</masterLabel>
+        <translation><!-- Pipe short of boundary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe too shallow or not as agreed</masterLabel>
+        <translation><!-- Pipe too shallow or not as agreed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe was NOT free flowing on arrival</masterLabel>
+        <translation><!-- Pipe was NOT free flowing on arrival --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe was free flowing on arrival</masterLabel>
+        <translation><!-- Pipe was free flowing on arrival --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant In Hand</masterLabel>
+        <translation><!-- Plant In Hand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Issue</masterLabel>
+        <translation><!-- Process Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Impact</masterLabel>
+        <translation><!-- Quality Impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retailer initiated, contact Customer</masterLabel>
+        <translation><!-- Retailer initiated, contact Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retailer initiated, contact Retailer</masterLabel>
+        <translation><!-- Retailer initiated, contact Retailer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rockers not fitted</masterLabel>
+        <translation><!-- Rockers not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Routine</masterLabel>
+        <translation><!-- Routine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security Issue</masterLabel>
+        <translation><!-- Security Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seized</masterLabel>
+        <translation><!-- Seized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer shallow</masterLabel>
+        <translation><!-- Sewer shallow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Problem</masterLabel>
+        <translation><!-- Site Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Shutdown</masterLabel>
+        <translation><!-- Site Shutdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site locked or no access</masterLabel>
+        <translation><!-- Site locked or no access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specific appointment - 2 hour time slot</masterLabel>
+        <translation><!-- Specific appointment - 2 hour time slot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Value</masterLabel>
+        <translation><!-- Start Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Step irons not fitted</masterLabel>
+        <translation><!-- Step irons not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Still under construction</masterLabel>
+        <translation><!-- Still under construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street furniture in way</masterLabel>
+        <translation><!-- Street furniture in way --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply pipe not insulated at POE</masterLabel>
+        <translation><!-- Supply pipe not insulated at POE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top step more than 675mm from cover top</masterLabel>
+        <translation><!-- Top step more than 675mm from cover top --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Inspect - Access</masterLabel>
+        <translation><!-- Unable to Inspect - Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Inspect - H&amp;S</masterLabel>
+        <translation><!-- Unable to Inspect - H&amp;S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Inspect - Land Entry</masterLabel>
+        <translation><!-- Unable to Inspect - Land Entry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Inspect - Obstruction</masterLabel>
+        <translation><!-- Unable to Inspect - Obstruction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Inspect - pipe not laid</masterLabel>
+        <translation><!-- Unable to Inspect - pipe not laid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Inspect - scaffolding on site</masterLabel>
+        <translation><!-- Unable to Inspect - scaffolding on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valves not fitted</masterLabel>
+        <translation><!-- Valves not fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Quality Issues</masterLabel>
+        <translation><!-- Water Quality Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watercourse Issue</masterLabel>
+        <translation><!-- Watercourse Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesaler initiated</masterLabel>
+        <translation><!-- Wholesaler initiated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong sized duct at POE</masterLabel>
+        <translation><!-- Wrong sized duct at POE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

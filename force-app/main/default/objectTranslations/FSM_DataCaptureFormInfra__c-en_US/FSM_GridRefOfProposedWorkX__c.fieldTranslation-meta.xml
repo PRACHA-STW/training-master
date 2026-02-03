@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please input the Grid reference of where the works will take place, this can be located using GISST. This grid reference is where the works are taking place and could result in fines from the council if not inputted correctly. --></help>
+    <label><!-- Grid Ref of proposed work (x) --></label>
+    <name>FSM_GridRefOfProposedWorkX__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BriefcaseDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <briefcaseRules>
+        <briefcaseRuleFilters>
+            <filterOperator>e</filterOperator>
+            <filterSeqNumber>1</filterSeqNumber>
+            <filterValue>true</filterValue>
+            <targetEntityField>IsActive</targetEntityField>
+        </briefcaseRuleFilters>
+        <briefcaseRuleFilters>
+            <filterOperator>e</filterOperator>
+            <filterSeqNumber>2</filterSeqNumber>
+            <filterValue>Developer Services</filterValue>
+            <targetEntityField>FSM_BusinessUnit__c</targetEntityField>
+        </briefcaseRuleFilters>
+        <briefcaseRuleFilters>
+            <filterOperator>e</filterOperator>
+            <filterSeqNumber>3</filterSeqNumber>
+            <filterValue>Waste Infra</filterValue>
+            <targetEntityField>FSM_BusinessUnit__c</targetEntityField>
+        </briefcaseRuleFilters>
+        <briefcaseRuleFilters>
+            <filterOperator>e</filterOperator>
+            <filterSeqNumber>4</filterSeqNumber>
+            <filterValue>Water Infra</filterValue>
+            <targetEntityField>FSM_BusinessUnit__c</targetEntityField>
+        </briefcaseRuleFilters>
+        <filterLogic>1 AND (2 OR 3 OR 4)</filterLogic>
+        <isAscendingOrder>false</isAscendingOrder>
+        <orderBy>SystemModstamp</orderBy>
+        <queryScope>Everything</queryScope>
+        <recordLimit>5000</recordLimit>
+        <targetEntity>ServiceResource</targetEntity>
+    </briefcaseRules>
+    <description>Created as part of SFL-886</description>
+    <isActive>false</isActive>
+    <masterLabel>Infra 2</masterLabel>
+</BriefcaseDefinition>

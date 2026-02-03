@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Weather Conditions --></label>
+    <name>FSM_WeatherConditions__c</name>
+    <picklistValues>
+        <masterLabel>Drizzle</masterLabel>
+        <translation><!-- Drizzle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dry</masterLabel>
+        <translation><!-- Dry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hail</masterLabel>
+        <translation><!-- Hail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rain</masterLabel>
+        <translation><!-- Rain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snow</masterLabel>
+        <translation><!-- Snow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storm</masterLabel>
+        <translation><!-- Storm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sunny</masterLabel>
+        <translation><!-- Sunny --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

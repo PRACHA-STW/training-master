@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_DoNotAllowScheduleIfCustAppointmnet</fullName>
+    <active>true</active>
+    <description>SFI-1783, If the record created as temporary record then don&apos;t schedule it</description>
+    <errorConditionFormula>AND(FSM_IsTemporaryRecord__c, ISPICKVAL( Status,&apos;Scheduled&apos;))</errorConditionFormula>
+    <errorMessage>This appointment is related to a customer appointment booking and can&apos;t be scheduled.</errorMessage>
+</ValidationRule>

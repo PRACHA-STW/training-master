@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ReasonCategory__c</fullName>
+    <label>Reason Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Availability</fullName>
+                <default>false</default>
+                <label>Availability</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>H&amp;S</fullName>
+                <default>false</default>
+                <label>H&amp;S</label>
+            </value>
+            <value>
+                <fullName>Plant/Equipment/Vehicle</fullName>
+                <default>false</default>
+                <label>Plant/Equipment/Vehicle</label>
+            </value>
+            <value>
+                <fullName>Preparation</fullName>
+                <default>false</default>
+                <label>Preparation</label>
+            </value>
+            <value>
+                <fullName>Asset Data</fullName>
+                <default>false</default>
+                <label>Asset Data</label>
+            </value>
+            <value>
+                <fullName>Asset Care</fullName>
+                <default>false</default>
+                <label>Asset Care</label>
+            </value>
+            <value>
+                <fullName>AUTO</fullName>
+                <default>false</default>
+                <label>AUTO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

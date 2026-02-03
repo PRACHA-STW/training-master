@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CustomerAtRiskOfDissatisfaction__c</fullName>
+    <description>Created as Part of SFS-5307,</description>
+    <externalId>false</externalId>
+    <formula>IF(
+	AND(
+		FSSK__FSK_Work_Order__r.Case.FSM_MissedAppointment__c,
+		FSSK__FSK_Work_Order__r.Case.FSM_CaseManaged__c,
+		FSSK__FSK_Work_Order__r.Case.FSM_MultipleAttemptedVisits__c
+	),
+		&quot;⚠️ Missed Appointment, Job flagged by operative, Multiple Attempted Visits&quot;,
+	IF(
+		AND(
+		FSSK__FSK_Work_Order__r.Case.FSM_CaseManaged__c,
+		FSSK__FSK_Work_Order__r.Case.FSM_MultipleAttemptedVisits__c
+		),
+			&quot;⚠️ Multiple Attempted Visits, Job flagged by operative&quot;,
+	IF(
+		AND(
+		FSSK__FSK_Work_Order__r.Case.FSM_MissedAppointment__c,
+		FSSK__FSK_Work_Order__r.Case.FSM_CaseManaged__c
+		),&quot;⚠️ Missed Appointment, Job flagged by operative&quot;,
+	IF(
+		AND(
+		FSSK__FSK_Work_Order__r.Case.FSM_MissedAppointment__c,
+		FSSK__FSK_Work_Order__r.Case.FSM_MultipleAttemptedVisits__c
+		),&quot;⚠️ Missed Appointment, Multiple attempted visits&quot;,
+	IF(
+		FSSK__FSK_Work_Order__r.Case.FSM_MissedAppointment__c,
+		&quot;⚠️ Missed Appointment&quot;,
+		IF(
+		FSSK__FSK_Work_Order__r.Case.FSM_CaseManaged__c,
+		&quot;⚠️ Job flagged by operative&quot;,
+		IF(
+		FSSK__FSK_Work_Order__r.Case.FSM_MultipleAttemptedVisits__c,
+		&quot;⚠️ Multiple Attempted Visits&quot;,
+		&quot;&quot;
+		)
+		)
+		)
+		)
+		)
+    )
+        )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer At Risk of Dissatisfaction</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

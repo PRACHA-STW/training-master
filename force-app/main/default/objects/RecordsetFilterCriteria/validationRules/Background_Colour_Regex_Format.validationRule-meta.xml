@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Background_Colour_Regex_Format</fullName>
+    <active>true</active>
+    <description>Only allows REGEX 7 character format for Background Colour Field</description>
+    <errorConditionFormula>AND(REGEX(Description, &quot;#[A-F0-9]{6}&quot;)  = False,FilteredObject = &quot;Shift&quot;)</errorConditionFormula>
+    <errorMessage>This is not a valid colour</errorMessage>
+</ValidationRule>

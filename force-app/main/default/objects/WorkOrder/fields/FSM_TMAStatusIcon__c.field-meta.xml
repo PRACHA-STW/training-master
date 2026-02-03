@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TMAStatusIcon__c</fullName>
+    <description>Created as part of the SFS-6686 to showcase the icon to the user on mobile
+Updated as part of SFS-8423
+Updated as part of SFL-1204</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(FSM_TMAPermit__r.FSM_NoticeType__c,&quot;05&quot;) || ISPICKVAL(FSM_TMAPermit__r.FSM_NoticeType__c,&quot;04&quot;),&quot;Check TMA in details&quot; ,
+IF(
+   ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;CANC&quot;)
+   || 
+   ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;COMP&quot;)
+   || 
+   ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PREV&quot;)
+   ||
+   ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PHCO&quot;)
+   ||
+   ISPICKVAL(FSM_TMAPermit__r.FSM_Type__c, &quot;REV&quot;),
+   &quot;🔴 TMA Stopped&quot;,
+
+   IF(
+      ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;WIP&quot;)
+	  ||
+	  ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PRRE&quot;)
+	  ||
+	  ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;IREI&quot;)
+	  ||
+	  ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PREI&quot;),
+      &quot;🟢 TMA Started&quot;,
+
+      IF(
+         ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PLND&quot;)
+         || 
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;CRTD&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;FPI&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;API&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;RPA&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PADP&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PAA&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;RP&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PVAR&quot;)
+		 ||
+		 ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PRF&quot;)
+		 ||
+         ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PDP&quot;)
+         ||
+         ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PA&quot;),
+         &quot;🟡 TMA Not Started&quot;,
+         &quot;&quot;
+      )  )
+   )
+)</formula>
+    <label>TMA Status Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

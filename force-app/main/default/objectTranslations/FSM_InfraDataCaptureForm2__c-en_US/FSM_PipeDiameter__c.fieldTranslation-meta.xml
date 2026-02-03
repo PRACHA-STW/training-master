@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select one --></help>
+    <label><!-- Pipe Diameter --></label>
+    <name>FSM_PipeDiameter__c</name>
+    <picklistValues>
+        <masterLabel>100mm</masterLabel>
+        <translation><!-- 100mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>125mm</masterLabel>
+        <translation><!-- 125mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>150mm</masterLabel>
+        <translation><!-- 150mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>225mm</masterLabel>
+        <translation><!-- 225mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>300mm</masterLabel>
+        <translation><!-- 300mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>375mm</masterLabel>
+        <translation><!-- 375mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>450mm</masterLabel>
+        <translation><!-- 450mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50mm</masterLabel>
+        <translation><!-- 50mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>525mm</masterLabel>
+        <translation><!-- 525mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>600mm</masterLabel>
+        <translation><!-- 600mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>750mm</masterLabel>
+        <translation><!-- 750mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>75mm</masterLabel>
+        <translation><!-- 75mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>825mm</masterLabel>
+        <translation><!-- 825mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>900mm</masterLabel>
+        <translation><!-- 900mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation><!-- Not Applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Please Specify)</masterLabel>
+        <translation><!-- Other (Please Specify) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

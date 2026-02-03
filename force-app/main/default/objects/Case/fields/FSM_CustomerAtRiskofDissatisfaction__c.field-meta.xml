@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CustomerAtRiskofDissatisfaction__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is set to true when certain criteria are met for WOs under the case
+
+Updated as a part of SFS-5426</description>
+    <label>Customer At Risk of Dissatisfaction</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

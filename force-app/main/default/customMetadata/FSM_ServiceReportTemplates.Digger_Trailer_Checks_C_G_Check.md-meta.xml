@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Digger/Trailer Checks/C&amp;G Check</label>
+    <protected>false</protected>
+    <values>
+        <field>FSM_TemplateId__c</field>
+        <value xsi:type="xsd:string">0SLPz00000000hZOAQ</value>
+    </values>
+    <values>
+        <field>FSM_TemplateName__c</field>
+        <value xsi:type="xsd:string">Digger/Trailer Checks/C&amp;G Check</value>
+    </values>
+</CustomMetadata>

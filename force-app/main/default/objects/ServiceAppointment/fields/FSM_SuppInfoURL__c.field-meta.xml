@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SuppInfoURL__c</fullName>
+    <label>Supporting Information</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/apply-for-a-meter</fullName>
+                <default>false</default>
+                <label>Apply for a Meter (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/approved-plumbers</fullName>
+                <default>false</default>
+                <label>Approved Plumbers (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/assessed-bill</fullName>
+                <default>false</default>
+                <label>Assessed bill</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/building-development</fullName>
+                <default>false</default>
+                <label>Building and Development (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/pressure-policy</fullName>
+                <default>false</default>
+                <label>Customer Guide to Our Pressure Policy</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/flushing-advice</fullName>
+                <default>false</default>
+                <label>Flushing Advice</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/help-paying</fullName>
+                <default>false</default>
+                <label>Help Paying your Bill (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/helpwhenyouneedit</fullName>
+                <default>false</default>
+                <label>Help when you need it</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/hydrantmisuse</fullName>
+                <default>false</default>
+                <label>Hydrant Misuses</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/lead-replacement</fullName>
+                <default>false</default>
+                <label>Lead Replacement Scheme (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/lead-flushing-visit</fullName>
+                <default>false</default>
+                <label>Lead flushing advice following inspector visit</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/lead-flushing-repair</fullName>
+                <default>false</default>
+                <label>Lead flushing advice following repair visit</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/metered-bill</fullName>
+                <default>false</default>
+                <label>Measured bill</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/new-connections</fullName>
+                <default>false</default>
+                <label>New Connections (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/priorityservice</fullName>
+                <default>false</default>
+                <label>Priority Service (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/rats-guidance</fullName>
+                <default>false</default>
+                <label>Rats guidance</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/appointment-check-list</fullName>
+                <default>false</default>
+                <label>Severn Trent - Customer Appointment Checklist</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/drainage-charges</fullName>
+                <default>false</default>
+                <label>Severn Trent - Surface Water &amp; Highway Drainage</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/surface-water-drainage-test</fullName>
+                <default>false</default>
+                <label>Severn Trent - Surface water drainage pouring test</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/checking-for-leaks</fullName>
+                <default>false</default>
+                <label>Severn Trent - How complete a Flow / Toilet Paper Test</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/internal-stop-tap</fullName>
+                <default>false</default>
+                <label>Severn Trent - How to find and operate your internal stop tap​</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/sewer-flooding</fullName>
+                <default>false</default>
+                <label>Sewer Flooding Guide</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/sewer-pipes</fullName>
+                <default>false</default>
+                <label>Sewer Pipe Responsibility (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/water-pipes</fullName>
+                <default>false</default>
+                <label>Water Pipe Responsibility (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/water-quality</fullName>
+                <default>false</default>
+                <label>Water Quality Advice</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/water-saving-tips</fullName>
+                <default>false</default>
+                <label>Water Saving Tips (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/approved-plumbers</fullName>
+                <default>false</default>
+                <label>Approved Plumbers</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/building-development</fullName>
+                <default>false</default>
+                <label>Building and Development</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/help-to-pay</fullName>
+                <default>false</default>
+                <label>Help Paying your Bill</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/lead-replacement</fullName>
+                <default>false</default>
+                <label>Lead Replacement Scheme</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/new-connections</fullName>
+                <default>false</default>
+                <label>New Connections</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/priorityservice</fullName>
+                <default>false</default>
+                <label>Priority Service</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/sewer-pipes</fullName>
+                <default>false</default>
+                <label>Sewer Pipe Responsibility</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/water-pipes</fullName>
+                <default>false</default>
+                <label>Water Pipe Responsibility</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/water-saving</fullName>
+                <default>false</default>
+                <label>Water Saving Tips</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/help-when-you-need-it</fullName>
+                <default>false</default>
+                <label>Help when you need it (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.hdcymru.co.uk/hydrant-misuses</fullName>
+                <default>false</default>
+                <label>Hydrant Misuses (HD)</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/unmetered-bill</fullName>
+                <default>false</default>
+                <label>Unmeasured bill</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/apply-meter</fullName>
+                <default>false</default>
+                <label>Apply for a Meter</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/payment-plans</fullName>
+                <default>false</default>
+                <label>Payment plans</label>
+            </value>
+            <value>
+                <fullName>https://www.stwater.co.uk/about-your-meter</fullName>
+                <default>false</default>
+                <label>About your meter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

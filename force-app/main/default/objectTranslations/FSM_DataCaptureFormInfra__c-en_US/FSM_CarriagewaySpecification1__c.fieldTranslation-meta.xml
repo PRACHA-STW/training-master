@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carriageway Specification 1 --></label>
+    <name>FSM_CarriagewaySpecification1__c</name>
+    <picklistValues>
+        <masterLabel>2 way control</masterLabel>
+        <translation><!-- 2 way control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 way control</masterLabel>
+        <translation><!-- 3 way control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 way control</masterLabel>
+        <translation><!-- 4 way control --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

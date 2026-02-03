@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SWR_Dependant_Picklist</fullName>
+    <columns>NAME</columns>
+    <columns>FSM_SWRAsset__c</columns>
+    <columns>FSM_SWRTask__c</columns>
+    <columns>FSM_SWRJobRecipient__c</columns>
+    <columns>FSM_SWRJobScope__c</columns>
+    <columns>FSM_SWRTransferredAsset__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_SWRAsset__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>SWR Dependant Picklist</label>
+</ListView>

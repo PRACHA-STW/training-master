@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_WorkOrders</fullName>
+    <columns>FSM_SAPOrderOperationNumber__c</columns>
+    <columns>Name</columns>
+    <columns>CreatedDate</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>Status</columns>
+    <columns>CreatedBy</columns>
+    <columns>FSM_ServiceOrderType__c</columns>
+    <columns>StartDate</columns>
+    <columns>WorkType</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>FSM_AssignedResExtID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_ExternalId__c</field>
+        <operation>contains</operation>
+        <value>96424433</value>
+    </filters>
+    <label>All Work Orders</label>
+    <sharedTo>
+        <group>FSM_BusinessAdminGroup</group>
+        <group>FSM_DeveloperServices</group>
+        <group>FSM_Metering</group>
+        <group>FSM_SystemAdminPublicGroup</group>
+        <group>FSM_WasteInfra</group>
+        <group>FSM_WasteNonInfra</group>
+        <group>FSM_WaterInfra</group>
+        <group>FSM_WaterNonInfra</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Debris/silt --></label>
+    <name>FSM_CSODebris__c</name>
+    <picklistValues>
+        <masterLabel>No silt/Debris</masterLabel>
+        <translation><!-- No silt/Debris --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes Silt/Debris - No FOW needed</masterLabel>
+        <translation><!-- Yes Silt/Debris - No FOW needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes silt/Debris - FOW needed</masterLabel>
+        <translation><!-- Yes silt/Debris - FOW needed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

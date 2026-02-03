@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Chemical Supplier --></label>
+    <name>FSM_ChemicalSupplier__c</name>
+    <picklistValues>
+        <masterLabel>Airedale</masterLabel>
+        <translation><!-- Airedale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemifloc</masterLabel>
+        <translation><!-- Chemifloc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feralco</masterLabel>
+        <translation><!-- Feralco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Chemicals Ltd.</masterLabel>
+        <translation><!-- Industrial Chemicals Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ineos Enterprises</masterLabel>
+        <translation><!-- Ineos Enterprises --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kemira</masterLabel>
+        <translation><!-- Kemira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lhoist</masterLabel>
+        <translation><!-- Lhoist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OMEX</masterLabel>
+        <translation><!-- OMEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packed  Chlorine Ltd</masterLabel>
+        <translation><!-- Packed  Chlorine Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SNF</masterLabel>
+        <translation><!-- SNF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servo Solutions</masterLabel>
+        <translation><!-- Servo Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Singleton Birch</masterLabel>
+        <translation><!-- Singleton Birch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solenis</masterLabel>
+        <translation><!-- Solenis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tennants</masterLabel>
+        <translation><!-- Tennants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veolia</masterLabel>
+        <translation><!-- Veolia --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

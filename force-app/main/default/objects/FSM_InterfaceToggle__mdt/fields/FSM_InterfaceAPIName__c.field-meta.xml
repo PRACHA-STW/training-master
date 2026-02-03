@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_InterfaceAPIName__c</fullName>
+    <description>SFI-266 (to check whether Interface API Name matches for toggle on/off)</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Interface API Name</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

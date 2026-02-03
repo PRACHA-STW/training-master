@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFS-6608</description>
+    <flowDefinition>FSM_CSO_Golden_Measures_Inspection_Template</flowDefinition>
+    <label>CSO Golden Measures Inspection Template</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

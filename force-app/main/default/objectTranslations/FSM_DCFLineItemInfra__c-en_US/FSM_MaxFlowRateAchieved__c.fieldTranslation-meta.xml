@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Maximum flow rate achieved --></label>
+    <name>FSM_MaxFlowRateAchieved__c</name>
+    <picklistValues>
+        <masterLabel>1lps</masterLabel>
+        <translation><!-- 1lps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2lps</masterLabel>
+        <translation><!-- 2lps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3lps</masterLabel>
+        <translation><!-- 3lps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4lps</masterLabel>
+        <translation><!-- 4lps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5lps</masterLabel>
+        <translation><!-- 5lps --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

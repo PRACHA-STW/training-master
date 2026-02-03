@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GSS Payable? Reason: --></label>
+    <name>FSM_GSSPayable__c</name>
+    <picklistValues>
+        <masterLabel>Appointments</masterLabel>
+        <translation><!-- Appointments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boiled Water</masterLabel>
+        <translation><!-- Boiled Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DG2 Pressure</masterLabel>
+        <translation><!-- DG2 Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Interruptions</masterLabel>
+        <translation><!-- Emergency Interruptions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Restrictions</masterLabel>
+        <translation><!-- Emergency Restrictions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Causes</masterLabel>
+        <translation><!-- Multiple Causes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over Runs</masterLabel>
+        <translation><!-- Over Runs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warnings</masterLabel>
+        <translation><!-- Warnings --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

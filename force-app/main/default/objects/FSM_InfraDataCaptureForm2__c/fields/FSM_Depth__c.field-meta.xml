@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Depth__c</fullName>
+    <description>Created as part of SFS-4810</description>
+    <label>Depth</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt; 150mm</fullName>
+                <default>false</default>
+                <label>&lt; 150mm</label>
+            </value>
+            <value>
+                <fullName>150 – 600mm</fullName>
+                <default>false</default>
+                <label>150 – 600mm</label>
+            </value>
+            <value>
+                <fullName>&gt; 600mm</fullName>
+                <default>false</default>
+                <label>&gt; 600mm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

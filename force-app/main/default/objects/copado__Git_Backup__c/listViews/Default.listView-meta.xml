@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default</fullName>
+    <columns>NAME</columns>
+    <columns>copado__Org__c</columns>
+    <columns>copado__Branch__c</columns>
+    <columns>copado__Frequency__c</columns>
+    <columns>copado__Git_Repository__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>copado__Git_Snapshot_Permissions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>default</value>
+    </filters>
+    <label>Default</label>
+</ListView>

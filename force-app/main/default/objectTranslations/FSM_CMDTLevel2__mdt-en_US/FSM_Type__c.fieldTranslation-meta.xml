@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>FSM_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code Group</masterLabel>
+        <translation><!-- Code Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Details</masterLabel>
+        <translation><!-- Meter Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Hold</masterLabel>
+        <translation><!-- On Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejection</masterLabel>
+        <translation><!-- Rejection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspension</masterLabel>
+        <translation><!-- Suspension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMA Condition</masterLabel>
+        <translation><!-- TMA Condition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

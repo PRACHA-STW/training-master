@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AbsenseTypeCheckForVirtualMetering</fullName>
+    <active>true</active>
+    <description>Stops the virtual metering users from creating an absence record with types other than AdminDownTime or AdditionalWork
+created as part of SFS-6891</description>
+    <errorConditionFormula>AND($Permission.FSM_ManageResourceAbsenseVMetering,ISPICKVAL(Resource.FSM_BusinessUnit__c, &apos;Metering&apos;) , NOT( OR(ISPICKVAL( Type , &quot;AdminDownTime&quot;),ISPICKVAL( Type , &quot;AdditionalWork&quot;),ISPICKVAL( Type , &quot;Break&quot;))))</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Only Select Admin Down Time or Additional Work are allowed.</errorMessage>
+</ValidationRule>

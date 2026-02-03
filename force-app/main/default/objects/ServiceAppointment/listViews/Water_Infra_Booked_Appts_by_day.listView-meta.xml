@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Water_Infra_Booked_Appts_by_day</fullName>
+    <columns>CreatedDate</columns>
+    <columns>FSM_SAPOrderOperationNumber__c</columns>
+    <columns>Name</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>Status</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>ArrivalWindowEndTime</columns>
+    <columns>DurationInMinutes</columns>
+    <columns>FSM_ServiceOrderType__c</columns>
+    <columns>WorkType</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>FSSK__FSK_Assigned_Service_Resource__c</columns>
+    <columns>STREET</columns>
+    <columns>ZIP</columns>
+    <columns>FSM_CustomerAppointment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Scheduled</value>
+    </filters>
+    <filters>
+        <field>FSM_CustomerAppointment__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CreatedDate</field>
+        <operation>greaterOrEqual</operation>
+        <value>3/25/2025 12:00 AM</value>
+    </filters>
+    <label>Water Infra1 - Booked Appts by day</label>
+    <sharedTo>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

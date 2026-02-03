@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Location__c</fullName>
+    <inlineHelpText>This Information is visible to Highways Authority on the notice and must contain the correct address information -  If the job is on the public highway AND private land then select &apos;public highway&apos; in the dropdown menu above and complete the permission to dig details below</inlineHelpText>
+    <label>Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Find and Fix location</fullName>
+                <default>false</default>
+                <label>Find and Fix location</label>
+            </value>
+            <value>
+                <fullName>Private Land</fullName>
+                <default>false</default>
+                <label>Private Land</label>
+            </value>
+            <value>
+                <fullName>Public Highway</fullName>
+                <default>false</default>
+                <label>Public Highway</label>
+            </value>
+            <value>
+                <fullName>Restricted Land</fullName>
+                <default>false</default>
+                <label>Restricted Land</label>
+            </value>
+            <value>
+                <fullName>Boards and Barriers Replenishment</fullName>
+                <default>false</default>
+                <label>Boards and barriers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

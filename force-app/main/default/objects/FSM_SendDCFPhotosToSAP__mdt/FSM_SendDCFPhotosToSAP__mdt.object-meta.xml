@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>sfi-1809</description>
+    <label>Send DCF Photos To SAP</label>
+    <pluralLabel>Send DCF Photos To SAPs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

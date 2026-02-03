@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>01</fullName>
+        <default>false</default>
+        <label>Major</label>
+    </customValue>
+    <customValue>
+        <fullName>03</fullName>
+        <default>false</default>
+        <label>Minor</label>
+    </customValue>
+    <customValue>
+        <fullName>02</fullName>
+        <default>false</default>
+        <label>Standard</label>
+    </customValue>
+    <customValue>
+        <fullName>05</fullName>
+        <default>false</default>
+        <label>Immediate - Emergency</label>
+    </customValue>
+    <customValue>
+        <fullName>04</fullName>
+        <default>false</default>
+        <label>Immediate - Urgent</label>
+    </customValue>
+    <customValue>
+        <fullName>00</fullName>
+        <default>false</default>
+        <label>No Notice Required</label>
+    </customValue>
+    <customValue>
+        <fullName>Immediate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Immediate</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency -TBU</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Emergency -TBU</label>
+    </customValue>
+    <masterLabel>Works_Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

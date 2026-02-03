@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_EscapeDuration__c</fullName>
+    <description>Created as part of SFS-4790</description>
+    <label>Duration of escape (hrs)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;1</fullName>
+                <default>false</default>
+                <label>&lt;1</label>
+            </value>
+            <value>
+                <fullName>&gt;=1, &lt;4</fullName>
+                <default>false</default>
+                <label>&gt;=1, &lt;4</label>
+            </value>
+            <value>
+                <fullName>&gt;=4, &lt;8</fullName>
+                <default>false</default>
+                <label>&gt;=4, &lt;8</label>
+            </value>
+            <value>
+                <fullName>&gt;=8, &lt;12</fullName>
+                <default>false</default>
+                <label>&gt;=8, &lt;12</label>
+            </value>
+            <value>
+                <fullName>&gt;=12, &lt;24</fullName>
+                <default>false</default>
+                <label>&gt;=12, &lt;24</label>
+            </value>
+            <value>
+                <fullName>&gt;=24</fullName>
+                <default>false</default>
+                <label>&gt;=24</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

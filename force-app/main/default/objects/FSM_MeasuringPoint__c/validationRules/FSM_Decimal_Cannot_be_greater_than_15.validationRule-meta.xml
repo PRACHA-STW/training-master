@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Decimal_Cannot_be_greater_than_15</fullName>
+    <active>true</active>
+    <description>SFS-5421</description>
+    <errorConditionFormula>FSM_Decimals__c  &gt; 15</errorConditionFormula>
+    <errorDisplayField>FSM_Decimals__c</errorDisplayField>
+    <errorMessage>The maximum supported number of decimals is 15</errorMessage>
+</ValidationRule>

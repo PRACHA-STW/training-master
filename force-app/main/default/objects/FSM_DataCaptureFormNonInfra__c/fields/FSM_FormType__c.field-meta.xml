@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_FormType__c</fullName>
+    <description>Created as a part of SFS-3033</description>
+    <label>Form Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SPS Complex</fullName>
+                <default>false</default>
+                <label>SPS Complex</label>
+            </value>
+            <value>
+                <fullName>Working Set Pre Use Inspection</fullName>
+                <default>false</default>
+                <label>Working Set Pre Use Inspection</label>
+            </value>
+            <value>
+                <fullName>Clean Water Chemical Acceptance</fullName>
+                <default>false</default>
+                <label>Clean Water Chemical Acceptance</label>
+            </value>
+            <value>
+                <fullName>Waste Water &amp; Bio Chemical Acceptance</fullName>
+                <default>false</default>
+                <label>Waste Water &amp; Bio Chemical Acceptance</label>
+            </value>
+            <value>
+                <fullName>Confined Spaces Pre Entry Checklist</fullName>
+                <default>false</default>
+                <label>Confined Spaces Pre Entry Checklist</label>
+            </value>
+            <value>
+                <fullName>Non-infra Raise new or follow on work</fullName>
+                <default>false</default>
+                <label>Non-infra Raise new or follow on work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Light traffic flow = residential road less than 20 vehicles over 3 min and 20 HGV&apos;s per hour. Moderate traffic flow = 42 vehicles over 3 min for example a local high street. Heavy traffic flow is above 42 vehicles for example a busy A road --></help>
+    <label><!-- Traffic Flow --></label>
+    <name>FSM_TrafficFlow__c</name>
+    <picklistValues>
+        <masterLabel>Heavy</masterLabel>
+        <translation><!-- Heavy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light</masterLabel>
+        <translation><!-- Light --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moderate</masterLabel>
+        <translation><!-- Moderate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

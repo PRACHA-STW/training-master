@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PDS_Destructive__c</fullName>
+    <label>PDS/Destructive</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NO</fullName>
+                <default>false</default>
+                <label>NO</label>
+            </value>
+            <value>
+                <fullName>PDS</fullName>
+                <default>false</default>
+                <label>Post PDS</label>
+            </value>
+            <value>
+                <fullName>Pre PDS</fullName>
+                <default>false</default>
+                <label>Pre PDS</label>
+            </value>
+            <value>
+                <fullName>Pre &amp; Post Pds</fullName>
+                <default>false</default>
+                <label>Pre &amp; Post PDS</label>
+            </value>
+            <value>
+                <fullName>PDS Only</fullName>
+                <default>false</default>
+                <label>PDS Only</label>
+            </value>
+            <value>
+                <fullName>Pre PDS Only</fullName>
+                <default>false</default>
+                <label>Pre PDS Only</label>
+            </value>
+            <value>
+                <fullName>Destructive</fullName>
+                <default>false</default>
+                <label>Destructive</label>
+            </value>
+            <value>
+                <fullName>Pre Destructive</fullName>
+                <default>false</default>
+                <label>Pre Destructive</label>
+            </value>
+            <value>
+                <fullName>Data Task</fullName>
+                <default>false</default>
+                <label>Post Data Task</label>
+            </value>
+            <value>
+                <fullName>Pre Data Task</fullName>
+                <default>false</default>
+                <label>Pre Data Task</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

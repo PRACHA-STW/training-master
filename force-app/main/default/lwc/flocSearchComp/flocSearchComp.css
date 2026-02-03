@@ -1,0 +1,29 @@
+.dummyClass{color:black;}
+.button-container {
+    display: flex;
+    justify-content :center; 
+}
+
+.title-container {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally at the center */
+	  
+}
+.button {
+    margin: 50 50px; /* Add some spacing between the buttons */
+}
+.title{
+		
+		padding-top :26px;
+		padding-left:2px;
+}
+.button-container .temp {
+		
+		width: 80%;
+		
+		
+}
+.temp{
+		
+		
+}

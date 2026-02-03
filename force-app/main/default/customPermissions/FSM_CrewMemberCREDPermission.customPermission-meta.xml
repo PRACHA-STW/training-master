@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as part of SFL-885, it allows user to assign or remove crew members from service appointments (SAs) based on crew membership changes.</description>
+    <isLicensed>false</isLicensed>
+    <label>FSM_CrewMemberCREDPermission</label>
+</CustomPermission>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hand Rails (if Present) --></label>
+    <name>FSM_HandRails__c</name>
+    <picklistValues>
+        <masterLabel>Hand rail good condition - FOW needed - Yes</masterLabel>
+        <translation><!-- Hand rail good condition - FOW needed - Yes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hand rail good condition no futher work</masterLabel>
+        <translation><!-- Hand rail good condition no futher work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Hand Rails</masterLabel>
+        <translation><!-- No Hand Rails --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

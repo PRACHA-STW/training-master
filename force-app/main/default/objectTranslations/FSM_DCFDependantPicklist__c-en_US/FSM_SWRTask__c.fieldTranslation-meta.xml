@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SWR Task --></label>
+    <name>FSM_SWRTask__c</name>
+    <picklistValues>
+        <masterLabel>Additional Traffic management</masterLabel>
+        <translation><!-- Additional Traffic management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockage</masterLabel>
+        <translation><!-- Blockage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Break out for access</masterLabel>
+        <translation><!-- Break out for access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chamber repair</masterLabel>
+        <translation><!-- Chamber repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleanup</masterLabel>
+        <translation><!-- Cleanup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct</masterLabel>
+        <translation><!-- Construct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct Type 1</masterLabel>
+        <translation><!-- Construct Type 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct Type 2</masterLabel>
+        <translation><!-- Construct Type 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct Type 3</masterLabel>
+        <translation><!-- Construct Type 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct Type 4</masterLabel>
+        <translation><!-- Construct Type 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Visit</masterLabel>
+        <translation><!-- Customer Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defective Reinstatement</masterLabel>
+        <translation><!-- Defective Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual CCTV and Cleanse</masterLabel>
+        <translation><!-- Dual CCTV and Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excavation Repair</masterLabel>
+        <translation><!-- Excavation Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excavation Repair 6-20m length</masterLabel>
+        <translation><!-- Excavation Repair 6-20m length --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excep CCTV</masterLabel>
+        <translation><!-- Excep CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excep Lining of Sewers</masterLabel>
+        <translation><!-- Excep Lining of Sewers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excep Specialist Cutting</masterLabel>
+        <translation><!-- Excep Specialist Cutting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excep Specialist Traffic Mge</masterLabel>
+        <translation><!-- Excep Specialist Traffic Mge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excep Tankering</masterLabel>
+        <translation><!-- Excep Tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excep Works Gang / Labour</masterLabel>
+        <translation><!-- Excep Works Gang / Labour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Flooding</masterLabel>
+        <translation><!-- External Flooding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOG</masterLabel>
+        <translation><!-- FOG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection</masterLabel>
+        <translation><!-- Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Flooding</masterLabel>
+        <translation><!-- Internal Flooding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapping</masterLabel>
+        <translation><!-- Mapping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misconnection Delimination</masterLabel>
+        <translation><!-- Misconnection Delimination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misconnection Property Survey</masterLabel>
+        <translation><!-- Misconnection Property Survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Monitor - Fit &amp; Calibrate</masterLabel>
+        <translation><!-- Network Monitor - Fit &amp; Calibrate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patch repair</masterLabel>
+        <translation><!-- Patch repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Sewer Cleanse</masterLabel>
+        <translation><!-- Planned Sewer Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pollution</masterLabel>
+        <translation><!-- Pollution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R Main drain down</masterLabel>
+        <translation><!-- R Main drain down --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raise Cover</masterLabel>
+        <translation><!-- Raise Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raise cover - EO extra 100mm</masterLabel>
+        <translation><!-- Raise cover - EO extra 100mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive CCTV</masterLabel>
+        <translation><!-- Reactive CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Root cut</masterLabel>
+        <translation><!-- Reactive Root cut --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Sewer cleanse</masterLabel>
+        <translation><!-- Reactive Sewer cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive specialist root cutting</masterLabel>
+        <translation><!-- Reactive specialist root cutting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstate</masterLabel>
+        <translation><!-- Reinstate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove</masterLabel>
+        <translation><!-- Remove --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renew</masterLabel>
+        <translation><!-- Renew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renew - Resurf Works</masterLabel>
+        <translation><!-- Renew - Resurf Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair no excavation</masterLabel>
+        <translation><!-- Repair no excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reset</masterLabel>
+        <translation><!-- Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP CCTV - L1</masterLabel>
+        <translation><!-- SSIP CCTV - L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP Cleanse - L2</masterLabel>
+        <translation><!-- SSIP Cleanse - L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP Repair - L3</masterLabel>
+        <translation><!-- SSIP Repair - L3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer re-round</masterLabel>
+        <translation><!-- Sewer re-round --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer reline</masterLabel>
+        <translation><!-- Sewer reline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support - Contractor</masterLabel>
+        <translation><!-- Support - Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support - DLO</masterLabel>
+        <translation><!-- Support - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support - Other</masterLabel>
+        <translation><!-- Support - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support - Pollution</masterLabel>
+        <translation><!-- Support - Pollution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support - SNT</masterLabel>
+        <translation><!-- Support - SNT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tankering Network</masterLabel>
+        <translation><!-- Tankering Network --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

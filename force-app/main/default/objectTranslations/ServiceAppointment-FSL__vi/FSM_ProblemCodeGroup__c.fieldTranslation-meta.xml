@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Problem Code Group --></label>
+    <name>FSM_ProblemCodeGroup__c</name>
+    <picklistValues>
+        <masterLabel>B1 - NHH Meter Installation</masterLabel>
+        <translation><!-- B1 - NHH Meter Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B3 - NHH Metering Accuracy Test</masterLabel>
+        <translation><!-- B3 - NHH Metering Accuracy Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B5 - NHH Metering Repair or Replace</masterLabel>
+        <translation><!-- B5 - NHH Metering Repair or Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B7 or B10 - NHH Change of Meter</masterLabel>
+        <translation><!-- B7 or B10 - NHH Change of Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery - Work Completed</masterLabel>
+        <translation><!-- Battery - Work Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery - aborted jobs</masterLabel>
+        <translation><!-- Battery - aborted jobs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery - meter exchanged</masterLabel>
+        <translation><!-- Battery - meter exchanged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C1 - NHH Metering Verification Requests</masterLabel>
+        <translation><!-- C1 - NHH Metering Verification Requests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compulsary Metering</masterLabel>
+        <translation><!-- Compulsary Metering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Services</masterLabel>
+        <translation><!-- Dev Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Chase</masterLabel>
+        <translation><!-- Distribution Chase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical</masterLabel>
+        <translation><!-- Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free Meter</masterLabel>
+        <translation><!-- Free Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra - Proactive</masterLabel>
+        <translation><!-- Infra - Proactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instrument</masterLabel>
+        <translation><!-- Instrument --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Replacement Work</masterLabel>
+        <translation><!-- Lead Replacement Work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leakage Quantification</masterLabel>
+        <translation><!-- Leakage Quantification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanical</masterLabel>
+        <translation><!-- Mechanical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Inbound WIF Problem Code</masterLabel>
+        <translation><!-- NHH Inbound WIF Problem Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH inbound bilateral Prob.Code-Iprocess</masterLabel>
+        <translation><!-- NHH inbound bilateral Prob.Code-Iprocess --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Impact</masterLabel>
+        <translation><!-- Network Impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supplies - Work Completed</masterLabel>
+        <translation><!-- New Supplies - Work Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No repair or exchange carried out</masterLabel>
+        <translation><!-- No repair or exchange carried out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number of Supplies</masterLabel>
+        <translation><!-- Number of Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operational</masterLabel>
+        <translation><!-- Operational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with meter</masterLabel>
+        <translation><!-- Problem with meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with meter MEOPME</masterLabel>
+        <translation><!-- Problem with meter MEOPME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with pipework or installation</masterLabel>
+        <translation><!-- Problem with pipework or installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with pipework or installation MEOPPI</masterLabel>
+        <translation><!-- Problem with pipework or installation MEOPPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with radio read</masterLabel>
+        <translation><!-- Problem with radio read --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with radio read MEOPRR</masterLabel>
+        <translation><!-- Problem with radio read MEOPRR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with touchpad or wiring</masterLabel>
+        <translation><!-- Problem with touchpad or wiring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with touchpad or wiring MEOPTW</masterLabel>
+        <translation><!-- Problem with touchpad or wiring MEOPTW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPS Predictive Site Visit</masterLabel>
+        <translation><!-- SPS Predictive Site Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory - Problem</masterLabel>
+        <translation><!-- Statutory - Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Mitigation reasons</masterLabel>
+        <translation><!-- Waste Mitigation reasons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water Chase</masterLabel>
+        <translation><!-- Waste Water Chase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water Operational</masterLabel>
+        <translation><!-- Waste Water Operational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waster Water</masterLabel>
+        <translation><!-- Waster Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water</masterLabel>
+        <translation><!-- Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Quality Root Cause</masterLabel>
+        <translation><!-- Water Quality Root Cause --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

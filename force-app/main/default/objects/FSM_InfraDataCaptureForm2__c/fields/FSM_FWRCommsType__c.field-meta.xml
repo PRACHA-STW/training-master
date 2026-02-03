@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_FWRCommsType__c</fullName>
+    <description>Created as part of SFS-6005</description>
+    <label>Comm&apos;s Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Access Letter required</fullName>
+                <default>false</default>
+                <label>Access Letter required</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Noise Letters required</fullName>
+                <default>false</default>
+                <label>Noise Letters required</label>
+            </value>
+            <value>
+                <fullName>Advance Warn</fullName>
+                <default>false</default>
+                <label>Advance Warn</label>
+            </value>
+            <value>
+                <fullName>Restricted Access</fullName>
+                <default>false</default>
+                <label>Restricted Access</label>
+            </value>
+            <value>
+                <fullName>Noise</fullName>
+                <default>false</default>
+                <label>Noise</label>
+            </value>
+            <value>
+                <fullName>Interruption to supply</fullName>
+                <default>false</default>
+                <label>Interruption to supply</label>
+            </value>
+            <value>
+                <fullName>Pre-coning</fullName>
+                <default>false</default>
+                <label>Pre-coning</label>
+            </value>
+            <value>
+                <fullName>Work awareness</fullName>
+                <default>false</default>
+                <label>Work awareness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

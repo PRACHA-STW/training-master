@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NoticeStatusScore__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;CRTD&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;FPI&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;API&quot;),1,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;RPA&quot;),2,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PADP&quot;),2,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PAA&quot;),3,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PLND&quot;),1,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;RP&quot;),2,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PVAR&quot;),3,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PDP&quot;),3,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PA&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PRF&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PREV&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;CANC&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;WIP&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PRRE&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;COMP&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;IREI&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PREI&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;PHCO&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;CRTD&quot;),3,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;CRTD&quot;),0,
+IF (ISPICKVAL(FSM_TMAPermit__r.FSM_TMAApprovalStatus__c,&quot;REV&quot;),0,0)))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Notice Status Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

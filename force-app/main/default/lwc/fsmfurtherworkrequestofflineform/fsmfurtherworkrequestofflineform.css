@@ -1,0 +1,261 @@
+.required {
+  align-self: flex-start!important;
+    color: red !important;
+  }
+
+  table {
+    border-spacing: 3px;
+  }
+  td, th {
+    padding: 7px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+.button-space {
+  margin-right: 10px;
+}
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .slds-table thead {
+    display: none;
+}
+.slds-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.slds-table tbody tr td {
+    display: block;
+    margin: 5px 0;
+}
+.slds-table tbody td:first-child {
+    font-weight: bold;
+}
+
+
+}
+.selected {
+  border: 2px solid blue; 
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  color: red; /* Customize the color */
+}
+
+.image-container {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+ 
+}
+
+
+img {
+  height: 10%;
+  margin-right: 10px;
+
+  /* Default style for desktop */
+  width: 10%;
+
+  /* Media query for mobile devices with a maximum width of 767px */
+  @media only screen and (max-width: 767px) {
+      width: 80%;
+  }
+}
+/* @media screen and (max-width: 767px) {
+  .custom-tooltip .slds-popover_tooltip {
+    margin-left: 50px;
+  }
+  
+} */
+
+
+.desktop-tooltip {
+  display: block; /* Show for desktop */
+}
+
+.mobile-tooltip {
+  display: none; /* Hide by default */
+}
+@media (max-width: 767px) {
+  .desktop-tooltip {
+    display: none; /* Hide desktop content on mobile */
+}
+
+.mobile-tooltip {
+    display: block; /* Show mobile content on mobile */
+}
+/* .tooltip-icon {
+  cursor: pointer;
+}
+
+.tooltip-icon:hover + .tooltip-text,
+.tooltip-text:hover {
+  visibility: visible;
+  opacity: 1;
+} */
+
+/* Tooltip container */
+.tooltip-container {
+  position: relative; 
+  /* display: inline-block; */
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Tooltip icon styling */
+.tooltip-icon {
+  display: inline-block;
+  margin-left: 10px; /* Adjust spacing between text and icon */
+  width: 12px; /* Make icon very small */
+  height: 12px; /* Make icon very small */
+  cursor: pointer;
+}
+
+/* Tooltip text styling */
+.tooltip-text {
+  visibility: hidden;
+  width: 300px; /* Adjust width as needed */
+  background-color: var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96)))));
+  color: #fff; /* Set text color to contrast with the background */
+  text-align: left;
+  border: 0; /* Border color to match the background */
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 0.75rem;
+  position: absolute;
+  z-index: 3;
+  bottom: 175%; /* Position above the icon */
+  left: 50%;
+  margin-left: -150px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.tooltip-text.textadjust {
+  margin-left: -175px;
+  left: 58%;
+}
+.tooltip-text.textadjust::before{
+  left: 58%;
+  top: 55px !important;
+  border-width: 15px !important;
+}
+.tooltip-text.textadjust::after{
+  top: 0;
+}
+span.tooltip-text.first.envtextadjust {
+  left: 135%;
+}
+.tooltip-text.envtextadjust::before{
+  margin-left: -1.39rem !important;
+}
+.tooltip-text.envtextadjust::after{
+  top: 0;
+}
+.tooltip-text.sitetext {
+  left: 130% !important;
+}
+.tooltip-text.sitetext::before{
+  left: 45%;
+}
+.tooltip-text.sitetext::after{
+  top: 0;
+}
+.tooltip-text.first {
+  top: 40px;
+  bottom: auto;
+}
+.tooltip-text.first::before{
+  top: -21%;
+  margin-left: -0.39rem;
+  border-color: transparent transparent var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent;
+}
+.tooltip-text.first::after {
+  top: -4px;
+  border-color: transparent transparent var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent;
+}
+span.tooltip-text.first.firstcarriage1 {
+  left: -120% !important;
+}
+.tooltip-text.firstcarriage::before{
+  top: -43% !important;
+  margin-left: -1.61rem;
+  border-color: transparent transparent var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent;
+}
+.tooltip-text.firstcarriage::after {
+  top: -4px;
+  border-color: transparent transparent var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent;
+}
+.tooltip-text.firstcarriage1::before{
+  top: -32% !important;
+  margin-left: 2rem;
+  border-color: transparent transparent var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent;
+}
+.tooltip-text.firstcarriage1::after {
+  top: -4px;
+  border-color: transparent transparent var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent;
+}
+.tooltip-text::before {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -0.57rem; /* Center the nubbin horizontally */
+    border-width: 0.75rem; /* Increase width of the nubbin */
+    border-style: solid;
+    border-color: var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent transparent transparent; /* Arrow color to match the background */
+}
+/* Tooltip arrow */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--slds-c-tooltip-color-background, var(--sds-c-tooltip-color-background, var(--slds-g-color-brand-base-20, var(--lwc-colorBackgroundAltInverse, rgb(3, 45, 96))))) transparent transparent transparent; /* Arrow color to match the background */ /* Arrow color to match the background */
+}
+
+/* Show tooltip on hover */
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+}
+
+/* .slds-dual-listbox__options {
+  overflow-y: auto;
+  max-height: 300px;
+} */
+
+
+@media (max-width: 767px) {
+  /* .lightning-dual-listbox {
+      font-size: 5px;
+  }*/
+.multiselectcls.slds-dueling-list__options ul{
+  overflow-x: scroll !important;
+  border:4px solid red;
+}
+
+  .multiselectcls.slds-dual-listbox__options {
+      max-height: 200px;
+    
+  } 
+  .multiselectcls.slds-listbox__option .slds-truncate {
+    display: inline !important;
+    overflow-x: visible !important;
+  }
+}
+
+/* .slds-dual-listbox__options .slds-item {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+} */

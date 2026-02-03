@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_DataCaptureFormNonInfra__c</fullName>
+    <description>SFI-35</description>
+    <label>Data Capture Form Non Infra</label>
+    <referenceTo>FSM_DataCaptureFormNonInfra__c</referenceTo>
+    <relationshipLabel>Data Capture Form Line Item Non Infras</relationshipLabel>
+    <relationshipName>FSM_DataCaptureFormLineItemNonInfras</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

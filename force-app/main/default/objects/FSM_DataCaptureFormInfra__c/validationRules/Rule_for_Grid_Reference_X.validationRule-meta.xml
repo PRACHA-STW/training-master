@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rule_for_Grid_Reference_X</fullName>
+    <active>true</active>
+    <description>Created as a part of SFS-4087</description>
+    <errorConditionFormula>OR(  FSM_GridsReferenceX__c   &lt; 250000,  FSM_GridsReferenceX__c  &gt; 550000)</errorConditionFormula>
+    <errorDisplayField>FSM_GridsReferenceX__c</errorDisplayField>
+    <errorMessage>The value should be within 250000 and 550000</errorMessage>
+</ValidationRule>

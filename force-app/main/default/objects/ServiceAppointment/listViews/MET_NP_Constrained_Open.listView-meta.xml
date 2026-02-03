@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MET_NP_Constrained_Open</fullName>
+    <columns>CreatedDate</columns>
+    <columns>FSM_SAPOrderOperationNumber__c</columns>
+    <columns>Name</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>Status</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>DurationInMinutes</columns>
+    <columns>FSM_SAPJobPriority__c</columns>
+    <columns>FSM_ServiceOrderType__c</columns>
+    <columns>WorkType</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>FSSK__FSK_Assigned_Service_Resource__c</columns>
+    <columns>FSM_ConstraintStart__c</columns>
+    <columns>STREET</columns>
+    <columns>ZIP</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>notContain</operation>
+        <value>6000M03</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>M01</value>
+    </filters>
+    <filters>
+        <field>FSM_ConstraintStart__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>3/20/2025 12:00 AM</value>
+    </filters>
+    <label>MET - NP Constrained  Open</label>
+    <sharedTo>
+        <group>FSM_Metering</group>
+    </sharedTo>
+</ListView>

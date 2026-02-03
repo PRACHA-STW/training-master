@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TypeofLeakValue__c</fullName>
+    <label>Type of Leak Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No leak</fullName>
+                <default>false</default>
+                <label>No leak</label>
+            </value>
+            <value>
+                <fullName>Non urgent weeping visible leak</fullName>
+                <default>false</default>
+                <label>Non urgent weeping visible leak</label>
+            </value>
+            <value>
+                <fullName>Network non visible leak</fullName>
+                <default>false</default>
+                <label>Network non visible leak</label>
+            </value>
+            <value>
+                <fullName>Private non visible leak</fullName>
+                <default>false</default>
+                <label>Private non visible leak</label>
+            </value>
+            <value>
+                <fullName>Water Quality Issue non-visible leak</fullName>
+                <default>false</default>
+                <label>Water Quality Issue non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Dangerous apparatus (site made safe)</fullName>
+                <default>false</default>
+                <label>Dangerous apparatus (site made safe)</label>
+            </value>
+            <value>
+                <fullName>Non-visible leak losing &lt;17L per minute / 1m3/hr</fullName>
+                <default>false</default>
+                <label>Non-visible leak losing &lt;17L per minute / 1m3/hr</label>
+            </value>
+            <value>
+                <fullName>Flow Alarm non-visible leak</fullName>
+                <default>false</default>
+                <label>Flow Alarm non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Poor supply non-visible leak</fullName>
+                <default>false</default>
+                <label>Poor supply non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Non-visible leak losing &gt;17L per minute / 1m3/hr</fullName>
+                <default>false</default>
+                <label>Non-visible leak losing &gt;17L per minute / 1m3/hr</label>
+            </value>
+            <value>
+                <fullName>Dangerous apparatus (site unsafe)</fullName>
+                <default>false</default>
+                <label>Dangerous apparatus (site unsafe)</label>
+            </value>
+            <value>
+                <fullName>Poor supply visible leak</fullName>
+                <default>false</default>
+                <label>Poor supply visible leak</label>
+            </value>
+            <value>
+                <fullName>Network visible leak</fullName>
+                <default>false</default>
+                <label>Network visible leak</label>
+            </value>
+            <value>
+                <fullName>Non-visible leak losing &gt;85L per minute / 5m3/hr</fullName>
+                <default>false</default>
+                <label>Non-visible leak losing &gt;85L per minute / 5m3/hr</label>
+            </value>
+            <value>
+                <fullName>No supply visible leak</fullName>
+                <default>false</default>
+                <label>No supply visible leak</label>
+            </value>
+            <value>
+                <fullName>No supply non-visible leak</fullName>
+                <default>false</default>
+                <label>No supply non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Flow Alarm visible leak</fullName>
+                <default>false</default>
+                <label>Flow Alarm visible leak</label>
+            </value>
+            <value>
+                <fullName>Urgent visible leak</fullName>
+                <default>false</default>
+                <label>Urgent visible leak</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

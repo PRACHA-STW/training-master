@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CarriagewaySpecification__c</fullName>
+    <description>created as part of sfs-6000</description>
+    <label>Carriageway Specification</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2 way control</fullName>
+                <default>false</default>
+                <label>2 way control</label>
+            </value>
+            <value>
+                <fullName>3 way control</fullName>
+                <default>false</default>
+                <label>3 way control</label>
+            </value>
+            <value>
+                <fullName>4 way control</fullName>
+                <default>false</default>
+                <label>4 way control</label>
+            </value>
+            <value>
+                <fullName>speed upto 40 mph</fullName>
+                <default>false</default>
+                <label>speed upto 40 mph</label>
+            </value>
+            <value>
+                <fullName>speed over 40 mph</fullName>
+                <default>false</default>
+                <label>speed over 40 mph</label>
+            </value>
+            <value>
+                <fullName>20 diversion signs</fullName>
+                <default>false</default>
+                <label>20 diversion signs</label>
+            </value>
+            <value>
+                <fullName>60 diversion signs</fullName>
+                <default>false</default>
+                <label>60 diversion signs</label>
+            </value>
+            <value>
+                <fullName>Null</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

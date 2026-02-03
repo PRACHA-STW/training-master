@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSL__Non_Availability</fullName>
+    <active>true</active>
+    <label>Non Availability</label>
+    <picklistValues>
+        <picklist>FSL__Estimated_Travel_Time_From_Source__c</picklist>
+        <values>
+            <fullName>Aerial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Predictive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SLR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSL__Estimated_Travel_Time_To_Source__c</picklist>
+        <values>
+            <fullName>Aerial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Predictive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SLR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>1st Call Standby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Call Standby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM Admin Duties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM Dept Comms%2FPerformance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AdditionalWork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AdminDownTime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Leave - Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Break</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comm Cell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education%2FStudy Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KIT Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local Working Practices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maternity Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting - Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting - Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting - Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other duties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paternity Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest Period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sickness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TemetraSchedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time off in Lieu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Union</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training %28ESS booking%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Vehicle Checks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Maintenance - Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Maintenance - Unplanned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle servicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteer%E2%80%93 Corp%2E time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working From Home</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

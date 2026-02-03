@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>แมปโพลีกอน</value>
+    </caseValues>
+    <layouts>
+        <layout>Polygon Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ชื่อโพลีกอน</nameFieldLabel>
+    <validationRules>
+        <errorMessage>สีของโพลีกอนจะต้องอยู่ในรูปแบบระบบตัวเลขฐานสิบหก (ตัวอย่างเช่น: #ffffff)</errorMessage>
+        <name>FSL__Polygon_Color_HEX_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

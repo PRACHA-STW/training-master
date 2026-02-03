@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Category --></label>
+    <name>FSM_ReasonCategory__c</name>
+    <picklistValues>
+        <masterLabel>AUTO</masterLabel>
+        <translation><!-- AUTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Care</masterLabel>
+        <translation><!-- Asset Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Data</masterLabel>
+        <translation><!-- Asset Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Availability</masterLabel>
+        <translation><!-- Availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H&amp;S</masterLabel>
+        <translation><!-- H&amp;S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant/Equipment/Vehicle</masterLabel>
+        <translation><!-- Plant/Equipment/Vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preparation</masterLabel>
+        <translation><!-- Preparation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

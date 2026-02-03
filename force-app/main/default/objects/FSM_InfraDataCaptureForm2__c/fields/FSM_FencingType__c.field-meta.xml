@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_FencingType__c</fullName>
+    <description>Created as a part of SFS-4803</description>
+    <inlineHelpText>Fencing may be installed on some pipe bridges. 	
+The need for fencing will need to be assessed based on the risk but will be generally where the consequence is high i.e. rail crossings / high fall and likelihood is sufficient. 	
+Fencing comes in different styles and palisade fencing is most secure with post and rail less secure and can be climbed. 	
+Fencing may require planning permission and land agreements.</inlineHelpText>
+    <label>What type of fencing ?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fencing present and in good condition</fullName>
+                <default>false</default>
+                <label>Fencing present and in good condition</label>
+            </value>
+            <value>
+                <fullName>No fencing and fencing not required/suitable</fullName>
+                <default>false</default>
+                <label>No fencing and fencing not required/suitable</label>
+            </value>
+            <value>
+                <fullName>Fencing provided by 3rd party or low level fencing easily climbed over</fullName>
+                <default>false</default>
+                <label>Fencing provided by 3rd party or low level fencing easily climbed over</label>
+            </value>
+            <value>
+                <fullName>Additional fencing should be considered (detail below)</fullName>
+                <default>false</default>
+                <label>Additional fencing should be considered (detail below)</label>
+            </value>
+            <value>
+                <fullName>Fencing in poor state of repair i,e damaged / signs of ingress</fullName>
+                <default>false</default>
+                <label>Fencing in poor state of repair i.e damaged / signs of ingress</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

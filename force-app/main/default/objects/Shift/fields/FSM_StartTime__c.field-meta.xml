@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_StartTime__c</fullName>
+    <description>Start of the working time for a service resource or a crew in Salesforce</description>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+MONTH(DATEVALUE(StartTime)) &gt;= 3,
+MONTH(DATEVALUE(StartTime)) &lt;= 10,
+OR(
+AND(MONTH(DATEVALUE(StartTime)) &gt; 3,
+MONTH(DATEVALUE(StartTime)) &lt;10),
+AND(
+MONTH(DATEVALUE(StartTime)) = 3,
+DAY(DATEVALUE(StartTime)) &gt;= DAY(DATE(YEAR(TODAY()),3,31)
+-MOD(DATE(YEAR(TODAY()),3,31) - DATE(1900,1,7),7)
+)),
+AND(
+MONTH(DATEVALUE(StartTime)) = 10,
+DAY(DATEVALUE(StartTime)) &lt; DAY(DATE(YEAR(TODAY()),10,31)
+-MOD(DATE(YEAR(TODAY()),10,31) - DATE(1900,1,7),7)
+))
+)
+),
+LPAD(TEXT(FLOOR(MOD((HOUR(TIMEVALUE(StartTime)) + 1), 24))), 2, &quot;0&quot;),
+LPAD(TEXT(FLOOR(MOD((HOUR(TIMEVALUE(StartTime))), 24))), 2, &quot;0&quot;)
+)
+&amp; &quot;:&quot; &amp;
+LPAD(TEXT(MINUTE(TIMEVALUE(StartTime))), 2, &quot;0&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Start Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

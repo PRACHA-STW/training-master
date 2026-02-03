@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Special Feature --></label>
+    <name>FSM_FWRSpecialFeature__c</name>
+    <picklistValues>
+        <masterLabel>Cul De Sac</masterLabel>
+        <translation><!-- Cul De Sac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Carriageway</masterLabel>
+        <translation><!-- Dual Carriageway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fixed Traffic Control</masterLabel>
+        <translation><!-- Fixed Traffic Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Roundabout</masterLabel>
+        <translation><!-- On Roundabout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On approach to Roundabout</masterLabel>
+        <translation><!-- On approach to Roundabout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Way Street</masterLabel>
+        <translation><!-- One Way Street --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedestrian Crossing</masterLabel>
+        <translation><!-- Pedestrian Crossing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slip Lane</masterLabel>
+        <translation><!-- Slip Lane --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

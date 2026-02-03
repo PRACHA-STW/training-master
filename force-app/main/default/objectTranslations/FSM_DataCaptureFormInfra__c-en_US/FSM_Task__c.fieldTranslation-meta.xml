@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The task is what is required to be done on the asset e.g. Repair --></help>
+    <label><!-- Task --></label>
+    <name>FSM_Task__c</name>
+    <picklistValues>
+        <masterLabel>ABANDONED ASSET</masterLabel>
+        <translation><!-- ABANDONED ASSET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOARDS AND BARRIERS COLLECTION</masterLabel>
+        <translation><!-- BOARDS AND BARRIERS COLLECTION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOARDS AND BARRIERS REPLENISHMENT</masterLabel>
+        <translation><!-- BOARDS AND BARRIERS REPLENISHMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLEAN CHAMBER</masterLabel>
+        <translation><!-- CLEAN CHAMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUT OFF</masterLabel>
+        <translation><!-- CUT OFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleanup</masterLabel>
+        <translation><!-- Cleanup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct</masterLabel>
+        <translation><!-- Construct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEPLOY</masterLabel>
+        <translation><!-- DEPLOY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX LONG CONN. (&gt;12 M)</masterLabel>
+        <translation><!-- EX LONG CONN. (&gt;12 M) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXTENSION TO SLUICE VALVE</masterLabel>
+        <translation><!-- EXTENSION TO SLUICE VALVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIT METAL LIDS</masterLabel>
+        <translation><!-- FIT METAL LIDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIT TEE</masterLabel>
+        <translation><!-- FIT TEE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIXED FROM TOP - NON VISIBLE LEAK</masterLabel>
+        <translation><!-- FIXED FROM TOP - NON VISIBLE LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIXED FROM TOP - VISIBLE LEAK</masterLabel>
+        <translation><!-- FIXED FROM TOP - VISIBLE LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLUSH</masterLabel>
+        <translation><!-- FLUSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding related CCTV</masterLabel>
+        <translation><!-- Flooding related CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding related sewer cleanse</masterLabel>
+        <translation><!-- Flooding related sewer cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GAS DETECTION</masterLabel>
+        <translation><!-- GAS DETECTION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSPECT FIND AND FIX</masterLabel>
+        <translation><!-- INSPECT FIND AND FIX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSPECT FIND FIX AND REINSTATE</masterLabel>
+        <translation><!-- INSPECT FIND FIX AND REINSTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSPECTION</masterLabel>
+        <translation><!-- INSPECTION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSTALL</masterLabel>
+        <translation><!-- INSTALL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSTALL AND REINSTATE</masterLabel>
+        <translation><!-- INSTALL AND REINSTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG CONN. (6.6-12M)</masterLabel>
+        <translation><!-- LONG CONN. (6.6-12M) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOWER</masterLabel>
+        <translation><!-- LOWER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MED CONN. (4.6-6.5M)</masterLabel>
+        <translation><!-- MED CONN. (4.6-6.5M) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapping</masterLabel>
+        <translation><!-- Mapping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOT APPLICABLE</masterLabel>
+        <translation><!-- NOT APPLICABLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT ENABLING WORKS</masterLabel>
+        <translation><!-- NRT ENABLING WORKS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT FILL POINT</masterLabel>
+        <translation><!-- NRT FILL POINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT INJECTION POINT</masterLabel>
+        <translation><!-- NRT INJECTION POINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT OVERLAND SUPPLY</masterLabel>
+        <translation><!-- NRT OVERLAND SUPPLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT PLANNED WORKS</masterLabel>
+        <translation><!-- NRT PLANNED WORKS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT TANKER PREP</masterLabel>
+        <translation><!-- NRT TANKER PREP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT TANKERING</masterLabel>
+        <translation><!-- NRT TANKERING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPERATE</masterLabel>
+        <translation><!-- OPERATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PREPARE</masterLabel>
+        <translation><!-- PREPARE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned CCTV</masterLabel>
+        <translation><!-- Planned CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Sewer Cleanse</masterLabel>
+        <translation><!-- Planned Sewer Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Wet Well Cleanse</masterLabel>
+        <translation><!-- Planned Wet Well Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned inspection</masterLabel>
+        <translation><!-- Planned inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned tankering</masterLabel>
+        <translation><!-- Planned tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAISE</masterLabel>
+        <translation><!-- RAISE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RE TAP MAIN</masterLabel>
+        <translation><!-- RE TAP MAIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RE-PACK</masterLabel>
+        <translation><!-- RE-PACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ DETAILS</masterLabel>
+        <translation><!-- READ DETAILS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REBUILD CHAMBER</masterLabel>
+        <translation><!-- REBUILD CHAMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REMOVE</masterLabel>
+        <translation><!-- REMOVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RENEW</masterLabel>
+        <translation><!-- RENEW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RENEW AND REINSTATE</masterLabel>
+        <translation><!-- RENEW AND REINSTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPAIR</masterLabel>
+        <translation><!-- REPAIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPAIR AND INSTALL OTHER ASSET</masterLabel>
+        <translation><!-- REPAIR AND INSTALL OTHER ASSET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPAIR AND INSTALL VALVE</masterLabel>
+        <translation><!-- REPAIR AND INSTALL VALVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPAIR AND INSTALL WASHOUT</masterLabel>
+        <translation><!-- REPAIR AND INSTALL WASHOUT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPAIR AND REINSTATE</masterLabel>
+        <translation><!-- REPAIR AND REINSTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESET LID</masterLabel>
+        <translation><!-- RESET LID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive CCTV</masterLabel>
+        <translation><!-- Reactive CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Root cut</masterLabel>
+        <translation><!-- Reactive Root cut --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Sewer cleanse</masterLabel>
+        <translation><!-- Reactive Sewer cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Wet Well Cleanse</masterLabel>
+        <translation><!-- Reactive Wet Well Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive tankering</masterLabel>
+        <translation><!-- Reactive tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reconnection</masterLabel>
+        <translation><!-- Reconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rectify defective reinstatement</masterLabel>
+        <translation><!-- Rectify defective reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstate</masterLabel>
+        <translation><!-- Reinstate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove</masterLabel>
+        <translation><!-- Remove --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renew</masterLabel>
+        <translation><!-- Renew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair</masterLabel>
+        <translation><!-- Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reset</masterLabel>
+        <translation><!-- Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAMPLE</masterLabel>
+        <translation><!-- SAMPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SERVICE</masterLabel>
+        <translation><!-- SERVICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHORT CONN. (0-4.5M)</masterLabel>
+        <translation><!-- SHORT CONN. (0-4.5M) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP CCTV</masterLabel>
+        <translation><!-- SSIP CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP Cleanse</masterLabel>
+        <translation><!-- SSIP Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP Repair</masterLabel>
+        <translation><!-- SSIP Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STRAIGHTEN</masterLabel>
+        <translation><!-- STRAIGHTEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Select One</masterLabel>
+        <translation><!-- Select One --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer patch line</masterLabel>
+        <translation><!-- Sewer patch line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer reline</masterLabel>
+        <translation><!-- Sewer reline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support</masterLabel>
+        <translation><!-- Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRIAL HOLE</masterLabel>
+        <translation><!-- TRIAL HOLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary Disconnection</masterLabel>
+        <translation><!-- Temporary Disconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic management only</masterLabel>
+        <translation><!-- Traffic management only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unplanned inspection</masterLabel>
+        <translation><!-- Unplanned inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WARN</masterLabel>
+        <translation><!-- WARN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

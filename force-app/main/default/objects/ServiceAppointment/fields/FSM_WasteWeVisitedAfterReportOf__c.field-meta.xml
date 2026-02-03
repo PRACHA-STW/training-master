@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_WasteWeVisitedAfterReportOf__c</fullName>
+    <description>created as part of SFS-5347</description>
+    <label>We have visited after receiving a report</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flooding</fullName>
+                <default>false</default>
+                <label>Flooding</label>
+            </value>
+            <value>
+                <fullName>Blockage</fullName>
+                <default>false</default>
+                <label>Blockage</label>
+            </value>
+            <value>
+                <fullName>Smell</fullName>
+                <default>false</default>
+                <label>Smell</label>
+            </value>
+            <value>
+                <fullName>Pollution</fullName>
+                <default>false</default>
+                <label>Pollution</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

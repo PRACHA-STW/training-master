@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as a part of SFS-2978, SFS-2981. Users with this Custom Permission will be able to add Skills having Skill Type as &apos;Equipment&apos; to a Service Resource.</description>
+    <isLicensed>false</isLicensed>
+    <label>FSM PRT Equipment Skills</label>
+</CustomPermission>

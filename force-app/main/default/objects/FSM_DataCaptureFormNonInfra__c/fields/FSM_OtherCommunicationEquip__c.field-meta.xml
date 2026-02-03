@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_OtherCommunicationEquip__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFS-4203</description>
+    <inlineHelpText>gas-air horns</inlineHelpText>
+    <label>Other communication equipment</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

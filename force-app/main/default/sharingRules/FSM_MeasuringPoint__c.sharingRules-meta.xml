@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_MeasuringPointSharingForContractorFW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4136
+Updated access level to Read/Write as part of SFS-2997</description>
+        <label>Measuring Point Sharing For Contractor FW</label>
+        <sharedTo>
+            <group>FSM_ContractorFieldWorker</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_ExternalId__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_MeasuringPointSharingForContractorSchedulers</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-4136</description>
+        <label>Measuring Point Sharing For Contractor Schedulers</label>
+        <sharedTo>
+            <group>FSM_ContractorScheduler</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_ExternalId__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

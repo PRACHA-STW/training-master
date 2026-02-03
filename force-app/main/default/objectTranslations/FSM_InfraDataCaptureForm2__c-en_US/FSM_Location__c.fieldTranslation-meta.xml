@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This Information is visible to Highways Authority on the notice and must contain the correct address information --></help>
+    <label><!-- Location --></label>
+    <name>FSM_Location__c</name>
+    <picklistValues>
+        <masterLabel>Off Highway</masterLabel>
+        <translation><!-- Off Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Highway</masterLabel>
+        <translation><!-- On Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Land</masterLabel>
+        <translation><!-- Private Land --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copadoconnect__All</fullName>
+    <columns>NAME</columns>
+    <columns>copadoconnect__Provider__c</columns>
+    <columns>copadoconnect__Project__c</columns>
+    <columns>copadoconnect__Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>SFL</value>
+    </filters>
+    <label>All</label>
+</ListView>

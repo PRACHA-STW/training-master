@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IsParentObjectField__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFi-35, this checkbox will be checked if teh field in referred from parent object. like Workorder.Status</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Is Parent Object Field?</label>
+    <type>Checkbox</type>
+</CustomField>

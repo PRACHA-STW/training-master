@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AbnormalColour__c</fullName>
+    <description>Created as part of SFS-4810</description>
+    <label>Colour/Chemical/Fuel/Oil/Iridescence</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+                <default>false</default>
+                <label>Minor Visible Impact Localised Around The Outfall</label>
+            </value>
+            <value>
+                <fullName>&lt; 10m</fullName>
+                <default>false</default>
+                <label>&lt; 10m</label>
+            </value>
+            <value>
+                <fullName>11-25m</fullName>
+                <default>false</default>
+                <label>11-25m</label>
+            </value>
+            <value>
+                <fullName>26-99m</fullName>
+                <default>false</default>
+                <label>26-99m</label>
+            </value>
+            <value>
+                <fullName>&gt;100m</fullName>
+                <default>false</default>
+                <label>&gt;100m</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

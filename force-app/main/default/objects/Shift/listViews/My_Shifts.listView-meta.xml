@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Shifts</fullName>
+    <columns>Name</columns>
+    <columns>StartTime</columns>
+    <columns>EndTime</columns>
+    <columns>Status</columns>
+    <columns>JobProfile</columns>
+    <columns>ServiceResource</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>RecordsetFilterCriteria</columns>
+    <columns>IsNonStandard</columns>
+    <columns>BackgroundColor</columns>
+    <columns>IsHolidayShift</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_ExternalId__c</field>
+        <operation>contains</operation>
+        <value>9420213,9453965,1063452,9425983,9423448,9410187,1114883,9422699,9423347,1142330,9414830,9455588,9415156,9412697,9421681</value>
+    </filters>
+    <filters>
+        <field>Label</field>
+        <operation>contains</operation>
+        <value>DDCI,DDVR,DKCI,DKVR</value>
+    </filters>
+    <filters>
+        <field>RecordsetFilterCriteria</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Confirmed</value>
+    </filters>
+    <filters>
+        <field>FSM_StartDate__c</field>
+        <operation>greaterThan</operation>
+        <value>1/19/2026</value>
+    </filters>
+    <label>My Shifts</label>
+</ListView>

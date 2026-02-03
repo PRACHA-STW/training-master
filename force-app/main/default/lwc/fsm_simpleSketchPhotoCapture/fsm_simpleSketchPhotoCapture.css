@@ -1,0 +1,36 @@
+.selected {
+    border: 2px solid blue; 
+}
+
+.image-container {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+   
+}
+.delete-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: red; /* Customize the color */
+} 
+.wrapper-next{
+    width:25%;
+}
+.wrapper-next.next-align{
+    float: right;
+}
+img {
+    height: 180px;
+    margin-right: 10px;
+ 
+    /* Default style for desktop */
+    width: 25%;
+ 
+    /* Media query for mobile devices with a maximum width of 767px */
+    @media only screen and (max-width: 767px) {
+        width: 80%;
+    }
+}
+.no-label .slds-form-element__label {
+    display: none;
+}

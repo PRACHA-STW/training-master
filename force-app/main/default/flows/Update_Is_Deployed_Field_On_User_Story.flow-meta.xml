@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Record_Id</name>
+        <label>Assign Record Id</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignmentItems>
+            <assignToReference>UserStoryrecordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_IS_deployed</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>UserID</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>005Pz000004D289IAC</stringValue>
+        </value>
+    </constants>
+    <customErrors>
+        <name>Custom_Error</name>
+        <label>Custom Error</label>
+        <locationX>308</locationX>
+        <locationY>647</locationY>
+        <customErrorMessages>
+            <errorMessage>The user stories and bugs which have been deployed to SIT or higher environments cannot be recommitted without taking the approval from the Release Team.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Check_Release_Member</name>
+        <label>Check Release Member</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Custom_Error</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_A_Release_Member</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Is A Release Member</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Update Is Deployed Field On User Story {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Is Deployed Field On User Story</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_IS_deployed</name>
+        <label>Update IS deployed</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Check_Release_Member</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Is_Deployed__c</field>
+            <value>
+                <elementReference>$User.LastName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Record_Id</targetReference>
+        </connector>
+        <filterFormula>({!$Record__Prior.copado__Environment__r.Name}=&apos;PROD&apos; || {!$Record__Prior.copado__Environment__r.Name}=&apos;SIT&apos; || {!$Record__Prior.copado__Environment__r.Name}=&apos;PreProd&apos;) &amp;&amp; ({!$Record.copado__Environment__r.Name}=&apos;IntgDev&apos; )</filterFormula>
+        <object>copado__User_Story__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>UserStoryrecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

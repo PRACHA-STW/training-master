@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Grid Ref Y needs to be between 170000 and 440000 --></help>
+    <label><!-- Y co-ordinate --></label>
+    <name>FSM_SFWYcoordinate__c</name>
+</CustomFieldTranslation>

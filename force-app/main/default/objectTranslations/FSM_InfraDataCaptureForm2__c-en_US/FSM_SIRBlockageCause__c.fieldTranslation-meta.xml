@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Blockage Cause --></label>
+    <name>FSM_SIRBlockageCause__c</name>
+    <picklistValues>
+        <masterLabel>3rd party</masterLabel>
+        <translation><!-- 3rd party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debris</masterLabel>
+        <translation><!-- Debris --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fat</masterLabel>
+        <translation><!-- Fat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interceptor</masterLabel>
+        <translation><!-- Interceptor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misconnection</masterLabel>
+        <translation><!-- Misconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roots</masterLabel>
+        <translation><!-- Roots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanitary products</masterLabel>
+        <translation><!-- Sanitary products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silt</masterLabel>
+        <translation><!-- Silt --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

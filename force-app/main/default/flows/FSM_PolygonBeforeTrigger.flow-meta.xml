@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>SFS-4514</description>
+        <name>Assignment_of_BU</name>
+        <label>Assignment of BU</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSM_BusinessUnit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.FSL__Service_Territory__r.FSM_BusinessUnit__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>On_Creation_Updation_of_ST</name>
+        <label>On Creation/Updation of ST</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>New_or_ST_Update</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FSL__Service_Territory__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.FSL__Service_Territory__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_of_BU</targetReference>
+            </connector>
+            <label>New or ST Update</label>
+        </rules>
+    </decisions>
+    <description>Created as a part of SFS-4514</description>
+    <environments>Default</environments>
+    <interviewLabel>Polygon - Before Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Polygon - Before Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>On_Creation_Updation_of_ST</targetReference>
+        </connector>
+        <object>FSL__Polygon__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

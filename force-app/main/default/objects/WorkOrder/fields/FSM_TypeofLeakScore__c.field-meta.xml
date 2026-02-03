@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TypeofLeakScore__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;No leak&quot;),0,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Non urgent weeping visible leak&quot;),1,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Network non visible leak&quot;),2,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Private non visible leak&quot;),2,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Water Quality Issue non-visible leak&quot;),2,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Dangerous apparatus (site made safe)&quot;),2,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Non-visible leak losing &lt;17L per minute / 1m3/hr&quot;),2,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Flow Alarm non-visible leak&quot;),2,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Poor supply non-visible leak&quot;),3,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Non-visible leak losing &gt;17L per minute / 1m3/hr&quot;),3,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Dangerous apparatus (site unsafe)&quot;),3,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Poor supply visible leak&quot;),4,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Network visible leak&quot;),4,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Non-visible leak losing &gt;85L per minute / 5m3/hr&quot;),4,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;No supply visible leak&quot;),5,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;No supply non-visible leak&quot;),5,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Flow Alarm visible leak&quot;),5,
+IF (ISPICKVAL(FSM_TypeofLeakValue__c,&quot;Urgent visible leak&quot;),5,0))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type of Leak Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

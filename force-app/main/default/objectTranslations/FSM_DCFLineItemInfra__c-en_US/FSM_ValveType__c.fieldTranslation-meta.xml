@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Valve Type --></label>
+    <name>FSM_ValveType__c</name>
+    <picklistValues>
+        <masterLabel>Valve – Network</masterLabel>
+        <translation><!-- Valve – Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve – Operational</masterLabel>
+        <translation><!-- Valve – Operational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve – Process</masterLabel>
+        <translation><!-- Valve – Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve – Strategic</masterLabel>
+        <translation><!-- Valve – Strategic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve – Tactical</masterLabel>
+        <translation><!-- Valve – Tactical --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

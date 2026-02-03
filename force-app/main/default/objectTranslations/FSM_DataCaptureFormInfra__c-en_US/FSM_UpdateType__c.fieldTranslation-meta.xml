@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Update Type --></label>
+    <name>FSM_UpdateType__c</name>
+    <picklistValues>
+        <masterLabel>Meter Exchange</masterLabel>
+        <translation><!-- Meter Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Meter Installation (DevServ)</masterLabel>
+        <translation><!-- New Meter Installation (DevServ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Meter Installation (Water)</masterLabel>
+        <translation><!-- New Meter Installation (Water) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Meter Installed</masterLabel>
+        <translation><!-- No Meter Installed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

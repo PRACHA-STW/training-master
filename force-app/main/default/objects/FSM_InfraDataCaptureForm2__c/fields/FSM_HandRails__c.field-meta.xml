@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_HandRails__c</fullName>
+    <label>Hand Rails (if Present)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Hand Rails</fullName>
+                <default>false</default>
+                <label>No Hand Rails</label>
+            </value>
+            <value>
+                <fullName>Hand rail good condition no futher work</fullName>
+                <default>false</default>
+                <label>Hand rail good condition no futher work</label>
+            </value>
+            <value>
+                <fullName>Hand rail good condition - FOW needed - Yes</fullName>
+                <default>false</default>
+                <label>Hand rail good condition - FOW needed - Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

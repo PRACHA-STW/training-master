@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>BOAS Authorised Person (Cert IBO)</description>
+    <label>BOAS Authorised Person (Cert IBO) (Q50082533)</label>
+</Skill>

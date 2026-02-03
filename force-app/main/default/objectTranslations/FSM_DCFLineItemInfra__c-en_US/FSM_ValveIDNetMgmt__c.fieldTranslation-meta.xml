@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Valve ID (Equipment No.) --></label>
+    <name>FSM_ValveIDNetMgmt__c</name>
+</CustomFieldTranslation>

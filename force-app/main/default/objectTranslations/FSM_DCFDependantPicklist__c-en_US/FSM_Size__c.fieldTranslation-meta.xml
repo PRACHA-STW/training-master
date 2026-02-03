@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Size --></label>
+    <name>FSM_Size__c</name>
+    <picklistValues>
+        <masterLabel>0-1M3 PER HR LEAK</masterLabel>
+        <translation><!-- 0-1M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0.5&quot;</masterLabel>
+        <translation><!-- 0.5&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0.75&quot;</masterLabel>
+        <translation><!-- 0.75&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1&quot;</masterLabel>
+        <translation><!-- 1&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1-2M3 PER HR LEAK</masterLabel>
+        <translation><!-- 1-2M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1.5&quot;</masterLabel>
+        <translation><!-- 1.5&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10&quot;</masterLabel>
+        <translation><!-- 10&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10-15M3 PER HR LEAK</masterLabel>
+        <translation><!-- 10-15M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>100MM</masterLabel>
+        <translation><!-- 100MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>110MM</masterLabel>
+        <translation><!-- 110MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12&quot;</masterLabel>
+        <translation><!-- 12&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>125MM</masterLabel>
+        <translation><!-- 125MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>150MM</masterLabel>
+        <translation><!-- 150MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15MM</masterLabel>
+        <translation><!-- 15MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>180MM</masterLabel>
+        <translation><!-- 180MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2&quot;</masterLabel>
+        <translation><!-- 2&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2-3M3 PER HR LEAK</masterLabel>
+        <translation><!-- 2-3M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200MM</masterLabel>
+        <translation><!-- 200MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20MM</masterLabel>
+        <translation><!-- 20MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>22MM</masterLabel>
+        <translation><!-- 22MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>250MM</masterLabel>
+        <translation><!-- 250MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25MM</masterLabel>
+        <translation><!-- 25MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>28MM</masterLabel>
+        <translation><!-- 28MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3&quot;</masterLabel>
+        <translation><!-- 3&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3-5M3 PER HR LEAK</masterLabel>
+        <translation><!-- 3-5M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>300MM</masterLabel>
+        <translation><!-- 300MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>315MM</masterLabel>
+        <translation><!-- 315MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>32MM</masterLabel>
+        <translation><!-- 32MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4&quot;</masterLabel>
+        <translation><!-- 4&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>40MM</masterLabel>
+        <translation><!-- 40MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5&quot;</masterLabel>
+        <translation><!-- 5&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5-8M3 PER HR LEAK</masterLabel>
+        <translation><!-- 5-8M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50MM</masterLabel>
+        <translation><!-- 50MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6&quot;</masterLabel>
+        <translation><!-- 6&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>63MM</masterLabel>
+        <translation><!-- 63MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7&quot;</masterLabel>
+        <translation><!-- 7&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8&quot;</masterLabel>
+        <translation><!-- 8&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8-10M3 PER HR LEAK</masterLabel>
+        <translation><!-- 8-10M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>80MM</masterLabel>
+        <translation><!-- 80MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9&quot;</masterLabel>
+        <translation><!-- 9&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>90MM</masterLabel>
+        <translation><!-- 90MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;12&quot;</masterLabel>
+        <translation><!-- &gt;12&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;15M3 PER HR LEAK</masterLabel>
+        <translation><!-- &gt;15M3 PER HR LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;315MM</masterLabel>
+        <translation><!-- &gt;315MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=300MM</masterLabel>
+        <translation><!-- &gt;=300MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=350MM</masterLabel>
+        <translation><!-- &gt;=350MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAND 1 - 0 TO &lt;1.2M2</masterLabel>
+        <translation><!-- BAND 1 - 0 TO &lt;1.2M2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAND 2 - 1.2 TO &lt;2M2</masterLabel>
+        <translation><!-- BAND 2 - 1.2 TO &lt;2M2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAND 3 - 2 TO &lt;5M2</masterLabel>
+        <translation><!-- BAND 3 - 2 TO &lt;5M2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAND 4 - &gt;=5M2 C1/2</masterLabel>
+        <translation><!-- BAND 4 - &gt;=5M2 C1/2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAND 4 - &gt;=5M2 C3/4</masterLabel>
+        <translation><!-- BAND 4 - &gt;=5M2 C3/4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAND 4 - &gt;=5M2 FP</masterLabel>
+        <translation><!-- BAND 4 - &gt;=5M2 FP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAND 4 - &gt;=5M2 UM</masterLabel>
+        <translation><!-- BAND 4 - &gt;=5M2 UM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOT APPLICABLE</masterLabel>
+        <translation><!-- NOT APPLICABLE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

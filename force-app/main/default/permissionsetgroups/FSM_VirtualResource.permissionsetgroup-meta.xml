@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FSM Virtual Resource</label>
+    <permissionSets>FSL_Dispatcher_License</permissionSets>
+    <permissionSets>FSL_Mobile_License</permissionSets>
+    <permissionSets>FSL_Resource_License</permissionSets>
+    <permissionSets>FSM_DispatcherPermissions</permissionSets>
+    <permissionSets>FSM_FieldServiceLWCOffline</permissionSets>
+    <permissionSets>FSM_ResourcePermissions</permissionSets>
+    <permissionSets>FSM_VirtualResourcePermissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

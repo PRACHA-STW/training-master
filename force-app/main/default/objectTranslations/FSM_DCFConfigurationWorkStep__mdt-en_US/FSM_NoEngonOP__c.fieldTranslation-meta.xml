@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this number reaches the min crew size on job, (along with other criteria below) DCF becomes mandatory. --></help>
+    <label><!-- Minimum Number Of Engineers --></label>
+    <name>FSM_NoEngonOP__c</name>
+</CustomFieldTranslation>

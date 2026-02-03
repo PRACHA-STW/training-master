@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIT_28_2901_24_4_2_NOT_FOR_UAT_1_12</fullName>
+    <columns>NAME</columns>
+    <columns>copado__Promote_Change__c</columns>
+    <columns>Jira_Key__c</columns>
+    <columns>Stories_deployed_along_with__c</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <columns>copado__Sprint__c</columns>
+    <columns>copado__Project__c</columns>
+    <columns>copado__Environment__c</columns>
+    <columns>copado__Developer__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Deployed_To__c</columns>
+    <columns>PDS_Destructive__c</columns>
+    <columns>Next_Environment__c</columns>
+    <columns>copado__Base_Branch__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Next_Environment__c</field>
+        <operation>equals</operation>
+        <value>SIT_28_2901</value>
+    </filters>
+    <label>SIT_28_2901 (24.4.2) NOT FOR UAT 1.12</label>
+</ListView>

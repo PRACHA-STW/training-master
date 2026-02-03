@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PipeDiameter__c</fullName>
+    <description>Created : SFS-3010</description>
+    <inlineHelpText>Select one</inlineHelpText>
+    <label>Pipe Diameter</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>50mm</fullName>
+                <default>false</default>
+                <label>50mm</label>
+            </value>
+            <value>
+                <fullName>75mm</fullName>
+                <default>false</default>
+                <label>75mm</label>
+            </value>
+            <value>
+                <fullName>100mm</fullName>
+                <default>false</default>
+                <label>100mm</label>
+            </value>
+            <value>
+                <fullName>125mm</fullName>
+                <default>false</default>
+                <label>125mm</label>
+            </value>
+            <value>
+                <fullName>150mm</fullName>
+                <default>false</default>
+                <label>150mm</label>
+            </value>
+            <value>
+                <fullName>225mm</fullName>
+                <default>false</default>
+                <label>225mm</label>
+            </value>
+            <value>
+                <fullName>300mm</fullName>
+                <default>false</default>
+                <label>300mm</label>
+            </value>
+            <value>
+                <fullName>375mm</fullName>
+                <default>false</default>
+                <label>375mm</label>
+            </value>
+            <value>
+                <fullName>450mm</fullName>
+                <default>false</default>
+                <label>450mm</label>
+            </value>
+            <value>
+                <fullName>525mm</fullName>
+                <default>false</default>
+                <label>525mm</label>
+            </value>
+            <value>
+                <fullName>600mm</fullName>
+                <default>false</default>
+                <label>600mm</label>
+            </value>
+            <value>
+                <fullName>750mm</fullName>
+                <default>false</default>
+                <label>750mm</label>
+            </value>
+            <value>
+                <fullName>825mm</fullName>
+                <default>false</default>
+                <label>825mm</label>
+            </value>
+            <value>
+                <fullName>900mm</fullName>
+                <default>false</default>
+                <label>900mm</label>
+            </value>
+            <value>
+                <fullName>Other (Please Specify)</fullName>
+                <default>false</default>
+                <label>Other (Please Specify)</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

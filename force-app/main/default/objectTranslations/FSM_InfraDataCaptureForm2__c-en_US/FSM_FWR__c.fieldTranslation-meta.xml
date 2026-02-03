@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Follow on work raised --></label>
+    <name>FSM_FWR__c</name>
+    <picklistValues>
+        <masterLabel>BBox/Stop Tap</masterLabel>
+        <translation><!-- BBox/Stop Tap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOPP</masterLabel>
+        <translation><!-- BOPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comm Pipe</masterLabel>
+        <translation><!-- Comm Pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrant/Washout</masterLabel>
+        <translation><!-- Hydrant/Washout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main</masterLabel>
+        <translation><!-- Main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Follow-on work raised</masterLabel>
+        <translation><!-- No Follow-on work raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve/air valve</masterLabel>
+        <translation><!-- Valve/air valve --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

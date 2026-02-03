@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_LineItemCount__c</fullName>
+    <description>SFI-2041</description>
+    <label>Line Item Count</label>
+    <summaryForeignKey>FSM_DCFLineItemInfra__c.FSM_DataCaptureFormInfra__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

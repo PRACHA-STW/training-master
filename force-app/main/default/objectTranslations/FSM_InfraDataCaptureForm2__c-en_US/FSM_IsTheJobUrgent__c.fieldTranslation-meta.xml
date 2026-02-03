@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Is the job urgent --></label>
+    <name>FSM_IsTheJobUrgent__c</name>
+    <picklistValues>
+        <masterLabel>Clear blockage to prevent / halt flooding or pollution</masterLabel>
+        <translation><!-- Clear blockage to prevent / halt flooding or pollution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dangerous reinstatement</masterLabel>
+        <translation><!-- Dangerous reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pollution / trace pollution / possible pollution</masterLabel>
+        <translation><!-- Pollution / trace pollution / possible pollution --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

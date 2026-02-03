@@ -1,0 +1,386 @@
+<apex:page standardController="FSM_DataCaptureFormInfra__c" extensions="FSM_sketchPDFCtr" renderAs="pdf" applyBodyTag="false" action="{!pdfAction}" >
+<head>
+        <style>
+            @page {
+            size: A3 landscape;
+            margin: 3mm;
+            }
+            
+            body {
+                font-family: sans-serif;
+                font-size: 10pt;
+            }
+            th {
+            min-height: 15px;
+            max-height: auto;
+            background:#ddd;
+            }
+            td {
+            min-height: 15px;
+            max-height: auto;
+            }
+            
+            .parent {
+              text-align: left;
+              padding: 10px !important;
+            }
+            
+            .child1 {
+              display: inline-block;
+              vertical-align: middle;
+              width: 25%;
+            }
+            
+            .child2 {
+              display: inline-block;
+              vertical-align: top;
+              width: 45%;
+              height:100% !important;
+              padding: 5px !important;
+              height: 550px;
+            }
+            
+            .child3 {
+              border: 1px solid black;
+              display: inline-block;
+              vertical-align: top;
+              width: 5%;
+              padding: 10px !important;
+              height: 550px;
+            }
+            
+            .child4 {
+              display: inline-block;
+              vertical-align: top;
+              width: 20%;
+              padding: 10px !important;
+              height: 550px;
+            }
+            
+        </style>
+    </head>
+    
+    <body> 
+        
+        <div class="banner">
+           <div style="width: 20%; display: inline-block; text-align: center; text-decoration:underline;"> Site Specific Details </div>
+           <div style="font-size: 25px; display: inline-block; text-align: center;"> {!addressFields} </div>
+           <div style="width: 20%; display: inline-block; text-align: center; text-decoration:underline;"> Valve Details </div>
+        </div>
+        
+        <div class="parent">
+            
+            <div class="child1">
+                <table border="1"  style="width:100%;border-collapse: collapse;  text-align:left; font-size: 12px; ">
+
+                    <apex:repeat value="{!dcfObj}" var="dcfItem">   
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">User Name</td>  
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; "> {!username}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Telephone Number</td>  
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; "> {!phonenumber}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">DCF Number</td>  
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; "> {!dcfItem.Name}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;  ">Workorder Number</td>
+                            
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_WorkOrder__r.Workordernumber}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Grid X</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_GridRefOfProposedWorkX__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Grid Y</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_GridRefOfProposedWorkY__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Position of Work</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;">  Field Not Available </td>
+                        </tr>
+                        
+                        <!-- repeat -->
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">House Name</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersHouseName__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">House No.</td>
+                            
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersHouseNo__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Street</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersStreet__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Town</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersTown__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Postcode</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersPostcode__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Customer Name</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersName__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Customer Tel. No.</td>
+                            
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersTelephoneNumber__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Asset</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Asset__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Task</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Task__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Technique</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_Technique__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Size</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_AssetSize__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Material</td>
+                            
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_AssetMaterial__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Method of Work</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_MethodOfWork__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Footway width (m)</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_FootwayWidth__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Carriageway width (m)</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_CarriagewayWidth__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Speed</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_Speed__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Road Type</td>
+                            
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_RoadType__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Surface Type</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_SurfaceType__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Traffic Flow</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_TrafficFlow__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Vehicle Position</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_VehiclePosition__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Pedestrian Walkway</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_PedestrianWalkway__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Special Feature</td>
+                            
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_SpecialFeature__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Pedestrian Lights</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_GridRefOfProposedWorkX__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Visibility to Men at Work/Traffic LightHead</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_VisibilityToMenAtWork__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Traffic Light Restriction</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_TrafficLightsLessThan50m__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Train/Tram</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_TrainOrTram__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Bus</td>
+                            
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Bus__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Cycle</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Cycle__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Restricted Days</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> Field Not Available  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Restricted Time</td>
+                            
+                            <!--<td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_RestrictedTime__c}  </td>-->
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!restrictedTimes}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Library Extension</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> Field Not Available  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">First Time Rein</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_ReasonForFirstTimeReinstatement__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Trailer Team</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_TrailerTeam__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Advance Warn</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> Field Not Available  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Letter Warn</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_LetterWarn__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%; ">Sensitive Customer</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_SensitiveCustomer__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Contamination</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_Contamination__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                           <!-- <td style="text-align:left;"><apex:outputText value="{!dcfItem.id}"/></td>-->
+                            <td style="text-align:left; width: 40%;">Comments</td>
+                            
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_SchedulingCommentsBox__c}  </td>
+                        </tr>
+                    </apex:repeat>  
+                    
+                </table>  
+            </div>
+
+            <div class="child2">
+                <div >
+                    <apex:image value="/sfc/servlet.shepherd/version/download/{!contentId}" style=" width: 690px;height: 560px !important; border: 2px solid black; "/>
+                </div> 
+                <div style="padding-top: 10px;">
+                   <!-- <apex:image url="{!bannerImageURL}" alt="My Image" width="800" height="220"width: 690px;height: 560px !important;/>-->
+                    <apex:image value="/sfc/servlet.shepherd/version/download/{!cversionId}" style=" width: 800px;height: 220px !important;"/>                                     
+                </div>
+            </div> 
+            
+            <div class="child3">
+                <div style="text-align: center; text-decoration:underline;"> Site Icons </div>
+                <apex:repeat value="{!siteIds}" var="sItem">
+                    <apex:image value="/sfc/servlet.shepherd/version/download/{!sItem}" style=" width: 60px;height: 60px !important; padding:3px;"/> <br/>
+                </apex:repeat>
+            </div> 
+
+            <div class="child4">
+                <apex:repeat value="{!photoIds}" var="pItem">
+                    <apex:image value="/sfc/servlet.shepherd/version/download/{!pItem}" style=" width: 280px;height: 180px !important; padding:5px;"/> 
+                </apex:repeat>
+            </div>
+            <div style="margin: 20% left;"> 
+            
+                
+            </div>
+        </div>
+        
+        
+        <apex:form >
+   <!-- 
+     {!imageURL} 
+   <img src="/sfc/servlet.shepherd/version/download/0688d00000EzzDEAAZ"  alt=""/> 
+    <br/>aaaaaa <br/>
+      Hard coded <br/> {!contentId}
+      <img src="/sfc/servlet.shepherd/version/download/0688d00000Ezw0bAAB"  alt=""/>
+      
+      Dynamic   <img src="/sfc/servlet.shepherd/version/download/{!contentId}"  alt=""/>-->
+     
+
+
+    </apex:form>
+
+    </body> 
+</apex:page>

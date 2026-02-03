@@ -1,0 +1,45 @@
+.image-container {
+    width: 100%;
+    /* Make the container responsive */
+    /* max-width: 100px; */
+    /* Set the desired maximum width for the thumbnail */
+    height: auto;
+    /* Adjust the height automatically */
+    overflow: hidden;
+    /* Hide overflow */
+    position: relative;
+
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Ensure the image fits within the container */
+    object-position: center;
+    margin-top: 5px;
+    max-width: 150px;
+    /* Center the image */
+
+}
+
+.slds-icon-action-remove {
+    background-color: #df1010;
+}
+
+.upload-file-container {
+    max-height: 55%;
+    overflow-y: auto;
+}
+
+
+.alternative-text p {
+    font-style: italic;
+    font-weight: bold;
+}

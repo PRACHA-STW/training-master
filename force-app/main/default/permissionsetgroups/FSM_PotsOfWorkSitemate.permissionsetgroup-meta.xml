@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FSM Pots Of Work - Sitemate</label>
+    <permissionSets>FSL_Mobile_License</permissionSets>
+    <permissionSets>FSL_Resource_License</permissionSets>
+    <permissionSets>FSM_FieldServiceLWCOffline</permissionSets>
+    <permissionSets>FSM_ResourcePermissions</permissionSets>
+    <permissionSets>FSM_SelectSchedulePermissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

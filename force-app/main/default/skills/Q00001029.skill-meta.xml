@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gas Detection / Monitoring</description>
+    <label>Gas Detection / Monitoring (Q00001029)</label>
+</Skill>

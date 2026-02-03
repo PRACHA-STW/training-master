@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ManholeWhatHappensNext__c</fullName>
+    <description>created as part of SFS-5347</description>
+    <label>What happens next ?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Our inspection is complete, and we don&apos;t need to take any further action</fullName>
+                <default>false</default>
+                <label>Our inspection is complete, and we don&apos;t need to take any further action</label>
+            </value>
+            <value>
+                <fullName>We identified a fault with the manhole cover. Further work is required and will be planned in. We will be in touch within 10 working days to let you know when this work will take place.</fullName>
+                <default>false</default>
+                <label>We identified a fault with the manhole cover. Further work is required and will be planned in. We will be in touch within 10 working days to let you know when this work will take place.</label>
+            </value>
+            <value>
+                <fullName>We need to gain access to carry out further work. Please call our planning department</fullName>
+                <default>false</default>
+                <label>We need to gain access to carry out further work. Please call our planning department</label>
+            </value>
+            <value>
+                <fullName>The inspection report will be reviewed by our office technicians if further work is needed we will contact you within 10 working days to discuss next steps If you do not hear from us no further work is required and you do not need to do anything</fullName>
+                <default>false</default>
+                <label>The inspection report will be reviewed by our office technicians, if further work is needed, we will contact you within 10 working days to discuss next steps. If you do not hear from us, no further work is required and you do not need to do anything</label>
+            </value>
+            <value>
+                <fullName>We have identified a fault with the manhole cover in the road and we need approval from the local highway authority to complete the repairs Please bear with us We will give you regular updates every 2 weeks until we can give you a start date</fullName>
+                <default>false</default>
+                <label>We have identified a fault with the manhole cover in the road, and we need approval from the local highway authority to complete the repairs. Please bear with us. We will give you regular updates every 2 weeks until we can give you a start date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

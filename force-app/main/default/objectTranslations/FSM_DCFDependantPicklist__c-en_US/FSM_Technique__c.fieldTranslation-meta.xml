@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Technique --></label>
+    <name>FSM_Technique__c</name>
+    <picklistValues>
+        <masterLabel>AERIAL REPLACED</masterLabel>
+        <translation><!-- AERIAL REPLACED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT COST</masterLabel>
+        <translation><!-- AT COST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BATTERY</masterLabel>
+        <translation><!-- BATTERY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOPPS</masterLabel>
+        <translation><!-- BOPPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BY CUSTOMER</masterLabel>
+        <translation><!-- BY CUSTOMER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAPITAL SCHEME</masterLabel>
+        <translation><!-- CAPITAL SCHEME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHECKLIST ATTACHED</masterLabel>
+        <translation><!-- CHECKLIST ATTACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHECKLIST NOT ATTACH</masterLabel>
+        <translation><!-- CHECKLIST NOT ATTACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLEAR TO BOUNDARY</masterLabel>
+        <translation><!-- CLEAR TO BOUNDARY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COLLAR</masterLabel>
+        <translation><!-- COLLAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONE/GLAND</masterLabel>
+        <translation><!-- CONE/GLAND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONSEQUENTIAL DAMAGE</masterLabel>
+        <translation><!-- CONSEQUENTIAL DAMAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONVERTOR</masterLabel>
+        <translation><!-- CONVERTOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEFECT</masterLabel>
+        <translation><!-- DEFECT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEFECT – CLO NON-PAY</masterLabel>
+        <translation><!-- DEFECT – CLO NON-PAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEFECT – CLO PAY</masterLabel>
+        <translation><!-- DEFECT – CLO PAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEFECT – DLO</masterLabel>
+        <translation><!-- DEFECT – DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEVELOPER SERVICES</masterLabel>
+        <translation><!-- DEVELOPER SERVICES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRY HOLE</masterLabel>
+        <translation><!-- DRY HOLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELECTROMAG</masterLabel>
+        <translation><!-- ELECTROMAG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>END</masterLabel>
+        <translation><!-- END --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIX LEAK</masterLabel>
+        <translation><!-- FIX LEAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLUSH AND SAMPLE</masterLabel>
+        <translation><!-- FLUSH AND SAMPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOR LOGGER</masterLabel>
+        <translation><!-- FOR LOGGER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FREE OF CHARGE</masterLabel>
+        <translation><!-- FREE OF CHARGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FULL EXC 2PT M/FOLD</masterLabel>
+        <translation><!-- FULL EXC 2PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FULL EXC 4PT M/FOLD</masterLabel>
+        <translation><!-- FULL EXC 4PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FULL EXC 6PT M/FOLD</masterLabel>
+        <translation><!-- FULL EXC 6PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FULL EXC M/FOLD</masterLabel>
+        <translation><!-- FULL EXC M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FULL EXCAVATION</masterLabel>
+        <translation><!-- FULL EXCAVATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEAD CHANGE</masterLabel>
+        <translation><!-- HEAD CHANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HIGH VOLUME</masterLabel>
+        <translation><!-- HIGH VOLUME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV CLEAR TO BOUNDARY</masterLabel>
+        <translation><!-- HV CLEAR TO BOUNDARY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV LEAD REP/MENT ODI</masterLabel>
+        <translation><!-- HV LEAD REP/MENT ODI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV LEAD REPL NON ODI</masterLabel>
+        <translation><!-- HV LEAD REPL NON ODI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV NON LEAD</masterLabel>
+        <translation><!-- HV NON LEAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IN HIGHWAY</masterLabel>
+        <translation><!-- IN HIGHWAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IN-LINE</masterLabel>
+        <translation><!-- IN-LINE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INTERIM - METHOD C</masterLabel>
+        <translation><!-- INTERIM - METHOD C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEAD REPLACE NON ODI</masterLabel>
+        <translation><!-- LEAD REPLACE NON ODI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEAD REPLACEMENT ODI</masterLabel>
+        <translation><!-- LEAD REPLACEMENT ODI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEAKAGE TEAM</masterLabel>
+        <translation><!-- LEAKAGE TEAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LENGTH &gt;2M</masterLabel>
+        <translation><!-- LENGTH &gt;2M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOGGER ADAPTOR</masterLabel>
+        <translation><!-- LOGGER ADAPTOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOGGER REFITTED</masterLabel>
+        <translation><!-- LOGGER REFITTED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>METHOD A</masterLabel>
+        <translation><!-- METHOD A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>METHOD B</masterLabel>
+        <translation><!-- METHOD B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOLED</masterLabel>
+        <translation><!-- MOLED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOLED 2PT M/FOLD</masterLabel>
+        <translation><!-- MOLED 2PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOLED 4PT M/FOLD</masterLabel>
+        <translation><!-- MOLED 4PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOLED 6PT M/FOLD</masterLabel>
+        <translation><!-- MOLED 6PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOLED M/FOLD</masterLabel>
+        <translation><!-- MOLED M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO EXC 2PT M/FOLD</masterLabel>
+        <translation><!-- NO EXC 2PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO EXC 4PT M/FOLD</masterLabel>
+        <translation><!-- NO EXC 4PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO EXC 6PT M/FOLD</masterLabel>
+        <translation><!-- NO EXC 6PT M/FOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO EXCAVATION</masterLabel>
+        <translation><!-- NO EXCAVATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NON LEAD</masterLabel>
+        <translation><!-- NON LEAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NON-STD B AND B REP</masterLabel>
+        <translation><!-- NON-STD B AND B REP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOT APPLICABLE</masterLabel>
+        <translation><!-- NOT APPLICABLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPERATIONAL CHANGE</masterLabel>
+        <translation><!-- OPERATIONAL CHANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ORIGIN</masterLabel>
+        <translation><!-- ORIGIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OVERLANDER</masterLabel>
+        <translation><!-- OVERLANDER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIECE &lt;=2M</masterLabel>
+        <translation><!-- PIECE &lt;=2M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIECE THROUGH</masterLabel>
+        <translation><!-- PIECE THROUGH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLANNED</masterLabel>
+        <translation><!-- PLANNED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLUG CHANGE</masterLabel>
+        <translation><!-- PLUG CHANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PULSE UNIT</masterLabel>
+        <translation><!-- PULSE UNIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REACTIVE</masterLabel>
+        <translation><!-- REACTIVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESTORE SUPPLY</masterLabel>
+        <translation><!-- RESTORE SUPPLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENSOR REPLACED</masterLabel>
+        <translation><!-- SENSOR REPLACED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHARED SUPPLY</masterLabel>
+        <translation><!-- SHARED SUPPLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPINDLE</masterLabel>
+        <translation><!-- SPINDLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STD B AND B REP</masterLabel>
+        <translation><!-- STD B AND B REP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STEP TEST</masterLabel>
+        <translation><!-- STEP TEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNBLOCK</masterLabel>
+        <translation><!-- UNBLOCK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNDER PRESSURE</masterLabel>
+        <translation><!-- UNDER PRESSURE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANE</masterLabel>
+        <translation><!-- VANE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WITH PIECE</masterLabel>
+        <translation><!-- WITH PIECE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

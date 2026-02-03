@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Object API Name --></label>
+    <name>FSM_ObjectAPIName__c</name>
+    <picklistValues>
+        <masterLabel>FSM_DataCaptureFormInfra__c</masterLabel>
+        <translation><!-- FSM_DataCaptureFormInfra__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_DataCaptureFormLineItemNonInfras__r</masterLabel>
+        <translation><!-- FSM_DataCaptureFormLineItemNonInfras__r --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_DataCaptureFormLineItems__r</masterLabel>
+        <translation><!-- FSM_DataCaptureFormLineItems__r --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_DataCaptureFormNonInfra__c</masterLabel>
+        <translation><!-- FSM_DataCaptureFormNonInfra__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_InfraDataCaptureForm2__c</masterLabel>
+        <translation><!-- FSM_InfraDataCaptureForm2__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_InfraDataCaptureLineItem2__r</masterLabel>
+        <translation><!-- FSM_InfraDataCaptureLineItem2__r --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

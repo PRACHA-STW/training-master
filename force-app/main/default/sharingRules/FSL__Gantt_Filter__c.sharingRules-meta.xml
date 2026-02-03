@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_GanttFilterDeveloperServices</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FSM Gantt Filter Developer Services</label>
+        <sharedTo>
+            <group>FSM_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>IN-DS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_GanttFilterMetering</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FSM Gantt Filter Metering</label>
+        <sharedTo>
+            <group>FSM_Metering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>MET</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_GanttFilterWasteInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FSM Gantt Filter Waste Infra</label>
+        <sharedTo>
+            <group>FSM_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>IN-Waste</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_GanttFilterWasteNonInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FSM Gantt Filter Waste Non Infra</label>
+        <sharedTo>
+            <group>FSM_WasteNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>NI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_GanttFilterWaterInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FSM Gantt Filter Water Infra</label>
+        <sharedTo>
+            <group>FSM_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>IN-Water</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_GanttFilterWaterNonInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FSM Gantt Filter Water Non Infra</label>
+        <sharedTo>
+            <group>FSM_WaterNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>NI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

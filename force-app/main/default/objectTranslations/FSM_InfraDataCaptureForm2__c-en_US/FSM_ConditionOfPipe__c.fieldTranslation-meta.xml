@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What is the condition of the pipe ? --></label>
+    <name>FSM_ConditionOfPipe__c</name>
+    <picklistValues>
+        <masterLabel>Deterioration of the wrapping evident so can assume pipe may have pitting / corrosion</masterLabel>
+        <translation><!-- Deterioration of the wrapping evident so can assume pipe may have pitting / corrosion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe appears to be in good order</masterLabel>
+        <translation><!-- Pipe appears to be in good order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs of pitting / corrosion to the pipe</masterLabel>
+        <translation><!-- Signs of pitting / corrosion to the pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs of weathering to pipe but no significant concerns</masterLabel>
+        <translation><!-- Signs of weathering to pipe but no significant concerns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to see pipe condition as wrapped but wrapping appears in good condition</masterLabel>
+        <translation><!-- Unable to see pipe condition as wrapped but wrapping appears in good condition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

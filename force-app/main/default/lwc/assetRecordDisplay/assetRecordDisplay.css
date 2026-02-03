@@ -1,0 +1,26 @@
+.dummyClass{color:black;}
+.format_container{
+	padding-top :26px;
+ 	width: 100%;
+}
+.title{
+		
+		padding-top :26px;
+	
+		padding-left: 3px;
+    padding-right: 8px;
+}
+.button-container .temp {
+		
+		width: 100%;
+		
+		
+}
+.temp{
+		
+		
+}
+.button-container {
+    display: flex;
+    justify-content :center; 
+}

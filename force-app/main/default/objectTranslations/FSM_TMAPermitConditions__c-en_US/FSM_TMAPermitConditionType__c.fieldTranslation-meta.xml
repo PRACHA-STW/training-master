@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Activity Condition Code --></label>
+    <name>FSM_TMAPermitConditionType__c</name>
+    <picklistValues>
+        <masterLabel>01</masterLabel>
+        <translation><!-- 01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02</masterLabel>
+        <translation><!-- 02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03</masterLabel>
+        <translation><!-- 03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04</masterLabel>
+        <translation><!-- 04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05</masterLabel>
+        <translation><!-- 05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>06</masterLabel>
+        <translation><!-- 06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>07</masterLabel>
+        <translation><!-- 07 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>08</masterLabel>
+        <translation><!-- 08 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>09</masterLabel>
+        <translation><!-- 09 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10</masterLabel>
+        <translation><!-- 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11</masterLabel>
+        <translation><!-- 11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12</masterLabel>
+        <translation><!-- 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>13</masterLabel>
+        <translation><!-- 13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT01a</masterLabel>
+        <translation><!-- NCT01a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT01b</masterLabel>
+        <translation><!-- NCT01b --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT02a</masterLabel>
+        <translation><!-- NCT02a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT02b</masterLabel>
+        <translation><!-- NCT02b --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT03</masterLabel>
+        <translation><!-- NCT03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT04a</masterLabel>
+        <translation><!-- NCT04a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT04b</masterLabel>
+        <translation><!-- NCT04b --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT05a</masterLabel>
+        <translation><!-- NCT05a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT06a</masterLabel>
+        <translation><!-- NCT06a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT07a</masterLabel>
+        <translation><!-- NCT07a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT08a</masterLabel>
+        <translation><!-- NCT08a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT08b</masterLabel>
+        <translation><!-- NCT08b --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT09a</masterLabel>
+        <translation><!-- NCT09a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT09b</masterLabel>
+        <translation><!-- NCT09b --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT09c</masterLabel>
+        <translation><!-- NCT09c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT09d</masterLabel>
+        <translation><!-- NCT09d --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT10a</masterLabel>
+        <translation><!-- NCT10a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT11a</masterLabel>
+        <translation><!-- NCT11a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT11b</masterLabel>
+        <translation><!-- NCT11b --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT12a</masterLabel>
+        <translation><!-- NCT12a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT13</masterLabel>
+        <translation><!-- NCT13 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

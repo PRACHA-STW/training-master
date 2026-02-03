@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Valve Condition --></label>
+    <name>FSM_ValveCondition__c</name>
+    <picklistValues>
+        <masterLabel>Broken</masterLabel>
+        <translation><!-- Broken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buried</masterLabel>
+        <translation><!-- Buried --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaking</masterLabel>
+        <translation><!-- Leaking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lid Seized</masterLabel>
+        <translation><!-- Lid Seized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Checked</masterLabel>
+        <translation><!-- Not Checked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operational</masterLabel>
+        <translation><!-- Operational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passing</masterLabel>
+        <translation><!-- Passing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seized</masterLabel>
+        <translation><!-- Seized --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

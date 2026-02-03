@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0011</fullName>
+        <default>false</default>
+        <label>Highways England</label>
+    </customValue>
+    <customValue>
+        <fullName>0012</fullName>
+        <default>false</default>
+        <label>South Wales Trunk Road Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>0013</fullName>
+        <default>false</default>
+        <label>Mid Wales Trunk Road Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>0016</fullName>
+        <default>false</default>
+        <label>Welsh Assembly Government</label>
+    </customValue>
+    <customValue>
+        <fullName>0119</fullName>
+        <default>false</default>
+        <label>South Gloucestershire</label>
+    </customValue>
+    <customValue>
+        <fullName>0645</fullName>
+        <default>false</default>
+        <label>Cheshire County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>0660</fullName>
+        <default>false</default>
+        <label>Cheshire East Council</label>
+    </customValue>
+    <customValue>
+        <fullName>0665</fullName>
+        <default>false</default>
+        <label>Cheshire West &amp; Chester Council</label>
+    </customValue>
+    <customValue>
+        <fullName>1050</fullName>
+        <default>false</default>
+        <label>Derbyshire</label>
+    </customValue>
+    <customValue>
+        <fullName>1055</fullName>
+        <default>false</default>
+        <label>Derby City Council</label>
+    </customValue>
+    <customValue>
+        <fullName>1600</fullName>
+        <default>false</default>
+        <label>Gloucestershire County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>1850</fullName>
+        <default>false</default>
+        <label>County Of Herefordshire</label>
+    </customValue>
+    <customValue>
+        <fullName>1855</fullName>
+        <default>false</default>
+        <label>Worcestershire</label>
+    </customValue>
+    <customValue>
+        <fullName>2001</fullName>
+        <default>false</default>
+        <label>East Riding Of Yorkshire Council</label>
+    </customValue>
+    <customValue>
+        <fullName>2002</fullName>
+        <default>false</default>
+        <label>North East Lincolnshire</label>
+    </customValue>
+    <customValue>
+        <fullName>2003</fullName>
+        <default>false</default>
+        <label>North Lincolnshire Council</label>
+    </customValue>
+    <customValue>
+        <fullName>2460</fullName>
+        <default>false</default>
+        <label>Leicestershire County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>2465</fullName>
+        <default>false</default>
+        <label>City Of Leicester</label>
+    </customValue>
+    <customValue>
+        <fullName>2470</fullName>
+        <default>false</default>
+        <label>Rutland County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>2500</fullName>
+        <default>false</default>
+        <label>Lincolnshire County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>2800</fullName>
+        <default>false</default>
+        <label>Northamptonshire</label>
+    </customValue>
+    <customValue>
+        <fullName>2840</fullName>
+        <default>false</default>
+        <label>North Northamptonshire</label>
+    </customValue>
+    <customValue>
+        <fullName>2845</fullName>
+        <default>false</default>
+        <label>West Northamptonshire</label>
+    </customValue>
+    <customValue>
+        <fullName>3055</fullName>
+        <default>false</default>
+        <label>Nottinghamshire County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>3060</fullName>
+        <default>false</default>
+        <label>City Of Nottingham</label>
+    </customValue>
+    <customValue>
+        <fullName>3100</fullName>
+        <default>false</default>
+        <label>Oxfordshire</label>
+    </customValue>
+    <customValue>
+        <fullName>3240</fullName>
+        <default>false</default>
+        <label>Telford And Wrekin</label>
+    </customValue>
+    <customValue>
+        <fullName>3245</fullName>
+        <default>false</default>
+        <label>Shropshire Council</label>
+    </customValue>
+    <customValue>
+        <fullName>3450</fullName>
+        <default>false</default>
+        <label>Staffordshire County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>3455</fullName>
+        <default>false</default>
+        <label>City Of Stoke-On-Trent</label>
+    </customValue>
+    <customValue>
+        <fullName>3700</fullName>
+        <default>false</default>
+        <label>Warwickshire</label>
+    </customValue>
+    <customValue>
+        <fullName>4410</fullName>
+        <default>false</default>
+        <label>Doncaster</label>
+    </customValue>
+    <customValue>
+        <fullName>4415</fullName>
+        <default>false</default>
+        <label>Rotherham Metropolitan Borough</label>
+    </customValue>
+    <customValue>
+        <fullName>4420</fullName>
+        <default>false</default>
+        <label>Sheffield City Council</label>
+    </customValue>
+    <customValue>
+        <fullName>4605</fullName>
+        <default>false</default>
+        <label>Birmingham City Council</label>
+    </customValue>
+    <customValue>
+        <fullName>4610</fullName>
+        <default>false</default>
+        <label>Coventry City Council</label>
+    </customValue>
+    <customValue>
+        <fullName>4615</fullName>
+        <default>false</default>
+        <label>Dudley Metropolitan Borough Council</label>
+    </customValue>
+    <customValue>
+        <fullName>4620</fullName>
+        <default>false</default>
+        <label>Sandwell</label>
+    </customValue>
+    <customValue>
+        <fullName>4625</fullName>
+        <default>false</default>
+        <label>Solihull</label>
+    </customValue>
+    <customValue>
+        <fullName>4635</fullName>
+        <default>false</default>
+        <label>Wolverhampton City Council</label>
+    </customValue>
+    <customValue>
+        <fullName>6830</fullName>
+        <default>false</default>
+        <label>Denbighshire County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>6835</fullName>
+        <default>false</default>
+        <label>Flintshire</label>
+    </customValue>
+    <customValue>
+        <fullName>6840</fullName>
+        <default>false</default>
+        <label>Monmouthshire</label>
+    </customValue>
+    <customValue>
+        <fullName>6850</fullName>
+        <default>false</default>
+        <label>Powys County Council</label>
+    </customValue>
+    <customValue>
+        <fullName>6955</fullName>
+        <default>false</default>
+        <label>Wrexham</label>
+    </customValue>
+    <customValue>
+        <fullName>7093</fullName>
+        <default>false</default>
+        <label>Network Rail - Promoters Nation</label>
+    </customValue>
+    <customValue>
+        <fullName>7347</fullName>
+        <default>false</default>
+        <label>HS2 Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>4630</fullName>
+        <default>false</default>
+        <label>Walsall</label>
+    </customValue>
+    <masterLabel>Highway authority</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

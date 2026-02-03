@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Has Golden Measure met for this activity --></label>
+    <name>FSM_DownManGolden__c</name>
+    <picklistValues>
+        <masterLabel>No – Amber</masterLabel>
+        <translation><!-- No – Amber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No – Red</masterLabel>
+        <translation><!-- No – Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Green</masterLabel>
+        <translation><!-- Yes - Green --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

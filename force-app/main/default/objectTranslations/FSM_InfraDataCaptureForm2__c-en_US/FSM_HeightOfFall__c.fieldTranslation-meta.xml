@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- This is the height of the top of the pipe from the furthest point of surface below (water/ground etc.) 	
+This is based on the assumption that the injury sustained is likely to be greater the distance fallen and does not consider whether the ground is soft or hard. 	
+Also this assumes that any security if present is breached, so worst case scenario. -->
+    </help>
+    <label><!-- Height of fall (likelihood of Injury) ? --></label>
+    <name>FSM_HeightOfFall__c</name>
+    <picklistValues>
+        <masterLabel>0.5 to 1.0m</masterLabel>
+        <translation><!-- 0.5 to 1.0m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1.0m to 2.0m</masterLabel>
+        <translation><!-- 1.0m to 2.0m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2.0m to 4.0m</masterLabel>
+        <translation><!-- 2.0m to 4.0m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Less than 0.5m</masterLabel>
+        <translation><!-- Less than 0.5m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over 4.0m</masterLabel>
+        <translation><!-- Over 4.0m --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

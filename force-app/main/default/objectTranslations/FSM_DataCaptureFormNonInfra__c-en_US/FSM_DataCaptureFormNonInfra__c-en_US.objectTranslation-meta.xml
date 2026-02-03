@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Data Capture Form Non Infra</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Data Capture Form Non Infras</value>
+    </caseValues>
+    <layouts>
+        <layout>Clean Water Chemical Acceptance</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Confined Spaces Pre Entry Checklist</layout>
+        <sections>
+            <label><!-- Activity Checks --></label>
+            <section>Activity Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Close Down Site --></label>
+            <section>Close Down Site</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Depot Safety Equipment Checks --></label>
+            <section>Depot Safety Equipment Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Entry Checks --></label>
+            <section>Entry Checks</section>
+        </sections>
+        <sections>
+            <label><!-- On-Site Checks --></label>
+            <section>On-Site Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Safety Equipment Checks --></label>
+            <section>Personal Safety Equipment Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Prior To Leaving --></label>
+            <section>Prior To Leaving</section>
+        </sections>
+        <sections>
+            <label><!-- Team Details --></label>
+            <section>Team Details</section>
+        </sections>
+        <sections>
+            <label><!-- Ten Minute Gas Test --></label>
+            <section>Ten Minute Gas Test</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Data Capture Form Non Infra Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-infra Raise new or follow on work</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Non-infra Raise new work --></label>
+            <section>Non-infra Raise new work</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPS Complex</layout>
+        <sections>
+            <label><!-- Checklist with Additional Data --></label>
+            <section>Checklist with Additional Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vehicle Check</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicle Check --></label>
+            <section>Vehicle Check</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Waste Water &amp; Bio Chemical Acceptance</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Working Set Pre Use Inspection</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Cylinder checks --></label>
+            <section>Cylinder checks</section>
+        </sections>
+        <sections>
+            <label><!-- Mask checks --></label>
+            <section>Mask checks</section>
+        </sections>
+        <sections>
+            <label><!-- Preparation --></label>
+            <section>Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- System Tests --></label>
+            <section>System Tests</section>
+        </sections>
+        <sections>
+            <label><!-- Visual inspection for damage --></label>
+            <section>Visual inspection for damage</section>
+        </sections>
+        <sections>
+            <label><!-- Working Set Pre Use Inspection --></label>
+            <section>Working Set Pre Use Inspection</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Clean Water Chemical Acceptance --></label>
+        <name>FSM_CleanWaterChemicalAcceptance</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SF-4203 --></description>
+        <label><!-- Confined Spaces Pre Entry Checklist --></label>
+        <name>FSM_ConfinedSpacesPreEntryChecklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non-infra Raise new or follow on work --></label>
+        <name>FSM_NoninfraRaiseneworfollowonwork</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SPS Complex --></label>
+        <name>FSM_SPSComplex</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Valve Management --></label>
+        <name>FSM_ValveManagement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Waste Water &amp; Bio Chemical Acceptance --></label>
+        <name>FSM_WasteWaterBioChemicalAcceptance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Working Set Pre Use Inspection --></label>
+        <name>FSM_WorkingSetPreUseInspection</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created for SFS-2003 --></description>
+        <label><!-- Vehicle Check --></label>
+        <name>FSM_vehicleCheck</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

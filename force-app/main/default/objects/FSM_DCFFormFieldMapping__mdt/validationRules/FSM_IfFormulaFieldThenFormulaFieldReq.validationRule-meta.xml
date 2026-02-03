@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IfFormulaFieldThenFormulaFieldReq</fullName>
+    <active>true</active>
+    <description>SFI-35</description>
+    <errorConditionFormula>IF(AND(FSM_IsFormulaField__c, ISBLANK(TEXT(FSM_Formula__c))),true ,false )</errorConditionFormula>
+    <errorDisplayField>FSM_Formula__c</errorDisplayField>
+    <errorMessage>Formula is mandatory when Is Formula is checked.</errorMessage>
+</ValidationRule>

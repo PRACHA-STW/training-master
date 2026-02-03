@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_BioResource</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>sfs-259</description>
+        <label>Bio Resource</label>
+        <sharedTo>
+            <group>FSM_BioResource</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Bio Resource</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_DeveloperServices</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>sfs-259</description>
+        <label>Developer Services</label>
+        <sharedTo>
+            <group>FSM_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Developer Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_Metering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>sfs-259</description>
+        <label>Metering</label>
+        <sharedTo>
+            <group>FSM_Metering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Metering</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WasteInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>sfs-259</description>
+        <label>Waste Infra</label>
+        <sharedTo>
+            <group>FSM_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WasteNonInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>sfs-259</description>
+        <label>Waste Non Infra</label>
+        <sharedTo>
+            <group>FSM_WasteNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WaterInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>sfs-259</description>
+        <label>Water Infra</label>
+        <sharedTo>
+            <group>FSM_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WaterNonInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>sfs-259</description>
+        <label>Water Non Infra</label>
+        <sharedTo>
+            <group>FSM_WaterNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

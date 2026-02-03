@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSL__MatchGanttServiceTerritories__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The appointment list shows only the service appointments associated with the service territories that are shown on the Gantt.</description>
+    <label>Match Gantt Service Territories</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

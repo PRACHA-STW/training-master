@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage>A data de término deve estar dentro do período de 3 anos a contar de hoje</errorMessage>
+        <name>FSL__Limit_STM_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível salvar o Membro do território de serviço do tipo secundário com Horas de operação ou Endereço</errorMessage>
+        <name>FSL__Secondary_STM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Country and Zip/Postal-Code cannot be blanked for Primary or Relocation type territory --></errorMessage>
+        <name>FSM_PostalCodeAndCountryAreMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Primary non-crew members are managed by SAP. Please contact System Admin --></errorMessage>
+        <name>FSM_PrimaryTerritoryMemberTypeValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

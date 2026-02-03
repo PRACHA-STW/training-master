@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cat1 -&gt; 0 hrs --></label>
+    <name>FSM_Cat1__c</name>
+</CustomFieldTranslation>

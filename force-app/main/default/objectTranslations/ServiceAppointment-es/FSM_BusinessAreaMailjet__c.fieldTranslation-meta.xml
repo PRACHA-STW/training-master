@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Area Mailjet --></label>
+    <name>FSM_BusinessAreaMailjet__c</name>
+    <picklistValues>
+        <masterLabel>DevService</masterLabel>
+        <translation><!-- DevService --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD</masterLabel>
+        <translation><!-- HD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering</masterLabel>
+        <translation><!-- Metering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste</masterLabel>
+        <translation><!-- Waste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water</masterLabel>
+        <translation><!-- Water --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

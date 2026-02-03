@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TeamMembersTrained__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFS-1316</description>
+    <label>All team members hold relevant training</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

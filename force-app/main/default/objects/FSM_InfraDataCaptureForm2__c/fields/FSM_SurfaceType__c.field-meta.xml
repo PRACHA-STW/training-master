@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SurfaceType__c</fullName>
+    <description>SFS-3010</description>
+    <inlineHelpText>What is the surface type e.g. 6mm Tarmac</inlineHelpText>
+    <label>Surface Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10mm Bitmac (Tarmac)</fullName>
+                <default>false</default>
+                <label>10mm Bitmac (Tarmac)</label>
+            </value>
+            <value>
+                <fullName>Block Paving</fullName>
+                <default>false</default>
+                <label>Block Paving</label>
+            </value>
+            <value>
+                <fullName>Concrete</fullName>
+                <default>false</default>
+                <label>Concrete</label>
+            </value>
+            <value>
+                <fullName>Hot Rolled Asphalt-30/14</fullName>
+                <default>false</default>
+                <label>Hot Rolled Asphalt-30/14</label>
+            </value>
+            <value>
+                <fullName>Hot Rolled Asphalt-55/10</fullName>
+                <default>false</default>
+                <label>Hot Rolled Asphalt-55/10</label>
+            </value>
+            <value>
+                <fullName>Stone Sets</fullName>
+                <default>false</default>
+                <label>Stone Sets</label>
+            </value>
+            <value>
+                <fullName>10mm StoneMastic Asphalt</fullName>
+                <default>false</default>
+                <label>10mm StoneMastic Asphalt</label>
+            </value>
+            <value>
+                <fullName>14mm StoneMastic Asphalt</fullName>
+                <default>false</default>
+                <label>14mm StoneMastic Asphalt</label>
+            </value>
+            <value>
+                <fullName>Any (non-specific)</fullName>
+                <default>false</default>
+                <label>Any (non-specific)</label>
+            </value>
+            <value>
+                <fullName>Bitumen Macadam (Tarmac)</fullName>
+                <default>false</default>
+                <label>Bitumen Macadam (Tarmac)</label>
+            </value>
+            <value>
+                <fullName>6mm Bitmac (Tarmac)</fullName>
+                <default>false</default>
+                <label>6mm Bitmac (Tarmac)</label>
+            </value>
+            <value>
+                <fullName>Blue Bricks</fullName>
+                <default>false</default>
+                <label>Blue Bricks</label>
+            </value>
+            <value>
+                <fullName>Flags (area)</fullName>
+                <default>false</default>
+                <label>Flags (area)</label>
+            </value>
+            <value>
+                <fullName>Grass</fullName>
+                <default>false</default>
+                <label>Grass</label>
+            </value>
+            <value>
+                <fullName>Hot Rolled Asphalt</fullName>
+                <default>false</default>
+                <label>Hot Rolled Asphalt</label>
+            </value>
+            <value>
+                <fullName>Kerbstones (area)</fullName>
+                <default>false</default>
+                <label>Kerbstones (area)</label>
+            </value>
+            <value>
+                <fullName>Asphalt (footways)</fullName>
+                <default>false</default>
+                <label>Asphalt (footways)</label>
+            </value>
+            <value>
+                <fullName>Monolastic</fullName>
+                <default>false</default>
+                <label>Monolastic</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Paving Flags (dims.)</fullName>
+                <default>false</default>
+                <label>Paving Flags (dims.)</label>
+            </value>
+            <value>
+                <fullName>Tactile Paving</fullName>
+                <default>false</default>
+                <label>Tactile Paving</label>
+            </value>
+            <value>
+                <fullName>Perm Hot Lay Rein fway</fullName>
+                <default>false</default>
+                <label>Perm Hot Lay Rein fway</label>
+            </value>
+            <value>
+                <fullName>Roadmaster Coldlay</fullName>
+                <default>false</default>
+                <label>Roadmaster Coldlay</label>
+            </value>
+            <value>
+                <fullName>Red Tarmac</fullName>
+                <default>false</default>
+                <label>Red Tarmac</label>
+            </value>
+            <value>
+                <fullName>Sets</fullName>
+                <default>false</default>
+                <label>Sets</label>
+            </value>
+            <value>
+                <fullName>Stone Mastic Asphalt</fullName>
+                <default>false</default>
+                <label>Stone Mastic Asphalt</label>
+            </value>
+            <value>
+                <fullName>York Paving Slabs</fullName>
+                <default>false</default>
+                <label>York Paving Slabs</label>
+            </value>
+            <value>
+                <fullName>Unmade</fullName>
+                <default>false</default>
+                <label>Unmade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

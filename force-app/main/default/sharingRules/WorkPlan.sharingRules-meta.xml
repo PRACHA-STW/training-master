@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_WorkStepSharingWithBA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Created for SFS-4071</description>
+        <label>Work Step Sharing With BA</label>
+        <sharedTo>
+            <group>FSM_BusinessAdminGroup</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>WorkOrderId</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

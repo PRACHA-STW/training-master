@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- During the visit we --></label>
+    <name>FSM_WasteDuringVisitWeDid__c</name>
+    <picklistValues>
+        <masterLabel>Carried out a camera survey of the drains, one of our technicians will review the footage and contact you within seven days if further work is required.</masterLabel>
+        <translation><!-- Carried out a camera survey of the drains, one of our technicians will review the footage and contact you within seven days if further work is required. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Checked the drains, we found no issues with them.</masterLabel>
+        <translation><!-- Checked the drains, we found no issues with them. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaned the pipe using high pressure jetting to reduce the risk of a repeat blockage.</masterLabel>
+        <translation><!-- Cleaned the pipe using high pressure jetting to reduce the risk of a repeat blockage. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removed the roots from the drain.</masterLabel>
+        <translation><!-- Removed the roots from the drain. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rodded the drain to clear a blockage.</masterLabel>
+        <translation><!-- Rodded the drain to clear a blockage. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The flooding was caused by heavy rain, we have recorded this on our system so that. we can build a history. If flooding happens again, please let us know.</masterLabel>
+        <translation><!-- The flooding was caused by heavy rain, we have recorded this on our system so that. we can build a history. If flooding happens again, please let us know. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Washed down the affected area.</masterLabel>
+        <translation><!-- Washed down the affected area. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

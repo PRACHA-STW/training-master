@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Occupiers Town</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>FSM_DataType__c</field>
+        <value xsi:type="xsd:string">Text</value>
+    </values>
+    <values>
+        <field>FSM_FieldAPIName__c</field>
+        <value xsi:type="xsd:string">FSM_OccupiersTown__c</value>
+    </values>
+    <values>
+        <field>FSM_FormName__c</field>
+        <value xsi:type="xsd:string">FSM_RechargeableWorksDamageDescriptionReport</value>
+    </values>
+    <values>
+        <field>FSM_Formula__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_IsDCFLineItemField__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_IsFormulaField__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_IsParentObjectField__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_JSONLabel__c</field>
+        <value xsi:type="xsd:string">TOWN</value>
+    </values>
+    <values>
+        <field>FSM_Node__c</field>
+        <value xsi:type="xsd:string">DCF</value>
+    </values>
+    <values>
+        <field>FSM_ObjectAPIName__c</field>
+        <value xsi:type="xsd:string">FSM_DataCaptureFormInfra__c</value>
+    </values>
+    <values>
+        <field>FSM_PlatformEventField__c</field>
+        <value xsi:type="xsd:string">FSM_DCFPayload1__c</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-box slds-p-top_small" style="background-color: white; position: relative;">
+        <template if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+        </template>
+        <div class="slds-text-heading_medium">Upload Files/Photos</div> <br />
+        <lightning-input type="file" label="Attachment"
+            accept=".csv,.doc,.docx,.gif,.htm,.html,.jpg,.jpeg,.pdf,.txt,.xls,.xlsb,.xlsx" onchange={handleFileUploaded}
+            multiple>
+        </lightning-input>
+        <p style="font-style: italic;" class="slds-m-bottom_medium">Attachments should not exceed 6MB</p>
+        <template if:true={fileData}>
+            <div style="background:whitesmoke;">
+                <strong class="slds-m-around_small">Preview</strong>
+            </div>
+            &nbsp;
+            <div class="upload-file-container">
+                <template for:each={filesData} for:item="imgName" for:index="index">
+                    <!-- display text -->
+                    <div key={imgName.fileName} class="slds-form-element__control slds-input-has-fixed-addon">
+                        <span class="slds-form-element__addon" style="font-weight: bold;">Filename:</span>
+                        <input type="text" class="slds-input" value={imgName.baseName} data-id={index} id={index}
+                            onchange={handlefilenameChange} style="height: 5px;" />
+                        <span class="slds-form-element__addon" data-id={index} onclick={removeReceiptImage}
+                            style="font-weight: bold;">.{imgName.fileExt}</span>
+                        <lightning-icon data-id={index} onclick={removeReceiptImage} icon-name="action:remove"
+                            size='x-small' ></lightning-icon>
+                    </div>
+                    <!-- image to display -->
+                    <div key={imgName.fileName} class="image-container">
+                        <img data-id={index} src={imgName.fileData} onerror={handleImageError} />
+                    </div>
+                    &nbsp;
+                </template>
+            </div>
+        </template>
+        <br />
+        <lightning-button variant="brand" label="Upload Files" onclick={createcontentversion} class="slds-m-top_medium">
+        </lightning-button>
+    </div>
+    <!-- <p>hi</p> -->
+
+</template>

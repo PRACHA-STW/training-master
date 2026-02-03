@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meter Location --></label>
+    <name>FSM_MeterLocPick__c</name>
+    <picklistValues>
+        <masterLabel>BB ACCESS REQD</masterLabel>
+        <translation><!-- BB ACCESS REQD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB FRONT IN LINE</masterLabel>
+        <translation><!-- BB FRONT IN LINE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB FRONT LEFT</masterLabel>
+        <translation><!-- BB FRONT LEFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB FRONT RIGHT</masterLabel>
+        <translation><!-- BB FRONT RIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB IN FIELD</masterLabel>
+        <translation><!-- BB IN FIELD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB LEFT SIDE FRONT</masterLabel>
+        <translation><!-- BB LEFT SIDE FRONT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB LEFT SIDE IN LINE</masterLabel>
+        <translation><!-- BB LEFT SIDE IN LINE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB LEFT SIDE REAR</masterLabel>
+        <translation><!-- BB LEFT SIDE REAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB REAR IN LINE</masterLabel>
+        <translation><!-- BB REAR IN LINE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB REAR LEFT</masterLabel>
+        <translation><!-- BB REAR LEFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB REAR RIGHT</masterLabel>
+        <translation><!-- BB REAR RIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB RIGHT SIDE FRONT</masterLabel>
+        <translation><!-- BB RIGHT SIDE FRONT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB RIGHT SIDE IN LINE</masterLabel>
+        <translation><!-- BB RIGHT SIDE IN LINE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB RIGHT SIDE REAR</masterLabel>
+        <translation><!-- BB RIGHT SIDE REAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB RURAL VERGE</masterLabel>
+        <translation><!-- BB RURAL VERGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOUNDARY BOX</masterLabel>
+        <translation><!-- BOUNDARY BOX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHAMBER IN FIELD</masterLabel>
+        <translation><!-- CHAMBER IN FIELD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXTERNAL CHAMBER</masterLabel>
+        <translation><!-- EXTERNAL CHAMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INTERNAL VISUAL</masterLabel>
+        <translation><!-- INTERNAL VISUAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RADIO BB</masterLabel>
+        <translation><!-- RADIO BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RADIO CHAMBER</masterLabel>
+        <translation><!-- RADIO CHAMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RADIO INTERNAL</masterLabel>
+        <translation><!-- RADIO INTERNAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RD NO TP/SC</masterLabel>
+        <translation><!-- RD NO TP/SC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RD RADIO</masterLabel>
+        <translation><!-- RD RADIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RD TP/SC OFF RD</masterLabel>
+        <translation><!-- RD TP/SC OFF RD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RD TP/SC ON RD</masterLabel>
+        <translation><!-- RD TP/SC ON RD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP ACCESS REQD</masterLabel>
+        <translation><!-- TP ACCESS REQD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP BASEMENT</masterLabel>
+        <translation><!-- TP BASEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP FRONT CENTRE</masterLabel>
+        <translation><!-- TP FRONT CENTRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP FRONT LEFT</masterLabel>
+        <translation><!-- TP FRONT LEFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP FRONT RIGHT</masterLabel>
+        <translation><!-- TP FRONT RIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP INTERNAL OTHER</masterLabel>
+        <translation><!-- TP INTERNAL OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP LEFT SIDE CENTRE</masterLabel>
+        <translation><!-- TP LEFT SIDE CENTRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP LEFT SIDE FRONT</masterLabel>
+        <translation><!-- TP LEFT SIDE FRONT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP LEFT SIDE REAR</masterLabel>
+        <translation><!-- TP LEFT SIDE REAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP LOCATION UNKNOWN</masterLabel>
+        <translation><!-- TP LOCATION UNKNOWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP MTR CBOARD/RM</masterLabel>
+        <translation><!-- TP MTR CBOARD/RM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP REAR CENTRE</masterLabel>
+        <translation><!-- TP REAR CENTRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP REAR LEFT</masterLabel>
+        <translation><!-- TP REAR LEFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP REAR RIGHT</masterLabel>
+        <translation><!-- TP REAR RIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP RIGHT SIDE CENTRE</masterLabel>
+        <translation><!-- TP RIGHT SIDE CENTRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP RIGHT SIDE FRONT</masterLabel>
+        <translation><!-- TP RIGHT SIDE FRONT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TP RIGHT SIDE REAR</masterLabel>
+        <translation><!-- TP RIGHT SIDE REAR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as part of SFL-886,This permission will restrict user to edit others record</description>
+    <isLicensed>false</isLicensed>
+    <label>Restrict Edit Other Records</label>
+</CustomPermission>

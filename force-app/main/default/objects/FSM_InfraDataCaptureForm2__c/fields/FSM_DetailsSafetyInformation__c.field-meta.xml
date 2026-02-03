@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_DetailsSafetyInformation__c</fullName>
+    <description>SFS-3010</description>
+    <inlineHelpText>Please add additional information to outline what health and safety issues are present onsite and any additional equipment required</inlineHelpText>
+    <label>Details and safety information</label>
+    <length>500</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

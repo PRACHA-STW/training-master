@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Workmate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>created as a part of SFS-2987</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Workmate</label>
+    <type>Checkbox</type>
+</CustomField>

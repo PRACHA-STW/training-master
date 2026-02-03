@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CancellationReasonsRequired</fullName>
+    <active>true</active>
+    <description>Restrict user from updating status to Cancelled in UI , if Cancellation reasons are not populated.</description>
+    <errorConditionFormula>AND(ISPICKVAL( Status , &apos;Cancelled&apos;), ISCHANGED( Status ) ,
+ISBLANK(TEXT( FSM_CancellationReason__c )),NOT( $Permission.FSM_Integration ))</errorConditionFormula>
+    <errorMessage>Please populate Cancellation Reason if the status is Cancelled.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NoticeTypeAndState__c</fullName>
+    <description>Concatenation of notice type and state from permit object  to display in Gantt tooltip. This is as part of SFS-1401.</description>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c),
+    &quot;00&quot;, &quot;No Notice Required&quot;,
+    &quot;01&quot;, &quot;Major&quot;,
+    &quot;02&quot;, &quot;Standard&quot;,
+    &quot;03&quot;,&quot;Minor&quot;,
+	&quot;04&quot;,&quot;Immediate - Urgent&quot;,
+	&quot;05&quot;,&quot;Immediate - Emergency&quot;,
+&quot;&quot;
+) + &quot;-&quot; + 
+CASE(TEXT(FSSK__FSK_Work_Order__r.FSM_NoticeState__c),
+    &quot;NNSE&quot;, &quot;Notice Not Sent&quot;,
+    &quot;NSEN&quot;, &quot;Notice Sent&quot;,
+    &quot;NSIT&quot;, &quot;Notice Sent Initial&quot;,
+    &quot;NTBS&quot;,&quot;Notice To Be Sent&quot;,
+&quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Notice Type And State</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

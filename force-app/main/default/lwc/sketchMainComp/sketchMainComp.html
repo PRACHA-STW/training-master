@@ -1,0 +1,87 @@
+<template>
+    <div class="slds-grid slds-grid_vertical" style="background-color: white; height: 100%;width:100%;">
+        <!-- {woId} -->
+       <template if:true={openfileuploader}>
+    <lightning-card>
+        <c-sketch-file-uploader
+            onselectimages={handleImagesSelected}
+            ondraggableimages={handleDraggableImages}
+            onsketchimages={handlesketchimages}
+            ontmasketchimages={handletmasketchimages}
+            retainbasemap={selbsemap}
+            retainsiteicon={siteicon}
+            retainsketchimg={sketchimagesdata}
+            retaintmaimg={tmasketchimagesdata}
+            dcfformdata={formdata}
+            photo-images={photoImages}
+            textsarr={textoneditor}
+            shapesarr={shapesoneditor}
+            imagesarr={imagesoneditor}
+            preloadedtextprevarr={preloaddata}
+            isboppsflow={isboppsflow} 
+            isnormalflow={isnormalflow} 
+            istmaflow={istmaflow}
+            >
+        </c-sketch-file-uploader>
+    </lightning-card>
+    
+
+    </template>
+    <template if:true={openEditor}>
+        <c-sketch-editor
+            is-edit={isEdit}
+            base-image={baseImageData}
+            site-image={draggableImageData} 
+            sketch-image={sketchImageData}
+            tmasketch-image={tmasketchImageData}
+            record-id={woId}
+            device-type={isMobile}
+            isboppsflow={isboppsflow} 
+            isnormalflow={isnormalflow} 
+            istmaflow={istmaflow}
+            sketch-text-fields={sketchText}
+            formtype={formtype}
+            photo-images={photoImages}
+            proforma-images={proformaImages}
+            dcfrecorddata={formdata}
+            onpreveditor={opensketchfileuploader}
+            onpdfcreation={closesketcheditor}
+            textfromsketchmain={textoneditor}
+            shapesfromsketchmain={shapesoneditor}
+            imagesfromsketchmain={imagesoneditor}
+            preloadedtextprev={preloaddata}
+            onendscreen={handlecloseform}
+            onproformaimgfromeditor={handleproformaimages}>
+        </c-sketch-editor>
+    </template>
+  <template if:true={openfileuploader}> 
+     <!-- <lightning-card> -->
+         <div class="section footer ">
+            <div class="footer-content slds-grid slds-var-p-around_small">
+                <button
+                onclick={handlePrevious}
+                type="button"
+                class="slds-button slds-button_outline-brand slds-col slds-button_stretch">
+                <label>Previous</label></button>
+                <button
+                    onclick={handleEditor}
+                    type="button"
+                    class="slds-button slds-button_outline-brand slds-col slds-button_stretch">
+                    <label>Next</label></button>&nbsp;&nbsp;
+                   
+            </div>
+        </div> 
+    <!-- </lightning-card> -->
+    <!-- <div class="section footer slds-position_absolute slds-bottom_0">
+
+        <lightning-button title="Previous" label="Previous"  onclick={handlePrevious}></lightning-button> &nbsp;&nbsp;
+        <lightning-button title="Next" label="Next"  onclick={handleEditor}></lightning-button>
+    </div> -->
+   </template> 
+    <template if:true={closewindow}>
+        <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">Data Capture Form is submitted successfully. Please close the screen to continue</p> 
+       
+    </template>
+    </div>
+    
+</template>

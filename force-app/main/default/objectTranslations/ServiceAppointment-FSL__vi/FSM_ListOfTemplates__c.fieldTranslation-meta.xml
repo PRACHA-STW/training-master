@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Email Template --></label>
+    <name>FSM_ListOfTemplates__c</name>
+    <picklistValues>
+        <masterLabel>7 Day Land Entry Notice</masterLabel>
+        <translation><!-- 7 Day Land Entry Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All works complete</masterLabel>
+        <translation><!-- All works complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aquapea</masterLabel>
+        <translation><!-- Aquapea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOPPs 3rd Party</masterLabel>
+        <translation><!-- BOPPs 3rd Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East</masterLabel>
+        <translation><!-- East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Land Entry Notice</masterLabel>
+        <translation><!-- Emergency Land Entry Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further investigation - I need to reattend to continue my investigations</masterLabel>
+        <translation><!-- Further investigation - I need to reattend to continue my investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further investigation – Someone from my team needs to reattend for further investigation</masterLabel>
+        <translation><!-- Further investigation – Someone from my team needs to reattend for further investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further work R&amp;M - I have arranged for a team to reattend and complete more work</masterLabel>
+        <translation><!-- Further work R&amp;M - I have arranged for a team to reattend and complete more work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak Detection</masterLabel>
+        <translation><!-- Gas Leak Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD - 7 Day Land Entry Notice</masterLabel>
+        <translation><!-- HD - 7 Day Land Entry Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD - BOPPs 3rd Party</masterLabel>
+        <translation><!-- HD - BOPPs 3rd Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD - Emergency Notice Land Entry Notice</masterLabel>
+        <translation><!-- HD - Emergency Notice Land Entry Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD - Leak on Private Supply Pipe (English version)</masterLabel>
+        <translation><!-- HD - Leak on Private Supply Pipe (English version) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD - Leak on Private Supply Pipe (Welsh version)</masterLabel>
+        <translation><!-- HD - Leak on Private Supply Pipe (Welsh version) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I have taken samples to test, it will take 10 working days for the results, and we will contact you when we have them</masterLabel>
+        <translation><!-- I have taken samples to test, it will take 10 working days for the results, and we will contact you when we have them --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Feedback</masterLabel>
+        <translation><!-- Job Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaflet Only</masterLabel>
+        <translation><!-- Leaflet Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leak on Private Supply Pipe</masterLabel>
+        <translation><!-- Leak on Private Supply Pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole</masterLabel>
+        <translation><!-- Manhole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Exchange</masterLabel>
+        <translation><!-- Meter Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Maintenance</masterLabel>
+        <translation><!-- Meter Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Net Tech</masterLabel>
+        <translation><!-- Net Tech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non STW issue</masterLabel>
+        <translation><!-- Non STW issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Our work is not finished, another dig team will be along to continue the work</masterLabel>
+        <translation><!-- Our work is not finished, another dig team will be along to continue the work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Our work is not finished, we have carried out some investigation to find out what we need to do next.</masterLabel>
+        <translation><!-- Our work is not finished, we have carried out some investigation to find out what we need to do next. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permission to Dig</masterLabel>
+        <translation><!-- Permission to Dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permission to Dig (Welsh version)</masterLabel>
+        <translation><!-- Permission to Dig (Welsh version) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Sewer Blockages</masterLabel>
+        <translation><!-- Private Sewer Blockages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private leak investigation – Further CI work required</masterLabel>
+        <translation><!-- Private leak investigation – Further CI work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private leak investigation – Further R&amp;M work required</masterLabel>
+        <translation><!-- Private leak investigation – Further R&amp;M work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private leak – diagnosed, no further work</masterLabel>
+        <translation><!-- Private leak – diagnosed, no further work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private pressure - diagnosed, no further work</masterLabel>
+        <translation><!-- Private pressure - diagnosed, no further work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private pressure investigation – further R&amp;M work required</masterLabel>
+        <translation><!-- Private pressure investigation – further R&amp;M work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private_Sewer_Blockages</masterLabel>
+        <translation><!-- Private_Sewer_Blockages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste</masterLabel>
+        <translation><!-- Waste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste issue</masterLabel>
+        <translation><!-- Waste issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We have completed and reinstated one excavation, but will need to come back out and dig again to complete our investigations</masterLabel>
+        <translation><!-- We have completed and reinstated one excavation, but will need to come back out and dig again to complete our investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We have completed the work – Clean Up has been requested</masterLabel>
+        <translation><!-- We have completed the work – Clean Up has been requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We have completed the work – No clean up</masterLabel>
+        <translation><!-- We have completed the work – No clean up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We have completed the work – someone will be back out to do further investigation</masterLabel>
+        <translation><!-- We have completed the work – someone will be back out to do further investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We have completed the work – someone will be back out to do further investigation, Clean Up has been requested</masterLabel>
+        <translation><!-- We have completed the work – someone will be back out to do further investigation, Clean Up has been requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West</masterLabel>
+        <translation><!-- West --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

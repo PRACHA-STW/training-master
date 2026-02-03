@@ -1,0 +1,62 @@
+<template>
+        <!-- Show Record page -->
+        <template if:true={openRecordPage}>
+            <!-- <lightning-card> -->
+            <c-fsm-sewerage-fwr ondcfworkstepid={handleDcfWorkStepId} objname={objCurrentName} recid={woId}
+                objectname={objName} woid={workOrderid} onfinalsubmit={handlefinalsubmit}
+                isprevfromnextcmp={openlastpageofform}></c-fsm-sewerage-fwr>
+            <!-- </lightning-card> -->
+        </template>
+        <!-- Show file uploader -->
+        <template if:true={openFileUploader}>
+            <!-- <lightning-card> -->
+            <c-fsm_further-work-request-photo-capture formtype={formType} formdata={datafromfwr}
+                sketch-text={sketchText} onphotocapture={handlePhotoCaptureImages}
+                onprevbtn={handlePrevfromphotocapture} onnextbtn={handleClickNext} siteicon={sitedataicon}
+                selbsemap={mapdata} selectedimgs={selimgs} imgsarreditor={editorimgarr} shapearreditor={editorshapesarr}
+                txtarreditor={editortxtarr} sketchimagesdata={sketchiconimages}
+                tmasketchimagesdata={tmasketchiconimages} preloadedtxt={editorpreload} dcfworkstepid={dcfWorkStepId}
+                is-edit={isEdit}></c-fsm_further-work-request-photo-capture>
+            <!-- </lightning-card> -->
+        </template>
+        <!-- Success on Inprogress form -->
+        <template if:true={successmessagewindow}>
+            <lightning-card>
+                <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">Data Capture Form is
+                    submitted successfully. Please close the screen to continue</p>
+            </lightning-card>
+        </template>
+        <!-- Show Editor -->
+        <template if:true={openEditor}>
+            <!-- <lightning-card> -->
+            <c-sketch-main-comp wo-id={woId} sketch-text={sketchText} formtype={formtype} is-mobile={deviceType}
+                formdata={datafromfwr} photo-images={photoCaptureImageList} onprev={handlePrevfromsketchmaincmp}
+                siteicon={sitedataicon} selbsemap={mapdata} sketchimagesdata={sketchiconimages}
+                tmasketchimagesdata={tmasketchiconimages} imagesoneditor={imagesdata} shapesoneditor={shapesdata}
+                textoneditor={textdata} preloaddata={pretextdata} is-edit={isEdit}></c-sketch-main-comp>
+            <!-- </lightning-card> -->
+        </template>
+        <!-- Loading Spinner -->
+        <template if:true={isLoading}>
+            <lightning-spinner variant="brand" size="large"> </lightning-spinner>
+        </template>
+        <!--  Show Editor  end-->
+        <template if:true={continuetogoldsketch}>
+            <lightning-card>
+                <div>
+                    <p class="slds-text-heading_medium slds-text-align_left slds-p-left_small">Do you wish to continue
+                        with
+                        Sketch? </p><br />
+                    <p class="slds-text-heading_small slds-text-align_left slds-p-left_small"
+                        style="font-style: italic;">
+                        If you wish to switch device or complete sketch later, select 'No' </p>
+                </div><br />
+                <div class="slds-align_left slds-p-left_small">
+                    <lightning-button title="Yes" label="Yes" variant="brand"
+                        onclick={handleClickYes}></lightning-button>
+                    &nbsp;&nbsp;&nbsp;
+                    <lightning-button title="No" label="No" variant="brand" onclick={handleClickNo}></lightning-button>
+                </div>
+            </lightning-card>
+        </template>
+</template>

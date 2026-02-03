@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retrigger Auto Schedule --></label>
+    <name>FSM_RetriggerAutoSchedule__c</name>
+</CustomFieldTranslation>

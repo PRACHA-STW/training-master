@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_MapPolygonSharingForContractorFW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4136</description>
+        <label>Map Polygon Sharing For Contractor FW</label>
+        <sharedTo>
+            <group>FSM_ContractorFieldWorker</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_MapPolygonSharingForContractorSchedulers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4136</description>
+        <label>Map Polygon Sharing For Contractor Schedulers</label>
+        <sharedTo>
+            <group>FSM_ContractorScheduler</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_PolygonSharingforDeveloperServices</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4514</description>
+        <label>Polygon Sharing for Developer Services</label>
+        <sharedTo>
+            <group>FSM_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Developer Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_PolygonSharingforMetering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4514</description>
+        <label>Polygon Sharing for Metering</label>
+        <sharedTo>
+            <group>FSM_Metering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Metering</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_PolygonSharingforWasteInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4514</description>
+        <label>Polygon Sharing for Waste Infra</label>
+        <sharedTo>
+            <group>FSM_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_PolygonSharingforWasteNonInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4514</description>
+        <label>Polygon Sharing for Waste Non Infra</label>
+        <sharedTo>
+            <group>FSM_WasteNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_PolygonSharingforWaterInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4514</description>
+        <label>Polygon Sharing for Water Infra</label>
+        <sharedTo>
+            <group>FSM_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_PolygonSharingforWaterNonInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4514</description>
+        <label>Polygon Sharing for Water Non Infra</label>
+        <sharedTo>
+            <group>FSM_WaterNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_Polygon_Sharing_for_Business_Admins</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Polygons are shared with Business Admins with Read/Edit permission so that they can create polygon assignments</description>
+        <label>Polygon Sharing for Business Admins</label>
+        <sharedTo>
+            <group>FSM_BusinessAdminGroup</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

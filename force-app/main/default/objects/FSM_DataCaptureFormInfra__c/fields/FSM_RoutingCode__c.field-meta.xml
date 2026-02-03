@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RoutingCode__c</fullName>
+    <description>SFS-1320</description>
+    <label>Routing Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>APORTN-APORTS Returned Inspections</fullName>
+                <default>false</default>
+                <label>APORTN-APORTS Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>CAPKIK-Capita Kickout Returned Inspections</fullName>
+                <default>false</default>
+                <label>CAPKIK-Capita Kickout Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>CATRTN-Measured Specialist returned inspection</fullName>
+                <default>false</default>
+                <label>CATRTN-Measured Specialist returned inspection</label>
+            </value>
+            <value>
+                <fullName>CCARLI-Returned litigation visit</fullName>
+                <default>false</default>
+                <label>CCARLI-Returned litigation visit</label>
+            </value>
+            <value>
+                <fullName>CDISC-Completed Disconnection Returns</fullName>
+                <default>false</default>
+                <label>CDISC-Completed Disconnection Returns</label>
+            </value>
+            <value>
+                <fullName>CRSUPP-Cross Supply Returned Inspections</fullName>
+                <default>false</default>
+                <label>CRSUPP-Cross Supply Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>DOMRTN-Proactive Household Non Connection RTNs</fullName>
+                <default>false</default>
+                <label>DOMRTN-Proactive Household Non Connection RTNs</label>
+            </value>
+            <value>
+                <fullName>DUPRTN-Identified Duplicate Account Returns</fullName>
+                <default>false</default>
+                <label>DUPRTN-Identified Duplicate Account Returns</label>
+            </value>
+            <value>
+                <fullName>INCVIS-Incomplete Visit</fullName>
+                <default>false</default>
+                <label>INCVIS-Incomplete Visit</label>
+            </value>
+            <value>
+                <fullName>INFRTN-Initial / Final Reading Returns</fullName>
+                <default>false</default>
+                <label>INFRTN-Initial / Final Reading Returns</label>
+            </value>
+            <value>
+                <fullName>KICRTN-Kickout Returned Inspections</fullName>
+                <default>false</default>
+                <label>KICRTN-Kickout Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>LEAKRN-Leak Returned Inspections</fullName>
+                <default>false</default>
+                <label>LEAKRN-Leak Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>MEXRTN-Meter Exchange Return Inspections</fullName>
+                <default>false</default>
+                <label>MEXRTN-Meter Exchange Return Inspections</label>
+            </value>
+            <value>
+                <fullName>MRAUTH-Meter Trace Returned Inspections</fullName>
+                <default>false</default>
+                <label>MRAUTH-Meter Trace Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>NEWSF-Account Creation Returned Inspections</fullName>
+                <default>false</default>
+                <label>NEWSF-Account Creation Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>NHNCRT-HD-NHH SWD Returned Inspections</fullName>
+                <default>false</default>
+                <label>NHNCRT-HD-NHH SWD Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>NHSART-HD-NHH Site Area Returned Inspections</fullName>
+                <default>false</default>
+                <label>NHSART-HD-NHH Site Area Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>OWCRTN-Other Water Company Returned Inspections</fullName>
+                <default>false</default>
+                <label>OWCRTN-Other Water Company Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>REARTN-Reactive Household Non Connection Rtn</fullName>
+                <default>false</default>
+                <label>REARTN-Reactive Household Non Connection Rtn</label>
+            </value>
+            <value>
+                <fullName>REVERT-REVERT</fullName>
+                <default>false</default>
+                <label>REVERT-REVERT</label>
+            </value>
+            <value>
+                <fullName>RVDIT-Data Integrity Returned Inspections</fullName>
+                <default>false</default>
+                <label>RVDIT-Data Integrity Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>RVRVTX-Capita Meter Exchange Returned Inspections</fullName>
+                <default>false</default>
+                <label>RVRVTX-Capita Meter Exchange Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>SBRTN-Shelton Kickouts Returned Inspections</fullName>
+                <default>false</default>
+                <label>SBRTN-Shelton Kickouts Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>STANK-Septic tank queries</fullName>
+                <default>false</default>
+                <label>STANK-Septic tank queries</label>
+            </value>
+            <value>
+                <fullName>SUBRTN-SUB-ALT-Returned Inspections</fullName>
+                <default>false</default>
+                <label>SUBRTN-SUB-ALT-Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>SVIRTN-Service Recovery Returned Inspections</fullName>
+                <default>false</default>
+                <label>SVIRTN-Service Recovery Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>UBCOIN-Unbilled Property Returned Inspections</fullName>
+                <default>false</default>
+                <label>UBCOIN-Unbilled Property Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>VBLKRT-Bulk Returned Visits Click</fullName>
+                <default>false</default>
+                <label>VBLKRT-Bulk Returned Visits Click</label>
+            </value>
+            <value>
+                <fullName>VORTIN-Void Returned Inspections</fullName>
+                <default>false</default>
+                <label>VORTIN-Void Returned Inspections</label>
+            </value>
+            <value>
+                <fullName>XVIRTN-Written Complaints Returned Inspections</fullName>
+                <default>false</default>
+                <label>XVIRTN-Written Complaints Returned Inspections</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RestrictSkillReqEdit</fullName>
+    <active>true</active>
+    <description>Created for SFS-7595</description>
+    <errorConditionFormula>AND(ISNEW() = False,
+$Permission.FSM_RestrictSkillReqEdit,
+NOT(BEGINS(Skill.DeveloperName, &apos;P&apos;))
+)</errorConditionFormula>
+    <errorMessage>Insufficient access to edit Skill Requirements</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CannotModifyTMANoticePeriodRecord</fullName>
+    <active>true</active>
+    <description>SFS-4807</description>
+    <errorConditionFormula>NOT($Permission.FSM_EditTMANoticePeriod)</errorConditionFormula>
+    <errorMessage>You don&apos;t have sufficient privilege to edit this record, please contact salesforce administrator.</errorMessage>
+</ValidationRule>

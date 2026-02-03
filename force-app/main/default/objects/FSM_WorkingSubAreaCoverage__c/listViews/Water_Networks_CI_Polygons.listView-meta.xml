@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Water_Networks_CI_Polygons</fullName>
+    <columns>FSM_Polygon__c</columns>
+    <columns>NAME</columns>
+    <columns>FSM_ServiceResource__c</columns>
+    <columns>FSM_StartDate__c</columns>
+    <columns>FSM_EndDate__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_Polygon__c</field>
+        <operation>contains</operation>
+        <value>WD</value>
+    </filters>
+    <label>Water Networks - CI Polygons</label>
+    <sharedTo>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

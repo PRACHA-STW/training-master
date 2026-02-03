@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DCF Dependant Picklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DCF Dependant Picklist</value>
+    </caseValues>
+    <layouts>
+        <layout>DCF Dependant Picklist Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- FWR Dependant Picklists --></label>
+            <section>FWR Dependant Picklists</section>
+        </sections>
+        <sections>
+            <label><!-- PIA Codes --></label>
+            <section>PIA Codes</section>
+        </sections>
+        <sections>
+            <label><!-- Sewerage Dependant Picklists --></label>
+            <section>Sewerage Dependant Picklists</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

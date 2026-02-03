@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_UpdateCustomerOnComplete__c</fullName>
+    <description>created as part of SFS-5306</description>
+    <label>Update Customer On Job Complete</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Spoke to customer onsite</fullName>
+                <default>false</default>
+                <label>Spoke to customer onsite</label>
+            </value>
+            <value>
+                <fullName>Called customer &amp; updated</fullName>
+                <default>false</default>
+                <label>Called customer &amp; updated</label>
+            </value>
+            <value>
+                <fullName>Voicemail left for customer</fullName>
+                <default>false</default>
+                <label>Voicemail left for customer</label>
+            </value>
+            <value>
+                <fullName>Text customer with update</fullName>
+                <default>false</default>
+                <label>Text customer with update</label>
+            </value>
+            <value>
+                <fullName>Left calling card</fullName>
+                <default>false</default>
+                <label>Left calling card</label>
+            </value>
+            <value>
+                <fullName>Emailed calling card</fullName>
+                <default>false</default>
+                <label>Emailed calling card</label>
+            </value>
+            <value>
+                <fullName>VYN video used to update customer (If selected tab opens to insert link)</fullName>
+                <default>false</default>
+                <label>VYN video used to update customer (If selected tab opens to insert link)</label>
+            </value>
+            <value>
+                <fullName>No interaction, due to incorrect contact details</fullName>
+                <default>false</default>
+                <label>No interaction, due to incorrect contact details</label>
+            </value>
+            <value>
+                <fullName>No contact details provided</fullName>
+                <default>false</default>
+                <label>No contact details provided</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

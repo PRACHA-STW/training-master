@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Duration of escape (hrs) --></label>
+    <name>FSM_EscapeDuration__c</name>
+    <picklistValues>
+        <masterLabel>&lt;1</masterLabel>
+        <translation><!-- &lt;1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=1, &lt;4</masterLabel>
+        <translation><!-- &gt;=1, &lt;4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=12, &lt;24</masterLabel>
+        <translation><!-- &gt;=12, &lt;24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=24</masterLabel>
+        <translation><!-- &gt;=24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=4, &lt;8</masterLabel>
+        <translation><!-- &gt;=4, &lt;8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=8, &lt;12</masterLabel>
+        <translation><!-- &gt;=8, &lt;12 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

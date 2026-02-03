@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Do_not_send_to_SAP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>created as part of SFS-4061 to indicate that the additional files created while creating pdf in gold sketchand simple sketch should not be sent</description>
+    <label>Do not send to SAP</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

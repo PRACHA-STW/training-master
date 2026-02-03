@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ReadyForSchedule__c</fullName>
+    <description>SFS-62 , SFS-111 , SFS-1923
+Updated for SFS-4793
+Updated SFI-1783, added temporary check
+Updated as part of SFS-6987
+Updated as part of SFS-8026</description>
+    <formula>AND( NOT(ISNULL(FSM_Latitude__c )), NOT(ISNULL(FSM_Longitude__c )) ,
+IF(ServiceTerritory.FSM_WorkingSubAreaRequired__c = True, NOT(ISNULL(FSM_Polygon__c )), true), FSM_HasImmediateTMA__c = false,FSSK__FSK_Work_Order__r.FSM_IsTemporaryRecord__c=false, FSM_StandardTextKey__c  &lt;&gt;  &apos;MHHVFTS&apos;,FSM_StandardTextKey__c  &lt;&gt;  &apos;MNHHVTS&apos; )</formula>
+    <label>Ready For Schedule/Optimization</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

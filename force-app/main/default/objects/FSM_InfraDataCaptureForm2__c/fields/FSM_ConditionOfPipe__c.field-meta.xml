@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ConditionOfPipe__c</fullName>
+    <label>What is the condition of the pipe ?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipe appears to be in good order</fullName>
+                <default>false</default>
+                <label>Pipe appears to be in good order</label>
+            </value>
+            <value>
+                <fullName>Unable to see pipe condition as wrapped but wrapping appears in good condition</fullName>
+                <default>false</default>
+                <label>Unable to see pipe condition as wrapped but wrapping appears in good condition</label>
+            </value>
+            <value>
+                <fullName>Signs of weathering to pipe but no significant concerns</fullName>
+                <default>false</default>
+                <label>Signs of weathering to pipe but no significant concerns</label>
+            </value>
+            <value>
+                <fullName>Deterioration of the wrapping evident so can assume pipe may have pitting / corrosion</fullName>
+                <default>false</default>
+                <label>Deterioration of the wrapping evident so can assume pipe may have pitting / corrosion</label>
+            </value>
+            <value>
+                <fullName>Signs of pitting / corrosion to the pipe</fullName>
+                <default>false</default>
+                <label>Signs of pitting / corrosion to the pipe</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

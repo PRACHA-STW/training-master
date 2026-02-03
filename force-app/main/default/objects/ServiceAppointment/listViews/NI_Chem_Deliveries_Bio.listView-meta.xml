@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NI_Chem_Deliveries_Bio</fullName>
+    <columns>FSM_SAPWorkorderNumber__c</columns>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>FSM_FlocDescription__c</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>EarliestStartTime</columns>
+    <columns>SchedStartTime</columns>
+    <columns>LatestEndTime</columns>
+    <columns>DurationInMinutes</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>ZIP</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_WorkTypeCode__c</field>
+        <operation>contains</operation>
+        <value>CHEM DEL</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>New,Scheduled,Dispatched,Rejected</value>
+    </filters>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>contains</operation>
+        <value>Bio</value>
+    </filters>
+    <label>NI - Chem Deliveries - Bio</label>
+    <sharedTo>
+        <group>FSM_BioResource</group>
+    </sharedTo>
+</ListView>

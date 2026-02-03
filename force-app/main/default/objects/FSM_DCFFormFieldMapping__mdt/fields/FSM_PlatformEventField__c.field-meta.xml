@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PlatformEventField__c</fullName>
+    <description>SFI-35</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Platform Event Field</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FSM_DCFLineItemsPayload__c</fullName>
+                <default>false</default>
+                <label>FSM_DCFLineItemsPayload__c</label>
+            </value>
+            <value>
+                <fullName>FSM_DCFPayload1__c</fullName>
+                <default>false</default>
+                <label>FSM_DCFPayload1__c</label>
+            </value>
+            <value>
+                <fullName>FSM_DCFPayload2__c</fullName>
+                <default>false</default>
+                <label>FSM_DCFPayload2__c</label>
+            </value>
+            <value>
+                <fullName>FSM_DCFPayload3__c</fullName>
+                <default>false</default>
+                <label>FSM_DCFPayload3__c</label>
+            </value>
+            <value>
+                <fullName>FSM_DCFPayload4__c</fullName>
+                <default>false</default>
+                <label>FSM_DCFPayload4__c</label>
+            </value>
+            <value>
+                <fullName>FSM_DCFPayload5__c</fullName>
+                <default>false</default>
+                <label>FSM_DCFPayload5__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Impact_Code_Value__c</fullName>
+    <label>Impact Code Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equipment Damage</fullName>
+                <default>false</default>
+                <label>Equipment Damage</label>
+            </value>
+            <value>
+                <fullName>No Impact</fullName>
+                <default>false</default>
+                <label>No Impact</label>
+            </value>
+            <value>
+                <fullName>Equipment In Hand</fullName>
+                <default>false</default>
+                <label>Equipment In Hand</label>
+            </value>
+            <value>
+                <fullName>Equipment Faulty</fullName>
+                <default>false</default>
+                <label>Equipment Faulty</label>
+            </value>
+            <value>
+                <fullName>Customer is not aware of service request</fullName>
+                <default>false</default>
+                <label>Customer is not aware of service request</label>
+            </value>
+            <value>
+                <fullName>Customer aware of service request</fullName>
+                <default>false</default>
+                <label>Customer aware of service request</label>
+            </value>
+            <value>
+                <fullName>Consent is not given to contact customer</fullName>
+                <default>false</default>
+                <label>Consent is not given to contact customer</label>
+            </value>
+            <value>
+                <fullName>Consent is given to contact customer</fullName>
+                <default>false</default>
+                <label>Consent is given to contact customer</label>
+            </value>
+            <value>
+                <fullName>Customer contact NOT reqd for site visit</fullName>
+                <default>false</default>
+                <label>Customer contact NOT reqd for site visit</label>
+            </value>
+            <value>
+                <fullName>Customer contact required for site visit</fullName>
+                <default>false</default>
+                <label>Customer contact required for site visit</label>
+            </value>
+            <value>
+                <fullName>Customer can be contacted via tel/email</fullName>
+                <default>false</default>
+                <label>Customer can be contacted via tel/email</label>
+            </value>
+            <value>
+                <fullName>Customer preferred contact method email</fullName>
+                <default>false</default>
+                <label>Customer preferred contact method email</label>
+            </value>
+            <value>
+                <fullName>Customer preferred contact method teleph</fullName>
+                <default>false</default>
+                <label>Customer preferred contact method teleph</label>
+            </value>
+            <value>
+                <fullName>Customer contact- first half of the day</fullName>
+                <default>false</default>
+                <label>Customer contact- first half of the day</label>
+            </value>
+            <value>
+                <fullName>Customer contact- any time of the day</fullName>
+                <default>false</default>
+                <label>Customer contact- any time of the day</label>
+            </value>
+            <value>
+                <fullName>Customer contact- second half of the day</fullName>
+                <default>false</default>
+                <label>Customer contact- second half of the day</label>
+            </value>
+            <value>
+                <fullName>COST</fullName>
+                <default>false</default>
+                <label>COST</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Discharge chamb. not 5m from Conn. Point</fullName>
+                <default>false</default>
+                <label>Discharge chamb. not 5m from Conn. Point</label>
+            </value>
+            <value>
+                <fullName>Conn. incorrect/Not to Approval Letter</fullName>
+                <default>false</default>
+                <label>Conn. incorrect/Not to Approval Letter</label>
+            </value>
+            <value>
+                <fullName>Opening in wrong position on slab</fullName>
+                <default>false</default>
+                <label>Opening in wrong position on slab</label>
+            </value>
+            <value>
+                <fullName>Chamber constructed in the wrong place</fullName>
+                <default>false</default>
+                <label>Chamber constructed in the wrong place</label>
+            </value>
+            <value>
+                <fullName>Customer connected to wrong sewer</fullName>
+                <default>false</default>
+                <label>Customer connected to wrong sewer</label>
+            </value>
+            <value>
+                <fullName>Air testing</fullName>
+                <default>false</default>
+                <label>Air testing</label>
+            </value>
+            <value>
+                <fullName>Back drop been fitted</fullName>
+                <default>false</default>
+                <label>Back drop been fitted</label>
+            </value>
+            <value>
+                <fullName>Benching not completed</fullName>
+                <default>false</default>
+                <label>Benching not completed</label>
+            </value>
+            <value>
+                <fullName>Landing stage in chamber wrong size</fullName>
+                <default>false</default>
+                <label>Landing stage in chamber wrong size</label>
+            </value>
+            <value>
+                <fullName>Infill cover fitted on demarc. chamber</fullName>
+                <default>false</default>
+                <label>Infill cover fitted on demarc. chamber</label>
+            </value>
+            <value>
+                <fullName>Ingress of water</fullName>
+                <default>false</default>
+                <label>Ingress of water</label>
+            </value>
+            <value>
+                <fullName>Lifting eyes not pointed</fullName>
+                <default>false</default>
+                <label>Lifting eyes not pointed</label>
+            </value>
+            <value>
+                <fullName>Step irons not fitted</fullName>
+                <default>false</default>
+                <label>Step irons not fitted</label>
+            </value>
+            <value>
+                <fullName>Ladder not fitted</fullName>
+                <default>false</default>
+                <label>Ladder not fitted</label>
+            </value>
+            <value>
+                <fullName>Developer not ready</fullName>
+                <default>false</default>
+                <label>Developer not ready</label>
+            </value>
+            <value>
+                <fullName>Sewer shallow</fullName>
+                <default>false</default>
+                <label>Sewer shallow</label>
+            </value>
+            <value>
+                <fullName>Top step more than 675mm from cover top</fullName>
+                <default>false</default>
+                <label>Top step more than 675mm from cover top</label>
+            </value>
+            <value>
+                <fullName>Still under construction</fullName>
+                <default>false</default>
+                <label>Still under construction</label>
+            </value>
+            <value>
+                <fullName>Ingress of water flowing down channel</fullName>
+                <default>false</default>
+                <label>Ingress of water flowing down channel</label>
+            </value>
+            <value>
+                <fullName>Penstock not fitted</fullName>
+                <default>false</default>
+                <label>Penstock not fitted</label>
+            </value>
+            <value>
+                <fullName>Rockers not fitted</fullName>
+                <default>false</default>
+                <label>Rockers not fitted</label>
+            </value>
+            <value>
+                <fullName>Flow control device in Demarc. Chamber</fullName>
+                <default>false</default>
+                <label>Flow control device in Demarc. Chamber</label>
+            </value>
+            <value>
+                <fullName>Flow control device not fitted on site</fullName>
+                <default>false</default>
+                <label>Flow control device not fitted on site</label>
+            </value>
+            <value>
+                <fullName>Cover and Slab Brick work incorrect</fullName>
+                <default>false</default>
+                <label>Cover and Slab Brick work incorrect</label>
+            </value>
+            <value>
+                <fullName>Incorrect bed and surround</fullName>
+                <default>false</default>
+                <label>Incorrect bed and surround</label>
+            </value>
+            <value>
+                <fullName>Incorrect type of bricks used</fullName>
+                <default>false</default>
+                <label>Incorrect type of bricks used</label>
+            </value>
+            <value>
+                <fullName>Incorrect cover size</fullName>
+                <default>false</default>
+                <label>Incorrect cover size</label>
+            </value>
+            <value>
+                <fullName>Incorrect fall</fullName>
+                <default>false</default>
+                <label>Incorrect fall</label>
+            </value>
+            <value>
+                <fullName>Channels incorrect on foul connection</fullName>
+                <default>false</default>
+                <label>Channels incorrect on foul connection</label>
+            </value>
+            <value>
+                <fullName>Incorrect flow control device fitted</fullName>
+                <default>false</default>
+                <label>Incorrect flow control device fitted</label>
+            </value>
+            <value>
+                <fullName>Incorrect inspection chamber constructed</fullName>
+                <default>false</default>
+                <label>Incorrect inspection chamber constructed</label>
+            </value>
+            <value>
+                <fullName>Incorrect size sewer pipepwork/material</fullName>
+                <default>false</default>
+                <label>Incorrect size sewer pipepwork/material</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Incorrect type of cover fitted</fullName>
+                <default>false</default>
+                <label>Incorrect type of cover fitted</label>
+            </value>
+            <value>
+                <fullName>Mechanical cap end not fitted</fullName>
+                <default>false</default>
+                <label>Mechanical cap end not fitted</label>
+            </value>
+            <value>
+                <fullName>Main not live</fullName>
+                <default>false</default>
+                <label>Main not live</label>
+            </value>
+            <value>
+                <fullName>Chamber(s) not constructed</fullName>
+                <default>false</default>
+                <label>Chamber(s) not constructed</label>
+            </value>
+            <value>
+                <fullName>Main not laid</fullName>
+                <default>false</default>
+                <label>Main not laid</label>
+            </value>
+            <value>
+                <fullName>Excessive debris in trench</fullName>
+                <default>false</default>
+                <label>Excessive debris in trench</label>
+            </value>
+            <value>
+                <fullName>Incomplete - property not constructed</fullName>
+                <default>false</default>
+                <label>Incomplete - property not constructed</label>
+            </value>
+            <value>
+                <fullName>Site locked or no access</fullName>
+                <default>false</default>
+                <label>Site locked or no access</label>
+            </value>
+            <value>
+                <fullName>Not on site for inspection</fullName>
+                <default>false</default>
+                <label>Not on site for inspection</label>
+            </value>
+            <value>
+                <fullName>No inspection -further advice requested</fullName>
+                <default>false</default>
+                <label>No inspection -further advice requested</label>
+            </value>
+            <value>
+                <fullName>Unable to Inspect - pipe not laid</fullName>
+                <default>false</default>
+                <label>Unable to Inspect - pipe not laid</label>
+            </value>
+            <value>
+                <fullName>Not ready for inspection</fullName>
+                <default>false</default>
+                <label>Not ready for inspection</label>
+            </value>
+            <value>
+                <fullName>Part inspection done</fullName>
+                <default>false</default>
+                <label>Part inspection done</label>
+            </value>
+            <value>
+                <fullName>Unable to Inspect - scaffolding on site</fullName>
+                <default>false</default>
+                <label>Unable to Inspect - scaffolding on site</label>
+            </value>
+            <value>
+                <fullName>Pipe at incorrect boundry position</fullName>
+                <default>false</default>
+                <label>Pipe at incorrect boundry position</label>
+            </value>
+            <value>
+                <fullName>Incorrectly sized service pipe</fullName>
+                <default>false</default>
+                <label>Incorrectly sized service pipe</label>
+            </value>
+            <value>
+                <fullName>Main not pieced through</fullName>
+                <default>false</default>
+                <label>Main not pieced through</label>
+            </value>
+            <value>
+                <fullName>Meter not fitted</fullName>
+                <default>false</default>
+                <label>Meter not fitted</label>
+            </value>
+            <value>
+                <fullName>Pipe short of boundary</fullName>
+                <default>false</default>
+                <label>Pipe short of boundary</label>
+            </value>
+            <value>
+                <fullName>Street furniture in way</fullName>
+                <default>false</default>
+                <label>Street furniture in way</label>
+            </value>
+            <value>
+                <fullName>Land Entry letter not received by STW</fullName>
+                <default>false</default>
+                <label>Land Entry letter not received by STW</label>
+            </value>
+            <value>
+                <fullName>Multiple</fullName>
+                <default>false</default>
+                <label>Multiple</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Wrong sized duct at POE</fullName>
+                <default>false</default>
+                <label>Wrong sized duct at POE</label>
+            </value>
+            <value>
+                <fullName>Incorrect material for service pipe</fullName>
+                <default>false</default>
+                <label>Incorrect material for service pipe</label>
+            </value>
+            <value>
+                <fullName>Not bedded correctly</fullName>
+                <default>false</default>
+                <label>Not bedded correctly</label>
+            </value>
+            <value>
+                <fullName>No duct at POE</fullName>
+                <default>false</default>
+                <label>No duct at POE</label>
+            </value>
+            <value>
+                <fullName>No evidence of pipe depth</fullName>
+                <default>false</default>
+                <label>No evidence of pipe depth</label>
+            </value>
+            <value>
+                <fullName>Supply pipe not insulated at POE</fullName>
+                <default>false</default>
+                <label>Supply pipe not insulated at POE</label>
+            </value>
+            <value>
+                <fullName>Non return valve not fitted</fullName>
+                <default>false</default>
+                <label>Non return valve not fitted</label>
+            </value>
+            <value>
+                <fullName>Valves not fitted</fullName>
+                <default>false</default>
+                <label>Valves not fitted</label>
+            </value>
+            <value>
+                <fullName>Pipe too shallow or not as agreed</fullName>
+                <default>false</default>
+                <label>Pipe too shallow or not as agreed</label>
+            </value>
+            <value>
+                <fullName>Builder&apos;s standpipe not to specification</fullName>
+                <default>false</default>
+                <label>Builder&apos;s standpipe not to specification</label>
+            </value>
+            <value>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+            <value>
+                <fullName>Manual Intervention Implication</fullName>
+                <default>false</default>
+                <label>Manual Intervention Implication</label>
+            </value>
+            <value>
+                <fullName>Noise</fullName>
+                <default>false</default>
+                <label>Noise</label>
+            </value>
+            <value>
+                <fullName>Chemical Spillage</fullName>
+                <default>false</default>
+                <label>Chemical Spillage</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Safety Impact</fullName>
+                <default>false</default>
+                <label>Health &amp; Safety Impact</label>
+            </value>
+            <value>
+                <fullName>Security Issue</fullName>
+                <default>false</default>
+                <label>Security Issue</label>
+            </value>
+            <value>
+                <fullName>Retailer initiated, contact Customer</fullName>
+                <default>false</default>
+                <label>Retailer initiated, contact Customer</label>
+            </value>
+            <value>
+                <fullName>Retailer initiated, contact Retailer</fullName>
+                <default>false</default>
+                <label>Retailer initiated, contact Retailer</label>
+            </value>
+            <value>
+                <fullName>Wholesaler initiated</fullName>
+                <default>false</default>
+                <label>Wholesaler initiated</label>
+            </value>
+            <value>
+                <fullName>Initiated by Arbitration Tribunal or TDC</fullName>
+                <default>false</default>
+                <label>Initiated by Arbitration Tribunal or TDC</label>
+            </value>
+            <value>
+                <fullName>Anytime appointment</fullName>
+                <default>false</default>
+                <label>Anytime appointment</label>
+            </value>
+            <value>
+                <fullName>Morning appointment</fullName>
+                <default>false</default>
+                <label>Morning appointment</label>
+            </value>
+            <value>
+                <fullName>Afternoon appointment</fullName>
+                <default>false</default>
+                <label>Afternoon appointment</label>
+            </value>
+            <value>
+                <fullName>Specific appointment - 2 hour time slot</fullName>
+                <default>false</default>
+                <label>Specific appointment - 2 hour time slot</label>
+            </value>
+            <value>
+                <fullName>First appointment of the day</fullName>
+                <default>false</default>
+                <label>First appointment of the day</label>
+            </value>
+            <value>
+                <fullName>Leakage - 2 hour response required</fullName>
+                <default>false</default>
+                <label>Leakage - 2 hour response required</label>
+            </value>
+            <value>
+                <fullName>DG6 case</fullName>
+                <default>false</default>
+                <label>DG6 case</label>
+            </value>
+            <value>
+                <fullName>CROSS case</fullName>
+                <default>false</default>
+                <label>CROSS case</label>
+            </value>
+            <value>
+                <fullName>DG8 case</fullName>
+                <default>false</default>
+                <label>DG8 case</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Safety</fullName>
+                <default>false</default>
+                <label>Health &amp; Safety</label>
+            </value>
+            <value>
+                <fullName>Routine</fullName>
+                <default>false</default>
+                <label>Routine</label>
+            </value>
+            <value>
+                <fullName>Can visit without Retailer Involvement</fullName>
+                <default>false</default>
+                <label>Can visit without Retailer Involvement</label>
+            </value>
+            <value>
+                <fullName>Must visit with Retailer Involvement</fullName>
+                <default>false</default>
+                <label>Must visit with Retailer Involvement</label>
+            </value>
+            <value>
+                <fullName>Loss of Capacity / Functionality</fullName>
+                <default>false</default>
+                <label>Loss of Capacity / Functionality</label>
+            </value>
+            <value>
+                <fullName>No Standby</fullName>
+                <default>false</default>
+                <label>No Standby</label>
+            </value>
+            <value>
+                <fullName>No Impact to Process</fullName>
+                <default>false</default>
+                <label>No Impact to Process</label>
+            </value>
+            <value>
+                <fullName>Process Issue</fullName>
+                <default>false</default>
+                <label>Process Issue</label>
+            </value>
+            <value>
+                <fullName>Site Problem</fullName>
+                <default>false</default>
+                <label>Site Problem</label>
+            </value>
+            <value>
+                <fullName>Site Shutdown</fullName>
+                <default>false</default>
+                <label>Site Shutdown</label>
+            </value>
+            <value>
+                <fullName>Plant In Hand</fullName>
+                <default>false</default>
+                <label>Plant In Hand</label>
+            </value>
+            <value>
+                <fullName>Odour / Taste</fullName>
+                <default>false</default>
+                <label>Odour / Taste</label>
+            </value>
+            <value>
+                <fullName>Loss Of Dosing Capacity</fullName>
+                <default>false</default>
+                <label>Loss Of Dosing Capacity</label>
+            </value>
+            <value>
+                <fullName>Effluent Deteriation</fullName>
+                <default>false</default>
+                <label>Effluent Deteriation</label>
+            </value>
+            <value>
+                <fullName>Quality Impact</fullName>
+                <default>false</default>
+                <label>Quality Impact</label>
+            </value>
+            <value>
+                <fullName>Discharge on Site</fullName>
+                <default>false</default>
+                <label>Discharge on Site</label>
+            </value>
+            <value>
+                <fullName>Illegal Discharge</fullName>
+                <default>false</default>
+                <label>Illegal Discharge</label>
+            </value>
+            <value>
+                <fullName>Discolouration</fullName>
+                <default>false</default>
+                <label>Discolouration</label>
+            </value>
+            <value>
+                <fullName>Water Quality Issues</fullName>
+                <default>false</default>
+                <label>Water Quality Issues</label>
+            </value>
+            <value>
+                <fullName>No Impact to Quality</fullName>
+                <default>false</default>
+                <label>No Impact to Quality</label>
+            </value>
+            <value>
+                <fullName>Watercourse Issue</fullName>
+                <default>false</default>
+                <label>Watercourse Issue</label>
+            </value>
+            <value>
+                <fullName>Discharge Consent Issue</fullName>
+                <default>false</default>
+                <label>Discharge Consent Issue</label>
+            </value>
+            <value>
+                <fullName>PCV Exceedence</fullName>
+                <default>false</default>
+                <label>PCV Exceedence</label>
+            </value>
+            <value>
+                <fullName>Issue was not with a pipe</fullName>
+                <default>false</default>
+                <label>Issue was not with a pipe</label>
+            </value>
+            <value>
+                <fullName>Pipe was free flowing on arrival</fullName>
+                <default>false</default>
+                <label>Pipe was free flowing on arrival</label>
+            </value>
+            <value>
+                <fullName>Pipe was NOT free flowing on arrival</fullName>
+                <default>false</default>
+                <label>Pipe was NOT free flowing on arrival</label>
+            </value>
+            <value>
+                <fullName>Equip Safe to Operate</fullName>
+                <default>false</default>
+                <label>Equip Safe to Operate</label>
+            </value>
+            <value>
+                <fullName>Equip Safe to Operate for 30 days</fullName>
+                <default>false</default>
+                <label>Equip Safe to Operate for 30 days</label>
+            </value>
+            <value>
+                <fullName>Equip Safe to Operate for 60 days</fullName>
+                <default>false</default>
+                <label>Equip Safe to Operate for 60 days</label>
+            </value>
+            <value>
+                <fullName>Equip Safe to Operate for 90 days</fullName>
+                <default>false</default>
+                <label>Equip Safe to Operate for 90 days</label>
+            </value>
+            <value>
+                <fullName>Equip Not Safe to Operate</fullName>
+                <default>false</default>
+                <label>Equip Not Safe to Operate</label>
+            </value>
+            <value>
+                <fullName>Low pressure investigation scheme</fullName>
+                <default>false</default>
+                <label>Low pressure investigation scheme</label>
+            </value>
+            <value>
+                <fullName>End Value</fullName>
+                <default>false</default>
+                <label>End Value</label>
+            </value>
+            <value>
+                <fullName>Start Value</fullName>
+                <default>false</default>
+                <label>Start Value</label>
+            </value>
+            <value>
+                <fullName>Abandon Asset</fullName>
+                <default>false</default>
+                <label>Abandon Asset</label>
+            </value>
+            <value>
+                <fullName>Blocked</fullName>
+                <default>false</default>
+                <label>Blocked</label>
+            </value>
+            <value>
+                <fullName>Electrical Failure</fullName>
+                <default>false</default>
+                <label>Electrical Failure</label>
+            </value>
+            <value>
+                <fullName>Leaking</fullName>
+                <default>false</default>
+                <label>Leaking</label>
+            </value>
+            <value>
+                <fullName>Mechanical Failure</fullName>
+                <default>false</default>
+                <label>Mechanical Failure</label>
+            </value>
+            <value>
+                <fullName>Seized</fullName>
+                <default>false</default>
+                <label>Seized</label>
+            </value>
+            <value>
+                <fullName>Unable to Inspect - Access</fullName>
+                <default>false</default>
+                <label>Unable to Inspect - Access</label>
+            </value>
+            <value>
+                <fullName>No Inspection - Further Advice Requested</fullName>
+                <default>false</default>
+                <label>No Inspection - Further Advice Requested</label>
+            </value>
+            <value>
+                <fullName>Unable to Inspect - H&amp;S</fullName>
+                <default>false</default>
+                <label>Unable to Inspect - H&amp;S</label>
+            </value>
+            <value>
+                <fullName>Unable to Inspect - Land Entry</fullName>
+                <default>false</default>
+                <label>Unable to Inspect - Land Entry</label>
+            </value>
+            <value>
+                <fullName>No Asset Found</fullName>
+                <default>false</default>
+                <label>No Asset Found</label>
+            </value>
+            <value>
+                <fullName>Unable to Inspect - Obstruction</fullName>
+                <default>false</default>
+                <label>Unable to Inspect - Obstruction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

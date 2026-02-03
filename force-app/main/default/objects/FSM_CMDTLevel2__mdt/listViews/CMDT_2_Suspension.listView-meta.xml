@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMDT_2_Suspension</fullName>
+    <columns>DeveloperName</columns>
+    <columns>FSM_BusinessUnit__c</columns>
+    <columns>FSM_Type__c</columns>
+    <columns>FSM_SuspendCategory__c</columns>
+    <columns>FSM_SuspendReason__c</columns>
+    <columns>FSM_SAPName__c</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>MasterLabel</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_Type__c</field>
+        <operation>equals</operation>
+        <value>Suspension</value>
+    </filters>
+    <label>CMDT 2_Suspension</label>
+</ListView>

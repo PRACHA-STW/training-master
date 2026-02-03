@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>SFS-6565</description>
+        <name>Assign_Default_Service_Report_Template</name>
+        <label>Assign Default Service Report Template</label>
+        <locationX>479</locationX>
+        <locationY>1403</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ServiceReportTemplateId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Fetch_Default_Service_Report_Template.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>WO_Virtual_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Created as part of SFS-1138</description>
+        <name>Assign_Record_Type</name>
+        <label>Assign Record Type</label>
+        <locationX>578</locationX>
+        <locationY>2627</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_BU_RecordTypes.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>SFI-1285</description>
+        <name>Assign_Technical_specification</name>
+        <label>Assign Technical specification</label>
+        <locationX>545</locationX>
+        <locationY>611</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSM_TechnicalSpecification__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Fetch_Technical_Specification_record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_If_Case_IsChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_TMA_Permit</name>
+        <label>Assign TMA Permit</label>
+        <locationX>479</locationX>
+        <locationY>995</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSM_TMAPermit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Case.FSM_TMAPermit__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_If_Service_territory_IsChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Created as a part of SFS-1298</description>
+        <name>FSM_UpdateFieldToThrowValidation</name>
+        <label>Update Field To Throw Validation</label>
+        <locationX>842</locationX>
+        <locationY>2519</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSM_RestrictStatusUpdate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Created as part of SFS-1138</description>
+        <name>Make_Record_Type_Virtual</name>
+        <label>Make Record Type Virtual</label>
+        <locationX>50</locationX>
+        <locationY>2519</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Virtual_RecordType.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Created as part of SFS-1138</description>
+        <name>Null_Record_Type</name>
+        <label>Null Record Type</label>
+        <locationX>314</locationX>
+        <locationY>2627</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Virtualcheck</name>
+        <label>Virtual check</label>
+        <locationX>325</locationX>
+        <locationY>1919</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSM_Virtual__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_If_New_Record_or_BU_changed</targetReference>
+        </connector>
+    </assignments>
+    <customErrors>
+        <description>SFS-6654</description>
+        <name>Show_Error_Message</name>
+        <label>Show Error Message</label>
+        <locationX>281</locationX>
+        <locationY>503</locationY>
+        <customErrorMessages>
+            <errorMessage>You are not allowed to create a Work Order</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <description>SFI-1561</description>
+        <name>Check_If_Case_IsChanged</name>
+        <label>Check If Case IsChanged</label>
+        <locationX>611</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>Check_If_Service_territory_IsChanged</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsChanged</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CaseId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>NewWorkOrder</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case.Id</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Case.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_TMA_Permit</targetReference>
+            </connector>
+            <label>IsChanged</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Updated as part of SFS-1138</description>
+        <name>Check_If_New_Record_or_BU_changed</name>
+        <label>Check If New Record or BU changed</label>
+        <locationX>611</locationX>
+        <locationY>2195</locationY>
+        <defaultConnector>
+            <targetReference>FSM_Get_WorkStep_Records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Updated without BU change</defaultConnectorLabel>
+        <rules>
+            <name>New_or_BU_changes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>NewWorkOrder</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.FSM_BusinessUnit__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.FSM_Virtual__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>WO_RecordType_Assignment</targetReference>
+            </connector>
+            <label>New or BU change</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-6565</description>
+        <name>Check_If_Service_territory_IsChanged</name>
+        <label>Check If Service territory IsChanged</label>
+        <locationX>611</locationX>
+        <locationY>1187</locationY>
+        <defaultConnector>
+            <targetReference>WO_Virtual_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Changed</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ServiceTerritory.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>NewWorkOrder</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ServiceTerritory.Id</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.ServiceTerritory.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fetch_Default_Service_Report_Template</targetReference>
+            </connector>
+            <label>Is Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFI-1285</description>
+        <name>check_new_WO_record</name>
+        <label>check new WO record</label>
+        <locationX>611</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Check_If_Case_IsChanged</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>new_WO_record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>NewWorkOrder</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_User_Permission</targetReference>
+            </connector>
+            <label>new WO record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-6654</description>
+        <name>Check_User_Permission</name>
+        <label>Check User Permission</label>
+        <locationX>413</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Fetch_Technical_Specification_record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>User  Allowed</defaultConnectorLabel>
+        <rules>
+            <name>User_Not_Allowed_to_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.FSM_PreventCreateDeletionWorkOrder</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Error_Message</targetReference>
+            </connector>
+            <label>User Not Allowed to Create</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Created as a part of SFS-1298.</description>
+        <name>FSM_CheckWorkStepsAndWorkOrderStatus</name>
+        <label>Check WorkSteps and WorkOrder Status</label>
+        <locationX>974</locationX>
+        <locationY>2411</locationY>
+        <defaultConnectorLabel>WorkStep is Null</defaultConnectorLabel>
+        <rules>
+            <name>FSM_WorkStepNotNull</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FSM_Get_WorkStep_Records</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Status</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FSM_UpdateFieldToThrowValidation</targetReference>
+            </connector>
+            <label>WorkStep Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Created as part of SFS-1138</description>
+        <name>Is_BU_blank</name>
+        <label>Is BU blank?</label>
+        <locationX>446</locationX>
+        <locationY>2519</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Record_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>BU not blank</defaultConnectorLabel>
+        <rules>
+            <name>BU_blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_BU_RecordTypes.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Null_Record_Type</targetReference>
+            </connector>
+            <label>BU blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ST_check</name>
+        <label>ST check</label>
+        <locationX>457</locationX>
+        <locationY>1811</locationY>
+        <defaultConnector>
+            <targetReference>Check_If_New_Record_or_BU_changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_ST</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>get_Virtual_Territory.Label</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.ServiceTerritory.Name</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Virtualcheck</targetReference>
+            </connector>
+            <label>check ST</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Created as part of SFS-1138</description>
+        <name>WO_RecordType_Assignment</name>
+        <label>WO RecordType Assignment</label>
+        <locationX>248</locationX>
+        <locationY>2303</locationY>
+        <defaultConnector>
+            <targetReference>Get_BU_RecordTypes</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Virtual</defaultConnectorLabel>
+        <rules>
+            <name>Is_Virtual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FSM_Virtual__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Virtual_RecordType</targetReference>
+            </connector>
+            <label>Is Virtual</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8025</description>
+        <name>WO_Virtual_Check</name>
+        <label>WO Virtual Check</label>
+        <locationX>611</locationX>
+        <locationY>1595</locationY>
+        <defaultConnector>
+            <targetReference>Check_If_New_Record_or_BU_changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Virtual_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FSM_Virtual__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_Virtual_Territory</targetReference>
+            </connector>
+            <label>Virtual Check</label>
+        </rules>
+    </decisions>
+    <description>Created as part of user story #SFS-318 to copy case information to work order.
+Updated as a part of SFS-1298
+Updated as a part of SFS-1138
+Updated as a part of SFI-1285
+Updated as part of SFI-1561
+Updated as part of SFI-1773
+Updated as part of SFS-6654
+Updated as part of SFS-6565
+updated as part of SFS-8025
+Updated as part of SFI-3014</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NewWorkOrder</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>FSM Work Order Before Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Work Order Before Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>SFS-6565</description>
+        <name>Fetch_Default_Service_Report_Template</name>
+        <label>Fetch Default Service Report Template</label>
+        <locationX>479</locationX>
+        <locationY>1295</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Default_Service_Report_Template</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ServiceTerritory.FSM_DefaultServiceReportTemplate__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ServiceReportLayout</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>SFI-1285</description>
+        <name>Fetch_Technical_Specification_record</name>
+        <label>Fetch Technical Specification record</label>
+        <locationX>545</locationX>
+        <locationY>503</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Technical_specification</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FSM_Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Case.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>FSM_TechnicalSpecification__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Created as a part of SFS-1298</description>
+        <name>FSM_Get_WorkStep_Records</name>
+        <label>Get WorkStep Records</label>
+        <locationX>974</locationX>
+        <locationY>2303</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>FSM_CheckWorkStepsAndWorkOrderStatus</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_Mandatory__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>WorkOrderId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>WorkStep</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Created as part of SFS-1138</description>
+        <name>Get_BU_RecordTypes</name>
+        <label>Get BU RecordTypes</label>
+        <locationX>446</locationX>
+        <locationY>2411</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_BU_blank</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.FSM_BusinessUnit__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>WorkOrder</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_Virtual_Territory</name>
+        <label>get Virtual Territory</label>
+        <locationX>457</locationX>
+        <locationY>1703</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ST_check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Label</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ServiceTerritory.Name</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>FSM_VirtualTerritories__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Created as part of SFS-1138</description>
+        <name>Virtual_RecordType</name>
+        <label>Virtual RecordType</label>
+        <locationX>50</locationX>
+        <locationY>2411</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Make_Record_Type_Virtual</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Virtual DST</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>WorkOrder</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>485</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>check_new_WO_record</targetReference>
+        </connector>
+        <object>WorkOrder</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

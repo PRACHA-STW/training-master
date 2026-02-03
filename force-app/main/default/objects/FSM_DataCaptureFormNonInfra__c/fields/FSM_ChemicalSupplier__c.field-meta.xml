@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ChemicalSupplier__c</fullName>
+    <description>Created as part of SFS-3063</description>
+    <label>Chemical Supplier</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airedale</fullName>
+                <default>false</default>
+                <label>Airedale</label>
+            </value>
+            <value>
+                <fullName>Chemifloc</fullName>
+                <default>false</default>
+                <label>Chemifloc</label>
+            </value>
+            <value>
+                <fullName>Feralco</fullName>
+                <default>false</default>
+                <label>Feralco</label>
+            </value>
+            <value>
+                <fullName>Industrial Chemicals Ltd.</fullName>
+                <default>false</default>
+                <label>Industrial Chemicals Ltd.</label>
+            </value>
+            <value>
+                <fullName>Ineos Enterprises</fullName>
+                <default>false</default>
+                <label>Ineos Enterprises</label>
+            </value>
+            <value>
+                <fullName>Kemira</fullName>
+                <default>false</default>
+                <label>Kemira</label>
+            </value>
+            <value>
+                <fullName>Lhoist</fullName>
+                <default>false</default>
+                <label>Lhoist</label>
+            </value>
+            <value>
+                <fullName>OMEX</fullName>
+                <default>false</default>
+                <label>OMEX</label>
+            </value>
+            <value>
+                <fullName>Packed  Chlorine Ltd</fullName>
+                <default>false</default>
+                <label>Packed  Chlorine Ltd</label>
+            </value>
+            <value>
+                <fullName>Servo Solutions</fullName>
+                <default>false</default>
+                <label>Servo Solutions</label>
+            </value>
+            <value>
+                <fullName>Singleton Birch</fullName>
+                <default>false</default>
+                <label>Singleton Birch</label>
+            </value>
+            <value>
+                <fullName>SNF</fullName>
+                <default>false</default>
+                <label>SNF</label>
+            </value>
+            <value>
+                <fullName>Solenis</fullName>
+                <default>false</default>
+                <label>Solenis</label>
+            </value>
+            <value>
+                <fullName>Tennants</fullName>
+                <default>false</default>
+                <label>Tennants</label>
+            </value>
+            <value>
+                <fullName>Veolia</fullName>
+                <default>false</default>
+                <label>Veolia</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

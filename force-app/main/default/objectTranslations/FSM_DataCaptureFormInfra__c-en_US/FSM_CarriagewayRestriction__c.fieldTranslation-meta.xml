@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What type of TMA is required, Please refer to the red book to select the correct type. --></help>
+    <label><!-- Carriageway Restriction --></label>
+    <name>FSM_CarriagewayRestriction__c</name>
+    <picklistValues>
+        <masterLabel>Contra-flow</masterLabel>
+        <translation><!-- Contra-flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lane closure (Speed up to 40mph - Speed over 40mph)</masterLabel>
+        <translation><!-- Lane closure (Speed up to 40mph - Speed over 40mph) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Carriageway incursion</masterLabel>
+        <translation><!-- No Carriageway incursion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road closure (20 diversion signs - 60 Diversion signs)</masterLabel>
+        <translation><!-- Road closure (20 diversion signs - 60 Diversion signs) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Some carriageway incursion</masterLabel>
+        <translation><!-- Some carriageway incursion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop-go boards (2 way control - 3 way control - 4 way control)</masterLabel>
+        <translation><!-- Stop-go boards (2 way control - 3 way control - 4 way control) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary obstruction (15 minute delay)</masterLabel>
+        <translation><!-- Temporary obstruction (15 minute delay) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Control (Give and Take)</masterLabel>
+        <translation><!-- Traffic Control (Give and Take) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (convoy working)</masterLabel>
+        <translation><!-- Traffic control (convoy working) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (five-way signals)</masterLabel>
+        <translation><!-- Traffic control (five-way signals) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (four-way signals)</masterLabel>
+        <translation><!-- Traffic control (four-way signals) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (priority working)</masterLabel>
+        <translation><!-- Traffic control (priority working) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (three-way signals)</masterLabel>
+        <translation><!-- Traffic control (three-way signals) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (two-way signals)</masterLabel>
+        <translation><!-- Traffic control (two-way signals) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

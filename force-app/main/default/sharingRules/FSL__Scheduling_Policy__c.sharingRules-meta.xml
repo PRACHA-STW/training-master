@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_BusinessAdminSharingSchedulingPolicy</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-8628</description>
+        <label>FSM Business Admin Sharing Scheduling Policy</label>
+        <sharedTo>
+            <group>FSM_BusinessAdminGroup</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra,Waste Non Infra,Water Infra,Water Non Infra,Bio Resource,Developer Services,Metering</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_DeveloperServices</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>If policy business unit is &apos;Developer Services&apos; then share the policies with all the schedulers in Developer Services territories</description>
+        <label>Developer Services</label>
+        <sharedTo>
+            <group>FSM_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Developer Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_FW_BioResource</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-231
+If policy business unit is &apos;Bio Resource&apos; then share the policies with all the Field Worker in Bio Resource Business unit</description>
+        <label>Field Worker Bio Resource</label>
+        <sharedTo>
+            <group>FSM_FW_BioResource</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Bio Resource</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_FW_DeveloperService</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-231
+If policy business unit is &apos;Developer Service&apos; then share the policies with all the Field Worker in Bio Resource Business unit</description>
+        <label>Field Worker Developer Service</label>
+        <sharedTo>
+            <group>FSM_FW_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Developer Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_FW_Metering</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-231
+If policy business unit is &apos;Metering&apos; then share the policies with all the Field Worker in Bio Resource Business unit</description>
+        <label>Field Worker Metering</label>
+        <sharedTo>
+            <group>FSM_FW_Metering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Metering</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_FW_WasteInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-231
+If policy business unit is &apos;Waste Infra&apos; then share the policies with all the Field Worker in Bio Resource Business unit</description>
+        <label>Field Worker Waste Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_FW_WasteNonInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-231
+If policy business unit is &apos;Waste Non Infra&apos; then share the policies with all the Field Worker in Bio Resource Business unit</description>
+        <label>Field Worker Waste Non Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WasteNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_FW_WaterInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-231
+If policy business unit is &apos;Water Infra&apos; then share the policies with all the Field Worker in Bio Resource Business unit</description>
+        <label>Field Worker Water Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_FW_WaterNonInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-231
+If policy business unit is &apos;Water Non Infra&apos; then share the policies with all the Field Worker in Bio Resource Business unit</description>
+        <label>Field Worker Water Non Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WaterNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_Metering</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>If policy business unit is &apos;Metering&apos; then share the policies with all the schedulers in Metering territories</description>
+        <label>Metering</label>
+        <sharedTo>
+            <group>FSM_Metering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Metering</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WasteInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>If policy business unit is &apos;Waste Infra&apos; then share the policies with all the schedulers in Waste Infra territories</description>
+        <label>Waste Infra</label>
+        <sharedTo>
+            <group>FSM_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WasteNonInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>If policy business unit is &apos;Waste Non Infra&apos; then share the policies with all the schedulers in Waste Non Infra territories</description>
+        <label>Waste Non Infra</label>
+        <sharedTo>
+            <group>FSM_WasteNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WaterInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>If policy business unit is &apos;Water Infra&apos; then share the policies with all the schedulers in Water Infra territories</description>
+        <label>Water Infra</label>
+        <sharedTo>
+            <group>FSM_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_WaterNonInfra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>If policy business unit is &apos;Water Non Infra&apos; then share the policies with all the schedulers in Water Non Infra territories</description>
+        <label>Water Non Infra</label>
+        <sharedTo>
+            <group>FSM_WaterNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_Water_Non_Infra</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Created as part of SFS-6504</description>
+        <label>Water Non Infra</label>
+        <sharedTo>
+            <group>FSM_FW_Workmate</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

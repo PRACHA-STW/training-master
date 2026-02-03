@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IsStandardTextKey__c</fullName>
+    <description>created for use in briefcase</description>
+    <formula>IF( OR( FSM_StandardTextKey__c=&apos;2BCEL1&apos;,FSM_StandardTextKey__c=&apos;2BLOC1&apos;,FSM_StandardTextKey__c=&apos;2BLOR1&apos;,FSM_StandardTextKey__c=&apos;2BLOS1&apos;,FSM_StandardTextKey__c=&apos;2BLOT1&apos;,FSM_StandardTextKey__c=&apos;12BLPF1&apos;,FSM_StandardTextKey__c=&apos;2EXFR1&apos;,FSM_StandardTextKey__c=&apos;2MAIBL1&apos;,FSM_StandardTextKey__c=&apos;2MRBL1&apos;,FSM_StandardTextKey__c=&apos;2PDASR&apos;,FSM_StandardTextKey__c=&apos;12TBCE1&apos;,FSM_StandardTextKey__c=&apos;12TBLC1&apos;,FSM_StandardTextKey__c=&apos;12TBLR1&apos;,FSM_StandardTextKey__c=&apos;12TBLS1&apos;,FSM_StandardTextKey__c=&apos;12TBLT1&apos;,FSM_StandardTextKey__c=&apos;12TEHP1&apos;,FSM_StandardTextKey__c=&apos;12TGUL1&apos;,FSM_StandardTextKey__c=&apos;12TMAI1&apos;,FSM_StandardTextKey__c=&apos;12TMAR1&apos;,FSM_StandardTextKey__c=&apos;12TPRF1&apos;,FSM_StandardTextKey__c=&apos;SSBLOS1&apos;,FSM_StandardTextKey__c=&apos;SSBLOT1&apos;,FSM_StandardTextKey__c=&apos;SSMRBL1&apos;,FSM_StandardTextKey__c=&apos;2OOHCB&apos;) , True, False)</formula>
+    <label>Is Standard Text Key</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

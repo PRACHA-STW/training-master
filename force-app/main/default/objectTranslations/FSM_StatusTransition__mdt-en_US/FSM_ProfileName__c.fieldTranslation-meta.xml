@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Profile Name --></label>
+    <name>FSM_ProfileName__c</name>
+    <picklistValues>
+        <masterLabel>FSM Customer Community Plus User</masterLabel>
+        <translation><!-- FSM Customer Community Plus User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Field Service Admin</masterLabel>
+        <translation><!-- FSM Field Service Admin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Integration</masterLabel>
+        <translation><!-- FSM Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Metering Field Worker</masterLabel>
+        <translation><!-- FSM Metering Field Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Non Infra Field Worker</masterLabel>
+        <translation><!-- FSM Non Infra Field Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Partner Community User</masterLabel>
+        <translation><!-- FSM Partner Community User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Site Worker</masterLabel>
+        <translation><!-- FSM Site Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Standard Desktop User</masterLabel>
+        <translation><!-- FSM Standard Desktop User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM System Administrator</masterLabel>
+        <translation><!-- FSM System Administrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Virtual Infra</masterLabel>
+        <translation><!-- FSM Virtual Infra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Virtual Metering</masterLabel>
+        <translation><!-- FSM Virtual Metering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Virtual User</masterLabel>
+        <translation><!-- FSM Virtual User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Waste Customer Community Plus User</masterLabel>
+        <translation><!-- FSM Waste Customer Community Plus User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Waste Network Field Worker</masterLabel>
+        <translation><!-- FSM Waste Network Field Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Water &amp; DevServ Customer Community Plus User</masterLabel>
+        <translation><!-- FSM Water &amp; DevServ Customer Community Plus User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Water Networks &amp; DevServ Field Worker</masterLabel>
+        <translation><!-- FSM Water Networks &amp; DevServ Field Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Administrator</masterLabel>
+        <translation><!-- System Administrator --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

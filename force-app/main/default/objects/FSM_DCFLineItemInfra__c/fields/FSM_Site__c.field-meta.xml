@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Site__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Becky test to see if I can create a self lookup for Reinstatement form as site should have XY coordinate line items</description>
+    <label>Site</label>
+    <referenceTo>FSM_DCFLineItemInfra__c</referenceTo>
+    <relationshipName>Data_Capture_Form_Line_Items_Infra</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

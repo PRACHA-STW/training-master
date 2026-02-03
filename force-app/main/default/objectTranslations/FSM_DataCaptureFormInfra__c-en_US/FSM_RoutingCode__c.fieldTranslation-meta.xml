@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Routing Code --></label>
+    <name>FSM_RoutingCode__c</name>
+    <picklistValues>
+        <masterLabel>APORTN-APORTS Returned Inspections</masterLabel>
+        <translation><!-- APORTN-APORTS Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAPKIK-Capita Kickout Returned Inspections</masterLabel>
+        <translation><!-- CAPKIK-Capita Kickout Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CATRTN-Measured Specialist returned inspection</masterLabel>
+        <translation><!-- CATRTN-Measured Specialist returned inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCARLI-Returned litigation visit</masterLabel>
+        <translation><!-- CCARLI-Returned litigation visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDISC-Completed Disconnection Returns</masterLabel>
+        <translation><!-- CDISC-Completed Disconnection Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRSUPP-Cross Supply Returned Inspections</masterLabel>
+        <translation><!-- CRSUPP-Cross Supply Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOMRTN-Proactive Household Non Connection RTNs</masterLabel>
+        <translation><!-- DOMRTN-Proactive Household Non Connection RTNs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DUPRTN-Identified Duplicate Account Returns</masterLabel>
+        <translation><!-- DUPRTN-Identified Duplicate Account Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INCVIS-Incomplete Visit</masterLabel>
+        <translation><!-- INCVIS-Incomplete Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INFRTN-Initial / Final Reading Returns</masterLabel>
+        <translation><!-- INFRTN-Initial / Final Reading Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KICRTN-Kickout Returned Inspections</masterLabel>
+        <translation><!-- KICRTN-Kickout Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEAKRN-Leak Returned Inspections</masterLabel>
+        <translation><!-- LEAKRN-Leak Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEXRTN-Meter Exchange Return Inspections</masterLabel>
+        <translation><!-- MEXRTN-Meter Exchange Return Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRAUTH-Meter Trace Returned Inspections</masterLabel>
+        <translation><!-- MRAUTH-Meter Trace Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEWSF-Account Creation Returned Inspections</masterLabel>
+        <translation><!-- NEWSF-Account Creation Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHNCRT-HD-NHH SWD Returned Inspections</masterLabel>
+        <translation><!-- NHNCRT-HD-NHH SWD Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHSART-HD-NHH Site Area Returned Inspections</masterLabel>
+        <translation><!-- NHSART-HD-NHH Site Area Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OWCRTN-Other Water Company Returned Inspections</masterLabel>
+        <translation><!-- OWCRTN-Other Water Company Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REARTN-Reactive Household Non Connection Rtn</masterLabel>
+        <translation><!-- REARTN-Reactive Household Non Connection Rtn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVERT-REVERT</masterLabel>
+        <translation><!-- REVERT-REVERT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RVDIT-Data Integrity Returned Inspections</masterLabel>
+        <translation><!-- RVDIT-Data Integrity Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RVRVTX-Capita Meter Exchange Returned Inspections</masterLabel>
+        <translation><!-- RVRVTX-Capita Meter Exchange Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBRTN-Shelton Kickouts Returned Inspections</masterLabel>
+        <translation><!-- SBRTN-Shelton Kickouts Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STANK-Septic tank queries</masterLabel>
+        <translation><!-- STANK-Septic tank queries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUBRTN-SUB-ALT-Returned Inspections</masterLabel>
+        <translation><!-- SUBRTN-SUB-ALT-Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SVIRTN-Service Recovery Returned Inspections</masterLabel>
+        <translation><!-- SVIRTN-Service Recovery Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UBCOIN-Unbilled Property Returned Inspections</masterLabel>
+        <translation><!-- UBCOIN-Unbilled Property Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VBLKRT-Bulk Returned Visits Click</masterLabel>
+        <translation><!-- VBLKRT-Bulk Returned Visits Click --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VORTIN-Void Returned Inspections</masterLabel>
+        <translation><!-- VORTIN-Void Returned Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XVIRTN-Written Complaints Returned Inspections</masterLabel>
+        <translation><!-- XVIRTN-Written Complaints Returned Inspections --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

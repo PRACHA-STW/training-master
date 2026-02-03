@@ -1,0 +1,185 @@
+<template>
+    <!-- common header of Component -->
+    <div class="header" if:true={isHeaderVisible}>
+        <h1 class="header-title">{headerText}</h1>
+    </div>
+    <!-- Screen Button for add / remove resource -->
+    <div class="crew-wrapper" if:true={isAddRemoveResource}>
+        <div class="crew-card">
+            <div class="crew-buttons">
+                <button class="crew-btn add" onclick={handleAddCrew}>
+                    <lightning-icon icon-name="utility:adduser" size="small" class="icon"></lightning-icon>
+                    Add Crew Member {businessUnitChild}
+                </button>
+                <button class="crew-btn remove" onclick={handleRemoveCrew}>
+                    <lightning-icon icon-name="utility:delete" size="small" class="icon"></lightning-icon>
+                    Remove Crew Member
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Error Screen -->
+    <div class="error-wrapper modern-container" if:true={isShowError}>
+        <div class="error-card" if:false={isErrorScreenLoad}>
+            <lightning-icon icon-name="utility:error" size="large" class="error-icon"></lightning-icon>
+            <h2 class="error-title">Action Not Allowed</h2>
+            <p class="error-message">
+                This quick action cannot be used in <strong>{serviceAppointmentStatus}</strong> status.
+            </p>
+        </div>
+
+        <template if:true={isErrorScreenLoad}>
+            <div class="loading-overlay">
+                <div class="modern-spinner">
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                </div>
+                <div class="loading-text">Loading...</div>
+            </div>
+        </template>
+    </div>
+    <!-- Search Screen to assign user -->
+    <section class="modern-container" if:true={isSearchResource}>
+        <div class="search-bar modern-search-bar">
+            <lightning-input class="modern-search-input" type="search" value={searchKey} onchange={handleSearchInput}
+                placeholder="Type a name or keyword..." icon-name="utility:search">
+            </lightning-input>
+        </div>
+        <div class={userGridClass}>
+            <template for:each={usersWithActiveTerritory} for:item="user">
+                <div key={user.id} class="user-card">
+                    <div class="user-header">
+                        <lightning-icon icon-name="standard:user" size="small" alternative-text="User">
+                        </lightning-icon>
+                        <span class="user-name">{user.name}</span>
+                    </div>
+                    <div class="user-details">
+                        <p><strong>Work Center ID:</strong> {user.workCenterId}</p>
+                        <p><strong>Gantt Label:</strong> {user.ganttLabel}</p>
+                    </div>
+                    <div class="user-select">
+                        <lightning-input checked={user.selected} type="checkbox" data-id={user.id} name={user.id}
+                            onchange={handleCheckboxChange}></lightning-input>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <!-- Fixed Footer for 'Back' & 'Add' Button  -->
+        <footer class="footer-bar">
+            <lightning-button label="Back" onclick={handleBack}></lightning-button>
+            <lightning-button label="Add" variant="brand" onclick={handleAdd}></lightning-button>
+        </footer>
+
+        <template if:true={isLoading}>
+            <div class="loading-overlay">
+                <div class="modern-spinner">
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                </div>
+                <div class="loading-text">Adding Crew Member...</div>
+            </div>
+        </template>
+    </section>
+    <!-- Success Screen -->
+    <div class="success-wrapper" if:true={isSuccessScreen}>
+        <!-- Water Wave Animation -->
+        <div class="water-animation">
+            <svg class="water-wave" viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0,80 Q150,120 250,80 T500,80 V150 H0 Z" fill="#1890ff" opacity="0.25">
+                    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="
+                            M0,80 Q150,120 250,80 T500,80 V150 H0 Z;
+                            M0,90 Q150,60 250,90 T500,80 V150 H0 Z;
+                            M0,80 Q150,120 250,80 T500,80 V150 H0 Z
+                        " />
+                </path>
+                <path d="M0,100 Q150,140 250,100 T500,100 V150 H0 Z" fill="#36cfc9" opacity="0.35">
+                    <animate attributeName="d" dur="5s" repeatCount="indefinite" values="
+                            M0,100 Q150,140 250,100 T500,100 V150 H0 Z;
+                            M0,110 Q150,90 250,110 T500,100 V150 H0 Z;
+                            M0,100 Q150,140 250,100 T500,100 V150 H0 Z
+                        " />
+                </path>
+            </svg>
+            <!-- Bubbles -->
+            <div class="bubble" style="left: 15%; animation-delay: 0s;"></div>
+            <div class="bubble" style="left: 35%; animation-delay: 1s;"></div>
+            <div class="bubble" style="left: 55%; animation-delay: 0.5s;"></div>
+            <div class="bubble" style="left: 75%; animation-delay: 1.5s;"></div>
+            <div class="bubble" style="left: 85%; animation-delay: 0.8s;"></div>
+        </div>
+        <div class="success-card water-theme">
+            <lightning-icon icon-name="utility:success" size="large" class="success-icon"></lightning-icon>
+            <h2 class="success-title">Success!</h2>
+            <p class="success-message">
+                {successMessage}
+            </p>
+        </div>
+    </div>
+    <template if:true={addErrorMessage}>
+        <div class="add-error-message">
+            <lightning-icon icon-name="utility:error" size="x-small" class="add-error-icon"></lightning-icon>
+            <span>{addErrorMessage}</span>
+            <button class="add-error-close" onclick={handleErrorClose} title="Dismiss">&times;</button>
+        </div>
+    </template>
+    <!-- Assigned Resources Screen -->
+    <section class="modern-container" if:true={isRemoveResource}>
+        <div class="user-grid">
+            <template for:each={assignedResources} for:item="resource">
+                <div key={resource.id} class="user-card">
+                    <div class="user-header">
+                        <lightning-icon icon-name="standard:user" size="small" alternative-text="User"></lightning-icon>
+                        <span class="user-name">{resource.name}</span>
+                    </div>
+                    <div class="user-details">
+                        <p><strong>Work Center ID:</strong> {resource.workCenterId}</p>
+                        <p><strong>Gantt Label:</strong> {resource.ganttLabel}</p>
+                    </div>
+                    <div class="user-select">
+                        <lightning-input
+                            type="checkbox"
+                            data-id={resource.id}
+                            name={resource.id}
+                            onchange={handleRemoveCheckboxChange}
+                            disabled={resource.isCurrentUser}>
+                        </lightning-input>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <!-- Footer for Remove Action -->
+        <footer class="footer-bar">
+            <lightning-button label="Back" onclick={handleBack}></lightning-button>
+            <lightning-button label="Remove" variant="destructive" onclick={handleRemove}></lightning-button>
+        </footer>
+        <template if:true={isLoading}>
+            <div class="loading-overlay">
+                <div class="modern-spinner">
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                    <div class="spinner-dot"></div>
+                </div>
+                <div class="loading-text">Removing Crew Member...</div>
+            </div>
+        </template>
+    </section>
+    <!-- Error Screen (dedicated, for critical errors) -->
+<section class="modern-container" if:true={isCriticalErrorScreen}>
+    <div class="error-wrapper">
+        <div class="error-card">
+            <lightning-icon icon-name="utility:error" size="large" class="error-icon"></lightning-icon>
+            <h2 class="error-title">Something Went Wrong</h2>
+            <p class="error-message">
+                {criticalErrorMessage}
+            </p>
+        </div>
+    </div>
+</section>
+</template>

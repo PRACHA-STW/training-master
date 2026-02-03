@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select One --></help>
+    <label><!-- Sewer Type --></label>
+    <name>FSM_SewerType__c</name>
+    <picklistValues>
+        <masterLabel>Combined</masterLabel>
+        <translation><!-- Combined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foul</masterLabel>
+        <translation><!-- Foul --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising Main</masterLabel>
+        <translation><!-- Rising Main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surface</masterLabel>
+        <translation><!-- Surface --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

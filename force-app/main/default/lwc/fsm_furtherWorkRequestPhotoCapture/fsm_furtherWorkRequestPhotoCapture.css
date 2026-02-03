@@ -1,0 +1,37 @@
+.selected {
+    border: 2px solid blue; 
+}
+
+.delete-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: red; /* Customize the color */
+}
+
+.image-container {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+   
+}
+
+.image-upload-msg {
+    text-align: center;
+    font-size: large;
+    color: darkred;
+    font-weight: 600;
+}
+
+
+img {
+    height: 180px;
+    margin-right: 10px;
+ 
+    /* Default style for desktop */
+    width: 25%;
+ 
+    /* Media query for mobile devices with a maximum width of 767px */
+    @media only screen and (max-width: 767px) {
+        width: 80%;
+    }
+}

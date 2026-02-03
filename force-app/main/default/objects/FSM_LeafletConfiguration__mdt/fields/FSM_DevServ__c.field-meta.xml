@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_DevServ__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If ticked, this configuration applies to Dev Serv BU.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If ticked, this configuration applies to Dev Serv BU.</inlineHelpText>
+    <label>Dev Serv</label>
+    <type>Checkbox</type>
+</CustomField>

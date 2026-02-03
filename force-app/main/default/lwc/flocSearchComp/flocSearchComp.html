@@ -1,0 +1,63 @@
+<template>
+	<div>
+		<template if:false={Screen3}>
+			<template if:false={Screen1}>
+				<lightning-card>
+					<lightning-card title="Level 4 Floc Search" class="title-container"></lightning-card>
+					If the FLOC you are searching for is not displayed, please try alternative search criteria (NB max
+					50 returns).
+
+					<div class="container">
+						<!--INPUT FOR FLOC AND DESCRIPTION-->
+						<div class="button-container">
+							<lightning-input class="temp" label="FLOC" type="String" value={WorkorderFieldValue}
+								onchange={inputFlocValue}></lightning-input>
+
+							<div class="title">
+								<lightning-helptext class="title" content="The FLOC pre-populated is based on the Site for your current job. 
+																																							 If you want to query for a different site or FLOC then overwrite this field">
+								</lightning-helptext>
+							</div>
+						</div></br>
+						<div class="button-container">
+							<lightning-input class="temp" label="Description Filter" type="String"
+								onchange={inputDescriptionValue}></lightning-input>
+							<div class="title">
+								<lightning-helptext class="title"
+									content="Please ensure you populate with minimum 3 characters e.g., Pump, Tank etc…">
+								</lightning-helptext>
+							</div>
+						</div>
+
+					</div>
+					<div class="slds-grid" style="margin-top: 50px">
+						<!--BACK AND SEARCH BUTTON-->
+						<div class="slds-col">
+							<lightning-button class="slds-float_left" label="BACK" icon-name="utility:back"
+								variant="brand" title="Look for Job or Asset History" onclick={handleBackClick}
+								padding="horizontal-medium"></lightning-button>
+						</div>
+						<div class="slds-col">
+							<lightning-button icon-name="utility:search" class="slds-float_right" label="SEARCH"
+								variant="brand" onclick={handleSearchClick} padding="horizontal-medium">
+							</lightning-button>
+						</div>
+					</div>
+
+				</lightning-card>
+			</template>
+			<!--BACK TO SCREEN 1-->
+			<template if:true={Screen1}>
+				<c-data-retrieval-comp record-id={recordData}> </c-data-retrieval-comp>
+			</template>
+		</template>
+		<!--BACK TO SCREEN 3-->
+		<template if:true={Screen3}>
+			<c-asset-record-data description-data={descriptionValue1} floc-data={WorkorderFieldValue}>
+			</c-asset-record-data>
+		</template>
+
+
+	</div>
+
+</template>

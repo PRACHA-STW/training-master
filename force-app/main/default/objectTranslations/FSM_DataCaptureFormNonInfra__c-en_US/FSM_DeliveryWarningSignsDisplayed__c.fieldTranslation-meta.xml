@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ensure delivery warning signs displayed --></label>
+    <name>FSM_DeliveryWarningSignsDisplayed__c</name>
+</CustomFieldTranslation>

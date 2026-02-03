@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>NRSWA 001 - Locate &amp; avoid UG Apparatus</description>
+    <label>NRSWA 001 - Locate &amp; avoid UG Apparatus (Q50016905)</label>
+</Skill>

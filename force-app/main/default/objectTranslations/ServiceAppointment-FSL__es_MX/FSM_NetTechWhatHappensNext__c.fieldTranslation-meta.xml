@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What happens next? --></label>
+    <name>FSM_NetTechWhatHappensNext__c</name>
+    <picklistValues>
+        <masterLabel>Nothing, our work is complete, the drain is flowing as we&apos;d expect and service is restored</masterLabel>
+        <translation><!-- Nothing, our work is complete, the drain is flowing as we&apos;d expect and service is restored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We found an issue with the drain that we can’t fix today, one of our team members will be in touch</masterLabel>
+        <translation><!-- We found an issue with the drain that we can’t fix today, one of our team members will be in touch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We need to gain access to your property for further work to take place, we will call you to arrange this</masterLabel>
+        <translation><!-- We need to gain access to your property for further work to take place, we will call you to arrange this --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We need to get in touch with the occupier at the neighbouring property for access to:</masterLabel>
+        <translation><!-- We need to get in touch with the occupier at the neighbouring property for access to: --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

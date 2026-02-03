@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_UserSharingForContractorFW</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-4136</description>
+        <label>User Sharing For Contractor FW</label>
+        <sharedTo>
+            <group>FSM_ContractorFieldWorker</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_UserSharingForContractorSchedulers</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-4136</description>
+        <label>User Sharing For Contractor Schedulers</label>
+        <sharedTo>
+            <group>FSM_ContractorScheduler</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CanAddPRTEquipmentRelatedSkills</fullName>
+    <active>true</active>
+    <description>Created for SFS-2978 and SFS-2981
+Updated as part of SFS-7595</description>
+    <errorConditionFormula>AND(
+NOT($Permission.FSM_AllowServiceResourceSkillEdit),
+OR(ISNEW() = true , ISNEW() = false),
+NOT(BEGINS(Skill.DeveloperName, &apos;P&apos;)),
+$Permission.FSM_PRTEquipmentSkills,
+ServiceResource.FSM_Contractor__c = false
+)</errorConditionFormula>
+    <errorDisplayField>SkillId</errorDisplayField>
+    <errorMessage>Skill Type should be PRT Equipment Skills i.e Developer Name should start with &apos;Pxxxxx&apos;.</errorMessage>
+</ValidationRule>

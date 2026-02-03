@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ModelNo__c</fullName>
+    <description>Created for SAL-1321</description>
+    <label>Meter Model No.</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_MeterManufacturer__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>D05</fullName>
+                <default>false</default>
+                <label>D05</label>
+            </value>
+            <value>
+                <fullName>D85</fullName>
+                <default>false</default>
+                <label>D85</label>
+            </value>
+            <value>
+                <fullName>AQUADIS+</fullName>
+                <default>false</default>
+                <label>AQUADIS+</label>
+            </value>
+            <value>
+                <fullName>AQUADIS+INT</fullName>
+                <default>false</default>
+                <label>AQUADIS+INT</label>
+            </value>
+            <value>
+                <fullName>Single Jet</fullName>
+                <default>false</default>
+                <label>Single Jet</label>
+            </value>
+            <value>
+                <fullName>Single Jet INT</fullName>
+                <default>false</default>
+                <label>Single Jet INT</label>
+            </value>
+            <value>
+                <fullName>Woltex</fullName>
+                <default>false</default>
+                <label>Woltex</label>
+            </value>
+            <value>
+                <fullName>K05</fullName>
+                <default>false</default>
+                <label>K05</label>
+            </value>
+            <value>
+                <fullName>R05</fullName>
+                <default>false</default>
+                <label>R05</label>
+            </value>
+            <value>
+                <fullName>R85</fullName>
+                <default>false</default>
+                <label>R85</label>
+            </value>
+            <value>
+                <fullName>S05</fullName>
+                <default>false</default>
+                <label>S05</label>
+            </value>
+            <value>
+                <fullName>S85</fullName>
+                <default>false</default>
+                <label>S85</label>
+            </value>
+            <value>
+                <fullName>D06</fullName>
+                <default>false</default>
+                <label>D06</label>
+            </value>
+            <value>
+                <fullName>D86</fullName>
+                <default>false</default>
+                <label>D86</label>
+            </value>
+            <value>
+                <fullName>H4000_6D</fullName>
+                <default>false</default>
+                <label>H4000_6D</label>
+            </value>
+            <value>
+                <fullName>H4000_7D</fullName>
+                <default>false</default>
+                <label>H4000_7D</label>
+            </value>
+            <value>
+                <fullName>V210_Clp_NBI_5D</fullName>
+                <default>false</default>
+                <label>V210_Clp_NBI_5D</label>
+            </value>
+            <value>
+                <fullName>V200_Clp_NBI_5D</fullName>
+                <default>false</default>
+                <label>V200_Clp_NBI_5D</label>
+            </value>
+            <value>
+                <fullName>V210_Int_NBI_6D</fullName>
+                <default>false</default>
+                <label>V210_Int_NBI_6D</label>
+            </value>
+            <value>
+                <fullName>V200_Int_NBI_6D</fullName>
+                <default>false</default>
+                <label>V200_Int_NBI_6D</label>
+            </value>
+            <value>
+                <fullName>AV5_Con_LoRa_5D</fullName>
+                <default>false</default>
+                <label>AV5_Con_LoRa_5D</label>
+            </value>
+            <value>
+                <fullName>AV4_Inl_LoRa_5D</fullName>
+                <default>false</default>
+                <label>AV4_Inl_LoRa_5D</label>
+            </value>
+            <value>
+                <fullName>AV5_Inl_LoRa_5D</fullName>
+                <default>false</default>
+                <label>AV5_Inl_LoRa_5D</label>
+            </value>
+            <value>
+                <fullName>AV4_Inl_LoRa_6D</fullName>
+                <default>false</default>
+                <label>AV4_Inl_LoRa_6D</label>
+            </value>
+            <value>
+                <fullName>WESAN_I_LoRa_6D</fullName>
+                <default>false</default>
+                <label>WESAN_I_LoRa_6D</label>
+            </value>
+            <value>
+                <fullName>WESAN_I_LoRa_7D</fullName>
+                <default>false</default>
+                <label>WESAN_I_LoRa_7D</label>
+            </value>
+            <value>
+                <fullName>AV5_Con_NBio_5D</fullName>
+                <default>false</default>
+                <label>AV5_Con_NBio_5D</label>
+            </value>
+            <value>
+                <fullName>AV4_Inl134NB_5D</fullName>
+                <default>false</default>
+                <label>AV4_Inl134NB_5D</label>
+            </value>
+            <value>
+                <fullName>AV4_Inl110NB_5D</fullName>
+                <default>false</default>
+                <label>AV4_Inl110NB_5D</label>
+            </value>
+            <value>
+                <fullName>AV4_Con_NBio_5D</fullName>
+                <default>false</default>
+                <label>AV4_Con_NBio_5D</label>
+            </value>
+            <value>
+                <fullName>AV4_Inl_NBio_5D</fullName>
+                <default>false</default>
+                <label>AV4_Inl_NBio_5D</label>
+            </value>
+            <value>
+                <fullName>AV4_Inl_NBio_6D</fullName>
+                <default>false</default>
+                <label>AV4_Inl_NBio_6D</label>
+            </value>
+            <value>
+                <fullName>AV4_Inl_NBio_7D</fullName>
+                <default>false</default>
+                <label>AV4_Inl_NBio_7D</label>
+            </value>
+            <value>
+                <fullName>ALTAIR V4_Con_NBio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIR V4_Con_NBio</label>
+            </value>
+            <value>
+                <fullName>ALTAIR V4_Inl_LoRa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIR V4_Inl_LoRa</label>
+            </value>
+            <value>
+                <fullName>ALTAIR V4_Inl_Nbio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIR V4_Inl_Nbio</label>
+            </value>
+            <value>
+                <fullName>ALTAIR V5_Con_LoRa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIR V5_Con_LoRa</label>
+            </value>
+            <value>
+                <fullName>ALTAIR V5_Con_NBio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIR V5_Con_NBio</label>
+            </value>
+            <value>
+                <fullName>ALTAIR V5_Inl_LoRa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIR V5_Inl_LoRa</label>
+            </value>
+            <value>
+                <fullName>ALTAIRV4_Inl110_NBio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIRV4_Inl110_NBio</label>
+            </value>
+            <value>
+                <fullName>ALTAIRV4_Inl134_NBio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALTAIRV4_Inl134_NBio</label>
+            </value>
+            <value>
+                <fullName>H4000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>H4000</label>
+            </value>
+            <value>
+                <fullName>V200_Clip_NB-IoT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V200_Clip_NB-IoT</label>
+            </value>
+            <value>
+                <fullName>V200_Int_NB-IoT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V200_Int_NB-IoT</label>
+            </value>
+            <value>
+                <fullName>V210_Clip_NB-IoT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V210_Clip_NB-IoT</label>
+            </value>
+            <value>
+                <fullName>V210_Int_NB-IoT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V210_Int_NB-IoT</label>
+            </value>
+            <value>
+                <fullName>WESAN_Inl_LoRa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>WESAN_Inl_LoRa</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Wesan PG</controllingFieldValue>
+            <valueName>D06</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wesan PG</controllingFieldValue>
+            <valueName>D86</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALTAIR V4</controllingFieldValue>
+            <valueName>D05</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALTAIR V4</controllingFieldValue>
+            <valueName>D85</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Honeywell</controllingFieldValue>
+            <valueName>H4000_6D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Honeywell</controllingFieldValue>
+            <valueName>H4000_7D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Honeywell</controllingFieldValue>
+            <valueName>V210_Clp_NBI_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Honeywell</controllingFieldValue>
+            <valueName>V200_Clp_NBI_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Honeywell</controllingFieldValue>
+            <valueName>V210_Int_NBI_6D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Honeywell</controllingFieldValue>
+            <valueName>V200_Int_NBI_6D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV5_Con_LoRa_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Inl_LoRa_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV5_Inl_LoRa_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Inl_LoRa_6D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>WESAN_I_LoRa_6D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>WESAN_I_LoRa_7D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV5_Con_NBio_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Inl134NB_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Inl110NB_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Con_NBio_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Inl_NBio_5D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Inl_NBio_6D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diehl Metering</controllingFieldValue>
+            <valueName>AV4_Inl_NBio_7D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Itron</controllingFieldValue>
+            <valueName>AQUADIS+</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Itron</controllingFieldValue>
+            <valueName>AQUADIS+INT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Itron</controllingFieldValue>
+            <valueName>Single Jet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Itron</controllingFieldValue>
+            <valueName>Single Jet INT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Itron</controllingFieldValue>
+            <valueName>Woltex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Actaris</controllingFieldValue>
+            <valueName>R05</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Actaris</controllingFieldValue>
+            <valueName>R85</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kent</controllingFieldValue>
+            <valueName>K05</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schlumberger</controllingFieldValue>
+            <valueName>S05</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schlumberger</controllingFieldValue>
+            <valueName>S85</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

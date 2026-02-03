@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MET_Booked_Appts_by_day_Leicester</fullName>
+    <columns>CreatedDate</columns>
+    <columns>FSM_SAPOrderOperationNumber__c</columns>
+    <columns>Name</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>Status</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>ArrivalWindowEndTime</columns>
+    <columns>DurationInMinutes</columns>
+    <columns>FSM_ServiceOrderType__c</columns>
+    <columns>WorkType</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>FSSK__FSK_Assigned_Service_Resource__c</columns>
+    <columns>STREET</columns>
+    <columns>ZIP</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>6103M03</value>
+    </filters>
+    <filters>
+        <field>SchedStartTime</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>MET - Appts by day Leicester</label>
+    <sharedTo>
+        <group>FSM_Metering</group>
+    </sharedTo>
+</ListView>

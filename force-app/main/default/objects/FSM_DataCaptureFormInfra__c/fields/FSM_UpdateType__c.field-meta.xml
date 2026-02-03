@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_UpdateType__c</fullName>
+    <description>Created for SAL-1321</description>
+    <label>Update Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Meter Exchange</fullName>
+                <default>false</default>
+                <label>Meter Exchange</label>
+            </value>
+            <value>
+                <fullName>New Meter Installation (Water)</fullName>
+                <default>false</default>
+                <label>New Meter Installation (Water)</label>
+            </value>
+            <value>
+                <fullName>No Meter Installed</fullName>
+                <default>false</default>
+                <label>No Meter Installed</label>
+            </value>
+            <value>
+                <fullName>New Meter Installation (DevServ)</fullName>
+                <default>false</default>
+                <label>New Meter Installation (DevServ)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

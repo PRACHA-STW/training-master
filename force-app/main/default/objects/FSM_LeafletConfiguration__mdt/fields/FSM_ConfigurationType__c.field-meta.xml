@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ConfigurationType__c</fullName>
+    <description>Configuration type. List views are created for easy edits</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Template</fullName>
+                <default>true</default>
+                <label>Template</label>
+            </value>
+            <value>
+                <fullName>Supporting Information</fullName>
+                <default>false</default>
+                <label>Supporting Information</label>
+            </value>
+            <value>
+                <fullName>Reason for Maintenance</fullName>
+                <default>false</default>
+                <label>Reason for Maintenance</label>
+            </value>
+            <value>
+                <fullName>Reason for Visit</fullName>
+                <default>false</default>
+                <label>Reason for Visit</label>
+            </value>
+            <value>
+                <fullName>Meter Location</fullName>
+                <default>false</default>
+                <label>Meter Location</label>
+            </value>
+            <value>
+                <fullName>Role</fullName>
+                <default>false</default>
+                <label>Role</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

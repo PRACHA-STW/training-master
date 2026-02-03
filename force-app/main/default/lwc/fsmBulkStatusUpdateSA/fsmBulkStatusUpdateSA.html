@@ -1,0 +1,116 @@
+<template>
+    <div style="background-color: #ffffff;">
+        <p class="slds-m-around_small screen-header">{title}</p>
+
+        <template if:true={isParentBundleOrCloseSA}>
+            <div class="error-container slds-m-horizontal_small">
+                <p class="slds-m-top_medium"><strong>{errMsg}</strong></p>
+            </div>
+        </template>
+        <template if:false={isParentBundleOrCloseSA}>
+            <!-- Screen 1 -->
+            <template if:true={Screen1}>
+                <div class="screen1-container slds-m-horizontal_small">
+                    <template if:true={isMultipleStatus}>
+                        <lightning-combobox class="slds-m-top_medium" variant="label-hidden" value={selectedStatus}
+                            options={statusOptions} onchange={handleStatusChange}></lightning-combobox>
+                    </template>
+                    <div class="slds-m-vertical_x-small" style="display: flex;">
+                        <button class="slds-button" disabled style="color:black"><strong>{selectedSACount} Selected
+                            </strong> </button>
+                        <template if:true={isAllSelectAll}>
+                            <lightning-button variant="base" label="Select All" onclick={handleSelectAll}
+                                class="slds-m-left_x-small" style="margin-left: auto;"></lightning-button>
+                        </template>
+                        <template if:true={isDeSelectAll}>
+                            <lightning-button variant="base" label="Unselect All" onclick={handleDeselectAll}
+                                class="slds-m-left_x-small" style="margin-left: auto;"></lightning-button>
+                        </template>
+                    </div>
+                    <!-- Card for Service Appointment -->
+                    <div class="appointment-list-container">
+                        <div class="slds-m-bottom_x-small appointments-container" for:each={bundleAppointments}
+                            for:item="serviceAppointment" key={serviceAppointment.Id}>
+                            <div style="display: flex;">
+                                <p style="font-weight: bold;">{serviceAppointment.AppointmentNumber}</p>
+                                <template if:true={serviceAppointment.isCheckBoxEnable}>
+                                    <lightning-input type="checkbox" data-id={serviceAppointment.Id}
+                                        checked={serviceAppointment.checked} onchange={handleCheckboxChange}
+                                        style="margin-left: auto;"></lightning-input>
+                                </template>
+
+                            </div>
+                            <p class="slds-m-top_x-small slds-p-horizontal_small text-center"
+                                style="align-self: center;font-size: small;">
+                               {serviceAppointment.Status} • {serviceAppointment.TypeofWork}</p>
+                            <p class="slds-m-top_x-small text-center">
+                                {serviceAppointment.WorkTypeCode}</p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- screen for loader-->
+            <template if:true={loading}>
+                <lightning-spinner variant="brand" size="large"> </lightning-spinner>
+            </template>
+            <!-- Screen 4 -->
+            <template if:true={Screen2}>
+                <div class="screen1-container">
+                    <div style="display: flex;flex-direction: column;"
+                        class="slds-m-around_small slds-m-vertical_x-small">
+                        <lightning-radio-group name="radioGroup" onchange={handleStatusToUpdateChange}
+                            options={statusToUpdateOptions} value={selectedStatusToUpdateValue}
+                            type="radio"></lightning-radio-group>
+                    </div>
+                </div>
+            </template>
+            <!-- screen for success message end -->
+            <template if:true={isUpdateSuccess}>
+                <div class="error-container slds-m-horizontal_small">
+                    <p class="slds-m-top_medium"><strong style="font-size: larger;color: #28a745;;">Status has been successfully updated
+                        </strong></p>
+                </div>
+            </template>
+            <!-- screen 5 Reject Category & Reason Screen -->
+            <template if:true={isStatusToRejected}>
+                <div class="error-container slds-m-horizontal_small">
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Reject Category</p>
+                        <p class="required"> *</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedRejectCategory} options={rejectCategories}
+                        onchange={handleCategoryChange}>
+                    </lightning-combobox>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Reject Reason</p>
+                        <p class="required"> *</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedRejectReasons} options={rejectReasons}
+                        onchange={handleReasonChange}>
+                    </lightning-combobox>
+
+                </div>
+            </template>
+            <!-- Button -->
+            <div class="slds-m-around_small button-center" style="display: flex;flex-direction: row;">
+                <template if:true={isUpdateStatusEnabled}>
+                    <button class="slds-button slds-button_brand slds-button_stretch slds-m-bottom_xx-small"
+                        onclick={handleUpdateStatus} disabled={isUpdateStatusDisabled}>Update Status</button>
+                </template>
+                <template if:true={isPreviousEnabled}>
+                    <button class="slds-button slds-button_outline-brand slds-button_stretch slds-m-bottom_xx-small"
+                        onclick={handlePrevious} disabled={isPreviousDisabled}>Previous</button>
+                </template>
+                <template if:true={isSaveStatusEnabled}>
+                    <button class="slds-button slds-button_outline-brand slds-button_stretch slds-m-bottom_xx-small"
+                        onclick={handleSaveStatus} disabled={isSaveStatusDisabled}>Save Status</button>
+                </template>
+                <template if:true={isNextEnabled}>
+                    <button class="slds-button slds-button_outline-brand slds-button_stretch slds-m-bottom_xx-small"
+                        onclick={handleNext} disabled={isNextDisabled}>Next</button>
+                </template>
+            </div>
+            <!-- Button -->
+        </template>
+    </div>
+</template>

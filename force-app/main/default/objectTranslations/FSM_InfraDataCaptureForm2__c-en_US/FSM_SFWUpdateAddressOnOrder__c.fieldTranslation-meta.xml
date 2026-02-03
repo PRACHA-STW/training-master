@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Update address on order? --></label>
+    <name>FSM_SFWUpdateAddressOnOrder__c</name>
+</CustomFieldTranslation>

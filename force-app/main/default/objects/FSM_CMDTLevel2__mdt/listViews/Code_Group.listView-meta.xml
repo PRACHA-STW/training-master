@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Code_Group</fullName>
+    <columns>FSM_CodeGroup__c</columns>
+    <columns>FSM_MPValCode__c</columns>
+    <columns>FSM_SAPName__c</columns>
+    <columns>FSM_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_Type__c</field>
+        <operation>equals</operation>
+        <value>Code Group</value>
+    </filters>
+    <label>Code Group</label>
+</ListView>

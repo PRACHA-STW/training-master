@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select One --></help>
+    <label><!-- Priority --></label>
+    <name>FSM_SFWPriority__c</name>
+    <picklistValues>
+        <masterLabel>10 Days</masterLabel>
+        <translation><!-- 10 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12 hours</masterLabel>
+        <translation><!-- 12 hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>21 Days</masterLabel>
+        <translation><!-- 21 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24 hours</masterLabel>
+        <translation><!-- 24 hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 Days</masterLabel>
+        <translation><!-- 3 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Days</masterLabel>
+        <translation><!-- 30 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>32 hours</masterLabel>
+        <translation><!-- 32 hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 hours</masterLabel>
+        <translation><!-- 4 hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60 Days</masterLabel>
+        <translation><!-- 60 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 Days</masterLabel>
+        <translation><!-- 7 Days --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

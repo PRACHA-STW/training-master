@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CSOFlowFlowControl__c</fullName>
+    <description>Created as part of SFS-4811</description>
+    <label>Flow Control Device</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Good Condition, No FOW required</fullName>
+                <default>false</default>
+                <label>Good Condition, No FOW required</label>
+            </value>
+            <value>
+                <fullName>Poor Condition, Flow now restored</fullName>
+                <default>false</default>
+                <label>Poor Condition, Flow now restored</label>
+            </value>
+            <value>
+                <fullName>Poor Condition, FOW needed</fullName>
+                <default>false</default>
+                <label>Poor Condition, FOW needed</label>
+            </value>
+            <value>
+                <fullName>High Risk - Blocked or Damaged</fullName>
+                <default>false</default>
+                <label>High Risk - Blocked or Damaged</label>
+            </value>
+            <value>
+                <fullName>Other - Call Catchment Lead</fullName>
+                <default>false</default>
+                <label>Other - Call Catchment Lead</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

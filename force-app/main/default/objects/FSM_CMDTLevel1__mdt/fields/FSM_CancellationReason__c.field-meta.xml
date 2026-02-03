@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CancellationReason__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Cancellation Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Available Resource</fullName>
+                <default>true</default>
+                <label>No Available Resource</label>
+            </value>
+            <value>
+                <fullName>No Available Resource - Skills</fullName>
+                <default>false</default>
+                <label>No Available Resource - Skills</label>
+            </value>
+            <value>
+                <fullName>Correct Vehicle/Equipment Not Available</fullName>
+                <default>false</default>
+                <label>Correct Vehicle/Equipment Not Available</label>
+            </value>
+            <value>
+                <fullName>Same Day Rein Not Booked</fullName>
+                <default>false</default>
+                <label>Same Day Rein Not Booked</label>
+            </value>
+            <value>
+                <fullName>Incorrect Promotion</fullName>
+                <default>false</default>
+                <label>Incorrect Promotion</label>
+            </value>
+            <value>
+                <fullName>Build Error</fullName>
+                <default>false</default>
+                <label>Build Error</label>
+            </value>
+            <value>
+                <fullName>Further Work Required</fullName>
+                <default>false</default>
+                <label>Further Work Required</label>
+            </value>
+            <value>
+                <fullName>Vehicle/Plant Breakdown</fullName>
+                <default>false</default>
+                <label>Vehicle/Plant Breakdown</label>
+            </value>
+            <value>
+                <fullName>No Access</fullName>
+                <default>false</default>
+                <label>No Access</label>
+            </value>
+            <value>
+                <fullName>Parked Cars</fullName>
+                <default>false</default>
+                <label>Parked Cars</label>
+            </value>
+            <value>
+                <fullName>Asset No Longer on Site</fullName>
+                <default>false</default>
+                <label>Asset No Longer on Site</label>
+            </value>
+            <value>
+                <fullName>Equipment Out of Service</fullName>
+                <default>false</default>
+                <label>Equipment Out of Service</label>
+            </value>
+            <value>
+                <fullName>TMA System Error</fullName>
+                <default>false</default>
+                <label>TMA System Error</label>
+            </value>
+            <value>
+                <fullName>TMA Validity Period</fullName>
+                <default>false</default>
+                <label>TMA Validity Period</label>
+            </value>
+            <value>
+                <fullName>TMA Passed Validity Date</fullName>
+                <default>false</default>
+                <label>TMA Passed Validity Date</label>
+            </value>
+            <value>
+                <fullName>TMA on Private Street</fullName>
+                <default>false</default>
+                <label>TMA on Private Street</label>
+            </value>
+            <value>
+                <fullName>HA Refusal</fullName>
+                <default>false</default>
+                <label>HA Refusal</label>
+            </value>
+            <value>
+                <fullName>HA Revoked</fullName>
+                <default>false</default>
+                <label>HA Revoked</label>
+            </value>
+            <value>
+                <fullName>TMA Started in Error</fullName>
+                <default>false</default>
+                <label>TMA Started in Error</label>
+            </value>
+            <value>
+                <fullName>Job Built Retrospectively</fullName>
+                <default>false</default>
+                <label>Job Built Retrospectively</label>
+            </value>
+            <value>
+                <fullName>System Error</fullName>
+                <default>false</default>
+                <label>System Error</label>
+            </value>
+            <value>
+                <fullName>Job Not Required - STW</fullName>
+                <default>false</default>
+                <label>Job Not Required - STW</label>
+            </value>
+            <value>
+                <fullName>Job Not Required - Customer</fullName>
+                <default>false</default>
+                <label>Job Not Required - Customer</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Out of SLA - Task Superseded</fullName>
+                <default>false</default>
+                <label>Out of SLA - Task Superseded</label>
+            </value>
+            <value>
+                <fullName>Poor Housekeeping</fullName>
+                <default>false</default>
+                <label>Poor Housekeeping</label>
+            </value>
+            <value>
+                <fullName>Raised on Wrong Property</fullName>
+                <default>false</default>
+                <label>Raised on Wrong Property</label>
+            </value>
+            <value>
+                <fullName>Job Started in Error</fullName>
+                <default>false</default>
+                <label>Job Started in Error</label>
+            </value>
+            <value>
+                <fullName>Emergency/Incident</fullName>
+                <default>false</default>
+                <label>Emergency/Incident</label>
+            </value>
+            <value>
+                <fullName>TMA Past Validity Date</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TMA Past Validity Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

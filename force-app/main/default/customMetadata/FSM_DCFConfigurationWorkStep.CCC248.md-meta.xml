@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>CCC248</label>
+    <protected>false</protected>
+    <values>
+        <field>FSM_AlternativeFormsGroup__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_BusinessUnit__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_DCFformName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_FormHasAlternative__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_IsMandatory__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>FSM_MandatoryOnSuspend__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_MaxInstance__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_NoEngonOP__c</field>
+        <value xsi:type="xsd:string">*</value>
+    </values>
+    <values>
+        <field>FSM_StTextKy__c</field>
+        <value xsi:type="xsd:string">LDBV</value>
+    </values>
+    <values>
+        <field>FSM_Suitability__c</field>
+        <value xsi:type="xsd:string">*</value>
+    </values>
+    <values>
+        <field>FSM_WorkCentre__c</field>
+        <value xsi:type="xsd:string">*</value>
+    </values>
+    <values>
+        <field>FSM_WorkStepName__c</field>
+        <value xsi:type="xsd:string">Confirm that CCC has been completed</value>
+    </values>
+    <values>
+        <field>FSM_WorkStepTemplateId__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

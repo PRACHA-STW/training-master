@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Renamed as part of SFS-7670</description>
+    <height>1500</height>
+    <label>Infra Follow on work request</label>
+    <lightningComponent>fsm_furtherworkrequestdesktop</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

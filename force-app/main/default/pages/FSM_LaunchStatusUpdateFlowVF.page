@@ -1,0 +1,5 @@
+<apex:page standardController="ServiceAppointment" showHeader="false">
+    <flow:interview name="FSM_ServiceAppointment_Status_Update" finishLocation="FSM_statusUpdateSuccess" buttonLocation="bottom">
+        <apex:param name="recordId" value="{!$CurrentPage.parameters.Id}"/>
+    </flow:interview>
+</apex:page>

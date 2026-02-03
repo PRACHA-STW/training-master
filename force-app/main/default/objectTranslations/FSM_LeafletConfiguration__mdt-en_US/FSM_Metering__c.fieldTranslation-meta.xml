@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If ticked, this configuration applies to Metering BU. --></help>
+    <label><!-- Metering --></label>
+    <name>FSM_Metering__c</name>
+</CustomFieldTranslation>

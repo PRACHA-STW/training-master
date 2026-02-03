@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CaseManagingRequired__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Created as a part of SFS-5171.This field is captured by by field technician/Virtual users while closing the SA.</description>
+    <label>Case Managing Required?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

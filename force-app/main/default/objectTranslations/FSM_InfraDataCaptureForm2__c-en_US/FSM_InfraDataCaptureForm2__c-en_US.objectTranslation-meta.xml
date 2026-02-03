@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Infra Data Capture Form 2</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Infra Data Capture Form 2</value>
+    </caseValues>
+    <layouts>
+        <layout>CSO Golden Measures Inspection</layout>
+        <sections>
+            <label><!-- Additional Photos --></label>
+            <section>Additional Photos</section>
+        </sections>
+        <sections>
+            <label><!-- CSO CHAMBER --></label>
+            <section>CSO CHAMBER</section>
+        </sections>
+        <sections>
+            <label><!-- CSO FLOW CONTROL DEVICE --></label>
+            <section>CSO FLOW CONTROL DEVICE</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DOWNSTREAM MANHOLE 1 --></label>
+            <section>DOWNSTREAM MANHOLE 1</section>
+        </sections>
+        <sections>
+            <label><!-- DOWNSTREAM MANHOLE 2 --></label>
+            <section>DOWNSTREAM MANHOLE 2</section>
+        </sections>
+        <sections>
+            <label><!-- INSPECTION VEHICLE/SITE SET UP --></label>
+            <section>INSPECTION VEHICLE/SITE SET UP</section>
+        </sections>
+        <sections>
+            <label><!-- Location Site Details --></label>
+            <section>Location Site Details</section>
+        </sections>
+        <sections>
+            <label><!-- OUTFALL --></label>
+            <section>OUTFALL</section>
+        </sections>
+        <sections>
+            <label><!-- UPSTREAM MANHOLE 1 --></label>
+            <section>UPSTREAM MANHOLE 1</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Infra Data Capture Form 2 Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Leakage</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PIA PIR</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pipe Bridge Flow</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Questions --></label>
+            <section>Questions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sewerage Incident Report</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Enter the cause of incident details(these are the reasons for the incident) --></label>
+            <section>Enter the cause of incident details(these are the reasons for the incident)</section>
+        </sections>
+        <sections>
+            <label><!-- Header --></label>
+            <section>Header</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sewerage-Further Work Request (SCM)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Environmental impact --></label>
+            <section>Environmental impact</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Grid reference of proposed work --></label>
+            <section>Grid reference of proposed work</section>
+        </sections>
+        <sections>
+            <label><!-- Health and Safety information --></label>
+            <section>Health and Safety information</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Occupier Details --></label>
+            <section>Occupier Details</section>
+        </sections>
+        <sections>
+            <label><!-- Owners Details --></label>
+            <section>Owners Details</section>
+        </sections>
+        <sections>
+            <label><!-- Permission to dig details --></label>
+            <section>Permission to dig details</section>
+        </sections>
+        <sections>
+            <label><!-- Proposed Work Details --></label>
+            <section>Proposed Work Details</section>
+        </sections>
+        <sections>
+            <label><!-- Restricted Days --></label>
+            <section>Restricted Days</section>
+        </sections>
+        <sections>
+            <label><!-- Traffic Management and TMA Notice details --></label>
+            <section>Traffic Management and TMA Notice details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sewerage-Job Feedback</layout>
+        <sections>
+            <label><!-- Blockage,cleansing,CCTV --></label>
+            <section>Blockage,cleansing,CCTV</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Environmental Impact --></label>
+            <section>Environmental Impact</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Repair Jobs Only --></label>
+            <section>Repair Jobs Only</section>
+        </sections>
+        <sections>
+            <label><!-- Sewerage Job Feedback Form --></label>
+            <section>Sewerage Job Feedback Form</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancel Form --></label>
+        <name>Cancel_Form_Desktop</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cancel Form --></label>
+        <name>Cancel_Form_Mobile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sketch --></label>
+        <name>FSM_SketchSewerageFWR</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sketch --></label>
+        <name>FSM_SketchSewerageFWRDesktop</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CSO Golden Measures Inspection --></label>
+        <name>CSO_Golden_Measures_Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as a part of SFS-5321 --></description>
+        <label><!-- Leakage --></label>
+        <name>FSM_Leakage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PIA PIR --></label>
+        <name>FSM_PIAPIR</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as a part of 4803 --></description>
+        <label><!-- Pipe Bridge Flow --></label>
+        <name>FSM_PipeBridgeFlow</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-3010 --></description>
+        <label><!-- Sewerage-Further Work Request (SCM) --></label>
+        <name>FSM_SewerageFurtherWorkRequestSCM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sewerage-Job Feedback --></label>
+        <name>FSM_SewerageJobFeedback</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sewerage Incident Report --></label>
+        <name>FSM_Sewerage_Incident_Report</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

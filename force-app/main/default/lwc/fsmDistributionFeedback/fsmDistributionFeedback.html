@@ -1,0 +1,313 @@
+<!--**************************************************************************************
+    - Description  : Created for DCF Distribution Feedback Form
+    - Created Date : 13th October 2023
+    - Modified By  : 6th Dec, 2023 by  Kumar & Arnob Dey - SFS-3778
+**************************************************************************************** -->
+<template>
+
+    <!--SPINNER-->
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading......" size="medium"></lightning-spinner>
+        <!-- <lightning-spinner size="small" alternative-text="Loading" ></lightning-spinner> -->
+    </template>
+
+    <!--MAX LIMIT CHECK-->
+    <template if:true={hasMaxLimitReached}>
+        <lightning-card>
+            <div style="height: 50vh; display: flex; justify-content: center; align-items: center;">
+                <p style="font-size: x-large; font-weight: 600; text-align: center;color: red;">
+                    You have reached the maximum number of completed forms.
+                </p>
+            </div>
+        </lightning-card>
+    </template> 
+
+    <template if:false={hasMaxLimitReached}>
+
+        <lightning-card>
+            <lightning-record-edit-form object-api-name={objectApiName}>
+                <!-- FEEDBACK Screen -->
+                <template if:true={Screen1}>
+                    <lightning-card title="FEEDBACK">
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+
+                        <!-- Dependent Picklist Start-->
+                        <div class="slds-m-horizontal_xx-small">
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Asset</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedAsset} options={assetRecords}
+                                onchange={handleAssetChange} required>
+                            </lightning-combobox>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Task</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedTask} options={filteredTask}
+                                onchange={handleTaskChange}>
+                            </lightning-combobox>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Technique</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedTechnique} options={filteredTechnique}
+                                onchange={handleTechniqueChange}>
+                            </lightning-combobox>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Size</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedSize} options={filteredSize}
+                                onchange={handleSizeChange}>
+                            </lightning-combobox>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Material</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedMaterial} options={filteredMaterial}
+                                onchange={handleMaterialChange}>
+                            </lightning-combobox>
+                            <!-- Dependent Picklist End-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Asset UID</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={assetuuid}
+                                onchange={handleAssetUidChange} class="assetuidcls">
+                            </lightning-input>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Depth Of Cover (mm)</p>
+                                <p class="required">*</p>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" value={depthOfCover}
+                                onchange={handleDepthChange} class="depthofcovercls">
+                            </lightning-input>
+                        </div>
+                        <!-- Feedback Screen End -->
+                    </lightning-card>
+                </template>
+
+
+                <!-- -screen 2  start- -->
+                <template if:true={Screen2}>
+                    <lightning-card title="Environmental Impact">
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+                        <div class="slds-m-horizontal_xx-small">
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Is there confirmed pollution</p>
+                                <p class="required"> *</p>
+                                <lightning-helptext content={confirmedPollutionHelpText}></lightning-helptext>
+                            </div>
+                            <lightning-combobox name="FSM_IsThereConfirmedPollution__c" class="confirmedPollutioncls"
+                                value={selectedIsThereConfirmedPollutionfield} options={isThereConfirmedPollutionOptions}
+                                onchange={handleConfirmedPollution} variant="label-hidden">
+                            </lightning-combobox>
+                            <!-- if confirmed pollution yes this box will disappear -->
+                            <template if:true={isConfirmed}>
+                                <div style="display: flex;" class="slds-m-vertical_x-small">
+                                    <p>Is there a risk of pollution occurring</p>
+                                    <p class="required"> *</p>
+                                    <lightning-helptext content={pollutionRiskHelpText}></lightning-helptext>
+                                </div>
+                                <lightning-combobox name="FSM_IsThereARiskOfPollutionOccurring__c" class="pollutionRiskcls"
+                                    value={selectedIsThereARiskOfPollutionOccurringfield}
+                                    options={isThereARiskOfPollutionOccurringOptions} onchange={handlePollutionRiskChange}
+                                    variant="label-hidden">
+                                </lightning-combobox>
+                            </template>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Is there a risk to an environmentally important site? For example, SSSI/SAMs/NRs etc.</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox name="FSM_RiskToAnEnvironmentalSite__c" class="envSiteRiskcls"
+                                value={selectedRiskToAnEnvironmentalSitefield} options={riskToAnEnvironmentalSiteOptions}
+                                onchange={handleEnvSiteRisk} variant="label-hidden">
+                            </lightning-combobox>
+                        </div>
+                    </lightning-card>
+                </template>
+                <!-- -screen 2 end- -->
+
+                <!-- -screen 3 start- -->
+                <template if:true={Screen3}>
+                    <lightning-card title="GSS">
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+                        <div class="slds-m-horizontal_xx-small">
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>GSS Payable Reason</p>
+                            </div>
+                            <lightning-combobox name="FSM_GSSPayable__c" class="gsspayablecls" value={selectedGssfield}
+                                options={gssPayableOptions} onchange={handleChangegssPayableReason} variant="label-hidden">
+                            </lightning-combobox>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Number of GSS payments</p>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" label="" value={gssPayements}
+                                onchange={handleGssPaymentChange} class="gsspaymentscls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Illegal Use?</p>
+                            </div>
+                            <lightning-combobox name="FSM_IllegalUse__c" class="gsspayablecls"
+                                value={selectedIllegalUsefield} options={IllegalUseOptions} onchange={handleIllegalUseRisk}
+                                variant="label-hidden">
+                            </lightning-combobox>
+                        </div>
+                    </lightning-card>
+                </template>
+                <!-- -screen 3 end -->
+
+                <!-- Screen 4 Illegal Use -->
+                <template if:true={Screen4}>
+                    <lightning-card title="ILLEGAL USE">
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+
+                        <div class="slds-m-horizontal_xx-small">
+                            <label class="slds-form-element__label" for="unique-id-of-input">Please issue
+                                illegal user with
+                                letter and attach any photographs to support any further action that we may take.</label>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Illegal User Name</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={illegalUserName}
+                                onchange={handleIllegalUNameChange} class="illegalUserNamecls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>House Name</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={houseName}
+                                onchange={handleHouseNameChange} class="housenamecls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>House Number</p>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" value={houseNumber}
+                                onchange={handleHouseNumChange} class="housenumcls" maxlength="5">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Street</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={street} onchange={handleStreetChange}
+                                class="streetcls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Town</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={town} onchange={handleTownChange}
+                                class="towncls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>City</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={city} onchange={handleCityChange}
+                                class="citycls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Postcode</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={postCode}
+                                onchange={handlePostalChange} class="postcls" maxlength="9">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Telephone</p>
+                            </div>
+                            
+                                <lightning-input type="text" variant="label-hidden"
+                                value={telephone} onchange={handleTelephoneChange}
+                                class="telephonecls" max-length="30">
+                            </lightning-input>
+                        </div>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Reason for Unauthorised use</p>
+                            </div>
+                            <lightning-combobox name="FSM_IllegalUseReason__c" class="illegalUsecls"
+                                value={selectedIllegalUseReasonfield} options={illegalUseReasonOptions}
+                                onchange={handleChangeIllegalUseReason} variant="label-hidden">
+                            </lightning-combobox>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Location of Illegal Use</p>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={illegalLocation}
+                                onchange={handleIllegalLocationChange} class="illegalLoccls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Standpipe Number</p>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" value={standpipeNum}
+                                onchange={handleStandpipeChange} class="standpipecls">
+                            </lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Date of Hire</p>
+                            </div>
+                            <lightning-input type="date" variant="label-hidden" value={hireDate}
+                                onchange={handleHireDateChange}>
+                            </lightning-input>
+                    </lightning-card>
+                </template>
+                <!-- Screen 5  -->
+
+                <template if:true={Screen5}>
+                    <lightning-card>
+                        <div class="slds-m-horizontal_xx-small">
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">
+                                    Data Capture Form is submitted successfully. Please close the screen to continue.</p>
+                            </div>
+                        </div>
+                    </lightning-card>
+                </template>
+                <!-- Next and Previous buttons -->
+            </lightning-record-edit-form>
+            <lightning-card>
+                <template if:true={isEnablePrev}>
+                    <lightning-button label="Previous" variant="brand" onclick={handlePrevious}></lightning-button>
+                </template>&nbsp;&nbsp;&nbsp;
+                <template if:true={isEnableNext}>
+                    <lightning-button label="Next" onclick={handleNext} variant="brand"></lightning-button>
+                </template>&nbsp;&nbsp;&nbsp;
+                <template if:true={isLastScreen}>
+                    <lightning-button label="Finish" onclick={handleSave} variant="brand"></lightning-button>
+                </template>
+            </lightning-card>
+        </lightning-card>
+
+    </template>
+</template>

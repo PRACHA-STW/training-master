@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointed_or_Constrained</fullName>
+    <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+    <columns>Name</columns>
+    <columns>FSM_ExternalId__c</columns>
+    <columns>ZIP</columns>
+    <columns>Status</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>ArrivalWindowEndTime</columns>
+    <columns>FSM_ConstraintStart__c</columns>
+    <columns>FSM_ConstraintEnd__c</columns>
+    <columns>LatestEndTime</columns>
+    <columns>FSM_HoursUntilDueDate__c</columns>
+    <columns>FSM_SAPJobPriority__c</columns>
+    <columns>FSM_CustomerAtRiskOfDissatisfaction__c</columns>
+    <columns>FSM_Polygon__c</columns>
+    <columns>ServiceTerritory</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>Cannot Complete,Completed,Cancelled</value>
+    </filters>
+    <filters>
+        <field>ArrivalWindowStartTime</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>FSM_ConstraintStart__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>WD4</value>
+    </filters>
+    <label>Appointed or Constrained</label>
+    <sharedTo>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

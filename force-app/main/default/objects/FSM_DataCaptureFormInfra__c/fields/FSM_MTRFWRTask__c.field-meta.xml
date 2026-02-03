@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MTRFWRTask__c</fullName>
+    <label>Task (Work Type Code Group)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CRNHME</fullName>
+                <default>false</default>
+                <label>Non Household Metering Customer Request</label>
+            </value>
+            <value>
+                <fullName>CCRHHME</fullName>
+                <default>false</default>
+                <label>Complaints - Household Metering</label>
+            </value>
+            <value>
+                <fullName>MEMNHH</fullName>
+                <default>false</default>
+                <label>NHH Metering</label>
+            </value>
+            <value>
+                <fullName>MEMNHW</fullName>
+                <default>false</default>
+                <label>NHH Metering - WIFs</label>
+            </value>
+            <value>
+                <fullName>CRHHME</fullName>
+                <default>false</default>
+                <label>Household Metering Customer Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

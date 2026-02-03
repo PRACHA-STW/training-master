@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Leakage Techniques used --></label>
+    <name>FSM_LeakageTechniques__c</name>
+    <picklistValues>
+        <masterLabel>Correlation</masterLabel>
+        <translation><!-- Correlation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enigma</masterLabel>
+        <translation><!-- Enigma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Sounding</masterLabel>
+        <translation><!-- Manual Sounding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe Tracing</masterLabel>
+        <translation><!-- Pipe Tracing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

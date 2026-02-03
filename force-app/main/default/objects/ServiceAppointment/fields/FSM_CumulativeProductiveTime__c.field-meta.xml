@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CumulativeProductiveTime__c</fullName>
+    <description>Created as a part of SFS-3049</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(FSM_CumulativeProductiveTimeInMins__c) ) ,
+TEXT(
+  FLOOR(FSM_CumulativeProductiveTimeInMins__c /60)) &amp; &quot; hrs &quot; &amp; 
+TEXT(
+  ROUND
+    (MOD(FSM_CumulativeProductiveTimeInMins__c,60),0)) &amp; &quot; mins &quot;, 
+NULL)</formula>
+    <label>Cumulative Productive Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

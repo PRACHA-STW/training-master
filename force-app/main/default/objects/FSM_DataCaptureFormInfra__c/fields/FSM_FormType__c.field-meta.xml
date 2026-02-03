@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_FormType__c</fullName>
+    <description>Created as part of SFS-1950, SFS-2982</description>
+    <label>Form Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Short Duration Works Risk Assessment</fullName>
+                <default>false</default>
+                <label>Short Duration Works Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>NHH Meter</fullName>
+                <default>false</default>
+                <label>NHH Meter</label>
+            </value>
+            <value>
+                <fullName>Gap Site</fullName>
+                <default>false</default>
+                <label>Gap Site</label>
+            </value>
+            <value>
+                <fullName>Site Area, SWD, Foul</fullName>
+                <default>false</default>
+                <label>Site Area, SWD, Foul</label>
+            </value>
+            <value>
+                <fullName>Job Completion - (Water Networks)</fullName>
+                <default>false</default>
+                <label>Job Completion - (Water Networks)</label>
+            </value>
+            <value>
+                <fullName>Pre-site checklist</fullName>
+                <default>false</default>
+                <label>Pre-site checklist</label>
+            </value>
+            <value>
+                <fullName>Risk Assessment - Site Specific</fullName>
+                <default>false</default>
+                <label>Risk Assessment - Site Specific</label>
+            </value>
+            <value>
+                <fullName>DST Self Audit</fullName>
+                <default>false</default>
+                <label>DST Self Audit</label>
+            </value>
+            <value>
+                <fullName>Network Management Form</fullName>
+                <default>false</default>
+                <label>Network Management Form</label>
+            </value>
+            <value>
+                <fullName>Non-infra Raise new and follow on work</fullName>
+                <default>false</default>
+                <label>Non-infra Raise new and follow on work</label>
+            </value>
+            <value>
+                <fullName>Infra Follow On Work Request</fullName>
+                <default>false</default>
+                <label>Infra Follow On Work Request</label>
+            </value>
+            <value>
+                <fullName>Digger/Trailer Checks/C&amp;G Check</fullName>
+                <default>false</default>
+                <label>Digger/Trailer Checks/C&amp;G Check</label>
+            </value>
+            <value>
+                <fullName>Sewerage-Job Feedback</fullName>
+                <default>false</default>
+                <label>Sewerage-Job Feedback</label>
+            </value>
+            <value>
+                <fullName>Sewerage-Further Work Request (SCM)</fullName>
+                <default>false</default>
+                <label>Sewerage-Further Work Request (SCM)</label>
+            </value>
+            <value>
+                <fullName>Sewerage Incident Report Form</fullName>
+                <default>false</default>
+                <label>Sewerage Incident Report Form</label>
+            </value>
+            <value>
+                <fullName>Reinstatement Form</fullName>
+                <default>false</default>
+                <label>Reinstatement Form</label>
+            </value>
+            <value>
+                <fullName>Rechargeable Works-Damage Description Report</fullName>
+                <default>false</default>
+                <label>Rechargeable Works-Damage Description Report</label>
+            </value>
+            <value>
+                <fullName>Metering Job Feedback</fullName>
+                <default>false</default>
+                <label>Metering Job Feedback</label>
+            </value>
+            <value>
+                <fullName>Meter Details Form</fullName>
+                <default>false</default>
+                <label>Meter Details Form</label>
+            </value>
+            <value>
+                <fullName>Distribution Interruption</fullName>
+                <default>false</default>
+                <label>Distribution Interruption</label>
+            </value>
+            <value>
+                <fullName>Distribution Feedback</fullName>
+                <default>true</default>
+                <label>Distribution Feedback</label>
+            </value>
+            <value>
+                <fullName>SPS Standard</fullName>
+                <default>false</default>
+                <label>SPS Standard</label>
+            </value>
+            <value>
+                <fullName>SPS Complex</fullName>
+                <default>false</default>
+                <label>SPS Complex</label>
+            </value>
+            <value>
+                <fullName>Asset Update Form</fullName>
+                <default>false</default>
+                <label>Asset Update Form</label>
+            </value>
+            <value>
+                <fullName>Vehicle Check</fullName>
+                <default>false</default>
+                <label>Vehicle Check</label>
+            </value>
+            <value>
+                <fullName>Risk Assessment - Paper</fullName>
+                <default>false</default>
+                <label>Risk Assessment - Paper</label>
+            </value>
+            <value>
+                <fullName>Waste Water Chemical Acceptance and Authorisation to Discharge Form</fullName>
+                <default>false</default>
+                <label>Waste Water Chemical Acceptance and Authorisation to Discharge Form</label>
+            </value>
+            <value>
+                <fullName>Clean Water Chemical Acceptance and Authorisation to Discharge Assessment</fullName>
+                <default>false</default>
+                <label>Clean Water Chemical Acceptance and Authorisation to Discharge Assessment</label>
+            </value>
+            <value>
+                <fullName>Working Set Pre Use Inspection</fullName>
+                <default>false</default>
+                <label>Working Set Pre Use Inspection</label>
+            </value>
+            <value>
+                <fullName>HD Risk Assessment</fullName>
+                <default>false</default>
+                <label>HD Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>Confined Spaces Pre Entry Checklist</fullName>
+                <default>false</default>
+                <label>Confined Spaces Pre Entry Checklist</label>
+            </value>
+            <value>
+                <fullName>Risk Assessment - Waste Infra</fullName>
+                <default>false</default>
+                <label>Risk Assessment - Waste Infra</label>
+            </value>
+            <value>
+                <fullName>Meter Readings</fullName>
+                <default>false</default>
+                <label>Meter Readings</label>
+            </value>
+            <value>
+                <fullName>Meter Further Work Request</fullName>
+                <default>false</default>
+                <label>Meter Further Work Request</label>
+            </value>
+            <value>
+                <fullName>Metering Follow on Work</fullName>
+                <default>false</default>
+                <label>Metering Follow on Work</label>
+            </value>
+            <value>
+                <fullName>Boards and Barriers</fullName>
+                <default>false</default>
+                <label>Boards and Barriers</label>
+            </value>
+            <value>
+                <fullName>Sewerage Risk Assessment - Site Specific</fullName>
+                <default>false</default>
+                <label>Sewerage Risk Assessment - Site Specific</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

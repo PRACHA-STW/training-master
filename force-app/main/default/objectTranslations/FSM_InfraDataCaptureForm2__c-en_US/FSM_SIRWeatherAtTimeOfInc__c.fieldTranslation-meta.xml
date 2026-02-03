@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Weather at time of Inc. --></label>
+    <name>FSM_SIRWeatherAtTimeOfInc__c</name>
+    <picklistValues>
+        <masterLabel>Drizzle</masterLabel>
+        <translation><!-- Drizzle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dry</masterLabel>
+        <translation><!-- Dry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heavy rain</masterLabel>
+        <translation><!-- Heavy rain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rain</masterLabel>
+        <translation><!-- Rain --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

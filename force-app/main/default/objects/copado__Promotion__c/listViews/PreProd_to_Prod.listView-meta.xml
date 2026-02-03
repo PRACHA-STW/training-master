@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreProd_to_Prod</fullName>
+    <columns>NAME</columns>
+    <columns>copado__Source_Environment__c</columns>
+    <columns>copado__Destination_Environment__c</columns>
+    <columns>copado__Project__c</columns>
+    <columns>copado__Release__c</columns>
+    <columns>copado__Back_Promotion__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>copado__Source_Environment__c</field>
+        <operation>contains</operation>
+        <value>preprod</value>
+    </filters>
+    <filters>
+        <field>copado__Destination_Environment__c</field>
+        <operation>contains</operation>
+        <value>prod</value>
+    </filters>
+    <filters>
+        <field>copado__Status__c</field>
+        <operation>equals</operation>
+        <value>Completed</value>
+    </filters>
+    <label>PreProd to Prod</label>
+</ListView>

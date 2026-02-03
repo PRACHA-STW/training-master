@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meter location --></label>
+    <name>FSM_CustMeterLocation__c</name>
+    <picklistValues>
+        <masterLabel>In Bathroom</masterLabel>
+        <translation><!-- In Bathroom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Garage</masterLabel>
+        <translation><!-- In Garage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Kitchen sink</masterLabel>
+        <translation><!-- Under Kitchen sink --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

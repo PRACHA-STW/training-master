@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- On Hold Reason --></label>
+    <name>FSM_OnHoldReason__c</name>
+    <picklistValues>
+        <masterLabel>Customer not available</masterLabel>
+        <translation><!-- Customer not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency work received</masterLabel>
+        <translation><!-- Emergency work received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parked Cars</masterLabel>
+        <translation><!-- Parked Cars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returning Next Day</masterLabel>
+        <translation><!-- Returning Next Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TM not available</masterLabel>
+        <translation><!-- TM not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ticket Organisation</masterLabel>
+        <translation><!-- Ticket Organisation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for equipment</masterLabel>
+        <translation><!-- Waiting for equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for resource</masterLabel>
+        <translation><!-- Waiting for resource --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

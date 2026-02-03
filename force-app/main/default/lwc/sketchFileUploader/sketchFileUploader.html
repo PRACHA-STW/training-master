@@ -1,0 +1,145 @@
+<template> 
+    <div class="fileUploader">
+        <!-- base map layer--> 
+        <lightning-card style="width:50%;height:50%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Base map - {recordId}  
+            </h3>
+            <lightning-input
+                type="file"
+                accept="image/*"
+                label="&zwnj;"
+                variant="label-hidden"
+                onchange={handlebaseFilesSelected}>
+            </lightning-input>
+            <img data-id="prev-image" src={imageData.data} if:true={isEditor} style="width:50%; height:300px;" /> 
+
+        </lightning-card>
+        
+        <!-- sketch icons-->
+        <lightning-card style="width:50%;height:100%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Sketch Icons
+            </h3>
+            <h4 class="Icons-font">(These icons will be populated on base map and should indicate setup & TMA)</h4>
+            <div>
+                <lightning-input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    variant="label-hidden"
+                    label="&zwnj;"
+                    onchange={handlesketchFilesSelected}>
+                </lightning-input>
+                <div class="selected-icons">
+                <!-- Selected Images Preview -->            
+                <template for:each={sketchImageData} for:item="item">
+                  
+                       <div key={item.id}  class="selected-icons">
+                         <div class="delete-icon" onclick={handleDeletesketchiconsClick} data-id={item.id} >
+                           
+                            <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" size="x-small"></lightning-icon>
+                        </div>  
+                       
+                        <img data-id={item.id} src={item.data} />
+                    </div>
+               
+                </template>                 
+            </div>
+        </div>
+        </lightning-card>
+
+         <!-- Site icons-->
+         <lightning-card style="width:50%;height:100%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Inform Icons
+            </h3>
+
+            <div>
+                <lightning-input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    label="&zwnj;"
+                    variant="label-hidden"
+                    onchange={handledraggableFilesSelected}>
+                </lightning-input>
+                <div class="selected-icons">
+                <!-- Selected Images Preview -->            
+                <template for:each={draggableImageData} for:item="item">
+                    <div key={item.id} class="selected-icons">
+                        <div class="delete-icon" onclick={handleDeletesiteiconsClick} data-id={item.id}>
+                            <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                            <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" size="x-small"></lightning-icon>
+                        </div>
+                        
+                        <img data-id={item.id} src={item.data}/>
+                    </div>
+                </template>                 
+            </div>
+            </div>
+        </lightning-card>
+
+ <!-- Site icons-->
+ <lightning-card style="width:50%;height:100%;">
+    <h3 slot="title">
+        <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+        TMA Banner
+    </h3>
+
+    <div>
+        <lightning-input
+            type="file"
+            accept="image/*"
+            label="&zwnj;"
+            variant="label-hidden"
+            onchange={handletmasketchSelected}>
+        </lightning-input>
+        <div class="selected-icons">
+        <!-- Selected Images Preview -->            
+        <template for:each={tmasketchData} for:item="item">
+            
+            <div key={item.id} class="selected-icons">
+                <div class="delete-icon" onclick={handleDeletetmasketchClick} data-id={item.id}>
+                    <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                    <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" size="x-small"></lightning-icon>
+                </div>
+                <img data-id={item.id} src={item.data}/>
+            </div>
+        </template>                 
+    </div>
+    </div>
+</lightning-card>
+
+
+        <!-- Movable icons-->
+        <!--
+        <lightning-card style="width:50%;height:100%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Movable Icons
+            </h3>
+
+            <div>
+                <lightning-input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    label="&zwnj;"
+                    onchange={handleMovableFilesSelected}>
+                </lightning-input>
+
+                           
+                <template for:each={movableImageData} for:item="item">
+                    <div key={item.id} class="selected-icons">
+                        <img data-id={item.id} src={item.data}/>
+                    </div>
+                </template>                 
+            </div>
+        </lightning-card> -->
+
+    </div>
+</template>

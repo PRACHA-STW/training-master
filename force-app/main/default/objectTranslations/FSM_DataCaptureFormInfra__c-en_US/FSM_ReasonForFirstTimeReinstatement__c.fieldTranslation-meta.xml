@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Why does the job require first time rein, Consider alternative solutions and this should be only used in exceptional circumstances. --></help>
+    <label><!-- Reason for First time reinstatement? --></label>
+    <name>FSM_ReasonForFirstTimeReinstatement__c</name>
+    <picklistValues>
+        <masterLabel>Access issues</masterLabel>
+        <translation><!-- Access issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Driveway blocked</masterLabel>
+        <translation><!-- Driveway blocked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Crossing</masterLabel>
+        <translation><!-- Road Crossing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic sensitive Road</masterLabel>
+        <translation><!-- Traffic sensitive Road --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

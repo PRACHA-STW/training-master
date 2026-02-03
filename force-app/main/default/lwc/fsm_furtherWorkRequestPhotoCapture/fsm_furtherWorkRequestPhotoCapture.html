@@ -1,0 +1,70 @@
+<template> 
+    <div style="height:100%;">
+        <!-- base map layer--> 
+        <lightning-card>
+            <div  if:true={isEdit} class="image-upload-msg">
+                <span>Photos are already attached.</span>
+            </div>
+            <!-- <h3 slot="title"> -->
+                <h3>
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Photo Capture
+            </h3>
+            <!-- </h3> -->
+           
+            <lightning-input
+                type="file"
+                accept="image/*"
+                multiple
+                label="&zwnj;" 
+                onchange={handlePhotoSelect} >
+            </lightning-input>
+            <!-- <img data-id="prev-image" src={imageData.data} style="width:100%; height:200px;" /> <br/> -->
+
+            <!-- Selected Images Preview  -->        
+            <template for:each={imageData} for:item="item">
+                <div key={item.id} class={item.className} >
+                    <div class="image-container">
+                    <img data-id={item.id} src={item.data} onclick={handleImageClick}/><br><br>
+                    <div class="delete-icon" onclick={handleDeleteClick} data-id={item.id}>
+                        <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                        <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" size="x-small"></lightning-icon>
+                    </div>
+                    </div>
+                </div>
+            </template> 
+            
+            <div>
+                
+           <lightning-button title="Previous" label="Previous"  onclick={handlePrev}></lightning-button> &nbsp;&nbsp;
+            <lightning-button title="Next" label="Next"  onclick={handleClick}></lightning-button>
+        </div>
+        </lightning-card>
+
+        
+        <!-- site icons
+        <lightning-card style="width:50%;height:100%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Site Icons
+            </h3>
+
+            <div>
+                <lightning-input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    label="&zwnj;"
+                    onchange={handledraggableFilesSelected}>
+                </lightning-input> -->
+
+                <!-- Selected Images Preview          
+                <template for:each={draggableImageData} for:item="item">
+                    <div key={item.id} class="selected-icons">
+                        <img data-id={item.id} src={item.data}/>
+                    </div>
+                </template>                 
+            </div>
+        </lightning-card> -->
+    </div>
+</template>

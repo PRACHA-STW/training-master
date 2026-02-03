@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This Information is visible to Highways Authority on the notice and must contain the correct address information --></help>
+    <label><!-- Occupier&apos;s House No. --></label>
+    <name>FSM_OccupiersHouseNo__c</name>
+</CustomFieldTranslation>

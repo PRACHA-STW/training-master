@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_EnsureSiteClearWhenTMAActualEndSet</fullName>
+    <active>true</active>
+    <description>SFS-8737</description>
+    <errorConditionFormula>AND(
+    NOT(ISNULL( FSM_TMAActualEnd__c)),
+    NOT( FSM_TMASiteClear__c ),
+    NOT($Permission.FSM_SystemAdmin),
+    NOT($Permission.FSM_Integration),
+    NOT($Permission.FSM_Data_Migration_Admin)
+)</errorConditionFormula>
+    <errorDisplayField>FSM_TMAActualEnd__c</errorDisplayField>
+    <errorMessage>Please populate the Site Clear when setting the TMA Actual End</errorMessage>
+</ValidationRule>

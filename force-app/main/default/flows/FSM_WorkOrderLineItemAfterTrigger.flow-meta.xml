@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Created as part of SFS-1923</description>
+        <name>Error_Location</name>
+        <label>Error Location</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error occurred while updating WOLI record.</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Created as part of SFS-1923</description>
+        <name>Check_if_WOLI_has_PRT_linked</name>
+        <label>Check if WOLI has PRT linked</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Not Linked</defaultConnectorLabel>
+        <rules>
+            <name>Linked</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FSM_PRTNameCode__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Mandatory_Checkboxes_on_WOLI</targetReference>
+            </connector>
+            <label>Linked</label>
+        </rules>
+    </decisions>
+    <description>Created as part of SFS-1923</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM WorkOrderLineItem After Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM WorkOrderLineItem After Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Created as part of SFS-1923</description>
+        <name>Get_Related_PRT_Record</name>
+        <label>Get Related PRT Record</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_WOLI_has_PRT_linked</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.FSM_PRTNameCode__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>FSM_SchedulingPreRequisites__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Created as part of SFS-1923</description>
+        <name>Update_Mandatory_Checkboxes_on_WOLI</name>
+        <label>Update Mandatory Checkboxes on WOLI</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <faultConnector>
+            <targetReference>Error_Location</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>FSM_MandatoryforDispatch__c</field>
+            <value>
+                <elementReference>$Record.FSM_PRTNameCode__r.FSM_MandatoryForDispatch__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_MandatoryforScheduling__c</field>
+            <value>
+                <elementReference>$Record.FSM_PRTNameCode__r.FSM_MandatoryForScheduling__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Related_PRT_Record</targetReference>
+        </connector>
+        <object>WorkOrderLineItem</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Created as part of SFS-1923</description>
+        <name>ErrorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Update_Mandatory_Checkboxes_on_WOLI</elementReference>
+        </value>
+    </variables>
+</Flow>

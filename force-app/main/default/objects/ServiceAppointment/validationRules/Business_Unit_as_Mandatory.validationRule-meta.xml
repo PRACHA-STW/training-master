@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit_as_Mandatory</fullName>
+    <active>true</active>
+    <description>SFS-7957</description>
+    <errorConditionFormula>AND(
+ISBLANK( FSM_BusinessUnit__c ),
+NOT(IsBundle)
+)</errorConditionFormula>
+    <errorMessage>You need to provide a Business Unit.</errorMessage>
+</ValidationRule>

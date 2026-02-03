@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vehicle Requirements --></label>
+    <name>FSM_VehicleRequirements__c</name>
+    <picklistValues>
+        <masterLabel>4x4</masterLabel>
+        <translation><!-- 4x4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Van only</masterLabel>
+        <translation><!-- Van only --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

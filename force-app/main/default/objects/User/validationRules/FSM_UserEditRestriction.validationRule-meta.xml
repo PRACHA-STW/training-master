@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_UserEditRestriction</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT($Permission.FSM_Modify_User_Record), NOT( $Profile.Name = &apos;FSM System Administrator&apos;),NOT( $Profile.Name = &apos;System Administrator&apos;))</errorConditionFormula>
+    <errorMessage>You do not have the required permission to edit this record.</errorMessage>
+</ValidationRule>

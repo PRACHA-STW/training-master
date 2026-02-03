@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ExternalId__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>User Story SFI-1712
+SFI-2381 changed label, as we will be adding date time to the external id send by SAP</description>
+    <externalId>true</externalId>
+    <label>External Id updated In SF</label>
+    <length>150</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

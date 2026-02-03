@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To control the visibility of the Change Status quick action for users. Created as part of SFS-7826</description>
+    <isLicensed>false</isLicensed>
+    <label>FSM Allow Change Status</label>
+</CustomPermission>

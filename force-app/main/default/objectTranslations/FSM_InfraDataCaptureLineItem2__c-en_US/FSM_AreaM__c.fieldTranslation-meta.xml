@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Area covered (m2) --></label>
+    <name>FSM_AreaM__c</name>
+    <picklistValues>
+        <masterLabel>2-5</masterLabel>
+        <translation><!-- 2-5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5-10</masterLabel>
+        <translation><!-- 5-10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;2</masterLabel>
+        <translation><!-- &lt;2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;10</masterLabel>
+        <translation><!-- &gt;10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Visible</masterLabel>
+        <translation><!-- Non-Visible --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

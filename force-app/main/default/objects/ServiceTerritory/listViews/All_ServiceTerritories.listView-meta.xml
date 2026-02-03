@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_ServiceTerritories</fullName>
+    <columns>Name</columns>
+    <columns>IsActive</columns>
+    <columns>OperatingHours</columns>
+    <columns>ParentTerritory</columns>
+    <columns>FSM_NumberOfDaysToDispatch__c</columns>
+    <columns>FSL__NumberOfServicesToDripFeed__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>FSM_OperatingHours2Hr__c</columns>
+    <columns>FSL__O2_Enabled__c</columns>
+    <columns>FSM_AutoSchedulePolicy__c</columns>
+    <columns>FSM_SchedulingPolicy__c</columns>
+    <columns>FSM_TerritoryCapacityType__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Service Territories</label>
+</ListView>

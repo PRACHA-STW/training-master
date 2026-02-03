@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cancellation Category --></label>
+    <name>FSM_CancellationCategory__c</name>
+    <picklistValues>
+        <masterLabel>Preparation</masterLabel>
+        <translation><!-- Preparation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process</masterLabel>
+        <translation><!-- Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMA</masterLabel>
+        <translation><!-- TMA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

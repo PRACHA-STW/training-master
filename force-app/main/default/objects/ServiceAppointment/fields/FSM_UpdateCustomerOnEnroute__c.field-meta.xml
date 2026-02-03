@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_UpdateCustomerOnEnroute__c</fullName>
+    <description>Created as part of SFS-4184</description>
+    <label>Update Customer On Enroute</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automated ETA message</fullName>
+                <default>false</default>
+                <label>Automated ETA message</label>
+            </value>
+            <value>
+                <fullName>Called on way &amp; spoke to customer</fullName>
+                <default>false</default>
+                <label>Called on way &amp; spoke to customer</label>
+            </value>
+            <value>
+                <fullName>Called on way, no answer &amp; voicemail</fullName>
+                <default>false</default>
+                <label>Called on way, no answer &amp; voicemail</label>
+            </value>
+            <value>
+                <fullName>Called on way, no answer &amp; no voicemail option</fullName>
+                <default>false</default>
+                <label>Called on way, no answer &amp; no voicemail option</label>
+            </value>
+            <value>
+                <fullName>Text customer</fullName>
+                <default>false</default>
+                <label>Text customer</label>
+            </value>
+            <value>
+                <fullName>No interaction due to incorrect contact details</fullName>
+                <default>false</default>
+                <label>No interaction due to incorrect contact details</label>
+            </value>
+            <value>
+                <fullName>No contact details provided</fullName>
+                <default>false</default>
+                <label>No contact details provided</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

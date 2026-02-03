@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Impact Code Group --></label>
+    <name>FSM_ImpactCodeGroup__c</name>
+    <picklistValues>
+        <masterLabel>Aqua Pea Quantification</masterLabel>
+        <translation><!-- Aqua Pea Quantification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset</masterLabel>
+        <translation><!-- Asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bilat: Consent to Contact Customer</masterLabel>
+        <translation><!-- Bilat: Consent to Contact Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bilat: Customer Aware of Service Request</masterLabel>
+        <translation><!-- Bilat: Customer Aware of Service Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bilat: Customer Contact Required</masterLabel>
+        <translation><!-- Bilat: Customer Contact Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bilat: Customer Preferred Contact Time</masterLabel>
+        <translation><!-- Bilat: Customer Preferred Contact Time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bilat: Customer Prefrd Method of Contact</masterLabel>
+        <translation><!-- Bilat: Customer Prefrd Method of Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billing Back Office</masterLabel>
+        <translation><!-- Billing Back Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COST</masterLabel>
+        <translation><!-- COST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer MEPRCU</masterLabel>
+        <translation><!-- Customer MEPRCU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Networks Sewage - Impact</masterLabel>
+        <translation><!-- Customer Networks Sewage - Impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Services Waste</masterLabel>
+        <translation><!-- Dev Services Waste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Services Water</masterLabel>
+        <translation><!-- Dev Services Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distrib&apos;n Asset Mgt Water Supply</masterLabel>
+        <translation><!-- Distrib&apos;n Asset Mgt Water Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental</masterLabel>
+        <translation><!-- Environmental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Worker</masterLabel>
+        <translation><!-- Field Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fropt Appointment Type</masterLabel>
+        <translation><!-- Fropt Appointment Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health &amp; Safety</masterLabel>
+        <translation><!-- Health &amp; Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra - Proactive Inspection</masterLabel>
+        <translation><!-- Infra - Proactive Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra - Proactive No Inspection</masterLabel>
+        <translation><!-- Infra - Proactive No Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation Contractor</masterLabel>
+        <translation><!-- Installation Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Reader</masterLabel>
+        <translation><!-- Meter Reader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Technician</masterLabel>
+        <translation><!-- Metering Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH - Do Not Notify Ext System of Visit</masterLabel>
+        <translation><!-- NHH - Do Not Notify Ext System of Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH - Notify External System of Visit</masterLabel>
+        <translation><!-- NHH - Notify External System of Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Discon. notify ext system.of visit</masterLabel>
+        <translation><!-- NHH Discon. notify ext system.of visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Discon.don&apos;t notify ext sys.of visit</masterLabel>
+        <translation><!-- NHH Discon.don&apos;t notify ext sys.of visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operations</masterLabel>
+        <translation><!-- Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process</masterLabel>
+        <translation><!-- Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality</masterLabel>
+        <translation><!-- Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory - Impact</masterLabel>
+        <translation><!-- Statutory - Impact --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

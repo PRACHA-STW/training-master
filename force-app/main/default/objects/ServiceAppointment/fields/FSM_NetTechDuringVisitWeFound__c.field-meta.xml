@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NetTechDuringVisitWeFound__c</fullName>
+    <description>Created as part of SFS-5347</description>
+    <label>During our visit we found</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No problems - the drains are flowing as they should</fullName>
+                <default>false</default>
+                <label>No problems - the drains are flowing as they should</label>
+            </value>
+            <value>
+                <fullName>We couldn&apos;t get access to the property/land located at:</fullName>
+                <default>false</default>
+                <label>We couldn&apos;t get access to the property/land located at:</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

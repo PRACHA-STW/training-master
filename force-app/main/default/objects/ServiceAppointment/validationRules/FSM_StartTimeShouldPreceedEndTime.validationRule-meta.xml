@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_StartTimeShouldPreceedEndTime</fullName>
+    <active>true</active>
+    <description>SFI-606</description>
+    <errorConditionFormula>OR( FSM_EnrouteEndTime__c  &lt;=  FSM_EnrouteStartTime__c , 
+			FSM_ProductiveEndTime__c  &lt;=  FSM_ProductiveStartTime__c , 
+			FSM_NonProductiveEndTime__c  &lt;=  FSM_NonProductiveStartTime__c )</errorConditionFormula>
+    <errorMessage>Start time cannot exceed End time</errorMessage>
+</ValidationRule>

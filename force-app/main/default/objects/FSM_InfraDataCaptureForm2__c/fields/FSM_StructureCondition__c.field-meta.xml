@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_StructureCondition__c</fullName>
+    <description>Created as a part of SFS-4803</description>
+    <inlineHelpText>This is the pipe supports and foundations condition (not the security devices or the pipe itself this will be looked at later) 	
+We are not asking the Ops to carry out a structural assessment as this will be done by others, but to advise if there are any visible concerns.</inlineHelpText>
+    <label>Structure appear in good condition</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Structure and supports appear in good condition</fullName>
+                <default>false</default>
+                <label>Structure and supports appear in good condition</label>
+            </value>
+            <value>
+                <fullName>No visible signs causing concern or has been rehabilitated</fullName>
+                <default>false</default>
+                <label>No visible signs causing concern or has been rehabilitated</label>
+            </value>
+            <value>
+                <fullName>Signs of ground erosion</fullName>
+                <default>false</default>
+                <label>Signs of ground erosion</label>
+            </value>
+            <value>
+                <fullName>Piers / Supports showing signs of cracks/ corrosion</fullName>
+                <default>false</default>
+                <label>Piers / Supports showing signs of cracks/ corrosion</label>
+            </value>
+            <value>
+                <fullName>Piers / Supports showing significant cracks/ corrosion</fullName>
+                <default>false</default>
+                <label>Piers / Supports showing significant cracks/ corrosion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

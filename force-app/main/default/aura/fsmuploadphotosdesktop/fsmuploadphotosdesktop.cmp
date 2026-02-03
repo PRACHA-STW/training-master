@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:fsmcustomfileuploadfordesktop recordId="{!v.recordId}"></c:fsmcustomfileuploadfordesktop>
+</aura:component>

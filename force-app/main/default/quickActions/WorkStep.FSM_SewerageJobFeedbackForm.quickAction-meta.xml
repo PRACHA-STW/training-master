@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For Desktop #SFS-3007</description>
+    <height>6000</height>
+    <label>Sewerage-Job Feedback Form</label>
+    <lightningComponent>fsmSewerageJobFeedbackForm</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

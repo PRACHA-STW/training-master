@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carriageway Specification --></label>
+    <name>FSM_CarriagewaySpecification__c</name>
+    <picklistValues>
+        <masterLabel>2 way control</masterLabel>
+        <translation><!-- 2 way control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20 diversion signs</masterLabel>
+        <translation><!-- 20 diversion signs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 way control</masterLabel>
+        <translation><!-- 3 way control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 way control</masterLabel>
+        <translation><!-- 4 way control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60 diversion signs</masterLabel>
+        <translation><!-- 60 diversion signs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>speed over 40 mph</masterLabel>
+        <translation><!-- speed over 40 mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>speed upto 40 mph</masterLabel>
+        <translation><!-- speed upto 40 mph --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

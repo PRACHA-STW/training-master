@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New meter model --></label>
+    <name>FSM_NewMeterModel__c</name>
+    <picklistValues>
+        <masterLabel>Aquadis+</masterLabel>
+        <translation><!-- Aquadis+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aquadis+INT</masterLabel>
+        <translation><!-- Aquadis+INT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D05</masterLabel>
+        <translation><!-- D05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D06</masterLabel>
+        <translation><!-- D06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D85</masterLabel>
+        <translation><!-- D85 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D86</masterLabel>
+        <translation><!-- D86 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R05</masterLabel>
+        <translation><!-- R05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R85</masterLabel>
+        <translation><!-- R85 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S05</masterLabel>
+        <translation><!-- S05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S85</masterLabel>
+        <translation><!-- S85 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

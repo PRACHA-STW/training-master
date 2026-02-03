@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>FSM_ZTNotification__c</columns>
+    <columns>FSM_NoticeType__c</columns>
+    <columns>FSM_TMAApprovalStatus__c</columns>
+    <columns>FSM_HighwayAuthority__c</columns>
+    <columns>FSM_PermitNumber__c</columns>
+    <columns>FSM_PermitStartDate__c</columns>
+    <columns>FSM_LatestStartDate__c</columns>
+    <columns>FSM_PermitEndDate__c</columns>
+    <columns>FSM_TMARagIndicator__c</columns>
+    <columns>FSM_WorkOrderRefID__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All TMA Permits/ Notices</label>
+    <sharedTo>
+        <group>FSM_BusinessAdminGroup</group>
+        <group>FSM_DeveloperServices</group>
+        <group>FSM_SystemAdminPublicGroup</group>
+        <group>FSM_WasteInfra</group>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

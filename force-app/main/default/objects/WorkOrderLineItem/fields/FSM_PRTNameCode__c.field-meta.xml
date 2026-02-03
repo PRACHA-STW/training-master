@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PRTNameCode__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Created as part of SFS-1923</description>
+    <label>PRT Name/Code</label>
+    <referenceTo>FSM_SchedulingPreRequisites__c</referenceTo>
+    <relationshipLabel>Work Order Line Items</relationshipLabel>
+    <relationshipName>WorkOrderLineItems</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

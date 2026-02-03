@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as a part of SFS-1298.
+
+Metadata holds the configurations necessary for auto-creating work steps in Field Service Lightning (FSL). When a work order (WO) is created, these configurations are matched against several criteria, including Service Territory, Standard Text Key, Minimum Crew Size, Suitability, and Business Units. If the criteria match, the corresponding metadata records are used to generate the work steps for the WO.
+
+Note: A Standard Text Key value of * indicates that the metadata record should be considered for any standard text key on the WO.
+
+Updated for SFS-1298</description>
+    <label>DCF Configuration - Work Step</label>
+    <pluralLabel>DCF Configuration - Work Steps</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

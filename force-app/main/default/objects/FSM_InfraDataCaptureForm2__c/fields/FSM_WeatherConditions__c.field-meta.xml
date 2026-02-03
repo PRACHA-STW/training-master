@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_WeatherConditions__c</fullName>
+    <description>Created as part of SFS-4810</description>
+    <label>Weather Conditions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sunny</fullName>
+                <default>false</default>
+                <label>Sunny</label>
+            </value>
+            <value>
+                <fullName>Dry</fullName>
+                <default>false</default>
+                <label>Dry</label>
+            </value>
+            <value>
+                <fullName>Drizzle</fullName>
+                <default>false</default>
+                <label>Drizzle</label>
+            </value>
+            <value>
+                <fullName>Rain</fullName>
+                <default>false</default>
+                <label>Rain</label>
+            </value>
+            <value>
+                <fullName>Storm</fullName>
+                <default>false</default>
+                <label>Storm</label>
+            </value>
+            <value>
+                <fullName>Snow</fullName>
+                <default>false</default>
+                <label>Snow</label>
+            </value>
+            <value>
+                <fullName>Hail</fullName>
+                <default>false</default>
+                <label>Hail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Activity Condition Description --></label>
+    <name>FSM_TMAPermitCondition__c</name>
+    <picklistValues>
+        <masterLabel>APPLIES TO ALL PERMITS Display of Permit Number</masterLabel>
+        <translation><!-- APPLIES TO ALL PERMITS Display of Permit Number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ancillary information</masterLabel>
+        <translation><!-- Ancillary information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Changes to traffic management arrangements</masterLabel>
+        <translation><!-- Changes to traffic management arrangements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation and Publicity</masterLabel>
+        <translation><!-- Consultation and Publicity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Current traffic management type</masterLabel>
+        <translation><!-- Current traffic management type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Constraints</masterLabel>
+        <translation><!-- Date Constraints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duration APPLIES TO ALL PERMITS on streets where the validity window does not apply</masterLabel>
+        <translation><!-- Duration APPLIES TO ALL PERMITS on streets where the validity window does not apply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duration APPLIES TO ALL PERMITS on streets wherethe validity window does not apply</masterLabel>
+        <translation><!-- Duration APPLIES TO ALL PERMITS on streets wherethe validity window does not apply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duration APPLIES TO ALLPERMITS on streets where the validity window applies</masterLabel>
+        <translation><!-- Duration APPLIES TO ALLPERMITS on streets where the validity window applies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employment of appropriate methodology</masterLabel>
+        <translation><!-- Employment of appropriate methodology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental</masterLabel>
+        <translation><!-- Environmental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exceptional Circumstances</masterLabel>
+        <translation><!-- Exceptional Circumstances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Signals and Shuttle Working</masterLabel>
+        <translation><!-- Light Signals and Shuttle Working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limit the days and times of day</masterLabel>
+        <translation><!-- Limit the days and times of day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limit timing of certain activities</masterLabel>
+        <translation><!-- Limit timing of certain activities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local</masterLabel>
+        <translation><!-- Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Control of Traffic Management</masterLabel>
+        <translation><!-- Manual Control of Traffic Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material and Plant Storage</masterLabel>
+        <translation><!-- Material and Plant Storage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Hours Work</masterLabel>
+        <translation><!-- Out of Hours Work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publicity for proposed works</masterLabel>
+        <translation><!-- Publicity for proposed works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removal of surplus materials/ plant</masterLabel>
+        <translation><!-- Removal of surplus materials/ plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removal of surplus materials/plant</masterLabel>
+        <translation><!-- Removal of surplus materials/plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Closed to Traffic</masterLabel>
+        <translation><!-- Road Closed to Traffic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Closure</masterLabel>
+        <translation><!-- Road Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Occupation Dimensions</masterLabel>
+        <translation><!-- Road Occupation Dimensions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road space to be available to traffic/pedestrians at certain times of day</masterLabel>
+        <translation><!-- Road space to be available to traffic/pedestrians at certain times of day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signal Removal from operation when no longer required</masterLabel>
+        <translation><!-- Signal Removal from operation when no longer required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage of surplus materials/plant</masterLabel>
+        <translation><!-- Storage of surplus materials/plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Time Constraints</masterLabel>
+        <translation><!-- Time Constraints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Management Changes</masterLabel>
+        <translation><!-- Traffic Management Changes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Management Request</masterLabel>
+        <translation><!-- Traffic Management Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Space Dimensions</masterLabel>
+        <translation><!-- Traffic Space Dimensions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic management arrangements to be in place</masterLabel>
+        <translation><!-- Traffic management arrangements to be in place --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Width and/or length of road space that can be occupied</masterLabel>
+        <translation><!-- Width and/or length of road space that can be occupied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work Methodology</masterLabel>
+        <translation><!-- Work Methodology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working Hours</masterLabel>
+        <translation><!-- Working Hours --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RestrictTMAStartStop</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        AND(
+            ISCHANGED(FSM_TMAActualStart__c),
+            NOT(ISBLANK(PRIORVALUE(FSM_TMAActualStart__c)))
+        ),
+        AND(
+            ISCHANGED(FSM_TMAActualEnd__c),
+            NOT(ISBLANK(PRIORVALUE(FSM_TMAActualEnd__c)))
+        ),
+        AND(
+            ISCHANGED(FSM_TMASiteClear__c),
+            PRIORVALUE(FSM_TMASiteClear__c)
+        ),
+        AND(
+            ISCHANGED(FSM_ExcavationOccured__c),
+            PRIORVALUE(FSM_ExcavationOccured__c)
+        )
+    ),
+    NOT($Permission.FSM_SystemAdmin),
+    NOT($Permission.FSM_Integration),
+    NOT($Permission.FSM_Data_Migration_Admin)
+)</errorConditionFormula>
+    <errorMessage>TMA Start/Stop, Site Clear, Excavation occurred have already been set and cannot be modified</errorMessage>
+</ValidationRule>

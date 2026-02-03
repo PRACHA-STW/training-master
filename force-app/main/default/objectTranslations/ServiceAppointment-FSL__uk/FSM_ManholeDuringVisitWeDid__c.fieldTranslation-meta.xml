@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- During the visit we --></label>
+    <name>FSM_ManholeDuringVisitWeDid__c</name>
+    <picklistValues>
+        <masterLabel>Completed a survey to identify if further work is required</masterLabel>
+        <translation><!-- Completed a survey to identify if further work is required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Found no problem with the manhole</masterLabel>
+        <translation><!-- Found no problem with the manhole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Made the area safe; cones and barriers may be visible around the affected area</masterLabel>
+        <translation><!-- Made the area safe; cones and barriers may be visible around the affected area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Were unable to gain access to carry out the inspection, please call 0333 996 9800 to arrange a visit to re-attend</masterLabel>
+        <translation><!-- Were unable to gain access to carry out the inspection, please call 0333 996 9800 to arrange a visit to re-attend --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

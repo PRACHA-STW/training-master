@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>H&amp;S Champ_First Aid</description>
+    <label>H&amp;S Champ_First Aid (Q50017982)</label>
+</Skill>

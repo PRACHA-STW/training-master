@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action Code Group --></label>
+    <name>FSM_ActionCodeGroup__c</name>
+    <picklistValues>
+        <masterLabel>Aqua Peas Used</masterLabel>
+        <translation><!-- Aqua Peas Used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clean Water Maint Activity</masterLabel>
+        <translation><!-- Clean Water Maint Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clean Water operations</masterLabel>
+        <translation><!-- Clean Water operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Networks Sewage - Action</masterLabel>
+        <translation><!-- Customer Networks Sewage - Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Services Waste</masterLabel>
+        <translation><!-- Dev Services Waste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Services Water</masterLabel>
+        <translation><!-- Dev Services Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra - Proactive</masterLabel>
+        <translation><!-- Infra - Proactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra Sewerage Contractor Feedback</masterLabel>
+        <translation><!-- Infra Sewerage Contractor Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Battery Replacement</masterLabel>
+        <translation><!-- Metering Battery Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Customer Contact Compulsary</masterLabel>
+        <translation><!-- Metering Customer Contact Compulsary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Customer Contact FrOpt</masterLabel>
+        <translation><!-- Metering Customer Contact FrOpt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Maintenance Large Meter</masterLabel>
+        <translation><!-- Metering Maintenance Large Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Maintenance Small Meter</masterLabel>
+        <translation><!-- Metering Maintenance Small Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering New Supplies</masterLabel>
+        <translation><!-- Metering New Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Inbound WIF Action Code</masterLabel>
+        <translation><!-- NHH Inbound WIF Action Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Metering - C1 Work Request Type</masterLabel>
+        <translation><!-- NHH Metering - C1 Work Request Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Metering - Installs</masterLabel>
+        <translation><!-- NHH Metering - Installs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Metering - Large Meters</masterLabel>
+        <translation><!-- NHH Metering - Large Meters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Metering - Small Meters</masterLabel>
+        <translation><!-- NHH Metering - Small Meters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Outbound job feedback code Generic</masterLabel>
+        <translation><!-- NHH Outbound job feedback code Generic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH inbound bilat.l Actioncode-I Process</masterLabel>
+        <translation><!-- NHH inbound bilat.l Actioncode-I Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Action</masterLabel>
+        <translation><!-- No Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Metering Installations</masterLabel>
+        <translation><!-- Proactive Metering Installations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory - Action</masterLabel>
+        <translation><!-- Statutory - Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply Type Material</masterLabel>
+        <translation><!-- Supply Type Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water Maint Activity</masterLabel>
+        <translation><!-- Waste Water Maint Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water operations</masterLabel>
+        <translation><!-- Waste Water operations --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Formula --></label>
+    <name>FSM_Formula__c</name>
+    <picklistValues>
+        <masterLabel>DateTime_AddHours(1)</masterLabel>
+        <translation><!-- DateTime_AddHours(1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date_addDays(1)</masterLabel>
+        <translation><!-- Date_addDays(1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decimal_Round</masterLabel>
+        <translation><!-- Decimal_Round --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>String_SubstringLeft(40)</masterLabel>
+        <translation><!-- String_SubstringLeft(40) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>String_SubstringRight(40)</masterLabel>
+        <translation><!-- String_SubstringRight(40) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Time_AddMinutes(10)</masterLabel>
+        <translation><!-- Time_AddMinutes(10) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

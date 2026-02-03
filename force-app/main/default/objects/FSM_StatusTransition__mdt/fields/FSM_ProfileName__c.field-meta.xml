@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ProfileName__c</fullName>
+    <description>Created as part of User Story #SFS-167</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Profile Name</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FSM Customer Community Plus User</fullName>
+                <default>false</default>
+                <label>FSM Customer Community Plus User</label>
+            </value>
+            <value>
+                <fullName>FSM Field Service Admin</fullName>
+                <default>false</default>
+                <label>FSM Field Service Admin</label>
+            </value>
+            <value>
+                <fullName>FSM Integration</fullName>
+                <default>false</default>
+                <label>FSM Integration</label>
+            </value>
+            <value>
+                <fullName>FSM Metering Field Worker</fullName>
+                <default>false</default>
+                <label>FSM Metering Field Worker</label>
+            </value>
+            <value>
+                <fullName>FSM Non Infra Field Worker</fullName>
+                <default>false</default>
+                <label>FSM Non Infra Field Worker</label>
+            </value>
+            <value>
+                <fullName>FSM Partner Community User</fullName>
+                <default>false</default>
+                <label>FSM Partner Community User</label>
+            </value>
+            <value>
+                <fullName>FSM Standard Desktop User</fullName>
+                <default>false</default>
+                <label>FSM Standard Desktop User</label>
+            </value>
+            <value>
+                <fullName>FSM System Administrator</fullName>
+                <default>false</default>
+                <label>FSM System Administrator</label>
+            </value>
+            <value>
+                <fullName>FSM Virtual User</fullName>
+                <default>false</default>
+                <label>FSM Virtual User</label>
+            </value>
+            <value>
+                <fullName>FSM Waste Network Field Worker</fullName>
+                <default>false</default>
+                <label>FSM Waste Network Field Worker</label>
+            </value>
+            <value>
+                <fullName>FSM Water Networks &amp; DevServ Field Worker</fullName>
+                <default>false</default>
+                <label>FSM Water Networks &amp; DevServ Field Worker</label>
+            </value>
+            <value>
+                <fullName>System Administrator</fullName>
+                <default>false</default>
+                <label>System Administrator</label>
+            </value>
+            <value>
+                <fullName>FSM Site Worker</fullName>
+                <default>false</default>
+                <label>FSM Site Worker</label>
+            </value>
+            <value>
+                <fullName>FSM Virtual Metering</fullName>
+                <default>false</default>
+                <label>FSM Virtual Metering</label>
+            </value>
+            <value>
+                <fullName>FSM Virtual Infra</fullName>
+                <default>false</default>
+                <label>FSM Virtual Infra</label>
+            </value>
+            <value>
+                <fullName>FSM Waste Customer Community Plus User</fullName>
+                <default>false</default>
+                <label>FSM Waste Customer Community Plus User</label>
+            </value>
+            <value>
+                <fullName>FSM Water &amp; DevServ Customer Community Plus User</fullName>
+                <default>false</default>
+                <label>FSM Water &amp; DevServ Customer Community Plus User</label>
+            </value>
+            <value>
+                <fullName>FSM Dev Services Field Worker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FSM Dev Services Field Worker</label>
+            </value>
+            <value>
+                <fullName>FSM Non Infra Site Worker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FSM Non Infra Site Worker</label>
+            </value>
+            <value>
+                <fullName>FSM Water Network Field Worker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FSM Water Network Field Worker</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

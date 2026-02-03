@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Return to Site</label>
+    <protected>false</protected>
+    <values>
+        <field>FSM_IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>FSM_SAPStatusCode__c</field>
+        <value xsi:type="xsd:string">RTSI</value>
+    </values>
+    <values>
+        <field>FSM_WOStatus__c</field>
+        <value xsi:type="xsd:string">Return to Site</value>
+    </values>
+</CustomMetadata>

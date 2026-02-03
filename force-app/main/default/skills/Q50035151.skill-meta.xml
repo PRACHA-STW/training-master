@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>GW Operator Tasks for Maintainers</description>
+    <label>GW Operator Tasks for Maintainers (Q50035151)</label>
+</Skill>

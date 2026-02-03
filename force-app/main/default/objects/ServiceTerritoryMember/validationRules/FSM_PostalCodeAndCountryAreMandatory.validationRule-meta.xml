@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PostalCodeAndCountryAreMandatory</fullName>
+    <active>false</active>
+    <description>For SFS-134
+Updated as part of SFS-1396</description>
+    <errorConditionFormula>AND(((ISPICKVAL(TerritoryType,&quot;Primary&quot;)) || ISPICKVAL(TerritoryType,&quot;Relocation&quot;)),
+OR(ISBLANK(Country),
+ISBLANK(PostalCode)),
+NOT(ISPICKVAL( ServiceResource.ResourceType , &apos;Crew&apos;))
+)</errorConditionFormula>
+    <errorMessage>Country and Zip/Postal-Code cannot be blanked for Primary or Relocation type territory</errorMessage>
+</ValidationRule>

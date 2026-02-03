@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour Orange) --></help>
+    <label><!-- Scheduling comments box --></label>
+    <name>FSM_SchedulingCommentsBox__c</name>
+</CustomFieldTranslation>

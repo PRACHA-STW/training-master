@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meter Model No. --></label>
+    <name>FSM_ModelNo__c</name>
+    <picklistValues>
+        <masterLabel>AQUADIS+</masterLabel>
+        <translation><!-- AQUADIS+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AQUADIS+INT</masterLabel>
+        <translation><!-- AQUADIS+INT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Con_NBio_5D</masterLabel>
+        <translation><!-- AV4_Con_NBio_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Inl110NB_5D</masterLabel>
+        <translation><!-- AV4_Inl110NB_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Inl134NB_5D</masterLabel>
+        <translation><!-- AV4_Inl134NB_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Inl_LoRa_5D</masterLabel>
+        <translation><!-- AV4_Inl_LoRa_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Inl_LoRa_6D</masterLabel>
+        <translation><!-- AV4_Inl_LoRa_6D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Inl_NBio_5D</masterLabel>
+        <translation><!-- AV4_Inl_NBio_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Inl_NBio_6D</masterLabel>
+        <translation><!-- AV4_Inl_NBio_6D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV4_Inl_NBio_7D</masterLabel>
+        <translation><!-- AV4_Inl_NBio_7D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV5_Con_LoRa_5D</masterLabel>
+        <translation><!-- AV5_Con_LoRa_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV5_Con_NBio_5D</masterLabel>
+        <translation><!-- AV5_Con_NBio_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV5_Inl_LoRa_5D</masterLabel>
+        <translation><!-- AV5_Inl_LoRa_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D05</masterLabel>
+        <translation><!-- D05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D06</masterLabel>
+        <translation><!-- D06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D85</masterLabel>
+        <translation><!-- D85 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D86</masterLabel>
+        <translation><!-- D86 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H4000_6D</masterLabel>
+        <translation><!-- H4000_6D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H4000_7D</masterLabel>
+        <translation><!-- H4000_7D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K05</masterLabel>
+        <translation><!-- K05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R05</masterLabel>
+        <translation><!-- R05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R85</masterLabel>
+        <translation><!-- R85 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S05</masterLabel>
+        <translation><!-- S05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S85</masterLabel>
+        <translation><!-- S85 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Jet</masterLabel>
+        <translation><!-- Single Jet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Jet INT</masterLabel>
+        <translation><!-- Single Jet INT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V200_Clp_NBI_5D</masterLabel>
+        <translation><!-- V200_Clp_NBI_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V200_Int_NBI_6D</masterLabel>
+        <translation><!-- V200_Int_NBI_6D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V210_Clp_NBI_5D</masterLabel>
+        <translation><!-- V210_Clp_NBI_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V210_Int_NBI_6D</masterLabel>
+        <translation><!-- V210_Int_NBI_6D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WESAN_I_LoRa_6D</masterLabel>
+        <translation><!-- WESAN_I_LoRa_6D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WESAN_I_LoRa_7D</masterLabel>
+        <translation><!-- WESAN_I_LoRa_7D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Woltex</masterLabel>
+        <translation><!-- Woltex --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

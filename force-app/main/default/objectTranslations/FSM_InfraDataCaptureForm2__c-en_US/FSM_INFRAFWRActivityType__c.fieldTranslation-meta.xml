@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select One --></help>
+    <label><!-- Activity Type --></label>
+    <name>FSM_INFRAFWRActivityType__c</name>
+    <picklistValues>
+        <masterLabel>Diversionary works</masterLabel>
+        <translation><!-- Diversionary works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interim to perm reinstatement</masterLabel>
+        <translation><!-- Interim to perm reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optional permit no fee</masterLabel>
+        <translation><!-- Optional permit no fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remedial Works</masterLabel>
+        <translation><!-- Remedial Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility Asset Works</masterLabel>
+        <translation><!-- Utility Asset Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility Repair and Maintenance Works</masterLabel>
+        <translation><!-- Utility Repair and Maintenance Works --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

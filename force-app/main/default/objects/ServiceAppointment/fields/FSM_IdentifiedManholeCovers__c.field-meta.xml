@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IdentifiedManholeCovers__c</fullName>
+    <description>created as part of SFS-5347</description>
+    <label>We have identified that manhole covers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Is a waste water lid that belongs to us</fullName>
+                <default>false</default>
+                <label>Is a waste water lid that belongs to us</label>
+            </value>
+            <value>
+                <fullName>Is a clean water lid that belongs to us. We will inform our clean water team who will be in touch to plan an inspection</fullName>
+                <default>false</default>
+                <label>Is a clean water lid that belongs to us. We will inform our clean water team who will be in touch to plan an inspection</label>
+            </value>
+            <value>
+                <fullName>Belongs to the local highway authority. To find out who your local highway authority is please visit gov.uk/find-local-council</fullName>
+                <default>false</default>
+                <label>Belongs to the local highway authority. To find out who your local highway authority is please visit gov.uk/find-local-council</label>
+            </value>
+            <value>
+                <fullName>Belongs to another utility company</fullName>
+                <default>false</default>
+                <label>Belongs to another utility company</label>
+            </value>
+            <value>
+                <fullName>Is on private land - please contact a private contractor. You can find one at checkatrade.com</fullName>
+                <default>false</default>
+                <label>Is on private land - please contact a private contractor. You can find one at checkatrade.com</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

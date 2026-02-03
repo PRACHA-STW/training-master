@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Shift_Patterns_with_FSM_BusinessAdminGroup</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-7832</description>
+        <label>Share Shift Patterns with FSM_BusinessAdminGroup</label>
+        <sharedTo>
+            <group>FSM_BusinessAdminGroup</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

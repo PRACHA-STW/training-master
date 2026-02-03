@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Leak Value --></label>
+    <name>FSM_TypeofLeakValue__c</name>
+    <picklistValues>
+        <masterLabel>Dangerous apparatus (site made safe)</masterLabel>
+        <translation><!-- Dangerous apparatus (site made safe) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dangerous apparatus (site unsafe)</masterLabel>
+        <translation><!-- Dangerous apparatus (site unsafe) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow Alarm non-visible leak</masterLabel>
+        <translation><!-- Flow Alarm non-visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow Alarm visible leak</masterLabel>
+        <translation><!-- Flow Alarm visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network non visible leak</masterLabel>
+        <translation><!-- Network non visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network visible leak</masterLabel>
+        <translation><!-- Network visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No leak</masterLabel>
+        <translation><!-- No leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No supply non-visible leak</masterLabel>
+        <translation><!-- No supply non-visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No supply visible leak</masterLabel>
+        <translation><!-- No supply visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non urgent weeping visible leak</masterLabel>
+        <translation><!-- Non urgent weeping visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-visible leak losing &lt;17L per minute / 1m3/hr</masterLabel>
+        <translation><!-- Non-visible leak losing &lt;17L per minute / 1m3/hr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-visible leak losing &gt;17L per minute / 1m3/hr</masterLabel>
+        <translation><!-- Non-visible leak losing &gt;17L per minute / 1m3/hr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-visible leak losing &gt;85L per minute / 5m3/hr</masterLabel>
+        <translation><!-- Non-visible leak losing &gt;85L per minute / 5m3/hr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor supply non-visible leak</masterLabel>
+        <translation><!-- Poor supply non-visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor supply visible leak</masterLabel>
+        <translation><!-- Poor supply visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private non visible leak</masterLabel>
+        <translation><!-- Private non visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urgent visible leak</masterLabel>
+        <translation><!-- Urgent visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Quality Issue non-visible leak</masterLabel>
+        <translation><!-- Water Quality Issue non-visible leak --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

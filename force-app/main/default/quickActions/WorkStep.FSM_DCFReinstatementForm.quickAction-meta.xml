@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as a part of SFS-5320
+Updated as a part of SFS-6563</description>
+    <flowDefinition>DCF_ReinstatementFormDesktop</flowDefinition>
+    <label>Reinstatement Form</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

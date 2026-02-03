@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Form Name --></label>
+    <name>FSM_FormName__c</name>
+    <picklistValues>
+        <masterLabel>FSM_AssetUpdateForm</masterLabel>
+        <translation><!-- FSM_AssetUpdateForm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_BoardsAndBarriers</masterLabel>
+        <translation><!-- FSM_BoardsAndBarriers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_CleanWaterChemicalAcceptanceAndAuthorisationToDischargeAssessment</masterLabel>
+        <translation><!-- FSM_CleanWaterChemicalAcceptanceAndAuthorisationToDischargeAssessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_ConfinedSpacesPreEntryChecklist</masterLabel>
+        <translation><!-- FSM_ConfinedSpacesPreEntryChecklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_DSTSelfAudit</masterLabel>
+        <translation><!-- FSM_DSTSelfAudit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_DiggerTrailerChecksCGCheck</masterLabel>
+        <translation><!-- FSM_DiggerTrailerChecksCGCheck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_DistributionFeedback</masterLabel>
+        <translation><!-- FSM_DistributionFeedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_DistributionInterruption</masterLabel>
+        <translation><!-- FSM_DistributionInterruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_GapSite</masterLabel>
+        <translation><!-- FSM_GapSite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_HDRiskAssessment</masterLabel>
+        <translation><!-- FSM_HDRiskAssessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_JobCompletion</masterLabel>
+        <translation><!-- FSM_JobCompletion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_MeterDetailsForm</masterLabel>
+        <translation><!-- FSM_MeterDetailsForm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_MeterFurtherWorkRequest</masterLabel>
+        <translation><!-- FSM_MeterFurtherWorkRequest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_MeterReadings</masterLabel>
+        <translation><!-- FSM_MeterReadings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_MeteringJobFeedback</masterLabel>
+        <translation><!-- FSM_MeteringJobFeedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_NHHMeter</masterLabel>
+        <translation><!-- FSM_NHHMeter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_NoninfraRaiseneworfollowonwork</masterLabel>
+        <translation><!-- FSM_NoninfraRaiseneworfollowonwork --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_PreSiteChecklist</masterLabel>
+        <translation><!-- FSM_PreSiteChecklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_RechargeableWorksDamageDescriptionReport</masterLabel>
+        <translation><!-- FSM_RechargeableWorksDamageDescriptionReport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_ReinstatementForm</masterLabel>
+        <translation><!-- FSM_ReinstatementForm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_RiskAssessmentPaper</masterLabel>
+        <translation><!-- FSM_RiskAssessmentPaper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_RiskAssessmentSiteSpecific</masterLabel>
+        <translation><!-- FSM_RiskAssessmentSiteSpecific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_RiskAssessmentWasteInfra</masterLabel>
+        <translation><!-- FSM_RiskAssessmentWasteInfra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_SPSComplex</masterLabel>
+        <translation><!-- FSM_SPSComplex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_SPSStandard</masterLabel>
+        <translation><!-- FSM_SPSStandard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_SewerageFurtherWorkRequestSCM</masterLabel>
+        <translation><!-- FSM_SewerageFurtherWorkRequestSCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_SewerageJobFeedback</masterLabel>
+        <translation><!-- FSM_SewerageJobFeedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_Sewerage_Incident_Report</masterLabel>
+        <translation><!-- FSM_Sewerage_Incident_Report --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_ShortDurationWorks</masterLabel>
+        <translation><!-- FSM_ShortDurationWorks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_SiteAreaSWDFoul</masterLabel>
+        <translation><!-- FSM_SiteAreaSWDFoul --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_ValveManagement</masterLabel>
+        <translation><!-- FSM_ValveManagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_VehicleCheck</masterLabel>
+        <translation><!-- FSM_VehicleCheck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_WasteWaterChemicalAcceptanceAndAuthorisationToDischargeForm</masterLabel>
+        <translation><!-- FSM_WasteWaterChemicalAcceptanceAndAuthorisationToDischargeForm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM_WorkingSetPreUseInspection</masterLabel>
+        <translation><!-- FSM_WorkingSetPreUseInspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra_Follow_On_Work_Request</masterLabel>
+        <translation><!-- Infra_Follow_On_Work_Request --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

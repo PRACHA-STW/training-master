@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>Subir.Maji@severntrent.co.uk</contactEmail>
+    <label>SAP Integration Connection</label>
+    <oauthConfig>
+        <callbackUrl>https://severntrentsfs--fsmbaudev.sandbox.lightning.force.com/</callbackUrl>
+        <consumerKey>3MVG94RxwSHvjCi_ck.B.2PE8E4iSPnZjfBxUJ2FnYUdG0WhW.kXyNGfizFJ9ucnTIlnBcqcCZw==</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>FSM System Admin Permissions</permissionSetName>
+    <profileName>Salesforce API Only System Integrations</profileName>
+    <profileName>System Administrator</profileName>
+    <profileName>FSM Integration</profileName>
+    <sessionPolicy>
+        <sessionTimeout>0</sessionTimeout>
+    </sessionPolicy>
+</ConnectedApp>

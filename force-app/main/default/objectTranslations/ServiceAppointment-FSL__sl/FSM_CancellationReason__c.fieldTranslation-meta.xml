@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cancellation Reason --></label>
+    <name>FSM_CancellationReason__c</name>
+    <picklistValues>
+        <masterLabel>Asset No Longer on Site</masterLabel>
+        <translation><!-- Asset No Longer on Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Build Error</masterLabel>
+        <translation><!-- Build Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correct Vehicle/Equipment Not Available</masterLabel>
+        <translation><!-- Correct Vehicle/Equipment Not Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation><!-- Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency/Incident</masterLabel>
+        <translation><!-- Emergency/Incident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Out of Service</masterLabel>
+        <translation><!-- Equipment Out of Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Work Required</masterLabel>
+        <translation><!-- Further Work Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HA Refusal</masterLabel>
+        <translation><!-- HA Refusal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HA Revoked</masterLabel>
+        <translation><!-- HA Revoked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Promotion</masterLabel>
+        <translation><!-- Incorrect Promotion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Built Retrospectively</masterLabel>
+        <translation><!-- Job Built Retrospectively --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Not Required - Customer</masterLabel>
+        <translation><!-- Job Not Required - Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Not Required - STW</masterLabel>
+        <translation><!-- Job Not Required - STW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Started in Error</masterLabel>
+        <translation><!-- Job Started in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Access</masterLabel>
+        <translation><!-- No Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Available Resource</masterLabel>
+        <translation><!-- No Available Resource --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Available Resource - Skills</masterLabel>
+        <translation><!-- No Available Resource - Skills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of SLA - Task Superseded</masterLabel>
+        <translation><!-- Out of SLA - Task Superseded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parked Cars</masterLabel>
+        <translation><!-- Parked Cars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Housekeeping</masterLabel>
+        <translation><!-- Poor Housekeeping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raised on Wrong Property</masterLabel>
+        <translation><!-- Raised on Wrong Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Same Day Rein Not Booked</masterLabel>
+        <translation><!-- Same Day Rein Not Booked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Error</masterLabel>
+        <translation><!-- System Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMA Passed Validity Date</masterLabel>
+        <translation><!-- TMA Passed Validity Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMA Started in Error</masterLabel>
+        <translation><!-- TMA Started in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMA System Error</masterLabel>
+        <translation><!-- TMA System Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMA Validity Period</masterLabel>
+        <translation><!-- TMA Validity Period --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMA on Private Street</masterLabel>
+        <translation><!-- TMA on Private Street --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vehicle/Plant Breakdown</masterLabel>
+        <translation><!-- Vehicle/Plant Breakdown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

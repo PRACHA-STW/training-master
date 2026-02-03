@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <!--<c:dataRetrieval recordId="{!v.recordId}"></c:dataRetrieval>-->
+    <c:dataRetrievalComp recordId="{!v.recordId}"></c:dataRetrievalComp>
+</aura:component>

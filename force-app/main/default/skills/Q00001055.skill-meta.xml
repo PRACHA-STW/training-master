@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Burst on Private Property Supplies</description>
+    <label>Burst on Private Property Supplies (Q00001055)</label>
+</Skill>

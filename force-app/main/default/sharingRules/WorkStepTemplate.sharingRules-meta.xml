@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_TemplateRecordSharingWithBA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Created as a part of SFS-4071</description>
+        <label>Template Record Sharing With BA</label>
+        <sharedTo>
+            <group>FSM_BusinessAdminGroup</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Work_Step_Template_for_Contractors</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Created as a part of SFS-3000</description>
+        <label>Work Step Template for Contractors</label>
+        <sharedTo>
+            <group>FSM_ContractorSchedulers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Initial Date/Time when permit triggered --></label>
+    <name>FSM_DateTime_when_the_permit_triggered__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>sfi-692
+Updated as part of SFI-2256</description>
+        <name>Assigning_values</name>
+        <label>Assigning values</label>
+        <locationX>182</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>PESingleRecord.FSM_TMAExternalId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TmaRecordInput.FSM_ExternalId__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PESingleRecord.FSM_NoticeState__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>WorkOrder.FSM_NoticeState__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PESingleRecord.FSM_EventType__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TmaRecordInput.FSM_EventType__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PESingleRecord.FSM_SAPUserID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>User_SAP_id.FSM_ExternalId__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PESingleRecord.FSM_ScheduledStartDate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TmaRecordInput.FSM_ScheduledStartDate__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PESingleRecord.FSM_OrderNumber__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>WorkOrder.FSM_OrderNumber__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PESingleRecord.FSM_OperationNumber__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>WorkOrder.FSM_OperationNumber__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>PERecordCreation</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>sfi-692</description>
+        <name>Assigning_Valuess</name>
+        <label>Assigning_Valuess</label>
+        <locationX>50</locationX>
+        <locationY>1106</locationY>
+        <assignmentItems>
+            <assignToReference>WorkOrder.FSM_NoticeState__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>NTBS</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Updating_Tma_record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Integration</name>
+        <label>Integration log</label>
+        <locationX>182</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>Integrationlog.FSM_ExternalId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TmaRecordInput.FSM_ExternalId__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Integrationlog.FSM_ServiceName__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Label.FSM_TmaServiceName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Integrationlog.FSM_RecordId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TmaRecordInput.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Integrationlog.FSM_RequestPayload__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RequestPayload</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Integration_log</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>sfi-692</description>
+        <name>If_Notice_Date_is_today</name>
+        <label>If Notice Date is today ?</label>
+        <locationX>512</locationX>
+        <locationY>350</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>notice_date_is_today</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>NoticeDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>WorkOrder.FSM_NoticeState__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Notice Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>WorkOrder.FSM_NoticeState__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Notice To Be Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>TmaRecordInput</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>metadata_records</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>User_SAP_id</targetReference>
+            </connector>
+            <label>notice date is today</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>sfi-692
+sfi-1557</description>
+        <name>If_Tma_type_is_Notice</name>
+        <label>If Tma type is Notice</label>
+        <locationX>182</locationX>
+        <locationY>998</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Notice</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>TmaRecordInput.FSM_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NOTC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigning_Valuess</targetReference>
+            </connector>
+            <label>Notice</label>
+        </rules>
+    </decisions>
+    <description>sfi-692,sfi-693,sfi-703,SFI-1127
+updated as a part of SFS-4133
+updated as a part of SFI-1616
+Updated as a part of SFI-1614
+Updated as a part of SFI-1724
+Updated as a part of SFI-1806
+Updated as a part of SFI-1807 
+Updated as a part of SFI- 1788
+Updated as a part of SFI- 2256
+Updated as a part of SFI- 2861
+Updated as a part of SFI- 2892</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>sfi-692</description>
+        <name>NoticeDate</name>
+        <dataType>Date</dataType>
+        <expression>DATETIMEVALUE({!TmaRecordInput.FSM_NoticeDate__c})</expression>
+    </formulas>
+    <interviewLabel>SendTmaInitialNoticeUpdate {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SendTmaInitialNoticeUpdate</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Integration_log</name>
+        <label>Integration log</label>
+        <locationX>182</locationX>
+        <locationY>890</locationY>
+        <connector>
+            <targetReference>If_Tma_type_is_Notice</targetReference>
+        </connector>
+        <inputReference>Integrationlog</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <description>sfi-692</description>
+        <name>PERecordCreation</name>
+        <label>PERecordCreation</label>
+        <locationX>182</locationX>
+        <locationY>674</locationY>
+        <connector>
+            <targetReference>Integration</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Call_ErrorLogSubFlow</targetReference>
+        </faultConnector>
+        <inputReference>PESingleRecord</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>metadata_records</name>
+        <label>metadata records</label>
+        <locationX>512</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>WorkOrder</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FSM_InterfaceAPIName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FSM_SendTMAUpdates__e</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>FSM_InterfaceToggle__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>sfi-1724</description>
+        <name>User_SAP_id</name>
+        <label>User SAP id</label>
+        <locationX>182</locationX>
+        <locationY>458</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assigning_values</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>TmaRecordInput.LastModifiedById</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FSM_ExternalId__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>sfi-1807</description>
+        <name>WorkOrder</name>
+        <label>WorkOrder</label>
+        <locationX>512</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Notice_Date_is_today</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>TmaRecordInput.FSM_WorkOrderRefID__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>WorkOrder</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>sfi-262</description>
+        <name>Updating_Tma_record</name>
+        <label>Updating Tma record</label>
+        <locationX>50</locationX>
+        <locationY>1214</locationY>
+        <inputReference>WorkOrder</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>386</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>metadata_records</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>sfi-692</description>
+        <name>Call_ErrorLogSubFlow</name>
+        <label>Call ErrorLogSubFlow</label>
+        <locationX>578</locationX>
+        <locationY>782</locationY>
+        <flowName>ErrorLog_Subflow_Create_Record</flowName>
+        <inputAssignments>
+            <name>FSM_ExternalId</name>
+            <value>
+                <elementReference>TmaRecordInput.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FlowName</name>
+            <value>
+                <stringValue>SendTmaInitialNoticeUpdate</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_Type</name>
+            <value>
+                <stringValue>Integration</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <textTemplates>
+        <description>sfi-692</description>
+        <name>RequestPayload</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{
+&quot;FSM_TMAExternalID__c&quot; : {!TmaRecordInput.FSM_ExternalId__c}, 
+&quot;FSM_NoticeState__c&quot;: {!WorkOrder.FSM_NoticeState__c} ,
+&quot;FSM_ScheduledStartDate__c&quot; : {!TmaRecordInput.FSM_ScheduledStartDate__c} ,
+&quot;FSM_SiteClear__c&quot;: {!TmaRecordInput.FSM_TMASiteClear__c} ,
+&quot;FSM_EventType__c&quot; : {!TmaRecordInput.FSM_EventType__c} ,
+&quot; FSM_SAPUserID__c&quot; : {!User_SAP_id.FSM_ExternalId__c} ,
+&quot;FSM_TMAActualStart__c&quot;: {!TmaRecordInput.FSM_TMAActualStart__c} ,
+&quot;FSM_TMAActualEnd__c&quot;: {!TmaRecordInput.FSM_TMAActualEnd__c} ,
+&quot;FSM_ExcavationOccured__c&quot;: {!TmaRecordInput.FSM_ExcavationOccured__c} ,
+&quot;FSM_OrderNumber__c&quot; : {!PESingleRecord.FSM_OrderNumber__c},
+&quot;FSM_OperationNumber__c&quot; :  {!PESingleRecord.FSM_OperationNumber__c},
+&quot;CreatedDate&quot; :{!$Flow.CurrentDateTime} ,
+&quot;CreatedBy&quot; : {!$User.FirstName} {!$User.LastName}
+}</text>
+    </textTemplates>
+    <variables>
+        <name>Integrationlog</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FSM_IntegrationLog__c</objectType>
+    </variables>
+    <variables>
+        <description>sfi-692</description>
+        <name>PESingleRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FSM_SendTMAUpdates__e</objectType>
+    </variables>
+    <variables>
+        <description>sfi-692</description>
+        <name>TmaRecordInput</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FSM_TMAPermit__c</objectType>
+    </variables>
+</Flow>

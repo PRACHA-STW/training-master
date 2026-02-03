@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TMAConstraintDatesViolated__c</fullName>
+    <description>SFS-6663
+Updated as part of SFS-8115
+Updated as part of SFS-8285</description>
+    <formula>AND(
+FSSK__FSK_Work_Order__r.FSM_CoreTMAJob__c=true,
+NOT(ISBLANK(FSM_ConstraintStart__c)),
+NOT(ISBLANK(FSM_ConstraintEnd__c)),
+NOT(ISBLANK(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_PermitStartDate__c)),
+OR(
+DATEVALUE(FSM_ConstraintStart__c)&lt;DATEVALUE(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_PermitStartDate__c),
+DATEVALUE(FSM_ConstraintStart__c)&gt;DATEVALUE(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_LatestStartDate__c),
+DATEVALUE(FSM_ConstraintEnd__c)&lt;DATEVALUE(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_PermitStartDate__c),
+DATEVALUE(FSM_ConstraintEnd__c)&gt;DATEVALUE(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_LatestStartDate__c)
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Constraint Dates Violated</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

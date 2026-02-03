@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Grid Ref X needs to be between 240000 and 550000 --></help>
+    <label><!-- X co-ordinate --></label>
+    <name>FSM_SFWXcoordinate__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Type (Work Type Code) --></label>
+    <name>FSM_MTRFWRJobType__c</name>
+    <picklistValues>
+        <masterLabel>Band 10 SWD Check C4 H1</masterLabel>
+        <translation><!-- Band 10 SWD Check C4 H1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C1W - MEASURED Supply Meter Verification</masterLabel>
+        <translation><!-- C1W - MEASURED Supply Meter Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C1W - UNMEASURED Supply Verification</masterLabel>
+        <translation><!-- C1W - UNMEASURED Supply Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint - Low Consumption</masterLabel>
+        <translation><!-- Complaint - Low Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint - Low Consumption &amp; WE RG</masterLabel>
+        <translation><!-- Complaint - Low Consumption &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint - Low Consumption &amp; WE TG</masterLabel>
+        <translation><!-- Complaint - Low Consumption &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Ad Hoc Check Reading</masterLabel>
+        <translation><!-- Complaints - Ad Hoc Check Reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Ad Hoc Check Reading RG</masterLabel>
+        <translation><!-- Complaints - Ad Hoc Check Reading RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Ad Hoc Check Reading TG</masterLabel>
+        <translation><!-- Complaints - Ad Hoc Check Reading TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Ad hoc Check Read &amp; WE RG</masterLabel>
+        <translation><!-- Complaints - Ad hoc Check Read &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Ad hoc Check Read &amp; WE TG</masterLabel>
+        <translation><!-- Complaints - Ad hoc Check Read &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Ad hoc Check Reading &amp; WE</masterLabel>
+        <translation><!-- Complaints - Ad hoc Check Reading &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Foul Connection Check</masterLabel>
+        <translation><!-- Complaints - Foul Connection Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Foul Connection Check &amp; WE</masterLabel>
+        <translation><!-- Complaints - Foul Connection Check &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - HD Site Area &amp; SWD Check</masterLabel>
+        <translation><!-- Complaints - HD Site Area &amp; SWD Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - HD Site Area Measurement</masterLabel>
+        <translation><!-- Complaints - HD Site Area Measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - High Consumption</masterLabel>
+        <translation><!-- Complaints - High Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - High Consumption &amp; WE RG</masterLabel>
+        <translation><!-- Complaints - High Consumption &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - High Consumption &amp; WE TG</masterLabel>
+        <translation><!-- Complaints - High Consumption &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - How &amp; What is Suppl &amp; WE RG</masterLabel>
+        <translation><!-- Complaints - How &amp; What is Suppl &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - How &amp; What is Suppl &amp; WE TG</masterLabel>
+        <translation><!-- Complaints - How &amp; What is Suppl &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - How &amp; What is Supplied</masterLabel>
+        <translation><!-- Complaints - How &amp; What is Supplied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Initial Final Read &amp; WE RG</masterLabel>
+        <translation><!-- Complaints - Initial Final Read &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Initial Final Read &amp; WE TG</masterLabel>
+        <translation><!-- Complaints - Initial Final Read &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Initial Final Reading</masterLabel>
+        <translation><!-- Complaints - Initial Final Reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Initial Final Reading &amp; WE</masterLabel>
+        <translation><!-- Complaints - Initial Final Reading &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Initial Final Reading RG</masterLabel>
+        <translation><!-- Complaints - Initial Final Reading RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Initial Final Reading TG</masterLabel>
+        <translation><!-- Complaints - Initial Final Reading TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Low Consumption</masterLabel>
+        <translation><!-- Complaints - Low Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Low Consumption RG</masterLabel>
+        <translation><!-- Complaints - Low Consumption RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Low Consumption TG</masterLabel>
+        <translation><!-- Complaints - Low Consumption TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Meter Exchange</masterLabel>
+        <translation><!-- Complaints - Meter Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Other Water Company</masterLabel>
+        <translation><!-- Complaints - Other Water Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Other Water Company RG</masterLabel>
+        <translation><!-- Complaints - Other Water Company RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Other Water Company TG</masterLabel>
+        <translation><!-- Complaints - Other Water Company TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - SWD Check</masterLabel>
+        <translation><!-- Complaints - SWD Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - SWD Check &amp; Water WE</masterLabel>
+        <translation><!-- Complaints - SWD Check &amp; Water WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Show Location of Meter</masterLabel>
+        <translation><!-- Complaints - Show Location of Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Show Location of Meter RG</masterLabel>
+        <translation><!-- Complaints - Show Location of Meter RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Show Location of Meter TG</masterLabel>
+        <translation><!-- Complaints - Show Location of Meter TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Sub Alt Check</masterLabel>
+        <translation><!-- Complaints - Sub Alt Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Sub Alt Check &amp; WE</masterLabel>
+        <translation><!-- Complaints - Sub Alt Check &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Sub Alt Check &amp; WE RG</masterLabel>
+        <translation><!-- Complaints - Sub Alt Check &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Sub Alt Check &amp; WE TG</masterLabel>
+        <translation><!-- Complaints - Sub Alt Check &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Sub Alt Check RG</masterLabel>
+        <translation><!-- Complaints - Sub Alt Check RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Sub Alt Check TG</masterLabel>
+        <translation><!-- Complaints - Sub Alt Check TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Temporary Disconnections</masterLabel>
+        <translation><!-- Complaints - Temporary Disconnections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Temporary Disconnections RG</masterLabel>
+        <translation><!-- Complaints - Temporary Disconnections RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Temporary Disconnections TG</masterLabel>
+        <translation><!-- Complaints - Temporary Disconnections TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Trace Supply</masterLabel>
+        <translation><!-- Complaints - Trace Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Trace Supply &amp; WE</masterLabel>
+        <translation><!-- Complaints - Trace Supply &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Trace Supply &amp; WE RG</masterLabel>
+        <translation><!-- Complaints - Trace Supply &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Trace Supply &amp; WE TG</masterLabel>
+        <translation><!-- Complaints - Trace Supply &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Trace Supply RG</masterLabel>
+        <translation><!-- Complaints - Trace Supply RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Trace Supply TG</masterLabel>
+        <translation><!-- Complaints - Trace Supply TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Unbilled</masterLabel>
+        <translation><!-- Complaints - Unbilled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Unbilled &amp; WE</masterLabel>
+        <translation><!-- Complaints - Unbilled &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Unbilled &amp; WE RG</masterLabel>
+        <translation><!-- Complaints - Unbilled &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Unbilled &amp; WE TG</masterLabel>
+        <translation><!-- Complaints - Unbilled &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Unbilled RG</masterLabel>
+        <translation><!-- Complaints - Unbilled RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Unbilled TG</masterLabel>
+        <translation><!-- Complaints - Unbilled TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Void</masterLabel>
+        <translation><!-- Complaints - Void --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Void RG</masterLabel>
+        <translation><!-- Complaints - Void RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Void TG</masterLabel>
+        <translation><!-- Complaints - Void TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Water Efficiency Check</masterLabel>
+        <translation><!-- Complaints - Water Efficiency Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Water Efficiency Check RG</masterLabel>
+        <translation><!-- Complaints - Water Efficiency Check RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints - Water Efficiency Check TG</masterLabel>
+        <translation><!-- Complaints - Water Efficiency Check TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints-  Show Loc. of Meter &amp; WE RG</masterLabel>
+        <translation><!-- Complaints-  Show Loc. of Meter &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints-  Show Loc. of Meter &amp; WE TG</masterLabel>
+        <translation><!-- Complaints-  Show Loc. of Meter &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints-  Show Location of Meter &amp; WE</masterLabel>
+        <translation><!-- Complaints-  Show Location of Meter &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Metering Query Non HH C1 H5</masterLabel>
+        <translation><!-- Customer Metering Query Non HH C1 H5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gap Site Non Household Sewerage C2 C3</masterLabel>
+        <translation><!-- Gap Site Non Household Sewerage C2 C3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gap Site Non Household Water C2 C3</masterLabel>
+        <translation><!-- Gap Site Non Household Water C2 C3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Ad Hoc Check Reading</masterLabel>
+        <translation><!-- HH - Ad Hoc Check Reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Ad Hoc Check Reading RG</masterLabel>
+        <translation><!-- HH - Ad Hoc Check Reading RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Ad Hoc Check Reading TG</masterLabel>
+        <translation><!-- HH - Ad Hoc Check Reading TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Ad hoc Check Reading &amp; WE</masterLabel>
+        <translation><!-- HH - Ad hoc Check Reading &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Ad hoc Check Reading &amp; WE RG</masterLabel>
+        <translation><!-- HH - Ad hoc Check Reading &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Ad hoc Check Reading &amp; WE TG</masterLabel>
+        <translation><!-- HH - Ad hoc Check Reading &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Foul Connection Check</masterLabel>
+        <translation><!-- HH - Foul Connection Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Foul Connection Check &amp; WE</masterLabel>
+        <translation><!-- HH - Foul Connection Check &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - HD Site Area &amp; SWD Check</masterLabel>
+        <translation><!-- HH - HD Site Area &amp; SWD Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - HD Site Area Measurement</masterLabel>
+        <translation><!-- HH - HD Site Area Measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - High Consumption</masterLabel>
+        <translation><!-- HH - High Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - High Consumption &amp; WE RG</masterLabel>
+        <translation><!-- HH - High Consumption &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - High Consumption &amp; WE TG</masterLabel>
+        <translation><!-- HH - High Consumption &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - How &amp; What is Supplied</masterLabel>
+        <translation><!-- HH - How &amp; What is Supplied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - How &amp; What is Supplied &amp; WE RG</masterLabel>
+        <translation><!-- HH - How &amp; What is Supplied &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - How &amp; What is Supplied &amp; WE TG</masterLabel>
+        <translation><!-- HH - How &amp; What is Supplied &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Initial Final Reading</masterLabel>
+        <translation><!-- HH - Initial Final Reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Initial Final Reading &amp; WE</masterLabel>
+        <translation><!-- HH - Initial Final Reading &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Initial Final Reading &amp; WE RG</masterLabel>
+        <translation><!-- HH - Initial Final Reading &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Initial Final Reading &amp; WE TG</masterLabel>
+        <translation><!-- HH - Initial Final Reading &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Initial Final Reading RG</masterLabel>
+        <translation><!-- HH - Initial Final Reading RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Initial Final Reading TG</masterLabel>
+        <translation><!-- HH - Initial Final Reading TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Low Consumption</masterLabel>
+        <translation><!-- HH - Low Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Low Consumption &amp; WE</masterLabel>
+        <translation><!-- HH - Low Consumption &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Low Consumption &amp; WE RG</masterLabel>
+        <translation><!-- HH - Low Consumption &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Low Consumption &amp; WE TG</masterLabel>
+        <translation><!-- HH - Low Consumption &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Low Consumption RG</masterLabel>
+        <translation><!-- HH - Low Consumption RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Low Consumption TG</masterLabel>
+        <translation><!-- HH - Low Consumption TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Meter Exchange</masterLabel>
+        <translation><!-- HH - Meter Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Other Water Company</masterLabel>
+        <translation><!-- HH - Other Water Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Other Water Company  RG</masterLabel>
+        <translation><!-- HH - Other Water Company  RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Other Water Company  TG</masterLabel>
+        <translation><!-- HH - Other Water Company  TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - SWD Check</masterLabel>
+        <translation><!-- HH - SWD Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - SWD Check &amp; WE</masterLabel>
+        <translation><!-- HH - SWD Check &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Show Location of Meter</masterLabel>
+        <translation><!-- HH - Show Location of Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Show Location of Meter &amp; WE</masterLabel>
+        <translation><!-- HH - Show Location of Meter &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Show Location of Meter &amp; WE RG</masterLabel>
+        <translation><!-- HH - Show Location of Meter &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Show Location of Meter &amp; WE TG</masterLabel>
+        <translation><!-- HH - Show Location of Meter &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Show Location of Meter RG</masterLabel>
+        <translation><!-- HH - Show Location of Meter RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Show Location of Meter TG</masterLabel>
+        <translation><!-- HH - Show Location of Meter TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Sub Alt Check</masterLabel>
+        <translation><!-- HH - Sub Alt Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Sub Alt Check &amp; WE</masterLabel>
+        <translation><!-- HH - Sub Alt Check &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Sub Alt Check &amp; WE RG</masterLabel>
+        <translation><!-- HH - Sub Alt Check &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Sub Alt Check &amp; WE TG</masterLabel>
+        <translation><!-- HH - Sub Alt Check &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Sub Alt Check RG</masterLabel>
+        <translation><!-- HH - Sub Alt Check RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Sub Alt Check TG</masterLabel>
+        <translation><!-- HH - Sub Alt Check TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Temporary Disconnections</masterLabel>
+        <translation><!-- HH - Temporary Disconnections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Temporary Disconnections RG</masterLabel>
+        <translation><!-- HH - Temporary Disconnections RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Temporary Disconnections TG</masterLabel>
+        <translation><!-- HH - Temporary Disconnections TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Trace Supply</masterLabel>
+        <translation><!-- HH - Trace Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Trace Supply &amp; WE</masterLabel>
+        <translation><!-- HH - Trace Supply &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Trace Supply &amp; WE RG</masterLabel>
+        <translation><!-- HH - Trace Supply &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Trace Supply &amp; WE TG</masterLabel>
+        <translation><!-- HH - Trace Supply &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Trace Supply RG</masterLabel>
+        <translation><!-- HH - Trace Supply RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Trace Supply TG</masterLabel>
+        <translation><!-- HH - Trace Supply TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Unbilled</masterLabel>
+        <translation><!-- HH - Unbilled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Unbilled &amp; WE</masterLabel>
+        <translation><!-- HH - Unbilled &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Unbilled &amp; WE RG</masterLabel>
+        <translation><!-- HH - Unbilled &amp; WE RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Unbilled &amp; WE TG</masterLabel>
+        <translation><!-- HH - Unbilled &amp; WE TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Unbilled RG</masterLabel>
+        <translation><!-- HH - Unbilled RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Unbilled TG</masterLabel>
+        <translation><!-- HH - Unbilled TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - VF Foul Connection Check</masterLabel>
+        <translation><!-- HH - VF Foul Connection Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - VF High Consumption &amp; WE</masterLabel>
+        <translation><!-- HH - VF High Consumption &amp; WE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - VF How Property Supplied</masterLabel>
+        <translation><!-- HH - VF How Property Supplied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - VF Low Consumption</masterLabel>
+        <translation><!-- HH - VF Low Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - VF SWD Check</masterLabel>
+        <translation><!-- HH - VF SWD Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - VF Show Location of Meter</masterLabel>
+        <translation><!-- HH - VF Show Location of Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - VF Trace Supply</masterLabel>
+        <translation><!-- HH - VF Trace Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Void</masterLabel>
+        <translation><!-- HH - Void --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Void RG</masterLabel>
+        <translation><!-- HH - Void RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Void TG</masterLabel>
+        <translation><!-- HH - Void TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Water Efficiency Check</masterLabel>
+        <translation><!-- HH - Water Efficiency Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Water Efficiency Check RG</masterLabel>
+        <translation><!-- HH - Water Efficiency Check RG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH - Water Efficiency Check TG</masterLabel>
+        <translation><!-- HH - Water Efficiency Check TG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B1.R - Meter Installation</masterLabel>
+        <translation><!-- NHH B1.R - Meter Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B10.W - Wholesaler Change Large Metr</masterLabel>
+        <translation><!-- NHH B10.W - Wholesaler Change Large Metr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B10.W - Wholesaler Change Small Metr</masterLabel>
+        <translation><!-- NHH B10.W - Wholesaler Change Small Metr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B11.R - Non-Market Meter Read Reques</masterLabel>
+        <translation><!-- NHH B11.R - Non-Market Meter Read Reques --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B3.R - Large Meter Accuracy Test</masterLabel>
+        <translation><!-- NHH B3.R - Large Meter Accuracy Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B3.R - Small Meter Accuracy Test</masterLabel>
+        <translation><!-- NHH B3.R - Small Meter Accuracy Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B3.W - Large Meter Accuracy Test</masterLabel>
+        <translation><!-- NHH B3.W - Large Meter Accuracy Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B3.W - Small Meter Accuracy Test</masterLabel>
+        <translation><!-- NHH B3.W - Small Meter Accuracy Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.R - Large Meter Burst / Leak</masterLabel>
+        <translation><!-- NHH B5.R - Large Meter Burst / Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.R - Large Meter Repair or Replace</masterLabel>
+        <translation><!-- NHH B5.R - Large Meter Repair or Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.R - Small Meter Burst / Leak</masterLabel>
+        <translation><!-- NHH B5.R - Small Meter Burst / Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.R - Small Meter Repair or Replace</masterLabel>
+        <translation><!-- NHH B5.R - Small Meter Repair or Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.W - Large Meter Burst / Leak</masterLabel>
+        <translation><!-- NHH B5.W - Large Meter Burst / Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.W - Large Meter Repair or Replace</masterLabel>
+        <translation><!-- NHH B5.W - Large Meter Repair or Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.W - Small Meter Burst / Leak</masterLabel>
+        <translation><!-- NHH B5.W - Small Meter Burst / Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B5.W - Small Meter Repair or Replace</masterLabel>
+        <translation><!-- NHH B5.W - Small Meter Repair or Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B7.R - Large Change of Meter</masterLabel>
+        <translation><!-- NHH B7.R - Large Change of Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH B7.R - Small Change of Meter</masterLabel>
+        <translation><!-- NHH B7.R - Small Change of Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWD Check Non Household C4 C5 C6 H1</masterLabel>
+        <translation><!-- SWD Check Non Household C4 C5 C6 H1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWD Foul Check Non Household C4 C5 C6 H1</masterLabel>
+        <translation><!-- SWD Foul Check Non Household C4 C5 C6 H1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Search Non HH Sewerage C1 C5 C6 H5</masterLabel>
+        <translation><!-- Search Non HH Sewerage C1 C5 C6 H5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Search Non HH Water C1 C5 C6 H5</masterLabel>
+        <translation><!-- Search Non HH Water C1 C5 C6 H5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Area Check Non Household C4 H1 H5</masterLabel>
+        <translation><!-- Site Area Check Non Household C4 H1 H5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Area Check SWD Non HH C4 H1 H5</masterLabel>
+        <translation><!-- Site Area Check SWD Non HH C4 H1 H5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Alt Check Non HH Sewerage C1 C4 H1</masterLabel>
+        <translation><!-- Sub Alt Check Non HH Sewerage C1 C4 H1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Alt Check Non HH Water C1 C4 H1</masterLabel>
+        <translation><!-- Sub Alt Check Non HH Water C1 C4 H1 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

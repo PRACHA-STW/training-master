@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Data Capture Form Infra --></label>
+    <name>FSM_DataCaptureFormInfra__c</name>
+    <relationshipLabel><!-- Infra Data Capture Line Item 1 --></relationshipLabel>
+</CustomFieldTranslation>

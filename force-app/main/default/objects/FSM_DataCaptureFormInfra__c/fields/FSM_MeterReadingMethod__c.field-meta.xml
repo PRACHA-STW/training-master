@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MeterReadingMethod__c</fullName>
+    <description>Created for SAL-1321</description>
+    <label>Meter Reading Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Visual</fullName>
+                <default>false</default>
+                <label>Visual</label>
+            </value>
+            <value>
+                <fullName>Touchpad</fullName>
+                <default>false</default>
+                <label>Touchpad</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Remote</fullName>
+                <default>false</default>
+                <label>Remote</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

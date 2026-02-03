@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_BaseLocation__c</fullName>
+    <description>This is the Resource base location from which the resource starts and ends their working day. this is used to select the correct resource availability rule in the scheduling policy</description>
+    <label>Base Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home</fullName>
+                <default>false</default>
+                <label>Home</label>
+            </value>
+            <value>
+                <fullName>Depot</fullName>
+                <default>true</default>
+                <label>Depot</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

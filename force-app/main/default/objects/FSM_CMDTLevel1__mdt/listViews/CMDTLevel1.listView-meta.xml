@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMDTLevel1</fullName>
+    <columns>FSM_Type__c</columns>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>FSM_BusinessUnit__c</columns>
+    <columns>FSM_RejectionCategory__c</columns>
+    <columns>FSM_RejectionCategoryText__c</columns>
+    <columns>FSM_SAPName__c</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>IsProtected</columns>
+    <filterScope>Everything</filterScope>
+    <label>CMDTLevel1</label>
+</ListView>

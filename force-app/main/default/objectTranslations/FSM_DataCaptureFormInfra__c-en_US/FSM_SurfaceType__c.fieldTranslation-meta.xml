@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What is the surface type e.g. 6mm Tarmac --></help>
+    <label><!-- Surface Type --></label>
+    <name>FSM_SurfaceType__c</name>
+    <picklistValues>
+        <masterLabel>10mm Bitmac (Tarmac)</masterLabel>
+        <translation><!-- 10mm Bitmac (Tarmac) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10mm Stone Mastic Asphalt</masterLabel>
+        <translation><!-- 10mm Stone Mastic Asphalt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14mm Stone Mastic Asphalt</masterLabel>
+        <translation><!-- 14mm Stone Mastic Asphalt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6mm Bitmac (Tarmac)</masterLabel>
+        <translation><!-- 6mm Bitmac (Tarmac) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Block Paving</masterLabel>
+        <translation><!-- Block Paving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concrete</masterLabel>
+        <translation><!-- Concrete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grass</masterLabel>
+        <translation><!-- Grass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Rolled Asphalt 30/40</masterLabel>
+        <translation><!-- Hot Rolled Asphalt 30/40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot rolled asphalt 55/10</masterLabel>
+        <translation><!-- Hot rolled asphalt 55/10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stone Sets</masterLabel>
+        <translation><!-- Stone Sets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmade</masterLabel>
+        <translation><!-- Unmade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

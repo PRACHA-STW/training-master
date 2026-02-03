@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RetriggerAutoScheduleBasedonWO__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFS-107 and SFS-110</description>
+    <label>Retrigger Auto Schedule Based on WO</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CoreTMAJob__c</fullName>
+    <description>SFS-6658</description>
+    <formula>AND(
+  NOT(ISBLANK(FSM_TMAPermit__c)),
+  OR(
+    NOT(ISBLANK(TEXT(FSM_NoticeState__c))),  
+    ISPICKVAL(FSM_Suitability__c, &quot;E&quot;)      
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Core TMA Job</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

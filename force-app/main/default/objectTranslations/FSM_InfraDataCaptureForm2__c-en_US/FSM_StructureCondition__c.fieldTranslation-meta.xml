@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- This is the pipe supports and foundations condition (not the security devices or the pipe itself this will be looked at later) 	
+We are not asking the Ops to carry out a structural assessment as this will be done by others, but to advise if there are any visible concerns. -->
+    </help>
+    <label><!-- Structure appear in good condition --></label>
+    <name>FSM_StructureCondition__c</name>
+    <picklistValues>
+        <masterLabel>No visible signs causing concern or has been rehabilitated</masterLabel>
+        <translation><!-- No visible signs causing concern or has been rehabilitated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piers / Supports showing significant cracks/ corrosion</masterLabel>
+        <translation><!-- Piers / Supports showing significant cracks/ corrosion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piers / Supports showing signs of cracks/ corrosion</masterLabel>
+        <translation><!-- Piers / Supports showing signs of cracks/ corrosion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs of ground erosion</masterLabel>
+        <translation><!-- Signs of ground erosion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Structure and supports appear in good condition</masterLabel>
+        <translation><!-- Structure and supports appear in good condition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TMAPermitCondition__c</fullName>
+    <description>Created as part of user story #SFS-32
+Updated label and picklist value as part of SFS-8359</description>
+    <label>Activity Condition Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Date Constraints</fullName>
+                <default>false</default>
+                <label>Date Constraints</label>
+            </value>
+            <value>
+                <fullName>Time Constraints</fullName>
+                <default>false</default>
+                <label>Time Constraints</label>
+            </value>
+            <value>
+                <fullName>Out of Hours Work</fullName>
+                <default>false</default>
+                <label>Out of Hours Work</label>
+            </value>
+            <value>
+                <fullName>Material and Plant Storage</fullName>
+                <default>false</default>
+                <label>Material and Plant Storage</label>
+            </value>
+            <value>
+                <fullName>Road Occupation Dimensions</fullName>
+                <default>false</default>
+                <label>Road Occupation Dimensions</label>
+            </value>
+            <value>
+                <fullName>Traffic Space Dimensions</fullName>
+                <default>false</default>
+                <label>Traffic Space Dimensions</label>
+            </value>
+            <value>
+                <fullName>Road Closure</fullName>
+                <default>false</default>
+                <label>Road Closure</label>
+            </value>
+            <value>
+                <fullName>Light Signals and Shuttle Working</fullName>
+                <default>false</default>
+                <label>Light Signals and Shuttle Working</label>
+            </value>
+            <value>
+                <fullName>Traffic Management Changes</fullName>
+                <default>false</default>
+                <label>Traffic Management Changes</label>
+            </value>
+            <value>
+                <fullName>Work Methodology</fullName>
+                <default>false</default>
+                <label>Work Methodology</label>
+            </value>
+            <value>
+                <fullName>Consultation and Publicity</fullName>
+                <default>false</default>
+                <label>Consultation and Publicity</label>
+            </value>
+            <value>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+            <value>
+                <fullName>Local</fullName>
+                <default>false</default>
+                <label>Local</label>
+            </value>
+            <value>
+                <fullName>Duration APPLIES TO ALL PERMITS on streets where the validity window does not apply</fullName>
+                <default>false</default>
+                <label>Duration APPLIES TO ALL PERMITS on streets where the validity window does not apply</label>
+            </value>
+            <value>
+                <fullName>Duration APPLIES TO ALLPERMITS on streets where the validity window applies</fullName>
+                <default>false</default>
+                <label>Duration APPLIES TO ALLPERMITS on streets where the validity window applies</label>
+            </value>
+            <value>
+                <fullName>Limit the days and times of day</fullName>
+                <default>false</default>
+                <label>Limit the days and times of day</label>
+            </value>
+            <value>
+                <fullName>Working Hours</fullName>
+                <default>false</default>
+                <label>Working Hours</label>
+            </value>
+            <value>
+                <fullName>Removal of surplus materials/plant</fullName>
+                <default>false</default>
+                <label>Removal of surplus materials/plant</label>
+            </value>
+            <value>
+                <fullName>Storage of surplus materials/plant</fullName>
+                <default>false</default>
+                <label>Storage of surplus materials/plant</label>
+            </value>
+            <value>
+                <fullName>Width and/or length of road space that can be occupied</fullName>
+                <default>false</default>
+                <label>Width and/or length of road space that can be occupied</label>
+            </value>
+            <value>
+                <fullName>Road space to be available to traffic/pedestrians at certain times of day</fullName>
+                <default>false</default>
+                <label>Road space to be available to traffic/pedestrians at certain times of day</label>
+            </value>
+            <value>
+                <fullName>Road Closed to Traffic</fullName>
+                <default>false</default>
+                <label>Road Closed to Traffic</label>
+            </value>
+            <value>
+                <fullName>Traffic Management Request</fullName>
+                <default>false</default>
+                <label>Traffic Management Request</label>
+            </value>
+            <value>
+                <fullName>Manual Control of Traffic Management</fullName>
+                <default>false</default>
+                <label>Manual Control of Traffic Management</label>
+            </value>
+            <value>
+                <fullName>Changes to traffic management arrangements</fullName>
+                <default>false</default>
+                <label>Changes to traffic management arrangements</label>
+            </value>
+            <value>
+                <fullName>Traffic management arrangements to be in place</fullName>
+                <default>false</default>
+                <label>Traffic management arrangements to be in place</label>
+            </value>
+            <value>
+                <fullName>Signal Removal from operation when no longer required</fullName>
+                <default>false</default>
+                <label>Signal Removal from operation when no longer required</label>
+            </value>
+            <value>
+                <fullName>Employment of appropriate methodology</fullName>
+                <default>false</default>
+                <label>Employment of appropriate methodology</label>
+            </value>
+            <value>
+                <fullName>APPLIES TO ALL PERMITS Display of Permit Number</fullName>
+                <default>false</default>
+                <label>APPLIES TO ALL PERMITS Display of Permit Number</label>
+            </value>
+            <value>
+                <fullName>Publicity for proposed works</fullName>
+                <default>false</default>
+                <label>Publicity for proposed works</label>
+            </value>
+            <value>
+                <fullName>Limit timing of certain activities</fullName>
+                <default>false</default>
+                <label>Limit timing of certain activities</label>
+            </value>
+            <value>
+                <fullName>Ancillary information</fullName>
+                <default>false</default>
+                <label>Ancillary information</label>
+            </value>
+            <value>
+                <fullName>Current traffic management type</fullName>
+                <default>false</default>
+                <label>Current traffic management type</label>
+            </value>
+            <value>
+                <fullName>Exceptional Circumstances</fullName>
+                <default>false</default>
+                <label>Exceptional Circumstances</label>
+            </value>
+            <value>
+                <fullName>Duration APPLIES TO ALL PERMITS on streets wherethe validity window does not apply</fullName>
+                <default>false</default>
+                <label>Duration APPLIES TO ALL PERMITS on streets wherethe validity window does not apply</label>
+            </value>
+            <value>
+                <fullName>Removal of surplus materials/ plant</fullName>
+                <default>false</default>
+                <label>Removal of surplus materials/ plant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Created as a part of SFS-3065</description>
+        <name>ASSIGN_DCF_Non_Infra_Complete</name>
+        <label>ASSIGN_DCF Non Infra Complete</label>
+        <locationX>176</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>DCFUpdateNonInfra.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NonInfraID</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>DCFUpdateNonInfra.FSM_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Test_Screen1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Created as a part of SFS-3065</description>
+        <name>Assign_ID</name>
+        <label>Assign ID</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignmentItems>
+            <assignToReference>Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CurrentUserIdFinal</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentUserId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Workstep</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <description>Created as a part of SFS-1314</description>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Created as a part of SFS-1314</description>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <description>Creation : SFS-3065</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Created as a part of SFS-3065</description>
+        <name>CurrentUserId</name>
+        <dataType>String</dataType>
+        <expression>{!$User.Id}</expression>
+    </formulas>
+    <formulas>
+        <description>SFS-3065</description>
+        <name>DateTime</name>
+        <dataType>DateTime</dataType>
+        <expression>{!$Flow.CurrentDateTime}</expression>
+    </formulas>
+    <interviewLabel>DCF SPS Complex {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DCF SPS Complex</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <recordCreates>
+        <description>Created as a part of SFS-3065</description>
+        <name>CREATE_DCF_Non_Infra_Record</name>
+        <label>CREATE_DCF Non Infra Record</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <assignRecordIdToReference>NonInfraID</assignRecordIdToReference>
+        <connector>
+            <targetReference>ASSIGN_DCF_Non_Infra_Complete</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FSM_FormType__c</field>
+            <value>
+                <stringValue>SPS Complex</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_Status__c</field>
+            <value>
+                <stringValue>IN progress</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_WorkOrder__c</field>
+            <value>
+                <elementReference>WorkStepRecord.WorkOrderId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FSM_DataCaptureFormNonInfra__c</object>
+    </recordCreates>
+    <recordLookups>
+        <description>Created as a part of SFS-3065</description>
+        <name>Get_Workstep</name>
+        <label>Get Workstep</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CREATE_DCF_Non_Infra_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Id</elementReference>
+            </value>
+        </filters>
+        <object>WorkStep</object>
+        <outputReference>WorkStepRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>WorkOrderId</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>SFS-3065</description>
+        <name>Update_DCF_Non_Infra_Record</name>
+        <label>Update DCF Non Infra Record</label>
+        <locationX>176</locationX>
+        <locationY>674</locationY>
+        <inputReference>DCFUpdateNonInfra</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Test_Screen1</name>
+        <label>Test Screen1</label>
+        <locationX>176</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Update_DCF_Non_Infra_Record</targetReference>
+        </connector>
+        <fields>
+            <name>Screen1</name>
+            <fieldText>&lt;p&gt;ID : {!DCFUpdateNonInfra.Id}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_ID</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>Created as a part of SFS-3065</description>
+        <name>CurrentUserIdFinal</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>SFS-3065</description>
+        <name>DCFNonInfraRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>DCFUpdateNonInfra</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FSM_DataCaptureFormNonInfra__c</objectType>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-3065</description>
+        <name>Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>NonInfraID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-3065</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-3065</description>
+        <name>UserId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-1314</description>
+        <name>UserName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-1314</description>
+        <name>WOID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>WorkStepRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkStep</objectType>
+    </variables>
+</Flow>

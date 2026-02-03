@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_for_Schedule</fullName>
+    <active>false</active>
+    <description>SFS-62, Ready for Schedule must be checked to Schedule a job
+Deactivated it as a part of SFS-111
+Amended the validation error message as part of SFS-1923
+Updated for SFS-4793</description>
+    <errorConditionFormula>IF(FSM_HasImmediateTMA__c=false, AND(
+ISPICKVAL(Status, &quot;Scheduled&quot;),
+NOT(FSM_ReadyForSchedule__c) 
+), false)</errorConditionFormula>
+    <errorMessage>Service Appointment is not ready for schedule. please check WOLIs mandatory for scheduling are completed or If working sub area is applicable for this territory, It is populated on SA.</errorMessage>
+</ValidationRule>

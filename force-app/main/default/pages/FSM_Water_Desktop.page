@@ -1,0 +1,341 @@
+<apex:page standardController="FSM_DataCaptureFormInfra__c" extensions="FSM_sketchPDFCtr" renderAs="PDF" applyBodyTag="false" action="{!pdfAction}" > <!--   -->
+<head>
+        <style>
+            @page {
+            size: A3 landscape;
+            margin: 1mm;
+            }
+            
+            body {
+                font-family: system-ui, sans-serif;
+                font-size: 8pt;
+                font-color: #000000;
+                font-weight: 500;
+            }
+            
+            .parent {
+              text-align: left;
+              padding: 10px !important;
+            }
+            
+            .child1 {
+              display: inline-block;
+              vertical-align: top;
+              margin-top : 5px !important;
+              width: 338px;
+              height:847px;
+            }
+            
+            .child2 {
+              display: inline-block;
+              vertical-align: top;
+              width: 45%;
+              height:100% !important;
+              padding: 5px !important;
+              padding-right: 8px !important;
+              height: 550px;
+            }
+            
+            .child3 {
+              border: 1px solid black;
+              display: inline-block;
+              vertical-align: top;
+              width: 5%;
+              height: 550px;
+            }
+            
+            .child4 {
+              display: inline-block;
+              vertical-align: top;
+              width: 20%;
+              padding: 10px !important;
+              height: 550px;
+            }
+            
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            
+        </style>
+    </head>
+    
+    <body> 
+        
+        <div class="banner">
+           <div style="width: 20%; font-size: 20px; display: inline-block; text-align: center;"> Date Job Raised  {!dateString} </div>
+           <div style="width: 50%; font-size: 25px; display: inline-block; text-align: center; padding-right: 20px;"> {!addressFields} </div>
+           <div style="width: 20%; display: inline-block; text-align: center; text-decoration:underline;"> Valve Details </div>
+        </div>
+        
+        <div class="parent">
+            
+            <div class="child1">
+                <table style="width:100%; text-align:left; font-size: 11px;"> <!--  -->
+
+                    <apex:repeat value="{!dcfObj}" var="dcfItem">   
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">User Name</td>  
+                            <td  style="text-align:left; height: 10px;width: 60%; "> {!username}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Telephone Number</td>  
+                            <td  style="text-align:left; height: 10px;width: 60%; "> {!phonenumber}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Grid X</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_GridRefOfProposedWorkX__c}  </td>
+                        </tr>
+                        
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Grid Y</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_GridRefOfProposedWorkY__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Position of Work</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;">{!positionOfWork}</td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">House Name</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersHouseName__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">House No.</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersHouseNo__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Street</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersStreet__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Town</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersTown__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Postcode</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersPostcode__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Customer Name</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersName__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Customer Tel. No.</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_OccupiersTelephoneNumber__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Asset</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Asset__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Task</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Task__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Technique</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_Technique__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Size</td>
+                           <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_AssetSize__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Material</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_AssetMaterial__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Method of Work</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_MethodOfWork__c}</td> <!-- FSM_MethodOfWork__c can we use? --> 
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Type of Leak</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_TypeOfLeak__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Footway width (m)</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_FootwayWidth__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Carriageway width (m)</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_CarriagewayWidth__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Speed</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_Speed__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Road Type</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_RoadType__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Surface Type</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_SurfaceType__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Traffic Flow</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_TrafficFlow__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Vehicle Position</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_VehiclePosition__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Pedestrian Walkway</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_PedestrianWalkway__c}  </td>
+                        </tr>
+                        <!-- <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Special Feature</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_SpecialFeature__c}  </td>
+                        </tr> -->
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Pedestrian Lights</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_PedestrianLights__c}</td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Visibility to Men at Work/Traffic LightHead</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_VisibilityToMenAtWork__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">No Waiting Cones</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_AreNoWaitingConesRequired__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Train/Tram</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_TrainOrTram__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                            <td style="text-align:left; width: 40%;">Bus</td>
+                            <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Bus__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Cycle</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;"> {!dcfItem.FSM_Cycle__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center;">
+                           <td style="text-align:left; width: 40%;">Days to Avoid</td>
+                           <td  style="text-align:left; height: 10px; width: 60%; padding: 3px;">  {!restrictedDays} </td> <!-- {!dcfItem.FSM_RestrictedDays__c} --> 
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Times to Avoid</td>
+                            <!--<td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_RestrictedTime__c}  </td>-->
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!restrictedTimes}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Library Extension</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;">  {!dcfItem.FSM_LibraryTimeExtensions__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">First Time Rein</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_ReasonForFirstTimeReinstatement__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Trailer Team</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_TrailerTeam__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Comms Method</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;">{!dcfItem.FSM_CommsMethod__c}</td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Comms Type</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_LetterWarn__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%; ">Sensitive Customer</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_SensitiveCustomer__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Lamp Post Support</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_LampSupportRemovalRequired__c}  </td>
+                        </tr>
+                        <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Overhead Powerlines</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_OverheadPowerLinesWithin10m__c}  </td>
+                        </tr>
+                        <!-- <tr width="100%" style="text-align: center; ">
+                            <td style="text-align:left; width: 40%;">Planning Information/Comms</td>
+                            <td  style="text-align:left; height: 10px;width: 60%; padding: 3px;"> {!dcfItem.FSM_PlanningInfoAndComms__c}  </td>
+                        </tr> --> 
+                    </apex:repeat>  
+                    
+                </table>  
+            </div>
+
+            <div class="child2">
+                <div >
+                    <apex:image value="/sfc/servlet.shepherd/version/download/{!contentId}" style=" width: 690px;height: 560px !important; border: 2px solid black; "/> 
+                </div> 
+                <div style="padding-top: 10px;">
+                   <!-- <apex:image url="{!bannerImageURL}" alt="My Image" width="800" height="220"width: 690px;height: 560px !important;/> -->  
+                    <apex:image value="/sfc/servlet.shepherd/version/download/{!cversionId}" style=" width: 695px;height: 220px !important;"/>                                
+                </div>
+                
+            </div> 
+            
+            <div class="child3" style="margin-top:4px !important;">
+                <div style=" text-align: center; border-bottom: 1px solid; "> Inform Icons </div> <!-- text-decoration:underline; -->
+                <apex:repeat value="{!siteIds}" var="sItem">
+                    <apex:image value="/sfc/servlet.shepherd/version/download/{!sItem}" style=" width: 60px;height: 60px !important; padding:3px;"/> <br/>
+                </apex:repeat>
+                 
+            </div> 
+
+            <div class="child4" style="margin-top:-3px !important;">
+                <div style=" width:250px !important; "> <!--  border: 1px solid black; height: 34px !important; -->
+                   <table style="width:100%; text-align:left; font-size: 11px;">
+                       <tr width="100%" style="text-align: center;">
+                            <th>Grid x</th>
+                            <th>Grid y</th>
+                       </tr>
+                       <apex:repeat value="{!allLineItems}" var="dcfLineItem">
+                           <tr>
+                            <td style="text-align:center; width: 40%;">{!dcfLineItem.FSM_GridRefX__c}</td>  
+                            <td  style="text-align:center; height: 10px;width: 60%; "> {!dcfLineItem.FSM_GridRefY__c}</td>
+                        </tr>
+                       </apex:repeat>
+                   </table>
+                </div>
+                <!-- <div style="height: 500px !important; width:250px !important; border: 1px solid black; ">
+                    <apex:repeat value="{!photoIds}" var="pItem">
+                        <div >
+                            <apex:image value="/sfc/servlet.shepherd/version/download/{!pItem}" style=" object-fit: contain !important;"/> 
+                        </div>
+                    </apex:repeat> 
+               </div> --> 
+               <div style="height: 500px !important; width: 250px !important;"> 
+                    <apex:repeat value="{!photoIds}" var="pItem">
+                        <div style="overflow:hidden;text-align: center;">
+                            <apex:image value="/sfc/servlet.shepherd/version/download/{!pItem}" style="max-width: 100%; height:166px; padding:2px; object-fit: contain;"/> 
+                        </div>
+                    </apex:repeat> 
+                </div>
+               <div style="width:500px; height:500px !important;padding-top: 11%; padding-left:5px !important;">
+                    <div style="border: 1px solid black; margin-left:-95px; height:450px !important; width:480px !important;  "> <!-- padding:10px;  -->
+                         <div style="text-align: center; text-decoration:underline;font-size:15px;"> Planning Information/Comms </div> <br/>    
+                         <div style="font-size:15px;padding:5px"> {!dcfObj.FSM_PlanningInfoAndComms__c} </div>
+                    </div>
+               </div>
+            </div>
+            
+            <!-- <div style="margin: 20% left;"> 
+            
+               
+            </div> -->
+        </div>
+        
+        <apex:form >
+   <!-- 
+     {!imageURL} 
+   <img src="/sfc/servlet.shepherd/version/download/0688d00000EzzDEAAZ"  alt=""/> 
+    <br/>aaaaaa <br/>
+      Hard coded <br/> {!contentId}
+      <img src="/sfc/servlet.shepherd/version/download/0688d00000Ezw0bAAB"  alt=""/>
+      
+      Dynamic   <img src="/sfc/servlet.shepherd/version/download/{!contentId}"  alt=""/>-->
+     
+
+
+    </apex:form>
+
+    </body> 
+</apex:page>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_SRDeveloperServices</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR Developer Services</label>
+        <sharedTo>
+            <group>FSM_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>ResourceType</field>
+            <operation>equals</operation>
+            <value>Crew</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Developer Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRFWDeveloperServices</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR FW Developer Services</label>
+        <sharedTo>
+            <group>FSM_FW_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Developer Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRFWWasteInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR FW Waste Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRFWWaterInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR FW Water Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRMetering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR Metering</label>
+        <sharedTo>
+            <group>FSM_Metering</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>ResourceType</field>
+            <operation>equals</operation>
+            <value>Crew</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Metering</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRWasteInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR Waste Infra</label>
+        <sharedTo>
+            <group>FSM_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>ResourceType</field>
+            <operation>equals</operation>
+            <value>Crew</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRWasteNonInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR Waste Non Infra</label>
+        <sharedTo>
+            <group>FSM_WasteNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>ResourceType</field>
+            <operation>equals</operation>
+            <value>Crew</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRWaterInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR Water Infra</label>
+        <sharedTo>
+            <group>FSM_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>ResourceType</field>
+            <operation>equals</operation>
+            <value>Crew</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_SRWaterNonInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR Water Non Infra</label>
+        <sharedTo>
+            <group>FSM_WaterNonInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>ResourceType</field>
+            <operation>equals</operation>
+            <value>Crew</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Non Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

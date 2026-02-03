@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Charge Category --></label>
+    <name>FSM_ChargeCategory__c</name>
+    <picklistValues>
+        <masterLabel>Culvert/Ditch/Tunnel Work – No Excavation</masterLabel>
+        <translation><!-- Culvert/Ditch/Tunnel Work – No Excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laying apparatus only (collaborative works, secondary promoter)</masterLabel>
+        <translation><!-- Laying apparatus only (collaborative works, secondary promoter) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other works not involving excavation</masterLabel>
+        <translation><!-- Other works not involving excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pole testing</masterLabel>
+        <translation><!-- Pole testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repairing, resetting or replacing manhole or chamber covers or frames</masterLabel>
+        <translation><!-- Repairing, resetting or replacing manhole or chamber covers or frames --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacing poles, lamps, columns or signs in the same location</masterLabel>
+        <translation><!-- Replacing poles, lamps, columns or signs in the same location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works for road purposes carried out on behalf of a highway authority</masterLabel>
+        <translation><!-- Works for road purposes carried out on behalf of a highway authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works in a highway in relation to which a pedestrian planning order is in place</masterLabel>
+        <translation><!-- Works in a highway in relation to which a pedestrian planning order is in place --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works in a highway whose use by vehicular traffic is prohibited by a traffic order (that applies at all times)</masterLabel>
+        <translation><!-- Works in a highway whose use by vehicular traffic is prohibited by a traffic order (that applies at all times) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works in footpath or bridleway</masterLabel>
+        <translation><!-- Works in footpath or bridleway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works in non-traffic-sensitive streets that require opening of the highway, but not breaking it up</masterLabel>
+        <translation><!-- Works in non-traffic-sensitive streets that require opening of the highway, but not breaking it up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works involving excavation (collaborative working, primary promoter)</masterLabel>
+        <translation><!-- Works involving excavation (collaborative working, primary promoter) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works involving excavation (single promoter)</masterLabel>
+        <translation><!-- Works involving excavation (single promoter) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

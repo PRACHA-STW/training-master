@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>FSL__User_Territory__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>User Territories with Service Resource Data
+Created by Ksenia O. for SFL-651 resolution</description>
+    <label>User Territories</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FSL__ServiceTerritory__c</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FSL__Territory_Name__c</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FSL__User__c</field>
+            <table>FSL__User_Territory__c</table>
+        </columns>
+        <masterLabel>User Territories</masterLabel>
+    </sections>
+</ReportType>

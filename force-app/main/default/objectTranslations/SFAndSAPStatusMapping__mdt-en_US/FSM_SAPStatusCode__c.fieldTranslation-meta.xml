@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SAP Status Code --></label>
+    <name>FSM_SAPStatusCode__c</name>
+    <picklistValues>
+        <masterLabel>ACPT</masterLabel>
+        <translation><!-- ACPT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARVD</masterLabel>
+        <translation><!-- ARVD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CANC</masterLabel>
+        <translation><!-- CANC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMP</masterLabel>
+        <translation><!-- COMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISP</masterLabel>
+        <translation><!-- DISP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARK</masterLabel>
+        <translation><!-- PARK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RELS</masterLabel>
+        <translation><!-- RELS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJTD</masterLabel>
+        <translation><!-- RJTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTSI</masterLabel>
+        <translation><!-- RTSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUNR</masterLabel>
+        <translation><!-- SUNR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

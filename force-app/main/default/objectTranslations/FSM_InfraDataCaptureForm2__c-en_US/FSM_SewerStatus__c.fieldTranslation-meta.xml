@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select One --></help>
+    <label><!-- Sewer Status --></label>
+    <name>FSM_SewerStatus__c</name>
+    <picklistValues>
+        <masterLabel>Former s.24 Sewer</masterLabel>
+        <translation><!-- Former s.24 Sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Strategic</masterLabel>
+        <translation><!-- Non-Strategic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic</masterLabel>
+        <translation><!-- Strategic --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

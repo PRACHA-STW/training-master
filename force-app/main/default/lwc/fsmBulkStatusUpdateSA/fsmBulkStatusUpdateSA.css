@@ -1,0 +1,63 @@
+.screen-header {
+    font-weight: 600;
+    font-size: large;
+    background-color: #6d3aae;
+    color: #FFFFFF;
+    margin: 0 !important;
+    padding: 5px;
+}
+
+.button-center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container {
+    background-color: white;
+}
+
+
+.appointments-container {
+    border: 2px solid #D7D7D7;
+    padding: 5px;
+    background-color: #f3f3f3;
+}
+.appointments-container .text-center{
+    text-align: center;
+    align-self: center;
+    font-size: small;
+    word-wrap: break-word;
+}
+.required {
+    align-self: flex-start;
+    color: red;
+  }
+
+@media (max-width: 768px) {
+    .main-container {
+        background-color: white;
+        height: 100vh;
+    }
+
+    .button-section {
+        position: fixed;
+        /* bottom: 1rem; */
+        width: calc(100% - 2rem);
+        background: white;
+
+    }
+
+    .screen1-container {
+        height: 80vh;
+    }
+    .error-container {
+        height: 80vh;
+    }
+
+    .appointment-list-container {
+        max-height: 80%;
+        overflow-y: auto;
+    }
+
+
+}

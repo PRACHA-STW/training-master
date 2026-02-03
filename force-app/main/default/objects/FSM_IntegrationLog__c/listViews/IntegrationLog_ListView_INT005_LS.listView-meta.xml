@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IntegrationLog_ListView_INT005_LS</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>FSM_ServiceName__c</columns>
+    <columns>FSM_RecordId__c</columns>
+    <columns>FSM_ExternalId__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>FSM_RequestPayload__c</columns>
+    <columns>FSM_ResponsePayload__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_ServiceName__c</field>
+        <operation>contains</operation>
+        <value>FSM_MeterDetailsForm</value>
+    </filters>
+    <filters>
+        <field>FSM_ServiceName__c</field>
+        <operation>notContain</operation>
+        <value>Appointment</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:7</value>
+    </filters>
+    <label>Integration Log_INT-005_DCFs_LS</label>
+    <sharedTo>
+        <group>FSM_Tech_Support</group>
+    </sharedTo>
+</ListView>

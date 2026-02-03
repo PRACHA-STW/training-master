@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Pakkemedlemmer</label>
+        <name>FSL__Bundle_Members</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Sideordnede pakkemedlemmer</label>
+        <name>FSL__Bundle_Members_Siblings</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Fremhevet vindu for pakker</label>
+        <name>FSL__Bundler_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Kapasitetstjenestekolonner</label>
+        <name>FSL__Capacity_Service_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Felt for komplekse arbeidsoppslag</label>
+        <name>FSL__Complex_Work_Lookups_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Mannskapsbehandling</label>
+        <name>FSL__CrewManagement</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Verktøytips for mannskapsbehandling</label>
+        <name>FSL__CrewManagementTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Felt for utpekt arbeid</label>
+        <name>FSL__Designated_Work_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Foreldet</label>
+        <name>FSL__Emergency_Current_Service_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Gantt-filter</label>
+        <name>FSL__Gantt_Filter</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Optimaliseringskriterier for tjenesteavtale</label>
+        <name>FSL__Optimization_Filter_By_Booleans</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Tjenesteavtale utvidet</label>
+        <name>FSL__Service_Appointment_Expanded</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Kolonner for tjenesteavtaleliste</label>
+        <name>FSL__Service_Appointment_List_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Forhåndsvisning av for tjenesteavtaleliste</label>
+        <name>FSL__Service_Appointment_List_Preview</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Visning av ressurskalender for tjenesteavtale</label>
+        <name>FSL__Service_Appt_Resource_Calendar_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Verktøytips for ressurskalender for tjenesteavtale</label>
+        <name>FSL__Service_Appt_Resource_Calendar_Tooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Kart over tjenesteavtalevindu</label>
+        <name>FSL__Service_Info_Window_Map</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Fremhevet vindu for tjenester</label>
+        <name>FSL__Service_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Fremhevet vindu for tjenester - adresse</label>
+        <name>FSL__Service_Lightbox_Address</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Fremhevet vindu for tjenester - tid</label>
+        <name>FSL__Service_Lightbox_Time</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Gantt for tjenesteverktøytips</label>
+        <name>FSL__Service_Tooltip_Gantt</name>
+    </fieldSets>
+    <layouts>
+        <layout>Desktop User SA page Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment Details --></label>
+            <section>Appointment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Debrief Comments --></label>
+            <section>Debrief Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Gantt Information --></label>
+            <section>Gantt Information</section>
+        </sections>
+        <sections>
+            <label><!-- Job Cancelled Details --></label>
+            <section>Job Cancelled Details</section>
+        </sections>
+        <sections>
+            <label><!-- Job Rejection Details --></label>
+            <section>Job Rejection Details</section>
+        </sections>
+        <sections>
+            <label><!-- Job Suspension Details --></label>
+            <section>Job Suspension Details</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Details --></label>
+            <section>Scheduling Details</section>
+        </sections>
+        <sections>
+            <label><!-- Scores --></label>
+            <section>Scores</section>
+        </sections>
+        <sections>
+            <label><!-- Time Entry Details --></label>
+            <section>Time Entry Details</section>
+        </sections>
+        <sections>
+            <label><!-- Traffic Management --></label>
+            <section>Traffic Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FSL Service Appointment Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Dispatcher Console --></label>
+            <section>Dispatcher Console</section>
+        </sections>
+        <sections>
+            <label><!-- Time Constraints --></label>
+            <section>Time Constraints</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Field Worker SA Page Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment Dates --></label>
+            <section>Appointment Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Non-Productive Time Details --></label>
+            <section>Non-Productive Time Details</section>
+        </sections>
+        <sections>
+            <label><!-- PIA Codes --></label>
+            <section>PIA Codes</section>
+        </sections>
+        <sections>
+            <label><!-- Productive Time Details --></label>
+            <section>Productive Time Details</section>
+        </sections>
+        <sections>
+            <label><!-- TMA --></label>
+            <section>TMA</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Metering SA Page Layout</layout>
+        <sections>
+            <label><!-- Appointment Dates --></label>
+            <section>Appointment Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Jeopardy --></label>
+            <section>Jeopardy</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Appointment Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment Dates --></label>
+            <section>Appointment Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Debrief Comments --></label>
+            <section>Debrief Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Gantt Information --></label>
+            <section>Gantt Information</section>
+        </sections>
+        <sections>
+            <label><!-- Non-Productive Time Details --></label>
+            <section>Non-Productive Time Details</section>
+        </sections>
+        <sections>
+            <label><!-- PIA Codes &amp; Debrief Comments --></label>
+            <section>PIA Codes &amp; Debrief Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Productive Time Details --></label>
+            <section>Productive Time Details</section>
+        </sections>
+        <sections>
+            <label><!-- Scheduling Details --></label>
+            <section>Scheduling Details</section>
+        </sections>
+        <sections>
+            <label><!-- Scores --></label>
+            <section>Scores</section>
+        </sections>
+        <sections>
+            <label><!-- Subject --></label>
+            <section>Subject</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Site Worker SA Page Layout</layout>
+        <sections>
+            <label><!-- Appointment Dates --></label>
+            <section>Appointment Dates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Waste Field worker SA Page Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment Dates --></label>
+            <section>Appointment Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- TMA --></label>
+            <section>TMA</section>
+        </sections>
+        <sections>
+            <label><!-- Time Entry Details --></label>
+            <section>Time Entry Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Water Field worker SA Page Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment Dates --></label>
+            <section>Appointment Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- TMA --></label>
+            <section>TMA</section>
+        </sections>
+        <sections>
+            <label><!-- Time Entry Details --></label>
+            <section>Time Entry Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Blockage Hotspot --></label>
+        <name>Blockage_Hotpot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Blockage Hotspot --></label>
+        <name>Blockage_Hotspot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Capture Notes --></label>
+        <name>Capture_Notes</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Endre status</label>
+        <name>FSL__Change_Status</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Bulk Update Status --></label>
+        <name>FSM_BulkUpdateStatus</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Bulk Update Status --></label>
+        <name>FSM_BulkUpdateStatusMobile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Capture Non Productive Time --></label>
+        <name>FSM_CaptureNonProductiveTime</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Capture Travel Time --></label>
+        <name>FSM_CaptureTravelTime</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Status --></label>
+        <name>FSM_ChangeStatus</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Data Retrieval --></label>
+        <name>FSM_DataRetrieval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Data Retrieval --></label>
+        <name>FSM_DataRetrievalComp</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Distribution FeedbackForm --></label>
+        <name>FSM_DistributionFeedbackForm</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage Crew --></label>
+        <name>FSM_ManageCrew</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Proformas &amp; Customer Comms --></label>
+        <name>FSM_ProformasCustomerComms</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Select and Schedule --></label>
+        <name>FSM_SelectAndSchedule</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload Photos &amp; Files --></label>
+        <name>FSM_UploadFilesDesktopFlow</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- TMA Start / Stop --></label>
+        <name>TMA_Start_Stop</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload Photos &amp; Files --></label>
+        <name>Upload_Photos_Files</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Archived Upload Photos &amp; Files --></label>
+        <name>Upload_Photos_Filesdesktop</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 10. Data Retrieval --></label>
+        <name>X10Data_Retrieval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Status --></label>
+        <name>X1FSM_ChangeStatus</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 3. Bulk status change --></label>
+        <name>X3_Bulk_status_change</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 3. Bulk Update Status --></label>
+        <name>X3_FSM_BulkUpdateStatusMobile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 4. Upload photos &amp; files --></label>
+        <name>X4_Upload_photos_files</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 5. Data Retrieval --></label>
+        <name>X5_Data_Retrieval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 5. Job Self- Assignment --></label>
+        <name>X5_FSM_SelectAndSchedule</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 6. Data Retrieval --></label>
+        <name>X6_Data_Retrieval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 7. Manage Crew --></label>
+        <name>X7Manage_Crew_Mobile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 7. Upload photos &amp; Files --></label>
+        <name>X7UploadPhotosAndFiles</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 8. Blockage Hotspot --></label>
+        <name>X8Blockage_Hotpot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 8. Upload Photos &amp; Files --></label>
+        <name>X8Upload_Photos_Files</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 9. Upload photos &amp; Files --></label>
+        <name>X9UploadPhotosAndFiles</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 9. Data Retrieval --></label>
+        <name>X9_Data_Retrieval</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Bio Resource --></label>
+        <name>FSM_BioResource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Developer Services --></label>
+        <name>FSM_DeveloperServices</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Metering --></label>
+        <name>FSM_Metering</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Virtual DST --></description>
+        <label><!-- Virtual DST --></label>
+        <name>FSM_Virtual</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Waste Infra --></label>
+        <name>FSM_WasteInfra</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Waste Non Infra --></label>
+        <name>FSM_WasteNonInfra</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Water Infra --></label>
+        <name>FSM_WaterInfra</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Water Non Infra --></label>
+        <name>FSM_WaterNonInfra</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You need to provide a Business Unit. --></errorMessage>
+        <name>Business_Unit_as_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ny tjenesteavtale kan ikke opprettes med planlagt eller utsendt status.</errorMessage>
+        <name>FSL__Dont_allow_scheduled_or_dispatched</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Velg en gyldig avhengighetstype. Hvis avtalene må tildeles til samme ressurs, kan ikke avhengighetstypen være Samme start.</errorMessage>
+        <name>FSL__Related_Service_with_time_dependency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ressursavhengighet er ugyldig. Tidsavhengighet kan ikke være Samme start når samme ressurs kreves.</errorMessage>
+        <name>FSL__Same_Resource_Same_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Både planlagt start og slutt kreves</errorMessage>
+        <name>FSL__Schedule_End_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Både planlagt start og slutt kreves</errorMessage>
+        <name>FSL__Schedule_Start_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Gantt-farger må være i heksadesimalt format: (for eksempel: #ffffff)</errorMessage>
+        <name>FSL__Service_Color_HEX_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Velg Relatert tjeneste.</errorMessage>
+        <name>FSL__Time_dependency_with_related_service</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>DueDate-felt er nødvendig</errorMessage>
+        <name>FSL__isDueDateExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Varighet-felt er nødvendig</errorMessage>
+        <name>FSL__isDurationExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>EarliestStartTime-felt er nødvendig</errorMessage>
+        <name>FSL__isEarliestStartTimeExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Planlagt start må være tidligere enn planlagt slutt.</errorMessage>
+        <name>FSL__startTimeShouldPrecedeEndTime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate Cancellation Reason if the status is Cancelled. --></errorMessage>
+        <name>FSM_CancellationReasonsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This appointment is related to a customer appointment booking and can&apos;t be scheduled. --></errorMessage>
+        <name>FSM_DoNotAllowScheduleIfCustAppointmnet</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have sufficient access to create a new Service Appointment --></errorMessage>
+        <name>FSM_PreventSACreation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate Reject Reasons if the status is &apos;Rejected&apos; --></errorMessage>
+        <name>FSM_RejectReasonsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start time cannot exceed End time --></errorMessage>
+        <name>FSM_StartTimeShouldPreceedEndTime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate Suspend Reasons if the status is &apos;Cannot Complete&apos; --></errorMessage>
+        <name>FSM_SuspendReasonsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Jobs must be ready for dispatch to change the Status. Check TMA has been approved (if required) and all mandatory Work Order Line Items are completed or not. --></errorMessage>
+        <name>Ready_for_Dispatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Appointment is not ready for schedule. please check WOLIs mandatory for scheduling are completed or If working sub area is applicable for this territory, It is populated on SA. --></errorMessage>
+        <name>Ready_for_Schedule</name>
+    </validationRules>
+</CustomObjectTranslation>

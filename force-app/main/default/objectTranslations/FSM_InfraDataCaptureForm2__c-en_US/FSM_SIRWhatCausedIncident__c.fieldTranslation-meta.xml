@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What caused incident? --></label>
+    <name>FSM_SIRWhatCausedIncident__c</name>
+    <picklistValues>
+        <masterLabel>Blockage</masterLabel>
+        <translation><!-- Blockage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collapse</masterLabel>
+        <translation><!-- Collapse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment failure</masterLabel>
+        <translation><!-- Equipment failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole cover</masterLabel>
+        <translation><!-- Manhole cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nothing found</masterLabel>
+        <translation><!-- Nothing found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power failure</masterLabel>
+        <translation><!-- Power failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storm</masterLabel>
+        <translation><!-- Storm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspected Collapse</masterLabel>
+        <translation><!-- Suspected Collapse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown at this time</masterLabel>
+        <translation><!-- Unknown at this time --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

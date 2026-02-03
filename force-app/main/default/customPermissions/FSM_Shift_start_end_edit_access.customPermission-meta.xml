@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>this is created so that  only business admin can edit start and end time fields on shift among all users who share standard desktop user profile</description>
+    <isLicensed>false</isLicensed>
+    <label>FSM Shift start end edit access</label>
+</CustomPermission>

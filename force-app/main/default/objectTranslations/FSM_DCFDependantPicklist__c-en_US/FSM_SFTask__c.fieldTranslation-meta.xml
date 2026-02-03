@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Task SF --></label>
+    <name>FSM_SFTask__c</name>
+    <picklistValues>
+        <masterLabel>Cleanup</masterLabel>
+        <translation><!-- Cleanup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct</masterLabel>
+        <translation><!-- Construct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding related CCTV</masterLabel>
+        <translation><!-- Flooding related CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding related sewer cleanse</masterLabel>
+        <translation><!-- Flooding related sewer cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapping</masterLabel>
+        <translation><!-- Mapping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned CCTV</masterLabel>
+        <translation><!-- Planned CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Sewer Cleanse</masterLabel>
+        <translation><!-- Planned Sewer Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Wet Well Cleanse</masterLabel>
+        <translation><!-- Planned Wet Well Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned inspection</masterLabel>
+        <translation><!-- Planned inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned tankering</masterLabel>
+        <translation><!-- Planned tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive CCTV</masterLabel>
+        <translation><!-- Reactive CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Root cut</masterLabel>
+        <translation><!-- Reactive Root cut --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Sewer cleanse</masterLabel>
+        <translation><!-- Reactive Sewer cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Wet Well Cleanse</masterLabel>
+        <translation><!-- Reactive Wet Well Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive tankering</masterLabel>
+        <translation><!-- Reactive tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rectify defective reinstatement</masterLabel>
+        <translation><!-- Rectify defective reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstate</masterLabel>
+        <translation><!-- Reinstate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove</masterLabel>
+        <translation><!-- Remove --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renew</masterLabel>
+        <translation><!-- Renew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair</masterLabel>
+        <translation><!-- Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reset</masterLabel>
+        <translation><!-- Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP CCTV</masterLabel>
+        <translation><!-- SSIP CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP Cleanse</masterLabel>
+        <translation><!-- SSIP Cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSIP Repair</masterLabel>
+        <translation><!-- SSIP Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer patch line</masterLabel>
+        <translation><!-- Sewer patch line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer reline</masterLabel>
+        <translation><!-- Sewer reline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support</masterLabel>
+        <translation><!-- Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic management only</masterLabel>
+        <translation><!-- Traffic management only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unplanned inspection</masterLabel>
+        <translation><!-- Unplanned inspection --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

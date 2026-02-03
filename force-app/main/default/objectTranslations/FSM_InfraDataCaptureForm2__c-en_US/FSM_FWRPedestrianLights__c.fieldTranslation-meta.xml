@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pedestrian lights --></label>
+    <name>FSM_FWRPedestrianLights__c</name>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedestrian Light Switch Off</masterLabel>
+        <translation><!-- Pedestrian Light Switch Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pelican Crossing</masterLabel>
+        <translation><!-- Pelican Crossing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm Light Switch Off Zebra Crossing</masterLabel>
+        <translation><!-- Perm Light Switch Off Zebra Crossing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

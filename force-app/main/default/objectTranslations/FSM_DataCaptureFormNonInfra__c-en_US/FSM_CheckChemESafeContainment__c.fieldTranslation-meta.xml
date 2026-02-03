@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Check Chem-e-safe containment are empty --></label>
+    <name>FSM_CheckChemESafeContainment__c</name>
+</CustomFieldTranslation>

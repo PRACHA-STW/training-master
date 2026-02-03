@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Standard</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>FSM_SAPOrderOperationNumber__c</fields>
+    <fields>FSM_StandardTextKey__c</fields>
+    <fields>Status</fields>
+    <fields>StartDate</fields>
+    <fields>EndDate</fields>
+    <fields>FSM_ServiceOrderType__c</fields>
+    <label>FSM Standard</label>
+</CompactLayout>

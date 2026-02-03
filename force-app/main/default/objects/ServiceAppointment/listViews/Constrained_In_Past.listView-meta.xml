@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Constrained_In_Past</fullName>
+    <columns>Name</columns>
+    <columns>FSM_ExternalId__c</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>Status</columns>
+    <columns>LatestEndTime</columns>
+    <columns>ZIP</columns>
+    <columns>FSM_ConstraintStart__c</columns>
+    <columns>FSM_ConstraintEnd__c</columns>
+    <columns>FSM_TMAEstimatedStartDateTime__c</columns>
+    <columns>FSM_TMALatestStartDate__c</columns>
+    <columns>FSM_NoticeTypeAndState__c</columns>
+    <columns>FSM_TMAApprovalStatus__c</columns>
+    <columns>FSM_TMA_Permit__c</columns>
+    <columns>ServiceTerritory</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_ConstraintStart__c</field>
+        <operation>lessThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>WD1</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>Cannot Complete,Completed,Cancelled</value>
+    </filters>
+    <filters>
+        <field>FSM_TMAApprovalStatus__c</field>
+        <operation>notContain</operation>
+        <value>Cancelled,Complete,Reinstated,Works in Progress</value>
+    </filters>
+    <label>Constrained In The Past - Gang</label>
+    <sharedTo>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

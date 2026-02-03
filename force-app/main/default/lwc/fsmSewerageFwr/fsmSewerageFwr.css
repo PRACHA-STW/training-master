@@ -1,0 +1,70 @@
+table {
+    border-spacing: 3px;
+  }
+  
+  td,
+  th {
+    padding: 7px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .required {
+    align-self: flex-start;
+    color: red;
+  }
+  .slds-truncate {
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: normal !important;
+}
+
+  
+  /* Mobile styles */
+  @media screen and (max-width: 600px) {
+    .slds-table thead {
+      display: none;
+    }
+  
+    .slds-table tbody tr {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+    }
+  
+    .slds-table tbody tr td {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    .slds-table tbody td:first-child {
+      font-weight: bold;
+    }
+    .slds-form{
+      background-color: white;
+    }
+
+    .multiselectcls.slds-dueling-list__options ul{
+      overflow-x: scroll !important;
+      border:4px solid red;
+    }
+    
+      .multiselectcls.slds-dual-listbox__options {
+          max-height: 200px;
+        
+      } 
+      .multiselectcls.slds-listbox__option .slds-truncate {
+        display: inline !important;
+        overflow-x: visible !important;
+      }
+    
+      .slds-truncate {
+        max-width: 100% !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: normal !important;
+    }
+  }

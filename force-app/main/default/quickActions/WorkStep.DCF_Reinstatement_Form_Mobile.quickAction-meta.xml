@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as a part of SFS-6563</description>
+    <flowDefinition>DCF_Reinstatement_Form</flowDefinition>
+    <label>DCF Reinstatement Form-Mobile</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

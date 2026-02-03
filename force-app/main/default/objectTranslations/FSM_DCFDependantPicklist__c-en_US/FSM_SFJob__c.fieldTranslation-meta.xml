@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job SF --></label>
+    <name>FSM_SFJob__c</name>
+    <picklistValues>
+        <masterLabel>Contractor-CSP</masterLabel>
+        <translation><!-- Contractor-CSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor-IWJS</masterLabel>
+        <translation><!-- Contractor-IWJS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLO</masterLabel>
+        <translation><!-- DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLO-WNRT</masterLabel>
+        <translation><!-- DLO-WNRT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

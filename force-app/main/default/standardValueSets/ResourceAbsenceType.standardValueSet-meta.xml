@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>AdminDownTime</fullName>
+        <default>false</default>
+        <label>AdminDownTime</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TemetraSchedule</fullName>
+        <default>false</default>
+        <label>TemetraSchedule</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Travel</fullName>
+        <default>false</default>
+        <label>Travel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AdditionalWork</fullName>
+        <default>false</default>
+        <label>AdditionalWork</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Break</fullName>
+        <default>true</default>
+        <label>Break</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vacation</fullName>
+        <default>false</default>
+        <label>Vacation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical</fullName>
+        <default>false</default>
+        <label>Medical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annual Leave</fullName>
+        <default>false</default>
+        <label>Annual Leave</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other Leave</fullName>
+        <default>false</default>
+        <label>Other Leave</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Appointment</fullName>
+        <default>false</default>
+        <label>Medical Appointment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Career Break</fullName>
+        <default>false</default>
+        <label>Career Break</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Maternity Leave</fullName>
+        <default>false</default>
+        <label>Maternity Leave</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paternity Leave</fullName>
+        <default>false</default>
+        <label>Paternity Leave</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annual Leave - Hours</fullName>
+        <default>false</default>
+        <label>Annual Leave - Hours</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Union</fullName>
+        <default>false</default>
+        <label>Trade Union</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Time off in Lieu</fullName>
+        <default>false</default>
+        <label>Time off in Lieu</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sickness</fullName>
+        <default>false</default>
+        <label>Sickness</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Education/Study Leave</fullName>
+        <default>false</default>
+        <label>Education/Study Leave</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Volunteer– Corp. time</fullName>
+        <default>false</default>
+        <label>Volunteer– Corp. time</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting - Team</fullName>
+        <default>false</default>
+        <label>Meeting - Team</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Comm Cell</fullName>
+        <default>false</default>
+        <label>Comm Cell</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vehicle servicing</fullName>
+        <default>false</default>
+        <label>Vehicle servicing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other duties</fullName>
+        <default>false</default>
+        <label>Other duties</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting - Business</fullName>
+        <default>false</default>
+        <label>Meeting - Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Working From Home</fullName>
+        <default>false</default>
+        <label>Working From Home</label>
+    </standardValue>
+    <standardValue>
+        <fullName>KIT Days</fullName>
+        <default>false</default>
+        <label>KIT Days</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training (ESS booking)</fullName>
+        <default>false</default>
+        <label>Training (ESS booking)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rest Period</fullName>
+        <default>false</default>
+        <label>Rest Period</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vehicle Checks</fullName>
+        <default>false</default>
+        <label>Vehicle Checks</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AM Admin Duties</fullName>
+        <default>false</default>
+        <label>AM Admin Duties</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AM Dept Comms/Performance</fullName>
+        <default>false</default>
+        <label>AM Dept Comms/Performance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AM General</fullName>
+        <default>false</default>
+        <label>AM General</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AM Research</fullName>
+        <default>false</default>
+        <label>AM Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting - Capital</fullName>
+        <default>false</default>
+        <label>Meeting - Capital</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Volunteer</fullName>
+        <default>false</default>
+        <label>Volunteer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vehicle Maintenance - Planned</fullName>
+        <default>false</default>
+        <label>Vehicle Maintenance - Planned</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vehicle Maintenance - Unplanned</fullName>
+        <default>false</default>
+        <label>Vehicle Maintenance - Unplanned</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Local Working Practices</fullName>
+        <default>false</default>
+        <label>Local Working Practices</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1st Call Standby</fullName>
+        <default>false</default>
+        <label>1st Call Standby</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2nd Call Standby</fullName>
+        <default>false</default>
+        <label>2nd Call Standby</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+    <ltng:require styles="{!$Resource.fsmSewerageFeedbackDesktopStylesheet}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <c:fsmSewerageJobFeedback recordId="{!v.recordId}"></c:fsmSewerageJobFeedback>
+</aura:component>

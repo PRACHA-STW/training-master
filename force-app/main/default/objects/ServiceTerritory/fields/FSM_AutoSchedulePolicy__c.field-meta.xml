@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AutoSchedulePolicy__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SFS-110</description>
+    <inlineHelpText>Asset based policy</inlineHelpText>
+    <label>Auto Scheduling Policy</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <valueField>FSL__Scheduling_Policy__c.FSM_BusinessUnit__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FSL__Scheduling_Policy__c</referenceTo>
+    <relationshipLabel>Service Territories (Auto Scheduling Policy)</relationshipLabel>
+    <relationshipName>Service_Territories1</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

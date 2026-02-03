@@ -1,0 +1,173 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,forceCommunity:availableForAllPageTypes,force:hasRecordId,flexipage:availableForAllPageTypes">
+    
+    <aura:html tag="style">             
+        .slds-modal__container{        
+        width: 85% !important;
+        height: 100% !important;
+        max-width: 80rem !important;
+        }        
+    </aura:html>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:fsm_simpleSketch recordId="{!v.recordId}"></c:fsm_simpleSketch>
+
+    <aura:html tag="style">  
+        <!-- Media query for normal desktop devices -->
+        @media screen and (min-width: 1285px) {
+
+            .slds-modal__container {
+                width: 80% !important;
+                height: 115% !important;
+                max-width: 100rem !important;
+                margin-top: -10px;
+            }        
+            <!-- .slds-card__header{
+                display: none !important;
+            } -->
+            .slds-modal__header .slds-modal__close {
+                position: absolute;
+                top: -2.5rem;
+                right: -2.5rem;
+                margin-left: 0;
+                bottom: 0;
+            }
+            .wrapper-next.next-align{
+                float: right !important;
+            }
+            .shape-select.custom-width .slds-combobox__input,
+            .shape-thickness-select.custom-width .slds-combobox__input {
+            width: 150px;
+            }
+            .custom-combobox .slds-listbox__item,
+            .custom-combobox .slds-listbox_vertical .slds-listbox__option_plain {
+            max-width: 100px !important; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 0.34rem;
+            }
+            .no-label .slds-form-element__label {
+                display: none;
+            }
+        }     
+        
+        <!-- Media query for tablets and mam unit screens -->
+        @media screen and (min-width: 768px) and (max-width: 1285px) {
+            .wrapper-next.next-align{
+                float: right !important;
+            }
+            .slds-modal__container {
+                width: 90% !important;
+                height: 118% !important;
+                max-width: 100rem !important;
+                margin-top: -35px;
+            }        
+            .no-label .slds-form-element__label {
+                display: none;
+            }
+            <!-- .slds-card__header{
+                display: none !important;
+            } -->
+            .find-nearby-main-container button.slds-combobox__input{
+                <!-- width:100%; -->
+                border: 1px solid #dddbda;
+                -webkit-transition: border .15s linear;
+                transition: border .15s linear;
+                border-color: #dddbda;
+                background-color: #fff;
+                text-align: center;
+                border-radius: .25rem;
+            }
+            .slds-p-around_medium, .slds-p-around--medium {
+                padding: 0;
+            }
+            .slds-modal__header .slds-modal__close {
+                position: absolute;
+                top: -1.0rem;
+                right: -2.5rem;
+                margin-left: 0;
+                bottom: 0;
+            }
+            .shape-select.custom-width .slds-combobox__input,
+            .shape-thickness-select.custom-width .slds-combobox__input {
+            width: 150px;
+            }
+            .custom-combobox .slds-listbox__item,
+            .custom-combobox .slds-listbox_vertical .slds-listbox__option_plain {
+            max-width: 100px !important; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 0.34rem;
+            }
+        }
+        /* Mobile-specific styles */
+        @media (max-width: 480px) {
+            .slds-combobox__listbox {
+                position: absolute;
+                top: auto;
+                bottom: 100%;
+            }
+            .no-label .slds-form-element__label {
+                display: none;
+            }
+        }
+        /* Mobile-specific styles */
+        @media (max-width: 767px) {
+            .no-label .slds-form-element__label {
+                display: none;
+            }
+            .shape-thickness-select .slds-dropdown-trigger_click .slds-dropdown,
+            .shape-thickness-select .slds-dropdown-trigger_click:hover .slds-dropdown,
+            .shape-thickness-select .slds-dropdown-trigger--click .slds-dropdown,
+            .shape-thickness-select .slds-dropdown-trigger--click:hover .slds-dropdown {
+                right: 0 !important;
+                top: 40px !important;
+                min-width: 50px !important;
+                max-width: 100px !important;
+            }
+        }
+        <!-- Media query for bigger desktop devices -->
+        @media screen and (min-width: 1300px) {
+            .slds-modal__content {
+                height: auto !important;
+                <!-- min-height: 500px; -->
+            }
+            .slds-modal__container {
+                width: 60% !important;
+                height: 110% !important;
+                max-width: 100rem !important;
+                margin-top: 0%;
+            }       
+            .wrapper-next.next-align{
+                float: right !important;
+            } 
+            
+            <!-- .slds-card__header{
+                display: none !important;
+            } -->
+            .slds-modal__header .slds-modal__close {
+                position: absolute;
+                top: -2.5rem;
+                right: -2.5rem;
+                margin-left: 0;
+                bottom: 0;
+            }
+            .shape-select.custom-width .slds-combobox__input,
+            .shape-thickness-select.custom-width .slds-combobox__input {
+            width: 150px;
+            }
+            .custom-combobox .slds-listbox__item,
+            .custom-combobox .slds-listbox_vertical .slds-listbox__option_plain {
+            max-width: 100px !important; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 0.34rem;
+            }
+        }         
+    </aura:html>
+
+    <!-- <c:setCanvasSizeToImage /> -->
+</aura:component>

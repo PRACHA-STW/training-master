@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_StartAndEndDateValidation</fullName>
+    <active>true</active>
+    <description>SFS-1196/SFS-1269</description>
+    <errorConditionFormula>FSM_StartAndEndDateNotValid__c</errorConditionFormula>
+    <errorMessage>The Sub Area Coverage Start and End is overlapping with another Area Coverage, please correct the start and end date and check polygon for avoiding duplicate entries.</errorMessage>
+</ValidationRule>

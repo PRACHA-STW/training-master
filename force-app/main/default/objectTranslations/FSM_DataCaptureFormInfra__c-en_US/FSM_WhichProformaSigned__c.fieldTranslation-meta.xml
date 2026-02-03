@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Is the works on private and do we require permission for access and to complete the work ? --></help>
+    <label><!-- Which Proforma signed? --></label>
+    <name>FSM_WhichProformaSigned__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select the correct road speed --></help>
+    <label><!-- Road Speed (mph) --></label>
+    <name>FSM_Speed__c</name>
+    <picklistValues>
+        <masterLabel>20</masterLabel>
+        <translation><!-- 20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30</masterLabel>
+        <translation><!-- 30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>40</masterLabel>
+        <translation><!-- 40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50</masterLabel>
+        <translation><!-- 50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60</masterLabel>
+        <translation><!-- 60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>70</masterLabel>
+        <translation><!-- 70 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

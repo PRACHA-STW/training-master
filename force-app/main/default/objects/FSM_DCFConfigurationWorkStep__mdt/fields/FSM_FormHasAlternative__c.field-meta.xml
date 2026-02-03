@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_FormHasAlternative__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If ticked, this form has an alternate under the group specified. Any one of the forms in the group is required to be completed. Eg. Sewerage Incident Report or Sewerage Job Feedback.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If ticked, this form has an alternate under the group specified.</inlineHelpText>
+    <label>Has Alternative?</label>
+    <type>Checkbox</type>
+</CustomField>

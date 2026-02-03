@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OFTWAT Category of Int.: --></label>
+    <name>FSM_OFTWAT__c</name>
+    <picklistValues>
+        <masterLabel>Overruns</masterLabel>
+        <translation><!-- Overruns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned</masterLabel>
+        <translation><!-- Planned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party</masterLabel>
+        <translation><!-- Third Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unwarned</masterLabel>
+        <translation><!-- Unwarned --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

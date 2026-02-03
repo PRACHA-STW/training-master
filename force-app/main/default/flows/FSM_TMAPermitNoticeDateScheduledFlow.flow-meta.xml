@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>SFI-692</description>
+        <name>Is_Notice_Date_is_today</name>
+        <label>Is Notice Date is today?</label>
+        <locationX>182</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Today_is_notice_date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>NoticeDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_TMA_Notice_Notification</targetReference>
+            </connector>
+            <label>Today is notice date</label>
+        </rules>
+    </decisions>
+    <description>Created as part of SFI-692 , 693
+SFS-4133
+Updated for SFS-8357</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NoticeDate</name>
+        <dataType>Date</dataType>
+        <expression>DATETIMEVALUE({!$Record.FSM_NoticeDate__c})</expression>
+    </formulas>
+    <interviewLabel>FSM_TMAPermitNoticeDateScheduledFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM_TMAPermitNoticeDateScheduledFlow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Notice_Date_is_today</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FSM_NoticeDate__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>FSM_TMAPermit__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2023-11-01</startDate>
+            <startTime>23:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>SFI-692</description>
+        <name>Send_TMA_Notice_Notification</name>
+        <label>Send TMA Notice Notification</label>
+        <locationX>50</locationX>
+        <locationY>360</locationY>
+        <flowName>FSM_SendTmaInitialNoticeUpdate</flowName>
+        <inputAssignments>
+            <name>TmaRecordInput</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

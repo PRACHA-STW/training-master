@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NumberDials__c</fullName>
+    <description>Created for SAL-1321</description>
+    <label>New number of dials</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4 dial</fullName>
+                <default>false</default>
+                <label>4 dial</label>
+            </value>
+            <value>
+                <fullName>5 dial</fullName>
+                <default>false</default>
+                <label>5 dial</label>
+            </value>
+            <value>
+                <fullName>6 dial</fullName>
+                <default>false</default>
+                <label>6 dial</label>
+            </value>
+            <value>
+                <fullName>7 dial</fullName>
+                <default>false</default>
+                <label>7 dial</label>
+            </value>
+            <value>
+                <fullName>8 dial</fullName>
+                <default>false</default>
+                <label>8 dial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

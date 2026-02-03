@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Train or Tram --></label>
+    <name>FSM_FWRTrainOrTram__c</name>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Train no impact</masterLabel>
+        <translation><!-- Train no impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Train within 200m</masterLabel>
+        <translation><!-- Train within 200m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tram no impact</masterLabel>
+        <translation><!-- Tram no impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tram within 200m</masterLabel>
+        <translation><!-- Tram within 200m --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

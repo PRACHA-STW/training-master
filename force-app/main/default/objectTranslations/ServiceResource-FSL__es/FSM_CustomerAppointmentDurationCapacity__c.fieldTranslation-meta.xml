@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Customer Appointment Duration Capacity Per Day --></help>
+    <label><!-- Customer Appointment Duration Capacity --></label>
+    <name>FSM_CustomerAppointmentDurationCapacity__c</name>
+    <picklistValues>
+        <masterLabel>120 Minutes</masterLabel>
+        <translation><!-- 120 Minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>330 Minutes</masterLabel>
+        <translation><!-- 330 Minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>480 Minutes</masterLabel>
+        <translation><!-- 480 Minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60 Minutes</masterLabel>
+        <translation><!-- 60 Minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>90 Minutes</masterLabel>
+        <translation><!-- 90 Minutes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

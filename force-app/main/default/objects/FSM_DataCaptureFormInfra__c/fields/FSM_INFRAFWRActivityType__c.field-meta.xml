@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_INFRAFWRActivityType__c</fullName>
+    <inlineHelpText>Select One</inlineHelpText>
+    <label>Activity Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Utility repair &amp; maintenance work</fullName>
+                <default>false</default>
+                <label>Utility repair &amp; maintenance work</label>
+            </value>
+            <value>
+                <fullName>Utility asset work</fullName>
+                <default>false</default>
+                <label>Utility asset work</label>
+            </value>
+            <value>
+                <fullName>Optional permit no fee</fullName>
+                <default>false</default>
+                <label>Optional permit no fee</label>
+            </value>
+            <value>
+                <fullName>New service connection</fullName>
+                <default>false</default>
+                <label>New service connection</label>
+            </value>
+            <value>
+                <fullName>Interim to perm reinstatement</fullName>
+                <default>false</default>
+                <label>Interim to perm reinstatement</label>
+            </value>
+            <value>
+                <fullName>Diversionary works</fullName>
+                <default>false</default>
+                <label>Diversionary works</label>
+            </value>
+            <value>
+                <fullName>Disconnection or alternative supply</fullName>
+                <default>false</default>
+                <label>Disconnection or alternative supply</label>
+            </value>
+            <value>
+                <fullName>Core sampling</fullName>
+                <default>false</default>
+                <label>Core sampling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

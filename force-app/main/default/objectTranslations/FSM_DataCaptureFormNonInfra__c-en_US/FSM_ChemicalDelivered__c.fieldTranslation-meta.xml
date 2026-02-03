@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Chemical Delivered --></label>
+    <name>FSM_ChemicalDelivered__c</name>
+    <picklistValues>
+        <masterLabel>Aluminium Sulphate</masterLabel>
+        <translation><!-- Aluminium Sulphate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anti-Foam</masterLabel>
+        <translation><!-- Anti-Foam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calcium Nitrate</masterLabel>
+        <translation><!-- Calcium Nitrate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caustic Soda</masterLabel>
+        <translation><!-- Caustic Soda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chlorine</masterLabel>
+        <translation><!-- Chlorine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ferric Sulphate</masterLabel>
+        <translation><!-- Ferric Sulphate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ferrous Chloride</masterLabel>
+        <translation><!-- Ferrous Chloride --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ferrous Sulphate</masterLabel>
+        <translation><!-- Ferrous Sulphate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HFSA</masterLabel>
+        <translation><!-- HFSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrex 1110</masterLabel>
+        <translation><!-- Hydrex 1110 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrex 1258</masterLabel>
+        <translation><!-- Hydrex 1258 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrex 1568</masterLabel>
+        <translation><!-- Hydrex 1568 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrochloric Acid</masterLabel>
+        <translation><!-- Hydrochloric Acid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lime</masterLabel>
+        <translation><!-- Lime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monosodium Phosphate</masterLabel>
+        <translation><!-- Monosodium Phosphate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phosphoric Acid</masterLabel>
+        <translation><!-- Phosphoric Acid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polyaluminium Chloride</masterLabel>
+        <translation><!-- Polyaluminium Chloride --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polymer</masterLabel>
+        <translation><!-- Polymer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salt</masterLabel>
+        <translation><!-- Salt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sodium Bisulphite</masterLabel>
+        <translation><!-- Sodium Bisulphite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sodium Hypochlorite</masterLabel>
+        <translation><!-- Sodium Hypochlorite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solenis</masterLabel>
+        <translation><!-- Solenis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sulphuric Acid</masterLabel>
+        <translation><!-- Sulphuric Acid --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

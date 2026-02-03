@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Supporting Information --></label>
+    <name>FSM_SuppInfoURL__c</name>
+    <picklistValues>
+        <masterLabel>About your meter</masterLabel>
+        <translation><!-- About your meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apply for a Meter</masterLabel>
+        <translation><!-- Apply for a Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apply for a Meter (HD)</masterLabel>
+        <translation><!-- Apply for a Meter (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved Plumbers</masterLabel>
+        <translation><!-- Approved Plumbers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved Plumbers (HD)</masterLabel>
+        <translation><!-- Approved Plumbers (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assessed bill</masterLabel>
+        <translation><!-- Assessed bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building and Development</masterLabel>
+        <translation><!-- Building and Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building and Development (HD)</masterLabel>
+        <translation><!-- Building and Development (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Guide to Our Pressure Policy</masterLabel>
+        <translation><!-- Customer Guide to Our Pressure Policy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flushing Advice</masterLabel>
+        <translation><!-- Flushing Advice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Help Paying your Bill</masterLabel>
+        <translation><!-- Help Paying your Bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Help Paying your Bill (HD)</masterLabel>
+        <translation><!-- Help Paying your Bill (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Help when you need it</masterLabel>
+        <translation><!-- Help when you need it --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Help when you need it (HD)</masterLabel>
+        <translation><!-- Help when you need it (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrant Misuses</masterLabel>
+        <translation><!-- Hydrant Misuses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrant Misuses (HD)</masterLabel>
+        <translation><!-- Hydrant Misuses (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Replacement Scheme</masterLabel>
+        <translation><!-- Lead Replacement Scheme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Replacement Scheme (HD)</masterLabel>
+        <translation><!-- Lead Replacement Scheme (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead flushing advice following inspector visit</masterLabel>
+        <translation><!-- Lead flushing advice following inspector visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead flushing advice following repair visit</masterLabel>
+        <translation><!-- Lead flushing advice following repair visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Measured bill</masterLabel>
+        <translation><!-- Measured bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Connections</masterLabel>
+        <translation><!-- New Connections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Connections (HD)</masterLabel>
+        <translation><!-- New Connections (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment plans</masterLabel>
+        <translation><!-- Payment plans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priority Service</masterLabel>
+        <translation><!-- Priority Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priority Service (HD)</masterLabel>
+        <translation><!-- Priority Service (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rats guidance</masterLabel>
+        <translation><!-- Rats guidance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Severn Trent - Customer Appointment Checklist</masterLabel>
+        <translation><!-- Severn Trent - Customer Appointment Checklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Severn Trent - How complete a Flow / Toilet Paper Test</masterLabel>
+        <translation><!-- Severn Trent - How complete a Flow / Toilet Paper Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Severn Trent - How to find and operate your internal stop tap​</masterLabel>
+        <translation><!-- Severn Trent - How to find and operate your internal stop tap​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Severn Trent - Surface Water &amp; Highway Drainage</masterLabel>
+        <translation><!-- Severn Trent - Surface Water &amp; Highway Drainage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Severn Trent - Surface water drainage pouring test</masterLabel>
+        <translation><!-- Severn Trent - Surface water drainage pouring test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer Flooding Guide</masterLabel>
+        <translation><!-- Sewer Flooding Guide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer Pipe Responsibility</masterLabel>
+        <translation><!-- Sewer Pipe Responsibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer Pipe Responsibility (HD)</masterLabel>
+        <translation><!-- Sewer Pipe Responsibility (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmeasured bill</masterLabel>
+        <translation><!-- Unmeasured bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Pipe Responsibility</masterLabel>
+        <translation><!-- Water Pipe Responsibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Pipe Responsibility (HD)</masterLabel>
+        <translation><!-- Water Pipe Responsibility (HD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Quality Advice</masterLabel>
+        <translation><!-- Water Quality Advice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Saving Tips</masterLabel>
+        <translation><!-- Water Saving Tips --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Saving Tips (HD)</masterLabel>
+        <translation><!-- Water Saving Tips (HD) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

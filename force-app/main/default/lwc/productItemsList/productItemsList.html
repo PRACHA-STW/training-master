@@ -1,0 +1,85 @@
+<template>
+    <lightning-card>
+        <template if:true={sectionone}>
+                <!-- <lightning-card> -->
+                <div class="slds-m-horizontal_xx-small">
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                    <p>Location</p>
+                    </div>
+                <lightning-combobox variant="label-hidden" value={selectedlocation} options={locationoptions}
+                onchange={handlelocationChange} name="location" class="locationcls" required>
+                </lightning-combobox>
+                </div><br/>
+                <!-- </lightning-card> -->
+        </template>
+
+    <template if:true={sectiontwo}>
+
+                <!-- <lightning-card> -->
+                    <div class="slds-m-around_medium">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                <lightning-input label="Search" type="text" value={searchTerm} onkeyup={handleSearch} style="width:300px;"></lightning-input>
+                </div>
+               
+                <div class="slds-p-around_medium">
+                        <lightning-datatable
+                        key-field="Id"
+                        data={filteredproductitems}
+                        columns={columns}
+                        onrowselection={handleRowSelection}
+                        selected-rows={selectedRowIds}> <!--changes made as per SFL-709 -->
+                        </lightning-datatable>
+                </div>
+
+                </div>
+                <!-- hide-checkbox-column="false" -->
+                <!-- </lightning-card> -->
+
+    </template>
+    <template if:true={sectionthree}>
+        <div class="slds-m-around_medium">
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>User/Team Name</p>
+                <p> <lightning-helptext content="Example jhoggx1 or Team15"></lightning-helptext></p>
+            </div>
+            <lightning-input name="FSM_RecipientName__c" type="text" max-length="9" required variant="label-hidden"
+                value={recipientname} onchange={handlechangerecipientname} class="recptcls"
+                style="width: 300px;"></lightning-input>
+        
+            <div class="slds-p-around_medium">
+                <lightning-datatable key-field="Id" data={newarr} hide-checkbox-column="false" columns={columnseditableqty}
+                    onsave={handleSave}>
+                </lightning-datatable>
+            </div>
+            <!-- </lightning-card> -->
+        
+        </div>
+        <!-- </lightning-card> -->
+        
+        </template>
+        <template if:true={cancelclick}>
+            <lightning-card>
+                <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">Please click on close to exit
+                    the window</p>
+            </lightning-card>
+        </template>
+        <template if:true={recordsuccess}>
+            <lightning-card>
+                <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">Records created successfully.
+                    Click on Cancel to exit the window</p>
+            </lightning-card>
+        </template>
+        <template if:true={isEnableCancel}>
+            <lightning-button label="Cancel" variant="brand" onclick={handleCancel}></lightning-button>
+        </template>&nbsp;&nbsp;&nbsp;
+        <template if:true={isEnableNext}>
+            <lightning-button label="Next" onclick={handleNext} variant="brand"></lightning-button>
+        </template>&nbsp;&nbsp;&nbsp;
+        <template if:true={isEnableSubmit}>
+            <lightning-button label="Submit" onclick={handleSubmit} variant="brand"></lightning-button>
+        </template>
+        
+        </lightning-card>
+        </template>

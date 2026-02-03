@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CSOFlowDevice__c</fullName>
+    <description>Created as part of SFS-4811</description>
+    <label>Device Condition Corrective Action</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Clear - No FOW required</fullName>
+                <default>false</default>
+                <label>All Clear - No FOW required</label>
+            </value>
+            <value>
+                <fullName>Restricted - Further work required</fullName>
+                <default>false</default>
+                <label>Restricted - Further work required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

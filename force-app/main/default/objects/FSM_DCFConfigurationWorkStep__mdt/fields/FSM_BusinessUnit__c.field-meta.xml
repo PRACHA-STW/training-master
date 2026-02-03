@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_BusinessUnit__c</fullName>
+    <description>Business Unit</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Business Unit</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waste Infra</fullName>
+                <default>true</default>
+                <label>Waste Infra</label>
+            </value>
+            <value>
+                <fullName>Waste Non Infra</fullName>
+                <default>false</default>
+                <label>Waste Non Infra</label>
+            </value>
+            <value>
+                <fullName>Water Infra</fullName>
+                <default>false</default>
+                <label>Water Infra</label>
+            </value>
+            <value>
+                <fullName>Water Non Infra</fullName>
+                <default>false</default>
+                <label>Water Non Infra</label>
+            </value>
+            <value>
+                <fullName>Bio Resource</fullName>
+                <default>false</default>
+                <label>Bio Resource</label>
+            </value>
+            <value>
+                <fullName>Developer Services</fullName>
+                <default>false</default>
+                <label>Developer Services</label>
+            </value>
+            <value>
+                <fullName>Metering</fullName>
+                <default>false</default>
+                <label>Metering</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

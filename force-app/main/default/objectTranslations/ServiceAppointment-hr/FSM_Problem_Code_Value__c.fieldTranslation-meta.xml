@@ -1,0 +1,1773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Problem Code Value --></label>
+    <name>FSM_Problem_Code_Value__c</name>
+    <picklistValues>
+        <masterLabel>3rd party impact on network Contractor</masterLabel>
+        <translation><!-- 3rd party impact on network Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd party impact on network fire service</masterLabel>
+        <translation><!-- 3rd party impact on network fire service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd party impact on network illegal</masterLabel>
+        <translation><!-- 3rd party impact on network illegal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd party impact on network other</masterLabel>
+        <translation><!-- 3rd party impact on network other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Access problems - No keys</masterLabel>
+        <translation><!-- Access problems - No keys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Access problems - site closed</masterLabel>
+        <translation><!-- Access problems - site closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aerated Water</masterLabel>
+        <translation><!-- Aerated Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alarm issue found</masterLabel>
+        <translation><!-- Alarm issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alarm or Problem Indicator Fail</masterLabel>
+        <translation><!-- Alarm or Problem Indicator Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Already metered and meter is working</masterLabel>
+        <translation><!-- Already metered and meter is working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>As per Action code</masterLabel>
+        <translation><!-- As per Action code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Availability</masterLabel>
+        <translation><!-- Asset Availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Failed or Requires Attention</masterLabel>
+        <translation><!-- Asset Failed or Requires Attention --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Failure – Network</masterLabel>
+        <translation><!-- Asset Failure – Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Failure – Storage Reservoir</masterLabel>
+        <translation><!-- Asset Failure – Storage Reservoir --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Failure – Treatment</masterLabel>
+        <translation><!-- Asset Failure – Treatment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attendance/Repair Date required</masterLabel>
+        <translation><!-- Attendance/Repair Date required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awco&apos;d too early</masterLabel>
+        <translation><!-- Awco&apos;d too early --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOPPS Referral</masterLabel>
+        <translation><!-- BOPPS Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery Work Carried out</masterLabel>
+        <translation><!-- Battery Work Carried out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery already exchanged</masterLabel>
+        <translation><!-- Battery already exchanged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bearing Problem</masterLabel>
+        <translation><!-- Bearing Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biological Process Fail</masterLabel>
+        <translation><!-- Biological Process Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bits in Water</masterLabel>
+        <translation><!-- Bits in Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blank meter display</masterLabel>
+        <translation><!-- Blank meter display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blanking Plate/removed TP</masterLabel>
+        <translation><!-- Blanking Plate/removed TP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockage</masterLabel>
+        <translation><!-- Blockage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blocked Access</masterLabel>
+        <translation><!-- Blocked Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boards/barrrier nuisance/blocking access</masterLabel>
+        <translation><!-- Boards/barrrier nuisance/blocking access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boards/barrriers causing danger</masterLabel>
+        <translation><!-- Boards/barrriers causing danger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boards/barrriers fallen over</masterLabel>
+        <translation><!-- Boards/barrriers fallen over --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boards/barrriers left behind</masterLabel>
+        <translation><!-- Boards/barrriers left behind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boards/barrriers vandalised</masterLabel>
+        <translation><!-- Boards/barrriers vandalised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bogus Caller</masterLabel>
+        <translation><!-- Bogus Caller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brickwork repaired</masterLabel>
+        <translation><!-- Brickwork repaired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broken Component</masterLabel>
+        <translation><!-- Broken Component --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burst Main</masterLabel>
+        <translation><!-- Burst Main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burst or leak at the meter</masterLabel>
+        <translation><!-- Burst or leak at the meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cable Run not Possible</masterLabel>
+        <translation><!-- Cable Run not Possible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibration Problem</masterLabel>
+        <translation><!-- Calibration Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Can&apos;t locate MST after trace</masterLabel>
+        <translation><!-- Can&apos;t locate MST after trace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catchment Area Problems</masterLabel>
+        <translation><!-- Catchment Area Problems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change in Severity</masterLabel>
+        <translation><!-- Change in Severity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of network configuration</masterLabel>
+        <translation><!-- Change of network configuration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of surrounding area or land use</masterLabel>
+        <translation><!-- Change of surrounding area or land use --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of water source</masterLabel>
+        <translation><!-- Change of water source --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change to meter/meter type of same size</masterLabel>
+        <translation><!-- Change to meter/meter type of same size --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical dosing rig issue found</masterLabel>
+        <translation><!-- Chemical dosing rig issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical process Fail</masterLabel>
+        <translation><!-- Chemical process Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chlorine / TCP Complaint</masterLabel>
+        <translation><!-- Chlorine / TCP Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cold Weather</masterLabel>
+        <translation><!-- Cold Weather --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial/sub-alt meter installation</masterLabel>
+        <translation><!-- Commercial/sub-alt meter installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complex: Planned cleanse/monitor recomm.</masterLabel>
+        <translation><!-- Complex: Planned cleanse/monitor recomm. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complex: Re-inspection recommendation</masterLabel>
+        <translation><!-- Complex: Re-inspection recommendation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Condensation</masterLabel>
+        <translation><!-- Condensation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Condensation on pipes (leak jobs only)</masterLabel>
+        <translation><!-- Condensation on pipes (leak jobs only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confirmed Occupier Change</masterLabel>
+        <translation><!-- Confirmed Occupier Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consequential damage</masterLabel>
+        <translation><!-- Consequential damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crime</masterLabel>
+        <translation><!-- Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cust objection/refusal</masterLabel>
+        <translation><!-- Cust objection/refusal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cust objection/refusal after inspection</masterLabel>
+        <translation><!-- Cust objection/refusal after inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Refused Cable Run</masterLabel>
+        <translation><!-- Customer Refused Cable Run --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer cancelled</masterLabel>
+        <translation><!-- Customer cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer insisted on internal meter fit</masterLabel>
+        <translation><!-- Customer insisted on internal meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer not in</masterLabel>
+        <translation><!-- Customer not in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer not present - unable to fit met</masterLabel>
+        <translation><!-- Customer not present - unable to fit met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer refused access</masterLabel>
+        <translation><!-- Customer refused access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer refused access to property</masterLabel>
+        <translation><!-- Customer refused access to property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer refused internal installation</masterLabel>
+        <translation><!-- Customer refused internal installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer refused meter fit</masterLabel>
+        <translation><!-- Customer refused meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer specific issue</masterLabel>
+        <translation><!-- Customer specific issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - FR01</masterLabel>
+        <translation><!-- DO NOT USE - FR01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - FR18</masterLabel>
+        <translation><!-- DO NOT USE - FR18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - FR19</masterLabel>
+        <translation><!-- DO NOT USE - FR19 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - FR20</masterLabel>
+        <translation><!-- DO NOT USE - FR20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - FR24</masterLabel>
+        <translation><!-- DO NOT USE - FR24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - FR25</masterLabel>
+        <translation><!-- DO NOT USE - FR25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - FR34</masterLabel>
+        <translation><!-- DO NOT USE - FR34 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE - MR23</masterLabel>
+        <translation><!-- DO NOT USE - MR23 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged Boundary Box unable to fit</masterLabel>
+        <translation><!-- Damaged Boundary Box unable to fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dangerous read due to H &amp; S issues</masterLabel>
+        <translation><!-- Dangerous read due to H &amp; S issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defect</masterLabel>
+        <translation><!-- Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Difficult read due to meter location</masterLabel>
+        <translation><!-- Difficult read due to meter location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital display unit defective</masterLabel>
+        <translation><!-- Digital display unit defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dirt or Foreign Matter</masterLabel>
+        <translation><!-- Dirt or Foreign Matter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dirty or flooded meter</masterLabel>
+        <translation><!-- Dirty or flooded meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discolouration</masterLabel>
+        <translation><!-- Discolouration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dissatisfied with reinstatement quality</masterLabel>
+        <translation><!-- Dissatisfied with reinstatement quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dissatisfied with reinstatement type</masterLabel>
+        <translation><!-- Dissatisfied with reinstatement type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dissatisfied with workmanship on site</masterLabel>
+        <translation><!-- Dissatisfied with workmanship on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use -  TW04</masterLabel>
+        <translation><!-- Do Not Use -  TW04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use -  UR10</masterLabel>
+        <translation><!-- Do Not Use -  UR10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use - ME24</masterLabel>
+        <translation><!-- Do Not Use - ME24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use - RR06</masterLabel>
+        <translation><!-- Do Not Use - RR06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use - TW12</masterLabel>
+        <translation><!-- Do Not Use - TW12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use - TW13</masterLabel>
+        <translation><!-- Do Not Use - TW13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use - UR02</masterLabel>
+        <translation><!-- Do Not Use - UR02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use - UR20</masterLabel>
+        <translation><!-- Do Not Use - UR20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use - Wiring faulty at meter end</masterLabel>
+        <translation><!-- Do Not Use - Wiring faulty at meter end --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Use -ME25</masterLabel>
+        <translation><!-- Do Not Use -ME25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downsize meter</masterLabel>
+        <translation><!-- Downsize meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earth repaired</masterLabel>
+        <translation><!-- Earth repaired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical Asset Performance</masterLabel>
+        <translation><!-- Electrical Asset Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Adjustment Required</masterLabel>
+        <translation><!-- Equipment Adjustment Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Cutting Out</masterLabel>
+        <translation><!-- Equipment Cutting Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Power Supply</masterLabel>
+        <translation><!-- Equipment Power Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment is missing</masterLabel>
+        <translation><!-- Equipment is missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment is not available</masterLabel>
+        <translation><!-- Equipment is not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment scrapped</masterLabel>
+        <translation><!-- Equipment scrapped --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excessive Noise</masterLabel>
+        <translation><!-- Excessive Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excessive Rag</masterLabel>
+        <translation><!-- Excessive Rag --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excessive Vibration</masterLabel>
+        <translation><!-- Excessive Vibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excessive Wear</masterLabel>
+        <translation><!-- Excessive Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exch/repair not poss after inspection</masterLabel>
+        <translation><!-- Exch/repair not poss after inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchanged radio</masterLabel>
+        <translation><!-- Exchanged radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External joint supply</masterLabel>
+        <translation><!-- External joint supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External meter fitted</masterLabel>
+        <translation><!-- External meter fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External meter fitted due to no access</masterLabel>
+        <translation><!-- External meter fitted due to no access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External meter leaking</masterLabel>
+        <translation><!-- External meter leaking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed</masterLabel>
+        <translation><!-- Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed to Start</masterLabel>
+        <translation><!-- Failed to Start --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed to Stop</masterLabel>
+        <translation><!-- Failed to Stop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faulty TP wiring</masterLabel>
+        <translation><!-- Faulty TP wiring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit radio meter</masterLabel>
+        <translation><!-- Fit radio meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flashing meter display</masterLabel>
+        <translation><!-- Flashing meter display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Float issue found</masterLabel>
+        <translation><!-- Float issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood/Contm</masterLabel>
+        <translation><!-- Flood/Contm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding</masterLabel>
+        <translation><!-- Flooding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow not restored: Emerg. Over-pumping</masterLabel>
+        <translation><!-- Flow not restored: Emerg. Over-pumping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow not restored: Emergency Tankering</masterLabel>
+        <translation><!-- Flow not restored: Emergency Tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow partial restored:Freq sewer relieve</masterLabel>
+        <translation><!-- Flow partial restored:Freq sewer relieve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow partially restored: Over-pumping</masterLabel>
+        <translation><!-- Flow partially restored: Over-pumping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow partially restored: Sewer monitor</masterLabel>
+        <translation><!-- Flow partially restored: Sewer monitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow partially restored: Tankering</masterLabel>
+        <translation><!-- Flow partially restored: Tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fuse / Component Fail</masterLabel>
+        <translation><!-- Fuse / Component Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG Attitude/behaviour on site</masterLabel>
+        <translation><!-- GANG Attitude/behaviour on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG Customer not informed on site</masterLabel>
+        <translation><!-- GANG Customer not informed on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG Follow on work not raised</masterLabel>
+        <translation><!-- GANG Follow on work not raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG Knowledge</masterLabel>
+        <translation><!-- GANG Knowledge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG No advice of further work required</masterLabel>
+        <translation><!-- GANG No advice of further work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG No advice of resolution/outcome</masterLabel>
+        <translation><!-- GANG No advice of resolution/outcome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG No advice of timescales</masterLabel>
+        <translation><!-- GANG No advice of timescales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG No call on way to repair</masterLabel>
+        <translation><!-- GANG No call on way to repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GANG No feedback on the job</masterLabel>
+        <translation><!-- GANG No feedback on the job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Poor perception of STW</masterLabel>
+        <translation><!-- General Poor perception of STW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSG47</masterLabel>
+        <translation><!-- HSG47 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health &amp; Safety issue</masterLabel>
+        <translation><!-- Health &amp; Safety issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health and safety concern</masterLabel>
+        <translation><!-- Health and safety concern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Pressure</masterLabel>
+        <translation><!-- High Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High reading</masterLabel>
+        <translation><!-- High reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hole on site left open</masterLabel>
+        <translation><!-- Hole on site left open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Weather</masterLabel>
+        <translation><!-- Hot Weather --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Error</masterLabel>
+        <translation><!-- Human Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Error Hygienic practice</masterLabel>
+        <translation><!-- Human Error Hygienic practice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Error Inadequate contingency plan</masterLabel>
+        <translation><!-- Human Error Inadequate contingency plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Error Inadequate procedure</masterLabel>
+        <translation><!-- Human Error Inadequate procedure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Error Inadequate resilience</masterLabel>
+        <translation><!-- Human Error Inadequate resilience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Error Inadequate/incmplte training</masterLabel>
+        <translation><!-- Human Error Inadequate/incmplte training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Error Procedure not followed</masterLabel>
+        <translation><!-- Human Error Procedure not followed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP Attitude/behaviour on site</masterLabel>
+        <translation><!-- INSP Attitude/behaviour on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP Customer not informed on site</masterLabel>
+        <translation><!-- INSP Customer not informed on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP Follow on work not raised</masterLabel>
+        <translation><!-- INSP Follow on work not raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP Knowledge</masterLabel>
+        <translation><!-- INSP Knowledge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP No advice of further work required</masterLabel>
+        <translation><!-- INSP No advice of further work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP No advice of resolution/outcome</masterLabel>
+        <translation><!-- INSP No advice of resolution/outcome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP No advice of timescales</masterLabel>
+        <translation><!-- INSP No advice of timescales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP No call on way to inspect</masterLabel>
+        <translation><!-- INSP No call on way to inspect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP No feedback in long text</masterLabel>
+        <translation><!-- INSP No feedback in long text --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illegal connection to the network</masterLabel>
+        <translation><!-- Illegal connection to the network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inaccurate MAM Usage-TMJ Customer</masterLabel>
+        <translation><!-- Inaccurate MAM Usage-TMJ Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insects in Waster Water</masterLabel>
+        <translation><!-- Insects in Waster Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insects in Water</masterLabel>
+        <translation><!-- Insects in Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install digital display unit</masterLabel>
+        <translation><!-- Install digital display unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install non-standard meter</masterLabel>
+        <translation><!-- Install non-standard meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install standard external meter</masterLabel>
+        <translation><!-- Install standard external meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install standard internal meter</masterLabel>
+        <translation><!-- Install standard internal meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install stdmeter post survey/loc unknown</masterLabel>
+        <translation><!-- Install stdmeter post survey/loc unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install touch pad pulse reader</masterLabel>
+        <translation><!-- Install touch pad pulse reader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instrument Asset Performance</masterLabel>
+        <translation><!-- Instrument Asset Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insulation Failed</masterLabel>
+        <translation><!-- Insulation Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermittent reading</masterLabel>
+        <translation><!-- Intermittent reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal meter fitted - joint supply</masterLabel>
+        <translation><!-- Internal meter fitted - joint supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal meter fitted - not safe to dig</masterLabel>
+        <translation><!-- Internal meter fitted - not safe to dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal meter fitted - refused external</masterLabel>
+        <translation><!-- Internal meter fitted - refused external --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal meter leaking</masterLabel>
+        <translation><!-- Internal meter leaking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal possible, fitter refused as H&amp;S</masterLabel>
+        <translation><!-- Internal possible, fitter refused as H&amp;S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal problems following repair</masterLabel>
+        <translation><!-- Internal problems following repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue not resolved satisfactorily</masterLabel>
+        <translation><!-- Issue not resolved satisfactorily --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joint/Riser Leaking</masterLabel>
+        <translation><!-- Joint/Riser Leaking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KCI - Customer</masterLabel>
+        <translation><!-- KCI - Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KCI - DST</masterLabel>
+        <translation><!-- KCI - DST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KCI-Customer Planning</masterLabel>
+        <translation><!-- KCI-Customer Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KCI-Gang</masterLabel>
+        <translation><!-- KCI-Gang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KCI-Rein</masterLabel>
+        <translation><!-- KCI-Rein --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Ownership -Gang</masterLabel>
+        <translation><!-- Lack of Ownership -Gang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Ownership -Rein</masterLabel>
+        <translation><!-- Lack of Ownership -Rein --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Ownership-All</masterLabel>
+        <translation><!-- Lack of Ownership-All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Ownership-Customer</masterLabel>
+        <translation><!-- Lack of Ownership-Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Ownership-DST</masterLabel>
+        <translation><!-- Lack of Ownership-DST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of ownership-Customer Planning</masterLabel>
+        <translation><!-- Lack of ownership-Customer Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Comms Pipe Replacement</masterLabel>
+        <translation><!-- Lead Comms Pipe Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Service Pipe Replacement</masterLabel>
+        <translation><!-- Lead Service Pipe Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Supply Pipe Replacement</masterLabel>
+        <translation><!-- Lead Supply Pipe Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leak on STW pipework</masterLabel>
+        <translation><!-- Leak on STW pipework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leak on customer pipework</masterLabel>
+        <translation><!-- Leak on customer pipework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leakage</masterLabel>
+        <translation><!-- Leakage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaking Equipment (Not oil)</masterLabel>
+        <translation><!-- Leaking Equipment (Not oil) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lighting</masterLabel>
+        <translation><!-- Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Likely re-block FOW : Freq insp/ cleanse</masterLabel>
+        <translation><!-- Likely re-block FOW : Freq insp/ cleanse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Likely re-block FOW : Freq sewer relieve</masterLabel>
+        <translation><!-- Likely re-block FOW : Freq sewer relieve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Likely re-block FOW : Sewer monitor</masterLabel>
+        <translation><!-- Likely re-block FOW : Sewer monitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Pressure</masterLabel>
+        <translation><!-- Low Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Suction</masterLabel>
+        <translation><!-- Low Suction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lubrication</masterLabel>
+        <translation><!-- Lubrication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MANAGER Attitude and helpfulness</masterLabel>
+        <translation><!-- MANAGER Attitude and helpfulness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MANAGER Knowledge/professionalism</masterLabel>
+        <translation><!-- MANAGER Knowledge/professionalism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MST in carriageway</masterLabel>
+        <translation><!-- MST in carriageway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MST is not operable or leaking</masterLabel>
+        <translation><!-- MST is not operable or leaking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MST on next doors property</masterLabel>
+        <translation><!-- MST on next doors property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MST too close to obstruction to Dig BB</masterLabel>
+        <translation><!-- MST too close to obstruction to Dig BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanical Asset Performance</masterLabel>
+        <translation><!-- Mechanical Asset Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Accuracy Other</masterLabel>
+        <translation><!-- Meter Accuracy Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Verification</masterLabel>
+        <translation><!-- Meter Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter buried location known</masterLabel>
+        <translation><!-- Meter buried location known --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter buried or tarred over</masterLabel>
+        <translation><!-- Meter buried or tarred over --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter damaged</masterLabel>
+        <translation><!-- Meter damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter fit not possible after inspection</masterLabel>
+        <translation><!-- Meter fit not possible after inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter fitted incorrectly</masterLabel>
+        <translation><!-- Meter fitted incorrectly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter has been removed</masterLabel>
+        <translation><!-- Meter has been removed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter has slowed</masterLabel>
+        <translation><!-- Meter has slowed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter has stopped recording</masterLabel>
+        <translation><!-- Meter has stopped recording --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter inaccessible</masterLabel>
+        <translation><!-- Meter inaccessible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter installed</masterLabel>
+        <translation><!-- Meter installed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter is running backwards</masterLabel>
+        <translation><!-- Meter is running backwards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter missing - location known</masterLabel>
+        <translation><!-- Meter missing - location known --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter possible, landlord/council refusal</masterLabel>
+        <translation><!-- Meter possible, landlord/council refusal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter re-site request</masterLabel>
+        <translation><!-- Meter re-site request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter recording with no flow</masterLabel>
+        <translation><!-- Meter recording with no flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter removed</masterLabel>
+        <translation><!-- Meter removed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter removed by customer</masterLabel>
+        <translation><!-- Meter removed by customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter removed for accuracy test</masterLabel>
+        <translation><!-- Meter removed for accuracy test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter running on</masterLabel>
+        <translation><!-- Meter running on --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter suspected over recording, non-std</masterLabel>
+        <translation><!-- Meter suspected over recording, non-std --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter suspected over recording, std</masterLabel>
+        <translation><!-- Meter suspected over recording, std --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter suspected under recording, non-std</masterLabel>
+        <translation><!-- Meter suspected under recording, non-std --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter suspected under recording, std</masterLabel>
+        <translation><!-- Meter suspected under recording, std --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metered water supplies - disconnected</masterLabel>
+        <translation><!-- Metered water supplies - disconnected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misalignment</masterLabel>
+        <translation><!-- Misalignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>More than two points of entry</masterLabel>
+        <translation><!-- More than two points of entry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Supplies</masterLabel>
+        <translation><!-- Multiple Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NONE</masterLabel>
+        <translation><!-- NONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRV issue found</masterLabel>
+        <translation><!-- NRV issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Non Visible Leak</masterLabel>
+        <translation><!-- Network Non Visible Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Visible Leak</masterLabel>
+        <translation><!-- Network Visible Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supplies Work Completed</masterLabel>
+        <translation><!-- New Supplies Work Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nil read at touch pad</masterLabel>
+        <translation><!-- Nil read at touch pad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Air</masterLabel>
+        <translation><!-- No Air --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No B/Box - MST only</masterLabel>
+        <translation><!-- No B/Box - MST only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Contact re Missed Appointment</masterLabel>
+        <translation><!-- No Contact re Missed Appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Feedback on Job</masterLabel>
+        <translation><!-- No Feedback on Job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Further Work Required</masterLabel>
+        <translation><!-- No Further Work Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Internal Stop Tap</masterLabel>
+        <translation><!-- No Internal Stop Tap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Lead Replacement occurred</masterLabel>
+        <translation><!-- No Lead Replacement occurred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Leak</masterLabel>
+        <translation><!-- No Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Power to site</masterLabel>
+        <translation><!-- No Power to site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No access - property void</masterLabel>
+        <translation><!-- No access - property void --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No access to meter</masterLabel>
+        <translation><!-- No access to meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No access to meter due to fixtures</masterLabel>
+        <translation><!-- No access to meter due to fixtures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No access to touch pad</masterLabel>
+        <translation><!-- No access to touch pad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No contact</masterLabel>
+        <translation><!-- No contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No contact with customer</masterLabel>
+        <translation><!-- No contact with customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No fault found - check reading taken</masterLabel>
+        <translation><!-- No fault found - check reading taken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No issues found</masterLabel>
+        <translation><!-- No issues found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No mitigation required</masterLabel>
+        <translation><!-- No mitigation required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No room for Internal Meter</masterLabel>
+        <translation><!-- No room for Internal Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No supply</masterLabel>
+        <translation><!-- No supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noisy meter</masterLabel>
+        <translation><!-- Noisy meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non meter asset</masterLabel>
+        <translation><!-- Non meter asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Warranty Due to Third Party Damage</masterLabel>
+        <translation><!-- Not Warranty Due to Third Party Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not a Sensitive Business Type</masterLabel>
+        <translation><!-- Not a Sensitive Business Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not advised of aborted/rescheduled visit</masterLabel>
+        <translation><!-- Not advised of aborted/rescheduled visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not called prior to attendance/repair</masterLabel>
+        <translation><!-- Not called prior to attendance/repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not connected to mains / no Boundary Box</masterLabel>
+        <translation><!-- Not connected to mains / no Boundary Box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not informed of further/follow on work</masterLabel>
+        <translation><!-- Not informed of further/follow on work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not informed of outcome/resolution</masterLabel>
+        <translation><!-- Not informed of outcome/resolution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not informed of repair date</masterLabel>
+        <translation><!-- Not informed of repair date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not informed of timescales</masterLabel>
+        <translation><!-- Not informed of timescales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not informed/updated on site</masterLabel>
+        <translation><!-- Not informed/updated on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not right first Time-Customer</masterLabel>
+        <translation><!-- Not right first Time-Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not right first Time-DST</masterLabel>
+        <translation><!-- Not right first Time-DST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not right first time-Contractors</masterLabel>
+        <translation><!-- Not right first time-Contractors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Observation</masterLabel>
+        <translation><!-- Observation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offsite Pumping Station</masterLabel>
+        <translation><!-- Offsite Pumping Station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil Leak</masterLabel>
+        <translation><!-- Oil Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operating in hand</masterLabel>
+        <translation><!-- Operating in hand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other issue found</masterLabel>
+        <translation><!-- Other issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other meter problem</masterLabel>
+        <translation><!-- Other meter problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overheat</masterLabel>
+        <translation><!-- Overheat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P1 WWC</masterLabel>
+        <translation><!-- P1 WWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P2 WWC</masterLabel>
+        <translation><!-- P2 WWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P3 WWC</masterLabel>
+        <translation><!-- P3 WWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLC Fault</masterLabel>
+        <translation><!-- PLC Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passed</masterLabel>
+        <translation><!-- Passed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe Work inaccessible</masterLabel>
+        <translation><!-- Pipe Work inaccessible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipework Modification required</masterLabel>
+        <translation><!-- Pipework Modification required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipework inaccessible</masterLabel>
+        <translation><!-- Pipework inaccessible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned work</masterLabel>
+        <translation><!-- Planned work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot occupied Unable to contact customer</masterLabel>
+        <translation><!-- Plot occupied Unable to contact customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot only 1st fixed</masterLabel>
+        <translation><!-- Plot only 1st fixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot still slab / shell / not built yet</masterLabel>
+        <translation><!-- Plot still slab / shell / not built yet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pollution</masterLabel>
+        <translation><!-- Pollution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poly Orc pipe</masterLabel>
+        <translation><!-- Poly Orc pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Advice-CLS</masterLabel>
+        <translation><!-- Poor Advice-CLS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Advice-Customer</masterLabel>
+        <translation><!-- Poor Advice-Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Pressure since meter fit</masterLabel>
+        <translation><!-- Poor Pressure since meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor advice Customer-Customer Planning</masterLabel>
+        <translation><!-- Poor advice Customer-Customer Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor advice-DST</masterLabel>
+        <translation><!-- Poor advice-DST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor advice-Gang</masterLabel>
+        <translation><!-- Poor advice-Gang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor supply</masterLabel>
+        <translation><!-- Poor supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Postal address required</masterLabel>
+        <translation><!-- Postal address required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Non Visible Leak</masterLabel>
+        <translation><!-- Private Non Visible Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Problem</masterLabel>
+        <translation><!-- Private Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Visible Leak</masterLabel>
+        <translation><!-- Private Visible Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Bypass</masterLabel>
+        <translation><!-- Process Bypass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Improvement-Suggestion</masterLabel>
+        <translation><!-- Process Improvement-Suggestion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Performance</masterLabel>
+        <translation><!-- Process Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Short Circuit</masterLabel>
+        <translation><!-- Process Short Circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Program pulse reader</masterLabel>
+        <translation><!-- Program pulse reader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promised Call Back not Made</masterLabel>
+        <translation><!-- Promised Call Back not Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promised commitment to visit not met</masterLabel>
+        <translation><!-- Promised commitment to visit not met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property demolished</masterLabel>
+        <translation><!-- Property demolished --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property void</masterLabel>
+        <translation><!-- Property void --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proximity of Gas and Electricity Meter</masterLabel>
+        <translation><!-- Proximity of Gas and Electricity Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pulsar issue found</masterLabel>
+        <translation><!-- Pulsar issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pump issue found</masterLabel>
+        <translation><!-- Pump issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio failure</masterLabel>
+        <translation><!-- Radio failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio fit on existing meter</masterLabel>
+        <translation><!-- Radio fit on existing meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio read failure</masterLabel>
+        <translation><!-- Radio read failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio weak signal</masterLabel>
+        <translation><!-- Radio weak signal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-site request</masterLabel>
+        <translation><!-- Re-site request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Read different on meter &amp; radio cyble</masterLabel>
+        <translation><!-- Read different on meter &amp; radio cyble --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Read different on meter &amp; touch pad</masterLabel>
+        <translation><!-- Read different on meter &amp; touch pad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebuild/Renew Chamber/Lid/Frame</masterLabel>
+        <translation><!-- Rebuild/Renew Chamber/Lid/Frame --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reconnection for Temporary Disconnection</masterLabel>
+        <translation><!-- Reconnection for Temporary Disconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstatement not done</masterLabel>
+        <translation><!-- Reinstatement not done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relocate meter, post survey/loc unknown</masterLabel>
+        <translation><!-- Relocate meter, post survey/loc unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relocate meter, to external</masterLabel>
+        <translation><!-- Relocate meter, to external --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relocate meter, to internal</masterLabel>
+        <translation><!-- Relocate meter, to internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove meter for accuracy test</masterLabel>
+        <translation><!-- Remove meter for accuracy test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace boundary box lid</masterLabel>
+        <translation><!-- Replace boundary box lid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reprogram exisiting radio</masterLabel>
+        <translation><!-- Reprogram exisiting radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restricted Access</masterLabel>
+        <translation><!-- Restricted Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED Attitude and helpfulness</masterLabel>
+        <translation><!-- SCHED Attitude and helpfulness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED Knowledge and professionalism</masterLabel>
+        <translation><!-- SCHED Knowledge and professionalism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED No advice of aborted visit</masterLabel>
+        <translation><!-- SCHED No advice of aborted visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED No advice of repair/re-visit date</masterLabel>
+        <translation><!-- SCHED No advice of repair/re-visit date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED No advice of resolution</masterLabel>
+        <translation><!-- SCHED No advice of resolution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED No advice of timescales</masterLabel>
+        <translation><!-- SCHED No advice of timescales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED No contact re missed appointment</masterLabel>
+        <translation><!-- SCHED No contact re missed appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED No feedback on the job</masterLabel>
+        <translation><!-- SCHED No feedback on the job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHED Promised call back not made</masterLabel>
+        <translation><!-- SCHED Promised call back not made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STW policy</masterLabel>
+        <translation><!-- STW policy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen Performance</masterLabel>
+        <translation><!-- Screen Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Section 58 ruling on new footways/paths</masterLabel>
+        <translation><!-- Section 58 ruling on new footways/paths --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seized</masterLabel>
+        <translation><!-- Seized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensitive Site - Care Facility</masterLabel>
+        <translation><!-- Sensitive Site - Care Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensitive Site - Education</masterLabel>
+        <translation><!-- Sensitive Site - Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensitive Site - Elderly</masterLabel>
+        <translation><!-- Sensitive Site - Elderly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensitive Site - Emergency Services</masterLabel>
+        <translation><!-- Sensitive Site - Emergency Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensitive Site - Government</masterLabel>
+        <translation><!-- Sensitive Site - Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensitive Site - Medical</masterLabel>
+        <translation><!-- Sensitive Site - Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensitive meter</masterLabel>
+        <translation><!-- Sensitive meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Serial number different</masterLabel>
+        <translation><!-- Serial number different --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shared supply - fit not possible</masterLabel>
+        <translation><!-- Shared supply - fit not possible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Circuit (Electrical)</masterLabel>
+        <translation><!-- Short Circuit (Electrical) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Supply</masterLabel>
+        <translation><!-- Single Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site unsafe or dangerous</masterLabel>
+        <translation><!-- Site unsafe or dangerous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smell</masterLabel>
+        <translation><!-- Smell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smell in Water</masterLabel>
+        <translation><!-- Smell in Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Splitter exchanged / refitted</masterLabel>
+        <translation><!-- Splitter exchanged / refitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spoil/mud left on site</masterLabel>
+        <translation><!-- Spoil/mud left on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spurious Stop</masterLabel>
+        <translation><!-- Spurious Stop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Quantification</masterLabel>
+        <translation><!-- Start Quantification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop tap boxed in</masterLabel>
+        <translation><!-- Stop tap boxed in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop tap repair</masterLabel>
+        <translation><!-- Stop tap repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stopped meter</masterLabel>
+        <translation><!-- Stopped meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sump pump issue found</masterLabel>
+        <translation><!-- Sump pump issue found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply Arrangement Check Not Required</masterLabel>
+        <translation><!-- Supply Arrangement Check Not Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply Arrangement Check Required</masterLabel>
+        <translation><!-- Supply Arrangement Check Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply Verification</masterLabel>
+        <translation><!-- Supply Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply and Meter Verification</masterLabel>
+        <translation><!-- Supply and Meter Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply disconnected/dead supply</masterLabel>
+        <translation><!-- Supply disconnected/dead supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Survey completed</masterLabel>
+        <translation><!-- Survey completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Task Created in Error</masterLabel>
+        <translation><!-- Task Created in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taste</masterLabel>
+        <translation><!-- Taste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical upgrade</masterLabel>
+        <translation><!-- Technical upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical upgrade required</masterLabel>
+        <translation><!-- Technical upgrade required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telemetry Alarm Fail</masterLabel>
+        <translation><!-- Telemetry Alarm Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Request</masterLabel>
+        <translation><!-- Third Party Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third party damage</masterLabel>
+        <translation><!-- Third party damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thread failure</masterLabel>
+        <translation><!-- Thread failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Too long to resolve the issue</masterLabel>
+        <translation><!-- Too long to resolve the issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Too many visits to resolve the issue</masterLabel>
+        <translation><!-- Too many visits to resolve the issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Took too long to resolve the issue</masterLabel>
+        <translation><!-- Took too long to resolve the issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Touch pad &amp; splitter calibrated</masterLabel>
+        <translation><!-- Touch pad &amp; splitter calibrated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Touch pad damaged / not wired</masterLabel>
+        <translation><!-- Touch pad damaged / not wired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Touch pad missing / unable to locate</masterLabel>
+        <translation><!-- Touch pad missing / unable to locate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Touch pad/wiring re-site request</masterLabel>
+        <translation><!-- Touch pad/wiring re-site request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Disruption</masterLabel>
+        <translation><!-- Traffic Disruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Lights</masterLabel>
+        <translation><!-- Traffic Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Management</masterLabel>
+        <translation><!-- Traffic Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic light failure</masterLabel>
+        <translation><!-- Traffic light failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to contact web applicant</masterLabel>
+        <translation><!-- Unable to contact web applicant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to locate boundary box</masterLabel>
+        <translation><!-- Unable to locate boundary box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to locate meter</masterLabel>
+        <translation><!-- Unable to locate meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to locate property</masterLabel>
+        <translation><!-- Unable to locate property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unhappy with SLA provided</masterLabel>
+        <translation><!-- Unhappy with SLA provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unhappy with attitude/behaviour on site</masterLabel>
+        <translation><!-- Unhappy with attitude/behaviour on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unhappy with inspection SLA</masterLabel>
+        <translation><!-- Unhappy with inspection SLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unhappy with knowledge of gang/person</masterLabel>
+        <translation><!-- Unhappy with knowledge of gang/person --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unhappy with repair SLA</masterLabel>
+        <translation><!-- Unhappy with repair SLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmetered water supplies - disconnected</masterLabel>
+        <translation><!-- Unmetered water supplies - disconnected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unreadable due to condensation</masterLabel>
+        <translation><!-- Unreadable due to condensation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unreadable due to elec or battery fault</masterLabel>
+        <translation><!-- Unreadable due to elec or battery fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unreadable due to smashed dials</masterLabel>
+        <translation><!-- Unreadable due to smashed dials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upsize meter</masterLabel>
+        <translation><!-- Upsize meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upstream Asset (Not Screens)</masterLabel>
+        <translation><!-- Upstream Asset (Not Screens) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vandalism</masterLabel>
+        <translation><!-- Vandalism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual read only</masterLabel>
+        <translation><!-- Visual read only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste water Flooding</masterLabel>
+        <translation><!-- Waste water Flooding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Ingress</masterLabel>
+        <translation><!-- Water Ingress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water hammer</masterLabel>
+        <translation><!-- Water hammer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water hammer (noise)</masterLabel>
+        <translation><!-- Water hammer (noise) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weather</masterLabel>
+        <translation><!-- Weather --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wet Weather</masterLabel>
+        <translation><!-- Wet Weather --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Will become a danger</masterLabel>
+        <translation><!-- Will become a danger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work Aborted</masterLabel>
+        <translation><!-- Work Aborted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work Around</masterLabel>
+        <translation><!-- Work Around --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>communal facilities</masterLabel>
+        <translation><!-- communal facilities --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

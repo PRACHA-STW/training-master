@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Section Type --></label>
+    <name>FSM_SectionType__c</name>
+    <picklistValues>
+        <masterLabel>Additional Customer</masterLabel>
+        <translation><!-- Additional Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grid Ref for Excavation</masterLabel>
+        <translation><!-- Grid Ref for Excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD Risk Assessment</masterLabel>
+        <translation><!-- HD Risk Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original Hydrant</masterLabel>
+        <translation><!-- Original Hydrant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proposed Valve Operation</masterLabel>
+        <translation><!-- Proposed Valve Operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstatement Site</masterLabel>
+        <translation><!-- Reinstatement Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Assessment - Site Specific</masterLabel>
+        <translation><!-- Risk Assessment - Site Specific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewerage Site Specific</masterLabel>
+        <translation><!-- Sewerage Site Specific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Duration Works Risk Assessment</masterLabel>
+        <translation><!-- Short Duration Works Risk Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply Interruption and Validation</masterLabel>
+        <translation><!-- Supply Interruption and Validation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve Management</masterLabel>
+        <translation><!-- Valve Management --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

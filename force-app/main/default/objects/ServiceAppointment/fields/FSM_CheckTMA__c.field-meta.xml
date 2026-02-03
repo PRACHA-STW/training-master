@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CheckTMA__c</fullName>
+    <description>Created as a part of SFS-292</description>
+    <formula>NOT(ISBLANK(FSSK__FSK_Work_Order__r.FSM_TMAPermit__c))</formula>
+    <label>Check TMA</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

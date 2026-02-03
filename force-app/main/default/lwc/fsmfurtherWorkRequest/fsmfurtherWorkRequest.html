@@ -1,0 +1,51 @@
+<template>
+   
+    <div>
+        <template if:true={isLoading}>
+            <lightning-spinner  alternative-text="Loading" size="large"></lightning-spinner>
+        </template>
+        <!-- Show Record page -->
+        <template if:true={openRecordPage}>
+            <!-- <lightning-card> -->
+                    <!-- <c-fsm-followonworkrequest-infra onfinalsubmit={handlefinalsubmit} isprevfromnextcmp={openlastpageofform}></c-fsm-followonworkrequest-infra> -->
+            <c-fsmfurtherworkrequestofflineform onfinalsubmit={handlefinalsubmit} isprevfromnextcmp={openlastpageofform} proformaimgfromnxtcmp={retainproformaimgs} record-id={recordId} wo-id={woId} onproformaphotocapture={handleproformaphotoselect} ></c-fsmfurtherworkrequestofflineform>                    
+                <!-- </lightning-card> -->
+        </template>
+
+        <!-- Show Editor -->
+        <template if:true={openEditor}>
+            <c-sketch-main-comp wo-id={woId} wirexecuted={wireExecuted} wirelineitemsexecuted={wireLineitemsexecuted} sketch-text={sketchText} is-mobile={deviceType} formdata={datafromfwr} photo-images={photoCaptureImageList} proforma-images={proformaPhotoCaptureImageList} onprev={handlePrevfromsketchmaincmp} siteicon={sitedataicon} selbsemap={mapdata} sketchimagesdata={sketchiconimages} tmasketchimagesdata={tmasketchiconimages} imagesoneditor={imagesdata} shapesoneditor={shapesdata} textoneditor={textdata} preloaddata={pretextdata} isboppsflow={isboppsflow} isnormalflow={isnormalflow} istmaflow={istmaflow} is-edit={isEdit} formtype={formtype}></c-sketch-main-comp>
+           <!-- <c-sketch-main-comp wo-id={woId} sketch-text={sketchText} photo-images={photoCaptureImageList}></c-sketch-main-comp>-->
+        </template>   
+
+        <!-- Show file uploader -->
+        <template if:true={openFileUploader}>
+        <lightning-card>
+      
+            <c-fsm_further-work-request-photo-capture formdata={datafromfwr} wirexecuted={wireExecuted} wirelineitemsexecuted={wireLineitemsexecuted} sketch-text={sketchText} onphotocapture={handlePhotoCaptureImages} onprevbtn={handlePrevfromphotocapture} onnextbtn={handleClickNext} siteicon={sitedataicon} selbsemap={mapdata} selectedimgs={selimgs} imgsarreditor={editorimgarr} shapearreditor={editorshapesarr} txtarreditor={editortxtarr} sketchimagesdata={sketchiconimages} tmasketchimagesdata={tmasketchiconimages} preloadedtxt={editorpreload} isboppsflow={isboppsflow} isnormalflow={isnormalflow} istmaflow={istmaflow} is-edit={isEdit}> </c-fsm_further-work-request-photo-capture>
+           <!-- <lightning-button title="Previous" label="Previous"  onclick={handlePrev}></lightning-button>
+            <lightning-button title="Next" label="Next"  onclick={handleClick}></lightning-button> &nbsp;&nbsp;&nbsp;-->
+        </lightning-card>
+        </template>
+        <template if:true={continuetogoldsketch}>
+            <lightning-card>
+               <div> <p class="slds-text-heading_medium slds-text-align_left slds-p-left_small">Do you wish to continue with Sketch? </p><br/>
+                <p class="slds-text-heading_small slds-text-align_left slds-p-left_small" style="font-style: italic;"> If you wish to switch device or complete sketch later, select 'No' </p></div><br/>
+                   <div  class="slds-align_left slds-p-left_small">
+                   <lightning-button title="Yes" label="Yes"  variant="brand" onclick={handleClickYes}></lightning-button> &nbsp;&nbsp;&nbsp;
+                   <lightning-button title="No" label="No"  variant="brand" onclick={handleClickNo}></lightning-button>
+                </div>
+                </lightning-card>
+        </template>
+        <template if:true={successmessagewindow}>
+            <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">Data Capture Form is submitted successfully. Please close the screen to continue</p> 
+           
+        </template>
+        <template if:true={formalreadycomplete}>
+            <p class="slds-text-color_error slds-text-heading_large slds-text-align_center">Form already completed. Please close the screen</p> 
+           
+        </template>
+
+    </div>
+   
+</template>

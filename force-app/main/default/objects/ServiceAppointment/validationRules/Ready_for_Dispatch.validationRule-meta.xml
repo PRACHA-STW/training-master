@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_for_Dispatch</fullName>
+    <active>true</active>
+    <description>Ready for dispatch must be checked to dispatch a job, SFS-62</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;Dispatched&quot;),
+    NOT(FSM_ReadyForDispatch__c)
+)</errorConditionFormula>
+    <errorMessage>Jobs must be ready for dispatch to change the Status. Check TMA has been approved (if required) and all mandatory Work Order Line Items are completed or not.</errorMessage>
+</ValidationRule>

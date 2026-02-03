@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Does the Pipe bridge appear safe ? --></label>
+    <name>FSM_PipeBridgeSafe__c</name>
+    <picklistValues>
+        <masterLabel>Pipe bridge appears in safe conditions</masterLabel>
+        <translation><!-- Pipe bridge appears in safe conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge needs immediate Corrective Action</masterLabel>
+        <translation><!-- Pipe bridge needs immediate Corrective Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge requires safety works in the next 2 years</masterLabel>
+        <translation><!-- Pipe bridge requires safety works in the next 2 years --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge requires safety works in the next 3-6 months</masterLabel>
+        <translation><!-- Pipe bridge requires safety works in the next 3-6 months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge requires safety works in the next 5 years</masterLabel>
+        <translation><!-- Pipe bridge requires safety works in the next 5 years --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

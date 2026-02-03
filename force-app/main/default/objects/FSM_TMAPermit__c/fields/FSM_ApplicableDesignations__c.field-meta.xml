@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ApplicableDesignations__c</fullName>
+    <description>Created as part of SFS-8679</description>
+    <label>Applicable Designations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Protected street</fullName>
+                <default>false</default>
+                <label>Protected street</label>
+            </value>
+            <value>
+                <fullName>Traffic sensitive</fullName>
+                <default>false</default>
+                <label>Traffic sensitive</label>
+            </value>
+            <value>
+                <fullName>Special engineering difficulty (SED)</fullName>
+                <default>false</default>
+                <label>Special engineering difficulty (SED)</label>
+            </value>
+            <value>
+                <fullName>Street designations do not apply to works</fullName>
+                <default>false</default>
+                <label>Street designations do not apply to works</label>
+            </value>
+            <value>
+                <fullName>Proposed SED</fullName>
+                <default>false</default>
+                <label>Proposed SED</label>
+            </value>
+            <value>
+                <fullName>Level crossing safety zone</fullName>
+                <default>false</default>
+                <label>Level crossing safety zone</label>
+            </value>
+            <value>
+                <fullName>Environmentally sensitive areas</fullName>
+                <default>false</default>
+                <label>Environmentally sensitive areas</label>
+            </value>
+            <value>
+                <fullName>Structures (not SED)</fullName>
+                <default>false</default>
+                <label>Structures (not SED)</label>
+            </value>
+            <value>
+                <fullName>Special surfaces</fullName>
+                <default>false</default>
+                <label>Special surfaces</label>
+            </value>
+            <value>
+                <fullName>Pipelines and specialist cables</fullName>
+                <default>false</default>
+                <label>Pipelines and specialist cables</label>
+            </value>
+            <value>
+                <fullName>Priority lanes</fullName>
+                <default>false</default>
+                <label>Priority lanes</label>
+            </value>
+            <value>
+                <fullName>Special construction needs</fullName>
+                <default>false</default>
+                <label>Special construction needs</label>
+            </value>
+            <value>
+                <fullName>Not Used (Changed from Section 85)</fullName>
+                <default>false</default>
+                <label>Not Used (Changed from Section 85)</label>
+            </value>
+            <value>
+                <fullName>Lane Rental (Changed from Strategic route)</fullName>
+                <default>false</default>
+                <label>Lane Rental (Changed from Strategic route)</label>
+            </value>
+            <value>
+                <fullName>Streets subject to early notification of immediate activities</fullName>
+                <default>false</default>
+                <label>Streets subject to early notification of immediate activities</label>
+            </value>
+            <value>
+                <fullName>Special events</fullName>
+                <default>false</default>
+                <label>Special events</label>
+            </value>
+            <value>
+                <fullName>Parking bays and restrictions</fullName>
+                <default>false</default>
+                <label>Parking bays and restrictions</label>
+            </value>
+            <value>
+                <fullName>Pedestrian crossings and traffic signals</fullName>
+                <default>false</default>
+                <label>Pedestrian crossings and traffic signals</label>
+            </value>
+            <value>
+                <fullName>Speed limits</fullName>
+                <default>false</default>
+                <label>Speed limits</label>
+            </value>
+            <value>
+                <fullName>Transport authority critical apparatus</fullName>
+                <default>false</default>
+                <label>Transport authority critical apparatus</label>
+            </value>
+            <value>
+                <fullName>Strategic Route</fullName>
+                <default>false</default>
+                <label>Strategic Route</label>
+            </value>
+            <value>
+                <fullName>Street Lighting</fullName>
+                <default>false</default>
+                <label>Street Lighting</label>
+            </value>
+            <value>
+                <fullName>Drainage and Flood Risk</fullName>
+                <default>false</default>
+                <label>Drainage and Flood Risk</label>
+            </value>
+            <value>
+                <fullName>Unusual Traffic Layout</fullName>
+                <default>false</default>
+                <label>Unusual Traffic Layout</label>
+            </value>
+            <value>
+                <fullName>Local Considerations</fullName>
+                <default>false</default>
+                <label>Local Considerations</label>
+            </value>
+            <value>
+                <fullName>Winter Maintenance Routes</fullName>
+                <default>false</default>
+                <label>Winter Maintenance Routes</label>
+            </value>
+            <value>
+                <fullName>HGV Approved Routes</fullName>
+                <default>false</default>
+                <label>HGV Approved Routes</label>
+            </value>
+            <value>
+                <fullName>Emergency Services Routes</fullName>
+                <default>false</default>
+                <label>Emergency Services Routes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Incident at Location 1 --></label>
+    <name>FSM_Incident1__c</name>
+    <picklistValues>
+        <masterLabel>Escape of sewage</masterLabel>
+        <translation><!-- Escape of sewage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding</masterLabel>
+        <translation><!-- Flooding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding due to jett</masterLabel>
+        <translation><!-- Flooding due to jett --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No incident found</masterLabel>
+        <translation><!-- No incident found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise</masterLabel>
+        <translation><!-- Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuisance</masterLabel>
+        <translation><!-- Nuisance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pollution</masterLabel>
+        <translation><!-- Pollution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTU</masterLabel>
+        <translation><!-- RTU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety</masterLabel>
+        <translation><!-- Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smell</masterLabel>
+        <translation><!-- Smell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surcharge</masterLabel>
+        <translation><!-- Surcharge --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

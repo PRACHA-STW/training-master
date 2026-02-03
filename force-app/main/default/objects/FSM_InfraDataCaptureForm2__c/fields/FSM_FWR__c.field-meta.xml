@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_FWR__c</fullName>
+    <description>Created as a part of SFS-5321</description>
+    <label>Follow on work raised</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Follow-on work raised</fullName>
+                <default>false</default>
+                <label>No Follow-on work raised</label>
+            </value>
+            <value>
+                <fullName>Main</fullName>
+                <default>false</default>
+                <label>Main</label>
+            </value>
+            <value>
+                <fullName>Comm Pipe</fullName>
+                <default>false</default>
+                <label>Comm Pipe</label>
+            </value>
+            <value>
+                <fullName>BBox/Stop Tap</fullName>
+                <default>false</default>
+                <label>BBox/Stop Tap</label>
+            </value>
+            <value>
+                <fullName>Hydrant/Washout</fullName>
+                <default>false</default>
+                <label>Hydrant/Washout</label>
+            </value>
+            <value>
+                <fullName>Valve/air valve</fullName>
+                <default>false</default>
+                <label>Valve/air valve</label>
+            </value>
+            <value>
+                <fullName>BOPP</fullName>
+                <default>false</default>
+                <label>BOPP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

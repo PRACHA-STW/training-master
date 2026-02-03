@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_INFRAFWRActivityType__c</fullName>
+    <description>SFS-3010</description>
+    <inlineHelpText>Select One</inlineHelpText>
+    <label>Activity Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Utility Repair and Maintenance Works</fullName>
+                <default>false</default>
+                <label>Utility Repair and Maintenance Works</label>
+            </value>
+            <value>
+                <fullName>Utility Asset Works</fullName>
+                <default>false</default>
+                <label>Utility Asset Works</label>
+            </value>
+            <value>
+                <fullName>Optional permit no fee</fullName>
+                <default>false</default>
+                <label>Optional permit no fee</label>
+            </value>
+            <value>
+                <fullName>Interim to perm reinstatement</fullName>
+                <default>false</default>
+                <label>Interim to perm reinstatement</label>
+            </value>
+            <value>
+                <fullName>Remedial Works</fullName>
+                <default>false</default>
+                <label>Remedial Works</label>
+            </value>
+            <value>
+                <fullName>Diversionary works</fullName>
+                <default>false</default>
+                <label>Diversionary works</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

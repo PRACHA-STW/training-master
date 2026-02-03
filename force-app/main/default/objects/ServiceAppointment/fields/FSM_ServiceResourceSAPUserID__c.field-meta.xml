@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ServiceResourceSAPUserID__c</fullName>
+    <description>SFI-2208</description>
+    <externalId>false</externalId>
+    <formula>If(ISPICKVAL(FSSK__FSK_Assigned_Service_Resource__r.ResourceType, &apos;C&apos;),
+FSSK__FSK_Assigned_Service_Resource__r.FSM_ExternalId__c , 
+FSSK__FSK_Assigned_Service_Resource__r.RelatedRecord.FSM_ExternalId__c)</formula>
+    <label>Service Resource SAP User ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

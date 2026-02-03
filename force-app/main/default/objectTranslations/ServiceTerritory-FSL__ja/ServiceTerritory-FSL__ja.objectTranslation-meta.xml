@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- You do not have sufficient access to create Service Territory --></errorMessage>
+        <name>FSM_PreventSTCreation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have sufficient access to perform this action. --></errorMessage>
+        <name>Fsm_PreventEditOrNewCreate</name>
+    </validationRules>
+</CustomObjectTranslation>

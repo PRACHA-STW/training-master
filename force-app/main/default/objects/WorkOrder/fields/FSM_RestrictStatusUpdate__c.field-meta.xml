@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RestrictStatusUpdate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Created as a part of SFS-1298. This field is used for throwing Validation error when WO status is changed to Completed and the Mandatory Worksteps related to workorder are not completed. The value of this flow is set in Before trigger flow of WO.</description>
+    <label>Restrict Status Update</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

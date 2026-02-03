@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Confirm with driver to contact STW prior to disconnection --></help>
+    <label><!-- Confirm with driver to contact STW prior --></label>
+    <name>FSM_ConfirmwithdrivertocontactSTWprior__c</name>
+</CustomFieldTranslation>

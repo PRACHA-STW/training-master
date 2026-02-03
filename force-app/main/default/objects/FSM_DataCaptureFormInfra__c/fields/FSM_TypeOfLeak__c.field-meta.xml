@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TypeOfLeak__c</fullName>
+    <inlineHelpText>Select the correct type of leak</inlineHelpText>
+    <label>Type of Leak?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dangerous apparatus (Site Made Safe )</fullName>
+                <default>false</default>
+                <label>Dangerous apparatus (Site Made Safe )</label>
+            </value>
+            <value>
+                <fullName>Dangerous apparatus (Site Unsafe)</fullName>
+                <default>false</default>
+                <label>Dangerous apparatus (Site Unsafe)</label>
+            </value>
+            <value>
+                <fullName>Flow Alarm non-visible leak</fullName>
+                <default>false</default>
+                <label>Flow Alarm non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Flow alarm visible leak</fullName>
+                <default>false</default>
+                <label>Flow alarm visible leak</label>
+            </value>
+            <value>
+                <fullName>No leak</fullName>
+                <default>false</default>
+                <label>No leak</label>
+            </value>
+            <value>
+                <fullName>No supply non-visible leak</fullName>
+                <default>false</default>
+                <label>No supply non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Non-visible leak &lt;17L PM-1m3hr Non</fullName>
+                <default>false</default>
+                <label>Non-visible leak &lt;17L PM-1m3hr Non</label>
+            </value>
+            <value>
+                <fullName>Non-visible leak &gt;17LPM-1m3hr</fullName>
+                <default>false</default>
+                <label>Non-visible leak &gt;17LPM-1m3hr</label>
+            </value>
+            <value>
+                <fullName>Non-visible leak &gt; 85LPM</fullName>
+                <default>false</default>
+                <label>Non-visible leak &gt; 85LPM</label>
+            </value>
+            <value>
+                <fullName>Non urgent weeping visible leak</fullName>
+                <default>false</default>
+                <label>Non urgent weeping visible leak</label>
+            </value>
+            <value>
+                <fullName>Poor supply non-visible leak</fullName>
+                <default>false</default>
+                <label>Poor supply non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Poor supply visible leak</fullName>
+                <default>false</default>
+                <label>Poor supply visible leak</label>
+            </value>
+            <value>
+                <fullName>Urgent visible leak</fullName>
+                <default>false</default>
+                <label>Urgent visible leak</label>
+            </value>
+            <value>
+                <fullName>Water Quality Issue non-visible leak</fullName>
+                <default>false</default>
+                <label>Water Quality Issue non-visible leak</label>
+            </value>
+            <value>
+                <fullName>Water quality Issue visible leak</fullName>
+                <default>false</default>
+                <label>Water quality Issue visible leak</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

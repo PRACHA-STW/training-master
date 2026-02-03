@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Fraværsressource - kalenderværktøjstip</label>
+        <name>FSL__Absence_Resource_Calendar_Tooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Ressourcefravær - Lightbox</label>
+        <name>FSL__Resource_Absence_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Ressourcefravær - ressourcekalender</label>
+        <name>FSL__Resource_Absence_Resource_Calendar</name>
+    </fieldSets>
+    <recordTypes>
+        <label>Pause</label>
+        <name>FSL__Break</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Ikke tilgængelige</label>
+        <name>FSL__Non_Availability</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Gantt-farve skal være i hexadecimalt format format: (f.eks.: #ffffff)</errorMessage>
+        <name>FSL__Absence_Color_HEX_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Starttiden skal være tidligere end afslutningstiden</errorMessage>
+        <name>FSL__startShouldPrecedeEnd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Admin Down Time, Temetra Schedule, Travel, and Additional Work are allowed. --></errorMessage>
+        <name>FSM_AbsenseTypeCheckForMetering</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Select Admin Down Time or Additional Work are allowed. --></errorMessage>
+        <name>FSM_AbsenseTypeCheckForVirtualMetering</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Creation or Modification of Resource Absences is not permitted. --></errorMessage>
+        <name>FSM_ResourceAbsenceCreateEditRestriction</name>
+    </validationRules>
+</CustomObjectTranslation>

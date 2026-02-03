@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Capture_Recipient_info_on_Product_Consumption</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Created as part of sfs-5434</description>
+        <label>Capture Recipient info on Product Consumption</label>
+        <sharedTo>
+            <group>FSM_FW_All</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

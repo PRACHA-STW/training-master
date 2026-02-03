@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Noticeable Status --></label>
+    <name>FSM_NoticeState__c</name>
+    <picklistValues>
+        <masterLabel>Notice Not Sent</masterLabel>
+        <translation><!-- Notice Not Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice Sent</masterLabel>
+        <translation><!-- Notice Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice Sent Initial</masterLabel>
+        <translation><!-- Notice Sent Initial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice To Be Sent</masterLabel>
+        <translation><!-- Notice To Be Sent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

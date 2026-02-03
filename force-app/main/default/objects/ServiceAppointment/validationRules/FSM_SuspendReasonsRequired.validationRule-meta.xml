@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SuspendReasonsRequired</fullName>
+    <active>true</active>
+    <description>Restrict user from updating status to &apos;Cannot Complete&apos; in UI , if Suspend reasons are not populated.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status, &apos;Cannot Complete&apos;) ,OR( ISBLANK(TEXT(FSM_SuspendReason__c)), ISNULL(TEXT(FSM_SuspendReason__c))))</errorConditionFormula>
+    <errorMessage>Please populate Suspend Reasons if the status is &apos;Cannot Complete&apos;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IfChildFieldThenObjAPICorrection</fullName>
+    <active>true</active>
+    <description>SFI-35</description>
+    <errorConditionFormula>IF(AND(FSM_IsDCFLineItemField__c, 
+	NOT(Contains(TEXT( FSM_ObjectAPIName__c), &apos;DataCaptureFormLine&apos; )), 
+	NOT(Contains(TEXT( FSM_ObjectAPIName__c), &apos;DataCaptureLine&apos; ))),true ,false )</errorConditionFormula>
+    <errorDisplayField>FSM_ObjectAPIName__c</errorDisplayField>
+    <errorMessage>Please choose correct Object Api Name from the Line item Object</errorMessage>
+</ValidationRule>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SurfaceType__c</fullName>
+    <description>updated as part of sfs-6000</description>
+    <inlineHelpText>What is the surface type e.g. 6mm Tarmac</inlineHelpText>
+    <label>Surface Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10mm Bitmac (Tarmac)</fullName>
+                <default>false</default>
+                <label>10mm Bitmac (Tarmac)</label>
+            </value>
+            <value>
+                <fullName>Block Paving</fullName>
+                <default>false</default>
+                <label>Block Paving</label>
+            </value>
+            <value>
+                <fullName>Concrete</fullName>
+                <default>false</default>
+                <label>Concrete</label>
+            </value>
+            <value>
+                <fullName>Hot Rolled Asphalt 30/40</fullName>
+                <default>false</default>
+                <label>Hot Rolled Asphalt 30/40</label>
+            </value>
+            <value>
+                <fullName>Hot rolled asphalt 55/10</fullName>
+                <default>false</default>
+                <label>Hot rolled asphalt 55/10</label>
+            </value>
+            <value>
+                <fullName>Stone Sets</fullName>
+                <default>false</default>
+                <label>Stone Sets</label>
+            </value>
+            <value>
+                <fullName>10mm Stone Mastic Asphalt</fullName>
+                <default>false</default>
+                <label>10mm Stone Mastic Asphalt</label>
+            </value>
+            <value>
+                <fullName>14mm Stone Mastic Asphalt</fullName>
+                <default>false</default>
+                <label>14mm Stone Mastic Asphalt</label>
+            </value>
+            <value>
+                <fullName>Grass</fullName>
+                <default>false</default>
+                <label>Grass</label>
+            </value>
+            <value>
+                <fullName>6mm Bitmac (Tarmac)</fullName>
+                <default>false</default>
+                <label>6mm Bitmac (Tarmac)</label>
+            </value>
+            <value>
+                <fullName>Unmade</fullName>
+                <default>false</default>
+                <label>Unmade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

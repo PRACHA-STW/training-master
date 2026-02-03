@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Waste Infra</fullName>
+        <default>false</default>
+        <label>Waste Infra</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Non Infra</fullName>
+        <default>false</default>
+        <label>Waste Non Infra</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Infra</fullName>
+        <default>false</default>
+        <label>Water Infra</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Non Infra</fullName>
+        <default>false</default>
+        <label>Water Non Infra</label>
+    </customValue>
+    <customValue>
+        <fullName>Bio Resource</fullName>
+        <default>false</default>
+        <label>Bio Resource</label>
+    </customValue>
+    <customValue>
+        <fullName>Developer Services</fullName>
+        <default>false</default>
+        <label>Developer Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Metering</fullName>
+        <default>false</default>
+        <label>Metering</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Recovery</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Green Recovery</label>
+    </customValue>
+    <description>STW Business Unit</description>
+    <masterLabel>Business Unit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

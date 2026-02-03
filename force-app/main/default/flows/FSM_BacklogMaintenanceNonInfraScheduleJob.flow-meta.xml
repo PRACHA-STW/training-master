@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>SFL-347 Updated to move the query logic to Apex</description>
+        <name>Backlogmanitenance</name>
+        <label>Backlogmanitenance</label>
+        <locationX>176</locationX>
+        <locationY>252</locationY>
+        <actionName>FSM_BacklogMaintenanceBatch</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>FSM_BacklogMaintenanceBatch</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Created for SFS-3043 &amp; SFS-3028
+Updated SFL-347 Updated to move the query logic to Apex</description>
+    <environments>Default</environments>
+    <interviewLabel>Backlog Maintenance Non Infra Schedule Job {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Backlog Maintenance Non Infra Schedule Job</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Backlogmanitenance</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 4) AND (5 OR 6 OR 7)</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_Backlog__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_ServiceOrderType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ZPM1</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_ServiceOrderType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ZPM2</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_BusinessUnit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Waste Non Infra</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_BusinessUnit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Water Non Infra</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_BusinessUnit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Bio Resource</stringValue>
+            </value>
+        </filters>
+        <object>ServiceAppointment</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2023-12-27</startDate>
+            <startTime>22:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <description>SFS-3028
+SFS-3043</description>
+        <name>SAIdList</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

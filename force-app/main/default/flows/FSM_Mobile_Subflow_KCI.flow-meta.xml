@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Customer_Feedback_Data</name>
+        <label>Assign Customer Feedback Data</label>
+        <locationX>875</locationX>
+        <locationY>2432</locationY>
+        <assignmentItems>
+            <assignToReference>customerComment</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Customer_Feedback</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>caseManagingReq</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Case_Managing_Required</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>caseManagingReqDateTime</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>created as part of SFS-5306</description>
+        <name>Assign_KCI_Reason</name>
+        <label>Assign KCI Reason</label>
+        <locationX>875</locationX>
+        <locationY>950</locationY>
+        <assignmentItems>
+            <assignToReference>var_UpdateCustomerOnEnroute</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>How_did_you_update_the_customer_when_you_were_en_route_to_the_job</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_UpdateCustomerOnComplete</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>How_did_you_update_the_customer_at_the_end_of_the_job</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_only_NA_Selected</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Created as part of SFS-5306</description>
+        <name>Assign_Vyn_URL</name>
+        <label>Assign Vyn URL</label>
+        <locationX>314</locationX>
+        <locationY>1898</locationY>
+        <assignmentItems>
+            <assignToReference>var_EnterVynURL</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Enter_Vyn_URL</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Customer_Feedback_Input</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assing_N_A_Reason</name>
+        <label>Assing N/.A Reason</label>
+        <locationX>743</locationX>
+        <locationY>1274</locationY>
+        <assignmentItems>
+            <assignToReference>var_ReasonForNA</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Reason_for_selecting_NA</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_VYN_video_selected</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Automated_ETA_message</name>
+        <choiceText>Automated ETA message</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Automated ETA message</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Called_customer_updated</name>
+        <choiceText>Called customer &amp; updated</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Called customer &amp; updated</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Called_on_way_no_answer_no_voicemail_option</name>
+        <choiceText>Called on way, no answer &amp; no voicemail option</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Called on way, no answer &amp; no voicemail option</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Called_on_way_no_answer_voicemail</name>
+        <choiceText>Called on way, no answer &amp; voicemail</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Called on way, no answer &amp; voicemail</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Called_on_way_spoke_to_customer</name>
+        <choiceText>Called on way &amp; spoke to customer</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Called on way &amp; spoke to customer</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Emailed_calling_card</name>
+        <choiceText>Emailed calling card</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Emailed calling card</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Left_calling_card</name>
+        <choiceText>Left calling card</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Left calling card</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>N_A</name>
+        <choiceText>N/A</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_contact_details_provide</name>
+        <choiceText>No contact details provide</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No contact details provide</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_contact_details_provided</name>
+        <choiceText>No contact details provided</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No contact details provided</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_interaction_due_to_incorrect_contact_details</name>
+        <choiceText>No interaction due to incorrect contact details</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No interaction, due to incorrect contact details</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Spoke_to_customer_onsite</name>
+        <choiceText>Spoke to customer onsite</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Spoke to customer onsite</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Text_customer</name>
+        <choiceText>Text customer</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Text customer</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Text_customer_with_update</name>
+        <choiceText>Text customer with update</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Text customer with update</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Voicemail_left_for_customer</name>
+        <choiceText>Voicemail left for customer</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Voicemail left for customer</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>VYN_video_used_to_update_customer_If_selected_tab_opens_to_insert_link</name>
+        <choiceText>VYN video used to update customer (If selected tab opens to insert link)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>VYN video used to update customer (If selected tab opens to insert link)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Check_if_only_NA_Selected</name>
+        <label>Check if only NA Selected</label>
+        <locationX>875</locationX>
+        <locationY>1058</locationY>
+        <defaultConnector>
+            <targetReference>Check_VYN_video_selected</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_OnlyNA</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>How_did_you_update_the_customer_when_you_were_en_route_to_the_job</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>How_did_you_update_the_customer_at_the_end_of_the_job</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NA_Reason</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>created as part of SFS-5306</description>
+        <name>check_Is_this_a_customer_job</name>
+        <label>Is this a customer job?</label>
+        <locationX>198</locationX>
+        <locationY>350</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_customer_job</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_this_a_customer_job</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>KCI_Reason</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Created as part of SFS-5306</description>
+        <name>Check_Job_Type</name>
+        <label>Check Job Type</label>
+        <locationX>462</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Asset</name>
+            <conditionLogic>1  AND 6 AND  ( 2 OR 3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_TypeofWork__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Asset</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Water Infra</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waste Infra</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Metering</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Developer Services</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Customer_Job</targetReference>
+            </connector>
+            <label>Asset</label>
+        </rules>
+        <rules>
+            <name>Customer</name>
+            <conditionLogic>1 AND 6 AND  (2 OR 3 OR 4 OR 5 )</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_TypeofWork__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Water Infra</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waste Infra</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Metering</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Developer Services</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ServiceTerritoryVar.FSM_BusinessUnit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>KCI_Reason</targetReference>
+            </connector>
+            <label>Customer</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>created as part of SFS-5306</description>
+        <name>Check_NA_selected_with_other_values</name>
+        <label>Check  N/A selected with other values</label>
+        <locationX>462</locationX>
+        <locationY>842</locationY>
+        <defaultConnector>
+            <targetReference>Assign_KCI_Reason</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other Values</defaultConnectorLabel>
+        <rules>
+            <name>N_A_selected_with_other_values</name>
+            <conditionLogic>((1 AND 2) OR (3 AND 4))</conditionLogic>
+            <conditions>
+                <leftValueReference>How_did_you_update_the_customer_when_you_were_en_route_to_the_job</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>How_did_you_update_the_customer_when_you_were_en_route_to_the_job</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>How_did_you_update_the_customer_at_the_end_of_the_job</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>How_did_you_update_the_customer_at_the_end_of_the_job</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ErrorScreen</targetReference>
+            </connector>
+            <label>N/A selected with other values</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>created as part of SFS-5306</description>
+        <name>Check_VYN_video_selected</name>
+        <label>Check VYN video selected</label>
+        <locationX>875</locationX>
+        <locationY>1466</locationY>
+        <defaultConnector>
+            <targetReference>Customer_Feedback_Input</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_VYN_Video_Selected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>How_did_you_update_the_customer_at_the_end_of_the_job</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>VYN video used to update customer (If selected tab opens to insert link)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Vyn_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Updating for sfl-869 to check the length</description>
+        <name>CheckInputlength</name>
+        <label>CheckInputlength</label>
+        <locationX>644</locationX>
+        <locationY>1682</locationY>
+        <defaultConnector>
+            <targetReference>ErrorMessage</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_length_150</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckURL</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Valid_Vyn_URL</targetReference>
+            </connector>
+            <label>check length &lt;150</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Vyn_URL</name>
+        <label>Valid Vyn URL</label>
+        <locationX>446</locationX>
+        <locationY>1790</locationY>
+        <defaultConnector>
+            <targetReference>Error_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Enter_Vyn_URL</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>https://severntrent.vynapi.com/play/</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Enter_Vyn_URL</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>https://severntrent.vynapi.com/play/</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Vyn_URL</targetReference>
+            </connector>
+            <label>valid</label>
+        </rules>
+    </decisions>
+    <description>updating as part of sfl-610
+updating as part of sfl-635
+updating as part of sfl- 869</description>
+    <dynamicChoiceSets>
+        <description>Created as part of SFS-5306</description>
+        <name>CS_UpdateCustomerOnComplete</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>FSM_UpdateCustomerOnComplete__c</picklistField>
+        <picklistObject>ServiceAppointment</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>created as part of SFS-5306</description>
+        <name>CS_UpdateCustomerOnEnroute</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>FSM_UpdateCustomerOnEnroute__c</picklistField>
+        <picklistObject>ServiceAppointment</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <description>Updating for f=SFL-869 to check the length of the url</description>
+        <name>CheckURL</name>
+        <dataType>Boolean</dataType>
+        <expression>LEN({!Enter_Vyn_URL}) &lt; 151</expression>
+    </formulas>
+    <interviewLabel>FSM Mobile Subflow - KCI {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
+    <label>FSM Mobile Subflow - Capturing KCI</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <screens>
+        <name>Customer_Feedback_Input</name>
+        <label>Customer Feedback Input</label>
+        <locationX>875</locationX>
+        <locationY>2324</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Customer_Feedback_Data</targetReference>
+        </connector>
+        <fields>
+            <name>Customer_Feedback</name>
+            <defaultValue>
+                <stringValue>{!SASingleRecordVar.FSM_CustomerFeedback__c}</stringValue>
+            </defaultValue>
+            <fieldText>Customer Feedback</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Case_Managing_Required</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Case Managing Required?</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Info</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;ℹ️&lt;/span&gt;&lt;em style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);&quot;&gt;Tick if customer is dissatisfied &amp;amp; requires service recovery&lt;/em&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Customer_Job</name>
+        <label>Customer Job</label>
+        <locationX>198</locationX>
+        <locationY>242</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>check_Is_this_a_customer_job</targetReference>
+        </connector>
+        <fields>
+            <name>Is_this_a_customer_job</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Is this a customer job?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Error_Screen</name>
+        <label>Error Screen</label>
+        <locationX>578</locationX>
+        <locationY>1898</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Vyn_URL</targetReference>
+        </connector>
+        <fields>
+            <name>VYN_URL_ERROR</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(205, 19, 19);&quot;&gt;Enter Valid Vyn URL&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ErrorMessage</name>
+        <label>Error Screen</label>
+        <locationX>842</locationX>
+        <locationY>1790</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Vyn_URL</targetReference>
+        </connector>
+        <fields>
+            <name>Error_Message</name>
+            <fieldText>&lt;p&gt;Please Enter URL less than 150 characters&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ErrorScreen</name>
+        <label>Error Screen</label>
+        <locationX>50</locationX>
+        <locationY>950</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>KCI_Reason</targetReference>
+        </connector>
+        <fields>
+            <name>ErrorMessageNA</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(240, 4, 4);&quot;&gt;You are not allowed to proceed further. Please select proper values&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>KCI_Reason</name>
+        <label>KCI Reason</label>
+        <locationX>462</locationX>
+        <locationY>734</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Check_NA_selected_with_other_values</targetReference>
+        </connector>
+        <fields>
+            <name>How_did_you_update_the_customer_when_you_were_en_route_to_the_job</name>
+            <choiceReferences>Automated_ETA_message</choiceReferences>
+            <choiceReferences>Called_on_way_spoke_to_customer</choiceReferences>
+            <choiceReferences>Called_on_way_no_answer_voicemail</choiceReferences>
+            <choiceReferences>Called_on_way_no_answer_no_voicemail_option</choiceReferences>
+            <choiceReferences>Text_customer</choiceReferences>
+            <choiceReferences>No_interaction_due_to_incorrect_contact_details</choiceReferences>
+            <choiceReferences>No_contact_details_provided</choiceReferences>
+            <choiceReferences>N_A</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>SASingleRecordVar.FSM_UpdateCustomerOnEnroute__c</elementReference>
+            </defaultValue>
+            <fieldText>How did you update the customer when you were en route to the job?</fieldText>
+            <fieldType>MultiSelectCheckboxes</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>How_did_you_update_the_customer_at_the_end_of_the_job</name>
+            <choiceReferences>Spoke_to_customer_onsite</choiceReferences>
+            <choiceReferences>Called_customer_updated</choiceReferences>
+            <choiceReferences>Voicemail_left_for_customer</choiceReferences>
+            <choiceReferences>Text_customer_with_update</choiceReferences>
+            <choiceReferences>Left_calling_card</choiceReferences>
+            <choiceReferences>Emailed_calling_card</choiceReferences>
+            <choiceReferences>VYN_video_used_to_update_customer_If_selected_tab_opens_to_insert_link</choiceReferences>
+            <choiceReferences>No_interaction_due_to_incorrect_contact_details</choiceReferences>
+            <choiceReferences>No_contact_details_provided</choiceReferences>
+            <choiceReferences>N_A</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>SASingleRecordVar.FSM_UpdateCustomerOnComplete__c</elementReference>
+            </defaultValue>
+            <fieldText>How did you update the customer at the end of the job?</fieldText>
+            <fieldType>MultiSelectCheckboxes</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>NA_Reason</name>
+        <label>N/A Reason</label>
+        <locationX>743</locationX>
+        <locationY>1166</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assing_N_A_Reason</targetReference>
+        </connector>
+        <fields>
+            <name>Reason_for_selecting_NA</name>
+            <dataType>String</dataType>
+            <fieldText>Reason for selecting N/A, e.g. not customer job</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Vyn_URL</name>
+        <label>Vyn URL</label>
+        <locationX>644</locationX>
+        <locationY>1574</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>CheckInputlength</targetReference>
+        </connector>
+        <fields>
+            <name>Enter_Vyn_URL</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>SASingleRecordVar.FSM_FieldworkerVynUrl__c</elementReference>
+            </defaultValue>
+            <fieldText>Enter Vyn URL</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>336</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Job_Type</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>caseManagingReq</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>caseManagingReqDateTime</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>customerComment</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>created as Part SFS-5306</description>
+        <name>SASingleRecordVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+    <variables>
+        <name>ServiceTerritoryVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceTerritory</objectType>
+    </variables>
+    <variables>
+        <name>var_EnterVynURL</name>
+        <dataType>Multipicklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_ReasonForNA</name>
+        <dataType>Multipicklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_UpdateCustomerOnComplete</name>
+        <dataType>Multipicklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_UpdateCustomerOnEnroute</name>
+        <dataType>Multipicklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RejectBundle__c</fullName>
+    <description>Created for SF-5159</description>
+    <formula>AND(NOT(ISBLANK(FSSK__FSK_Work_Order__r.FSM_JobSLAInHours__c)),
+IF((FSSK__FSK_Work_Order__r.FSM_JobSLAInHours__c = 36 &amp;&amp; TODAY() &gt;=  DATEVALUE((DueDate + 1))), true,
+IF((FSSK__FSK_Work_Order__r.FSM_JobSLAInHours__c = 37 &amp;&amp; TODAY() &gt;= DATEVALUE((DueDate + (120/24)))), true , 
+IF((FSSK__FSK_Work_Order__r.FSM_JobSLAInHours__c = 38 &amp;&amp; TODAY() &gt;= DATEVALUE((DueDate + (274/24)))), true, 
+IF((FSSK__FSK_Work_Order__r.FSM_JobSLAInHours__c = 39 &amp;&amp; TODAY() &gt;= DATEVALUE((DueDate + (672/24)))),true, false)))))</formula>
+    <label>Reject Bundle</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

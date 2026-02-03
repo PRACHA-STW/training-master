@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ImpactCode__c</fullName>
+    <description>Created as a part of SFI-696</description>
+    <label>Impact Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Field Label</fullName>
+                <default>false</default>
+                <label>Field Label</label>
+            </value>
+            <value>
+                <fullName>ASST</fullName>
+                <default>false</default>
+                <label>Asset</label>
+            </value>
+            <value>
+                <fullName>BCC-AWAR</fullName>
+                <default>false</default>
+                <label>Bilat: Customer Aware of Service Request</label>
+            </value>
+            <value>
+                <fullName>BCC-CONS</fullName>
+                <default>false</default>
+                <label>Bilat: Consent to Contact Customer</label>
+            </value>
+            <value>
+                <fullName>BCC-CREQ</fullName>
+                <default>false</default>
+                <label>Bilat: Customer Contact Required</label>
+            </value>
+            <value>
+                <fullName>BCC-PRFM</fullName>
+                <default>false</default>
+                <label>Bilat: Customer Prefrd Method of Contact</label>
+            </value>
+            <value>
+                <fullName>BCC-PRFT</fullName>
+                <default>false</default>
+                <label>Bilat: Customer Preferred Contact Time</label>
+            </value>
+            <value>
+                <fullName>COST</fullName>
+                <default>false</default>
+                <label>COST</label>
+            </value>
+            <value>
+                <fullName>CUST</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>DEVSERVS</fullName>
+                <default>false</default>
+                <label>Dev Services Waste</label>
+            </value>
+            <value>
+                <fullName>DEVSERVW</fullName>
+                <default>false</default>
+                <label>Dev Services Water</label>
+            </value>
+            <value>
+                <fullName>ENVI</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+            <value>
+                <fullName>HESA</fullName>
+                <default>false</default>
+                <label>Health &amp; Safety</label>
+            </value>
+            <value>
+                <fullName>MECTCN</fullName>
+                <default>false</default>
+                <label>NHH - Do Not Notify Ext System of Visit</label>
+            </value>
+            <value>
+                <fullName>MECTCY</fullName>
+                <default>false</default>
+                <label>NHH - Notify External System of Visit</label>
+            </value>
+            <value>
+                <fullName>MEFRAP</fullName>
+                <default>false</default>
+                <label>Fropt Appointment Type</label>
+            </value>
+            <value>
+                <fullName>MEPRBO</fullName>
+                <default>false</default>
+                <label>Billing Back Office</label>
+            </value>
+            <value>
+                <fullName>MEPRFW</fullName>
+                <default>false</default>
+                <label>Field Worker</label>
+            </value>
+            <value>
+                <fullName>MEPRIC</fullName>
+                <default>false</default>
+                <label>Installation Contractor</label>
+            </value>
+            <value>
+                <fullName>MEPRMR</fullName>
+                <default>false</default>
+                <label>Meter Reader</label>
+            </value>
+            <value>
+                <fullName>MEPRMT</fullName>
+                <default>false</default>
+                <label>Metering Technician</label>
+            </value>
+            <value>
+                <fullName>MEPROP</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>NIBICTCN</fullName>
+                <default>false</default>
+                <label>NHH Discon.don&apos;t notify ext sys.of visit</label>
+            </value>
+            <value>
+                <fullName>NIBICTCY</fullName>
+                <default>false</default>
+                <label>NHH Discon. notify ext system.of visit</label>
+            </value>
+            <value>
+                <fullName>PROC</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>QUAL</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>SECNSI</fullName>
+                <default>false</default>
+                <label>Customer Networks Sewage - Impact</label>
+            </value>
+            <value>
+                <fullName>STATI</fullName>
+                <default>false</default>
+                <label>Statutory - Impact</label>
+            </value>
+            <value>
+                <fullName>WDAMWS</fullName>
+                <default>false</default>
+                <label>Distrib&apos;n Asset Mgt Water Supply</label>
+            </value>
+            <value>
+                <fullName>WDAQQU</fullName>
+                <default>false</default>
+                <label>Aqua Pea Quantification</label>
+            </value>
+            <value>
+                <fullName>WDIPII</fullName>
+                <default>false</default>
+                <label>Infra - Proactive Inspection</label>
+            </value>
+            <value>
+                <fullName>WDIPIN</fullName>
+                <default>false</default>
+                <label>Infra - Proactive No Inspection</label>
+            </value>
+            <value>
+                <fullName>MEPRCU</fullName>
+                <default>false</default>
+                <label>Customer MEPRCU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

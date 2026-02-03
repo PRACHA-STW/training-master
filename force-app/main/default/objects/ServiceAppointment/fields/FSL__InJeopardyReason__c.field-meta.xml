@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSL__InJeopardyReason__c</fullName>
+    <deprecated>false</deprecated>
+    <label>In Jeopardy Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delayed Start</fullName>
+                <default>false</default>
+                <label>Delayed Start</label>
+            </value>
+            <value>
+                <fullName>Delayed Finish</fullName>
+                <default>false</default>
+                <label>Delayed Finish</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Due Date Approaching</fullName>
+                <default>false</default>
+                <label>Due Date Approaching</label>
+            </value>
+            <value>
+                <fullName>Manual Scheduling Required</fullName>
+                <default>false</default>
+                <label>Manual Scheduling Required</label>
+            </value>
+            <value>
+                <fullName>Late to Complete</fullName>
+                <default>false</default>
+                <label>Late to Complete</label>
+            </value>
+            <value>
+                <fullName>Late to Dispatch</fullName>
+                <default>false</default>
+                <label>Late to Dispatch</label>
+            </value>
+            <value>
+                <fullName>Late to Enroute</fullName>
+                <default>false</default>
+                <label>Late to Enroute</label>
+            </value>
+            <value>
+                <fullName>Late to report Accepted</fullName>
+                <default>false</default>
+                <label>Late to report Accepted</label>
+            </value>
+            <value>
+                <fullName>Late to report On Site</fullName>
+                <default>false</default>
+                <label>Late to report On Site</label>
+            </value>
+            <value>
+                <fullName>Resource unavailable</fullName>
+                <default>false</default>
+                <label>Resource unavailable</label>
+            </value>
+            <value>
+                <fullName>Job still on hold</fullName>
+                <default>false</default>
+                <label>Job still on hold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

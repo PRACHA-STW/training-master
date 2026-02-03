@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Full PPE must be worn when inside exclusion zone. --></help>
+    <label><!-- Full PPE in Exclusion Zone --></label>
+    <name>FSM_FullPPEinExclusionZone__c</name>
+</CustomFieldTranslation>

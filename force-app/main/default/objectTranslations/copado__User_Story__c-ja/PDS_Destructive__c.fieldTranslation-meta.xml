@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PDS/Destructive --></label>
+    <name>PDS_Destructive__c</name>
+    <picklistValues>
+        <masterLabel>Destructive</masterLabel>
+        <translation><!-- Destructive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO</masterLabel>
+        <translation><!-- NO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDS Only</masterLabel>
+        <translation><!-- PDS Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Data Task</masterLabel>
+        <translation><!-- Post Data Task --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post PDS</masterLabel>
+        <translation><!-- Post PDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre &amp; Post PDS</masterLabel>
+        <translation><!-- Pre &amp; Post PDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre Data Task</masterLabel>
+        <translation><!-- Pre Data Task --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre Destructive</masterLabel>
+        <translation><!-- Pre Destructive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre PDS</masterLabel>
+        <translation><!-- Pre PDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre PDS Only</masterLabel>
+        <translation><!-- Pre PDS Only --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

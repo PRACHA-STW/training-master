@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ServiceSummaryWorkforceBundle__c</fullName>
+    <description>Created as a part of SFS-292
+Updated as part of SFS-7499</description>
+    <formula>OR(CONTAINS(FSSK__FSK_Work_Order__r.FSM_ServiceSummary__c, &quot;WP2&quot;),
+CONTAINS(FSSK__FSK_Work_Order__r.FSM_ServiceSummary__c, &quot;SW4&quot;),
+CONTAINS(FSSK__FSK_Work_Order__r.FSM_ServiceSummary__c, &quot;SE2&quot;))</formula>
+    <label>Service Summary Workforce Bundle</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

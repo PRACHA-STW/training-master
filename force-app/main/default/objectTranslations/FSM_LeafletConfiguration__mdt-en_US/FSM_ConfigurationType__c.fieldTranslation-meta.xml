@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>FSM_ConfigurationType__c</name>
+    <picklistValues>
+        <masterLabel>Meter Location</masterLabel>
+        <translation><!-- Meter Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reason for Maintenance</masterLabel>
+        <translation><!-- Reason for Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reason for Visit</masterLabel>
+        <translation><!-- Reason for Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Role</masterLabel>
+        <translation><!-- Role --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supporting Information</masterLabel>
+        <translation><!-- Supporting Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Template</masterLabel>
+        <translation><!-- Template --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

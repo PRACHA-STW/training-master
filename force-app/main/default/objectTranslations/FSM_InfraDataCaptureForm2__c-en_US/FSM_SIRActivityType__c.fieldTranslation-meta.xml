@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sewerage Incident Report Activity Type --></label>
+    <name>FSM_SIRActivityType__c</name>
+    <picklistValues>
+        <masterLabel>AdHoc Inspection - Contractor</masterLabel>
+        <translation><!-- AdHoc Inspection - Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockage clearance &amp; CCTV - DLO</masterLabel>
+        <translation><!-- Blockage clearance &amp; CCTV - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockage clearance &amp; CCTV CON</masterLabel>
+        <translation><!-- Blockage clearance &amp; CCTV CON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockage clearance - CON</masterLabel>
+        <translation><!-- Blockage clearance - CON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockage clearance - DLO</masterLabel>
+        <translation><!-- Blockage clearance - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV - DLO</masterLabel>
+        <translation><!-- CCTV - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV inspection only - DLO</masterLabel>
+        <translation><!-- CCTV inspection only - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleanup - DLO</masterLabel>
+        <translation><!-- Cleanup - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleanup Contractor inc 13EX</masterLabel>
+        <translation><!-- Cleanup Contractor inc 13EX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleanup only - DLO</masterLabel>
+        <translation><!-- Cleanup only - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ext Flooding - Contractor</masterLabel>
+        <translation><!-- Ext Flooding - Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ext Flooding - DLO</masterLabel>
+        <translation><!-- Ext Flooding - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspect manhole - Contractor</masterLabel>
+        <translation><!-- Inspect manhole - Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection of defect - CON</masterLabel>
+        <translation><!-- Inspection of defect - CON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Int Flooding - DLO</masterLabel>
+        <translation><!-- Int Flooding - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Int Flooding Contractor</masterLabel>
+        <translation><!-- Int Flooding Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRIV – COUNCIL ASSET</masterLabel>
+        <translation><!-- PRIV – COUNCIL ASSET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRIV – INTERNAL</masterLabel>
+        <translation><!-- PRIV – INTERNAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRIV – MANDATORY GOGW</masterLabel>
+        <translation><!-- PRIV – MANDATORY GOGW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pollution Inspection - CON</masterLabel>
+        <translation><!-- Pollution Inspection - CON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pollution Inspection - DLO</masterLabel>
+        <translation><!-- Pollution Inspection - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priv - Cleared on Investigate</masterLabel>
+        <translation><!-- Priv - Cleared on Investigate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priv - Discretionary GOGW</masterLabel>
+        <translation><!-- Priv - Discretionary GOGW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priv - Repat within 14 days</masterLabel>
+        <translation><!-- Priv - Repat within 14 days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priv -Not Paid - Cust Declines</masterLabel>
+        <translation><!-- Priv -Not Paid - Cust Declines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priv -Paid - Cleared</masterLabel>
+        <translation><!-- Priv -Paid - Cleared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priv -Paid - Unable to clear</masterLabel>
+        <translation><!-- Priv -Paid - Unable to clear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewerage Inspection only - DLO</masterLabel>
+        <translation><!-- Sewerage Inspection only - DLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support Work - DLO</masterLabel>
+        <translation><!-- Support Work - DLO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

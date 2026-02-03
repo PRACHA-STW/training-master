@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_HasImmediateTMA__c</fullName>
+    <description>Created for SFS-4793.
+Updated as part of SFS-6511</description>
+    <formula>IF(AND(NOT(ISBLANK( FSSK__FSK_Work_Order__r.FSM_TMAPermit__c )),
+OR(ISPICKVAL( FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c , &apos;04&apos;) , 
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c, &apos;05&apos;))) 
+, true, false)</formula>
+    <label>Has Immediate TMA?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

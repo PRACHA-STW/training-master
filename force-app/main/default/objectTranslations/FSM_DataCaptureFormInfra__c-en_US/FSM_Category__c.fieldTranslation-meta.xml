@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meter Category --></label>
+    <name>FSM_Category__c</name>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Con_NBio_5D_DN20</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Con_NBio_5D_DN20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl110_NBio_5D_DN15</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl110_NBio_5D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl110_NBio_5D_DN20</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl110_NBio_5D_DN20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl134_NBio_5D_DN15</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl134_NBio_5D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_LoRa_5D_DN15</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_LoRa_5D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_LoRa_5D_DN25</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_LoRa_5D_DN25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_LoRa_5D_DN32</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_LoRa_5D_DN32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_LoRa_6D_DN40</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_LoRa_6D_DN40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_5D_DN25</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_5D_DN25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_5D_DN32</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_5D_DN32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_6D_DN100</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_6D_DN100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_6D_DN40</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_6D_DN40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_6D_DN50</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_6D_DN50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_6D_DN65</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_6D_DN65 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_6D_DN80</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_6D_DN80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_7D_DN150</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_7D_DN150 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_7D_DN200</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_7D_DN200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_7D_DN205</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_7D_DN205 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V4_Inl_NBio_7D_DN300</masterLabel>
+        <translation><!-- Diehl_ALTAIR V4_Inl_NBio_7D_DN300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V5_Con_LoRa_5D_DN15</masterLabel>
+        <translation><!-- Diehl_ALTAIR V5_Con_LoRa_5D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V5_Con_LoRa_5D_DN20</masterLabel>
+        <translation><!-- Diehl_ALTAIR V5_Con_LoRa_5D_DN20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V5_Con_NBio_5D_DN15</masterLabel>
+        <translation><!-- Diehl_ALTAIR V5_Con_NBio_5D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_ALTAIR V5_Inl_LoRa_5D_DN20</masterLabel>
+        <translation><!-- Diehl_ALTAIR V5_Inl_LoRa_5D_DN20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D05_15MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D05_15MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D05_22MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D05_22MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D05_28MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D05_28MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D05_42MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D05_42MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D85_15MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D85_15MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D85_22MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D85_22MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D85_28MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D85_28MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Altair_V4_5D_D85_42MM</masterLabel>
+        <translation><!-- Diehl_Altair_V4_5D_D85_42MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_6D_DN100</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_6D_DN100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_6D_DN50</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_6D_DN50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_6D_DN65</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_6D_DN65 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_6D_DN80</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_6D_DN80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_7D_DN150</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_7D_DN150 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_7D_DN200</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_7D_DN200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_7D_DN205</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_7D_DN205 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_WESAN_Inl_LoRa_7D_DN300</masterLabel>
+        <translation><!-- Diehl_WESAN_Inl_LoRa_7D_DN300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D06_100MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D06_100MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D06_150MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D06_150MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D06_200MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D06_200MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D06_250MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D06_250MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D06_300MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D06_300MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D06_50MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D06_50MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D06_80MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D06_80MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D86_100MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D86_100MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D86_150MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D86_150MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D86_200MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D86_200MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D86_250MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D86_250MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D86_300MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D86_300MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D86_50MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D86_50MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl_Wesan_PG_6D_D86_80MM</masterLabel>
+        <translation><!-- Diehl_Wesan_PG_6D_D86_80MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_6D_100mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_6D_100mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_6D_40mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_6D_40mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_6D_50mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_6D_50mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_6D_65mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_6D_65mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_6D_80mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_6D_80mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_7D_125mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_7D_125mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_7D_150mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_7D_150mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_7D_200mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_7D_200mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_7D_250mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_7D_250mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell Elster_H4000_7D_300mm</masterLabel>
+        <translation><!-- Honeywell Elster_H4000_7D_300mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V200_Clip_NB-IoT_5D_DN15</masterLabel>
+        <translation><!-- Honeywell_V200_Clip_NB-IoT_5D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V200_Int_NB-IoT_6D_DN15</masterLabel>
+        <translation><!-- Honeywell_V200_Int_NB-IoT_6D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V200_Int_NB-IoT_6D_DN20</masterLabel>
+        <translation><!-- Honeywell_V200_Int_NB-IoT_6D_DN20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V200_Int_NB-IoT_6D_DN25</masterLabel>
+        <translation><!-- Honeywell_V200_Int_NB-IoT_6D_DN25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V200_Int_NB-IoT_6D_DN30</masterLabel>
+        <translation><!-- Honeywell_V200_Int_NB-IoT_6D_DN30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V200_Int_NB-IoT_6D_DN40</masterLabel>
+        <translation><!-- Honeywell_V200_Int_NB-IoT_6D_DN40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V210_Clip_NB-IoT_5D_DN15</masterLabel>
+        <translation><!-- Honeywell_V210_Clip_NB-IoT_5D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V210_Int_NB-IoT_6D_DN15</masterLabel>
+        <translation><!-- Honeywell_V210_Int_NB-IoT_6D_DN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V210_Int_NB-IoT_6D_DN20</masterLabel>
+        <translation><!-- Honeywell_V210_Int_NB-IoT_6D_DN20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell_V210_Int_NB-IoT_6D_DN25</masterLabel>
+        <translation><!-- Honeywell_V210_Int_NB-IoT_6D_DN25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON AQUADIS+INT_5D_15MM</masterLabel>
+        <translation><!-- ITRON AQUADIS+INT_5D_15MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON AQUADIS+INT_5D_22MM</masterLabel>
+        <translation><!-- ITRON AQUADIS+INT_5D_22MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON AQUADIS+_5D_15MM</masterLabel>
+        <translation><!-- ITRON AQUADIS+_5D_15MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_AQUADIS+INT_5D_28MM</masterLabel>
+        <translation><!-- ITRON_AQUADIS+INT_5D_28MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_AQUADIS+_5D_22MM</masterLabel>
+        <translation><!-- ITRON_AQUADIS+_5D_22MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_SINGLE_JET_6D_42MM</masterLabel>
+        <translation><!-- ITRON_SINGLE_JET_6D_42MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_SINGLE_JET_FLANGED_6D_100MM</masterLabel>
+        <translation><!-- ITRON_SINGLE_JET_FLANGED_6D_100MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_SINGLE_JET_FLANGED_6D_50MM</masterLabel>
+        <translation><!-- ITRON_SINGLE_JET_FLANGED_6D_50MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_SINGLE_JET_FLANGED_6D_80MM</masterLabel>
+        <translation><!-- ITRON_SINGLE_JET_FLANGED_6D_80MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_SINGLE_JET_INT_5D_42MM</masterLabel>
+        <translation><!-- ITRON_SINGLE_JET_INT_5D_42MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_SINGLE_JET_THREADED_6D_50MM</masterLabel>
+        <translation><!-- ITRON_SINGLE_JET_THREADED_6D_50MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_WOLTEX_6D_100MM</masterLabel>
+        <translation><!-- ITRON_WOLTEX_6D_100MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_WOLTEX_6D_50MM</masterLabel>
+        <translation><!-- ITRON_WOLTEX_6D_50MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_WOLTEX_6D_80MM</masterLabel>
+        <translation><!-- ITRON_WOLTEX_6D_80MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_WOLTEX_7D_150MM</masterLabel>
+        <translation><!-- ITRON_WOLTEX_7D_150MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRON_WOLTEX_7D_200MM</masterLabel>
+        <translation><!-- ITRON_WOLTEX_7D_200MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kent_K05_5D</masterLabel>
+        <translation><!-- Kent_K05_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio_Actaris_R05_5D</masterLabel>
+        <translation><!-- Radio_Actaris_R05_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio_Actaris_R85_5D</masterLabel>
+        <translation><!-- Radio_Actaris_R85_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schlumberger_S05_5D</masterLabel>
+        <translation><!-- Schlumberger_S05_5D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schlumberger_S85_5D</masterLabel>
+        <translation><!-- Schlumberger_S85_5D --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

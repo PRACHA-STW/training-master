@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Failure --></label>
+    <name>FSM_FailureType__c</name>
+    <picklistValues>
+        <masterLabel>Collar</masterLabel>
+        <translation><!-- Collar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joint</masterLabel>
+        <translation><!-- Joint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long Fracture</masterLabel>
+        <translation><!-- Long Fracture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outstation / Telemetry Failure</masterLabel>
+        <translation><!-- Outstation / Telemetry Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Failure</masterLabel>
+        <translation><!-- Power Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reservoir Failure</masterLabel>
+        <translation><!-- Reservoir Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ring Fracture</masterLabel>
+        <translation><!-- Ring Fracture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Split</masterLabel>
+        <translation><!-- Split --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treatment / Source Failure</masterLabel>
+        <translation><!-- Treatment / Source Failure --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

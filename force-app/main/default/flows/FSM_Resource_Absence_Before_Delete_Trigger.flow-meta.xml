@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>SFS-278</description>
+        <name>Copy_1_of_Error_for_Absence_deletion</name>
+        <label>Error for Absence deletion</label>
+        <locationX>798</locationX>
+        <locationY>611</locationY>
+        <actionName>FSM_InvocableCrash</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>errorMessages</name>
+            <value>
+                <stringValue>Error: Deletion of Resource Absences is not permitted.</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>FSM_InvocableCrash</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Error</name>
+        <label>Error</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <customErrorMessages>
+            <errorMessage>This persona is not allowed to perform this operation on Resource Absence object</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <description>SFS-278
+Updated as part of SFS-7904</description>
+        <name>Check_if_logged_in_user_is_system_admin_or_integration</name>
+        <label>Check if logged in user is system admin or integration</label>
+        <locationX>578</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Check_Permission</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other user</defaultConnectorLabel>
+        <rules>
+            <name>System_admin_or_integration_user</name>
+            <conditionLogic>1 OR 2 OR 3 OR (4 AND 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.FSM_SystemAdmin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Permission.FSM_Integration</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Permission.FSM_Optimization_Bypass_Permission</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FSM Standard Desktop User</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Break</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>checkServiceResourceRA</targetReference>
+            </connector>
+            <label>System admin or integration user</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Permission</name>
+        <label>Check Permission</label>
+        <locationX>710</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Error_for_Absence_deletion</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Non Admin</defaultConnectorLabel>
+        <rules>
+            <name>Admin</name>
+            <conditionLogic>1 OR 2 OR (3 AND (4 OR 5 OR 6 OR 7)) OR 8</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.FSM_AllowResourceAbsenceDelete</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Break</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Resource.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Metering</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AdminDownTime</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TemetraSchedule</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Travel</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AdditionalWork</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Resource.ServiceCrew.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>checkServiceResourceRA</targetReference>
+            </connector>
+            <label>Admin</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Profile</name>
+        <label>Check Profile</label>
+        <locationX>314</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_logged_in_user_is_system_admin_or_integration</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_DataLoader</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FSM Dataloader</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error</targetReference>
+            </connector>
+            <label>If DataLoader</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Updated as part of SFS-8677</description>
+        <name>checkServiceResourceRA</name>
+        <label>checkServiceResourceRA</label>
+        <locationX>578</locationX>
+        <locationY>995</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ServiceResourceRA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Break</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.FSM_ServiceResourceAbsence__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>deleteCrewRA</targetReference>
+            </connector>
+            <label>ServiceResourceRA</label>
+        </rules>
+    </decisions>
+    <description>created as part of SFS-278
+Updated As part of SFS-109
+Allows RA to be deleted if it is of type break
+Updated as part of SFS-6559
+Updated as part of SFS-7442
+Updated as part of SFS-7614
+Updated as part of SFS-7904
+Updated as part of SFS-7595
+Updated as part of SFS-8677
+Updated as part of SFL-524</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM Resource Absence Before Delete Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Resource Absence Before Delete Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>deleteCrewRA</name>
+        <label>deleteCrewRA</label>
+        <locationX>314</locationX>
+        <locationY>1103</locationY>
+        <faultConnector>
+            <targetReference>Create_Error_Log</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FSM_ServiceResourceAbsence__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <object>ResourceAbsence</object>
+    </recordDeletes>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Profile</targetReference>
+        </connector>
+        <object>ResourceAbsence</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Create_Error_Log</name>
+        <label>Create Error Log</label>
+        <locationX>578</locationX>
+        <locationY>1211</locationY>
+        <flowName>ErrorLog_Subflow_Create_Record</flowName>
+        <inputAssignments>
+            <name>FSM_FaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FlowName</name>
+            <value>
+                <stringValue>FSM Resource Absence Before Delete Trigger</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_Type</name>
+            <value>
+                <stringValue>Field Service</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

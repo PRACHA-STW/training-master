@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This will be assigned to users based on live location field on service resource</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FSM AppointmentAssistant</label>
+    <permissionSets>FSM_AppointmentAssistant</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

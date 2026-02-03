@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select One --></help>
+    <label><!-- Customer Present --></label>
+    <name>FSM_CustomerPresent__c</name>
+    <picklistValues>
+        <masterLabel>Cold Call</masterLabel>
+        <translation><!-- Cold Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Rep</masterLabel>
+        <translation><!-- Customer Rep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Show</masterLabel>
+        <translation><!-- No Show --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

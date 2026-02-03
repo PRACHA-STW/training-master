@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Appointments</fullName>
+    <columns>Name</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>ArrivalWindowEndTime</columns>
+    <columns>Status</columns>
+    <columns>FSM_CustomerAtRiskOfDissatisfaction__c</columns>
+    <columns>LatestEndTime</columns>
+    <columns>FSM_HoursUntilDueDate__c</columns>
+    <columns>FSM_Polygon__c</columns>
+    <columns>ZIP</columns>
+    <columns>FSM_SAPJobPriority__c</columns>
+    <columns>FSM_ExternalId__c</columns>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_StandardTextKey__c</field>
+        <operation>equals</operation>
+        <value>CINSP,BCA,BHHGI,NHHTDCR</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>Cannot Complete,Completed,Cancelled</value>
+    </filters>
+    <label>Customer Appointments</label>
+    <sharedTo>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

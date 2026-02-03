@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ResourceAbsenceCreateEditRestriction</fullName>
+    <active>true</active>
+    <description>Validation to prevent creation of new or modification of the existing Resource Absence records by any persona. Resource Absence records will be be only modified or created via an inbound integration. SFS-278,
+Updated As part of SFS-109, SFS-1396,SFS-4116</description>
+    <errorConditionFormula>IF(
+AND(( $Permission.FSM_Virtual_User )),
+false,
+IF(
+AND(($Permission.FSM_Restrict_FW_Absence_Creation),NOT(ISPICKVAL(Resource.FSM_BusinessUnit__c, &apos;Metering&apos;))),
+true,
+IF(
+AND(
+ISPICKVAL(Resource.FSM_BusinessUnit__c, &apos;Metering&apos;),
+OR($Permission.FSM_ManageResourceAbsenseVMetering, $Permission.FSM_ManageResourceAbsenseMetering)
+),
+false,
+IF(
+AND(
+ISPICKVAL(Resource.ResourceType, &quot;Crew&quot;),
+$Permission.FSM_CrewAbsence,
+ISNULL(FSM_ExternalId__c)
+),
+false,
+IF(
+AND(
+NOT($Permission.FSM_SystemAdmin),
+NOT($Permission.FSM_Optimization_Bypass_Permission),
+NOT($Permission.FSM_Integration),
+OR( AND( NOT(RecordType.DeveloperName = &apos;Break&apos;), NOT(ISPICKVAL(Resource.ResourceType, &quot;Crew&quot;)), ISNEW()) ,
+AND( NOT(RecordType.DeveloperName = &apos;Break&apos;),
+NOT(ISNEW()),
+				NOT(ISNULL(FSM_ExternalId__c)),
+OR(ISCHANGED(ResourceId),
+ISCHANGED(Type),
+ISCHANGED(Start),
+ISCHANGED(End),
+ISCHANGED(Description)))
+)),
+IF(OR(NOT($Permission.FSM_AllowAddressEditability),
+NOT(ISCHANGED(Address))),true,false),
+false
+)
+)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Creation or Modification of Resource Absences is not permitted.</errorMessage>
+</ValidationRule>

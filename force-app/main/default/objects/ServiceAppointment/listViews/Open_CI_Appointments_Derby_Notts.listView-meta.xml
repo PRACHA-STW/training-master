@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_CI_Appointments_Derby_Notts</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6</booleanFilter>
+    <columns>Name</columns>
+    <columns>FSM_ExternalId__c</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>ArrivalWindowEndTime</columns>
+    <columns>Status</columns>
+    <columns>ZIP</columns>
+    <columns>LatestEndTime</columns>
+    <columns>FSM_Polygon__c</columns>
+    <columns>FSM_SAPJobPriority__c</columns>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>FSM_StandardTextKey__c</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_StandardTextKey__c</field>
+        <operation>equals</operation>
+        <value>CINSP</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>Completed,Cancelled</value>
+    </filters>
+    <filters>
+        <field>ArrivalWindowStartTime</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>New,Rejected</value>
+    </filters>
+    <filters>
+        <field>SchedStartTime</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>1101,1102</value>
+    </filters>
+    <label>Open CI Appointments (Derby &amp; Notts)</label>
+    <sharedTo>
+        <group>X1101WD4_Insp_North_Two_Hucknall_Rd</group>
+        <group>X1102WD4_Insp_North_One_Raynesway</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Suspend Reason --></label>
+    <name>FSM_SuspendReason__c</name>
+    <picklistValues>
+        <masterLabel>AUTO</masterLabel>
+        <translation><!-- AUTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abandoned asset</masterLabel>
+        <translation><!-- Abandoned asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional resource</masterLabel>
+        <translation><!-- Additional resource --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adverse weather conditions</masterLabel>
+        <translation><!-- Adverse weather conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assessed DO NOT call back</masterLabel>
+        <translation><!-- Assessed DO NOT call back --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset not available</masterLabel>
+        <translation><!-- Asset not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bio asset not Waste</masterLabel>
+        <translation><!-- Bio asset not Waste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breakdown</masterLabel>
+        <translation><!-- Breakdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUSTOMER Not at home</masterLabel>
+        <translation><!-- CUSTOMER Not at home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer site not ready</masterLabel>
+        <translation><!-- Customer site not ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dangerous situation</masterLabel>
+        <translation><!-- Dangerous situation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dry hole</masterLabel>
+        <translation><!-- Dry hole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate operation</masterLabel>
+        <translation><!-- Duplicate operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency/Reactive Work</masterLabel>
+        <translation><!-- Emergency/Reactive Work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End of shift</masterLabel>
+        <translation><!-- End of shift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Difficulties</masterLabel>
+        <translation><!-- Engineering Difficulties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further visit/work required</masterLabel>
+        <translation><!-- Further visit/work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health and safety</masterLabel>
+        <translation><!-- Health and safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect</masterLabel>
+        <translation><!-- Incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Skills</masterLabel>
+        <translation><!-- Incorrect Skills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAINT MGR_Unable to locate</masterLabel>
+        <translation><!-- MAINT MGR_Unable to locate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mothballed asset not in use</masterLabel>
+        <translation><!-- Mothballed asset not in use --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New asset/replaced</masterLabel>
+        <translation><!-- New asset/replaced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No DST available</masterLabel>
+        <translation><!-- No DST available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No access-Customer/Land owner</masterLabel>
+        <translation><!-- No access-Customer/Land owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No access/Parking</masterLabel>
+        <translation><!-- No access/Parking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No work required</masterLabel>
+        <translation><!-- No work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not available</masterLabel>
+        <translation><!-- Not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not on site</masterLabel>
+        <translation><!-- Not on site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obstruction removal required</masterLabel>
+        <translation><!-- Obstruction removal required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parked Cars</masterLabel>
+        <translation><!-- Parked Cars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Part unavailable</masterLabel>
+        <translation><!-- Part unavailable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permission to dig required</masterLabel>
+        <translation><!-- Permission to dig required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post/Pole support/removal</masterLabel>
+        <translation><!-- Post/Pole support/removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested by Customer</masterLabel>
+        <translation><!-- Requested by Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Same Day Rein needed</masterLabel>
+        <translation><!-- Same Day Rein needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System error</masterLabel>
+        <translation><!-- System error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Task contracted out</masterLabel>
+        <translation><!-- Task contracted out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Task has incorrect Skill</masterLabel>
+        <translation><!-- Task has incorrect Skill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Task incorrect for Asset</masterLabel>
+        <translation><!-- Task incorrect for Asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Time constraints (Day/Time)</masterLabel>
+        <translation><!-- Time constraints (Day/Time) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Management Incorrect</masterLabel>
+        <translation><!-- Traffic Management Incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Mgnt not available</masterLabel>
+        <translation><!-- Traffic Mgnt not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Mgnt not booked</masterLabel>
+        <translation><!-- Traffic Mgnt not booked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel delays</masterLabel>
+        <translation><!-- Travel delays --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unplanned absence</masterLabel>
+        <translation><!-- Unplanned absence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Asset not Bio</masterLabel>
+        <translation><!-- Waste Asset not Bio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work conflict</masterLabel>
+        <translation><!-- Work conflict --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong work centre</masterLabel>
+        <translation><!-- Wrong work centre --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

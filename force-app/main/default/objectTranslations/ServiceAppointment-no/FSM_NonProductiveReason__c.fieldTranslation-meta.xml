@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Non Productive Reason --></label>
+    <name>FSM_NonProductiveReason__c</name>
+    <picklistValues>
+        <masterLabel>2nd line assurance audit</masterLabel>
+        <translation><!-- 2nd line assurance audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adverse weather conditions</masterLabel>
+        <translation><!-- Adverse weather conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breakdown</masterLabel>
+        <translation><!-- Breakdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cars blocking access</masterLabel>
+        <translation><!-- Cars blocking access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental issue</masterLabel>
+        <translation><!-- Environmental issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Investigation</masterLabel>
+        <translation><!-- Further Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect TM Plan</masterLabel>
+        <translation><!-- Incorrect TM Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect TM taken</masterLabel>
+        <translation><!-- Incorrect TM taken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Resource available</masterLabel>
+        <translation><!-- No Resource available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post/Pole removal</masterLabel>
+        <translation><!-- Post/Pole removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team manager audit</masterLabel>
+        <translation><!-- Team manager audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel for Digger</masterLabel>
+        <translation><!-- Travel for Digger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel for Fittings/Tools</masterLabel>
+        <translation><!-- Travel for Fittings/Tools --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel for Lights</masterLabel>
+        <translation><!-- Travel for Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel for barriers</masterLabel>
+        <translation><!-- Travel for barriers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility plans</masterLabel>
+        <translation><!-- Utility plans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Barriers</masterLabel>
+        <translation><!-- Waiting for Barriers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Grab</masterLabel>
+        <translation><!-- Waiting for Grab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Highways</masterLabel>
+        <translation><!-- Waiting for Highways --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Post removal</masterLabel>
+        <translation><!-- Waiting for Post removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Re-trace</masterLabel>
+        <translation><!-- Waiting for Re-trace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Reinstatement</masterLabel>
+        <translation><!-- Waiting for Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Shut Reactive</masterLabel>
+        <translation><!-- Waiting for Shut Reactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Shut planned</masterLabel>
+        <translation><!-- Waiting for Shut planned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for TM</masterLabel>
+        <translation><!-- Waiting for TM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for customer</masterLabel>
+        <translation><!-- Waiting for customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for fittings/Tools</masterLabel>
+        <translation><!-- Waiting for fittings/Tools --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for work</masterLabel>
+        <translation><!-- Waiting for work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting second resource</masterLabel>
+        <translation><!-- Waiting second resource --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

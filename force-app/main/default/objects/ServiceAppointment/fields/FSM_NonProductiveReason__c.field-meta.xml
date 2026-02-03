@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NonProductiveReason__c</fullName>
+    <description>Captures Non productive reason as entered by field user. SFI-37
+Updated as a part of SFS-4802</description>
+    <label>Non Productive Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_NonProductiveCategory__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EF</fullName>
+                <default>false</default>
+                <label>2nd line assurance audit</label>
+            </value>
+            <value>
+                <fullName>VB</fullName>
+                <default>false</default>
+                <label>Breakdown</label>
+            </value>
+            <value>
+                <fullName>OTRE</fullName>
+                <default>false</default>
+                <label>Waiting second resource</label>
+            </value>
+            <value>
+                <fullName>ENV</fullName>
+                <default>false</default>
+                <label>Environmental issue</label>
+            </value>
+            <value>
+                <fullName>H&amp;S</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>AW</fullName>
+                <default>false</default>
+                <label>Adverse weather conditions</label>
+            </value>
+            <value>
+                <fullName>SNR</fullName>
+                <default>false</default>
+                <label>Further Investigation</label>
+            </value>
+            <value>
+                <fullName>SV</fullName>
+                <default>false</default>
+                <label>Team manager audit</label>
+            </value>
+            <value>
+                <fullName>OTNC</fullName>
+                <default>false</default>
+                <label>Waiting for Shut Reactive</label>
+            </value>
+            <value>
+                <fullName>OTSH</fullName>
+                <default>false</default>
+                <label>Waiting for work</label>
+            </value>
+            <value>
+                <fullName>OTWC</fullName>
+                <default>false</default>
+                <label>Waiting for customer</label>
+            </value>
+            <value>
+                <fullName>SPPU</fullName>
+                <default>false</default>
+                <label>Travel for Fittings/Tools</label>
+            </value>
+            <value>
+                <fullName>PLDI</fullName>
+                <default>false</default>
+                <label>Travel for Digger</label>
+            </value>
+            <value>
+                <fullName>PLTL</fullName>
+                <default>false</default>
+                <label>Travel for Lights</label>
+            </value>
+            <value>
+                <fullName>SPBA</fullName>
+                <default>false</default>
+                <label>Waiting for Barriers</label>
+            </value>
+            <value>
+                <fullName>P/A</fullName>
+                <default>false</default>
+                <label>Cars blocking access</label>
+            </value>
+            <value>
+                <fullName>TMPE</fullName>
+                <default>false</default>
+                <label>Waiting for Highways</label>
+            </value>
+            <value>
+                <fullName>TMRE</fullName>
+                <default>false</default>
+                <label>Waiting for Reinstatement</label>
+            </value>
+            <value>
+                <fullName>TMTM</fullName>
+                <default>false</default>
+                <label>Incorrect TM taken</label>
+            </value>
+            <value>
+                <fullName>TMTL</fullName>
+                <default>false</default>
+                <label>Waiting for TM</label>
+            </value>
+            <value>
+                <fullName>WGSR</fullName>
+                <default>false</default>
+                <label>Travel for barriers</label>
+            </value>
+            <value>
+                <fullName>WDST</fullName>
+                <default>false</default>
+                <label>No Resource available</label>
+            </value>
+            <value>
+                <fullName>WDFR</fullName>
+                <default>false</default>
+                <label>Waiting for Re-trace</label>
+            </value>
+            <value>
+                <fullName>WDWI</fullName>
+                <default>false</default>
+                <label>Waiting for Shut planned</label>
+            </value>
+            <value>
+                <fullName>TMA</fullName>
+                <default>false</default>
+                <label>Incorrect TM Plan</label>
+            </value>
+            <value>
+                <fullName>IPD</fullName>
+                <default>false</default>
+                <label>Utility plans</label>
+            </value>
+            <value>
+                <fullName>IF</fullName>
+                <default>false</default>
+                <label>Post/Pole removal</label>
+            </value>
+            <value>
+                <fullName>WGOT</fullName>
+                <default>false</default>
+                <label>Waiting for Grab</label>
+            </value>
+            <value>
+                <fullName>WTP</fullName>
+                <default>false</default>
+                <label>Waiting for Post removal</label>
+            </value>
+            <value>
+                <fullName>WP</fullName>
+                <default>false</default>
+                <label>Waiting for fittings/Tools</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Safety</controllingFieldValue>
+            <valueName>EF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Safety</controllingFieldValue>
+            <valueName>OTRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Safety</controllingFieldValue>
+            <valueName>ENV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Safety</controllingFieldValue>
+            <valueName>H&amp;S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Safety</controllingFieldValue>
+            <valueName>AW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Safety</controllingFieldValue>
+            <valueName>SV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>SNR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>OTNC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>OTSH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>P/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>WDST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>WDFR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>WDWI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>TMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>IPD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>IF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>OTWC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>SPBA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>TMPE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>TMRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>TMTM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>TMTL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>WGOT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>WTP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Plant/Vehicle</controllingFieldValue>
+            <valueName>VB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Plant/Vehicle</controllingFieldValue>
+            <valueName>SPPU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Plant/Vehicle</controllingFieldValue>
+            <valueName>PLDI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Plant/Vehicle</controllingFieldValue>
+            <valueName>PLTL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Plant/Vehicle</controllingFieldValue>
+            <valueName>WGSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Plant/Vehicle</controllingFieldValue>
+            <valueName>WP</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Integration_Log</name>
+        <label>Integration Log</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <actionName>FSM_Utility</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>externalId</name>
+            <value>
+                <elementReference>triggeredTMA.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>triggeredTMA.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestPayLoad</name>
+            <value>
+                <elementReference>RequestPayload</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceName</name>
+            <value>
+                <elementReference>$Label.FSM_TmaServiceName</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>FSM_Utility</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>SFI-1208
+updated as a part of sfi-1614
+updated as a part of sfi-1724
+updated as a part of sfi-1788
+Updated as part of SFI-2254
+Updated as part of SFI-2892</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM TMA - Subflow - Create Platform Event Record</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>PERecordCreation</name>
+        <label>PERecordCreation</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <connector>
+            <targetReference>Integration_Log</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>TMA_Error_log</targetReference>
+        </faultConnector>
+        <inputReference>singleRecord</inputReference>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>PERecordCreation</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>TMA_Error_log</name>
+        <label>TMA Error log</label>
+        <locationX>440</locationX>
+        <locationY>242</locationY>
+        <flowName>ErrorLog_Subflow_Create_Record</flowName>
+        <inputAssignments>
+            <name>FSM_ExternalId</name>
+            <value>
+                <elementReference>triggeredTMA.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FlowName</name>
+            <value>
+                <stringValue>FSM TMAPermit AfterTrigger</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_Type</name>
+            <value>
+                <stringValue>Integration</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>RequestPayload</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{
+&quot;FSM_TMAExternalId__c&quot; : {!triggeredTMA.FSM_ExternalId__c},
+&quot;FSM_TMAActualStart__c&quot; : {!triggeredTMA.FSM_TMAActualStart__c},
+&quot;FSM_TMAActualEnd__c&quot; : {!triggeredTMA.FSM_TMAActualEnd__c},
+&quot;FSM_EventType__c&quot; : {!triggeredTMA.FSM_EventType__c} ,
+&quot;FSM_SAPUserID__c&quot; : {!singleRecord.FSM_SAPUserID__c} ,
+&quot;FSM_NoticeState__c &quot; : {!WorkOrderNoticeState} ,
+&quot;FSM_ScheduledStartDate__c&quot; :  {!singleRecord.FSM_ScheduledStartDate__c},
+&quot;FSM_OrderNumber__c&quot; :  {!singleRecord.FSM_OrderNumber__c},
+&quot;FSM_OperationNumber__c&quot; :  {!singleRecord.FSM_OperationNumber__c},
+&quot;FSM_SiteClear__c&quot; :  {!singleRecord.FSM_SiteClear__c},
+&quot;FSM_ExcavationOccured__c&quot; : {!singleRecord.FSM_ExcavationOccured__c},
+&quot;CreatedDate&quot; : {!$Flow.CurrentDateTime},
+&quot;CreatedBy&quot; : {!$User.FirstName} {!$User.LastName}
+}</text>
+    </textTemplates>
+    <variables>
+        <name>singleRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FSM_SendTMAUpdates__e</objectType>
+    </variables>
+    <variables>
+        <name>triggeredTMA</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FSM_TMAPermit__c</objectType>
+    </variables>
+    <variables>
+        <description>sfi-1788</description>
+        <name>WorkOrderNoticeState</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

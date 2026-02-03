@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SuspendReason__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Suspend Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>End of shift</fullName>
+                <default>true</default>
+                <label>End of shift</label>
+            </value>
+            <value>
+                <fullName>Emergency/Reactive Work</fullName>
+                <default>false</default>
+                <label>Emergency/Reactive Work</label>
+            </value>
+            <value>
+                <fullName>Unplanned absence</fullName>
+                <default>false</default>
+                <label>Unplanned absence</label>
+            </value>
+            <value>
+                <fullName>Travel delays</fullName>
+                <default>false</default>
+                <label>Travel delays</label>
+            </value>
+            <value>
+                <fullName>No DST available</fullName>
+                <default>false</default>
+                <label>No DST available</label>
+            </value>
+            <value>
+                <fullName>CUSTOMER Not at home</fullName>
+                <default>false</default>
+                <label>CUSTOMER Not at home</label>
+            </value>
+            <value>
+                <fullName>Requested by Customer</fullName>
+                <default>false</default>
+                <label>Requested by Customer</label>
+            </value>
+            <value>
+                <fullName>No access-Customer/Land owner</fullName>
+                <default>false</default>
+                <label>No access-Customer/Land owner</label>
+            </value>
+            <value>
+                <fullName>Customer site not ready</fullName>
+                <default>false</default>
+                <label>Customer site not ready</label>
+            </value>
+            <value>
+                <fullName>Health and safety</fullName>
+                <default>false</default>
+                <label>Health and safety</label>
+            </value>
+            <value>
+                <fullName>Adverse weather conditions</fullName>
+                <default>false</default>
+                <label>Adverse weather conditions</label>
+            </value>
+            <value>
+                <fullName>Incorrect Skills</fullName>
+                <default>false</default>
+                <label>Incorrect Skills</label>
+            </value>
+            <value>
+                <fullName>Obstruction removal required</fullName>
+                <default>false</default>
+                <label>Obstruction removal required</label>
+            </value>
+            <value>
+                <fullName>Dangerous situation</fullName>
+                <default>false</default>
+                <label>Dangerous situation</label>
+            </value>
+            <value>
+                <fullName>Engineering Difficulties</fullName>
+                <default>false</default>
+                <label>Engineering Difficulties</label>
+            </value>
+            <value>
+                <fullName>Additional resource</fullName>
+                <default>false</default>
+                <label>Additional resource</label>
+            </value>
+            <value>
+                <fullName>Incorrect</fullName>
+                <default>false</default>
+                <label>Incorrect</label>
+            </value>
+            <value>
+                <fullName>Part unavailable</fullName>
+                <default>false</default>
+                <label>Part unavailable</label>
+            </value>
+            <value>
+                <fullName>Not available</fullName>
+                <default>false</default>
+                <label>Not available</label>
+            </value>
+            <value>
+                <fullName>System error</fullName>
+                <default>false</default>
+                <label>System error</label>
+            </value>
+            <value>
+                <fullName>Breakdown</fullName>
+                <default>false</default>
+                <label>Breakdown</label>
+            </value>
+            <value>
+                <fullName>Further visit/work required</fullName>
+                <default>false</default>
+                <label>Further visit/work required</label>
+            </value>
+            <value>
+                <fullName>No work required</fullName>
+                <default>false</default>
+                <label>No work required</label>
+            </value>
+            <value>
+                <fullName>No access/Parking</fullName>
+                <default>false</default>
+                <label>No access/Parking</label>
+            </value>
+            <value>
+                <fullName>Traffic Mgnt not available</fullName>
+                <default>false</default>
+                <label>Traffic Mgnt not available</label>
+            </value>
+            <value>
+                <fullName>Traffic Mgnt not booked</fullName>
+                <default>false</default>
+                <label>Traffic Mgnt not booked</label>
+            </value>
+            <value>
+                <fullName>Duplicate operation</fullName>
+                <default>false</default>
+                <label>Duplicate operation</label>
+            </value>
+            <value>
+                <fullName>Dry hole</fullName>
+                <default>false</default>
+                <label>Dry hole</label>
+            </value>
+            <value>
+                <fullName>Work conflict</fullName>
+                <default>false</default>
+                <label>Work conflict</label>
+            </value>
+            <value>
+                <fullName>Permission to dig required</fullName>
+                <default>false</default>
+                <label>Permission to dig required</label>
+            </value>
+            <value>
+                <fullName>Traffic Management Incorrect</fullName>
+                <default>false</default>
+                <label>Traffic Management Incorrect</label>
+            </value>
+            <value>
+                <fullName>Time constraints (Day/Time)</fullName>
+                <default>false</default>
+                <label>Time constraints (Day/Time)</label>
+            </value>
+            <value>
+                <fullName>Same Day Rein needed</fullName>
+                <default>false</default>
+                <label>Same Day Rein needed</label>
+            </value>
+            <value>
+                <fullName>Post/Pole support/removal</fullName>
+                <default>false</default>
+                <label>Post/Pole support/removal</label>
+            </value>
+            <value>
+                <fullName>Parked Cars</fullName>
+                <default>false</default>
+                <label>Parked Cars</label>
+            </value>
+            <value>
+                <fullName>Not on site</fullName>
+                <default>false</default>
+                <label>Not on site</label>
+            </value>
+            <value>
+                <fullName>Abandoned asset</fullName>
+                <default>false</default>
+                <label>Abandoned asset</label>
+            </value>
+            <value>
+                <fullName>Mothballed asset not in use</fullName>
+                <default>false</default>
+                <label>Mothballed asset not in use</label>
+            </value>
+            <value>
+                <fullName>Asset not available</fullName>
+                <default>false</default>
+                <label>Asset not available</label>
+            </value>
+            <value>
+                <fullName>New asset/replaced</fullName>
+                <default>false</default>
+                <label>New asset/replaced</label>
+            </value>
+            <value>
+                <fullName>Bio asset not Waste</fullName>
+                <default>false</default>
+                <label>Bio asset not Waste</label>
+            </value>
+            <value>
+                <fullName>Waste Asset not Bio</fullName>
+                <default>false</default>
+                <label>Waste Asset not Bio</label>
+            </value>
+            <value>
+                <fullName>Task incorrect for Asset</fullName>
+                <default>false</default>
+                <label>Task incorrect for Asset</label>
+            </value>
+            <value>
+                <fullName>Task has incorrect Skill</fullName>
+                <default>false</default>
+                <label>Task has incorrect Skill</label>
+            </value>
+            <value>
+                <fullName>Task contracted out</fullName>
+                <default>false</default>
+                <label>Task contracted out</label>
+            </value>
+            <value>
+                <fullName>Assessed DO NOT call back</fullName>
+                <default>false</default>
+                <label>Assessed DO NOT call back</label>
+            </value>
+            <value>
+                <fullName>Wrong work centre</fullName>
+                <default>false</default>
+                <label>Wrong work centre</label>
+            </value>
+            <value>
+                <fullName>MAINT MGR_Unable to locate</fullName>
+                <default>false</default>
+                <label>MAINT MGR_Unable to locate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

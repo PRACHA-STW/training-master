@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Created as a part of SFS-2329</description>
+        <name>Add_Records_to_Collection</name>
+        <label>Add Records to Collection</label>
+        <locationX>138</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>WorkPlanShareCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>WorkPlanShareRecord</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Public_Groups</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Created as a part of SFS-2329</description>
+        <name>Assign_values_to_WorkPlanShareRecord</name>
+        <label>Assign values to WorkPlanShareRecord</label>
+        <locationX>138</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>WorkPlanShareRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WorkPlanShareRecord.UserOrGroupId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Through_Public_Groups.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WorkPlanShareRecord.AccessLevel</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Edit</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Records_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Craeted as a part of SFS-2329</description>
+        <name>Error_Location</name>
+        <label>Error Location</label>
+        <locationX>314</locationX>
+        <locationY>1055</locationY>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error occured while Creating Work Rule Share records in &apos;FSM Work Plan After Trigger Flow&apos;</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Created as a part of SFS-2329</description>
+        <name>Check_Record_Created_or_Updated</name>
+        <label>Check Record Created or Updated</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Updated</defaultConnectorLabel>
+        <rules>
+            <name>Created</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNewWorkPlan</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fetch_Public_Groups</targetReference>
+            </connector>
+            <label>Created</label>
+        </rules>
+    </decisions>
+    <description>Created as a part of SFS-2329
+Updated as part of SFI-2768</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Created as a part of SFS-2329
+Updated as part of SFI-2768</description>
+        <name>FieldWorkerGroupName</name>
+        <dataType>String</dataType>
+        <expression>TRIM(LEFT(&apos;FSM_FW_&apos;+{!$Record.WorkOrder.ServiceTerritory.Name},40))</expression>
+    </formulas>
+    <formulas>
+        <description>Created as a part of SFS-2329</description>
+        <name>IsNewWorkPlan</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <description>Created as a part of SFS-2329</description>
+        <name>SchedulerGroupName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.WorkOrder.ServiceTerritory.Name}</expression>
+    </formulas>
+    <interviewLabel>Work Plan After Trigger Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Work Plan After Trigger</label>
+    <loops>
+        <description>Created as a part of SFS-2329</description>
+        <name>Loop_Through_Public_Groups</name>
+        <label>Loop Through Public Groups</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <collectionReference>Fetch_Public_Groups</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_values_to_WorkPlanShareRecord</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_WorkPlanShare_Records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Created as a part of SFS-2329</description>
+        <name>Create_WorkPlanShare_Records</name>
+        <label>Create WorkPlanShare Records</label>
+        <locationX>50</locationX>
+        <locationY>947</locationY>
+        <faultConnector>
+            <targetReference>Error_Location</targetReference>
+        </faultConnector>
+        <inputReference>WorkPlanShareCollection</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Created as a part of SFS-2329</description>
+        <name>Fetch_Public_Groups</name>
+        <label>Fetch Public Groups</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Public_Groups</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>FieldWorkerGroupName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SchedulerGroupName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Record_Created_or_Updated</targetReference>
+        </connector>
+        <object>WorkPlan</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>ErrorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-2329</description>
+        <name>WorkPlanShareCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkPlanShare</objectType>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-2329</description>
+        <name>WorkPlanShareRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkPlanShare</objectType>
+    </variables>
+</Flow>

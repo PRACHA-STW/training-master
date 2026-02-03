@@ -1,0 +1,511 @@
+<!--**************************************************************************************
+    - Description  : Created for DCF Distribution Feedback Form
+    - Created By   : B. Leena
+    - Created Date : 13th October 2023
+    - Modified By  : 6th Dec, 2023 by Brajesh Kumar & Arnob Dey - SFS-3778
+    - Modified By  : 16th Sept, 2024 by Aishwarya Bhosale - SFS-7045,7256
+**************************************************************************************** -->
+<template>
+
+    <!--SPINNER-->
+    <template if:true={showSpinner}>
+        <lightning-spinner size="small" alternative-text="Loading" ></lightning-spinner>
+    </template>
+
+    <!--MAX LIMIT CHECK-->
+    <template if:true={hasMaxLimitReached}>
+        <lightning-card>
+            <div style="height: 50vh; display: flex; justify-content: center; align-items: center;">
+                <p style="font-size: x-large; font-weight: 600; text-align: center;color: red;">
+                    You have reached the maximum number of completed forms.
+                </p>
+            </div>
+        </lightning-card>
+    </template> 
+
+    <template if:false={hasMaxLimitReached}>
+
+        <lightning-card>
+            <lightning-record-edit-form object-api-name={objectApiName}>
+                <template if:true={Screen1}>
+                    <lightning-card title="SEWERAGE JOB FEEBACK FORM">
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+                        <div>
+                            <!-- base map layer-->
+                            <lightning-card>
+                                <div class="slds-m-horizontal_x-small">
+                                    <div style="display: flex;">
+                                        <h3 slot="title">
+                                            <lightning-icon icon-name="utility:connected_apps"
+                                                size="small"></lightning-icon>
+                                            Before work photos
+                                        </h3>
+                                        <p class="required">*</p>
+                                    </div>
+                                    <lightning-input type="file" accept="image/*" multiple label="&zwnj;"
+                                        onchange={handleBeforeWorkPhotoSelect}>
+                                    </lightning-input>
+
+                                    <!-- Selected Images Preview  -->
+                                    <template for:each={imageDataBefore} for:item="item">
+                                        <div key={item.id} class={item.className}>
+                                            <div class="delete-icon" onclick={handleBeforeWorkDeleteClick}
+                                                data-id={item.id}>
+                                                <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                                                <lightning-icon icon-name="action:delete" alternative-text="Delete"
+                                                    title="Delete" size="x-small"></lightning-icon>
+                                            </div>
+                                            <img data-id={item.id} src={item.data} style="width:100%;height:180px;"
+                                                onclick={handleBeforeWorkImageClick} /><br><br>
+                                        </div>
+                                    </template>
+                                </div>
+                            </lightning-card>
+                        </div>
+
+                        <!-- <div style="height:100%;"> -->
+                        <div>
+                            <!-- base map layer-->
+                            <lightning-card>
+                                <div class="slds-m-horizontal_x-small">
+                                    <div style="display: flex;">
+                                        <h3 slot="title">
+                                            <lightning-icon icon-name="utility:connected_apps"
+                                                size="small"></lightning-icon>
+                                            During work photos
+                                        </h3>
+                                        <p class="required">*</p>
+                                    </div>
+
+                                    <lightning-input type="file" accept="image/*" multiple label="&zwnj;"
+                                        onchange={handleDuringWorkPhotoSelect}>
+                                    </lightning-input>
+
+                                    <!-- Selected Images Preview  -->
+                                    <template for:each={imageDataDuring} for:item="item">
+                                        <div key={item.id} class={item.className}>
+                                            <div class="delete-icon" onclick={handleDuringWorkImageDeleteClick}
+                                                data-id={item.id}>
+                                                <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                                                <lightning-icon icon-name="action:delete" alternative-text="Delete"
+                                                    title="Delete" size="x-small"></lightning-icon>
+                                            </div>
+                                            <!-- <img data-id={item.id} src={item.data} style="width:100%;height:180px;" -->
+                                            <img data-id={item.id} src={item.data} style="width:100%;height:180px;"
+                                                onclick={handleDuringWorkImageClick} /><br><br>
+                                        </div>
+                                    </template>
+                                </div>
+                            </lightning-card>
+                        </div>
+
+                        <!-- <div style="height:100%;"> -->
+                        <div>
+                            <!-- base map layer-->
+                            <lightning-card>
+                                <div class="slds-m-horizontal_x-small">
+                                    <div style="display: flex;">
+                                        <h3 slot="title">
+                                            <lightning-icon icon-name="utility:connected_apps"
+                                                size="small"></lightning-icon>
+                                            After work photos
+                                        </h3>
+                                        <p class="required">*</p>
+                                    </div>
+
+                                    <lightning-input type="file" accept="image/*" multiple label="&zwnj;"
+                                        onchange={handleAfterWorkPhotoSelect}>
+                                    </lightning-input>
+
+                                    <!-- Selected Images Preview  -->
+                                    <template for:each={imageDataAfter} for:item="item">
+                                        <div key={item.id} class={item.className}>
+                                            <div class="delete-icon" onclick={handleAfterWorkImageDeleteClick}
+                                                data-id={item.id}>
+                                                <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                                                <lightning-icon icon-name="action:delete" alternative-text="Delete"
+                                                    title="Delete" size="x-small"></lightning-icon>
+                                            </div>
+                                            <img data-id={item.id} src={item.data} style="width:100%;height:180px;"
+                                                onclick={handleAfterWorkImageClick} /><br><br>
+                                        </div>
+                                    </template>
+                                </div>
+                            </lightning-card>
+                        </div>
+
+                        <!-- <div style="height:100%;"> -->
+                        <div>
+                            <!-- base map layer-->
+                            <lightning-card>
+                                <div class="slds-m-horizontal_x-small">
+                                    <div style="display: flex;">
+                                        <h3 slot="title">
+                                            <lightning-icon icon-name="utility:connected_apps"
+                                                size="small"></lightning-icon>
+                                            Photos of site as left
+                                        </h3>
+                                        <p class="required">*</p>
+                                    </div>
+
+                                    <lightning-input type="file" accept="image/*" multiple label="&zwnj;"
+                                        onchange={handleSitePhotoSelect}>
+                                    </lightning-input>
+
+                                    <!-- Selected Images Preview  -->
+                                    <template for:each={imageDataSite} for:item="item">
+                                        <div key={item.id} class={item.className}>
+                                            <div class="delete-icon" onclick={handleSiteImageDeleteClick} data-id={item.id}>
+                                                <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                                                <lightning-icon icon-name="action:delete" alternative-text="Delete"
+                                                    title="Delete" size="x-small"></lightning-icon>
+                                            </div>
+                                            <img data-id={item.id} src={item.data} style="width:100%;height: 180px;"
+                                                onclick={handleSiteImageClick} /><br><br>
+                                        </div>
+                                    </template>
+                                </div>
+                            </lightning-card>
+                        </div>
+
+                        <!-- <div style="height:100%;"> -->
+                        <div>
+                            <!-- base map layer-->
+                            <lightning-card>
+                                <div class="slds-m-horizontal_x-small">
+                                    <div style="display: flex;">
+                                        <h3 slot="title">
+                                            <lightning-icon icon-name="utility:connected_apps"
+                                                size="small"></lightning-icon>
+                                            Any additional photos for further FOW
+                                        </h3>
+                                    </div>
+
+                                    <lightning-input type="file" accept="image/*" multiple label="&zwnj;"
+                                        onchange={handleAdditionalPhotoSelect}>
+                                    </lightning-input>
+
+                                    <!-- Selected Images Preview  -->
+                                    <template for:each={imageDataAdditional} for:item="item">
+                                        <div key={item.id} class={item.className}>
+                                            <div class="delete-icon" onclick={handleAdditionalImageDeleteClick}
+                                                data-id={item.id}>
+                                                <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                                                <lightning-icon icon-name="action:delete" alternative-text="Delete"
+                                                    title="Delete" size="x-small"></lightning-icon>
+                                            </div>
+                                            <img data-id={item.id} src={item.data} style="width:100%;height:200px;"
+                                                onclick={handleAdditionalImageClick} /><br><br>
+                                        </div>
+                                    </template>
+                                </div>
+                            </lightning-card>
+                        </div>
+                    </lightning-card>
+                </template>
+
+                <template if:true={Screen2}>
+                    <lightning-card title="FEEDBACK">
+                        <!-- To Display Validation error -->
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+                        <!-- Dependent Picklist Start-->
+                        <div class="slds-m-horizontal_x-small">
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>ASSET</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedAsset} options={assetRecords}
+                                onchange={handleAssetChange} required>
+                            </lightning-combobox>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>TASK</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedTask} options={filteredTask}
+                                onchange={handleTaskChange}>
+                            </lightning-combobox>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>RECIPIENT</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedRecipient} options={filteredRecipient}
+                                onchange={handleRecipientChange}>
+                            </lightning-combobox>
+                            <!-- Dependent Picklist End-->
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>TRANSFERRED ASSET</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox name="FSM_SWRTransferredAsset__c" value={selectedSWRTransferredAsset}
+                                options={swrTransferredAssetOptions} onchange={handleChangeSWRTransferredAsset}
+                                variant="label-hidden">
+                            </lightning-combobox>
+                            <!-- UID OF ASSEST THAT WAS WORKED ON-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>UID OF ASSET THAT WAS WORKED ON</p>
+                                <p class="required">*</p>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" value={uIDAssetWorkedOn}
+                                onchange={handleUIDAssetWorkedChange} maxlength="10">
+                            </lightning-input>
+                            <!-- GRID REFERENCE X-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>GRID REFERENCE X </p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-input name="FSM_GridsReferenceX__c" type="number" required variant="label-hidden"
+                                value={gridreferencex} onchange={handlegridxchange} class="gridx"
+                                maxlength="6"></lightning-input>
+                            <!-- GRID REFERENCE Y-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>GRID REFERENCE Y </p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-input name="FSM_GridsReferenceY__c" type="number" required variant="label-hidden"
+                                value={gridreferencey} onchange={handlegridychange} maxlength="6"></lightning-input>
+
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>IS FURTHER MAPPING REQUIRED</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox name="FSM_SIRFurtherMappingRequired__c" value={selectedFurtherMappingReq}
+                                options={swrFurtherMappingReqOptions} onchange={handleChangeFurtherMappingReq}
+                                variant="label-hidden">
+                            </lightning-combobox>
+                        </div>
+                    </lightning-card>
+                </template>
+
+                <template if:true={Screen3}>
+                    <lightning-card title="Blockage, Cleansing, CCTV">
+                        <!-- To Display Validation error -->
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+                        <!-- Equipment Used-->
+                        <div class="slds-m-horizontal_x-small">
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Equipment Used</p>
+                                <p class="required"> *</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedEquipmentaUsed}
+                                options={equipmentUsedOptions} onchange={handleEquipmentUsedChange} required>
+                            </lightning-combobox>
+                            <!-- Job Completed? -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Job Completed?</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedjobCompleted}
+                                options={jobCompletedOptions} onchange={handlejobCompletedChanges}>
+                            </lightning-combobox>
+                            <!-- No- If no why?  -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>No- If no why?</p>
+                                <template if:true={ifNoGiveReason}>
+                                    <p class="required">*</p>
+                                </template>
+                            </div>
+                            <lightning-input type="text" variant="label-hidden" value={noIfNoWhy}
+                                onchange={handlenoIfNoWhyChange} max-length="500">
+                            </lightning-input>
+                            <!-- Pipe Length CCTV’d (m)-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Pipe Length CCTV'd (m)</p>
+                                <p class="required">*</p>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" value={pipeLengthCCTV}
+                                onchange={handlepipeLengthCCTVChange}>
+                            </lightning-input>
+                            <!-- Pipe Length Cleansed/Root cut (m) -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Pipe Length Cleansed/Root cut (m)</p>
+                                <p class="required">*</p>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" value={pipeLenCleasedRootCut}
+                                onchange={handlepipeLenCleansedRootChange}>
+                            </lightning-input>
+                        </div>
+                    </lightning-card>
+                </template>
+                <template if:true={Screen4}>
+                    <lightning-card title="ENVIRONMENTAL IMPACT">
+                        <!-- To Display Validation error -->
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+                        <div class="slds-m-horizontal_x-small">
+                            <!-- Is there a risk to an environmental important site? -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Is there a risk to an environmental important site?</p>
+                                <p class="required">*</p>
+                                <lightning-helptext content="SSSI/SAMs/NR"></lightning-helptext>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={evnImpSite} options={evnImpSiteOptions}
+                                onchange={handleEvnImpSiteChange} required>
+                            </lightning-combobox>
+                        </div>
+                    </lightning-card>
+                </template>
+                <!-- screen 5 -->
+                <template if:true={Screen5}>
+                    <lightning-card title="REPAIR JOBS ONLY">
+                        <!-- To Display Validation error -->
+                        <lightning-card>
+                            <ul class="slds-m-around_medium">
+                                <template for:each={errormessages} for:item="field">
+                                    <li key={field.Id} style="color:red;">{field}</li>
+                                </template>
+                            </ul>
+                        </lightning-card>
+                        <div class="slds-m-horizontal_x-small">
+                            <!-- Repair Length (m)-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Repair Length (m)</p>
+                            </div>
+                            <lightning-input type="number" step="0.01"  pattern="[0-9\-]*(\.[0-9]{1,2})?$" variant="label-hidden" value={repairLength}
+                                onchange={handlerepairLengthChange}>
+                            </lightning-input>
+                            <!-- Pipe Diameter  -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Pipe Diameter</p>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedPipeDiameter}
+                                options={pipeDiameterOptions} onchange={handlePipeDiameterChange} required>
+                            </lightning-combobox>
+                            <!-- Pipe diameter other-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Pipe diameter other</p>
+                                <template if:true={pipeDiameterOther}>
+                                    <p class="required">*</p>
+                                </template>
+                            </div>
+                            <lightning-input type="number" variant="label-hidden" value={pipeDiameterOtherValue}
+                                onchange={handlepipeDiameterOtherChange}></lightning-input>
+                            <!-- Pipe Material  -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Pipe Material</p>
+                                <lightning-helptext content="Select One"></lightning-helptext>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedPipeMaterial}
+                                options={pipeMaterialOption} onchange={handlePipeMaterialChange} required>
+                            </lightning-combobox>
+
+                            <!-- Sewer Status -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Sewer Status</p>
+                                <lightning-helptext content="Select One"></lightning-helptext>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedSewerStatus}
+                                options={sewerStatusOptions} onchange={handleSewerStatusChange} required>
+                            </lightning-combobox>
+                            <!-- Repair Depth (m)-->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Repair Depth (m)</p>
+                            </div>
+                            <lightning-input type="number" step="0.01"  pattern="[0-9\-]*(\.[0-9]{1,2})?$" variant="label-hidden" value={repairDepth}
+                                onchange={handleRepairDepthChange}>
+                            </lightning-input>
+                            <!-- Sewer Type -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Sewer Type</p>
+                                <lightning-helptext content="Select One"></lightning-helptext>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedSewerType} options={sewerTypeOption}
+                                onchange={handleSewerTypeChange} required>
+                            </lightning-combobox>
+
+                            <!-- Reason for Repair -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Reason For Repair</p>
+                                <lightning-helptext content="Select One"></lightning-helptext>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedReasonForRepair}
+                                options={reasonForRepairOption} onchange={handleReasonForRepairChange} required>
+                            </lightning-combobox>
+
+                            <!-- Third party Damage  -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Third party Damage</p>
+                                <lightning-helptext content="Select One"></lightning-helptext>
+                            </div>
+                            <lightning-combobox variant="label-hidden" value={selectedThirdPartyDamage}
+                                options={thirdPartyDamageOption} onchange={handleThirdPartyDamageChange} required>
+                            </lightning-combobox>
+                        </div>
+                    </lightning-card>
+                </template>
+
+                <!-- screen 6 -->
+                <template if:true={Screen6}>
+                    <lightning-card title="Comments">
+                        <div class="slds-m-horizontal_x-small">
+                            <!-- Comments -->
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>Comments </p>
+                            </div>
+                            <lightning-input name="FSM_Comments__c" type="text" variant="label-hidden" value={comment}
+                                onchange={handleCommentchange}></lightning-input>
+                        </div>
+                    </lightning-card>
+                </template>
+                <!-- screen 7 -->
+                <template if:true={Screen7}>
+                    <lightning-card>
+                        <div class="slds-m-horizontal_x-small">
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">
+                                    Data Capture Form is submitted successfully. Please close the screen to continue.</p>
+                            </div>
+                        </div>
+                    </lightning-card>
+                </template>
+
+
+
+
+                <!-- Add more steps as needed -->
+
+                <!-- Next and Previous buttons -->
+            </lightning-record-edit-form>
+            <lightning-card>
+                <div class="slds-clearfix">
+                    <template if:true={isEnablePrev}>
+                        <lightning-button label="Previous" variant="brand" onclick={handlePrevious}></lightning-button>
+                    </template>&nbsp;&nbsp;&nbsp;
+                    <template if:true={isEnableNext}>
+                        <div class="slds-float_right slds-m-right_x-small">
+                            <lightning-button label="Next" onclick={handleNext} variant="brand"></lightning-button>
+                        </div>
+                    </template>&nbsp;&nbsp;&nbsp;
+                    <template if:true={isLastScreen}>
+                        <div class="slds-float_right slds-m-right_x-small">
+                        <lightning-button label="Submit" onclick={handleSave} variant="brand"></lightning-button>
+                    </div>
+                    </template>
+                </div>
+            </lightning-card>
+        </lightning-card>
+
+    </template>
+</template>

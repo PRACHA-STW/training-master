@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Log_INT_014_LS</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>FSM_ServiceName__c</columns>
+    <columns>FSM_ExternalId__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>FSM_ResponsePayload__c</columns>
+    <columns>FSM_RecordId__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>FSM_RequestPayload__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>YESTERDAY</value>
+    </filters>
+    <filters>
+        <field>FSM_ServiceName__c</field>
+        <operation>equals</operation>
+        <value>Send Upload Attachments</value>
+    </filters>
+    <label>Integration Log_INT-014_Files_LS</label>
+    <sharedTo>
+        <group>FSM_Tech_Support</group>
+    </sharedTo>
+</ListView>

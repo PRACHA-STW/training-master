@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RMReinstatementRole__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If ticked, this configuration applies to the RM and Reinstatement Role.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If ticked, this configuration applies to the RM and Reinstatement Role.</inlineHelpText>
+    <label>R&amp;M/ Reinstatement</label>
+    <type>Checkbox</type>
+</CustomField>

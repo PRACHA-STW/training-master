@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PrimaryTerritoryMemberTypeValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( TerritoryType, &apos;Primary&apos;),
+NOT(ISPICKVAL(ServiceResource.ResourceType , &apos;Crew&apos;)),
+NOT(
+OR(
+
+$Permission.FSM_ModifyPrimarySTM,
+$Permission.FSM_SystemAdmin,
+$Permission.FSM_Data_Migration_Admin,
+$User.Alias = &apos;autocln&apos;,
+ISCHANGED(FSM_CustomerAppointmentCapacity60min__c),
+ISCHANGED(FSM_CustomerAppointmentCapacity90min__c),
+ISCHANGED(FSM_CustomerAppointmentCapacity120min__c),
+ISCHANGED(FSM_CustomerAppointmentCapacity330min__c),
+ISCHANGED(FSM_CustomerAppointmentCapacity480min__c),
+ISCHANGED(FSM_Level1__c),
+ISCHANGED(FSM_Level2__c),
+ISCHANGED(FSM_Level3__c),
+ISCHANGED(FSM_Level4__c),
+ISCHANGED(FSM_NoRestriction__c)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Primary non-crew members are managed by SAP. Please contact System Admin</errorMessage>
+</ValidationRule>

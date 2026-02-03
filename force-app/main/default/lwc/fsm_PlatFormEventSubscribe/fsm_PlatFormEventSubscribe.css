@@ -1,0 +1,18 @@
+/********************************************************************************************************
+@Author      : Himanshu Dobriyal
+@description : Component created as part of SFI-1002.
+@Date        : 03-November-2023
+********************************************************************************************************/
+.json-container {
+    width: 100%; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.json-content {
+    white-space: pre-wrap; 
+    padding: 10px;
+    margin: 0;
+    font-family: monospace; 
+}

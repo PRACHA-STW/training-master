@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Fencing may be installed on some pipe bridges. 	
+The need for fencing will need to be assessed based on the risk but will be generally where the consequence is high i.e. rail crossings / high fall and likelihood is sufficient. 	
+Fencing comes in different styles and palisade fencing is most secure with post and rail less secure and can be climbed. 	
+Fencing may require planning permission and land agreements. -->
+    </help>
+    <label><!-- What type of fencing ? --></label>
+    <name>FSM_FencingType__c</name>
+    <picklistValues>
+        <masterLabel>Additional fencing should be considered (detail below)</masterLabel>
+        <translation><!-- Additional fencing should be considered (detail below) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fencing in poor state of repair i.e damaged / signs of ingress</masterLabel>
+        <translation><!-- Fencing in poor state of repair i.e damaged / signs of ingress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fencing present and in good condition</masterLabel>
+        <translation><!-- Fencing present and in good condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fencing provided by 3rd party or low level fencing easily climbed over</masterLabel>
+        <translation><!-- Fencing provided by 3rd party or low level fencing easily climbed over --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No fencing and fencing not required/suitable</masterLabel>
+        <translation><!-- No fencing and fencing not required/suitable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

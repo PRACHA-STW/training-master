@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheduled_Core_TMA_List_ANCILs</fullName>
+    <columns>Name</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>Status</columns>
+    <columns>FSM_EarliestSchedulableDate__c</columns>
+    <columns>FSM_ConstraintStart__c</columns>
+    <columns>FSM_ConstraintEnd__c</columns>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_CoreTMAJob__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>Cannot Complete,Completed,Cancelled</value>
+    </filters>
+    <label>Scheduled Core TMA List - ANCILs</label>
+    <sharedTo>
+        <group>FSM_WaterInfra</group>
+    </sharedTo>
+</ListView>

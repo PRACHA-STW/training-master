@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>false</blockedByApiWhitelisting>
+    <consumerKey>3MVG9HxRZv05HarTJOHvsRZ8tKw9KD2xkgPUBZb0h6tjKt9vm3HWWCxecKO2PHnc25G8bb8K07XFbGXcPzkPH</consumerKey>
+    <consumerName>vyn</consumerName>
+    <masterLabel>BlacklistedConsumer179992136757782</masterLabel>
+</BlacklistedConsumer>

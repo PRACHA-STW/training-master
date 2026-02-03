@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cover and Frame check --></label>
+    <name>FSM_DownMan2Cover__c</name>
+    <picklistValues>
+        <masterLabel>Good condition inside &amp; out</masterLabel>
+        <translation><!-- Good condition inside &amp; out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor condition - FOW needed</masterLabel>
+        <translation><!-- Poor condition - FOW needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor condition - NO FOW needed</masterLabel>
+        <translation><!-- Poor condition - NO FOW needed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

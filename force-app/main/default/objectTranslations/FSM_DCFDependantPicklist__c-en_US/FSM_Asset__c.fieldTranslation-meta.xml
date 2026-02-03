@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Asset --></label>
+    <name>FSM_Asset__c</name>
+    <picklistValues>
+        <masterLabel>AIR VALVE</masterLabel>
+        <translation><!-- AIR VALVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AQUEDUCT</masterLabel>
+        <translation><!-- AQUEDUCT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ancillary</masterLabel>
+        <translation><!-- Ancillary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOUNDARY BOX</masterLabel>
+        <translation><!-- BOUNDARY BOX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOUNDARY BOX AND METER</masterLabel>
+        <translation><!-- BOUNDARY BOX AND METER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOWSER</masterLabel>
+        <translation><!-- BOWSER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAPITAL</masterLabel>
+        <translation><!-- CAPITAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSO</masterLabel>
+        <translation><!-- CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUSTOMER TAP</masterLabel>
+        <translation><!-- CUSTOMER TAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Manhole</masterLabel>
+        <translation><!-- Dual Manhole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FERRULE</masterLabel>
+        <translation><!-- FERRULE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FILTER</masterLabel>
+        <translation><!-- FILTER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIRE DOMESTIC SPLITS</masterLabel>
+        <translation><!-- FIRE DOMESTIC SPLITS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood Mitigation (Non - NRV)</masterLabel>
+        <translation><!-- Flood Mitigation (Non - NRV) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (300-450mm)</masterLabel>
+        <translation><!-- Gravity sewer (300-450mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (525-600mm)</masterLabel>
+        <translation><!-- Gravity sewer (525-600mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (over 600mm)</masterLabel>
+        <translation><!-- Gravity sewer (over 600mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (up to 225mm)</masterLabel>
+        <translation><!-- Gravity sewer (up to 225mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOUSEHOLD PROPERTY</masterLabel>
+        <translation><!-- HOUSEHOLD PROPERTY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOUSEHOLD SUPPLY PIPE</masterLabel>
+        <translation><!-- HOUSEHOLD SUPPLY PIPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HYDRANT</masterLabel>
+        <translation><!-- HYDRANT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection cover and frame</masterLabel>
+        <translation><!-- Inspection cover and frame --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interceptor</masterLabel>
+        <translation><!-- Interceptor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LARGE CHAMBER</masterLabel>
+        <translation><!-- LARGE CHAMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LGE DEV-LGE DIA CONN</masterLabel>
+        <translation><!-- LGE DEV-LGE DIA CONN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LGE DEV-MANIFOLD</masterLabel>
+        <translation><!-- LGE DEV-MANIFOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LGE DEV-STD CONN</masterLabel>
+        <translation><!-- LGE DEV-STD CONN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOGGER</masterLabel>
+        <translation><!-- LOGGER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG COMM PIPE</masterLabel>
+        <translation><!-- LONG COMM PIPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAIN</masterLabel>
+        <translation><!-- MAIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARKER POST</masterLabel>
+        <translation><!-- MARKER POST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>METER</masterLabel>
+        <translation><!-- METER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole</masterLabel>
+        <translation><!-- Manhole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole cover and frame</masterLabel>
+        <translation><!-- Manhole cover and frame --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NON HOUSEHOLD PROPERTY</masterLabel>
+        <translation><!-- NON HOUSEHOLD PROPERTY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NON HOUSEHOLD SUPPLY PIPE</masterLabel>
+        <translation><!-- NON HOUSEHOLD SUPPLY PIPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRT TANKERING</masterLabel>
+        <translation><!-- NRT TANKERING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRV</masterLabel>
+        <translation><!-- NRV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OVERLANDER</masterLabel>
+        <translation><!-- OVERLANDER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRV</masterLabel>
+        <translation><!-- PRV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSV</masterLabel>
+        <translation><!-- PSV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REINSTATEMENT</masterLabel>
+        <translation><!-- REINSTATEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESERVOIR</masterLabel>
+        <translation><!-- RESERVOIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RRU</masterLabel>
+        <translation><!-- RRU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main (226-450mm)</masterLabel>
+        <translation><!-- Rising main (226-450mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main (Over 450mm)</masterLabel>
+        <translation><!-- Rising main (Over 450mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main (up to 225mm)</masterLabel>
+        <translation><!-- Rising main (up to 225mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SERVICE</masterLabel>
+        <translation><!-- SERVICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHORT COMM AND BBOX INSTALL</masterLabel>
+        <translation><!-- SHORT COMM AND BBOX INSTALL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHORT COMM PIPE</masterLabel>
+        <translation><!-- SHORT COMM PIPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLUICE VALVE</masterLabel>
+        <translation><!-- SLUICE VALVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMALL CHAMBER</masterLabel>
+        <translation><!-- SMALL CHAMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMART METER</masterLabel>
+        <translation><!-- SMART METER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SML DEV-LGE DIA CONN</masterLabel>
+        <translation><!-- SML DEV-LGE DIA CONN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SML DEV-MANIFOLD</masterLabel>
+        <translation><!-- SML DEV-MANIFOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SML DEV-STD CONN</masterLabel>
+        <translation><!-- SML DEV-STD CONN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOP TAP</masterLabel>
+        <translation><!-- STOP TAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SYSTEM</masterLabel>
+        <translation><!-- SYSTEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Select One</masterLabel>
+        <translation><!-- Select One --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewerage pumping station</masterLabel>
+        <translation><!-- Sewerage pumping station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TANKER</masterLabel>
+        <translation><!-- TANKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRUNK MAIN CHAMBER</masterLabel>
+        <translation><!-- TRUNK MAIN CHAMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WASHOUT</masterLabel>
+        <translation><!-- WASHOUT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

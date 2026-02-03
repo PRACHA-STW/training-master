@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Short Text --></label>
+    <name>FSM_ShortText__c</name>
+    <picklistValues>
+        <masterLabel>Bioresources – Equipment</masterLabel>
+        <translation><!-- Bioresources – Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water Recycling – Equipment</masterLabel>
+        <translation><!-- Waste Water Recycling – Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water Recycling-SPS</masterLabel>
+        <translation><!-- Waste Water Recycling-SPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Treatment – Equipment</masterLabel>
+        <translation><!-- Water Treatment – Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Treatment – Operations</masterLabel>
+        <translation><!-- Water Treatment – Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Treatment – Quality</masterLabel>
+        <translation><!-- Water Treatment – Quality --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

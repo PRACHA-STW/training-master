@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Crew Managment Resource Lightbox</label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Emergency Fields</label>
+        <name>FSL__Emergency_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Get Candidates Resource Details</label>
+        <name>FSL__Get_Candidates_Resource_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Resource Gantt Filter</label>
+        <name>FSL__Resource_Gantt_Filter</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Resource Lightbox</label>
+        <name>FSL__Resource_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>FSL Service Resource Layout</layout>
+        <sections>
+            <label><!-- Resource Views --></label>
+            <section>Resource Views</section>
+        </sections>
+        <sections>
+            <label><!-- VFS --></label>
+            <section>VFS</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FSM Admin Service Resource Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Resource Views --></label>
+            <section>Resource Views</section>
+        </sections>
+        <sections>
+            <label><!-- VFS --></label>
+            <section>VFS</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Resource Layout</layout>
+        <sections>
+            <label><!-- Contractor Information --></label>
+            <section>Contractor Information</section>
+        </sections>
+        <sections>
+            <label><!-- Resource View --></label>
+            <section>Resource View</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Service Territory Member --></label>
+        <name>FSM_NewServiceTerritoryMember</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage>Capacity Resource Can’t Be of Type Crew</errorMessage>
+        <name>FSL__Capacity_Resource_of_Type_Crew</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Resource travel speed must be greater than 0.</errorMessage>
+        <name>FSL__Resource_travel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can’t update the address of a Service Resource --></errorMessage>
+        <name>FSM_DoNotEditAddressFieldsForTechnician</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Insufficient Access! You don&apos;t have access to create records apart from crew. --></errorMessage>
+        <name>FSM_PreventResourceCreationScheduler</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have sufficient access to perform this action. --></errorMessage>
+        <name>Fsm_PreventEditOtherRecords</name>
+    </validationRules>
+</CustomObjectTranslation>

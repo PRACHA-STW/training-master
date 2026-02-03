@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NetTechDuringVisitWeDid__c</fullName>
+    <description>Created as part of SFS-5347</description>
+    <label>During the visit we</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carried out a camera survey of the drain</fullName>
+                <default>false</default>
+                <label>Carried out a camera survey of the drain</label>
+            </value>
+            <value>
+                <fullName>Checked the Non Return Valve (NRV)</fullName>
+                <default>false</default>
+                <label>Checked the Non Return Valve (NRV)</label>
+            </value>
+            <value>
+                <fullName>Flushed through the pipes</fullName>
+                <default>false</default>
+                <label>Flushed through the pipes</label>
+            </value>
+            <value>
+                <fullName>Checked the drains and found there are no problems with them</fullName>
+                <default>false</default>
+                <label>Checked the drains and found there are no problems with them</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

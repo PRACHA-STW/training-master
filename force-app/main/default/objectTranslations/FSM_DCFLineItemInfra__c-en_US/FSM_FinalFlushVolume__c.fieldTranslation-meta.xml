@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Final flush volume (red flow monitor) --></label>
+    <name>FSM_FinalFlushVolume__c</name>
+</CustomFieldTranslation>

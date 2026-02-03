@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_DSAReceiveLogger__c</fullName>
+    <description>Created as part of SFS-2982</description>
+    <inlineHelpText>Select One</inlineHelpText>
+    <label>Do you have a reactive logger?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>In Use</fullName>
+                <default>false</default>
+                <label>In Use</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

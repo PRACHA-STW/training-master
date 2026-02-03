@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RestrictStatusComplete</fullName>
+    <active>true</active>
+    <description>Preventing the status update to &apos;Completed&apos; if any of Mandatory Worksteps are not completed.Created as a part of SFS-1298.</description>
+    <errorConditionFormula>AND(FSM_RestrictStatusUpdate__c,NOT($Permission.FSM_ExcludeWorkStepCompletion), NOT(ISPICKVAL( PRIORVALUE ( Status ), &quot;Completed&quot;) ) ,ISPICKVAL( Status , &quot;Completed&quot;) )</errorConditionFormula>
+    <errorMessage>Status cannot be changed to Completed until outstanding Mandatory Data Capture Forms are completed.</errorMessage>
+</ValidationRule>

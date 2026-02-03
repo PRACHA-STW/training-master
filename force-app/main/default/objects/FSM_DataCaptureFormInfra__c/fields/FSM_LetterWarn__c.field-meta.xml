@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_LetterWarn__c</fullName>
+    <description>Updated datatype as part of SFS-7009</description>
+    <inlineHelpText>Do we require accessor noise letters to be sent to the customer to warn of the work taking place</inlineHelpText>
+    <label>Letter Warn</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Access Letters required</fullName>
+                <default>false</default>
+                <label>Access Letters required</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Noise Letters required</fullName>
+                <default>false</default>
+                <label>Noise Letters required</label>
+            </value>
+            <value>
+                <fullName>Advance Warn</fullName>
+                <default>false</default>
+                <label>Advance Warn</label>
+            </value>
+            <value>
+                <fullName>Restricted Access</fullName>
+                <default>false</default>
+                <label>Restricted Access</label>
+            </value>
+            <value>
+                <fullName>Noise</fullName>
+                <default>false</default>
+                <label>Noise</label>
+            </value>
+            <value>
+                <fullName>Interruption to supply</fullName>
+                <default>false</default>
+                <label>Interruption to supply</label>
+            </value>
+            <value>
+                <fullName>Pre-coning</fullName>
+                <default>false</default>
+                <label>Pre-coning</label>
+            </value>
+            <value>
+                <fullName>Work awareness</fullName>
+                <default>false</default>
+                <label>Work awareness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

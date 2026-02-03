@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>GreenRecoveryPreSDRNA</label>
+    <protected>false</protected>
+    <values>
+        <field>FSM_AutomationLogic__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_BusinessUnit__c</field>
+        <value xsi:type="xsd:string">Green Recovery</value>
+    </values>
+    <values>
+        <field>FSM_CancellationCategory__c</field>
+        <value xsi:type="xsd:string">Preparation</value>
+    </values>
+    <values>
+        <field>FSM_CancellationReason__c</field>
+        <value xsi:type="xsd:string">Same Day Rein Not Booked</value>
+    </values>
+    <values>
+        <field>FSM_CodeGroup__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_ExcludeCurrentUser__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_MPValCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_OnHoldReason__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_RejectionCategory__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_RejectionReason__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_SAPName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_SuspendCategory__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_SuspendReason__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_TMAConditionCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_TMAConditionDescription__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_Type__c</field>
+        <value xsi:type="xsd:string">Cancellation</value>
+    </values>
+    <values>
+        <field>FSM_Workmate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

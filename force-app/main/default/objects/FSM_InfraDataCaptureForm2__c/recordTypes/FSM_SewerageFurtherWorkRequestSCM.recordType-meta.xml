@@ -1,0 +1,3867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SewerageFurtherWorkRequestSCM</fullName>
+    <active>true</active>
+    <description>SFS-3010</description>
+    <label>Sewerage-Further Work Request (SCM)</label>
+    <picklistValues>
+        <picklist>FSM_2xConsentLimitNonReportable__c</picklist>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible High River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Low River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Medium River Flow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_2xConsentLimit__c</picklist>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible High River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Low River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Medium River Flow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_AbnormalColour__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_AccessPipeEnd1__c</picklist>
+        <values>
+            <fullName>Difficult i%2Ee%2E fencing present</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easy%2E Deterrents in place but not substantial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not accessible %28unlikely%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Possible i%2Ee deterrents in place but access possible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very Easy - No deterrents present</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_AccessPipeEnd2__c</picklist>
+        <values>
+            <fullName>Difficult i%2Ee%2E fencing present</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easy%2E Deterrents in place but not substantial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not accessible %28unlikely%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Possible i%2Ee deterrents in place but access possible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very Easy - No deterrents present</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_Amenity__c</picklist>
+        <values>
+            <fullName>Fields</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footpath</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Highway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rear of properties</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_AreNoWaitingConesRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes - day before</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes - same day</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_AssetSewerage__c</picklist>
+        <values>
+            <fullName>S 01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 20</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOBenching__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOChamber__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOCover__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSODebris__c</picklist>
+        <values>
+            <fullName>No silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOExpFlow__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOExpFlowcontrol__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOFlowDevice__c</picklist>
+        <values>
+            <fullName>All Clear - No FOW required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted - Further work required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOFlowFlowControl__c</picklist>
+        <values>
+            <fullName>Good Condition%2C No FOW required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Risk - Blocked or Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Call Catchment Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Condition%2C FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Condition%2C Flow now restored</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOFlowFlow__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOFlowGolden__c</picklist>
+        <values>
+            <fullName>Yes - Green</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOFlow__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOGolden__c</picklist>
+        <values>
+            <fullName>No %E2%80%93 Amber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No %E2%80%93 Red</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CSOStepIron__c</picklist>
+        <values>
+            <fullName>Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CarriagewayRestriction__c</picklist>
+        <values>
+            <fullName>Contra-flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lane closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Carriageway incursion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some carriageway incursion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic Control %28Give and Take%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic control %28convoy working%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic control %28five-way signals%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic control %28four-way signals%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic control %28priority working%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic control %28stop%2Fgo boards%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic control %28three-way signals%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic control %28two-way signals%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_ConditionOfADM__c</picklist>
+        <values>
+            <fullName>ADM%27s fitted and appear to be in reasonable condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADM%27s fitted but condition poor %2F inadequate number of devices fitted%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No ADM%27s fitted and deemed not necessary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No ADM%27s fitted but they are required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe bridge within secure compound %2F fencing and ADM%27s not required%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_ConditionOfPipe__c</picklist>
+        <values>
+            <fullName>Deterioration of the wrapping evident so can assume pipe may have pitting %2F corrosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe appears to be in good order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signs of pitting %2F corrosion to the pipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signs of weathering to pipe but no significant concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to see pipe condition as wrapped but wrapping appears in good condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_ConfinedSpaceWorking__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CrudeSewageLiquor__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CrudeSewageLitterFaeces__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_CrudeSewageLitter__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around the Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_Depth__c</picklist>
+        <values>
+            <fullName>%3C 150mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E 600mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150 %E2%80%93 600mm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DeviceType__c</picklist>
+        <values>
+            <fullName>Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DischargeRateofPollutant__c</picklist>
+        <values>
+            <fullName>A discharge to water found %28at time of visit%29 %E2%80%93 High Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A discharge to water found %28at time of visit%29 %E2%80%93 Medium Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A discharge to water found %28at time of visit%29 %E2%80%93 Trickle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evidence of recent discharge to water %28not discharging at time of visit%29 %E2%80%93 No Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No discharge to water found %28at time of visit%29 %E2%80%93 No Flow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan1ExpFlow__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2Benching__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2Chamber__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2Cover__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2Debris__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2Flow__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2Golden__c</picklist>
+        <values>
+            <fullName>No %E2%80%93 Amber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No %E2%80%93 Red</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2Monitor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownMan2StepIron__c</picklist>
+        <values>
+            <fullName>Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManBenching__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManChamber__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManCover__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManDebris__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManFlow__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManGolden__c</picklist>
+        <values>
+            <fullName>No %E2%80%93 Amber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No %E2%80%93 Red</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManMonitor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_DownManStepIron__c</picklist>
+        <values>
+            <fullName>Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_EquipmentUsed__c</picklist>
+        <values>
+            <fullName>7%2E5t Jetter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV Van</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV Van %28Off-Road%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanup Vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet%2FVac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetter %28Off-Road%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manhole Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair Crew %28with Mini-Digger%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road Sweeper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Pack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FE2Consent__c</picklist>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible High River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Low River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Medium River Flow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRBus__c</picklist>
+        <values>
+            <fullName>Bus Lane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bus Stop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bus route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bus stop-Lane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRCommsMethod__c</picklist>
+        <values>
+            <fullName>Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letter %26 Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRCommsType__c</picklist>
+        <values>
+            <fullName>Access Letter required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advance Warn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interruption to supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise Letters required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-coning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work awareness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRCycle__c</picklist>
+        <values>
+            <fullName>Cycle Lane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cycle route</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRMethodOfWork__c</picklist>
+        <values>
+            <fullName>Excavation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Excavation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRPedestrianLights__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedestrian Light Switch Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pelican Crossing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perm Light Switch Off Zebra Crossing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRPedestrianWalkway__c</picklist>
+        <values>
+            <fullName>Footway Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In road</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Pedestrian walkway required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedestrian Footway Boards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walkway closed diversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walkway in the carriageway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walkway in the footway</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRRoadType__c</picklist>
+        <values>
+            <fullName>Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRSpecialFeature__c</picklist>
+        <values>
+            <fullName>Cul De Sac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dual Carriageway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed Traffic Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Roundabout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On approach to Roundabout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Way Street</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedestrian Crossing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slip Lane</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRTrainOrTram__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Train no impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Train within 200m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tram no impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tram within 200m</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWRVisibilityToMenAtWork__c</picklist>
+        <values>
+            <fullName>50m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60m%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not visible on approach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not visible on both approaches</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FWR__c</picklist>
+        <values>
+            <fullName>BBox%2FStop Tap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comm Pipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydrant%2FWashout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Follow-on work raised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve%2Fair valve</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FatsOilsGreases__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FencingType__c</picklist>
+        <values>
+            <fullName>Additional fencing should be considered %28detail below%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fencing in poor state of repair i%2Ce damaged %2F signs of ingress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fencing present and in good condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fencing provided by 3rd party or low level fencing easily climbed over</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No fencing and fencing not required%2Fsuitable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FoamScum__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FootwayClosure__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- Alternate Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- Walkway provided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_FormType__c</picklist>
+        <values>
+            <fullName>Asset Update Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clean Water Chemical Acceptance and Authorisation to Discharge Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confined Spaces Pre Entry Checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DST Self Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digger%2FTrailer Checks%2FC%26G Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution Interruption Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gap Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD Risk Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infra Follow on work request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Completion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Details Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Further Work Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Readings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering Job Feedback Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NHH Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-infra Raise new and follow on work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-site checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rechargeable Works-Damage Description Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinstatement Form%2FFull Reg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Assessment - Paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Assessment - Waste Infra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Assessment-Site Specific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPS Complex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPS Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sewerage-Further Work Request %28SCM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sewerage-Job Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Duration Works Risk Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Area%2C SWD%2C Foul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Water Chemical Acceptance and Authorisation to Discharge Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working Set Pre Use Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_GreatWater__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_HandRails__c</picklist>
+        <values>
+            <fullName>Hand rail good condition - FOW needed - Yes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand rail good condition no futher work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Hand Rails</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_HeightOfFall__c</picklist>
+        <values>
+            <fullName>0%2E5m to 1%2E0m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E0m to 2%2E0m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0m to 4%2E0m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than 0%2E5m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over 4%2E0m</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_INFRAFWRActivityType__c</picklist>
+        <values>
+            <fullName>Diversionary works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interim to perm reinstatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optional permit no fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remedial Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Asset Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Repair and Maintenance Works</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_IsTheJobUrgent__c</picklist>
+        <values>
+            <fullName>Clear blockage to prevent %2F halt flooding or pollution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dangerous reinstatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pollution %2F trace pollution %2F possible pollution</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_IsTheLocationTrafficSensitive__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_JobCompleted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_JobTracedAndMarked__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_LampSupportRemovalRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_LeakageTechniques__c</picklist>
+        <values>
+            <fullName>Correlation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enigma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Sounding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe Tracing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_Location__c</picklist>
+        <values>
+            <fullName>Off Highway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Highway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Land</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_LoggersAffectedNearby__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallBenching__c</picklist>
+        <values>
+            <fullName>Good Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallChamber__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallDebris__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallExp__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallFlow__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallGolden__c</picklist>
+        <values>
+            <fullName>Yes - Green</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallMaintCorrect__c</picklist>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overgrown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallMaint__c</picklist>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overgrown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OutfallType__c</picklist>
+        <values>
+            <fullName>CSO Outfall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Highway Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Problem Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overland flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPS Outfall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SWO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment Final Effluent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment Settled Storm Overflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment Storm Overflow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_OverheadPowerLinesWithin10m__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_ParkingSuspension__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_PartTreatedSewageAffluent__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor visible Impact Localised Around the Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_PermissionToDig__c</picklist>
+        <values>
+            <fullName>Customer does not wish to sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer not available to sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form left with customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes - customer signed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_PipeBridgeSafe__c</picklist>
+        <values>
+            <fullName>Pipe bridge appears in safe conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe bridge needs immediate Corrective Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe bridge requires safety works in the next 2 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe bridge requires safety works in the next 3-6 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe bridge requires safety works in the next 5 years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_PipeBridgeSafety__c</picklist>
+        <values>
+            <fullName>Additional or replacement signs required - FOW raised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PB Safety Warning signs installed during site inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sign already installed and in good condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signs not required %2F safe to install in view of the operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signs replaced during inspection as damaged %2F vandalised</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_PipeDiameter__c</picklist>
+        <values>
+            <fullName>100mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>125mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>225mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>375mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>450mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>525mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>750mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>825mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>900mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Please Specify%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_PipeMaterial__c</picklist>
+        <values>
+            <fullName>Asbestos Cement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cast Iron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Please Specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitch Fibre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPVC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrified Clay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_PollutionTransferredAsset__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_ReasonForRepair__c</picklist>
+        <values>
+            <fullName>Blockage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collapse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_RiskToAnEnvironmentalSite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_RoadMarkings__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWAnyHandDig__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWManholesSewersAccessible__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWOtherSupportOperations__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWOverpumpingRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWPotentialEnvironmentalImpact__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWPriority__c</picklist>
+        <values>
+            <fullName>10 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWRequestedEquipment__c</picklist>
+        <values>
+            <fullName>7%2E5t Jetter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV Van</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV Van %28off-road%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanup vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet%2FVac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetter %28off-road%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manhole crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair crew %28with mini-digger%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road Sweeper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Pack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SFWTankerSupportRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRActivityType__c</picklist>
+        <values>
+            <fullName>AdHoc Inspection - Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockage clearance %26 CCTV - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockage clearance %26 CCTV CON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockage clearance - CON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockage clearance - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV inspection only - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanup - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanup Contractor inc 13EX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanup only - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ext Flooding - Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ext Flooding - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspect manhole - Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection of defect - CON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection only - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Int Flooding - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Int Flooding Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRIV %E2%80%93 COUNCIL ASSET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRIV %E2%80%93 INTERNAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRIV %E2%80%93 MANDATORY GOGW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pollution Inspection - CON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pollution Inspection - DLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priv - Cleared on Investigate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priv - Discretionary GOGW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priv - Repat within 14 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priv -Not Paid - Cust Declines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priv -Paid - Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priv -Paid - Unable to clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Work - DLO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRBlockageCause__c</picklist>
+        <values>
+            <fullName>3rd party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interceptor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misconnection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanitary products</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRCauseAssetTypeNew__c</picklist>
+        <values>
+            <fullName>CSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical dosing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combined sewer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow control device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former S24 sewer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foul sewer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interceptor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lateral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NRV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-ST-Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-ST-Watercourse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil interceptor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penstock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rising main</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STW dist%2E Asset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface water pipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemetry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacuum sew%2E System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRFurtherMappingRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRFurtherWorkRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRTransferAsset__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRUsageRestricted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRWeatherAtTimeOfInc__c</picklist>
+        <values>
+            <fullName>Drizzle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heavy rain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SIRWhatCausedIncident__c</picklist>
+        <values>
+            <fullName>Blockage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collapse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manhole cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nothing found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspected Collapse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown at this time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SWRAsset__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>57</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SWRJobRecipient__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SWRJobScope__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SWRTask__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>57</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>58</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>59</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SWRTransferredAsset__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Y</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SewageFungus__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around the Outfall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SewerStatus__c</picklist>
+        <values>
+            <fullName>Former s%2E24 Sewer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SewerType__c</picklist>
+        <values>
+            <fullName>Combined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rising Main</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SpecialistTreatment__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_Speed__c</picklist>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_StormSewage__c</picklist>
+        <values>
+            <fullName>%3C 10m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E100m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-25m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-99m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Visible Impact Localised Around The Outfall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible High River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Low River Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment %E2%80%93 Non Visible Medium River Flow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_StructureCondition__c</picklist>
+        <values>
+            <fullName>No visible signs causing concern or has been rehabilitated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piers %2F Supports showing significant cracks%2F corrosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piers %2F Supports showing signs of cracks%2F corrosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signs of ground erosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structure and supports appear in good condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_SurfaceType__c</picklist>
+        <values>
+            <fullName>10mm Bitmac %28Tarmac%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10mm StoneMastic Asphalt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14mm StoneMastic Asphalt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6mm Bitmac %28Tarmac%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any %28non-specific%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asphalt %28footways%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bitumen Macadam %28Tarmac%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Block Paving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blue Bricks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flags %28area%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Rolled Asphalt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Rolled Asphalt-30%2F14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Rolled Asphalt-55%2F10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kerbstones %28area%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monolastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paving Flags %28dims%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perm Hot Lay Rein fway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red Tarmac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roadmaster Coldlay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stone Mastic Asphalt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stone Sets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tactile Paving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>York Paving Slabs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_TaskSewerage__c</picklist>
+        <values>
+            <fullName>S 01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S 29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_ThirdPartyDamage__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_TrafficLightsLessThan50m__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManBenching__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManCSODebris__c</picklist>
+        <values>
+            <fullName>No Silt%2FDebris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes Silt%2FDebris - No FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManChamber__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManCover__c</picklist>
+        <values>
+            <fullName>Good condition inside %26 out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition - FOW needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>poor condition - NO FOW needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManExpFlow__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManFlow__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManGolden__c</picklist>
+        <values>
+            <fullName>No %E2%80%93 Amber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No %E2%80%93 Red</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManMonitor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_UpManStepIron__c</picklist>
+        <values>
+            <fullName>Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_Vandalism__c</picklist>
+        <values>
+            <fullName>Difficult %2F Negligible potential to vandalise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No signs of vandalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signs of vandalism i%2Ee graffiti where the pipe has been compromised to access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some signs of vandalism i%2Ee minor graffiti from low level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unauthorised access on regular basis i%2Ee fencing removed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_VegetationMeasuring__c</picklist>
+        <values>
+            <fullName>Pipe bridge has small amounts of vegetation nearby but not affecting structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe bridge requires vegetation clearance in the next 3-6 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe bridge with heavily vegetation causing structural overloading or trees affecting structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>There is no vegetation on the pipe bridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vegetation makes visual inspection of pipe bridge difficult</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_WatercourseType__c</picklist>
+        <values>
+            <fullName>Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry Ditch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lake%2FPond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>River%2FStream</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_WeatherConditions__c</picklist>
+        <values>
+            <fullName>Drizzle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunny</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSM_Width__c</picklist>
+        <values>
+            <fullName>%3C 1m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E 5m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 - 5m</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

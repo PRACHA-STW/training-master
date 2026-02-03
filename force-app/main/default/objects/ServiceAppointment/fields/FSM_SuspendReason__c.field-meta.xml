@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SuspendReason__c</fullName>
+    <label>Suspend Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_SuspendCategory__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ITES</fullName>
+                <default>false</default>
+                <label>End of shift</label>
+            </value>
+            <value>
+                <fullName>PLER</fullName>
+                <default>false</default>
+                <label>Emergency/Reactive Work</label>
+            </value>
+            <value>
+                <fullName>ITUA</fullName>
+                <default>false</default>
+                <label>Unplanned absence</label>
+            </value>
+            <value>
+                <fullName>ITTD</fullName>
+                <default>false</default>
+                <label>Travel delays</label>
+            </value>
+            <value>
+                <fullName>AVND</fullName>
+                <default>false</default>
+                <label>No DST available</label>
+            </value>
+            <value>
+                <fullName>CUNH</fullName>
+                <default>false</default>
+                <label>CUSTOMER Not at home</label>
+            </value>
+            <value>
+                <fullName>PLRC</fullName>
+                <default>false</default>
+                <label>Requested by Customer</label>
+            </value>
+            <value>
+                <fullName>SINL</fullName>
+                <default>false</default>
+                <label>No access-Customer/Land owner</label>
+            </value>
+            <value>
+                <fullName>CUNR</fullName>
+                <default>false</default>
+                <label>Customer site not ready</label>
+            </value>
+            <value>
+                <fullName>OTHS</fullName>
+                <default>false</default>
+                <label>Health and safety</label>
+            </value>
+            <value>
+                <fullName>OTAW</fullName>
+                <default>false</default>
+                <label>Adverse weather conditions</label>
+            </value>
+            <value>
+                <fullName>OTFT</fullName>
+                <default>false</default>
+                <label>Incorrect Skills</label>
+            </value>
+            <value>
+                <fullName>PLOR</fullName>
+                <default>false</default>
+                <label>Obstruction removal required</label>
+            </value>
+            <value>
+                <fullName>OTAS</fullName>
+                <default>false</default>
+                <label>Dangerous situation</label>
+            </value>
+            <value>
+                <fullName>HSED</fullName>
+                <default>false</default>
+                <label>Engineering Difficulties</label>
+            </value>
+            <value>
+                <fullName>HSAR</fullName>
+                <default>false</default>
+                <label>Additional resource</label>
+            </value>
+            <value>
+                <fullName>VEIN</fullName>
+                <default>false</default>
+                <label>Incorrect</label>
+            </value>
+            <value>
+                <fullName>JBFN</fullName>
+                <default>false</default>
+                <label>Part unavailable</label>
+            </value>
+            <value>
+                <fullName>JBTE</fullName>
+                <default>false</default>
+                <label>Not available</label>
+            </value>
+            <value>
+                <fullName>OTMS</fullName>
+                <default>false</default>
+                <label>System error</label>
+            </value>
+            <value>
+                <fullName>VEBR</fullName>
+                <default>false</default>
+                <label>Breakdown</label>
+            </value>
+            <value>
+                <fullName>PLFW</fullName>
+                <default>false</default>
+                <label>Further visit/work required</label>
+            </value>
+            <value>
+                <fullName>PRNW</fullName>
+                <default>false</default>
+                <label>No work required</label>
+            </value>
+            <value>
+                <fullName>SINA</fullName>
+                <default>false</default>
+                <label>No access/Parking</label>
+            </value>
+            <value>
+                <fullName>JBTM</fullName>
+                <default>false</default>
+                <label>Traffic Mgnt not available</label>
+            </value>
+            <value>
+                <fullName>PRNB</fullName>
+                <default>false</default>
+                <label>Traffic Mgnt not booked</label>
+            </value>
+            <value>
+                <fullName>JBDO</fullName>
+                <default>false</default>
+                <label>Duplicate operation</label>
+            </value>
+            <value>
+                <fullName>SIDH</fullName>
+                <default>false</default>
+                <label>Dry hole</label>
+            </value>
+            <value>
+                <fullName>SIWC</fullName>
+                <default>false</default>
+                <label>Work conflict</label>
+            </value>
+            <value>
+                <fullName>PLPD</fullName>
+                <default>false</default>
+                <label>Permission to dig required</label>
+            </value>
+            <value>
+                <fullName>PRTI</fullName>
+                <default>false</default>
+                <label>Traffic Management Incorrect</label>
+            </value>
+            <value>
+                <fullName>PRTC</fullName>
+                <default>false</default>
+                <label>Time constraints (Day/Time)</label>
+            </value>
+            <value>
+                <fullName>PRSR</fullName>
+                <default>false</default>
+                <label>Same Day Rein needed</label>
+            </value>
+            <value>
+                <fullName>PRPS</fullName>
+                <default>false</default>
+                <label>Post/Pole support/removal</label>
+            </value>
+            <value>
+                <fullName>PRPC</fullName>
+                <default>false</default>
+                <label>Parked Cars</label>
+            </value>
+            <value>
+                <fullName>ADAA</fullName>
+                <default>false</default>
+                <label>Not on site</label>
+            </value>
+            <value>
+                <fullName>ADAC</fullName>
+                <default>false</default>
+                <label>Abandoned asset</label>
+            </value>
+            <value>
+                <fullName>ADAD</fullName>
+                <default>false</default>
+                <label>Mothballed asset not in use</label>
+            </value>
+            <value>
+                <fullName>ASNA</fullName>
+                <default>false</default>
+                <label>Asset not available</label>
+            </value>
+            <value>
+                <fullName>ADAE</fullName>
+                <default>false</default>
+                <label>New asset/replaced</label>
+            </value>
+            <value>
+                <fullName>ADAF</fullName>
+                <default>false</default>
+                <label>Bio asset not Waste</label>
+            </value>
+            <value>
+                <fullName>ADAG</fullName>
+                <default>false</default>
+                <label>Waste Asset not Bio</label>
+            </value>
+            <value>
+                <fullName>ACAA</fullName>
+                <default>false</default>
+                <label>Task incorrect for Asset</label>
+            </value>
+            <value>
+                <fullName>ACAB</fullName>
+                <default>false</default>
+                <label>Task has incorrect Skill</label>
+            </value>
+            <value>
+                <fullName>ACAC</fullName>
+                <default>false</default>
+                <label>Task contracted out</label>
+            </value>
+            <value>
+                <fullName>STAI</fullName>
+                <default>false</default>
+                <label>Assessed DO NOT call back</label>
+            </value>
+            <value>
+                <fullName>ACAD</fullName>
+                <default>false</default>
+                <label>Wrong work centre</label>
+            </value>
+            <value>
+                <fullName>AAAA</fullName>
+                <default>false</default>
+                <label>MAINT MGR_Unable to locate</label>
+            </value>
+            <value>
+                <fullName>AUTO</fullName>
+                <default>false</default>
+                <label>AUTO</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>ITES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>PLER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>ITUA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>ITTD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Availability</controllingFieldValue>
+            <valueName>AVND</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>CUNH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>PLRC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>SINL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>CUNR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H&amp;S</controllingFieldValue>
+            <valueName>OTHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H&amp;S</controllingFieldValue>
+            <valueName>OTAW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H&amp;S</controllingFieldValue>
+            <valueName>OTFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H&amp;S</controllingFieldValue>
+            <valueName>PLOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H&amp;S</controllingFieldValue>
+            <valueName>OTAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H&amp;S</controllingFieldValue>
+            <valueName>HSED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H&amp;S</controllingFieldValue>
+            <valueName>HSAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plant/Equipment/Vehicle</controllingFieldValue>
+            <valueName>VEIN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plant/Equipment/Vehicle</controllingFieldValue>
+            <valueName>JBFN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plant/Equipment/Vehicle</controllingFieldValue>
+            <valueName>JBTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plant/Equipment/Vehicle</controllingFieldValue>
+            <valueName>OTMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plant/Equipment/Vehicle</controllingFieldValue>
+            <valueName>VEBR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PLFW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PRNW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>SINA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>JBTM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PRNB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>JBDO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>SIDH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>SIWC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PLPD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PRTI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PRTC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PRSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PRPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <valueName>PRPC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Data</controllingFieldValue>
+            <valueName>ADAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Data</controllingFieldValue>
+            <valueName>ADAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Data</controllingFieldValue>
+            <valueName>ADAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Data</controllingFieldValue>
+            <valueName>ASNA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Data</controllingFieldValue>
+            <valueName>ADAE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Data</controllingFieldValue>
+            <valueName>ADAF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Data</controllingFieldValue>
+            <valueName>ADAG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Care</controllingFieldValue>
+            <valueName>ACAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Care</controllingFieldValue>
+            <valueName>ACAB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Care</controllingFieldValue>
+            <valueName>ACAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Care</controllingFieldValue>
+            <valueName>STAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Care</controllingFieldValue>
+            <valueName>ACAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Care</controllingFieldValue>
+            <valueName>AAAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUTO</controllingFieldValue>
+            <valueName>AUTO</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

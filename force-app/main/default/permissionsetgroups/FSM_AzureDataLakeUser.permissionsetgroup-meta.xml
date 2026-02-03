@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Azure Data Lake Admin User (SFI-804)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FSM Azure Data Lake User</label>
+    <permissionSets>FSM_AzureDataLakeUserPermissions</permissionSets>
+    <permissionSets>FSM_IntegrationAdminPermissionsSet</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

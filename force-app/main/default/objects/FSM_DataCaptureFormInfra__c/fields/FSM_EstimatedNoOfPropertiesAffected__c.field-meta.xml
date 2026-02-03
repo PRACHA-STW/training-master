@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_EstimatedNoOfPropertiesAffected__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How many properties do we think will be affected if we isolate the main. To get an accurate amount ask Network control to complete a CWDP of the shut.</inlineHelpText>
+    <label>Estimated No. of Properties affected</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

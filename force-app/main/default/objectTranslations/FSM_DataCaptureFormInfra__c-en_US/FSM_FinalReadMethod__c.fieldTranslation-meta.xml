@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Final Meter Read Method --></label>
+    <name>FSM_FinalReadMethod__c</name>
+    <picklistValues>
+        <masterLabel>Radio</masterLabel>
+        <translation><!-- Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remote</masterLabel>
+        <translation><!-- Remote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Touchpad</masterLabel>
+        <translation><!-- Touchpad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual</masterLabel>
+        <translation><!-- Visual --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

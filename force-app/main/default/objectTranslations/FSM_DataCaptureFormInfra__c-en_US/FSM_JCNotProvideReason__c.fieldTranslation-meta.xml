@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- If not, provide reasons as to why not --></label>
+    <name>FSM_JCNotProvideReason__c</name>
+    <picklistValues>
+        <masterLabel>Already installed</masterLabel>
+        <translation><!-- Already installed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer has an internal meter</masterLabel>
+        <translation><!-- Customer has an internal meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH</masterLabel>
+        <translation><!-- NHH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Old style BB/ ST - too shallow</masterLabel>
+        <translation><!-- Old style BB/ ST - too shallow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shared Supply</masterLabel>
+        <translation><!-- Shared Supply --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

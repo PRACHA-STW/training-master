@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Suitability --></label>
+    <name>FSM_Suitability__c</name>
+    <picklistValues>
+        <masterLabel>Cover</masterLabel>
+        <translation><!-- Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defective Reinstatement Repair</masterLabel>
+        <translation><!-- Defective Reinstatement Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excavation</masterLabel>
+        <translation><!-- Excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No notice required</masterLabel>
+        <translation><!-- No notice required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstatement</masterLabel>
+        <translation><!-- Reinstatement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

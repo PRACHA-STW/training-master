@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Signage should be installed on all pipe bridges. 	
+There may be a few exceptions where it is physically not possible or safe to install but where this is the case often signs can be installed nearby giving the same warning. 	
+Signs are available from H&amp;S Reps and should be taken on site inspections in case signs need replacing. 	
+If it is not safe to install but required raise to supervisor for advice on how to do safely. -->
+    </help>
+    <label><!-- Pipe Bridge Safety Signs Fitted ? --></label>
+    <name>FSM_PipeBridgeSafety__c</name>
+    <picklistValues>
+        <masterLabel>Additional or replacement signs required - FOW raised</masterLabel>
+        <translation><!-- Additional or replacement signs required - FOW raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PB Safety Warning signs installed during site inspection</masterLabel>
+        <translation><!-- PB Safety Warning signs installed during site inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sign already installed and in good condition</masterLabel>
+        <translation><!-- Sign already installed and in good condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs not required / safe to install in view of the operator</masterLabel>
+        <translation><!-- Signs not required / safe to install in view of the operator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs replaced during inspection as damaged / vandalised</masterLabel>
+        <translation><!-- Signs replaced during inspection as damaged / vandalised --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

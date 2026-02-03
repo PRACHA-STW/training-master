@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SchedulingCommentsBox__c</fullName>
+    <inlineHelpText>Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour Orange)</inlineHelpText>
+    <label>Scheduling comments box</label>
+    <length>500</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MET_MT_Appts_Open</fullName>
+    <columns>CreatedDate</columns>
+    <columns>FSM_CustomerAppointment__c</columns>
+    <columns>FSM_MeteringCustomerAppointment__c</columns>
+    <columns>FSM_IconForMetering__c</columns>
+    <columns>FSM_SAPOrderOperationNumber__c</columns>
+    <columns>Name</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>Status</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>ArrivalWindowEndTime</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>FSSK__FSK_Assigned_Service_Resource__c</columns>
+    <columns>FSM_ConstraintStart__c</columns>
+    <columns>STREET</columns>
+    <columns>ZIP</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>notContain</operation>
+        <value>6000M03</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>notContain</operation>
+        <value>M01</value>
+    </filters>
+    <filters>
+        <field>ArrivalWindowStartTime</field>
+        <operation>greaterOrEqual</operation>
+        <value>6/1/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>contains</operation>
+        <value>Metering</value>
+    </filters>
+    <label>MET - MT Open Appts</label>
+    <sharedTo>
+        <group>FSM_Metering</group>
+    </sharedTo>
+</ListView>

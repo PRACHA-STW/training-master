@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_FullPPEinExclusionZone__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When contacted by driver return to delivery area to observe safe disconnection, fit blanking flange, lock delivery point and return valves to correct position. FULL PPE MUST BE WORN WHEN INSIDE EXCLUSION ZONE</description>
+    <inlineHelpText>Full PPE must be worn when inside exclusion zone.</inlineHelpText>
+    <label>Full PPE in Exclusion Zone</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Water_Infra_Current_Jobs_Desktop</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+    <columns>SchedStartTime</columns>
+    <columns>FSM_IconForWaterInfra__c</columns>
+    <columns>Status</columns>
+    <columns>FSM_AllocatedJob__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Dispatched,En-Route,Onsite,On Hold,Return to Site</value>
+    </filters>
+    <filters>
+        <field>FSM_AssignedtoLoginUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>contains</operation>
+        <value>Water Infra</value>
+    </filters>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>contains</operation>
+        <value>Developer Services</value>
+    </filters>
+    <label>Water Infra - Current Jobs - Desktop</label>
+    <sharedTo>
+        <group>FSM_FW_1101WD4_Insp_North_Two_Hucknall</group>
+        <group>FSM_FW_1102WD4_Insp_North_One_Raynesway</group>
+        <group>FSM_FW_1103WD4_Insp_East_One_LWC</group>
+        <group>FSM_FW_1201WD4_Insp_West_One_Shelton</group>
+        <group>FSM_FW_1202WD4_Insp_West_Two_Burslem</group>
+        <group>FSM_FW_1301WD4_Insp_East_Two_Finham</group>
+        <group>FSM_FW_1302WD4_Insp_South_One_Edgbaston</group>
+        <group>FSM_FW_1303WD4_Insp_South_Two_Staverton</group>
+        <group>FSM_FW_8101WD4_Insp_Wrexham_and_Chester</group>
+        <group>FSM_FW_8103WD4_Insp_Powys_HD_Water</group>
+    </sharedTo>
+</ListView>

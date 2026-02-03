@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CustomerAppointmentCapacity__c</fullName>
+    <description>Customer Appointment Capacity Count per Day, user story sfs-46</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Customer Appointment Capacity Count per Day</inlineHelpText>
+    <label>Customer Appointment Capacity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

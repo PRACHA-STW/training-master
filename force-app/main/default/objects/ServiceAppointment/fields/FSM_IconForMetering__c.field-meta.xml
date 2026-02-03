@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IconForMetering__c</fullName>
+    <description>This field is used to show the Icons for Metering Field Workers Schedule List screen on mobile
+
+Updated as a part of SFS-5426</description>
+    <externalId>false</externalId>
+    <formula>IF( FSM_BusinessUnit__c = &quot;Metering&quot;,  
+      IF( ROUND((ArrivalWindowEndTime - ArrivalWindowStartTime ) * 24,0) = 2, &quot;2️⃣&quot;, &quot;&quot;)
+    &amp; IF( FSM_CustomerAppointment__c = True, &quot;🕑&quot;, &quot;&quot;)
+&amp; IF( OR(Contains(FSM_StandardTextKey__c,&quot;NHH&quot;), Contains(FSM_StandardTextKey__c,&quot;NHME&quot;),Contains(FSM_StandardTextKey__c,&quot;CRN&quot;)),&quot;🏭&quot;,&quot;&quot;)
+    &amp; IF(  FSM_SameStartAppointmentDependencyExists__c = True, &quot;👬&quot;, &quot;&quot;)
+    &amp; IF(  FSM_AppointmentDependencyExists__c = True, &quot;🔗&quot;, &quot;&quot;)
+&amp; IF( NOT(IsBlank(FSM_ConstraintStart__c)) ,&quot;📆&quot;,&quot;&quot;) 
+    &amp;  IF( FSSK__FSK_Work_Order__r.Case.FSM_VulnerableCustomer__c = True, &quot;🤲&quot;, &quot;&quot;) 
+     ,
+ &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Icon for Metering</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

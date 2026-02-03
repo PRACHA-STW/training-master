@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>FSL__Scheduling_Policy__c</columns>
+    <columns>FSL__Status__c</columns>
+    <columns>FSL__Type__c</columns>
+    <columns>FSL__Failure_Details__c</columns>
+    <columns>FSL__Failure_Reason__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>FSL__Start__c</columns>
+    <columns>FSL__Finish__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSL__Type__c</field>
+        <operation>equals</operation>
+        <value>Global Optimization</value>
+    </filters>
+    <filters>
+        <field>FSL__Failure_Reason__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>All</label>
+</ListView>

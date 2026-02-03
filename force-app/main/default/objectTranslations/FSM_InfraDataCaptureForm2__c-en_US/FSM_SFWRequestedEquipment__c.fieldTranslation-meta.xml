@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select one --></help>
+    <label><!-- Requested equipment --></label>
+    <name>FSM_SFWRequestedEquipment__c</name>
+    <picklistValues>
+        <masterLabel>7.5t Jetter</masterLabel>
+        <translation><!-- 7.5t Jetter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV Van</masterLabel>
+        <translation><!-- CCTV Van --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV Van (off-road)</masterLabel>
+        <translation><!-- CCTV Van (off-road) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleanup vehicle</masterLabel>
+        <translation><!-- Cleanup vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jet/Vac</masterLabel>
+        <translation><!-- Jet/Vac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jetter (off-road)</masterLabel>
+        <translation><!-- Jetter (off-road) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole crew</masterLabel>
+        <translation><!-- Manhole crew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not applicable</masterLabel>
+        <translation><!-- Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair crew</masterLabel>
+        <translation><!-- Repair crew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair crew (with mini-digger)</masterLabel>
+        <translation><!-- Repair crew (with mini-digger) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Sweeper</masterLabel>
+        <translation><!-- Road Sweeper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Van Pack</masterLabel>
+        <translation><!-- Van Pack --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

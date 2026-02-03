@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>GreenRecoveryProDuplicate</label>
+    <protected>false</protected>
+    <values>
+        <field>FSM_BusinessUnit__c</field>
+        <value xsi:type="xsd:string">Green Recovery</value>
+    </values>
+    <values>
+        <field>FSM_CancellationCategory__c</field>
+        <value xsi:type="xsd:string">Process</value>
+    </values>
+    <values>
+        <field>FSM_CancellationReason__c</field>
+        <value xsi:type="xsd:string">Duplicate</value>
+    </values>
+    <values>
+        <field>FSM_CodeGroupText__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_CodeGroup__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_EnableActionScreen__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_EnableImpactScreen__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_EnableProblemScreen__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_MandatoryActionScreen__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_MandatoryImpactScreen__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_MandatoryProblemScreen__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_NotificationCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_OnComplete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_OnSuspend__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_PIACodeText__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_PIACodeType__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_PIACode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_RejectionCategoryText__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_RejectionCategory__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_SAPName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_SuspendCategory__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_Type__c</field>
+        <value xsi:type="xsd:string">Cancellation</value>
+    </values>
+    <values>
+        <field>FSM_WorkCenter__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_Workmate__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

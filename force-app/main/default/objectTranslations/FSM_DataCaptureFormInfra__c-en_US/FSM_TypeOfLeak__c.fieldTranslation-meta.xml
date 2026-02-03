@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the correct type of leak --></help>
+    <label><!-- Type of Leak? --></label>
+    <name>FSM_TypeOfLeak__c</name>
+    <picklistValues>
+        <masterLabel>Dangerous apparatus (Site Made Safe )</masterLabel>
+        <translation><!-- Dangerous apparatus (Site Made Safe ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dangerous apparatus (Site Unsafe)</masterLabel>
+        <translation><!-- Dangerous apparatus (Site Unsafe) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow Alarm non-visible leak</masterLabel>
+        <translation><!-- Flow Alarm non-visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow alarm visible leak</masterLabel>
+        <translation><!-- Flow alarm visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No leak</masterLabel>
+        <translation><!-- No leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No supply non-visible leak</masterLabel>
+        <translation><!-- No supply non-visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non urgent weeping visible leak</masterLabel>
+        <translation><!-- Non urgent weeping visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-visible leak &lt;17L PM-1m3hr Non</masterLabel>
+        <translation><!-- Non-visible leak &lt;17L PM-1m3hr Non --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-visible leak &gt; 85LPM</masterLabel>
+        <translation><!-- Non-visible leak &gt; 85LPM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-visible leak &gt;17LPM-1m3hr</masterLabel>
+        <translation><!-- Non-visible leak &gt;17LPM-1m3hr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor supply non-visible leak</masterLabel>
+        <translation><!-- Poor supply non-visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor supply visible leak</masterLabel>
+        <translation><!-- Poor supply visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urgent visible leak</masterLabel>
+        <translation><!-- Urgent visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Quality Issue non-visible leak</masterLabel>
+        <translation><!-- Water Quality Issue non-visible leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water quality Issue visible leak</masterLabel>
+        <translation><!-- Water quality Issue visible leak --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

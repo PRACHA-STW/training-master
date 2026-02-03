@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>National Water Hygiene Card</description>
+    <label>National Water Hygiene Card (Q00001475)</label>
+</Skill>

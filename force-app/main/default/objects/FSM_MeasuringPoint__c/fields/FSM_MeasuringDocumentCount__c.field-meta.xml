@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MeasuringDocumentCount__c</fullName>
+    <description>Indicates the number of readings under this measuring point. 
+Created as part of SFS-4870</description>
+    <label>Measuring Document Count</label>
+    <summaryForeignKey>FSM_MeasuringDocument__c.FSM_MeasuringPointReading__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

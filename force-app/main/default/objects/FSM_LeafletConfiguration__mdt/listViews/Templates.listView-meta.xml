@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Templates</fullName>
+    <columns>DeveloperName</columns>
+    <columns>FSM_ConfigurationType__c</columns>
+    <columns>FSM_DisplayText__c</columns>
+    <columns>Mailjet_Id__c</columns>
+    <columns>FSM_MailjetURL__c</columns>
+    <columns>FSM_Metering__c</columns>
+    <columns>FSM_DevServ__c</columns>
+    <columns>FSM_HD__c</columns>
+    <columns>FSM_Water__c</columns>
+    <columns>FSM_Waste__c</columns>
+    <columns>FSM_Inspector__c</columns>
+    <columns>FSM_RMReinstatementRole__c</columns>
+    <columns>FSM_RMRole__c</columns>
+    <columns>FSM_Proforma__c</columns>
+    <columns>FSM_Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_ConfigurationType__c</field>
+        <operation>equals</operation>
+        <value>Template</value>
+    </filters>
+    <label>Templates</label>
+</ListView>

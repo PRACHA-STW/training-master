@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Step iron check --></label>
+    <name>FSM_DownMan2StepIron__c</name>
+    <picklistValues>
+        <masterLabel>Damaged</masterLabel>
+        <translation><!-- Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Good Condition</masterLabel>
+        <translation><!-- Good Condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Condition</masterLabel>
+        <translation><!-- Poor Condition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

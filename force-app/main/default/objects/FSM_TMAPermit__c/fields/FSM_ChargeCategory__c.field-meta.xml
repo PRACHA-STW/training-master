@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ChargeCategory__c</fullName>
+    <description>Created as part of SFS-8679</description>
+    <label>Charge Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Works involving excavation (single promoter)</fullName>
+                <default>false</default>
+                <label>Works involving excavation (single promoter)</label>
+            </value>
+            <value>
+                <fullName>Works involving excavation (collaborative working, primary promoter)</fullName>
+                <default>false</default>
+                <label>Works involving excavation (collaborative working, primary promoter)</label>
+            </value>
+            <value>
+                <fullName>Works in footpath or bridleway</fullName>
+                <default>false</default>
+                <label>Works in footpath or bridleway</label>
+            </value>
+            <value>
+                <fullName>Works in a highway in relation to which a pedestrian planning order is in place</fullName>
+                <default>false</default>
+                <label>Works in a highway in relation to which a pedestrian planning order is in place</label>
+            </value>
+            <value>
+                <fullName>Works in a highway whose use by vehicular traffic is prohibited by a traffic order (that applies at all times)</fullName>
+                <default>false</default>
+                <label>Works in a highway whose use by vehicular traffic is prohibited by a traffic order (that applies at all times)</label>
+            </value>
+            <value>
+                <fullName>Laying apparatus only (collaborative works, secondary promoter)</fullName>
+                <default>false</default>
+                <label>Laying apparatus only (collaborative works, secondary promoter)</label>
+            </value>
+            <value>
+                <fullName>Works for road purposes carried out on behalf of a highway authority</fullName>
+                <default>false</default>
+                <label>Works for road purposes carried out on behalf of a highway authority</label>
+            </value>
+            <value>
+                <fullName>Replacing poles, lamps, columns or signs in the same location</fullName>
+                <default>false</default>
+                <label>Replacing poles, lamps, columns or signs in the same location</label>
+            </value>
+            <value>
+                <fullName>Pole testing</fullName>
+                <default>false</default>
+                <label>Pole testing</label>
+            </value>
+            <value>
+                <fullName>Repairing, resetting or replacing manhole or chamber covers or frames</fullName>
+                <default>false</default>
+                <label>Repairing, resetting or replacing manhole or chamber covers or frames</label>
+            </value>
+            <value>
+                <fullName>Works in non-traffic-sensitive streets that require opening of the highway, but not breaking it up</fullName>
+                <default>false</default>
+                <label>Works in non-traffic-sensitive streets that require opening of the highway, but not breaking it up</label>
+            </value>
+            <value>
+                <fullName>Other works not involving excavation</fullName>
+                <default>false</default>
+                <label>Other works not involving excavation</label>
+            </value>
+            <value>
+                <fullName>Culvert/Ditch/Tunnel Work – No Excavation</fullName>
+                <default>false</default>
+                <label>Culvert/Ditch/Tunnel Work – No Excavation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

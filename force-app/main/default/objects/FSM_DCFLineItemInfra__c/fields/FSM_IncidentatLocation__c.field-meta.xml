@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IncidentatLocation__c</fullName>
+    <description>SFS-2983</description>
+    <label>Incident at Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flooding</fullName>
+                <default>false</default>
+                <label>Flooding</label>
+            </value>
+            <value>
+                <fullName>Escape of Sewerage</fullName>
+                <default>false</default>
+                <label>Escape of Sewerage</label>
+            </value>
+            <value>
+                <fullName>RTU</fullName>
+                <default>false</default>
+                <label>RTU</label>
+            </value>
+            <value>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+                <label>Surcharge</label>
+            </value>
+            <value>
+                <fullName>Smell</fullName>
+                <default>false</default>
+                <label>Smell</label>
+            </value>
+            <value>
+                <fullName>Noise</fullName>
+                <default>false</default>
+                <label>Noise</label>
+            </value>
+            <value>
+                <fullName>Nuisance</fullName>
+                <default>false</default>
+                <label>Nuisance</label>
+            </value>
+            <value>
+                <fullName>Safety</fullName>
+                <default>false</default>
+                <label>Safety</label>
+            </value>
+            <value>
+                <fullName>Pollution</fullName>
+                <default>false</default>
+                <label>Pollution</label>
+            </value>
+            <value>
+                <fullName>Flooding Due to Jett</fullName>
+                <default>false</default>
+                <label>Flooding Due to Jett</label>
+            </value>
+            <value>
+                <fullName>No Incident Found</fullName>
+                <default>false</default>
+                <label>No Incident Found</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

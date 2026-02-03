@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_HistoricJobsWaste</fullName>
+    <columns>FSM_IconForWasteInfra__c</columns>
+    <columns>Status</columns>
+    <columns>FSM_AllocatedJob__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Rejected,Cannot Complete,Completed</value>
+    </filters>
+    <filters>
+        <field>FSM_AssignedtoLoginUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>SchedStartTime</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:7</value>
+    </filters>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>contains</operation>
+        <value>Waste Infra</value>
+    </filters>
+    <label>Historic Jobs</label>
+    <sharedTo>
+        <group>FSM_FW_WasteInfra</group>
+    </sharedTo>
+</ListView>

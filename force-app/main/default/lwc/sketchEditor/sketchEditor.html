@@ -1,0 +1,204 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner  alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+      <template if:false={isLoading}>
+      </template>
+      <div class="find-nearby-main-container">
+        <div class="slds-m-around_medium container" >
+            <div class="canvas-and-text-container">
+                <div class="canvas-container">
+                    <canvas id="canvas" class="canvas-wrapper canvas-draggable"></canvas>
+                </div>
+            </div>
+            
+            <div class="footer-section-desktop">
+                <div class="selection-container">
+                    <lightning-combobox data-id='shapePicklist' class="shape-select custom-width" variant="label-hidden" value={selectedShapes} options={shapeOptions} onchange={handleShapeChange}></lightning-combobox>
+                    <lightning-combobox data-id='shapeThickness' class="shape-thickness-select custom-width" variant="label-hidden" value={selectedShapeThickness} placeholder="Shape Thickness" options={shapeThicknessOptions} onchange={handleShapeThicknessChange}></lightning-combobox>
+                    <div class="color-picker-and-input-container">
+                        <div class="color-picker-container">
+                            <div class="color-button selected" style="background-color: #ff0000;" data-value="#ff0000" onclick={handleColorChange}></div>
+                            <div class="color-button" style="background-color: #0000ff;" data-value="#0000ff" onclick={handleColorChange}></div>
+                            <div class="color-button" style="background-color: #00FF00;" data-value="#00FF00" onclick={handleColorChange}></div>
+                            <div class="color-button" style="background-color: #000000;" data-value="#000000" onclick={handleColorChange}></div>
+                            <!-- <input type="color" class="color-picker" onchange={handleColorPickerChange}> -->
+                            <!-- <span class="input-icon" onclick={openColorPicker}>&#x2026;</span> -->
+                        </div>
+                    </div>
+                    <!-- Add text, icons, shapes, and size -->
+                    <div class="button-container">
+                        <button class="add-button" onclick={handleAddText}>Add Text</button>
+                        <!-- <lightning-button label="Add Text" onclick={handleAddText} class="add-button"></lightning-button> -->
+                        <button class="add-icons" onclick={handleIcons}>Icons</button>
+                        <!-- <lightning-button label="Icons" class="add-icons"></lightning-button> -->
+                    </div>
+                    <!-- Previous, delete, finish buttons -->
+                    <div class="button-container">
+                        <!-- <lightning-button title="Previous" label="Previous" class="previous-btn" variant="brand" onclick={handlePrev}></lightning-button> -->
+                        <button class="clear-button" onclick={handleRemove}>Delete</button>
+                        <button class="pdfbutton" onclick={createDcfrecord} disabled={isdisable}>Finish Sketch</button>
+                        <button class="previous-btn" onclick={handlePrev}>Previous</button>
+                        <!-- <lightning-button class="pdfbutton" variant="brand" label="Create PDF" onclick={handlecreatepdfbuttonclick} disabled={isdisable}></lightning-button> -->
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section-mobile">
+                <div class="color-picker-and-input-container">
+                    <div class="color-picker-container">
+                        <div class="color-button selected" style="background-color: #ff0000;" data-value="#ff0000" onclick={handleColorChange}></div>
+                        <div class="color-button" style="background-color: #0000ff;" data-value="#0000ff" onclick={handleColorChange}></div>
+                        <div class="color-button" style="background-color: #00FF00;" data-value="#00FF00" onclick={handleColorChange}></div>
+                        <div class="color-button" style="background-color: #000000;" data-value="#000000" onclick={handleColorChange}></div>
+                        <!-- <input type="color" class="color-picker" onchange={handleColorPickerChange}> -->
+                        <!-- <span class="input-icon" onclick={openColorPicker}>&#x2026;</span> -->
+                    </div>
+                    <lightning-combobox data-id='shapePicklist' class="shape-select custom-width" variant="label-hidden" value={selectedShapes} placeholder="Shape Thickness" options={shapeOptions} onchange={handleShapeChange}></lightning-combobox>
+                </div>
+                <div class="button-container">
+                    <!-- Buttons: Add Text, Icons, Shapes, Size Options -->
+                    <div class="button-group">
+                        <lightning-button label="Add Text" onclick={handleAddText} class="add-button" variant="brand"></lightning-button>
+                        <!-- <button class="add-icons" onclick={handleIcons}>Icons</button> -->
+                        <lightning-button class="" variant="bare" label="Icons" onclick={handleIcons}></lightning-button>
+                        <!-- <lightning-button label="Shape"  class="shape-btn"></lightning-button> -->
+                        <!-- <lightning-combobox data-id='shapePicklist' class="shape-select custom-width" variant="label-hidden" value={selectedShapes} options={shapeOptions} onchange={handleShapeChange}></lightning-combobox> -->
+                        <!-- <lightning-button label="Size" class="size-btn" ></lightning-button> -->
+                        <lightning-combobox data-id='shapeThickness' class="shape-thickness-select custom-width" variant="label-hidden" value={selectedShapeThickness} options={shapeThicknessOptions} onchange={handleShapeThicknessChange} ></lightning-combobox>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <!-- Buttons: Previous, Delete, Finish -->
+                    <div class="button-group button-gropup-align">
+                        <!-- <lightning-button title="Previous" label="Previous" class="previous-btn" variant="brand" onclick={handlePrev}></lightning-button> -->
+                        <button class="previous-btn" onclick={handlePrev}>Previous</button>
+                        <lightning-button class="delete-btn" variant="destructive" label="Delete" onclick={handleRemove}></lightning-button>
+                       <!-- <lightning-button label="Finish" variant="brand" class="finish-btn" onclick={createDcfrecord} disabled={isdisable}></lightning-button> -->
+                       <button class="pdfbutton" onclick={createDcfrecord} disabled={isdisable}>Finish</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        </div>
+  
+
+  
+    <!-- <template if:true={isAddingText}>
+        <div>
+            <div class="text-input-container">
+                <lightning-input type="text" label="Text" class="custom-text-input" variant="label-hidden" value={textValue} onchange={handleInputChange}></lightning-input>
+                <lightning-combobox
+                    name="textSize"
+                    label="Text Size" variant="label-hidden"
+                    value={selectedTextSize}
+                    options={textSizeOptions}
+                    onchange={handleTextSizeChange}
+                    class="custom-combobox">
+                </lightning-combobox>
+                <lightning-button class="okButton" variant="brand" label="Ok" onclick={handleOKClick}></lightning-button>
+            </div>
+        </div>
+    </template> -->
+<template if:true={isModalOpen}>
+	<!-- Modal/Popup Box LWC starts here -->
+	<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+		<div class="slds-modal__container">
+			<!-- Modal/Popup Box LWC header here -->
+			<header class="slds-modal__header">
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+					<lightning-icon icon-name="utility:close"
+						alternative-text="close"
+						variant="inverse"
+						size="small" ></lightning-icon>
+					<span class="slds-assistive-text">Close</span>
+				</button>
+				<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Record Details</h2>
+			</header>
+			<!-- Modal/Popup Box LWC body starts here -->
+			<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+				Content
+			</div>
+			<!-- Modal/Popup Box LWC footer starts here -->
+			<!-- <footer class="slds-modal__footer">
+				<button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+			</footer> -->
+		</div>
+	</section>
+	<div class="slds-backdrop slds-backdrop_open"></div>
+</template> 
+<template if:true={isAddingText}>
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+    <!-- <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={handleModalClose}>
+    <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+    </svg>
+    <span class="slds-assistive-text">Cancel and close</span>
+    </button> -->
+    <!-- Added by Brajesh -->
+    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" style="padding: 0.5rem;" onclick={handleModalClose}>
+        <lightning-icon icon-name="utility:close" alternative-text="Cancel and close" size="Medium" class="custom-close-icon"></lightning-icon>
+    </button>
+    <div class="slds-modal__header">
+    <h1 id="modal-heading-02" class="slds-modal__title slds-hyphenate">Enter text</h1>
+    </div>
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+    <textarea
+        class="slds-textarea custom-textarea-input"
+        value={textValue}
+        oninput={handleInputChange}
+        maxlength="100"
+        rows="2"
+    ></textarea>
+    <p class="slds-text-color_error custom-note-text">Should not exceed more than 100 characters.</p>
+  
+    </div>
+    <div class="slds-modal__footer">
+     <lightning-button class="slds-button slds-button_brand" label="Ok" variant="brand" onclick={handleOKClick}></lightning-button>
+     <lightning-button class="slds-button slds-button_brand" label="Cancel" variant="brand" onclick={handleOkcancelClick}></lightning-button>
+    </div>
+    </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open" role="presentation" onclick={handleModalClose}></div>
+      </template>
+      
+<template if:true={isAddingIcons}>
+<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+<div class="slds-modal__container">
+<!-- <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={handleModalClose}>
+<svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+</svg>
+<span class="slds-assistive-text">Cancel and close</span>
+</button> -->
+<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" style="padding: 0.5rem;" onclick={handleModalClose}>
+    <lightning-icon icon-name="utility:close" alternative-text="Cancel and close" size="Medium" class="custom-close-icon"></lightning-icon>
+</button>
+<div class="slds-modal__header">
+</div>
+<div class="slds-modal__content slds-p-around_medium" >
+    <div class="image-container">
+        <div class="images">
+            <template for:each={sketchImage} for:item="item">
+                <div key={item.id} class="image-item draggable-image" draggable="true">
+                    <img data-id={item.id} src={item.data}  draggable="true" onclick={handleClick} />
+                </div>
+            </template> 
+        </div>
+    </div>
+</div>
+<div class="slds-modal__footer">
+    <lightning-button class="slds-button slds-button_brand" label="Ok" variant="brand" onclick={handleIconsOKClick}></lightning-button>
+    <!-- <button type="button" class="slds-button slds-button_brand"  onclick={handleIconsOKClick}>Ok</button> -->
+    <lightning-button class="slds-button slds-button_brand" label="Cancel" variant="brand" onclick={handleIconsCancelClick}></lightning-button>
+    
+</div>
+</div>
+</section>
+<div class="slds-backdrop slds-backdrop_open" role="presentation" onclick={handleModalClose}></div>
+</template>
+</template>

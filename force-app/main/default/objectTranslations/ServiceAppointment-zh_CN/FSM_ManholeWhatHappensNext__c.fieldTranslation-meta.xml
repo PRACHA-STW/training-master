@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What happens next ? --></label>
+    <name>FSM_ManholeWhatHappensNext__c</name>
+    <picklistValues>
+        <masterLabel>Our inspection is complete, and we don&apos;t need to take any further action</masterLabel>
+        <translation><!-- Our inspection is complete, and we don&apos;t need to take any further action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The inspection report will be reviewed by our office technicians, if further work is needed, we will contact you within 10 working days to discuss next steps. If you do not hear from us, no further work is required and you do not need to do anything</masterLabel>
+        <translation><!-- The inspection report will be reviewed by our office technicians, if further work is needed, we will contact you within 10 working days to discuss next steps. If you do not hear from us, no further work is required and you do not need to do anything --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We have identified a fault with the manhole cover in the road, and we need approval from the local highway authority to complete the repairs. Please bear with us. We will give you regular updates every 2 weeks until we can give you a start date</masterLabel>
+        <translation><!-- We have identified a fault with the manhole cover in the road, and we need approval from the local highway authority to complete the repairs. Please bear with us. We will give you regular updates every 2 weeks until we can give you a start date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We identified a fault with the manhole cover. Further work is required and will be planned in. We will be in touch within 10 working days to let you know when this work will take place.</masterLabel>
+        <translation><!-- We identified a fault with the manhole cover. Further work is required and will be planned in. We will be in touch within 10 working days to let you know when this work will take place. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We need to gain access to carry out further work. Please call our planning department</masterLabel>
+        <translation><!-- We need to gain access to carry out further work. Please call our planning department --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Where will you set up a walkway? Refer to NRSWA red book for guidance --></help>
+    <label><!-- Pedestrian Walkway --></label>
+    <name>FSM_PedestrianWalkway__c</name>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footway</masterLabel>
+        <translation><!-- Footway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In road</masterLabel>
+        <translation><!-- In road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Pedestrian walkway required</masterLabel>
+        <translation><!-- No Pedestrian walkway required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedestrian Footway Boards</masterLabel>
+        <translation><!-- Pedestrian Footway Boards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walkway closed diversion</masterLabel>
+        <translation><!-- Walkway closed diversion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walkway in the carriageway</masterLabel>
+        <translation><!-- Walkway in the carriageway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walkway in the footway</masterLabel>
+        <translation><!-- Walkway in the footway --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

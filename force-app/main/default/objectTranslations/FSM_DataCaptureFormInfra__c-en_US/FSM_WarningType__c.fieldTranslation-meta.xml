@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Warning Type --></label>
+    <name>FSM_WarningType__c</name>
+    <picklistValues>
+        <masterLabel>Unwarned</masterLabel>
+        <translation><!-- Unwarned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warned</masterLabel>
+        <translation><!-- Warned --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

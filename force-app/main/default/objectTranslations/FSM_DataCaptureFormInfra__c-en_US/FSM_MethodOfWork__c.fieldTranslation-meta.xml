@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select the correct method required to complete the work, Please refer to NRSWA red book --></help>
+    <label><!-- Method of work --></label>
+    <name>FSM_MethodOfWork__c</name>
+    <picklistValues>
+        <masterLabel>Moling</masterLabel>
+        <translation><!-- Moling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Excavation</masterLabel>
+        <translation><!-- No Excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Cut</masterLabel>
+        <translation><!-- Open Cut --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

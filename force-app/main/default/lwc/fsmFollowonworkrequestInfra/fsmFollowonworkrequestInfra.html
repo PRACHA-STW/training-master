@@ -1,0 +1,348 @@
+<template>
+  <lightning-record-edit-form
+  object-api-name={objectApiName}>
+  <template if:false={isDone}>
+    <lightning-spinner alternative-text="Loading......" size="medium"></lightning-spinner>
+  </template>
+  <template if:true={isDone}>
+  <template if:true={sectionone}>
+     
+      <lightning-card title="Site Specific details">
+
+          <lightning-card>
+              <ul class="slds-m-around_medium">
+                <template for:each={errormessages} for:item="field">
+                  <li key={field.Id} style="color:red;">{field}</li>
+                </template>
+              </ul>
+            </lightning-card>
+
+          <lightning-input-field field-name="FSM_GridRefOfProposedWorkX__c" required class="gridx" value={gridproposedworkx}></lightning-input-field>
+          <lightning-input-field field-name="FSM_GridRefOfProposedWorkY__c" required class="gridy" value={gridproposedworky}></lightning-input-field>
+         
+      </lightning-card>
+          </template>
+        </template>
+          <!--section 2-->
+          <template if:true={sectiontwo}>
+              <lightning-card>
+                  <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                      <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                  </ul>
+                </lightning-card>
+              <lightning-card>
+           <!--condition-->
+          <lightning-input-field field-name="FSM_SFWIsThisAtADifferentAddress__c" onchange={handleaddresschange} value={diffaddress}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersName__c" disabled={isnotatdiffadrr} class="occname" value={occname}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersTelephoneNumber__c" disabled={isnotatdiffadrr} class="occtelno" value={occtelno}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersHouseName__c" disabled={isnotatdiffadrr} class="occhsename" value={occhsename}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersHouseNo__c" disabled={isnotatdiffadrr} class="occhseno" value={occhseno}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersStreet__c" disabled={isnotatdiffadrr} required class="occstreet" value={occstreet}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersTown__c" disabled={isnotatdiffadrr} class="occtown" value={occstown}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersCity__c" disabled={isnotatdiffadrr} required class="occcity" value={occcity}></lightning-input-field>
+          <lightning-input-field field-name="FSM_OccupiersPostcode__c" disabled={isnotatdiffadrr} required class="occpostcode" value={occpostcode}></lightning-input-field>
+          <lightning-input-field field-name="FSM_Location__c" disabled={isnotatdiffadrr} required onchange={handlelocationchange} class="locationcls" value={occlocation}></lightning-input-field>
+          <lightning-input-field field-name="FSM_LandComments__c" disabled={islocrestrictedland} required value={landcomm}></lightning-input-field>
+          <lightning-input-field field-name="FSM_PermissionToDigRequired__c" required disabled={isnotatdiffadrr} value={permissiontodigreq} class="permissionreq"></lightning-input-field>
+          <lightning-input-field field-name="FSM_WhichProformaSigned__c" required disabled={isnotatdiffadrr} class="proformasigned" value={proformasigned}></lightning-input-field>
+          <lightning-input-field field-name="FSM_PermissionToDig__c" required disabled={isnotatdiffadrr} value={permissiondig} class="permissiontodig"></lightning-input-field>
+          
+          <!--end condition-->
+         
+    
+         <!-- <lightning-button
+          class="slds-m-top_small"
+          label="Reset Email"
+          onclick={handleReset}></lightning-button>-->
+          </lightning-card>
+          
+      </template>
+      <template if:true={sectionthree}>
+          
+          <lightning-card title="User Details">
+              <lightning-input-field field-name="FSM_Name__c"></lightning-input-field>
+              <lightning-input-field field-name="FSM_Number__c"></lightning-input-field>
+          </lightning-card>
+         
+      </template>
+      <template if:true={sectionfour}>
+              <lightning-card title="Asset">
+                  <lightning-card>
+                      <ul class="slds-m-around_medium">
+                        <template for:each={errormessages} for:item="field">
+                          <li key={field.Id} style="color:red;">{field}</li>
+                        </template>
+                      </ul>
+                    </lightning-card>
+                  <table>
+                    <tr>
+                      <td>Asset<abbr class="slds-required" title="required">*</abbr></td>
+                      <td> <lightning-combobox name="FSM_Asset__c" class="assetcls" value={selectedasset} 
+                        options={assetvaluesarr} onchange={handleChangeasset} variant="label-hidden" required></lightning-combobox></td>
+                    </tr>
+                    <tr>
+                      <td>Task<abbr class="slds-required" title="required">*</abbr></td>
+                      <td> <lightning-combobox name="FSM_Task__c" label="Task" value={seltask} variant="label-hidden" class="taskcls" options={taskvaluesarr}
+                        onchange={handleChangetask} required></lightning-combobox></td>
+                    </tr>
+                    <tr>
+                      <td>Technique<abbr class="slds-required" title="required">*</abbr></td>
+                      <td>  <lightning-combobox name="FSM_Technique__c" label="Technique" variant="label-hidden" class="techniquecls" value={selectedtechnique} 
+                        options={techvaluesarr} onchange={handleChangetech} required></lightning-combobox></td>
+                    </tr>
+                    <tr>
+                      <td>Material<abbr class="slds-required" title="required">*</abbr></td>
+                      <td>  <lightning-combobox name="FSM_AssetMaterial__c" label="Material" variant="label-hidden" class="materialcls" value={selmaterial} 
+                        options={materialvaluesarr} onchange={handleChangematerial} required></lightning-combobox></td>
+                    </tr>
+                    <tr>
+                      <td>Size<abbr class="slds-required" title="required">*</abbr></td>
+                      <td> <lightning-combobox name="FSM_AssetSize__c" label="Size" variant="label-hidden" class="sizecls" value={selsize} options={sizevaluesarr}
+                        onchange={handleChangesize} required></lightning-combobox></td>
+                    </tr>
+                    <tr>
+                      <td>Asset UID<abbr class="slds-required" title="required">*</abbr><lightning-helptext content="The asset UID is found in GISST this is the unique identifier of the asset. To find the UID launch GISST and locate the asset then select Task, Select Identify and then select the asset the UID will appear on the left e.g. 12000247084" class="slds-button__icon" size="large"></lightning-helptext></td>
+                      <td><lightning-input-field field-name="FSM_AssetUID__c" variant="label-hidden" value={assetuuid} class="assetuidcls"></lightning-input-field></td>
+                    </tr>
+                  </table>
+                 <!--   <label>Asset</label>
+                 
+                  <lightning-combobox name="FSM_Asset__c" class="assetcls" value={selectedasset} 
+                  options={assetvaluesarr} onchange={handleChangeasset} required></lightning-combobox>-->
+              
+      
+      
+             <!-- <lightning-combobox name="FSM_Task__c" label="Task" value={seltask} class="taskcls" options={taskvaluesarr}
+                  onchange={handleChangetask} required></lightning-combobox>
+    
+    
+              <lightning-combobox name="FSM_Technique__c" label="Technique" class="techniquecls" value={selectedtechnique} 
+                  options={techvaluesarr} onchange={handleChangetech} required></lightning-combobox>
+      
+     
+              <lightning-combobox name="FSM_AssetMaterial__c" label="Material" class="materialcls" value={selmaterial} 
+                  options={materialvaluesarr} onchange={handleChangematerial} required></lightning-combobox>
+     
+      
+              <lightning-combobox name="FSM_AssetSize__c" label="Size" class="sizecls" value={selsize} options={sizevaluesarr}
+                  onchange={handleChangesize} required></lightning-combobox>
+                
+                  <lightning-input-field field-name="FSM_AssetUID__c" value={assetuuid} class="assetuidcls"></lightning-input-field>-->
+              
+                </lightning-card>
+      </template>
+      <template if:true={sectionfive}>
+          <lightning-card title="BOPPs">
+            <lightning-card>
+              <ul class="slds-m-around_medium">
+                <template for:each={errormessages} for:item="field">
+                  <li key={field.Id} style="color:red;">{field}</li>
+                </template>
+              </ul>
+            </lightning-card>
+            <!--  <c-dependentpicklistsfwr value={selectedValue}></c-dependentpicklistsfwr>-->
+            <lightning-input-field field-name="FSM_ESTLocation__c" value={estloc} class="estloccls"  required></lightning-input-field>
+            <lightning-input-field field-name="FSM_LeakQuantified__c" value={leakquant} class="leakquantcls"  required></lightning-input-field>
+            <lightning-input-field field-name="FSM_MeterSerial__c" value={meterserial} class="meterserialcls"  required></lightning-input-field>
+            <lightning-input-field field-name="FSM_MeterReading__c" max-length="15" value={meterreading} class="meterreadingcls"  required></lightning-input-field>
+          </lightning-card>
+          
+      </template>
+      <template if:true={sectionsix}>
+        <lightning-card title="BOPPs">
+          <lightning-card>
+            <ul class="slds-m-around_medium">
+              <template for:each={errormessages} for:item="field">
+                <li key={field.Id} style="color:red;">{field}</li>
+              </template>
+            </ul>
+          </lightning-card>
+          <lightning-input-field field-name="FSM_AccessRestricted__c" value={accessissues} onchange={handleaccessissueschange} class="accessissuescls"></lightning-input-field>
+          <label class="slds-form-element__label" for="unique-id-of-input">Restricted Days</label>
+          <lightning-input-field field-name="FSM_Monday__c" value={mon} class="moncls"  ></lightning-input-field>
+          <lightning-input-field field-name="FSM_Tuesday__c" value={tues} class="tuescls"  ></lightning-input-field>
+          <lightning-input-field field-name="FSM_Wednesday__c" value={wed} class="wedcls"  ></lightning-input-field>
+          <lightning-input-field field-name="FSM_Thursday__c" value={thurs} class="thurscls"  ></lightning-input-field>
+          <lightning-input-field field-name="FSM_Friday__c" value={fri} class="fricls"  ></lightning-input-field>
+           <lightning-input-field field-name="FSM_Saturday__c" value={sat} class="satcls"  ></lightning-input-field>
+            <lightning-input-field field-name="FSM_Sunday__c" value={sun} class="suncls"  ></lightning-input-field>
+          <lightning-input-field field-name="FSM_RestrictedTime__c" value={restrictedtime} class="restrictedtimecls"></lightning-input-field>
+          <lightning-input-field field-name="FSM_OverheadPowerLinesWithin10m__c" value={powerlines} class="powerlinescls"></lightning-input-field>
+          <label class="slds-form-element__label" for="unique-id-of-input">Please ensure to mark up on the sketch where you believe the supply runs and where you believe the leak is located. Details -If commercial, Business names,contact names and number (Unit numbers alone isnt enough) -Any customer names and numbers you have spoken to and any useful info i.e. Landlord name and number -Please think is there any other info that the Bopps team need to know Please enter as much deatil as possible in the following Comments box this will appear on the sketch</label>
+          <lightning-input-field field-name="FSM_CommentsForBoppsTeam__c" value={boopsteam} class="boopsteamcls"  required={isaccessissuesyes}></lightning-input-field>
+        </lightning-card>
+      </template>
+      <template if:true={sectionseven}>
+        <lightning-card>
+          <ul class="slds-m-around_medium">
+            <template for:each={errormessages} for:item="field">
+              <li key={field.Id} style="color:red;">{field}</li>
+            </template>
+          </ul>
+        </lightning-card>
+        <lightning-card>
+          <lightning-input-field field-name="FSM_IsExcavationRequired__c" value={excavation} class="excavationcls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_TypeOfLeak__c" value={leaktype} class="leaktypecls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_ReasonForFirstTimeReinstatement__c" value={reason} class="reasoncls" ></lightning-input-field>
+          <lightning-input-field field-name="FSM_TrailerTeam__c" value={trailer} class="trailercls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_LetterWarn__c" value={letterwarn} class="letterwarncls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_SensitiveCustomer__c" value={sensitivecustomer} class="sensitivecustomercls"></lightning-input-field>
+          <lightning-input-field field-name="FSM_CommentsForTheGangs__c" value={gangcomm} class="gangcommcls" required></lightning-input-field>
+
+        </lightning-card>
+      </template>
+      
+      <template if:true={sectioneight}>
+          <c-fsmtmanoticedetails onpreviousbutton={handlepreviousfromchild} onnextbutton={handlenextfromfsmnotice} retainprevsecdatatma={senddatatotmacmp} retainvalues={retainvaluestochild} sectionsixenablefromparent={enablesecsixofchild}></c-fsmtmanoticedetails>
+      </template>
+
+      <template if:true={sectionnine}>
+        <lightning-card>
+          <ul class="slds-m-around_medium">
+            <template for:each={errormessages} for:item="field">
+              <li key={field.Id} style="color:red;">{field}</li>
+            </template>
+          </ul>
+        </lightning-card>
+        <lightning-card title="Health and Safety Information">
+          <lightning-input-field field-name="FSM_OverheadPowerLinesWithin10m__c" value={overheadpowerlines} class="overheadpowerlinescls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_LampSupportRemovalRequired__c" value={lampsupport} class="lampsupportcls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_ConfinedSpaceWorking__c" value={confinedspace} class="confinedspacecls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_DetailsSafetyInformation__c" value={additionalinfo} class="additionalinfocls" required></lightning-input-field>
+          <lightning-input-field field-name="FSM_SchedulingCommentsBox__c" value={schedulingcomm} class="schedulingcommcls" required></lightning-input-field>
+        </lightning-card>
+        </template>
+     
+  <template if:true={sectionten}>
+    <lightning-card>
+      <ul class="slds-m-around_medium">
+        <template for:each={errormessages} for:item="field">
+          <li key={field.Id} style="color:red;">{field}</li>
+        </template>
+      </ul>
+    </lightning-card>
+    <lightning-card title="Environmental Impact">
+    <lightning-input-field field-name="FSM_Contamination__c" value={contamination} onchange={handlecontaminationchange} class="contaminationcls"></lightning-input-field>
+    <template if:true={iscontaminationyes}>
+    <lightning-input-field field-name="FSM_ContaminationComments__c" required={iscontaminationyes} value={contaminationcomm} class="contaminationcommcls"></lightning-input-field>
+  </template>
+    <lightning-input-field field-name="FSM_IsThereConfirmedPollution__c" required value={pollution} onchange={handlepollutionchange} class="pollutioncls"></lightning-input-field>
+    <template if:true={ispollutionyes}>
+    <lightning-input-field field-name="FSM_ConfirmedPollutionComments__c" required={ispollutionyes} value={pollutioncomm} class="pollutioncommcls"></lightning-input-field>
+    <lightning-input-field field-name="FSM_IsThereARiskOfPollutionOccurring__c" required={ispollutionyes} value={risk} class="riskoccurringcls"></lightning-input-field>
+  </template>
+    <lightning-input-field field-name="FSM_RiskToAnEnvironmentalSite__c" required value={riskenv} class="riskenvcls"></lightning-input-field>
+  </lightning-card>
+  </template>
+  <template if:true={sectioneleven}>
+    <lightning-card>
+      <ul class="slds-m-around_medium">
+        <template for:each={errormessages} for:item="field">
+          <li key={field.Id} style="color:red;">{field}</li>
+        </template>
+      </ul>
+    </lightning-card>
+  <lightning-card title="Valve Operation Details">
+    <lightning-input-field field-name="FSM_IsShutOffOrValveOperationRequired__c" value={isshutoff} onchange={handlechangeshutoffoperation} class="isshutoffcls" required=""></lightning-input-field>
+    <template if:true={isshutofforvalvesel}>
+    <lightning-input-field field-name="FSM_EstimatedNoOfPropertiesAffected__c" required value={estimatedproperties} class="estimatedpropertiescls"></lightning-input-field>
+    <lightning-input-field field-name="FSM_AlternativeSuppliesRequired__c" required value={altsupplies} class="altsuppliescls"></lightning-input-field>
+    <lightning-input-field field-name="FSM_SensitiveCustomersOnShutdown__c" required value={sensitivecustonshuttdown} class="sensitivecustonshuttdowncls"></lightning-input-field>
+  </template>
+    <lightning-input-field field-name="FSM_ThirdPartyDamageOccurOnThisSite__c" required value={thirdpartydmge} class="thirdpartydmgecls"></lightning-input-field>
+  </lightning-card>
+  </template>
+
+<template if:true={sectiontwelve}>
+  <template if:true={isshutofforvalvesel}>
+  <lightning-card title="Valves">
+    <div>
+    <!-- <table class="slds-table slds-table_cell-buffer slds-table_bordered"> -->
+      <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+    <!-- <thead>
+    <tr>
+          <th>Valves ID as identified on sketch</th>
+          <th>Proposed Op</th>
+          <th>Valves Checked</th>
+          <th>Grids Reference X</th>
+          <th>Grids Reference Y</th>
+          <th>Comments for all valves</th>
+  </tr>
+</thead> -->
+<tbody>
+<template for:each={data} for:item="record" for:index="index">
+<tr key={record.id}>
+        <td>
+          <lightning-input type="text" label="Valves ID as identified on sketch"  required data-field="FSM_ValvesIDIdentifiedOnSketch__c" value={record.FSM_ValvesIDIdentifiedOnSketch__c} data-index={index} onchange={handleInputChange} max-length="3"></lightning-input>
+        </td>
+        <td>   
+        <lightning-combobox label="Proposed Op" data-field="FSM_ProposedOp__c" value={record.FSM_ProposedOp__c} 
+            options={proposedoparr} data-index={index} onchange={handleInputChange} required></lightning-combobox>
+        </td>
+
+        <td>  
+            <lightning-combobox label="Valves Checked" data-field="FSM_ValveChecked__c" value={record.FSM_ValveChecked__c} 
+            options={valvescheckedarr} data-index={index} onchange={handleInputChange} required></lightning-combobox>
+        </td>
+        <td>
+            <lightning-input label="Grids Reference X" type="number" data-field="FSM_GridRefX__c" value={record.FSM_GridRefX__c} data-index={index} onchange={handleInputChange} required></lightning-input>
+        </td>
+        <td>
+            <lightning-input label="Grids Reference Y" type="number" data-field="FSM_GridRefY__c" value={record.FSM_GridRefY__c} data-index={index} onchange={handleInputChange} required></lightning-input>
+        </td>
+
+        <td>
+            <lightning-textarea label="Comments for all valves" max-length="500" data-field="FSM_CommentsForAllValves__c" value={record.FSM_CommentsForAllValves__c} data-index={index} onchange={handleInputChange} required></lightning-textarea>
+        </td>
+        <td>
+          <lightning-button-icon icon-name="utility:delete" alternative-text="Delete" onclick={handleDelete} data-index={index}></lightning-button-icon>
+        </td>
+        </tr>
+        </template>
+
+        <!-- <template for:each={data} for:item="record" for:index="index">
+          <tr key={record.id}>
+              <td><lightning-input value={record.FSM_ValvesIDIdentifiedOnSketch__c} label="" onchange={handleInputChange} data-id={record.id}></lightning-input></td>
+              <td><lightning-input value={record.FSM_ProposedOp__c} label="Col 2" onchange={handleInputChange} data-id={record.id}></lightning-input></td>
+              <td><lightning-input value={record.FSM_ValveChecked__c} label="Col 3" onchange={handleInputChange} data-id={record.id}></lightning-input></td>
+              <td><lightning-input value={record.FSM_GridRefX__c} label="Col 4" onchange={handleInputChange} data-id={record.id}></lightning-input></td>
+              <td><lightning-input value={record.FSM_GridRefY__c} label="Col 5" onchange={handleInputChange} data-id={record.id}></lightning-input></td>
+              <td><lightning-textarea max-length="500" label="Comments for all valves" data-field="FSM_CommentsForAllValves__c" value={record.FSM_CommentsForAllValves__c} data-index={index} onchange={handleInputChange} required></lightning-textarea></td>
+              
+              <td><lightning-button-icon icon-name="utility:delete" alternative-text="Delete" onclick={handleDelete} data-index={index}></lightning-button-icon></td>  
+            </tr>
+      </template> -->
+
+
+
+
+
+        </tbody>
+        </table>
+        <br><br>
+        <lightning-button label="Add Row" onclick={handleAddRow}></lightning-button>&nbsp;&nbsp;
+       
+        </div>
+    </lightning-card> 
+  </template>
+</template>
+<!--<template if:true={sectionthirteen}>
+ 
+</template>-->
+</lightning-record-edit-form>
+      <template if:true={isEnablePrev}>
+      <lightning-button label="Previous" variant="brand" onclick={handlePrevious}></lightning-button>
+        </template>&nbsp;&nbsp;&nbsp;
+          <template if:true={isEnableNext}>
+              <lightning-button label="Next" onclick={handleNext} variant="brand"></lightning-button>
+          </template>
+         <!-- <template if:true={issubmitenable}>
+            <lightning-button label="Finish" onclick={passdatatoapex} variant="brand" icon-name="utility:chevronright"></lightning-button>
+          </template>-->
+        <!--  <template if:true={lastpage}>
+            <lightning-button label="Close" onclick={handleclose} variant="brand" type="Submit" icon-name="utility:chevronright"></lightning-button>
+          </template>-->
+<!--</lightning-record-edit-form>-->
+          </template>

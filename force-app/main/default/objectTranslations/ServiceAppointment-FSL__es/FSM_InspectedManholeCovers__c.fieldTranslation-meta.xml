@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- We inspected the manhole covers --></label>
+    <name>FSM_InspectedManholeCovers__c</name>
+    <picklistValues>
+        <masterLabel>In the public footway/verge/open space</masterLabel>
+        <translation><!-- In the public footway/verge/open space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In the road</masterLabel>
+        <translation><!-- In the road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On your property</masterLabel>
+        <translation><!-- On your property --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

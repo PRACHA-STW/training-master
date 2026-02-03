@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows Virtual Metering users to create certain types of absence records.</description>
+    <isLicensed>false</isLicensed>
+    <label>FSM Manage Resource Absence Metering VM</label>
+</CustomPermission>

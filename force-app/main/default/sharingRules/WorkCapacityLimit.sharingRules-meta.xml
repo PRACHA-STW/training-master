@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>FSM_ContractorScheduler</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing rule for FSM_ContractorScheduler Public Group</description>
+        <label>Contractor Scheduler</label>
+        <sharedTo>
+            <group>FSM_ContractorScheduler</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>FSM_ContractorScheduler</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

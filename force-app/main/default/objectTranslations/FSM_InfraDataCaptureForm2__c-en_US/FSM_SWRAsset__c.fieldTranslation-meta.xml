@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SWR Asset --></label>
+    <name>FSM_SWRAsset__c</name>
+    <picklistValues>
+        <masterLabel>1 Way Gully</masterLabel>
+        <translation><!-- 1 Way Gully --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Brick</masterLabel>
+        <translation><!-- Air Brick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air valve</masterLabel>
+        <translation><!-- Air valve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ancillary</masterLabel>
+        <translation><!-- Ancillary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bottle type gully pot 110mm</masterLabel>
+        <translation><!-- Bottle type gully pot 110mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSO</masterLabel>
+        <translation><!-- CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Manhole</masterLabel>
+        <translation><!-- Dual Manhole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood Barriers - Door/Pedestrian</masterLabel>
+        <translation><!-- Flood Barriers - Door/Pedestrian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood Barriers - Garage/Vehicle Access</masterLabel>
+        <translation><!-- Flood Barriers - Garage/Vehicle Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood Barriers - Vehicle Driveway</masterLabel>
+        <translation><!-- Flood Barriers - Vehicle Driveway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood Mitigation (Non - NRV)</masterLabel>
+        <translation><!-- Flood Mitigation (Non - NRV) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footpath</masterLabel>
+        <translation><!-- Footpath --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity Sewer (100-150mm)</masterLabel>
+        <translation><!-- Gravity Sewer (100-150mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity Sewer (151-225mm)</masterLabel>
+        <translation><!-- Gravity Sewer (151-225mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity Sewer (226-300mm)</masterLabel>
+        <translation><!-- Gravity Sewer (226-300mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer</masterLabel>
+        <translation><!-- Gravity sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (226-450mm)</masterLabel>
+        <translation><!-- Gravity sewer (226-450mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (300-450mm)</masterLabel>
+        <translation><!-- Gravity sewer (300-450mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (451-600mm)</masterLabel>
+        <translation><!-- Gravity sewer (451-600mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (525-600mm)</masterLabel>
+        <translation><!-- Gravity sewer (525-600mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (601-750mm)</masterLabel>
+        <translation><!-- Gravity sewer (601-750mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (750-1050mm)</masterLabel>
+        <translation><!-- Gravity sewer (750-1050mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (over 600mm)</masterLabel>
+        <translation><!-- Gravity sewer (over 600mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravity sewer (up to 225mm)</masterLabel>
+        <translation><!-- Gravity sewer (up to 225mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection cover and frame</masterLabel>
+        <translation><!-- Inspection cover and frame --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interceptor</masterLabel>
+        <translation><!-- Interceptor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole</masterLabel>
+        <translation><!-- Manhole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole cover and frame</masterLabel>
+        <translation><!-- Manhole cover and frame --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marker post</masterLabel>
+        <translation><!-- Marker post --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter</masterLabel>
+        <translation><!-- Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRV</masterLabel>
+        <translation><!-- NRV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non - S24 - Additional Lengths</masterLabel>
+        <translation><!-- Non - S24 - Additional Lengths --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non - S24 - Initial Job</masterLabel>
+        <translation><!-- Non - S24 - Initial Job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Std Manhole cover and frame</masterLabel>
+        <translation><!-- Non Std Manhole cover and frame --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Off Highway</masterLabel>
+        <translation><!-- Off Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Highway</masterLabel>
+        <translation><!-- On Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge</masterLabel>
+        <translation><!-- Pipe bridge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge 226-450mm</masterLabel>
+        <translation><!-- Pipe bridge 226-450mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge &lt;225mm</masterLabel>
+        <translation><!-- Pipe bridge &lt;225mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe bridge &gt;450mm</masterLabel>
+        <translation><!-- Pipe bridge &gt;450mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main</masterLabel>
+        <translation><!-- Rising main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main (226-450mm)</masterLabel>
+        <translation><!-- Rising main (226-450mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main (Over 450mm)</masterLabel>
+        <translation><!-- Rising main (Over 450mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main (up to 225mm)</masterLabel>
+        <translation><!-- Rising main (up to 225mm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S24</masterLabel>
+        <translation><!-- S24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sealed M/H</masterLabel>
+        <translation><!-- Sealed M/H --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewage Pumping Station</masterLabel>
+        <translation><!-- Sewage Pumping Station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewer monitor</masterLabel>
+        <translation><!-- Sewer monitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soakaway</masterLabel>
+        <translation><!-- Soakaway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred Sewer</masterLabel>
+        <translation><!-- Transferred Sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Type 1 Road</masterLabel>
+        <translation><!-- Type 1 Road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Type 2 Road</masterLabel>
+        <translation><!-- Type 2 Road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Type 3 Road</masterLabel>
+        <translation><!-- Type 3 Road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Type 4 Road</masterLabel>
+        <translation><!-- Type 4 Road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water Treatment Works</masterLabel>
+        <translation><!-- Waste Water Treatment Works --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

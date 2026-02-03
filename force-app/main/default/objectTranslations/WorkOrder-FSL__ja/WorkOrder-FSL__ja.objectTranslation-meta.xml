@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>クルー管理ライトボックス</label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label>非推奨</label>
+        <name>FSL__Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>ガントチャートライトボックス</label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>Desktop User WO Page Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Job Information --></label>
+            <section>Job Information</section>
+        </sections>
+        <sections>
+            <label><!-- Metering --></label>
+            <section>Metering</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Long Text --></label>
+            <section>Notification Long Text</section>
+        </sections>
+        <sections>
+            <label><!-- Operation Long Text --></label>
+            <section>Operation Long Text</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Traffic Management --></label>
+            <section>Traffic Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FSL Work Order Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Field Worker WO Page Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment --></label>
+            <section>Appointment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer --></label>
+            <section>Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Metering --></label>
+            <section>Metering</section>
+        </sections>
+        <sections>
+            <label><!-- SAP --></label>
+            <section>SAP</section>
+        </sections>
+        <sections>
+            <label><!-- TMA --></label>
+            <section>TMA</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Infra Field Worker</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment --></label>
+            <section>Appointment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer --></label>
+            <section>Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Metering --></label>
+            <section>Metering</section>
+        </sections>
+        <sections>
+            <label><!-- SAP --></label>
+            <section>SAP</section>
+        </sections>
+        <sections>
+            <label><!-- TMA --></label>
+            <section>TMA</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Metering WO Page Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment --></label>
+            <section>Appointment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer --></label>
+            <section>Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Metering --></label>
+            <section>Metering</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Long Text --></label>
+            <section>Notification Long Text</section>
+        </sections>
+        <sections>
+            <label><!-- SAP --></label>
+            <section>SAP</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Infra Field Worker WO Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Long Text --></label>
+            <section>Notification Long Text</section>
+        </sections>
+        <sections>
+            <label><!-- Operation Details --></label>
+            <section>Operation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Infra Field Worker Work Order</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operation Details --></label>
+            <section>Operation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Site Worker WO Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operation Details --></label>
+            <section>Operation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Site Worker Work Order</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operation Details --></label>
+            <section>Operation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Virtual Metering WO Page Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment --></label>
+            <section>Appointment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer --></label>
+            <section>Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Job Description --></label>
+            <section>Job Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Metering --></label>
+            <section>Metering</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Long Text --></label>
+            <section>Notification Long Text</section>
+        </sections>
+        <sections>
+            <label><!-- SAP --></label>
+            <section>SAP</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Waste Field Worker WO Page Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment --></label>
+            <section>Appointment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer --></label>
+            <section>Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Metering --></label>
+            <section>Metering</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Long Text --></label>
+            <section>Notification Long Text</section>
+        </sections>
+        <sections>
+            <label><!-- SAP --></label>
+            <section>SAP</section>
+        </sections>
+        <sections>
+            <label><!-- TMA --></label>
+            <section>TMA</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Water Field Worker WO Page Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment --></label>
+            <section>Appointment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer --></label>
+            <section>Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Metering --></label>
+            <section>Metering</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Long Text --></label>
+            <section>Notification Long Text</section>
+        </sections>
+        <sections>
+            <label><!-- SAP --></label>
+            <section>SAP</section>
+        </sections>
+        <sections>
+            <label><!-- TMA --></label>
+            <section>TMA</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Layout</layout>
+        <sections>
+            <label><!-- Address details --></label>
+            <section>Address details</section>
+        </sections>
+        <sections>
+            <label><!-- SAP Order Details --></label>
+            <section>SAP Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- TMA Information --></label>
+            <section>TMA Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clean Water Chemical Acceptance --></label>
+        <name>Clean_Water_Chemical_Acceptance</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Confined Spaces Pre Entry Checklist --></label>
+        <name>Confined_Spaces_Pre_Entry_Checklist</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Materials --></label>
+        <name>FSM_Capture_Products_Consumed</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Materials --></label>
+        <name>FSM_Capture_Products_ConsumedDesktop</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Measuring Points --></label>
+        <name>FSM_MeasuringPoints</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sketch --></label>
+        <name>FSM_SimpleSketch</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Working Set Pre Use Inspection --></label>
+        <name>FSM_WorkingSetPreUseInspection</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Metering FWR --></label>
+        <name>Metering_FWR</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Non-infra Raise new or follow on work --></label>
+        <name>Non_infra_Raise_new_or_follow_on_work_Desktop</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Non-infra Raise new or follow on work --></label>
+        <name>Non_infra_Raise_new_or_follow_on_work_mobile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sketch --></label>
+        <name>Simple_Sketch</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Waste Water &amp; Bio Chemical Acceptance --></label>
+        <name>Waste_Water_Bio_Chemical_Acceptance</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 1. Materials --></label>
+        <name>X1_Materials</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 2. Materials --></label>
+        <name>X2_Materials</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 2. Sketch --></label>
+        <name>X2_Sketch</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 3. Sketch --></label>
+        <name>X3_Sketch</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Bio Resource --></label>
+        <name>FSM_BioResource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Developer Services --></label>
+        <name>FSM_DeveloperServices</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Metering --></label>
+        <name>FSM_Metering</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Virtual DST --></label>
+        <name>FSM_Virtual</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Waste Infra --></label>
+        <name>FSM_WasteInfra</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Waste Non Infra --></label>
+        <name>FSM_WasteNonInfra</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Water Infra --></label>
+        <name>FSM_WaterInfra</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Water Non Infra --></label>
+        <name>FSM_WaterNonInfra</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You need to provide a Business Unit. --></errorMessage>
+        <name>FSM_Business_Unit_as_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please action all measuring points. --></errorMessage>
+        <name>FSM_CheckForOpenMeasuringPoints</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status cannot be changed to Completed until outstanding Mandatory Data Capture Forms are completed. --></errorMessage>
+        <name>FSM_RestrictStatusComplete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Priority value should be in range of 1 to 10. --></errorMessage>
+        <name>Priority_should_be_1_to_10</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GISST --></label>
+        <name>GISST</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GISST_Waste --></label>
+        <name>GISST_Waste</name>
+    </webLinks>
+</CustomObjectTranslation>

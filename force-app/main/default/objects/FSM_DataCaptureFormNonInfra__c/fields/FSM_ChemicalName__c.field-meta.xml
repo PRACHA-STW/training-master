@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ChemicalName__c</fullName>
+    <label>Chemical Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_ChemicalSupplier__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sulphuric Acid</fullName>
+                <default>false</default>
+                <label>Sulphuric Acid</label>
+            </value>
+            <value>
+                <fullName>Ferrous Chloride</fullName>
+                <default>false</default>
+                <label>Ferrous Chloride</label>
+            </value>
+            <value>
+                <fullName>HFSA</fullName>
+                <default>false</default>
+                <label>HFSA</label>
+            </value>
+            <value>
+                <fullName>Hydrochloric Acid</fullName>
+                <default>false</default>
+                <label>Hydrochloric Acid</label>
+            </value>
+            <value>
+                <fullName>Phosphoric Acid</fullName>
+                <default>false</default>
+                <label>Phosphoric Acid</label>
+            </value>
+            <value>
+                <fullName>Sodium Bisulphite</fullName>
+                <default>false</default>
+                <label>Sodium Bisulphite</label>
+            </value>
+            <value>
+                <fullName>Sodium Hypochlorite</fullName>
+                <default>false</default>
+                <label>Sodium Hypochlorite</label>
+            </value>
+            <value>
+                <fullName>Aluminium Sulphate</fullName>
+                <default>false</default>
+                <label>Aluminium Sulphate</label>
+            </value>
+            <value>
+                <fullName>Ferric Sulphate</fullName>
+                <default>false</default>
+                <label>Ferric Sulphate</label>
+            </value>
+            <value>
+                <fullName>Ferrous Sulphate</fullName>
+                <default>false</default>
+                <label>Ferrous Sulphate</label>
+            </value>
+            <value>
+                <fullName>Polyaluminium Chloride</fullName>
+                <default>false</default>
+                <label>Polyaluminium Chloride</label>
+            </value>
+            <value>
+                <fullName>Salt</fullName>
+                <default>false</default>
+                <label>Salt</label>
+            </value>
+            <value>
+                <fullName>Lime</fullName>
+                <default>false</default>
+                <label>Lime</label>
+            </value>
+            <value>
+                <fullName>Polymer</fullName>
+                <default>false</default>
+                <label>Polymer</label>
+            </value>
+            <value>
+                <fullName>Anti-Foam</fullName>
+                <default>false</default>
+                <label>Anti-Foam</label>
+            </value>
+            <value>
+                <fullName>Solenis</fullName>
+                <default>false</default>
+                <label>Solenis</label>
+            </value>
+            <value>
+                <fullName>Caustic Soda</fullName>
+                <default>false</default>
+                <label>Caustic Soda</label>
+            </value>
+            <value>
+                <fullName>Hydrex 1110</fullName>
+                <default>false</default>
+                <label>Hydrex 1110</label>
+            </value>
+            <value>
+                <fullName>Hydrex 1258</fullName>
+                <default>false</default>
+                <label>Hydrex 1258</label>
+            </value>
+            <value>
+                <fullName>Hydrex 1568</fullName>
+                <default>false</default>
+                <label>Hydrex 1568</label>
+            </value>
+            <value>
+                <fullName>Calcium Nitrate</fullName>
+                <default>false</default>
+                <label>Calcium Nitrate</label>
+            </value>
+            <value>
+                <fullName>Chlorine</fullName>
+                <default>false</default>
+                <label>Chlorine</label>
+            </value>
+            <value>
+                <fullName>Monosodium Phosphate</fullName>
+                <default>false</default>
+                <label>Monosodium Phosphate</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Chemifloc</controllingFieldValue>
+            <controllingFieldValue>Feralco</controllingFieldValue>
+            <controllingFieldValue>Kemira</controllingFieldValue>
+            <controllingFieldValue>Airedale</controllingFieldValue>
+            <valueName>Ferric Sulphate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ineos Enterprises</controllingFieldValue>
+            <valueName>Salt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lhoist</controllingFieldValue>
+            <controllingFieldValue>Singleton Birch</controllingFieldValue>
+            <valueName>Lime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OMEX</controllingFieldValue>
+            <valueName>Calcium Nitrate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packed  Chlorine Ltd</controllingFieldValue>
+            <valueName>Chlorine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servo Solutions</controllingFieldValue>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <controllingFieldValue>Kemira</controllingFieldValue>
+            <valueName>Ferrous Chloride</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Feralco</controllingFieldValue>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <valueName>Sulphuric Acid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Feralco</controllingFieldValue>
+            <valueName>Aluminium Sulphate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <valueName>HFSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <valueName>Hydrochloric Acid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <controllingFieldValue>Tennants</controllingFieldValue>
+            <valueName>Phosphoric Acid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <controllingFieldValue>Tennants</controllingFieldValue>
+            <valueName>Sodium Bisulphite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <valueName>Sodium Hypochlorite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Chemicals Ltd.</controllingFieldValue>
+            <controllingFieldValue>Tennants</controllingFieldValue>
+            <valueName>Caustic Soda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kemira</controllingFieldValue>
+            <valueName>Polyaluminium Chloride</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SNF</controllingFieldValue>
+            <controllingFieldValue>Solenis</controllingFieldValue>
+            <valueName>Polymer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SNF</controllingFieldValue>
+            <controllingFieldValue>Solenis</controllingFieldValue>
+            <valueName>Anti-Foam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennants</controllingFieldValue>
+            <valueName>Monosodium Phosphate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Veolia</controllingFieldValue>
+            <valueName>Hydrex 1110</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Veolia</controllingFieldValue>
+            <valueName>Hydrex 1258</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Veolia</controllingFieldValue>
+            <valueName>Hydrex 1568</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Unit --></label>
+    <name>FSM_BusinessUnit__c</name>
+    <picklistValues>
+        <masterLabel>Bio Resource</masterLabel>
+        <translation><!-- Bio Resource --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developer Services</masterLabel>
+        <translation><!-- Developer Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Green Recovery</masterLabel>
+        <translation><!-- Green Recovery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering</masterLabel>
+        <translation><!-- Metering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Infra</masterLabel>
+        <translation><!-- Waste Infra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Non Infra</masterLabel>
+        <translation><!-- Waste Non Infra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Infra</masterLabel>
+        <translation><!-- Water Infra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Non Infra</masterLabel>
+        <translation><!-- Water Non Infra --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

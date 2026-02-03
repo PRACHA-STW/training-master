@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SIRCauseAssetTypeNew__c</fullName>
+    <description>Created as part of the SFS-4790</description>
+    <label>Cause Asset Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Foul sewer</fullName>
+                <default>false</default>
+                <label>Foul sewer</label>
+            </value>
+            <value>
+                <fullName>Combined sewer</fullName>
+                <default>false</default>
+                <label>Combined sewer</label>
+            </value>
+            <value>
+                <fullName>Surface water pipe</fullName>
+                <default>false</default>
+                <label>Surface water pipe</label>
+            </value>
+            <value>
+                <fullName>Former S24 sewer</fullName>
+                <default>false</default>
+                <label>Former S24 sewer</label>
+            </value>
+            <value>
+                <fullName>Interceptor</fullName>
+                <default>false</default>
+                <label>Interceptor</label>
+            </value>
+            <value>
+                <fullName>SPS</fullName>
+                <default>false</default>
+                <label>SPS</label>
+            </value>
+            <value>
+                <fullName>Rising main</fullName>
+                <default>false</default>
+                <label>Rising main</label>
+            </value>
+            <value>
+                <fullName>CSO</fullName>
+                <default>false</default>
+                <label>CSO</label>
+            </value>
+            <value>
+                <fullName>Penstock</fullName>
+                <default>false</default>
+                <label>Penstock</label>
+            </value>
+            <value>
+                <fullName>NRV</fullName>
+                <default>false</default>
+                <label>NRV</label>
+            </value>
+            <value>
+                <fullName>Storage tank</fullName>
+                <default>false</default>
+                <label>Storage tank</label>
+            </value>
+            <value>
+                <fullName>Flow control device</fullName>
+                <default>false</default>
+                <label>Flow control device</label>
+            </value>
+            <value>
+                <fullName>Vacuum sew. System</fullName>
+                <default>false</default>
+                <label>Vacuum sew. System</label>
+            </value>
+            <value>
+                <fullName>Telemetry</fullName>
+                <default>false</default>
+                <label>Telemetry</label>
+            </value>
+            <value>
+                <fullName>Oil interceptor</fullName>
+                <default>false</default>
+                <label>Oil interceptor</label>
+            </value>
+            <value>
+                <fullName>Chemical dosing</fullName>
+                <default>false</default>
+                <label>Chemical dosing</label>
+            </value>
+            <value>
+                <fullName>STW dist. Asset</fullName>
+                <default>false</default>
+                <label>STW dist. Asset</label>
+            </value>
+            <value>
+                <fullName>Lateral</fullName>
+                <default>false</default>
+                <label>Lateral</label>
+            </value>
+            <value>
+                <fullName>Non-ST-Watercourse</fullName>
+                <default>false</default>
+                <label>Non-ST-Watercourse</label>
+            </value>
+            <value>
+                <fullName>Non-ST-Surface Water</fullName>
+                <default>false</default>
+                <label>Non-ST-Surface Water</label>
+            </value>
+            <value>
+                <fullName>Non-STW Asset - Priv</fullName>
+                <default>false</default>
+                <label>Non-STW Asset - Priv</label>
+            </value>
+            <value>
+                <fullName>Non-STW Asset - Cncl</fullName>
+                <default>false</default>
+                <label>Non-STW Asset - Cncl</label>
+            </value>
+            <value>
+                <fullName>Non-STW Asset - Oth</fullName>
+                <default>false</default>
+                <label>Non-STW Asset - Oth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

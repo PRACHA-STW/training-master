@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MeasuringPoint__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>created as part of SFS-2997</description>
+    <label>Measuring Point</label>
+    <referenceTo>FSM_MeasuringPoint__c</referenceTo>
+    <relationshipName>WO_Measuring_Point_Readings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

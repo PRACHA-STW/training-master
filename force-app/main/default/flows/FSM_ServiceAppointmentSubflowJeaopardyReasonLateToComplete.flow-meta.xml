@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Already_In_Jeopardy</name>
+        <label>Already In Jeopardy?</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <defaultConnectorLabel>In Jeopardy</defaultConnectorLabel>
+        <rules>
+            <name>Not_In_Jeopardy</name>
+            <conditionLogic>1 OR (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_SA.FSL__InJeopardy__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_SA.FSL__InJeopardyReason__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Late to Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_SA.FSL__InJeopardy__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_SA_Jeopardy_Reason</targetReference>
+            </connector>
+            <label>Not In Jeopardy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_SA_Status_and_Business_Unit</name>
+        <label>Check SA Status and Business Unit</label>
+        <locationX>578</locationX>
+        <locationY>242</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Onsite_OR_On_Hold</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_SA.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Onsite</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_SA.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Hold</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_SA.FSSK__FSK_Work_Order__r.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Water Infra</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_SA.FSSK__FSK_Work_Order__r.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Developer Services</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_SA.FSSK__FSK_Work_Order__r.FSM_BusinessUnit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waste Infra</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Already_In_Jeopardy</targetReference>
+            </connector>
+            <label>Onsite OR On Hold</label>
+        </rules>
+    </decisions>
+    <description>Created as part of SFS-2979
+Invoked from FSM_ServiceAppointmentAfterTrigger</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM ServiceAppointment - Subflow - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM ServiceAppointment - Subflow - Jeaopardy Reason Late To Complete</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_SA</name>
+        <label>Get SA</label>
+        <locationX>578</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_SA_Status_and_Business_Unit</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SAId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ServiceAppointment</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_SA_Jeopardy_Reason</name>
+        <label>Update SA Jeopardy Reason</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <faultConnector>
+            <targetReference>Error_log_creation</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SAId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>FSL__InJeopardyReason__c</field>
+            <value>
+                <stringValue>Late to Complete</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSL__InJeopardy__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>ServiceAppointment</object>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_SA</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Error_log_creation</name>
+        <label>Error log creation</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <flowName>ErrorLog_Subflow_Create_Record</flowName>
+        <inputAssignments>
+            <name>FSM_FaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FlowName</name>
+            <value>
+                <stringValue>FSM ServiceAppointment - Subflow - Jeaopardy Reason Late To Complete</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_Type</name>
+            <value>
+                <stringValue>Field Service</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>SAId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

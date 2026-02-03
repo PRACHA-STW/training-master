@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFS-2997</description>
+    <flowDefinition>FSM_CaptureMeasuringPointsWOMP</flowDefinition>
+    <label>Capture Measuring Point (Desktop)</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

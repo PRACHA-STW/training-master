@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- A5 - Sewerage booklet comments --></label>
+    <name>FSM_A5SewerageBookletComments__c</name>
+</CustomFieldTranslation>

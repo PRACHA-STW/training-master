@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cycle --></label>
+    <name>FSM_FWRCycle__c</name>
+    <picklistValues>
+        <masterLabel>Cycle Lane</masterLabel>
+        <translation><!-- Cycle Lane --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cycle route</masterLabel>
+        <translation><!-- cycle route --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

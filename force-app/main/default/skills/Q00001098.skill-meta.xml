@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Meter Reading</description>
+    <label>Meter Reading (Q00001098)</label>
+</Skill>

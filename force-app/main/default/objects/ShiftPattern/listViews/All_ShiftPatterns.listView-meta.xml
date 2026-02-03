@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_ShiftPatterns</fullName>
+    <columns>Name</columns>
+    <columns>Description</columns>
+    <columns>PatternLength</columns>
+    <columns>IsActive</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CreatedBy</field>
+        <operation>equals</operation>
+        <value>astewart</value>
+    </filters>
+    <label>All Shift Patterns</label>
+</ListView>

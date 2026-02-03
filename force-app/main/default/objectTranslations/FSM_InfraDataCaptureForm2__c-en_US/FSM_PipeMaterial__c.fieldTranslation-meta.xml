@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select one --></help>
+    <label><!-- Pipe Material --></label>
+    <name>FSM_PipeMaterial__c</name>
+    <picklistValues>
+        <masterLabel>Asbestos Cement</masterLabel>
+        <translation><!-- Asbestos Cement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brick</masterLabel>
+        <translation><!-- Brick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cast Iron</masterLabel>
+        <translation><!-- Cast Iron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concrete</masterLabel>
+        <translation><!-- Concrete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not applicable</masterLabel>
+        <translation><!-- Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Please Specify)</masterLabel>
+        <translation><!-- Other (Please Specify) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pitch Fibre</masterLabel>
+        <translation><!-- Pitch Fibre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPVC</masterLabel>
+        <translation><!-- UPVC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vitrified Clay</masterLabel>
+        <translation><!-- Vitrified Clay --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

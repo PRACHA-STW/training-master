@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_StartDateMustBeEarlierThanEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>FSM_EndDate__c  &lt;  FSM_StartDate__c</errorConditionFormula>
+    <errorMessage>Start date must be earlier than End date</errorMessage>
+</ValidationRule>

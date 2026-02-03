@@ -1,0 +1,2225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Problem_Code_Value__c</fullName>
+    <label>Problem Code Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blocked Access</fullName>
+                <default>false</default>
+                <label>Blocked Access</label>
+            </value>
+            <value>
+                <fullName>Poor Advice-CLS</fullName>
+                <default>false</default>
+                <label>Poor Advice-CLS</label>
+            </value>
+            <value>
+                <fullName>Poor Advice-Customer</fullName>
+                <default>false</default>
+                <label>Poor Advice-Customer</label>
+            </value>
+            <value>
+                <fullName>Poor advice-DST</fullName>
+                <default>false</default>
+                <label>Poor advice-DST</label>
+            </value>
+            <value>
+                <fullName>Poor advice-Gang</fullName>
+                <default>false</default>
+                <label>Poor advice-Gang</label>
+            </value>
+            <value>
+                <fullName>Poor advice Customer-Customer Planning</fullName>
+                <default>false</default>
+                <label>Poor advice Customer-Customer Planning</label>
+            </value>
+            <value>
+                <fullName>Awco&apos;d too early</fullName>
+                <default>false</default>
+                <label>Awco&apos;d too early</label>
+            </value>
+            <value>
+                <fullName>Hole on site left open</fullName>
+                <default>false</default>
+                <label>Hole on site left open</label>
+            </value>
+            <value>
+                <fullName>Boards/barrriers left behind</fullName>
+                <default>false</default>
+                <label>Boards/barrriers left behind</label>
+            </value>
+            <value>
+                <fullName>Boards/barrrier nuisance/blocking access</fullName>
+                <default>false</default>
+                <label>Boards/barrrier nuisance/blocking access</label>
+            </value>
+            <value>
+                <fullName>Spoil/mud left on site</fullName>
+                <default>false</default>
+                <label>Spoil/mud left on site</label>
+            </value>
+            <value>
+                <fullName>Traffic light failure</fullName>
+                <default>false</default>
+                <label>Traffic light failure</label>
+            </value>
+            <value>
+                <fullName>Boards/barrriers vandalised</fullName>
+                <default>false</default>
+                <label>Boards/barrriers vandalised</label>
+            </value>
+            <value>
+                <fullName>Boards/barrriers causing danger</fullName>
+                <default>false</default>
+                <label>Boards/barrriers causing danger</label>
+            </value>
+            <value>
+                <fullName>Boards/barrriers fallen over</fullName>
+                <default>false</default>
+                <label>Boards/barrriers fallen over</label>
+            </value>
+            <value>
+                <fullName>GANG Attitude/behaviour on site</fullName>
+                <default>false</default>
+                <label>GANG Attitude/behaviour on site</label>
+            </value>
+            <value>
+                <fullName>GANG No call on way to repair</fullName>
+                <default>false</default>
+                <label>GANG No call on way to repair</label>
+            </value>
+            <value>
+                <fullName>General Poor perception of STW</fullName>
+                <default>false</default>
+                <label>General Poor perception of STW</label>
+            </value>
+            <value>
+                <fullName>GANG No feedback on the job</fullName>
+                <default>false</default>
+                <label>GANG No feedback on the job</label>
+            </value>
+            <value>
+                <fullName>GANG Follow on work not raised</fullName>
+                <default>false</default>
+                <label>GANG Follow on work not raised</label>
+            </value>
+            <value>
+                <fullName>GANG No advice of further work required</fullName>
+                <default>false</default>
+                <label>GANG No advice of further work required</label>
+            </value>
+            <value>
+                <fullName>GANG Customer not informed on site</fullName>
+                <default>false</default>
+                <label>GANG Customer not informed on site</label>
+            </value>
+            <value>
+                <fullName>GANG Knowledge</fullName>
+                <default>false</default>
+                <label>GANG Knowledge</label>
+            </value>
+            <value>
+                <fullName>GANG No advice of resolution/outcome</fullName>
+                <default>false</default>
+                <label>GANG No advice of resolution/outcome</label>
+            </value>
+            <value>
+                <fullName>GANG No advice of timescales</fullName>
+                <default>false</default>
+                <label>GANG No advice of timescales</label>
+            </value>
+            <value>
+                <fullName>INSP Attitude/behaviour on site</fullName>
+                <default>false</default>
+                <label>INSP Attitude/behaviour on site</label>
+            </value>
+            <value>
+                <fullName>INSP No call on way to inspect</fullName>
+                <default>false</default>
+                <label>INSP No call on way to inspect</label>
+            </value>
+            <value>
+                <fullName>INSP No feedback in long text</fullName>
+                <default>false</default>
+                <label>INSP No feedback in long text</label>
+            </value>
+            <value>
+                <fullName>INSP Follow on work not raised</fullName>
+                <default>false</default>
+                <label>INSP Follow on work not raised</label>
+            </value>
+            <value>
+                <fullName>INSP No advice of further work required</fullName>
+                <default>false</default>
+                <label>INSP No advice of further work required</label>
+            </value>
+            <value>
+                <fullName>INSP Customer not informed on site</fullName>
+                <default>false</default>
+                <label>INSP Customer not informed on site</label>
+            </value>
+            <value>
+                <fullName>INSP Knowledge</fullName>
+                <default>false</default>
+                <label>INSP Knowledge</label>
+            </value>
+            <value>
+                <fullName>INSP No advice of resolution/outcome</fullName>
+                <default>false</default>
+                <label>INSP No advice of resolution/outcome</label>
+            </value>
+            <value>
+                <fullName>INSP No advice of timescales</fullName>
+                <default>false</default>
+                <label>INSP No advice of timescales</label>
+            </value>
+            <value>
+                <fullName>KCI - Customer</fullName>
+                <default>false</default>
+                <label>KCI - Customer</label>
+            </value>
+            <value>
+                <fullName>KCI - DST</fullName>
+                <default>false</default>
+                <label>KCI - DST</label>
+            </value>
+            <value>
+                <fullName>KCI-Gang</fullName>
+                <default>false</default>
+                <label>KCI-Gang</label>
+            </value>
+            <value>
+                <fullName>KCI-Rein</fullName>
+                <default>false</default>
+                <label>KCI-Rein</label>
+            </value>
+            <value>
+                <fullName>KCI-Customer Planning</fullName>
+                <default>false</default>
+                <label>KCI-Customer Planning</label>
+            </value>
+            <value>
+                <fullName>Lack of Ownership-All</fullName>
+                <default>false</default>
+                <label>Lack of Ownership-All</label>
+            </value>
+            <value>
+                <fullName>Lack of Ownership-Customer</fullName>
+                <default>false</default>
+                <label>Lack of Ownership-Customer</label>
+            </value>
+            <value>
+                <fullName>Lack of Ownership-DST</fullName>
+                <default>false</default>
+                <label>Lack of Ownership-DST</label>
+            </value>
+            <value>
+                <fullName>Lack of Ownership -Gang</fullName>
+                <default>false</default>
+                <label>Lack of Ownership -Gang</label>
+            </value>
+            <value>
+                <fullName>Lack of Ownership -Rein</fullName>
+                <default>false</default>
+                <label>Lack of Ownership -Rein</label>
+            </value>
+            <value>
+                <fullName>Lack of ownership-Customer Planning</fullName>
+                <default>false</default>
+                <label>Lack of ownership-Customer Planning</label>
+            </value>
+            <value>
+                <fullName>Inaccurate MAM Usage-TMJ Customer</fullName>
+                <default>false</default>
+                <label>Inaccurate MAM Usage-TMJ Customer</label>
+            </value>
+            <value>
+                <fullName>MANAGER Attitude and helpfulness</fullName>
+                <default>false</default>
+                <label>MANAGER Attitude and helpfulness</label>
+            </value>
+            <value>
+                <fullName>MANAGER Knowledge/professionalism</fullName>
+                <default>false</default>
+                <label>MANAGER Knowledge/professionalism</label>
+            </value>
+            <value>
+                <fullName>Not right first Time-Customer</fullName>
+                <default>false</default>
+                <label>Not right first Time-Customer</label>
+            </value>
+            <value>
+                <fullName>Not right first Time-DST</fullName>
+                <default>false</default>
+                <label>Not right first Time-DST</label>
+            </value>
+            <value>
+                <fullName>Not right first time-Contractors</fullName>
+                <default>false</default>
+                <label>Not right first time-Contractors</label>
+            </value>
+            <value>
+                <fullName>Process Improvement-Suggestion</fullName>
+                <default>false</default>
+                <label>Process Improvement-Suggestion</label>
+            </value>
+            <value>
+                <fullName>Reinstatement not done</fullName>
+                <default>false</default>
+                <label>Reinstatement not done</label>
+            </value>
+            <value>
+                <fullName>Dissatisfied with reinstatement quality</fullName>
+                <default>false</default>
+                <label>Dissatisfied with reinstatement quality</label>
+            </value>
+            <value>
+                <fullName>Dissatisfied with reinstatement type</fullName>
+                <default>false</default>
+                <label>Dissatisfied with reinstatement type</label>
+            </value>
+            <value>
+                <fullName>SCHED No advice of aborted visit</fullName>
+                <default>false</default>
+                <label>SCHED No advice of aborted visit</label>
+            </value>
+            <value>
+                <fullName>SCHED No contact re missed appointment</fullName>
+                <default>false</default>
+                <label>SCHED No contact re missed appointment</label>
+            </value>
+            <value>
+                <fullName>SCHED Attitude and helpfulness</fullName>
+                <default>false</default>
+                <label>SCHED Attitude and helpfulness</label>
+            </value>
+            <value>
+                <fullName>SCHED Promised call back not made</fullName>
+                <default>false</default>
+                <label>SCHED Promised call back not made</label>
+            </value>
+            <value>
+                <fullName>SCHED No advice of repair/re-visit date</fullName>
+                <default>false</default>
+                <label>SCHED No advice of repair/re-visit date</label>
+            </value>
+            <value>
+                <fullName>SCHED No feedback on the job</fullName>
+                <default>false</default>
+                <label>SCHED No feedback on the job</label>
+            </value>
+            <value>
+                <fullName>SCHED Knowledge and professionalism</fullName>
+                <default>false</default>
+                <label>SCHED Knowledge and professionalism</label>
+            </value>
+            <value>
+                <fullName>SCHED No advice of resolution</fullName>
+                <default>false</default>
+                <label>SCHED No advice of resolution</label>
+            </value>
+            <value>
+                <fullName>SCHED No advice of timescales</fullName>
+                <default>false</default>
+                <label>SCHED No advice of timescales</label>
+            </value>
+            <value>
+                <fullName>Consequential damage</fullName>
+                <default>false</default>
+                <label>Consequential damage</label>
+            </value>
+            <value>
+                <fullName>Internal problems following repair</fullName>
+                <default>false</default>
+                <label>Internal problems following repair</label>
+            </value>
+            <value>
+                <fullName>Too many visits to resolve the issue</fullName>
+                <default>false</default>
+                <label>Too many visits to resolve the issue</label>
+            </value>
+            <value>
+                <fullName>Too long to resolve the issue</fullName>
+                <default>false</default>
+                <label>Too long to resolve the issue</label>
+            </value>
+            <value>
+                <fullName>Issue not resolved satisfactorily</fullName>
+                <default>false</default>
+                <label>Issue not resolved satisfactorily</label>
+            </value>
+            <value>
+                <fullName>Unhappy with inspection SLA</fullName>
+                <default>false</default>
+                <label>Unhappy with inspection SLA</label>
+            </value>
+            <value>
+                <fullName>Unhappy with repair SLA</fullName>
+                <default>false</default>
+                <label>Unhappy with repair SLA</label>
+            </value>
+            <value>
+                <fullName>Third Party Request</fullName>
+                <default>false</default>
+                <label>Third Party Request</label>
+            </value>
+            <value>
+                <fullName>Task Created in Error</fullName>
+                <default>false</default>
+                <label>Task Created in Error</label>
+            </value>
+            <value>
+                <fullName>Not advised of aborted/rescheduled visit</fullName>
+                <default>false</default>
+                <label>Not advised of aborted/rescheduled visit</label>
+            </value>
+            <value>
+                <fullName>No Contact re Missed Appointment</fullName>
+                <default>false</default>
+                <label>No Contact re Missed Appointment</label>
+            </value>
+            <value>
+                <fullName>Not called prior to attendance/repair</fullName>
+                <default>false</default>
+                <label>Not called prior to attendance/repair</label>
+            </value>
+            <value>
+                <fullName>Unhappy with attitude/behaviour on site</fullName>
+                <default>false</default>
+                <label>Unhappy with attitude/behaviour on site</label>
+            </value>
+            <value>
+                <fullName>Promised Call Back not Made</fullName>
+                <default>false</default>
+                <label>Promised Call Back not Made</label>
+            </value>
+            <value>
+                <fullName>Attendance/Repair Date required</fullName>
+                <default>false</default>
+                <label>Attendance/Repair Date required</label>
+            </value>
+            <value>
+                <fullName>No Feedback on Job</fullName>
+                <default>false</default>
+                <label>No Feedback on Job</label>
+            </value>
+            <value>
+                <fullName>Not informed of further/follow on work</fullName>
+                <default>false</default>
+                <label>Not informed of further/follow on work</label>
+            </value>
+            <value>
+                <fullName>Unhappy with knowledge of gang/person</fullName>
+                <default>false</default>
+                <label>Unhappy with knowledge of gang/person</label>
+            </value>
+            <value>
+                <fullName>Took too long to resolve the issue</fullName>
+                <default>false</default>
+                <label>Took too long to resolve the issue</label>
+            </value>
+            <value>
+                <fullName>Not informed of outcome/resolution</fullName>
+                <default>false</default>
+                <label>Not informed of outcome/resolution</label>
+            </value>
+            <value>
+                <fullName>Promised commitment to visit not met</fullName>
+                <default>false</default>
+                <label>Promised commitment to visit not met</label>
+            </value>
+            <value>
+                <fullName>Not informed of repair date</fullName>
+                <default>false</default>
+                <label>Not informed of repair date</label>
+            </value>
+            <value>
+                <fullName>Change in Severity</fullName>
+                <default>false</default>
+                <label>Change in Severity</label>
+            </value>
+            <value>
+                <fullName>Not informed/updated on site</fullName>
+                <default>false</default>
+                <label>Not informed/updated on site</label>
+            </value>
+            <value>
+                <fullName>Unhappy with SLA provided</fullName>
+                <default>false</default>
+                <label>Unhappy with SLA provided</label>
+            </value>
+            <value>
+                <fullName>Not informed of timescales</fullName>
+                <default>false</default>
+                <label>Not informed of timescales</label>
+            </value>
+            <value>
+                <fullName>Dissatisfied with workmanship on site</fullName>
+                <default>false</default>
+                <label>Dissatisfied with workmanship on site</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>Passed</fullName>
+                <default>false</default>
+                <label>Passed</label>
+            </value>
+            <value>
+                <fullName>Equipment Adjustment Required</fullName>
+                <default>false</default>
+                <label>Equipment Adjustment Required</label>
+            </value>
+            <value>
+                <fullName>Broken Component</fullName>
+                <default>false</default>
+                <label>Broken Component</label>
+            </value>
+            <value>
+                <fullName>Fuse / Component Fail</fullName>
+                <default>false</default>
+                <label>Fuse / Component Fail</label>
+            </value>
+            <value>
+                <fullName>Flood/Contm</fullName>
+                <default>false</default>
+                <label>Flood/Contm</label>
+            </value>
+            <value>
+                <fullName>Dirt or Foreign Matter</fullName>
+                <default>false</default>
+                <label>Dirt or Foreign Matter</label>
+            </value>
+            <value>
+                <fullName>Hot Weather</fullName>
+                <default>false</default>
+                <label>Hot Weather</label>
+            </value>
+            <value>
+                <fullName>Insulation Failed</fullName>
+                <default>false</default>
+                <label>Insulation Failed</label>
+            </value>
+            <value>
+                <fullName>No Power to site</fullName>
+                <default>false</default>
+                <label>No Power to site</label>
+            </value>
+            <value>
+                <fullName>Operating in hand</fullName>
+                <default>false</default>
+                <label>Operating in hand</label>
+            </value>
+            <value>
+                <fullName>Overheat</fullName>
+                <default>false</default>
+                <label>Overheat</label>
+            </value>
+            <value>
+                <fullName>Equipment Power Supply</fullName>
+                <default>false</default>
+                <label>Equipment Power Supply</label>
+            </value>
+            <value>
+                <fullName>Water Ingress</fullName>
+                <default>false</default>
+                <label>Water Ingress</label>
+            </value>
+            <value>
+                <fullName>Short Circuit (Electrical)</fullName>
+                <default>false</default>
+                <label>Short Circuit (Electrical)</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Calibration Problem</fullName>
+                <default>false</default>
+                <label>Calibration Problem</label>
+            </value>
+            <value>
+                <fullName>PLC Fault</fullName>
+                <default>false</default>
+                <label>PLC Fault</label>
+            </value>
+            <value>
+                <fullName>Bearing Problem</fullName>
+                <default>false</default>
+                <label>Bearing Problem</label>
+            </value>
+            <value>
+                <fullName>Blockage</fullName>
+                <default>false</default>
+                <label>Blockage</label>
+            </value>
+            <value>
+                <fullName>Excessive Vibration</fullName>
+                <default>false</default>
+                <label>Excessive Vibration</label>
+            </value>
+            <value>
+                <fullName>Lubrication</fullName>
+                <default>false</default>
+                <label>Lubrication</label>
+            </value>
+            <value>
+                <fullName>Misalignment</fullName>
+                <default>false</default>
+                <label>Misalignment</label>
+            </value>
+            <value>
+                <fullName>Oil Leak</fullName>
+                <default>false</default>
+                <label>Oil Leak</label>
+            </value>
+            <value>
+                <fullName>Seized</fullName>
+                <default>false</default>
+                <label>Seized</label>
+            </value>
+            <value>
+                <fullName>No contact</fullName>
+                <default>false</default>
+                <label>No contact</label>
+            </value>
+            <value>
+                <fullName>Customer refused access to property</fullName>
+                <default>false</default>
+                <label>Customer refused access to property</label>
+            </value>
+            <value>
+                <fullName>Property void</fullName>
+                <default>false</default>
+                <label>Property void</label>
+            </value>
+            <value>
+                <fullName>Battery already exchanged</fullName>
+                <default>false</default>
+                <label>Battery already exchanged</label>
+            </value>
+            <value>
+                <fullName>Cust objection/refusal after inspection</fullName>
+                <default>false</default>
+                <label>Cust objection/refusal after inspection</label>
+            </value>
+            <value>
+                <fullName>Serial number different</fullName>
+                <default>false</default>
+                <label>Serial number different</label>
+            </value>
+            <value>
+                <fullName>No access to meter due to fixtures</fullName>
+                <default>false</default>
+                <label>No access to meter due to fixtures</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Safety issue</fullName>
+                <default>false</default>
+                <label>Health &amp; Safety issue</label>
+            </value>
+            <value>
+                <fullName>Battery Work Carried out</fullName>
+                <default>false</default>
+                <label>Battery Work Carried out</label>
+            </value>
+            <value>
+                <fullName>Blank meter display</fullName>
+                <default>false</default>
+                <label>Blank meter display</label>
+            </value>
+            <value>
+                <fullName>Meter running on</fullName>
+                <default>false</default>
+                <label>Meter running on</label>
+            </value>
+            <value>
+                <fullName>External meter fitted due to no access</fullName>
+                <default>false</default>
+                <label>External meter fitted due to no access</label>
+            </value>
+            <value>
+                <fullName>Customer refused meter fit</fullName>
+                <default>false</default>
+                <label>Customer refused meter fit</label>
+            </value>
+            <value>
+                <fullName>Health and safety concern</fullName>
+                <default>false</default>
+                <label>Health and safety concern</label>
+            </value>
+            <value>
+                <fullName>Customer not present - unable to fit met</fullName>
+                <default>false</default>
+                <label>Customer not present - unable to fit met</label>
+            </value>
+            <value>
+                <fullName>Meter fit not possible after inspection</fullName>
+                <default>false</default>
+                <label>Meter fit not possible after inspection</label>
+            </value>
+            <value>
+                <fullName>Internal meter fitted - refused external</fullName>
+                <default>false</default>
+                <label>Internal meter fitted - refused external</label>
+            </value>
+            <value>
+                <fullName>Internal meter fitted - not safe to dig</fullName>
+                <default>false</default>
+                <label>Internal meter fitted - not safe to dig</label>
+            </value>
+            <value>
+                <fullName>Internal meter fitted - joint supply</fullName>
+                <default>false</default>
+                <label>Internal meter fitted - joint supply</label>
+            </value>
+            <value>
+                <fullName>External meter fitted</fullName>
+                <default>false</default>
+                <label>External meter fitted</label>
+            </value>
+            <value>
+                <fullName>As per Action code</fullName>
+                <default>false</default>
+                <label>As per Action code</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - FR01</fullName>
+                <default>false</default>
+                <label>DO NOT USE - FR01</label>
+            </value>
+            <value>
+                <fullName>More than two points of entry</fullName>
+                <default>false</default>
+                <label>More than two points of entry</label>
+            </value>
+            <value>
+                <fullName>Customer refused internal installation</fullName>
+                <default>false</default>
+                <label>Customer refused internal installation</label>
+            </value>
+            <value>
+                <fullName>No room for Internal Meter</fullName>
+                <default>false</default>
+                <label>No room for Internal Meter</label>
+            </value>
+            <value>
+                <fullName>Internal possible, fitter refused as H&amp;S</fullName>
+                <default>false</default>
+                <label>Internal possible, fitter refused as H&amp;S</label>
+            </value>
+            <value>
+                <fullName>Pipe Work inaccessible</fullName>
+                <default>false</default>
+                <label>Pipe Work inaccessible</label>
+            </value>
+            <value>
+                <fullName>Stop tap boxed in</fullName>
+                <default>false</default>
+                <label>Stop tap boxed in</label>
+            </value>
+            <value>
+                <fullName>Customer Refused Cable Run</fullName>
+                <default>false</default>
+                <label>Customer Refused Cable Run</label>
+            </value>
+            <value>
+                <fullName>Cable Run not Possible</fullName>
+                <default>false</default>
+                <label>Cable Run not Possible</label>
+            </value>
+            <value>
+                <fullName>No Internal Stop Tap</fullName>
+                <default>false</default>
+                <label>No Internal Stop Tap</label>
+            </value>
+            <value>
+                <fullName>Proximity of Gas and Electricity Meter</fullName>
+                <default>false</default>
+                <label>Proximity of Gas and Electricity Meter</label>
+            </value>
+            <value>
+                <fullName>Pipework Modification required</fullName>
+                <default>false</default>
+                <label>Pipework Modification required</label>
+            </value>
+            <value>
+                <fullName>Meter installed</fullName>
+                <default>false</default>
+                <label>Meter installed</label>
+            </value>
+            <value>
+                <fullName>MST in carriageway</fullName>
+                <default>false</default>
+                <label>MST in carriageway</label>
+            </value>
+            <value>
+                <fullName>MST on next doors property</fullName>
+                <default>false</default>
+                <label>MST on next doors property</label>
+            </value>
+            <value>
+                <fullName>MST too close to obstruction to Dig BB</fullName>
+                <default>false</default>
+                <label>MST too close to obstruction to Dig BB</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - FR18</fullName>
+                <default>false</default>
+                <label>DO NOT USE - FR18</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - FR19</fullName>
+                <default>false</default>
+                <label>DO NOT USE - FR19</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - FR20</fullName>
+                <default>false</default>
+                <label>DO NOT USE - FR20</label>
+            </value>
+            <value>
+                <fullName>Section 58 ruling on new footways/paths</fullName>
+                <default>false</default>
+                <label>Section 58 ruling on new footways/paths</label>
+            </value>
+            <value>
+                <fullName>Customer insisted on internal meter fit</fullName>
+                <default>false</default>
+                <label>Customer insisted on internal meter fit</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - MR23</fullName>
+                <default>false</default>
+                <label>DO NOT USE - MR23</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - FR24</fullName>
+                <default>false</default>
+                <label>DO NOT USE - FR24</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - FR25</fullName>
+                <default>false</default>
+                <label>DO NOT USE - FR25</label>
+            </value>
+            <value>
+                <fullName>External joint supply</fullName>
+                <default>false</default>
+                <label>External joint supply</label>
+            </value>
+            <value>
+                <fullName>Customer not in</fullName>
+                <default>false</default>
+                <label>Customer not in</label>
+            </value>
+            <value>
+                <fullName>Customer cancelled</fullName>
+                <default>false</default>
+                <label>Customer cancelled</label>
+            </value>
+            <value>
+                <fullName>Weather</fullName>
+                <default>false</default>
+                <label>Weather</label>
+            </value>
+            <value>
+                <fullName>communal facilities</fullName>
+                <default>false</default>
+                <label>communal facilities</label>
+            </value>
+            <value>
+                <fullName>Meter possible, landlord/council refusal</fullName>
+                <default>false</default>
+                <label>Meter possible, landlord/council refusal</label>
+            </value>
+            <value>
+                <fullName>Can&apos;t locate MST after trace</fullName>
+                <default>false</default>
+                <label>Can&apos;t locate MST after trace</label>
+            </value>
+            <value>
+                <fullName>STW policy</fullName>
+                <default>false</default>
+                <label>STW policy</label>
+            </value>
+            <value>
+                <fullName>DO NOT USE - FR34</fullName>
+                <default>false</default>
+                <label>DO NOT USE - FR34</label>
+            </value>
+            <value>
+                <fullName>Poly Orc pipe</fullName>
+                <default>false</default>
+                <label>Poly Orc pipe</label>
+            </value>
+            <value>
+                <fullName>MST is not operable or leaking</fullName>
+                <default>false</default>
+                <label>MST is not operable or leaking</label>
+            </value>
+            <value>
+                <fullName>Already metered and meter is working</fullName>
+                <default>false</default>
+                <label>Already metered and meter is working</label>
+            </value>
+            <value>
+                <fullName>HSG47</fullName>
+                <default>false</default>
+                <label>HSG47</label>
+            </value>
+            <value>
+                <fullName>Unable to contact web applicant</fullName>
+                <default>false</default>
+                <label>Unable to contact web applicant</label>
+            </value>
+            <value>
+                <fullName>Traffic Management</fullName>
+                <default>false</default>
+                <label>Traffic Management</label>
+            </value>
+            <value>
+                <fullName>Condensation</fullName>
+                <default>false</default>
+                <label>Condensation</label>
+            </value>
+            <value>
+                <fullName>Meter damaged</fullName>
+                <default>false</default>
+                <label>Meter damaged</label>
+            </value>
+            <value>
+                <fullName>Meter re-site request</fullName>
+                <default>false</default>
+                <label>Meter re-site request</label>
+            </value>
+            <value>
+                <fullName>No access to meter</fullName>
+                <default>false</default>
+                <label>No access to meter</label>
+            </value>
+            <value>
+                <fullName>Stopped meter</fullName>
+                <default>false</default>
+                <label>Stopped meter</label>
+            </value>
+            <value>
+                <fullName>Difficult read due to meter location</fullName>
+                <default>false</default>
+                <label>Difficult read due to meter location</label>
+            </value>
+            <value>
+                <fullName>Internal meter leaking</fullName>
+                <default>false</default>
+                <label>Internal meter leaking</label>
+            </value>
+            <value>
+                <fullName>Noisy meter</fullName>
+                <default>false</default>
+                <label>Noisy meter</label>
+            </value>
+            <value>
+                <fullName>High reading</fullName>
+                <default>false</default>
+                <label>High reading</label>
+            </value>
+            <value>
+                <fullName>Meter recording with no flow</fullName>
+                <default>false</default>
+                <label>Meter recording with no flow</label>
+            </value>
+            <value>
+                <fullName>Flashing meter display</fullName>
+                <default>false</default>
+                <label>Flashing meter display</label>
+            </value>
+            <value>
+                <fullName>Commercial/sub-alt meter installation</fullName>
+                <default>false</default>
+                <label>Commercial/sub-alt meter installation</label>
+            </value>
+            <value>
+                <fullName>Technical upgrade</fullName>
+                <default>false</default>
+                <label>Technical upgrade</label>
+            </value>
+            <value>
+                <fullName>Dirty or flooded meter</fullName>
+                <default>false</default>
+                <label>Dirty or flooded meter</label>
+            </value>
+            <value>
+                <fullName>Meter buried location known</fullName>
+                <default>false</default>
+                <label>Meter buried location known</label>
+            </value>
+            <value>
+                <fullName>External meter leaking</fullName>
+                <default>false</default>
+                <label>External meter leaking</label>
+            </value>
+            <value>
+                <fullName>Sensitive meter</fullName>
+                <default>false</default>
+                <label>Sensitive meter</label>
+            </value>
+            <value>
+                <fullName>Dangerous read due to H &amp; S issues</fullName>
+                <default>false</default>
+                <label>Dangerous read due to H &amp; S issues</label>
+            </value>
+            <value>
+                <fullName>Meter missing - location known</fullName>
+                <default>false</default>
+                <label>Meter missing - location known</label>
+            </value>
+            <value>
+                <fullName>Meter removed for accuracy test</fullName>
+                <default>false</default>
+                <label>Meter removed for accuracy test</label>
+            </value>
+            <value>
+                <fullName>Meter removed by customer</fullName>
+                <default>false</default>
+                <label>Meter removed by customer</label>
+            </value>
+            <value>
+                <fullName>Third party damage</fullName>
+                <default>false</default>
+                <label>Third party damage</label>
+            </value>
+            <value>
+                <fullName>Do Not Use - ME24</fullName>
+                <default>false</default>
+                <label>Do Not Use - ME24</label>
+            </value>
+            <value>
+                <fullName>Do Not Use -ME25</fullName>
+                <default>false</default>
+                <label>Do Not Use -ME25</label>
+            </value>
+            <value>
+                <fullName>New Supplies Work Completed</fullName>
+                <default>false</default>
+                <label>New Supplies Work Completed</label>
+            </value>
+            <value>
+                <fullName>Work Aborted</fullName>
+                <default>false</default>
+                <label>Work Aborted</label>
+            </value>
+            <value>
+                <fullName>Plot still slab / shell / not built yet</fullName>
+                <default>false</default>
+                <label>Plot still slab / shell / not built yet</label>
+            </value>
+            <value>
+                <fullName>Plot only 1st fixed</fullName>
+                <default>false</default>
+                <label>Plot only 1st fixed</label>
+            </value>
+            <value>
+                <fullName>Plot occupied Unable to contact customer</fullName>
+                <default>false</default>
+                <label>Plot occupied Unable to contact customer</label>
+            </value>
+            <value>
+                <fullName>Postal address required</fullName>
+                <default>false</default>
+                <label>Postal address required</label>
+            </value>
+            <value>
+                <fullName>Pipework inaccessible</fullName>
+                <default>false</default>
+                <label>Pipework inaccessible</label>
+            </value>
+            <value>
+                <fullName>Meter inaccessible</fullName>
+                <default>false</default>
+                <label>Meter inaccessible</label>
+            </value>
+            <value>
+                <fullName>Access problems - No keys</fullName>
+                <default>false</default>
+                <label>Access problems - No keys</label>
+            </value>
+            <value>
+                <fullName>Access problems - site closed</fullName>
+                <default>false</default>
+                <label>Access problems - site closed</label>
+            </value>
+            <value>
+                <fullName>No B/Box - MST only</fullName>
+                <default>false</default>
+                <label>No B/Box - MST only</label>
+            </value>
+            <value>
+                <fullName>Customer refused access</fullName>
+                <default>false</default>
+                <label>Customer refused access</label>
+            </value>
+            <value>
+                <fullName>Site unsafe or dangerous</fullName>
+                <default>false</default>
+                <label>Site unsafe or dangerous</label>
+            </value>
+            <value>
+                <fullName>Not connected to mains / no Boundary Box</fullName>
+                <default>false</default>
+                <label>Not connected to mains / no Boundary Box</label>
+            </value>
+            <value>
+                <fullName>Unable to locate boundary box</fullName>
+                <default>false</default>
+                <label>Unable to locate boundary box</label>
+            </value>
+            <value>
+                <fullName>Damaged Boundary Box unable to fit</fullName>
+                <default>false</default>
+                <label>Damaged Boundary Box unable to fit</label>
+            </value>
+            <value>
+                <fullName>Leak on STW pipework</fullName>
+                <default>false</default>
+                <label>Leak on STW pipework</label>
+            </value>
+            <value>
+                <fullName>Leak on customer pipework</fullName>
+                <default>false</default>
+                <label>Leak on customer pipework</label>
+            </value>
+            <value>
+                <fullName>Joint/Riser Leaking</fullName>
+                <default>false</default>
+                <label>Joint/Riser Leaking</label>
+            </value>
+            <value>
+                <fullName>Thread failure</fullName>
+                <default>false</default>
+                <label>Thread failure</label>
+            </value>
+            <value>
+                <fullName>Meter fitted incorrectly</fullName>
+                <default>false</default>
+                <label>Meter fitted incorrectly</label>
+            </value>
+            <value>
+                <fullName>Splitter exchanged / refitted</fullName>
+                <default>false</default>
+                <label>Splitter exchanged / refitted</label>
+            </value>
+            <value>
+                <fullName>Poor Pressure since meter fit</fullName>
+                <default>false</default>
+                <label>Poor Pressure since meter fit</label>
+            </value>
+            <value>
+                <fullName>Stop tap repair</fullName>
+                <default>false</default>
+                <label>Stop tap repair</label>
+            </value>
+            <value>
+                <fullName>Rebuild/Renew Chamber/Lid/Frame</fullName>
+                <default>false</default>
+                <label>Rebuild/Renew Chamber/Lid/Frame</label>
+            </value>
+            <value>
+                <fullName>Digital display unit defective</fullName>
+                <default>false</default>
+                <label>Digital display unit defective</label>
+            </value>
+            <value>
+                <fullName>Install digital display unit</fullName>
+                <default>false</default>
+                <label>Install digital display unit</label>
+            </value>
+            <value>
+                <fullName>Program pulse reader</fullName>
+                <default>false</default>
+                <label>Program pulse reader</label>
+            </value>
+            <value>
+                <fullName>Not Warranty Due to Third Party Damage</fullName>
+                <default>false</default>
+                <label>Not Warranty Due to Third Party Damage</label>
+            </value>
+            <value>
+                <fullName>Install touch pad pulse reader</fullName>
+                <default>false</default>
+                <label>Install touch pad pulse reader</label>
+            </value>
+            <value>
+                <fullName>Brickwork repaired</fullName>
+                <default>false</default>
+                <label>Brickwork repaired</label>
+            </value>
+            <value>
+                <fullName>Do Not Use - RR06</fullName>
+                <default>false</default>
+                <label>Do Not Use - RR06</label>
+            </value>
+            <value>
+                <fullName>Radio failure</fullName>
+                <default>false</default>
+                <label>Radio failure</label>
+            </value>
+            <value>
+                <fullName>Reprogram exisiting radio</fullName>
+                <default>false</default>
+                <label>Reprogram exisiting radio</label>
+            </value>
+            <value>
+                <fullName>Exchanged radio</fullName>
+                <default>false</default>
+                <label>Exchanged radio</label>
+            </value>
+            <value>
+                <fullName>Radio fit on existing meter</fullName>
+                <default>false</default>
+                <label>Radio fit on existing meter</label>
+            </value>
+            <value>
+                <fullName>Blanking Plate/removed TP</fullName>
+                <default>false</default>
+                <label>Blanking Plate/removed TP</label>
+            </value>
+            <value>
+                <fullName>Do Not Use -  TW04</fullName>
+                <default>false</default>
+                <label>Do Not Use -  TW04</label>
+            </value>
+            <value>
+                <fullName>Read different on meter &amp; touch pad</fullName>
+                <default>false</default>
+                <label>Read different on meter &amp; touch pad</label>
+            </value>
+            <value>
+                <fullName>Nil read at touch pad</fullName>
+                <default>false</default>
+                <label>Nil read at touch pad</label>
+            </value>
+            <value>
+                <fullName>Faulty TP wiring</fullName>
+                <default>false</default>
+                <label>Faulty TP wiring</label>
+            </value>
+            <value>
+                <fullName>Do Not Use - Wiring faulty at meter end</fullName>
+                <default>false</default>
+                <label>Do Not Use - Wiring faulty at meter end</label>
+            </value>
+            <value>
+                <fullName>Earth repaired</fullName>
+                <default>false</default>
+                <label>Earth repaired</label>
+            </value>
+            <value>
+                <fullName>Do Not Use - TW12</fullName>
+                <default>false</default>
+                <label>Do Not Use - TW12</label>
+            </value>
+            <value>
+                <fullName>Do Not Use - TW13</fullName>
+                <default>false</default>
+                <label>Do Not Use - TW13</label>
+            </value>
+            <value>
+                <fullName>Touch pad &amp; splitter calibrated</fullName>
+                <default>false</default>
+                <label>Touch pad &amp; splitter calibrated</label>
+            </value>
+            <value>
+                <fullName>Condensation on pipes (leak jobs only)</fullName>
+                <default>false</default>
+                <label>Condensation on pipes (leak jobs only)</label>
+            </value>
+            <value>
+                <fullName>Do Not Use - UR02</fullName>
+                <default>false</default>
+                <label>Do Not Use - UR02</label>
+            </value>
+            <value>
+                <fullName>Water hammer (noise)</fullName>
+                <default>false</default>
+                <label>Water hammer (noise)</label>
+            </value>
+            <value>
+                <fullName>Meter removed</fullName>
+                <default>false</default>
+                <label>Meter removed</label>
+            </value>
+            <value>
+                <fullName>Cust objection/refusal</fullName>
+                <default>false</default>
+                <label>Cust objection/refusal</label>
+            </value>
+            <value>
+                <fullName>Visual read only</fullName>
+                <default>false</default>
+                <label>Visual read only</label>
+            </value>
+            <value>
+                <fullName>BOPPS Referral</fullName>
+                <default>false</default>
+                <label>BOPPS Referral</label>
+            </value>
+            <value>
+                <fullName>No access - property void</fullName>
+                <default>false</default>
+                <label>No access - property void</label>
+            </value>
+            <value>
+                <fullName>Do Not Use -  UR10</fullName>
+                <default>false</default>
+                <label>Do Not Use -  UR10</label>
+            </value>
+            <value>
+                <fullName>No contact with customer</fullName>
+                <default>false</default>
+                <label>No contact with customer</label>
+            </value>
+            <value>
+                <fullName>Exch/repair not poss after inspection</fullName>
+                <default>false</default>
+                <label>Exch/repair not poss after inspection</label>
+            </value>
+            <value>
+                <fullName>No fault found - check reading taken</fullName>
+                <default>false</default>
+                <label>No fault found - check reading taken</label>
+            </value>
+            <value>
+                <fullName>Survey completed</fullName>
+                <default>false</default>
+                <label>Survey completed</label>
+            </value>
+            <value>
+                <fullName>Shared supply - fit not possible</fullName>
+                <default>false</default>
+                <label>Shared supply - fit not possible</label>
+            </value>
+            <value>
+                <fullName>Supply disconnected/dead supply</fullName>
+                <default>false</default>
+                <label>Supply disconnected/dead supply</label>
+            </value>
+            <value>
+                <fullName>Property demolished</fullName>
+                <default>false</default>
+                <label>Property demolished</label>
+            </value>
+            <value>
+                <fullName>Unable to locate property</fullName>
+                <default>false</default>
+                <label>Unable to locate property</label>
+            </value>
+            <value>
+                <fullName>Unable to locate meter</fullName>
+                <default>false</default>
+                <label>Unable to locate meter</label>
+            </value>
+            <value>
+                <fullName>Do Not Use - UR20</fullName>
+                <default>false</default>
+                <label>Do Not Use - UR20</label>
+            </value>
+            <value>
+                <fullName>Confirmed Occupier Change</fullName>
+                <default>false</default>
+                <label>Confirmed Occupier Change</label>
+            </value>
+            <value>
+                <fullName>Meter suspected over recording, std</fullName>
+                <default>false</default>
+                <label>Meter suspected over recording, std</label>
+            </value>
+            <value>
+                <fullName>Meter suspected over recording, non-std</fullName>
+                <default>false</default>
+                <label>Meter suspected over recording, non-std</label>
+            </value>
+            <value>
+                <fullName>Meter suspected under recording, std</fullName>
+                <default>false</default>
+                <label>Meter suspected under recording, std</label>
+            </value>
+            <value>
+                <fullName>Meter suspected under recording, non-std</fullName>
+                <default>false</default>
+                <label>Meter suspected under recording, non-std</label>
+            </value>
+            <value>
+                <fullName>Meter Accuracy Other</fullName>
+                <default>false</default>
+                <label>Meter Accuracy Other</label>
+            </value>
+            <value>
+                <fullName>Change to meter/meter type of same size</fullName>
+                <default>false</default>
+                <label>Change to meter/meter type of same size</label>
+            </value>
+            <value>
+                <fullName>Downsize meter</fullName>
+                <default>false</default>
+                <label>Downsize meter</label>
+            </value>
+            <value>
+                <fullName>Upsize meter</fullName>
+                <default>false</default>
+                <label>Upsize meter</label>
+            </value>
+            <value>
+                <fullName>Relocate meter, to internal</fullName>
+                <default>false</default>
+                <label>Relocate meter, to internal</label>
+            </value>
+            <value>
+                <fullName>Relocate meter, to external</fullName>
+                <default>false</default>
+                <label>Relocate meter, to external</label>
+            </value>
+            <value>
+                <fullName>Relocate meter, post survey/loc unknown</fullName>
+                <default>false</default>
+                <label>Relocate meter, post survey/loc unknown</label>
+            </value>
+            <value>
+                <fullName>Install standard internal meter</fullName>
+                <default>false</default>
+                <label>Install standard internal meter</label>
+            </value>
+            <value>
+                <fullName>Install standard external meter</fullName>
+                <default>false</default>
+                <label>Install standard external meter</label>
+            </value>
+            <value>
+                <fullName>Install stdmeter post survey/loc unknown</fullName>
+                <default>false</default>
+                <label>Install stdmeter post survey/loc unknown</label>
+            </value>
+            <value>
+                <fullName>Install non-standard meter</fullName>
+                <default>false</default>
+                <label>Install non-standard meter</label>
+            </value>
+            <value>
+                <fullName>Meter has stopped recording</fullName>
+                <default>false</default>
+                <label>Meter has stopped recording</label>
+            </value>
+            <value>
+                <fullName>Meter has slowed</fullName>
+                <default>false</default>
+                <label>Meter has slowed</label>
+            </value>
+            <value>
+                <fullName>Meter is running backwards</fullName>
+                <default>false</default>
+                <label>Meter is running backwards</label>
+            </value>
+            <value>
+                <fullName>Burst or leak at the meter</fullName>
+                <default>false</default>
+                <label>Burst or leak at the meter</label>
+            </value>
+            <value>
+                <fullName>Meter buried or tarred over</fullName>
+                <default>false</default>
+                <label>Meter buried or tarred over</label>
+            </value>
+            <value>
+                <fullName>Unreadable due to smashed dials</fullName>
+                <default>false</default>
+                <label>Unreadable due to smashed dials</label>
+            </value>
+            <value>
+                <fullName>Unreadable due to condensation</fullName>
+                <default>false</default>
+                <label>Unreadable due to condensation</label>
+            </value>
+            <value>
+                <fullName>Unreadable due to elec or battery fault</fullName>
+                <default>false</default>
+                <label>Unreadable due to elec or battery fault</label>
+            </value>
+            <value>
+                <fullName>Other meter problem</fullName>
+                <default>false</default>
+                <label>Other meter problem</label>
+            </value>
+            <value>
+                <fullName>Meter has been removed</fullName>
+                <default>false</default>
+                <label>Meter has been removed</label>
+            </value>
+            <value>
+                <fullName>Non meter asset</fullName>
+                <default>false</default>
+                <label>Non meter asset</label>
+            </value>
+            <value>
+                <fullName>Supply and Meter Verification</fullName>
+                <default>false</default>
+                <label>Supply and Meter Verification</label>
+            </value>
+            <value>
+                <fullName>Meter Verification</fullName>
+                <default>false</default>
+                <label>Meter Verification</label>
+            </value>
+            <value>
+                <fullName>Supply Arrangement Check Not Required</fullName>
+                <default>false</default>
+                <label>Supply Arrangement Check Not Required</label>
+            </value>
+            <value>
+                <fullName>Supply Arrangement Check Required</fullName>
+                <default>false</default>
+                <label>Supply Arrangement Check Required</label>
+            </value>
+            <value>
+                <fullName>Supply Verification</fullName>
+                <default>false</default>
+                <label>Supply Verification</label>
+            </value>
+            <value>
+                <fullName>Technical upgrade required</fullName>
+                <default>false</default>
+                <label>Technical upgrade required</label>
+            </value>
+            <value>
+                <fullName>Remove meter for accuracy test</fullName>
+                <default>false</default>
+                <label>Remove meter for accuracy test</label>
+            </value>
+            <value>
+                <fullName>Water hammer</fullName>
+                <default>false</default>
+                <label>Water hammer</label>
+            </value>
+            <value>
+                <fullName>Replace boundary box lid</fullName>
+                <default>false</default>
+                <label>Replace boundary box lid</label>
+            </value>
+            <value>
+                <fullName>Fit radio meter</fullName>
+                <default>false</default>
+                <label>Fit radio meter</label>
+            </value>
+            <value>
+                <fullName>Radio weak signal</fullName>
+                <default>false</default>
+                <label>Radio weak signal</label>
+            </value>
+            <value>
+                <fullName>Re-site request</fullName>
+                <default>false</default>
+                <label>Re-site request</label>
+            </value>
+            <value>
+                <fullName>Radio read failure</fullName>
+                <default>false</default>
+                <label>Radio read failure</label>
+            </value>
+            <value>
+                <fullName>Read different on meter &amp; radio cyble</fullName>
+                <default>false</default>
+                <label>Read different on meter &amp; radio cyble</label>
+            </value>
+            <value>
+                <fullName>Touch pad/wiring re-site request</fullName>
+                <default>false</default>
+                <label>Touch pad/wiring re-site request</label>
+            </value>
+            <value>
+                <fullName>No access to touch pad</fullName>
+                <default>false</default>
+                <label>No access to touch pad</label>
+            </value>
+            <value>
+                <fullName>Touch pad missing / unable to locate</fullName>
+                <default>false</default>
+                <label>Touch pad missing / unable to locate</label>
+            </value>
+            <value>
+                <fullName>Intermittent reading</fullName>
+                <default>false</default>
+                <label>Intermittent reading</label>
+            </value>
+            <value>
+                <fullName>Touch pad damaged / not wired</fullName>
+                <default>false</default>
+                <label>Touch pad damaged / not wired</label>
+            </value>
+            <value>
+                <fullName>No Leak</fullName>
+                <default>false</default>
+                <label>No Leak</label>
+            </value>
+            <value>
+                <fullName>Network Non Visible Leak</fullName>
+                <default>false</default>
+                <label>Network Non Visible Leak</label>
+            </value>
+            <value>
+                <fullName>Network Visible Leak</fullName>
+                <default>false</default>
+                <label>Network Visible Leak</label>
+            </value>
+            <value>
+                <fullName>Private Non Visible Leak</fullName>
+                <default>false</default>
+                <label>Private Non Visible Leak</label>
+            </value>
+            <value>
+                <fullName>Private Visible Leak</fullName>
+                <default>false</default>
+                <label>Private Visible Leak</label>
+            </value>
+            <value>
+                <fullName>Private Problem</fullName>
+                <default>false</default>
+                <label>Private Problem</label>
+            </value>
+            <value>
+                <fullName>Sensitive Site - Care Facility</fullName>
+                <default>false</default>
+                <label>Sensitive Site - Care Facility</label>
+            </value>
+            <value>
+                <fullName>Sensitive Site - Education</fullName>
+                <default>false</default>
+                <label>Sensitive Site - Education</label>
+            </value>
+            <value>
+                <fullName>Sensitive Site - Elderly</fullName>
+                <default>false</default>
+                <label>Sensitive Site - Elderly</label>
+            </value>
+            <value>
+                <fullName>Sensitive Site - Emergency Services</fullName>
+                <default>false</default>
+                <label>Sensitive Site - Emergency Services</label>
+            </value>
+            <value>
+                <fullName>Sensitive Site - Government</fullName>
+                <default>false</default>
+                <label>Sensitive Site - Government</label>
+            </value>
+            <value>
+                <fullName>Sensitive Site - Medical</fullName>
+                <default>false</default>
+                <label>Sensitive Site - Medical</label>
+            </value>
+            <value>
+                <fullName>Not a Sensitive Business Type</fullName>
+                <default>false</default>
+                <label>Not a Sensitive Business Type</label>
+            </value>
+            <value>
+                <fullName>Metered water supplies - disconnected</fullName>
+                <default>false</default>
+                <label>Metered water supplies - disconnected</label>
+            </value>
+            <value>
+                <fullName>Reconnection for Temporary Disconnection</fullName>
+                <default>false</default>
+                <label>Reconnection for Temporary Disconnection</label>
+            </value>
+            <value>
+                <fullName>Unmetered water supplies - disconnected</fullName>
+                <default>false</default>
+                <label>Unmetered water supplies - disconnected</label>
+            </value>
+            <value>
+                <fullName>Biological Process Fail</fullName>
+                <default>false</default>
+                <label>Biological Process Fail</label>
+            </value>
+            <value>
+                <fullName>Chemical process Fail</fullName>
+                <default>false</default>
+                <label>Chemical process Fail</label>
+            </value>
+            <value>
+                <fullName>Cold Weather</fullName>
+                <default>false</default>
+                <label>Cold Weather</label>
+            </value>
+            <value>
+                <fullName>Equipment Cutting Out</fullName>
+                <default>false</default>
+                <label>Equipment Cutting Out</label>
+            </value>
+            <value>
+                <fullName>Excessive Rag</fullName>
+                <default>false</default>
+                <label>Excessive Rag</label>
+            </value>
+            <value>
+                <fullName>Excessive Noise</fullName>
+                <default>false</default>
+                <label>Excessive Noise</label>
+            </value>
+            <value>
+                <fullName>Failed to Start</fullName>
+                <default>false</default>
+                <label>Failed to Start</label>
+            </value>
+            <value>
+                <fullName>Failed to Stop</fullName>
+                <default>false</default>
+                <label>Failed to Stop</label>
+            </value>
+            <value>
+                <fullName>Leaking Equipment (Not oil)</fullName>
+                <default>false</default>
+                <label>Leaking Equipment (Not oil)</label>
+            </value>
+            <value>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+                <label>Lighting</label>
+            </value>
+            <value>
+                <fullName>Low Suction</fullName>
+                <default>false</default>
+                <label>Low Suction</label>
+            </value>
+            <value>
+                <fullName>Burst Main</fullName>
+                <default>false</default>
+                <label>Burst Main</label>
+            </value>
+            <value>
+                <fullName>No Air</fullName>
+                <default>false</default>
+                <label>No Air</label>
+            </value>
+            <value>
+                <fullName>Process Bypass</fullName>
+                <default>false</default>
+                <label>Process Bypass</label>
+            </value>
+            <value>
+                <fullName>Process Short Circuit</fullName>
+                <default>false</default>
+                <label>Process Short Circuit</label>
+            </value>
+            <value>
+                <fullName>Spurious Stop</fullName>
+                <default>false</default>
+                <label>Spurious Stop</label>
+            </value>
+            <value>
+                <fullName>Telemetry Alarm Fail</fullName>
+                <default>false</default>
+                <label>Telemetry Alarm Fail</label>
+            </value>
+            <value>
+                <fullName>Alarm or Problem Indicator Fail</fullName>
+                <default>false</default>
+                <label>Alarm or Problem Indicator Fail</label>
+            </value>
+            <value>
+                <fullName>Vandalism</fullName>
+                <default>false</default>
+                <label>Vandalism</label>
+            </value>
+            <value>
+                <fullName>Wet Weather</fullName>
+                <default>false</default>
+                <label>Wet Weather</label>
+            </value>
+            <value>
+                <fullName>Bogus Caller</fullName>
+                <default>false</default>
+                <label>Bogus Caller</label>
+            </value>
+            <value>
+                <fullName>Restricted Access</fullName>
+                <default>false</default>
+                <label>Restricted Access</label>
+            </value>
+            <value>
+                <fullName>Traffic Disruption</fullName>
+                <default>false</default>
+                <label>Traffic Disruption</label>
+            </value>
+            <value>
+                <fullName>Traffic Lights</fullName>
+                <default>false</default>
+                <label>Traffic Lights</label>
+            </value>
+            <value>
+                <fullName>P1 WWC</fullName>
+                <default>false</default>
+                <label>P1 WWC</label>
+            </value>
+            <value>
+                <fullName>P2 WWC</fullName>
+                <default>false</default>
+                <label>P2 WWC</label>
+            </value>
+            <value>
+                <fullName>P3 WWC</fullName>
+                <default>false</default>
+                <label>P3 WWC</label>
+            </value>
+            <value>
+                <fullName>Float issue found</fullName>
+                <default>false</default>
+                <label>Float issue found</label>
+            </value>
+            <value>
+                <fullName>Pulsar issue found</fullName>
+                <default>false</default>
+                <label>Pulsar issue found</label>
+            </value>
+            <value>
+                <fullName>Pump issue found</fullName>
+                <default>false</default>
+                <label>Pump issue found</label>
+            </value>
+            <value>
+                <fullName>NRV issue found</fullName>
+                <default>false</default>
+                <label>NRV issue found</label>
+            </value>
+            <value>
+                <fullName>Sump pump issue found</fullName>
+                <default>false</default>
+                <label>Sump pump issue found</label>
+            </value>
+            <value>
+                <fullName>Chemical dosing rig issue found</fullName>
+                <default>false</default>
+                <label>Chemical dosing rig issue found</label>
+            </value>
+            <value>
+                <fullName>Alarm issue found</fullName>
+                <default>false</default>
+                <label>Alarm issue found</label>
+            </value>
+            <value>
+                <fullName>Other issue found</fullName>
+                <default>false</default>
+                <label>Other issue found</label>
+            </value>
+            <value>
+                <fullName>No issues found</fullName>
+                <default>false</default>
+                <label>No issues found</label>
+            </value>
+            <value>
+                <fullName>Defect</fullName>
+                <default>false</default>
+                <label>Defect</label>
+            </value>
+            <value>
+                <fullName>Will become a danger</fullName>
+                <default>false</default>
+                <label>Will become a danger</label>
+            </value>
+            <value>
+                <fullName>Equipment is missing</fullName>
+                <default>false</default>
+                <label>Equipment is missing</label>
+            </value>
+            <value>
+                <fullName>NONE</fullName>
+                <default>false</default>
+                <label>NONE</label>
+            </value>
+            <value>
+                <fullName>Observation</fullName>
+                <default>false</default>
+                <label>Observation</label>
+            </value>
+            <value>
+                <fullName>Equipment scrapped</fullName>
+                <default>false</default>
+                <label>Equipment scrapped</label>
+            </value>
+            <value>
+                <fullName>Equipment is not available</fullName>
+                <default>false</default>
+                <label>Equipment is not available</label>
+            </value>
+            <value>
+                <fullName>Waste water Flooding</fullName>
+                <default>false</default>
+                <label>Waste water Flooding</label>
+            </value>
+            <value>
+                <fullName>Insects in Waster Water</fullName>
+                <default>false</default>
+                <label>Insects in Waster Water</label>
+            </value>
+            <value>
+                <fullName>Pollution</fullName>
+                <default>false</default>
+                <label>Pollution</label>
+            </value>
+            <value>
+                <fullName>Smell</fullName>
+                <default>false</default>
+                <label>Smell</label>
+            </value>
+            <value>
+                <fullName>Aerated Water</fullName>
+                <default>false</default>
+                <label>Aerated Water</label>
+            </value>
+            <value>
+                <fullName>Bits in Water</fullName>
+                <default>false</default>
+                <label>Bits in Water</label>
+            </value>
+            <value>
+                <fullName>Discolouration</fullName>
+                <default>false</default>
+                <label>Discolouration</label>
+            </value>
+            <value>
+                <fullName>Flooding</fullName>
+                <default>false</default>
+                <label>Flooding</label>
+            </value>
+            <value>
+                <fullName>High Pressure</fullName>
+                <default>false</default>
+                <label>High Pressure</label>
+            </value>
+            <value>
+                <fullName>Insects in Water</fullName>
+                <default>false</default>
+                <label>Insects in Water</label>
+            </value>
+            <value>
+                <fullName>Leakage</fullName>
+                <default>false</default>
+                <label>Leakage</label>
+            </value>
+            <value>
+                <fullName>Low Pressure</fullName>
+                <default>false</default>
+                <label>Low Pressure</label>
+            </value>
+            <value>
+                <fullName>No supply</fullName>
+                <default>false</default>
+                <label>No supply</label>
+            </value>
+            <value>
+                <fullName>Poor supply</fullName>
+                <default>false</default>
+                <label>Poor supply</label>
+            </value>
+            <value>
+                <fullName>Smell in Water</fullName>
+                <default>false</default>
+                <label>Smell in Water</label>
+            </value>
+            <value>
+                <fullName>Chlorine / TCP Complaint</fullName>
+                <default>false</default>
+                <label>Chlorine / TCP Complaint</label>
+            </value>
+            <value>
+                <fullName>Taste</fullName>
+                <default>false</default>
+                <label>Taste</label>
+            </value>
+            <value>
+                <fullName>Start Quantification</fullName>
+                <default>false</default>
+                <label>Start Quantification</label>
+            </value>
+            <value>
+                <fullName>Asset Failed or Requires Attention</fullName>
+                <default>false</default>
+                <label>Asset Failed or Requires Attention</label>
+            </value>
+            <value>
+                <fullName>No Further Work Required</fullName>
+                <default>false</default>
+                <label>No Further Work Required</label>
+            </value>
+            <value>
+                <fullName>Lead Comms Pipe Replacement</fullName>
+                <default>false</default>
+                <label>Lead Comms Pipe Replacement</label>
+            </value>
+            <value>
+                <fullName>No Lead Replacement occurred</fullName>
+                <default>false</default>
+                <label>No Lead Replacement occurred</label>
+            </value>
+            <value>
+                <fullName>Lead Service Pipe Replacement</fullName>
+                <default>false</default>
+                <label>Lead Service Pipe Replacement</label>
+            </value>
+            <value>
+                <fullName>Lead Supply Pipe Replacement</fullName>
+                <default>false</default>
+                <label>Lead Supply Pipe Replacement</label>
+            </value>
+            <value>
+                <fullName>Multiple Supplies</fullName>
+                <default>false</default>
+                <label>Multiple Supplies</label>
+            </value>
+            <value>
+                <fullName>Single Supply</fullName>
+                <default>false</default>
+                <label>Single Supply</label>
+            </value>
+            <value>
+                <fullName>Complex: Planned cleanse/monitor recomm.</fullName>
+                <default>false</default>
+                <label>Complex: Planned cleanse/monitor recomm.</label>
+            </value>
+            <value>
+                <fullName>Complex: Re-inspection recommendation</fullName>
+                <default>false</default>
+                <label>Complex: Re-inspection recommendation</label>
+            </value>
+            <value>
+                <fullName>Flow not restored: Emergency Tankering</fullName>
+                <default>false</default>
+                <label>Flow not restored: Emergency Tankering</label>
+            </value>
+            <value>
+                <fullName>Flow not restored: Emerg. Over-pumping</fullName>
+                <default>false</default>
+                <label>Flow not restored: Emerg. Over-pumping</label>
+            </value>
+            <value>
+                <fullName>Flow partially restored: Over-pumping</fullName>
+                <default>false</default>
+                <label>Flow partially restored: Over-pumping</label>
+            </value>
+            <value>
+                <fullName>Flow partially restored: Sewer monitor</fullName>
+                <default>false</default>
+                <label>Flow partially restored: Sewer monitor</label>
+            </value>
+            <value>
+                <fullName>Flow partial restored:Freq sewer relieve</fullName>
+                <default>false</default>
+                <label>Flow partial restored:Freq sewer relieve</label>
+            </value>
+            <value>
+                <fullName>Flow partially restored: Tankering</fullName>
+                <default>false</default>
+                <label>Flow partially restored: Tankering</label>
+            </value>
+            <value>
+                <fullName>Likely re-block FOW : Freq insp/ cleanse</fullName>
+                <default>false</default>
+                <label>Likely re-block FOW : Freq insp/ cleanse</label>
+            </value>
+            <value>
+                <fullName>Likely re-block FOW : Sewer monitor</fullName>
+                <default>false</default>
+                <label>Likely re-block FOW : Sewer monitor</label>
+            </value>
+            <value>
+                <fullName>Likely re-block FOW : Freq sewer relieve</fullName>
+                <default>false</default>
+                <label>Likely re-block FOW : Freq sewer relieve</label>
+            </value>
+            <value>
+                <fullName>No mitigation required</fullName>
+                <default>false</default>
+                <label>No mitigation required</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Asset Failure – Network</fullName>
+                <default>false</default>
+                <label>Asset Failure – Network</label>
+            </value>
+            <value>
+                <fullName>Asset Failure – Storage Reservoir</fullName>
+                <default>false</default>
+                <label>Asset Failure – Storage Reservoir</label>
+            </value>
+            <value>
+                <fullName>Asset Failure – Treatment</fullName>
+                <default>false</default>
+                <label>Asset Failure – Treatment</label>
+            </value>
+            <value>
+                <fullName>Human Error Inadequate contingency plan</fullName>
+                <default>false</default>
+                <label>Human Error Inadequate contingency plan</label>
+            </value>
+            <value>
+                <fullName>Human Error Hygienic practice</fullName>
+                <default>false</default>
+                <label>Human Error Hygienic practice</label>
+            </value>
+            <value>
+                <fullName>Human Error Procedure not followed</fullName>
+                <default>false</default>
+                <label>Human Error Procedure not followed</label>
+            </value>
+            <value>
+                <fullName>Human Error Inadequate procedure</fullName>
+                <default>false</default>
+                <label>Human Error Inadequate procedure</label>
+            </value>
+            <value>
+                <fullName>Human Error Inadequate resilience</fullName>
+                <default>false</default>
+                <label>Human Error Inadequate resilience</label>
+            </value>
+            <value>
+                <fullName>Human Error Inadequate/incmplte training</fullName>
+                <default>false</default>
+                <label>Human Error Inadequate/incmplte training</label>
+            </value>
+            <value>
+                <fullName>Illegal connection to the network</fullName>
+                <default>false</default>
+                <label>Illegal connection to the network</label>
+            </value>
+            <value>
+                <fullName>Change of surrounding area or land use</fullName>
+                <default>false</default>
+                <label>Change of surrounding area or land use</label>
+            </value>
+            <value>
+                <fullName>Change of network configuration</fullName>
+                <default>false</default>
+                <label>Change of network configuration</label>
+            </value>
+            <value>
+                <fullName>Planned work</fullName>
+                <default>false</default>
+                <label>Planned work</label>
+            </value>
+            <value>
+                <fullName>Customer specific issue</fullName>
+                <default>false</default>
+                <label>Customer specific issue</label>
+            </value>
+            <value>
+                <fullName>3rd party impact on network Contractor</fullName>
+                <default>false</default>
+                <label>3rd party impact on network Contractor</label>
+            </value>
+            <value>
+                <fullName>3rd party impact on network fire service</fullName>
+                <default>false</default>
+                <label>3rd party impact on network fire service</label>
+            </value>
+            <value>
+                <fullName>3rd party impact on network illegal</fullName>
+                <default>false</default>
+                <label>3rd party impact on network illegal</label>
+            </value>
+            <value>
+                <fullName>3rd party impact on network other</fullName>
+                <default>false</default>
+                <label>3rd party impact on network other</label>
+            </value>
+            <value>
+                <fullName>Change of water source</fullName>
+                <default>false</default>
+                <label>Change of water source</label>
+            </value>
+            <value>
+                <fullName>Asset Availability</fullName>
+                <default>false</default>
+                <label>Asset Availability</label>
+            </value>
+            <value>
+                <fullName>Catchment Area Problems</fullName>
+                <default>false</default>
+                <label>Catchment Area Problems</label>
+            </value>
+            <value>
+                <fullName>Crime</fullName>
+                <default>false</default>
+                <label>Crime</label>
+            </value>
+            <value>
+                <fullName>Electrical Asset Performance</fullName>
+                <default>false</default>
+                <label>Electrical Asset Performance</label>
+            </value>
+            <value>
+                <fullName>Excessive Wear</fullName>
+                <default>false</default>
+                <label>Excessive Wear</label>
+            </value>
+            <value>
+                <fullName>Human Error</fullName>
+                <default>false</default>
+                <label>Human Error</label>
+            </value>
+            <value>
+                <fullName>Instrument Asset Performance</fullName>
+                <default>false</default>
+                <label>Instrument Asset Performance</label>
+            </value>
+            <value>
+                <fullName>Mechanical Asset Performance</fullName>
+                <default>false</default>
+                <label>Mechanical Asset Performance</label>
+            </value>
+            <value>
+                <fullName>Offsite Pumping Station</fullName>
+                <default>false</default>
+                <label>Offsite Pumping Station</label>
+            </value>
+            <value>
+                <fullName>Screen Performance</fullName>
+                <default>false</default>
+                <label>Screen Performance</label>
+            </value>
+            <value>
+                <fullName>Upstream Asset (Not Screens)</fullName>
+                <default>false</default>
+                <label>Upstream Asset (Not Screens)</label>
+            </value>
+            <value>
+                <fullName>Work Around</fullName>
+                <default>false</default>
+                <label>Work Around</label>
+            </value>
+            <value>
+                <fullName>Process Performance</fullName>
+                <default>false</default>
+                <label>Process Performance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

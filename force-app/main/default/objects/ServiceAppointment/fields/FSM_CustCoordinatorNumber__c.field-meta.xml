@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CustCoordinatorNumber__c</fullName>
+    <description>created as part of SFS-5349</description>
+    <label>Customer Coordinator - Contact Number</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nottingham – 07890948951</fullName>
+                <default>false</default>
+                <label>Nottingham – 07890948951</label>
+            </value>
+            <value>
+                <fullName>Derby  - 07890948949</fullName>
+                <default>false</default>
+                <label>Derby  - 07890948949</label>
+            </value>
+            <value>
+                <fullName>Leicester - 07890950118</fullName>
+                <default>false</default>
+                <label>Leicester - 07890950118</label>
+            </value>
+            <value>
+                <fullName>Warwickshire - 07890948950</fullName>
+                <default>false</default>
+                <label>Warwickshire - 07890948950</label>
+            </value>
+            <value>
+                <fullName>Central - 07890948948</fullName>
+                <default>false</default>
+                <label>Central - 07890948948</label>
+            </value>
+            <value>
+                <fullName>Worcester &amp; Gloucester - 07890950121</fullName>
+                <default>false</default>
+                <label>Worcester &amp; Gloucester - 07890950121</label>
+            </value>
+            <value>
+                <fullName>Staffordshire - 07583100439</fullName>
+                <default>false</default>
+                <label>Staffordshire - 07583100439</label>
+            </value>
+            <value>
+                <fullName>Shropshire – 07890948953</fullName>
+                <default>false</default>
+                <label>Shropshire – 07890948953</label>
+            </value>
+            <value>
+                <fullName>Customer Leak Support – 03452 660036</fullName>
+                <default>false</default>
+                <label>Customer Leak Support – 03452 660036</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

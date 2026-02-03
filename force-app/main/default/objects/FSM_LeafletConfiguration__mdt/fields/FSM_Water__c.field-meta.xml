@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Water__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If ticked, this configuration applies to Water BU.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If ticked, this configuration applies to Water BU.</inlineHelpText>
+    <label>Water</label>
+    <type>Checkbox</type>
+</CustomField>

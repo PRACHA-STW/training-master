@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Stores leaflet configurations. Configured records are used to dynamically control values appearing in leaflets screen flow.</description>
+    <label>Leaflet Configuration</label>
+    <pluralLabel>Leaflet Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

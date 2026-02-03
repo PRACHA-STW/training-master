@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_DynamicPriority__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (NOT(ISBLANK(TEXT(FSM_PriorityUpdateByScheduler__c))), VALUE(TEXT(FSM_PriorityUpdateByScheduler__c)),
+IF ((NOT(ISBLANK( FSSK__FSK_Work_Order__r.FSM_TMAPermit__c)) &amp;&amp; ( TEXT( FSSK__FSK_Work_Order__r.FSM_NoticeState__c)  == &apos;NSEN&apos;)), 1,
+(100 - if(FSM_CustomerAppointment__c,FSM_CustomerAppointmentScore__c,FSSK__FSK_Work_Order__r.FSM_NoticeTypeScore__c)
+ -  FSSK__FSK_Work_Order__r.FSM_NoticeStatusScore__c -  FSM_DueDateScore__c  -  FSM_DurationScore__c -  FSM_ConstraintStartScore__c - FSM_PriorityScore__c -  FSM_TypeOfLeakScore__c - FSM_BacklogScore__c ) 
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dynamic Priority</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

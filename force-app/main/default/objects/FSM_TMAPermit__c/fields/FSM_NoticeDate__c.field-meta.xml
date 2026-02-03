@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NoticeDate__c</fullName>
+    <description>Field type changed as a part of SFS-4133
+Label updated as a part of SFS-4792
+Date the TMAtrigger is due to be sent to the middleware (INT-008)</description>
+    <label>Noticeable Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

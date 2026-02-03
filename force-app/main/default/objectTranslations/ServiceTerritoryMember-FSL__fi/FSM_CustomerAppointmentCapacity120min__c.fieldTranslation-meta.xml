@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Appointment Capacity - 120 min --></label>
+    <name>FSM_CustomerAppointmentCapacity120min__c</name>
+</CustomFieldTranslation>

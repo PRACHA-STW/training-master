@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_GSSPayable__c</fullName>
+    <description>sfs-1322</description>
+    <label>GSS Payable? Reason:</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appointments</fullName>
+                <default>false</default>
+                <label>Appointments</label>
+            </value>
+            <value>
+                <fullName>Warnings</fullName>
+                <default>false</default>
+                <label>Warnings</label>
+            </value>
+            <value>
+                <fullName>Over Runs</fullName>
+                <default>false</default>
+                <label>Over Runs</label>
+            </value>
+            <value>
+                <fullName>Emergency Interruptions</fullName>
+                <default>false</default>
+                <label>Emergency Interruptions</label>
+            </value>
+            <value>
+                <fullName>DG2 Pressure</fullName>
+                <default>false</default>
+                <label>DG2 Pressure</label>
+            </value>
+            <value>
+                <fullName>Emergency Restrictions</fullName>
+                <default>false</default>
+                <label>Emergency Restrictions</label>
+            </value>
+            <value>
+                <fullName>Boiled Water</fullName>
+                <default>false</default>
+                <label>Boiled Water</label>
+            </value>
+            <value>
+                <fullName>Multiple Causes</fullName>
+                <default>false</default>
+                <label>Multiple Causes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

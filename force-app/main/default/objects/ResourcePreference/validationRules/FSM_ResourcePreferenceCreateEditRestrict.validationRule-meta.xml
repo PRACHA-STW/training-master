@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ResourcePreferenceCreateEditRestrict</fullName>
+    <active>false</active>
+    <description>Validation to prevent creation of new or modification of the existing Resource Preference records by any persona. Resource Preference records will be be only modified or created via an inbound integration. Created as a part of SFS-1010</description>
+    <errorConditionFormula>AND($Permission.FSM_ResourcePreferenceCreateEditRestriction )</errorConditionFormula>
+    <errorMessage>Error: creation or modification of Resource Preference is not permitted.</errorMessage>
+</ValidationRule>

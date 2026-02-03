@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Applicable Designations --></label>
+    <name>FSM_ApplicableDesignations__c</name>
+    <picklistValues>
+        <masterLabel>Drainage and Flood Risk</masterLabel>
+        <translation><!-- Drainage and Flood Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Services Routes</masterLabel>
+        <translation><!-- Emergency Services Routes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmentally sensitive areas</masterLabel>
+        <translation><!-- Environmentally sensitive areas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HGV Approved Routes</masterLabel>
+        <translation><!-- HGV Approved Routes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lane Rental (Changed from Strategic route)</masterLabel>
+        <translation><!-- Lane Rental (Changed from Strategic route) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Level crossing safety zone</masterLabel>
+        <translation><!-- Level crossing safety zone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Considerations</masterLabel>
+        <translation><!-- Local Considerations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Used (Changed from Section 85)</masterLabel>
+        <translation><!-- Not Used (Changed from Section 85) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking bays and restrictions</masterLabel>
+        <translation><!-- Parking bays and restrictions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedestrian crossings and traffic signals</masterLabel>
+        <translation><!-- Pedestrian crossings and traffic signals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipelines and specialist cables</masterLabel>
+        <translation><!-- Pipelines and specialist cables --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priority lanes</masterLabel>
+        <translation><!-- Priority lanes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proposed SED</masterLabel>
+        <translation><!-- Proposed SED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Protected street</masterLabel>
+        <translation><!-- Protected street --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special construction needs</masterLabel>
+        <translation><!-- Special construction needs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special engineering difficulty (SED)</masterLabel>
+        <translation><!-- Special engineering difficulty (SED) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special events</masterLabel>
+        <translation><!-- Special events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special surfaces</masterLabel>
+        <translation><!-- Special surfaces --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speed limits</masterLabel>
+        <translation><!-- Speed limits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic Route</masterLabel>
+        <translation><!-- Strategic Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting</masterLabel>
+        <translation><!-- Street Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street designations do not apply to works</masterLabel>
+        <translation><!-- Street designations do not apply to works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streets subject to early notification of immediate activities</masterLabel>
+        <translation><!-- Streets subject to early notification of immediate activities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Structures (not SED)</masterLabel>
+        <translation><!-- Structures (not SED) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic sensitive</masterLabel>
+        <translation><!-- Traffic sensitive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transport authority critical apparatus</masterLabel>
+        <translation><!-- Transport authority critical apparatus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unusual Traffic Layout</masterLabel>
+        <translation><!-- Unusual Traffic Layout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Winter Maintenance Routes</masterLabel>
+        <translation><!-- Winter Maintenance Routes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

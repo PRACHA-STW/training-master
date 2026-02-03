@@ -1,0 +1,179 @@
+<!--**************************************************************************************
+    - Description  : Created for Select & Schedule - Jobs on same asset (non-infra)
+    - Created By   : Brajesh Kumar
+    - Created Date : 24th May 2024
+    - Updated : SFS - 6415
+    - Story No : SFS-5428 
+**************************************************************************************** -->
+<template>
+    <lightning-card>
+        <div class="main-container content">
+            <!--Screen 1 Brajesh-->
+            <template if:true={Screen1}>
+                <div class="screen1-container">
+                    <p class="slds-m-around_small sizeTitle">Apply Filter:</p>
+                    <div>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="slds-m-horizontal_xxx-small">
+                            <div style="display: flex;" class="slds-m-around_small slds-m-vertical_x-small">
+                                <p class="sizeMedium">Please select at least one of the following boxes to search for
+                                    available jobs that match
+                                    your selected criteria and skill set</p>
+                            </div>
+                            <lightning-checkbox-group class="sizeSmall slds-m-around_small" name="Checkbox Group"
+                                label="" options={options} value={filterValue}
+                                onchange={handleSAFilter}></lightning-checkbox-group>
+                        </div>
+                    </div>
+
+                </div>
+            </template>
+            <!-- -screen 2 Brajesh - -->
+            <template if:true={Screen2}>
+                <div>
+                    <!-- <div class="wrapper-section"> -->
+                    <p class="slds-m-around_small sizeTitle">Search Result</p>
+                    <div class="error-message">
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </div>
+                    <div class="table-container">
+                        <template if:true={appointments}>
+                            <div class="">
+                                <table
+                                    class="slds-p-horizontal_xx-small slds-table slds-m-vertical_x-small slds-table_cell-buffer slds-table_bordered slds-table_fixed-layout slds-p-around_xx-small">
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <th scope="col" style="width: 50px">
+                                                <!-- <div class="slds-truncate" title="Select">Select</div> -->
+                                            </th>
+                                            <th scope="col">
+                                                <div class="slds-truncate" title="Subject">Operation Short Text
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <template for:each={appointments} for:item="appointment">
+                                            <tr key={appointment.Id}>
+                                                <td data-label="Select">
+                                                    <div class="slds-truncate">
+                                                        <input class="sizeSmaller" type="radio" name="selectAppointment"
+                                                            value={appointment.Id} onchange={handleSelection}></input>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Subject">
+                                                    <div class="slds-truncate wrap-text sizeSmaller"
+                                                        title={appointment.Subject}>{appointment.Subject}</div>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </template>
+
+                    </div>
+                </div>
+
+            </template>
+
+            <!-- -screen 3 Brajesh start- -->
+            <template if:true={Screen3}>
+                <div title="SAP Operation" class="slds-m-around_small slds-m-vertical_x-small"
+                    style="background-color: white;">
+                    <p class="slds-m-around_small sizeTitle">SAP Operation</p>
+                    <div class="slds-m-horizontal_xx-small slds-m-left_xx-small">
+
+                        <!-- start -->
+                        <table class="slds-table slds-table_cell-buffer slds-table_fixed-layout">
+                            <tr>
+                              <td class="wrap-text slds-m-vertical_x-small" style="width: 50%;"><strong>SAP Operation Number:</strong></td>
+                              <td class="wrap-text">{sapOperationNumber}</td>
+                            </tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr>
+                              <td class="wrap-text" style="width: 50%;"><strong>Contact Name:</strong></td>
+                              <td class="wrap-text">{contactNameWo}</td>
+                            </tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr class="spaced-row"><td colspan="1"></td></tr>
+                            <tr>
+                                <td class="wrap-text" style="width: 50% ;vertical-align:top; text-align: left;"><strong>Description:</strong></td>
+                                <td class="wrap-text">{descp}</td>
+                              </tr>
+                          </table>
+                        
+                        <!-- end -->
+
+                        <!-- div -->
+                         <!-- div end -->
+                    </div>
+                </div>
+            </template>
+            <!-- -screen 3 Brajesh end- -->
+            <!-- -screen 4 Brajesh start- -->
+            <template if:true={noRecord}>
+                <div class="slds-m-around_small slds-m-vertical_x-small" style="background-color: white;">
+                    <p class="sizeMedium"><strong>No records found</strong></p>
+                </div>
+            </template>
+            <!-- -screen 4 Brajesh end- -->
+
+            <template if:true={loading}>
+                <lightning-spinner variant="brand" size="large"> </lightning-spinner>
+            </template>
+            <!-- -screen 4 Brajesh start- -->
+            <template if:true={screen4}>
+                <div title="" style="background-color: white;">
+                    <div class="slds-m-horizontal_xx-small slds-m-left_xx-small">
+                        <div class="slds-text-heading_small slds-m-top_small">
+                            <p>
+                                <Strong> SAP Operation Number {sapOperationNumber} </Strong> is being processed for
+                                scheduling. Please allow a couple of minutes for the job to appear.
+                            </p>
+                            <br>
+                            <p>If the job doesn't automatically appear, manually sync the app</p>
+
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- -screen 4 Brajesh end- -->
+            <!-- Next and Previous buttons -->
+            <div class="button-section slds-m-horizontal_xx-small slds-m-left_xx-small">
+                <template if:true={isSearchEnabled}>
+                    <lightning-button class="sizeSmall slds-m-left_xx-small" style="width: fit-content*2;"
+                        label="Search" variant="brand" onclick={searchAppointments}></lightning-button>
+                </template>
+                <template if:true={isEnablePrev}>
+                    <lightning-button class="sizeSmall slds-m-left_xx-small" label="Previous" variant="brand"
+                        onclick={handlePrevious}></lightning-button>
+                </template>&nbsp;&nbsp;&nbsp;
+                <template if:true={isEnableNext}>
+                    <lightning-button class="sizeSmall slds-m-left_xx-small" label="Next" onclick={handleNext}
+                        variant="brand"></lightning-button>
+                </template>&nbsp;&nbsp;&nbsp;
+                <template if:true={isEnabledSchedule}>
+                    <lightning-button class="sizeSmall slds-m-left_xx-small" label="Schedule" onclick={handleSchedule}
+                        variant="brand"></lightning-button>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

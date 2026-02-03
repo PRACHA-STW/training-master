@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IsMandatory__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This Field is used for checking if the E-Form created is Mandatory to complete or not. Created as a part of SFS-1298.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Mandatory On Complete</label>
+    <type>Checkbox</type>
+</CustomField>

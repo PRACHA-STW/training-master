@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>SFI-26</description>
+        <name>Create_integration_Log</name>
+        <label>Create integration Log</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <actionName>FSM_Utility</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>externalId</name>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>MeasuringDocumentRecord.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestPayLoad</name>
+            <value>
+                <elementReference>FSM_RequestPayload</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceName</name>
+            <value>
+                <elementReference>$Label.FSM_MeasuringPointReadingInterfaceName</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>FSM_Utility</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>SFI-691
+Updated as part of SFI-1451
+Updated as part of SFI-1563
+Updated as part of SFI-1559
+Updated as part of SFI-1724</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM Measuring Point Reading - Subflow - Create Platform Event Record {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Measuring Document - Subflow - Create Platform Event Record</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>SFI-26</description>
+        <name>Create_Platform_Event_Record</name>
+        <label>Create Platform Event Record</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <connector>
+            <targetReference>Create_integration_Log</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Call_ErrorLog_Subflow</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>FSM_Comments__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_Comments__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_DateTime__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_DateTime__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_ExternalId__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_WorkOrder__r.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_MeasuringDocumentId__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_MeasuringPointReading__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_MeasuringPointReading__r.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_Mpvalcode__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_Mpvalcode__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_OperationNumber__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_WorkOrder__r.FSM_OperationNumber__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_OrderNumber__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_WorkOrder__r.FSM_OrderNumber__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_ReadingTakenBy__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_ReadingTakenBy__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_Reading__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_Reading__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_ReverseIndicator__c</field>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_ReverseIndicator__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_SAPUserID__c</field>
+            <value>
+                <elementReference>Get_user_sap_id.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FSM_SendMeasuringPointReadingEvent__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>sfi-1724</description>
+        <name>Get_user_sap_id</name>
+        <label>Get user sap id</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Platform_Event_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>MeasuringDocumentRecord.LastModifiedById</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FSM_ExternalId__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_user_sap_id</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>SFI-26</description>
+        <name>Call_ErrorLog_Subflow</name>
+        <label>Call ErrorLog Subflow</label>
+        <locationX>440</locationX>
+        <locationY>350</locationY>
+        <flowName>ErrorLog_Subflow_Create_Record</flowName>
+        <inputAssignments>
+            <name>FSM_ExceptionalNumber</name>
+            <value>
+                <elementReference>MeasuringDocumentRecord.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_ExternalId</name>
+            <value>
+                <elementReference>MeasuringDocumentRecord.FSM_ExternalId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_FlowName</name>
+            <value>
+                <elementReference>$Label.FSM_MeasuringPointReadingInterfaceName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FSM_Type</name>
+            <value>
+                <stringValue>Integration</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <textTemplates>
+        <description>SFI-26</description>
+        <name>FSM_RequestPayload</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{
+&quot;FSM_Reading__c&quot;: {!MeasuringDocumentRecord.FSM_Reading__c},
+&quot;FSM_MeasuringDocumentId__c&quot; : {!MeasuringDocumentRecord.FSM_ExternalId__c},
+&quot;FSM_ExternalId__c&quot; : {!MeasuringDocumentRecord.FSM_WorkOrder__r.FSM_ExternalId__c},
+&quot;FSM_Mpvalcode__c&quot; : {!MeasuringDocumentRecord.FSM_Mpvalcode__c},
+&quot;FSM_MeasuringPointReading__c&quot; : {!MeasuringDocumentRecord.FSM_MeasuringPointReading__r.FSM_ExternalId__c},
+&quot;FSM_OperationNumber__c&quot; : {!MeasuringDocumentRecord.FSM_WorkOrder__r.FSM_OperationNumber__c},
+&quot;FSM_OrderNumber__c&quot; : {!MeasuringDocumentRecord.FSM_WorkOrder__r.FSM_OrderNumber__c} ,
+&quot;FSM_ReverseIndicator__c&quot; : {!MeasuringDocumentRecord.FSM_ReverseIndicator__c},
+&quot;FSM_ReadingTakenBy__c&quot; : {!MeasuringDocumentRecord.FSM_ReadingTakenBy__c},
+&quot;FSM_Comments__c&quot; : {!MeasuringDocumentRecord.FSM_Comments__c},
+&quot;FSM_SAPUserID__c&quot; : {!Get_user_sap_id.FSM_ExternalId__c} , 
+&quot;FSM_DateTime__c&quot; : {!MeasuringDocumentRecord.FSM_DateTime__c},
+&quot;CreatedDate&quot; : {!$Flow.CurrentDateTime} ,
+&quot;CreatedBy&quot; : {!$User.FirstName} {!$User.LastName}
+}</text>
+    </textTemplates>
+    <variables>
+        <name>MeasuringDocumentRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FSM_MeasuringDocument__c</objectType>
+    </variables>
+</Flow>

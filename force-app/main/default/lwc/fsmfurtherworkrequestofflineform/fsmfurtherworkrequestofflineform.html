@@ -1,0 +1,1274 @@
+<template>
+  <div class="slds-form">
+    <lightning-record-edit-form object-api-name={objectApiName}>
+      <template if:false={isDone}>
+        <lightning-spinner alternative-text="Loading......" size="medium"></lightning-spinner>
+      </template>
+      <template if:true={isDone}>
+        <template if:true={sectionone}>
+<lightning-card title="Site Specific details">
+
+    <lightning-card>
+      <ul class="slds-m-around_medium">
+        <template for:each={errormessages} for:item="field">
+            <li key={field.Id} style="color:red;">{field}</li>
+        </template>
+      </ul>
+    </lightning-card>
+    <div class="slds-m-horizontal_xx-small">
+    
+    <div style="display: flex;" class="slds-m-vertical_x-small">
+    <p class="required"> *</p>
+    <p>Grid Ref of proposed work (x)</p>
+    <p class="desktop-tooltip"> <lightning-helptext
+    content="Please input the Grid reference of where the works will take place, this can be located using GISST. This grid reference is where the works are taking place and could result in fines from the council if not inputted correctly."></lightning-helptext>
+    </p>
+    <div class="tooltip-container mobile-tooltip">
+      <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+      <span class="tooltip-text first">Please input the Grid reference of where the works will take place, this can be located using GISST. This grid reference is where the works are taking place and could result in fines from the council if not inputted correctly.</span>
+    </div>
+    </div>
+    <lightning-input name="FSM_GridRefOfProposedWorkX__c" type="number" required variant="label-hidden"
+    value={gridproposedworkx} onchange={handlegridxchange} class="gridx" max-length="6"
+    pattern="[0-9]{6}"></lightning-input>
+
+    <div style="display: flex;" class="slds-m-vertical_x-small">
+    <p class="required"> *</p>
+    <p>Grid Ref of proposed work (y)</p>
+    <p class="desktop-tooltip"> <lightning-helptext
+    content="	Please input the Grid reference of where the works will take place, this can be located using GISST. This grid reference is where the works are taking place and could result in fines from the council if not inputted correctly."></lightning-helptext>
+    </p>
+    <div class="tooltip-container mobile-tooltip">
+      <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+      <span class="tooltip-text">Please input the Grid reference of where the works will take place, this can be located using GISST. This grid reference is where the works are taking place and could result in fines from the council if not inputted correctly.</span>
+    </div>
+
+    </div>
+    <lightning-input name="FSM_GridRefOfProposedWorkY__c" type="number" required pattern="[0-9]{6}"
+    variant="label-hidden" value={gridproposedworky} onchange={handlegridychange} class="gridy"
+    max-length="6"></lightning-input>
+    </div>
+    </lightning-card>
+        </template>
+      </template>
+      <!--section 2-->
+      <template if:true={sectiontwo}>
+        <lightning-card>
+          <ul class="slds-m-around_medium">
+            <template for:each={errormessages} for:item="field">
+              <li key={field.Id} style="color:red;">{field}</li>
+            </template>
+          </ul>
+        </lightning-card>
+        <div class="slds-m-horizontal_xx-small">
+          <lightning-card>
+            <!--condition-->
+            <!-- <div style="display: flex;
+            justify-content: center; align-items: center;" class="slds-m-vertical_x-small">
+              <p>Address sent from SAP:</p>
+            </div> -->
+            <div style="display: flex;
+            justify-content: center; align-items: center;" class="slds-m-vertical_x-small">
+              <p>{occupiersaddress}</p>
+            </div>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+
+              <p>Is this work at a different location</p>
+
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_SFWIsThisAtADifferentAddress__c"
+              value={isdiffaddrr} checked={ischeckeddiffaddr} onchange={handleaddresschange}></lightning-input>
+            <!--dependency added as part of sfs-6000-->
+            <template if:true={isnotatdiffadrr}>
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+
+                <p>Occupiers Name</p>
+
+              </div>
+              <lightning-input name="FSM_OccupiersName__c" class="occname" type="text" variant="label-hidden"
+                value={occname} onchange={handleoccunamechange} max-length="80"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+
+                <p>Occupier's Telephone No</p>
+
+              </div>
+              <lightning-input name="FSM_OccupiersTelephoneNumber__c" class="occtelno" type="text"
+                variant="label-hidden" value={occtelno} onchange={handleocctelnochange} max-length="30"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+
+                <p>Occupier's House Name</p>
+                <p> <lightning-helptext
+                  content="This Information is visible to Highways Authority on the notice and must contain the correct address information (No business names)"></lightning-helptext>
+                </p>
+              </div>
+              <lightning-input name="FSM_OccupiersHouseName__c" class="occhsename" type="text" variant="label-hidden"
+                value={occhsename} onchange={handlehsenamechange} max-length="40"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+
+                <p>Occupier's House No.</p>
+                <p> <lightning-helptext
+                    content="This Information is visible to Highways Authority on the notice and must contain the correct address information "></lightning-helptext>
+                </p>
+              </div>
+              <lightning-input name="FSM_OccupiersHouseNo__c" class="occhseno" type="number" variant="label-hidden"
+                value={occhseno} onchange={handlehsenochange} max-length="10"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Occupier's Street</p>
+
+              </div>
+              <lightning-input name="FSM_OccupiersStreet__c" class="occstreet" type="text" variant="label-hidden"
+                value={occstreet} onchange={handleoccstreetchange} max-length="60"></lightning-input>
+
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+
+                <p>Occupier's Town</p>
+
+              </div>
+              <lightning-input name="FSM_OccupiersTown__c" class="occtown" type="text" variant="label-hidden"
+                value={occstown} onchange={handleocctownchange} max-length="40"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Occupier's City</p>
+
+              </div>
+              <lightning-input name="FSM_OccupiersCity__c" required class="occcity" type="text" variant="label-hidden"
+                value={occcity} onchange={handlecitychange} max-length="40"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Occupier's Postcode</p>
+
+              </div>
+              <lightning-input name="FSM_OccupiersPostcode__c" required class="occpostcode" type="text"
+                variant="label-hidden" value={occpostcode} onchange={handlepostcodechange} max-length="10"></lightning-input>
+            </template>
+
+
+
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+            <p class="required"> *</p>
+              <p>Land Comments</p>
+             
+          </div>
+          <lightning-textarea name="FSM_LandComments__c" required class="landcomm" type="text"  disabled={islocrestrictedland} variant="label-hidden" value={landcomm} onchange={handlelandcommchange}></lightning-textarea>     -->
+
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+            <p class="required"> *</p>
+              <p>Permission to Dig Required?</p>
+             
+          </div>
+          <lightning-combobox name="FSM_PermissionToDigRequired__c" class="permissionreq" value={permissiontodigreq} options={permissionoptions}
+          onchange={handleChangepermissiontodigreq} variant="label-hidden" required></lightning-combobox>
+      <template if:true={isyesptd}>
+          <div style="display: flex;" class="slds-m-vertical_x-small">
+            <p class="required"> *</p>
+              <p>Which Proforma signed?</p>
+              <p> <lightning-helptext content="Is the works on private and do we require permission for access and to complete the work ?"></lightning-helptext></p>
+          </div>
+          <lightning-input name="FSM_WhichProformaSigned__c" class="proformasigned" type="text" required variant="label-hidden" value={proformasigned} onchange={handleproformasignedchange}></lightning-input>    
+               
+          <div style="display: flex;" class="slds-m-vertical_x-small">
+            <p class="required"> *</p>
+              <p>Permission to dig?</p>
+            
+          </div>
+
+          <lightning-combobox name="FSM_PermissionToDig__c" class="permissiontodig" value={permissiondig} options={digoptions}
+                   onchange={handleChangedig} variant="label-hidden" required></lightning-combobox> -->
+            <!-- </template> -->
+          </lightning-card>
+        </div>
+      </template>
+      <!--section 3-->
+
+      <template if:true={sectionthree}>
+
+
+        <lightning-card title="">
+          <lightning-card>
+            <ul class="slds-m-around_medium">
+              <template for:each={errormessages} for:item="field">
+                <li key={field.Id} style="color:red;">{field}</li>
+              </template>
+            </ul>
+          </lightning-card>
+          <div class="slds-m-horizontal_xx-small">
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Location</p>
+              <p> <lightning-helptext
+                  content="This Information is visible to Highways Authority on the notice and must contain the correct address information -  If the job is on the public highway AND private land then select 'public highway' in the dropdown menu above and complete the permission to dig details below"></lightning-helptext>
+              </p>
+            </div>
+            <lightning-combobox name="FSM_Location__c" class="locationcls" value={occlocation} options={locationoptions}
+              onchange={handlelocationchange} variant="label-hidden" required></lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Permission to Dig Required?</p>
+
+            </div>
+            <lightning-combobox name="FSM_PermissionToDigRequired__c" class="permissionreq" value={permissiontodigreq}
+              options={permissionoptions} onchange={handleChangepermissiontodigreq} variant="label-hidden"
+              required></lightning-combobox>
+
+            <template if:true={isyesptd}>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Which Proforma signed?</p>
+                <p class="desktop-tooltip"> <lightning-helptext
+                    content="Is the works on private and do we require permission for access and to complete the work ?"></lightning-helptext>
+                </p>
+                <div class="tooltip-container mobile-tooltip">
+                  <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                  <span class="tooltip-text">Is the works on private and do we require permission for access and to complete the work ?</span>
+                </div>
+              </div>
+              <lightning-input name="FSM_WhichProformaSigned__c" class="proformasigned" type="text" required
+                variant="label-hidden" value={proformasigned} onchange={handleproformasignedchange} max-length="20"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Permission to dig?</p>
+
+              </div>
+
+              <lightning-combobox name="FSM_PermissionToDig__c" class="permissiontodig" value={permissiondig}
+                options={digoptions} onchange={handleChangedig} variant="label-hidden" required></lightning-combobox>
+            </template>
+            <!--Proforma Photos-->
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+
+              <p>Upload proforma</p>
+            </div>
+            <lightning-input type="file" accept="image/*" multiple label="&zwnj;" onchange={handleProformaPhotoSelect}>
+            </lightning-input>
+
+            <!-- start of preview -->
+            <template if:true={proformaimg}>
+              <template for:each={proformaImageData} for:item="images">
+                <div key={images.id} class={images.className}>
+
+                  <div class="image-container">
+                    <img data-id={images.id} src={images.data} onclick={handleImageClick}></img><br><br>
+                    <div class="delete-icon" onclick={handleDeleteClick} data-id={images.id}>
+                      <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete"
+                        size="x-small"></lightning-icon>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </template>
+            <!-- end of preview -->
+
+          </div>
+        </lightning-card>
+
+      </template>
+      <!--section 4-->
+      <template if:true={sectionfour}>
+        <lightning-card title="Asset">
+          <lightning-card>
+            <ul class="slds-m-around_medium">
+              <template for:each={errormessages} for:item="field">
+                <li key={field.Id} style="color:red;">{field}</li>
+              </template>
+            </ul>
+          </lightning-card>
+          <div class="slds-m-horizontal_xx-small">
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Asset</p>
+              <p> <lightning-helptext content="The asset is the piece of Equipment you will be working on e.g. Main"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" value={selectedasset} options={assetRecords}
+              onchange={handleAssetChange} name="FSM_Asset__c" class="assetcls" required>
+            </lightning-combobox>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Task</p>
+              <p> <lightning-helptext content="The task is what is required to be done on the asset e.g. Repair"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_Task__c" value={seltask} class="taskcls"
+              options={filteredTask} onchange={handleTaskChange}>
+            </lightning-combobox>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Technique</p>
+              <p> <lightning-helptext content="The Technique is how the asset is going to be repaired e.g. Under pressure"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" value={selectedtechnique} options={filteredTechnique}
+              class="techniquecls" onchange={handleTechniqueChange}>
+            </lightning-combobox>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Size</p>
+              <p> <lightning-helptext content="This is the size of the asset e.g. 4"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" value={selsize} options={filteredSize}
+              onchange={handleSizeChange} class="sizecls">
+            </lightning-combobox>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Material</p>
+              <p> <lightning-helptext content="The material is what the asset is made of e.g. Cast Iron"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" class="materialcls" value={selmaterial}
+              options={filteredMaterial} onchange={handleMaterialChange}>
+            </lightning-combobox>
+            <!-- Dependent Picklist End-->
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+
+              <p>Asset UID</p>
+
+              <p> <lightning-helptext
+                  content="The asset UID is found in GISST this is the unique identifier of the asset. To find the UID launch GISST and locate the asset then select Task, Select Identify and then select the asset the UID will appear on the left e.g. 12000247084"
+                  class="slds-button__icon" size="large"></lightning-helptext></p>
+            </div>
+            <lightning-input name="FSM_AssetUID__c" type="number" variant="label-hidden" value={assetuuid}
+              onchange={handleAssetUidChange} max-length="40" class="assetuidcls">
+            </lightning-input>
+
+          </div>
+        </lightning-card>
+      </template>
+      <!--section five-->
+      <template if:true={sectionfive}>
+        <lightning-card title="BOPPs">
+          <lightning-card>
+            <ul class="slds-m-around_medium">
+              <template for:each={errormessages} for:item="field">
+                <li key={field.Id} style="color:red;">{field}</li>
+              </template>
+            </ul>
+          </lightning-card>
+          <div class="slds-m-horizontal_xx-small">
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Type of Leak?</p>
+              <p> <lightning-helptext content="Select the correct type of leak"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_TypeOfLeak__c" value={leaktype} class="leaktypecls"
+              options={typeofleakoptions} onchange={handletypeofleakChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Surface Type</p>
+              <p><lightning-helptext content="What is the surface type e.g. 6mm Tarmac"></lightning-helptext></p>
+            </div>
+            <lightning-combobox name="FSM_SurfaceType__c" class="surfacetypecls" value={surfacetype}
+              options={surfacetypeoptions} onchange={handlesurfacetypechange} variant="label-hidden"
+              required></lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>EST Location (X)</p>
+            </div>
+            <lightning-input name="FSM_ESTLocationX__c" required class="estXloccls" type="number" variant="label-hidden"
+              max-length="6" value={estXloc} onchange={handleestXlocchange}></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>EST Location (Y)</p>
+            </div>
+            <lightning-input name="FSM_ESTLocationY__c" required class="estYloccls" type="number" max-length="6"
+              variant="label-hidden" value={estYloc} onchange={handleestYlocchange}></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Leak Location</p>
+              <p> <lightning-helptext content="Select the correct type of leak"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_LeakLocation__c" value={leakloc} class="leakloccls"
+              options={leaklocaoptions} onchange={handleLeaklocChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Visible leak</p>
+              <p> <lightning-helptext content="Select the correct type of leak"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_VisibleLeak__c" value={visibleleak}
+              class="visibleleakcls" options={visibleleakoptions} onchange={handlevisibleleakChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>How has the Leak been Quantified?</p>
+              <p> <lightning-helptext content="Select the correct type of leak"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_HasLeakBeenQuantified__c" value={leakquantified}
+              class="leakquantifiedcls" options={leakquantifiedoptions} onchange={handleLeakquantifiedChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Meter Serial (if fitted)</p>
+            </div>
+            <lightning-input name="FSM_MeterSerial__c" type="text" value={meterserial} class="meterserialcls"
+              variant="label-hidden" onchange={handlechangemeterserial} max-length="15" required>
+            </lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Meter Reading (Black Digits Only)</p>
+            </div>
+
+            <lightning-input name="FSM_MeterReading__c" max-length="15" value={meterreading} variant="label-hidden"
+              onchange={handlechangemetereading} class="meterreadingcls" type="number" required></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Leak Quantified lph</p>
+            </div>
+            <lightning-input name="FSM_LeakQuantified__c" required class="leakquantcls" type="number"
+              variant="label-hidden" value={leakquant} max-length="6"
+              onchange={handleleakquantchange}></lightning-input>
+              <!--moved as part of 6575-->
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+               
+                <p>Residential Status</p>
+              </div>
+  
+              <lightning-combobox data-field="FSM_ResidentialStatus__c" variant="label-hidden" value={residentstatus}
+                options={residentstatusoptions} data-index={index} onchange={handleChangeResidantStatus}></lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Is this a shared supply?</p>
+            </div>
+
+            <lightning-combobox data-field="FSM_IsThisASharedSupply__c" variant="label-hidden" value={issharedsupply}
+              options={sharedsupplyoptions} data-index={index} class="sharedsupplycls" onchange={handleChangeSharedSupply}
+              required></lightning-combobox>
+               <!--end moved as part of 6575-->
+          </div>
+        </lightning-card>
+
+      </template>
+
+      <!--Additional customer table dcf line item-->
+      <template if:true={sectionadditionalcustomer}>
+
+        <lightning-card title="BOPPs Shared Supply">
+          <lightning-card>
+            <ul class="slds-m-around_medium">
+              <template for:each={errormessages} for:item="field">
+                <li key={field.Id} style="color:red;">{field}</li>
+              </template>
+            </ul>
+          </lightning-card>
+          <div class="slds-m-around_medium">
+
+           
+              <table class="slds-table slds-table_bordered">
+
+                <tbody>
+                  <template for:each={customerdata} for:item="record" for:index="index">
+                    <tr key={record.id}>
+
+                      <td>
+                        <lightning-input label="Customer Name" type="text" data-field="FSM_CustomerName__c"
+                          value={record.FSM_CustomerName__c} data-index={index} onchange={handleCustomerInputChange}>
+                        </lightning-input>
+                      </td>
+                      <td>
+                        <lightning-input label="Contact Number" type="text" data-field="FSM_ContactNumber__c"
+                          value={record.FSM_ContactNumber__c} data-index={index} max-length="11"
+                          onchange={handleCustomerInputChange}>
+                        </lightning-input>
+                      </td>
+
+                      <td>
+                        <lightning-combobox label="Residential Status" data-field="FSM_ResidentialStatus__c"
+                          value={record.FSM_ResidentialStatus__c} options={residentialstatusoptions} data-index={index}
+                          onchange={handleCustomerInputChange}></lightning-combobox>
+                      </td>
+                    <!--Start added as part of sfs-5312 -->
+                      <td>
+                        <lightning-combobox label="Have you made contact with customer?" data-field="FSM_ContactWithCustomer__c"
+                          value={record.FSM_ContactWithCustomer__c} options={contactcustomeroptions} data-index={index}
+                          onchange={handleCustomerInputChange}></lightning-combobox>
+                      </td>
+
+                      <td>
+                        <lightning-combobox label="Can the IST be isolated?" data-field="FSM_CanISTBeIsolated__c"
+                          value={record.FSM_CanISTBeIsolated__c} options={canistbeisolatedoptions} data-index={index}
+                          onchange={handleCustomerInputChange}></lightning-combobox>
+                      </td>
+                    <!--End added as part of sfs-5312 -->
+
+                      <td>
+                        <lightning-textarea label="Address" max-length="255" data-field="FSM_Address__c"
+                          value={record.FSM_Address__c} data-index={index}
+                          onchange={handleCustomerInputChange}></lightning-textarea>
+                      </td>
+                      <td>
+                        <lightning-button-icon icon-name="utility:delete" alternative-text="Delete"
+                          onclick={handleDeleteRowCustomerTable} data-index={index}></lightning-button-icon>
+                      </td>
+                    </tr>
+
+                  </template>
+                </tbody>
+              </table>
+              <br><br>
+              <lightning-button label="Add Row" onclick={handleAddRowCustomerTable}></lightning-button>&nbsp;&nbsp;
+           
+          </div>
+
+        </lightning-card>
+
+      </template>
+      <!--section six-->
+
+      <template if:true={sectionsix}>
+        <lightning-card title="BOPPs continued">
+          <lightning-card>
+            <ul class="slds-m-around_medium">
+              <template for:each={errormessages} for:item="field">
+                <li key={field.Id} style="color:red;">{field}</li>
+              </template>
+            </ul>
+          </lightning-card>
+          <div class="slds-m-horizontal_xx-small">
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>AquaPea used</p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_AquaPeaUsed__c" value={aquapeaused}
+              class="aquapeausedcls" options={aquapeausedoptions} onchange={handleChangeaquapeaused}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Post AquaPea (LPH)</p>
+            </div>
+            <lightning-input name="FSM_PostAquaPea__c" value={postaquapea} variant="label-hidden" step="0.01" max-length="7"
+              onchange={handleChangePostaquapea} class="postaquapeacls" type="number" required></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Flow Valve Fitted</p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_FlowValveFitted__c" value={valvefitted}
+              class="valvefittedcls" options={valvefittedoptions} onchange={handleChangeValvefitted}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Post flow Valve (LPH)</p>
+            </div>
+            <lightning-input name="FSM_PostFlowValve__c" value={postflowvalve} variant="label-hidden" max-length="7" step="0.01"
+              onchange={handleChangePostflowvalve} class="postflowvalvecls" type="number" required></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Gassing</p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_Gassing__c" value={gassing} class="gassingcls"
+              options={gassingptions} onchange={handleChangegassing}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Pipe MIC</p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_PipeMIC__c" value={pipeMic} class="pipeMiccls"
+              options={pipeMicoptions} onchange={handleChangepipeMic}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Access Issues</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_AccessRestricted__c" value={accessissues}
+              onchange={handleaccessissueschange} checked={isaccesschecked} class="accessissuescls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Days where work can NOT be carried out?</p>
+              <p> <lightning-helptext
+                  content="Work shouldn't be carried out on the days selected. For Example, If a job can only be done on a weekend. Please tick Boxes Monday-Friday"></lightning-helptext>
+              </p>
+            </div>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Monday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Monday__c" value={mon}
+              onchange={handlemondaychange} checked={ismonchecked} class="moncls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Tuesday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Tuesday__c" value={tues}
+              onchange={handletueschange} checked={istuechecked} class="tuescls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Wednesday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Wednesday__c" value={wed}
+              onchange={handlewedchange} checked={iswedchecked} class="wedcls"></lightning-input>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Thursday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Thursday__c" value={thurs}
+              onchange={handlethurschange} checked={isthurschecked} class="thurscls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Friday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Friday__c" value={fri}
+              onchange={handlefrichange} checked={isfrichecked} class="fricls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Saturday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Saturday__c" value={sat}
+              onchange={handlesatchange} checked={issatchecked} class="satcls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Sunday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Sunday__c" value={sun}
+              onchange={handlesunchange} checked={issunchecked} class="suncls"></lightning-input>
+
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Restricted Time</p>
+              <p> <lightning-helptext content="What times can't the work take place"></lightning-helptext></p>
+            </div>
+            <lightning-dual-listbox name="FSM_RestrictedTime__c" variant="label-hidden" source-label="Available"
+              selected-label="Selected" options={restrictedpicklistoptions} onchange={handleChangerestrictedtime}
+              value={restrictedtime} class="restrictedtimecls"></lightning-dual-listbox> -->
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Times where work can NOT be carried out?</p>
+              <p> <lightning-helptext
+                  content="Work shouldn't be carried out at the times selected. For Example, If a job can only be done at night please select AM & PM"></lightning-helptext>
+              </p>
+            </div>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>AM</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_AM__c" value={amval}
+              onchange={handleAmchange} checked={isamchecked} class="amcls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>PM</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_PM__c" value={pmval}
+              onchange={handlePmchange} checked={ispmchecked} class="pmcls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Night</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Night__c" value={nightval}
+              onchange={handleNightchange} checked={isnightchecked} class="nightcls"></lightning-input>
+              
+            <!-- Added below textbox Planning and comm as part of SFL-967 -->
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Planning information &amp; Comm's</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="Please add additional information to outline the following Health and safety Planning requirements Properties affected/needing communication"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text first">Please add additional information to outline the following Health and safety Planning requirements Properties affected/needing communication</span>
+              </div>
+            </div>
+            
+               <!-- Changed maximum length from 150 to 1000 as part of SFL-967 -->
+               <lightning-textarea name="FSM_PlanningInfoAndComms__c" required class="planningfocls" type="text"
+              variant="label-hidden" value={planninginfo} onchange={handleplanninginfochange} max-length="1000"></lightning-textarea>
+
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Overhead power lines within 10m</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="Are there any overhead powerlines in the vicinity of the works. Please refer to SSOW on waterpedia"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text">Are there any overhead powerlines in the vicinity of the works. Please refer to SSOW on waterpedia</span>
+              </div>
+            </div>
+
+            <lightning-combobox variant="label-hidden" name="FSM_OverheadPowerLinesWithin10m__c" value={powerlines}
+              class="powerlinescls" options={optionesyesno} onchange={handleoverheadpowerlineChange}>
+            </lightning-combobox>
+
+            <label class="slds-form-element__label" for="unique-id-of-input">Please ensure to mark up on the sketch
+              where you believe the supply runs and where you believe the leak is located. Details -If commercial,
+              Business
+              names,contact names and number (Unit numbers alone isnt enough) -Any customer names and numbers you have
+              spoken to and any useful info i.e. Landlord name and number -Please think is there any other info that the
+              Bopps team need to know Please enter as much deatil as possible in the following Comments box this will
+              appear on the sketch</label>
+
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Comments for Bopps team</p>
+            </div>
+            <lightning-textarea name="FSM_CommentsForBoppsTeam__c" required={isaccessissuesyes} class="boopsteamcls"
+              type="text" variant="label-hidden" value={boopsteam}
+              onchange={handlecommboppschange}></lightning-textarea> -->
+
+
+          </div>
+        </lightning-card>
+      </template>
+
+      <!--section seven-->
+      <template if:true={sectionseven}>
+        <lightning-card>
+          <ul class="slds-m-around_medium">
+            <template for:each={errormessages} for:item="field">
+              <li key={field.Id} style="color:red;">{field}</li>
+            </template>
+          </ul>
+        </lightning-card>
+        <lightning-card>
+          <div class="slds-m-horizontal_xx-small">
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Is excavation required?</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="Do we need to excavate to complete the repair, If you are unsure select yes. If you select no then the job will be built without an excavation and incur fines if an excavation does take place"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text first">Do we need to excavate to complete the repair, If you are unsure select yes. If you select no then the job will be built without an excavation and incur fines if an excavation does take place</span>
+              </div>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_IsExcavationRequired__c" value={excavation}
+              class="excavationcls" options={optionesyesno} onchange={handleeisexcavationreqChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Type of Leak?</p>
+              <p> <lightning-helptext content="Select the correct type of leak"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_TypeOfLeak__c" value={leaktype} class="leaktypecls"
+              options={typeofleakoptions} onchange={handletypeofleakChange}>
+            </lightning-combobox>
+
+            <!--added as part of sfs-6000-->
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <!-- <p class="required"> *</p> -->
+              <p>Days where work can NOT be carried out?</p>
+              <p> <lightning-helptext
+                  content="Work shouldn't be carried out on the days selected. For Example, If a job can only be done on a weekend. Please tick Boxes Monday-Friday"></lightning-helptext>
+              </p>
+            </div>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Monday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Monday__c" value={mon}
+              onchange={handlemondaychange} checked={ismonchecked} class="moncls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Tuesday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Tuesday__c" value={tues}
+              onchange={handletueschange} checked={istuechecked} class="tuescls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Wednesday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Wednesday__c" value={wed}
+              onchange={handlewedchange} checked={iswedchecked} class="wedcls"></lightning-input>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Thursday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Thursday__c" value={thurs}
+              onchange={handlethurschange} checked={isthurschecked} class="thurscls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Friday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Friday__c" value={fri}
+              onchange={handlefrichange} checked={isfrichecked} class="fricls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Saturday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Saturday__c" value={sat}
+              onchange={handlesatchange} checked={issatchecked} class="satcls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Sunday</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Sunday__c" value={sun}
+              onchange={handlesunchange} checked={issunchecked} class="suncls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Times where work can NOT be carried out?</p>
+              <p> <lightning-helptext
+                  content="Work shouldn't be carried out at the times selected. For Example, If a job can only be done at night please select AM & PM"></lightning-helptext>
+              </p>
+            </div>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>AM</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_AM__c" value={amval}
+              onchange={handleAmchange} checked={isamchecked} class="amcls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>PM</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_PM__c" value={pmval}
+              onchange={handlePmchange} checked={ispmchecked} class="pmcls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Night</p>
+            </div>
+            <lightning-input type="checkbox" variant="label-hidden" name="FSM_Night__c" value={nightval}
+              onchange={handleNightchange} checked={isnightchecked} class="nightcls"></lightning-input>
+
+            <!--not present in this section-->
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <!-- <p class="required"> *</p> -->
+              <p>Reason for First time reinstatement?</p>
+              <p> <lightning-helptext
+                  content="Why does the job require first time rein, Consider alternative solutions and this should be only used in exceptional circumstances."></lightning-helptext>
+              </p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_ReasonForFirstTimeReinstatement__c" value={reason}
+              class="reasoncls" options={reinstatementoptions} onchange={handlereinstatementChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Trailer Team</p>
+              <p> <lightning-helptext content="Can the work be done using a trailer team"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_TrailerTeam__c" value={trailer} class="trailercls"
+              options={optionesyesno} onchange={handletrailerChange}>
+            </lightning-combobox>
+            <!--added as part of sfs-6000-->
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Comms's Method</p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_CommsMethod__c" value={commmethod} class="cmethodcls"
+              options={optionscommsmethod} onchange={handlecommmethodChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Comm's Type</p>
+              <p> <lightning-helptext
+                  content="Do we require accessor noise letters to be sent to the customer to warn of the work taking place"></lightning-helptext>
+              </p>
+            </div>
+            <!-- <lightning-combobox variant="label-hidden" name="FSM_LetterWarn__c" value={letterwarn} class="letterwarncls"
+              options={letterwarnoptions} onchange={handleletterChange}>
+            </lightning-combobox> -->
+<div class="multiselectcls">
+            <lightning-dual-listbox name="FSM_LetterWarn__c"
+            variant="label-hidden"
+            source-label="Available"
+            selected-label="Selected"
+            options={letterwarnoptions}
+            onchange={handleletterChange}
+            value={letterwarn}
+            required
+            class="letterwarncls optionoverflowcls"></lightning-dual-listbox>
+
+          </div>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+
+              <p> Sensitive Customer</p>
+              <p> <lightning-helptext
+                  content="Are there any sensitive customers in the vicinity of the works. For example a school or Restaurant"></lightning-helptext>
+              </p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_SensitiveCustomer__c" value={sensitivecustomer}
+              class="sensitivecustomercls" options={customeroptions} onchange={handlecustomerChange}>
+            </lightning-combobox>
+
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Site Comments</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour blue)"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text sitetext">Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour blue)</span>
+              </div>
+            </div>
+
+           
+              <!-- Changed maximum length from 350 to 500 as part of SFL-967 -->
+               <lightning-textarea name="FSM_SiteComments__c" required class="sitecommcls" type="text" max-length="500"
+              variant="label-hidden" value={sitecomm} onchange={handlelsitecommchange}></lightning-textarea>
+
+          </div>
+        </lightning-card>
+      </template>
+      <!--section eight-->
+      <template if:true={sectioneight}>
+        <c-fsmtmanoticedetails onpreviousbutton={handlepreviousfromchild} onnextbutton={handlenextfromfsmnotice}
+          retainprevsecdatatma={senddatatotmacmp} retainvalues={retainvaluestochild} executeonce={dontloadgetrec}
+          sectionsixenablefromparent={enablesecsixofchild} is-edit={isEdit} record-id={recordId}></c-fsmtmanoticedetails>
+      </template>
+      <!--section nine-->
+      <template if:true={sectionnine}>
+        <lightning-card>
+          <ul class="slds-m-around_medium">
+            <template for:each={errormessages} for:item="field">
+              <li key={field.Id} style="color:red;">{field}</li>
+            </template>
+          </ul>
+        </lightning-card>
+
+        <lightning-card title="Health and Safety Information">
+          <div class="slds-m-horizontal_xx-small">
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Overhead power lines within 10m</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="Are there any overhead powerlines in the vicinity of the works. Please refer to SSOW on waterpedia"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text first firstcarriage1">Are there any overhead powerlines in the vicinity of the works. Please refer to SSOW on waterpedia</span>
+              </div>
+            </div>
+
+            <lightning-combobox variant="label-hidden" name="FSM_OverheadPowerLinesWithin10m__c"
+              value={overheadpowerlines} class="overheadpowerlinescls" options={optionesyesno}
+              onchange={handleoverpowerlineChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Lamp support/removal required</p>
+              <p> <lightning-helptext content="Please speak to line manager for authorisation"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_LampSupportRemovalRequired__c" value={lampsupport}
+              class="lampsupportcls" options={optionesyesno} onchange={handlelampsupportclsChange}>
+            </lightning-combobox>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Confined space working</p>
+              <p> <lightning-helptext content="Please refer to SSOW on waterpedia"></lightning-helptext></p>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_ConfinedSpaceWorking__c" value={confinedspace}
+              class="confinedspacecls" options={optionesyesno} onchange={handleconfinedspaceChange}>
+            </lightning-combobox>
+            <!--added as part of sfs-6000-->
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+
+              <p>Library time extension (hours)</p>
+
+            </div>
+            <lightning-input name="FSM_LibraryTimeExtensions__c" value={libext} variant="label-hidden"
+              onchange={handlechangelibext} class="libextcls" type="number" max-length="2"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Planning information &amp; Comm's</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="Please add additional information to outline the following Health and safety Planning requirements Properties affected/needing communication"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text first">Please add additional information to outline the following Health and safety Planning requirements Properties affected/needing communication</span>
+              </div>
+            </div>
+           
+            <!-- Changed maximum length from 150 to 1000 as part of SFL-967 -->
+              <lightning-textarea name="FSM_PlanningInfoAndComms__c" required class="planningfocls" type="text"
+              variant="label-hidden" value={planninginfo} onchange={handleplanninginfochange} max-length="1000"></lightning-textarea>
+
+
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p class="required"> *</p>
+                          <p>Details and safety information</p>
+                          <p> <lightning-helptext content="Please add additional information to outline what health and safety issues are present onsite and any additional equipment required"></lightning-helptext></p>
+                      </div>
+                      <lightning-textarea name="FSM_DetailsSafetyInformation__c" required class="additionalinfocls" type="text" variant="label-hidden" value={additionalinfo} onchange={handleadditionalinfochange}></lightning-textarea>     -->
+
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p class="required"> *</p>
+                          <p>Scheduling comments box</p>
+                          <p> <lightning-helptext content="Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour Orange)"></lightning-helptext></p>
+                      </div>
+                      <lightning-textarea name="FSM_SchedulingCommentsBox__c" required class="schedulingcommcls" type="text" variant="label-hidden" value={schedulingcomm} onchange={handleschcommchange}></lightning-textarea>     -->
+          </div>
+
+        </lightning-card>
+
+      </template>
+      <!--section ten-->
+      <template if:true={sectionten}>
+        <lightning-card>
+          <ul class="slds-m-around_medium">
+            <template for:each={errormessages} for:item="field">
+              <li key={field.Id} style="color:red;">{field}</li>
+            </template>
+          </ul>
+        </lightning-card>
+        <lightning-card title="Environmental Impact">
+          <div class="slds-m-horizontal_xx-small">
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Contamination</p>
+              <p class="required"> *</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="Is there a risk of contamination please state below and contact Network Control immediately to mitigate any risk to the environment.Please add sketch icon on the job"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text first envtextadjust">Is there a risk of contamination please state below and contact Network Control immediately to mitigate any risk to the environment.Please add sketch icon on the job</span>
+              </div>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_Contamination__c" value={contamination}
+              class="contaminationcls" options={optionesyesno} required onchange={handlecontaminationchange}>
+            </lightning-combobox>
+            <template if:true={iscontaminationyes}>
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Contamination Comments</p>
+              </div>
+              <lightning-textarea name="FSM_ContaminationComments__c" required={iscontaminationyes}
+                class="contaminationcommcls" type="text" variant="label-hidden" value={contaminationcomm}
+                onchange={handlecontaminationcommchange} max-length="500"></lightning-textarea>
+            </template>
+
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Is there confirmed pollution</p>
+              <p class="desktop-tooltip"> <lightning-helptext
+                  content="If there is a risk of an environmental impact please contact Network Control immediately to mitigate any risk to the environment - Please carry out your impact assessment and feedback to your supervisor and assess mitigation options"></lightning-helptext>
+              </p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text">If there is a risk of an environmental impact please contact Network Control immediately to mitigate any risk to the environment - Please carry out your impact assessment and feedback to your supervisor and assess mitigation options</span>
+              </div>
+            </div>
+            <lightning-combobox variant="label-hidden" name="FSM_IsThereConfirmedPollution__c" value={pollution}
+              class="pollutioncls" options={optionesyesno} onchange={handlepollutionchange}>
+            </lightning-combobox>
+            <template if:true={ispollutionyes}>
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Confirmed Pollution Comments</p>
+              </div>
+              <lightning-textarea name="FSM_ConfirmedPollutionComments__c" required={ispollutionyes}
+                class="pollutioncommcls" type="text" variant="label-hidden" value={pollutioncomm}
+                onchange={handlepollutioncommchange} max-length="500"></lightning-textarea>
+
+              <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Is there a risk of pollution occurring</p>
+              </div>
+              <lightning-combobox variant="label-hidden" required={ispollutionyes}
+                name="FSM_IsThereARiskOfPollutionOccurring__c" value={risk} class="riskoccurringcls"
+                options={optionesyesno} onchange={handleriskofpollutionchange}>
+              </lightning-combobox> -->
+            </template>
+            <!-- if yes confirmed pollution hide is there risk of polluiton. Added as part of SFS-8108 -->
+            <template if:true={ifnoconfirmedpollution}>
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Is there a risk of pollution occurring</p>
+              </div>
+              <lightning-combobox variant="label-hidden" required={ispollutionyes}
+                name="FSM_IsThereARiskOfPollutionOccurring__c" value={risk} class="riskoccurringcls"
+                options={optionesyesno} onchange={handleriskofpollutionchange}>
+              </lightning-combobox>
+            </template>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Risk to an environmental important site?</p>
+            </div>
+            <lightning-combobox variant="label-hidden" required name="FSM_RiskToAnEnvironmentalSite__c" value={riskenv}
+              class="riskenvcls" options={optionesyesno} onchange={handlechangerisktoenv}>
+            </lightning-combobox>
+          </div>
+        </lightning-card>
+      </template>
+      <template if:true={sectioneleven}>
+        <lightning-card>
+          <ul class="slds-m-around_medium">
+            <template for:each={errormessages} for:item="field">
+              <li key={field.Id} style="color:red;">{field}</li>
+            </template>
+          </ul>
+        </lightning-card>
+        <lightning-card title="Valve Operation Details">
+          <div class="slds-m-horizontal_xx-small">
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p> Is shut off or valve operation Required</p>
+            </div>
+            <lightning-combobox variant="label-hidden" required name="FSM_IsShutOffOrValveOperationRequired__c"
+              value={isshutoff} class="isshutoffcls" options={optionesyesno} onchange={handlechangeshutoffoperation}>
+            </lightning-combobox>
+
+            <template if:true={isshutofforvalvesel}>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Estimated No. of Properties affected</p>
+                <p><lightning-helptext
+                    content="How many properties do we think will be affected if we isolate the main. To get an accurate amount ask Network control to complete a CWDP of the shut."></lightning-helptext>
+                </p>
+              </div>
+              <lightning-input name="FSM_EstimatedNoOfPropertiesAffected__c" value={estimatedproperties}
+                variant="label-hidden" onchange={handlechangenumofproperties} class="estimatedpropertiescls"
+                type="number" required max-length="10"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Alternative supplies required</p>
+                <p class="desktop-tooltip"><lightning-helptext
+                    content="Can we utilise an alternative supply method to avoid isolating supply for example RRU/Aqua stop"></lightning-helptext>
+                </p>
+                <div class="tooltip-container mobile-tooltip">
+                  <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                  <span class="tooltip-text">Can we utilise an alternative supply method to avoid isolating supply for example RRU/Aqua stop</span>
+                </div>
+              </div>
+              <lightning-combobox variant="label-hidden" required name="FSM_AlternativeSuppliesRequired__c"
+                value={altsupplies} class="altsuppliescls" options={optionesyesno} onchange={handlechangealtsupplies}>
+              </lightning-combobox>
+
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Sensitive customers on shutdown</p>
+                <p class="desktop-tooltip"><lightning-helptext
+                    content="Are there an sensitive customers in the vicinity of the main isolation"></lightning-helptext>
+                </p>
+                <div class="tooltip-container mobile-tooltip">
+                  <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                  <span class="tooltip-text textadjust">Are there an sensitive customers in the vicinity of the main isolation</span>
+                </div>
+              </div>
+              <lightning-combobox variant="label-hidden" required name="FSM_SensitiveCustomersOnShutdown__c"
+                value={sensitivecustonshuttdown} class="sensitivecustonshuttdowncls" options={optionesyesno}
+                onchange={handlechangecustomeronshutdown}> </lightning-combobox>
+
+            </template>
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Third party damage occur on this site</p>
+              <p><lightning-helptext content="Please ensure you raise a third party damage e form"></lightning-helptext>
+              </p>
+            </div>
+            <lightning-combobox variant="label-hidden" required name="FSM_ThirdPartyDamageOccurOnThisSite__c"
+              value={thirdpartydmge} class="thirdpartydmgecls" options={optionesyesno}
+              onchange={handlechangethirdparty}> </lightning-combobox>
+          </div>
+        </lightning-card>
+      </template>
+
+      <template if:true={sectiontwelve}>
+        <template if:true={isshutofforvalvesel}>
+          <lightning-card>
+            <ul class="slds-m-around_medium">
+              <template for:each={errormessages} for:item="field">
+                <li key={field.Id} style="color:red;">{field}</li>
+              </template>
+            </ul>
+          </lightning-card>
+          <lightning-card title="Valves">
+            <div class="slds-m-around_medium">
+              <table class="slds-table slds-table_bordered">
+                <!-- <thead>
+                <tr>
+                  <th>Valves ID as identified on sketch</th>
+                  <th>Proposed Op</th>
+                  <th>Valves Checked</th>
+                  <th>Grids Reference X</th>
+                  <th>Grids Reference Y</th>
+                  <th>Comments for all valves</th>
+                  <th> </th>
+              </tr>
+          </thead> -->
+                <tbody>
+                  <template for:each={data} for:item="record" for:index="index">
+                    <tr key={record.id}>
+                      <td>
+                        <lightning-input type="text" label="Valves ID as identified on sketch" required
+                          data-field="FSM_ValvesIDIdentifiedOnSketch__c"
+                          value={record.FSM_ValvesIDIdentifiedOnSketch__c} data-index={index}
+                          onchange={handleInputChange} max-length="2"></lightning-input>
+                          <lightning-helptext content="Could be a text and/or number combination i.e. V1 V2 etc"></lightning-helptext>
+                      </td>
+                      
+                      <td>
+                        <lightning-combobox label="Proposed Op" data-field="FSM_ProposedOp__c"
+                          value={record.FSM_ProposedOp__c} options={proposedoparr} data-index={index}
+                          onchange={handleInputChange} required></lightning-combobox>
+                      </td>
+
+                      <td>
+                        <lightning-combobox label="Valves Checked" data-field="FSM_ValveChecked__c"
+                          value={record.FSM_ValveChecked__c} options={valvescheckedarr} data-index={index}
+                          onchange={handleInputChange} required></lightning-combobox>
+                      </td>
+                      <td>
+                        <lightning-input label="Grids Reference X" type="number" data-field="FSM_GridRefX__c"
+                          value={record.FSM_GridRefX__c} data-index={index} onchange={handleInputChange} required max-length="6">
+                        </lightning-input>
+                      </td>
+                      <td>
+                        <lightning-input label="Grids Reference Y" type="number" data-field="FSM_GridRefY__c"
+                          value={record.FSM_GridRefY__c} data-index={index} max-length="6" onchange={handleInputChange}
+                          required>
+                        </lightning-input>
+                      </td>
+
+                      <td>
+                        <lightning-textarea label="Comments for all valves" max-length="255"
+                          data-field="FSM_CommentsForAllValves__c" value={record.FSM_CommentsForAllValves__c}
+                          data-index={index} onchange={handleInputChange} required></lightning-textarea>
+                      </td>
+                      <td>
+                        <lightning-button-icon icon-name="utility:delete" alternative-text="Delete"
+                          onclick={handleDelete} data-index={index}></lightning-button-icon>
+                      </td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+              <br><br>
+              <lightning-button label="Add Row" onclick={handleAddRow}></lightning-button>&nbsp;&nbsp;
+            </div>
+          </lightning-card>
+        </template>
+      </template>
+      <template if:true={isCompleted}>
+   <lightning-card><p class="slds-text-color_success slds-text-heading_large slds-text-align_center">Data Capture Form is submitted successfully. Please close the screen to continue</p> </lightning-card>
+  </template>
+    </lightning-record-edit-form>
+  </div>
+  <template if:true={isEnablePrev}>
+    <lightning-button label="Previous" class="button-space" variant="brand" onclick={handlePrevious}></lightning-button>
+  </template>
+  <template if:true={isEnableNext}>
+    <lightning-button label="Next" onclick={handleNext} variant="brand"></lightning-button>
+  </template>
+</template>

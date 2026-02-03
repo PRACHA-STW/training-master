@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TotalTravelTime__c</fullName>
+    <description>Created as a part of SFS-1427</description>
+    <externalId>false</externalId>
+    <formula>ROUND((FSM_EnrouteEndTime__c -  FSM_EnrouteStartTime__c) * 24 * 60,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Travel Time (in Minutes)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

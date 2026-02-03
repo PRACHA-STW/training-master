@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contractor Organisation --></label>
+    <name>FSM_ContractorOrganisation__c</name>
+    <picklistValues>
+        <masterLabel>Brays</masterLabel>
+        <translation><!-- Brays --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Solutions Plus</masterLabel>
+        <translation><!-- Customer Solutions Plus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD Contractor</masterLabel>
+        <translation><!-- HD Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kings</masterLabel>
+        <translation><!-- Kings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Plus (Developer Services)</masterLabel>
+        <translation><!-- Network Plus (Developer Services) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Plus (Metering)</masterLabel>
+        <translation><!-- Network Plus (Metering) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Plus (Water)</masterLabel>
+        <translation><!-- Network Plus (Water) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other STW Contractor</masterLabel>
+        <translation><!-- Other STW Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PN Daly</masterLabel>
+        <translation><!-- PN Daly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sapphire Utility Services</masterLabel>
+        <translation><!-- Sapphire Utility Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watertight</masterLabel>
+        <translation><!-- Watertight --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

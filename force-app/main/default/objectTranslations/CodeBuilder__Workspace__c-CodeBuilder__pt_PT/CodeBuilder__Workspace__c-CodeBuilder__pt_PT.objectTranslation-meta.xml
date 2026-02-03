@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ambiente</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ambientes</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Workspace Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do ambiente</nameFieldLabel>
+    <validationRules>
+        <errorMessage>O nome da área de trabalho não pode ser alterado</errorMessage>
+        <name>CodeBuilder__CannotChangeWorkspaceName</name>
+    </validationRules>
+</CustomObjectTranslation>

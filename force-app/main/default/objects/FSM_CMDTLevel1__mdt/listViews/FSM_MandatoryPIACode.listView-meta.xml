@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MandatoryPIACode</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>FSM_EnableActionScreen__c</columns>
+    <columns>FSM_EnableImpactScreen__c</columns>
+    <columns>FSM_EnableProblemScreen__c</columns>
+    <columns>FSM_MandatoryActionScreen__c</columns>
+    <columns>FSM_MandatoryImpactScreen__c</columns>
+    <columns>FSM_MandatoryProblemScreen__c</columns>
+    <columns>FSM_WorkCenter__c</columns>
+    <columns>FSM_NotificationCode__c</columns>
+    <columns>FSM_OnComplete__c</columns>
+    <columns>FSM_OnSuspend__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_Type__c</field>
+        <operation>equals</operation>
+        <value>Mandatory PIA Code</value>
+    </filters>
+    <label>Mandatory PIA Code</label>
+</ListView>

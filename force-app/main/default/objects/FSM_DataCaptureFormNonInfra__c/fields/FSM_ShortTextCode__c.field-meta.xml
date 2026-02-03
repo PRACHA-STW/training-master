@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ShortTextCode__c</fullName>
+    <description>SFS-4795</description>
+    <label>Short Text for Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_ShortText__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ASC1</fullName>
+                <default>false</default>
+                <label>Assist Contractor WP Operations</label>
+            </value>
+            <value>
+                <fullName>WAWK</fullName>
+                <default>false</default>
+                <label>Customer Reported Works Problem</label>
+            </value>
+            <value>
+                <fullName>DECH</fullName>
+                <default>false</default>
+                <label>Deliver Chemicals to site</label>
+            </value>
+            <value>
+                <fullName>EFEL</fullName>
+                <default>false</default>
+                <label>Equipment Failed Electrical</label>
+            </value>
+            <value>
+                <fullName>EFIN</fullName>
+                <default>false</default>
+                <label>Equipment Failed Instrument</label>
+            </value>
+            <value>
+                <fullName>EFMC</fullName>
+                <default>false</default>
+                <label>Equipment Failed Mechanical</label>
+            </value>
+            <value>
+                <fullName>EFME</fullName>
+                <default>false</default>
+                <label>Equipment Failed MS Electrical</label>
+            </value>
+            <value>
+                <fullName>EFMI</fullName>
+                <default>false</default>
+                <label>Equipment Failed MS Instrument</label>
+            </value>
+            <value>
+                <fullName>EFMM</fullName>
+                <default>false</default>
+                <label>Equipment Failed MS Mechanical</label>
+            </value>
+            <value>
+                <fullName>EFOP</fullName>
+                <default>false</default>
+                <label>Equipment Failed Operator</label>
+            </value>
+            <value>
+                <fullName>EREL</fullName>
+                <default>false</default>
+                <label>Equipment Req Attention Electrical</label>
+            </value>
+            <value>
+                <fullName>ERIN</fullName>
+                <default>false</default>
+                <label>Equipment Req Attention Instrument</label>
+            </value>
+            <value>
+                <fullName>ERMC</fullName>
+                <default>false</default>
+                <label>Equipment Req Attention Mechanical</label>
+            </value>
+            <value>
+                <fullName>ERME</fullName>
+                <default>false</default>
+                <label>Equipment Req Attention MS Electrical</label>
+            </value>
+            <value>
+                <fullName>ERMI</fullName>
+                <default>false</default>
+                <label>Equipment Req Attention MS Instrument</label>
+            </value>
+            <value>
+                <fullName>ERMM</fullName>
+                <default>false</default>
+                <label>Equipment Req Attention MS Mechanical</label>
+            </value>
+            <value>
+                <fullName>EROP</fullName>
+                <default>false</default>
+                <label>Equipment Req Attention Operator</label>
+            </value>
+            <value>
+                <fullName>CHDE</fullName>
+                <default>false</default>
+                <label>Receive Chemical Delivery</label>
+            </value>
+            <value>
+                <fullName>SAF2</fullName>
+                <default>false</default>
+                <label>Safety Related WP Maintenance</label>
+            </value>
+            <value>
+                <fullName>SAF1</fullName>
+                <default>false</default>
+                <label>Safety Related WP Operations</label>
+            </value>
+            <value>
+                <fullName>SEC1</fullName>
+                <default>false</default>
+                <label>Security WP Operations</label>
+            </value>
+            <value>
+                <fullName>SLAM</fullName>
+                <default>false</default>
+                <label>Sludge req attention Maintainer</label>
+            </value>
+            <value>
+                <fullName>SELF</fullName>
+                <default>false</default>
+                <label>Urgent task - assign to self</label>
+            </value>
+            <value>
+                <fullName>WQFL</fullName>
+                <default>false</default>
+                <label>Water Quality Issues</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EFEL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EFIN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EFMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EFME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EFMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EFMM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EFOP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EREL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>ERIN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>ERMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>ERME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>ERMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>ERMM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>SEUPEQP</controllingFieldValue>
+            <valueName>EROP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLUOEQ</controllingFieldValue>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <controllingFieldValue>WPUOPR</controllingFieldValue>
+            <valueName>SELF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STUOEQ</controllingFieldValue>
+            <valueName>SLAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOEQ</controllingFieldValue>
+            <valueName>SAF2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOPR</controllingFieldValue>
+            <valueName>ASC1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOPR</controllingFieldValue>
+            <valueName>DECH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOPR</controllingFieldValue>
+            <valueName>CHDE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOPR</controllingFieldValue>
+            <valueName>SAF1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOPR</controllingFieldValue>
+            <valueName>SEC1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOWQ</controllingFieldValue>
+            <valueName>WAWK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WPUOWQ</controllingFieldValue>
+            <valueName>WQFL</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

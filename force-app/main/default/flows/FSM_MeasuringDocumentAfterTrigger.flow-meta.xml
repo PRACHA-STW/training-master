@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>sfi-1771</description>
+        <name>if_external_id_is_blank</name>
+        <label>if external id is blank ?</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>GetCustomMetadataRecord</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FSM_ExternalId__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_triggering_record</targetReference>
+            </connector>
+            <label>Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFI-26
+Updated SFS-7219 to add Integration related profiles to not trigger the Platform event</description>
+        <name>Is_Interface_Toggle_On</name>
+        <label>Is Interface Toggle On</label>
+        <locationX>182</locationX>
+        <locationY>839</locationY>
+        <defaultConnectorLabel>Not turned on</defaultConnectorLabel>
+        <rules>
+            <name>yes_it_s_On</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetCustomMetadataRecord</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>FSM Integration</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Salesforce API Only System Integrations</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Minimum Access - API Only Integrations</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Dataloader</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Call_Measuring_Document_Subflow</targetReference>
+            </connector>
+            <label>yes it&apos;s On</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFI-2154</description>
+        <name>Is_New_Record</name>
+        <label>Is New  Record</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Updated Record</defaultConnectorLabel>
+        <rules>
+            <name>yes_New_record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>newMeasuringDocument</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>if_external_id_is_blank</targetReference>
+            </connector>
+            <label>yes New record</label>
+        </rules>
+    </decisions>
+    <description>SFI-691
+Updated as part of SFI-1559
+Updated as part of SFI-1771
+Updated as part of #SFI-2154
+Updated as part of SFS-7219</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>newMeasuringDocument</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>FSM Measuring Document - After Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Measuring Document - After Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>SFI-26</description>
+        <name>GetCustomMetadataRecord</name>
+        <label>GetCustomMetadataRecord</label>
+        <locationX>182</locationX>
+        <locationY>731</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Interface_Toggle_On</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_InterfaceAPIName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FSM_SendMeasuringPointReadingEvent__e</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>FSM_InterfaceToggle__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>sfi-1771</description>
+        <name>Update_triggering_record</name>
+        <label>Update triggering record</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>GetCustomMetadataRecord</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FSM_ExternalId__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>FSM_ExternalId__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_New_Record</targetReference>
+        </connector>
+        <object>FSM_MeasuringDocument__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Call_Measuring_Document_Subflow</name>
+        <label>Call Measuring Document Subflow</label>
+        <locationX>50</locationX>
+        <locationY>947</locationY>
+        <flowName>FSM_MeasuringDocumentSubflowCreatePlatformEventRecord</flowName>
+        <inputAssignments>
+            <name>MeasuringDocumentRecord</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

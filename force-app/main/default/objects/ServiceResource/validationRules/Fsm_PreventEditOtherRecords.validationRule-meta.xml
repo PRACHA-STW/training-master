@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fsm_PreventEditOtherRecords</fullName>
+    <active>true</active>
+    <description>Prevent updating other SR record but they can edit their own SR record. Created as part of SFL-886</description>
+    <errorConditionFormula>AND(
+   $Permission.FSM_RestrictEditOtherRecords,
+   RelatedRecordId &lt;&gt; $User.Id
+)</errorConditionFormula>
+    <errorMessage>You do not have sufficient access to perform this action.</errorMessage>
+</ValidationRule>

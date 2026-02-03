@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Error_Location</name>
+        <label>Error Location</label>
+        <locationX>440</locationX>
+        <locationY>950</locationY>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error occured while Updating Work Step in &apos;FSM Mobile SubFlow - Update Workstep On Cannot Complete&apos;</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Created as a part of SFS-1298.</description>
+        <name>FSM_AddUpdatedValueToList</name>
+        <label>Add Updated Value To List</label>
+        <locationX>528</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>FSM_WorkStepToUpdate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>FSM_WorkStepRecord</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>FSM_GoThroughEachWorkStep</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Created as a part of SFS-1298</description>
+        <name>FSM_SetMandatoryToFalse</name>
+        <label>Set Mandatory to False</label>
+        <locationX>528</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>FSM_WorkStepRecord.FSM_Mandatory__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>FSM_AddUpdatedValueToList</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Has_Open_Forms_True</name>
+        <label>Set Has Open Forms = True</label>
+        <locationX>264</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>hasOpenForms</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Mandatory_to_Suspend_Error</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>If Mandatory on Suspend on the workstep is checked, then this workstep must be completed before the WO can be updated to Cannot Complete.</description>
+        <name>Mandatory_on_Suspend_Check</name>
+        <label>Mandatory on Suspend Check</label>
+        <locationX>396</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>FSM_SetMandatoryToFalse</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Mandatory_WorkStep_not_Complete</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FSM_WorkStepRecord.FSM_MandatoryOnSuspend__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>FSM_WorkStepRecord.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Has_Open_Forms_True</targetReference>
+            </connector>
+            <label>Mandatory WorkStep not Complete?</label>
+        </rules>
+    </decisions>
+    <description>Created as part of SFS-2233.
+Updated as part of SFS-6571.</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM Mobile {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
+    <label>FSM Mobile SubFlow - Update Workstep On Cannot Complete</label>
+    <loops>
+        <description>Created as a part of SFS-1298.</description>
+        <name>FSM_GoThroughEachWorkStep</name>
+        <label>Go Through Each WorkStep</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNextValueToReference>FSM_WorkStepRecord</assignNextValueToReference>
+        <collectionReference>WorkStepCollection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Mandatory_on_Suspend_Check</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>FSM_UpdateWorkStep</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <recordUpdates>
+        <description>Created as a part of SFS-1298</description>
+        <name>FSM_UpdateWorkStep</name>
+        <label>Update WorkStep</label>
+        <locationX>176</locationX>
+        <locationY>842</locationY>
+        <faultConnector>
+            <targetReference>Error_Location</targetReference>
+        </faultConnector>
+        <inputReference>FSM_WorkStepToUpdate</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Mandatory_to_Suspend_Error</name>
+        <label>Mandatory to Suspend Error</label>
+        <locationX>264</locationX>
+        <locationY>458</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>false</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>varMandatoryFormErrorText</name>
+            <fieldText>&lt;p&gt;Please complete mandatory form(s).&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>FSM_GoThroughEachWorkStep</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ErrorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>FSM_WorkStepRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkStep</objectType>
+    </variables>
+    <variables>
+        <name>FSM_WorkStepToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkStep</objectType>
+    </variables>
+    <variables>
+        <description>The variable becomes true if there is open &apos;Mandatory Froms to Suspend&apos;.</description>
+        <name>hasOpenForms</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-2233</description>
+        <name>WorkStepCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkStep</objectType>
+    </variables>
+</Flow>

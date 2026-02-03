@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Consider the best place to park vehicles on site, Can we utilise private driveways or large footways to minimise disruption to the carriageway --></help>
+    <label><!-- Vehicle Position --></label>
+    <name>FSM_VehiclePosition__c</name>
+    <picklistValues>
+        <masterLabel>Off site</masterLabel>
+        <translation><!-- Off site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Site</masterLabel>
+        <translation><!-- On Site --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

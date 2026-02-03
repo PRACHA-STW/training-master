@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Has the leak been quantified? --></label>
+    <name>FSM_HasLeakBeenQuantified__c</name>
+    <picklistValues>
+        <masterLabel>Check meter</masterLabel>
+        <translation><!-- Check meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated</masterLabel>
+        <translation><!-- Estimated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing meter</masterLabel>
+        <translation><!-- Existing meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logged</masterLabel>
+        <translation><!-- Logged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SIRActivityType__c</fullName>
+    <description>Created as a part of SFS-4790</description>
+    <label>Sewerage Incident Report Activity Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inspection only - DLO</fullName>
+                <default>false</default>
+                <label>Sewerage Inspection only - DLO</label>
+            </value>
+            <value>
+                <fullName>Blockage clearance - DLO</fullName>
+                <default>false</default>
+                <label>Blockage clearance - DLO</label>
+            </value>
+            <value>
+                <fullName>Blockage clearance &amp; CCTV - DLO</fullName>
+                <default>false</default>
+                <label>Blockage clearance &amp; CCTV - DLO</label>
+            </value>
+            <value>
+                <fullName>CCTV inspection only - DLO</fullName>
+                <default>false</default>
+                <label>CCTV inspection only - DLO</label>
+            </value>
+            <value>
+                <fullName>Cleanup only - DLO</fullName>
+                <default>false</default>
+                <label>Cleanup only - DLO</label>
+            </value>
+            <value>
+                <fullName>CCTV - DLO</fullName>
+                <default>false</default>
+                <label>CCTV - DLO</label>
+            </value>
+            <value>
+                <fullName>Cleanup - DLO</fullName>
+                <default>false</default>
+                <label>Cleanup - DLO</label>
+            </value>
+            <value>
+                <fullName>Support Work - DLO</fullName>
+                <default>false</default>
+                <label>Support Work - DLO</label>
+            </value>
+            <value>
+                <fullName>Int Flooding - DLO</fullName>
+                <default>false</default>
+                <label>Int Flooding - DLO</label>
+            </value>
+            <value>
+                <fullName>Ext Flooding - DLO</fullName>
+                <default>false</default>
+                <label>Ext Flooding - DLO</label>
+            </value>
+            <value>
+                <fullName>Pollution Inspection - DLO</fullName>
+                <default>false</default>
+                <label>Pollution Inspection - DLO</label>
+            </value>
+            <value>
+                <fullName>AdHoc Inspection - Contractor</fullName>
+                <default>false</default>
+                <label>AdHoc Inspection - Contractor</label>
+            </value>
+            <value>
+                <fullName>Blockage clearance - CON</fullName>
+                <default>false</default>
+                <label>Blockage clearance - CON</label>
+            </value>
+            <value>
+                <fullName>Blockage clearance &amp; CCTV CON</fullName>
+                <default>false</default>
+                <label>Blockage clearance &amp; CCTV CON</label>
+            </value>
+            <value>
+                <fullName>Ext Flooding - Contractor</fullName>
+                <default>false</default>
+                <label>Ext Flooding - Contractor</label>
+            </value>
+            <value>
+                <fullName>Int Flooding Contractor</fullName>
+                <default>false</default>
+                <label>Int Flooding Contractor</label>
+            </value>
+            <value>
+                <fullName>Pollution Inspection - CON</fullName>
+                <default>false</default>
+                <label>Pollution Inspection - CON</label>
+            </value>
+            <value>
+                <fullName>Cleanup Contractor inc 13EX</fullName>
+                <default>false</default>
+                <label>Cleanup Contractor inc 13EX</label>
+            </value>
+            <value>
+                <fullName>Inspection of defect - CON</fullName>
+                <default>false</default>
+                <label>Inspection of defect - CON</label>
+            </value>
+            <value>
+                <fullName>PRIV – COUNCIL ASSET</fullName>
+                <default>false</default>
+                <label>PRIV – COUNCIL ASSET</label>
+            </value>
+            <value>
+                <fullName>PRIV – INTERNAL</fullName>
+                <default>false</default>
+                <label>PRIV – INTERNAL</label>
+            </value>
+            <value>
+                <fullName>PRIV – MANDATORY GOGW</fullName>
+                <default>false</default>
+                <label>PRIV – MANDATORY GOGW</label>
+            </value>
+            <value>
+                <fullName>Priv - Discretionary GOGW</fullName>
+                <default>false</default>
+                <label>Priv - Discretionary GOGW</label>
+            </value>
+            <value>
+                <fullName>Inspect manhole - Contractor</fullName>
+                <default>false</default>
+                <label>Inspect manhole - Contractor</label>
+            </value>
+            <value>
+                <fullName>Priv - Repat within 14 days</fullName>
+                <default>false</default>
+                <label>Priv - Repat within 14 days</label>
+            </value>
+            <value>
+                <fullName>Priv -Not Paid - Cust Declines</fullName>
+                <default>false</default>
+                <label>Priv -Not Paid - Cust Declines</label>
+            </value>
+            <value>
+                <fullName>Priv -Paid - Cleared</fullName>
+                <default>false</default>
+                <label>Priv -Paid - Cleared</label>
+            </value>
+            <value>
+                <fullName>Priv -Paid - Unable to clear</fullName>
+                <default>false</default>
+                <label>Priv -Paid - Unable to clear</label>
+            </value>
+            <value>
+                <fullName>Priv - Cleared on Investigate</fullName>
+                <default>false</default>
+                <label>Priv - Cleared on Investigate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

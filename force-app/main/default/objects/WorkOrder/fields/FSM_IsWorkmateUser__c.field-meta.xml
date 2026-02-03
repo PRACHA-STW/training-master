@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IsWorkmateUser__c</fullName>
+    <description>SFS-7754. Created because the permission set is not accessible in the flow to capture measuring points from a work order.</description>
+    <formula>$Permission.FSM_Workmate_User</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Workmate User?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

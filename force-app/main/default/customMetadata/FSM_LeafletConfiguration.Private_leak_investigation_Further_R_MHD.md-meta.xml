@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Private leak investigation–Further R&amp;MHD</label>
+    <protected>false</protected>
+    <values>
+        <field>FSM_ConfigurationType__c</field>
+        <value xsi:type="xsd:string">Template</value>
+    </values>
+    <values>
+        <field>FSM_CustomerCommsType__c</field>
+        <value xsi:type="xsd:string">Leaflets</value>
+    </values>
+    <values>
+        <field>FSM_DevServ__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_DisplayText__c</field>
+        <value xsi:type="xsd:string">Private leak investigation – Further R&amp;M work required</value>
+    </values>
+    <values>
+        <field>FSM_HD__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>FSM_Inspector__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>FSM_MailjetURL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_Metering__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_Order__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>FSM_Proforma__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_RMReinstatementRole__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_RMRole__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_Waste__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>FSM_Water__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Mailjet_Id__c</field>
+        <value xsi:type="xsd:string">5894843</value>
+    </values>
+</CustomMetadata>

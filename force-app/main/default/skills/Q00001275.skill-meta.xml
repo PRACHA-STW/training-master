@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Isolation of Plant &amp; Equipment</description>
+    <label>Isolation of Plant &amp; Equipment (Q00001275)</label>
+</Skill>

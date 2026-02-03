@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ServiceTerritory__c</fullName>
+    <label>Service Territory</label>
+    <referenceTo>ServiceTerritory</referenceTo>
+    <relationshipLabel>Polygon Standard Text Keys</relationshipLabel>
+    <relationshipName>Polygon_Standard_Text_Keys</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

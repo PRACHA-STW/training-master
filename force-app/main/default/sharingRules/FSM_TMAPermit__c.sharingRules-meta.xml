@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_TMAPermitSharingforContractorFW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFS-4136</description>
+        <label>TMA Permit Sharing for Contractor FW</label>
+        <sharedTo>
+            <group>FSM_ContractorFieldWorker</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FSM_TMAPermitSharingforContractorSchedulers</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFS-4136</description>
+        <label>TMA Permit Sharing for Contractor Schedulers</label>
+        <sharedTo>
+            <group>FSM_ContractorScheduler</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

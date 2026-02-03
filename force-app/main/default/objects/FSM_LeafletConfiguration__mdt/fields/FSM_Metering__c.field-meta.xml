@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Metering__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If ticked, this configuration applies to Metering BU.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If ticked, this configuration applies to Metering BU.</inlineHelpText>
+    <label>Metering</label>
+    <type>Checkbox</type>
+</CustomField>

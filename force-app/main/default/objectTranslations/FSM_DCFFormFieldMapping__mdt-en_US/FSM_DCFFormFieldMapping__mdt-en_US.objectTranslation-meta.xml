@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DCF Form Field Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DCF Form Field Mappings</value>
+    </caseValues>
+    <layouts>
+        <layout>DCF Form Field Mapping Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please choose correct Object Api Name from the Line item Object --></errorMessage>
+        <name>FSM_IfChildFieldThenObjAPICorrection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Formula is mandatory when Is Formula is checked. --></errorMessage>
+        <name>FSM_IfFormulaFieldThenFormulaFieldReq</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Parent object field the Field API name must format like FSM_WorkOrder__r.Status --></errorMessage>
+        <name>FSM_IfParentFieldThenFieldAPICorrectForm</name>
+    </validationRules>
+</CustomObjectTranslation>

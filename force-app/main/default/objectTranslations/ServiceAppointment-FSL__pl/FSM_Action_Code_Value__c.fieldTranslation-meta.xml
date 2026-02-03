@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action Code Value --></label>
+    <name>FSM_Action_Code_Value__c</name>
+    <picklistValues>
+        <masterLabel>2 way temporary traffic lights</masterLabel>
+        <translation><!-- 2 way temporary traffic lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 way temporary traffic lights</masterLabel>
+        <translation><!-- 3 way temporary traffic lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 way temporary traffic lights</masterLabel>
+        <translation><!-- 4 way temporary traffic lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aborted Visit</masterLabel>
+        <translation><!-- Aborted Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Recommended</masterLabel>
+        <translation><!-- Action Recommended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Required</masterLabel>
+        <translation><!-- Action Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional Sampling</masterLabel>
+        <translation><!-- Additional Sampling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB installation aborted visit</masterLabel>
+        <translation><!-- BB installation aborted visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery exchange aborted visit</masterLabel>
+        <translation><!-- Battery exchange aborted visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery replacement</masterLabel>
+        <translation><!-- Battery replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bed and surround with correct material</masterLabel>
+        <translation><!-- Bed and surround with correct material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black Alkathene</masterLabel>
+        <translation><!-- Black Alkathene --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breach of waterfittings regulation-Recon</masterLabel>
+        <translation><!-- Breach of waterfittings regulation-Recon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bus Stop re-location</masterLabel>
+        <translation><!-- Bus Stop re-location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibrate / Adjust</masterLabel>
+        <translation><!-- Calibrate / Adjust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call to rebook</masterLabel>
+        <translation><!-- Call to rebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carry out air testing with STW rep</masterLabel>
+        <translation><!-- Carry out air testing with STW rep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change cover</masterLabel>
+        <translation><!-- Change cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical Dosing</masterLabel>
+        <translation><!-- Chemical Dosing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaning</masterLabel>
+        <translation><!-- Cleaning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clear Blockage / Rag Removal</masterLabel>
+        <translation><!-- Clear Blockage / Rag Removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial meter fit (boundary box dig)</masterLabel>
+        <translation><!-- Commercial meter fit (boundary box dig) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial meter fit (install chamber)</masterLabel>
+        <translation><!-- Commercial meter fit (install chamber) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial mtr inst, surv &amp; fit (no dig)</masterLabel>
+        <translation><!-- Commercial mtr inst, surv &amp; fit (no dig) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial mtr instal survey (no fit)</masterLabel>
+        <translation><!-- Commercial mtr instal survey (no fit) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission External Meter 15mm</masterLabel>
+        <translation><!-- Commission External Meter 15mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission External Meter 22mm</masterLabel>
+        <translation><!-- Commission External Meter 22mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission External Meter 28mm</masterLabel>
+        <translation><!-- Commission External Meter 28mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission External Meter 32mm</masterLabel>
+        <translation><!-- Commission External Meter 32mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission External Meter 42mm</masterLabel>
+        <translation><!-- Commission External Meter 42mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission Internal Radio Meter 15mm</masterLabel>
+        <translation><!-- Commission Internal Radio Meter 15mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission Internal Radio Meter 22mm</masterLabel>
+        <translation><!-- Commission Internal Radio Meter 22mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission external meter &lt;39mm</masterLabel>
+        <translation><!-- Commission external meter &lt;39mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission external meter &gt;=40mm</masterLabel>
+        <translation><!-- Commission external meter &gt;=40mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission internal meter &lt;39mm</masterLabel>
+        <translation><!-- Commission internal meter &lt;39mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission internal meter &gt;=40mm</masterLabel>
+        <translation><!-- Commission internal meter &gt;=40mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construct chamber</masterLabel>
+        <translation><!-- Construct chamber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Person has a Hearing Impairment</masterLabel>
+        <translation><!-- Contact Person has a Hearing Impairment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Person has a Learning Disability</masterLabel>
+        <translation><!-- Contact Person has a Learning Disability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Person has a Visual Impairment</masterLabel>
+        <translation><!-- Contact Person has a Visual Impairment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Person has a Vocal Impairment</masterLabel>
+        <translation><!-- Contact Person has a Vocal Impairment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact requires Audio Correspondence</masterLabel>
+        <translation><!-- Contact requires Audio Correspondence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact requires Braille Correspondence</masterLabel>
+        <translation><!-- Contact requires Braille Correspondence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact requires Large Print Corresponde</masterLabel>
+        <translation><!-- Contact requires Large Print Corresponde --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor Further Work required</masterLabel>
+        <translation><!-- Contractor Further Work required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copper</masterLabel>
+        <translation><!-- Copper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create correct size landing stage</masterLabel>
+        <translation><!-- Create correct size landing stage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Request-Reconnection</masterLabel>
+        <translation><!-- Customer Request-Reconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer complaint - meter leaking</masterLabel>
+        <translation><!-- Customer complaint - meter leaking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dialysis on Site</masterLabel>
+        <translation><!-- Dialysis on Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E2E Test</masterLabel>
+        <translation><!-- E2E Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Draining</masterLabel>
+        <translation><!-- Emergency Draining --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exch lid, meter, install slave chamber</masterLabel>
+        <translation><!-- Exch lid, meter, install slave chamber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange chamber lid</masterLabel>
+        <translation><!-- Exchange chamber lid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange chamber lid and meter</masterLabel>
+        <translation><!-- Exchange chamber lid and meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange chamber lid with dig</masterLabel>
+        <translation><!-- Exchange chamber lid with dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange exisiting meter for radio meter</masterLabel>
+        <translation><!-- Exchange exisiting meter for radio meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange large meter no dig</masterLabel>
+        <translation><!-- Exchange large meter no dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange meter &amp; upgrade TP with dig</masterLabel>
+        <translation><!-- Exchange meter &amp; upgrade TP with dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange meter in chamber with dig</masterLabel>
+        <translation><!-- Exchange meter in chamber with dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange meter in existing BB</masterLabel>
+        <translation><!-- Exchange meter in existing BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange meter with excavation</masterLabel>
+        <translation><!-- Exchange meter with excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit NRV</masterLabel>
+        <translation><!-- Fit NRV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit Radio to Existing Meter</masterLabel>
+        <translation><!-- Fit Radio to Existing Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit a meter</masterLabel>
+        <translation><!-- Fit a meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit a valve</masterLabel>
+        <translation><!-- Fit a valve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit insulation</masterLabel>
+        <translation><!-- Fit insulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit mechanical cap end</masterLabel>
+        <translation><!-- Fit mechanical cap end --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit not possible (assessed volume case)</masterLabel>
+        <translation><!-- Fit not possible (assessed volume case) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Five</masterLabel>
+        <translation><!-- Five --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow Not Restored &amp; Escalation visit Req</masterLabel>
+        <translation><!-- Flow Not Restored &amp; Escalation visit Req --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow Not Restored in pipe during visit</masterLabel>
+        <translation><!-- Flow Not Restored in pipe during visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow Restored in the pipe during visit</masterLabel>
+        <translation><!-- Flow Restored in the pipe during visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Four</masterLabel>
+        <translation><!-- Four --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fropt customer service visit</masterLabel>
+        <translation><!-- Fropt customer service visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full exchange of small meter</masterLabel>
+        <translation><!-- Full exchange of small meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Action(s) Required</masterLabel>
+        <translation><!-- Further Action(s) Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Get an approved standpipe</masterLabel>
+        <translation><!-- Get an approved standpipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haemodialysis on Site</masterLabel>
+        <translation><!-- Haemodialysis on Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illegal use-water/sewerageservice-Recon</masterLabel>
+        <translation><!-- Illegal use-water/sewerageservice-Recon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immediate attention req  - within 1 week</masterLabel>
+        <translation><!-- Immediate attention req  - within 1 week --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Requested</masterLabel>
+        <translation><!-- Info Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspect</masterLabel>
+        <translation><!-- Inspect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inst. demarc. chamber betw&apos;n FCD and POC</masterLabel>
+        <translation><!-- Inst. demarc. chamber betw&apos;n FCD and POC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install BB meter in new BB</masterLabel>
+        <translation><!-- Install BB meter in new BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install Meter in BB 15mm</masterLabel>
+        <translation><!-- Install Meter in BB 15mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install Meter in BB 22mm</masterLabel>
+        <translation><!-- Install Meter in BB 22mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install chamber in correct position</masterLabel>
+        <translation><!-- Install chamber in correct position --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install correct method of connection</masterLabel>
+        <translation><!-- Install correct method of connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install external meter &gt;=40mm</masterLabel>
+        <translation><!-- Install external meter &gt;=40mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install flow control device</masterLabel>
+        <translation><!-- Install flow control device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install internal meter &lt;39mm</masterLabel>
+        <translation><!-- Install internal meter &lt;39mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install internal meter &gt;=40mm</masterLabel>
+        <translation><!-- Install internal meter &gt;=40mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install meter in existing BB &lt;39mm</masterLabel>
+        <translation><!-- Install meter in existing BB &lt;39mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install meter in existing chamber</masterLabel>
+        <translation><!-- Install meter in existing chamber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install penstock</masterLabel>
+        <translation><!-- Install penstock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install pulse unit</masterLabel>
+        <translation><!-- Install pulse unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install radio read Meter in BB 15mm</masterLabel>
+        <translation><!-- Install radio read Meter in BB 15mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install radio read Meter in BB 22mm</masterLabel>
+        <translation><!-- Install radio read Meter in BB 22mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install ring or remove ring</masterLabel>
+        <translation><!-- Install ring or remove ring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install rockers</masterLabel>
+        <translation><!-- Install rockers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install slave chamber and exch meter</masterLabel>
+        <translation><!-- Install slave chamber and exch meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install step iron or Ladder</masterLabel>
+        <translation><!-- Install step iron or Ladder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install steps iron</masterLabel>
+        <translation><!-- Install steps iron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install to ladder</masterLabel>
+        <translation><!-- Install to ladder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal meter survey and meter fit</masterLabel>
+        <translation><!-- Internal meter survey and meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigate and remove top water</masterLabel>
+        <translation><!-- Investigate and remove top water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue was not with a pipe</masterLabel>
+        <translation><!-- Issue was not with a pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job aborted by contractor after survey</masterLabel>
+        <translation><!-- Job aborted by contractor after survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large Meter Fit Radio</masterLabel>
+        <translation><!-- Large Meter Fit Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large Meter Replace Radio</masterLabel>
+        <translation><!-- Large Meter Replace Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large Mtr Maint Survey only-resite abort</masterLabel>
+        <translation><!-- Large Mtr Maint Survey only-resite abort --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large Proactive Meter Exchange</masterLabel>
+        <translation><!-- Large Proactive Meter Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large meter - track sheet &gt;=40mm</masterLabel>
+        <translation><!-- Large meter - track sheet &gt;=40mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large meter - void property</masterLabel>
+        <translation><!-- Large meter - void property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large meter maintenance aborted job</masterLabel>
+        <translation><!-- Large meter maintenance aborted job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large meter maintenance track sheet</masterLabel>
+        <translation><!-- Large meter maintenance track sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large meter problem within warranty</masterLabel>
+        <translation><!-- Large meter problem within warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large meter repair</masterLabel>
+        <translation><!-- Large meter repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lay correct bed and surround</masterLabel>
+        <translation><!-- Lay correct bed and surround --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lay correct ducting for depth of pipe</masterLabel>
+        <translation><!-- Lay correct ducting for depth of pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lay correct sized service pipe</masterLabel>
+        <translation><!-- Lay correct sized service pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lay correct type service pipe</masterLabel>
+        <translation><!-- Lay correct type service pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lay service pipe to boundary</masterLabel>
+        <translation><!-- Lay service pipe to boundary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lay service pipe to correct POC</masterLabel>
+        <translation><!-- Lay service pipe to correct POC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lay to agreed depth</masterLabel>
+        <translation><!-- Lay to agreed depth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead</masterLabel>
+        <translation><!-- Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lift &amp; unblock pumps</masterLabel>
+        <translation><!-- Lift &amp; unblock pumps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lubricate</masterLabel>
+        <translation><!-- Lubricate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDPE</masterLabel>
+        <translation><!-- MDPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MM stop tap adaptor meter fit</masterLabel>
+        <translation><!-- MM stop tap adaptor meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Made Safe</masterLabel>
+        <translation><!-- Made Safe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Make equipment available</masterLabel>
+        <translation><!-- Make equipment available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Traffic Control via Traffic Light</masterLabel>
+        <translation><!-- Manual Traffic Control via Traffic Light --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manually Dose</masterLabel>
+        <translation><!-- Manually Dose --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Master stop tap repair</masterLabel>
+        <translation><!-- Master stop tap repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Measured Supply and Meter Verification</masterLabel>
+        <translation><!-- Measured Supply and Meter Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Delivery</masterLabel>
+        <translation><!-- Meter Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter deliveries to new supplies sites</masterLabel>
+        <translation><!-- Meter deliveries to new supplies sites --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter working - installation repaired</masterLabel>
+        <translation><!-- Meter working - installation repaired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Move service pipe</masterLabel>
+        <translation><!-- Move service pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Boundary box installation abort</masterLabel>
+        <translation><!-- NHH Boundary box installation abort --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Excavate, re-build chamber, exch mtr</masterLabel>
+        <translation><!-- NHH Excavate, re-build chamber, exch mtr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exch large meter in chamber with exc</masterLabel>
+        <translation><!-- NHH Exch large meter in chamber with exc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exch large mtr, upgrade TP with dig</masterLabel>
+        <translation><!-- NHH Exch large mtr, upgrade TP with dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exch lid and mtr,install slave chmbr</masterLabel>
+        <translation><!-- NHH Exch lid and mtr,install slave chmbr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exchange chamber lid and meter</masterLabel>
+        <translation><!-- NHH Exchange chamber lid and meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exchange chamber lid with dig</masterLabel>
+        <translation><!-- NHH Exchange chamber lid with dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exchange meter for radio meter</masterLabel>
+        <translation><!-- NHH Exchange meter for radio meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exchange meter in existing bbox</masterLabel>
+        <translation><!-- NHH Exchange meter in existing bbox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exchange meter with excavation</masterLabel>
+        <translation><!-- NHH Exchange meter with excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Exchange meter without excavation</masterLabel>
+        <translation><!-- NHH Exchange meter without excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Fit Radio to Existing Meter</masterLabel>
+        <translation><!-- NHH Fit Radio to Existing Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Full exchange of small meter</masterLabel>
+        <translation><!-- NHH Full exchange of small meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Install meter in new boundary box</masterLabel>
+        <translation><!-- NHH Install meter in new boundary box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Install slave chamber and exchange</masterLabel>
+        <translation><!-- NHH Install slave chamber and exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Large MM - survey (resite aborted)</masterLabel>
+        <translation><!-- NHH Large MM - survey (resite aborted) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Large Meter Fit Radio</masterLabel>
+        <translation><!-- NHH Large Meter Fit Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Large Meter Replace Radio</masterLabel>
+        <translation><!-- NHH Large Meter Replace Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Large meter - void property</masterLabel>
+        <translation><!-- NHH Large meter - void property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Large meter maintenance aborted job</masterLabel>
+        <translation><!-- NHH Large meter maintenance aborted job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Large meter repair</masterLabel>
+        <translation><!-- NHH Large meter repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Large meter within warranty</masterLabel>
+        <translation><!-- NHH Large meter within warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH MM stop tap adaptor meter fit</masterLabel>
+        <translation><!-- NHH MM stop tap adaptor meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Master stop tap repair</masterLabel>
+        <translation><!-- NHH Master stop tap repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Mtr ok - installation repair only</masterLabel>
+        <translation><!-- NHH Mtr ok - installation repair only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH No Fault Found</masterLabel>
+        <translation><!-- NHH No Fault Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH No contact with customer</masterLabel>
+        <translation><!-- NHH No contact with customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Non-standard fit, quote provided</masterLabel>
+        <translation><!-- NHH Non-standard fit, quote provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Property void - no access</masterLabel>
+        <translation><!-- NHH Property void - no access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Re-site ext meter to new ext loc</masterLabel>
+        <translation><!-- NHH Re-site ext meter to new ext loc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Re-site ext mtr to new ext location</masterLabel>
+        <translation><!-- NHH Re-site ext mtr to new ext location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Re-site ext to int location from bb</masterLabel>
+        <translation><!-- NHH Re-site ext to int location from bb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Re-site int meter to new ext bbox</masterLabel>
+        <translation><!-- NHH Re-site int meter to new ext bbox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Re-site int meter to new int locn</masterLabel>
+        <translation><!-- NHH Re-site int meter to new int locn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Re-site int mtr to ext screw in mtr</masterLabel>
+        <translation><!-- NHH Re-site int mtr to ext screw in mtr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Re-site int mtr to new ext bbox</masterLabel>
+        <translation><!-- NHH Re-site int mtr to new ext bbox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Reinstatement Defects</masterLabel>
+        <translation><!-- NHH Reinstatement Defects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Reinstatement of  meter installation</masterLabel>
+        <translation><!-- NHH Reinstatement of  meter installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Remove external meter</masterLabel>
+        <translation><!-- NHH Remove external meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Remove internal meter</masterLabel>
+        <translation><!-- NHH Remove internal meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Remove large meter for accuracy test</masterLabel>
+        <translation><!-- NHH Remove large meter for accuracy test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Remove meter for accuracy test</masterLabel>
+        <translation><!-- NHH Remove meter for accuracy test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Replace Existing Radio Unit</masterLabel>
+        <translation><!-- NHH Replace Existing Radio Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Small MM - survey (resite aborted)</masterLabel>
+        <translation><!-- NHH Small MM - survey (resite aborted) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Small meter maintenance aborted job</masterLabel>
+        <translation><!-- NHH Small meter maintenance aborted job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Small meter within warranty</masterLabel>
+        <translation><!-- NHH Small meter within warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Sub-alt Survery Only</masterLabel>
+        <translation><!-- NHH Sub-alt Survery Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Survey only</masterLabel>
+        <translation><!-- NHH Survey only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Trace Required</masterLabel>
+        <translation><!-- NHH Trace Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH boundary box install screw-in meter</masterLabel>
+        <translation><!-- NHH boundary box install screw-in meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH comm meter fit (boundary box dig)</masterLabel>
+        <translation><!-- NHH comm meter fit (boundary box dig) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH comm meter fit (install chamber)</masterLabel>
+        <translation><!-- NHH comm meter fit (install chamber) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH comm meter survey (no meter fitted)</masterLabel>
+        <translation><!-- NHH comm meter survey (no meter fitted) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH comm meter survey and fit (internal)</masterLabel>
+        <translation><!-- NHH comm meter survey and fit (internal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH exchange chamber lid</masterLabel>
+        <translation><!-- NHH exchange chamber lid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH install pulse unit</masterLabel>
+        <translation><!-- NHH install pulse unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH master stop tap repair (incl reinst)</masterLabel>
+        <translation><!-- NHH master stop tap repair (incl reinst) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH reinstate meter boundary box</masterLabel>
+        <translation><!-- NHH reinstate meter boundary box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH stop tap adaptor meter fit</masterLabel>
+        <translation><!-- NHH stop tap adaptor meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH sub alt meter installation</masterLabel>
+        <translation><!-- NHH sub alt meter installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH survey fit additional meter</masterLabel>
+        <translation><!-- NHH survey fit additional meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New BB and meter fit (aborted job)</masterLabel>
+        <translation><!-- New BB and meter fit (aborted job) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New BB dig and meter fit (metalled)</masterLabel>
+        <translation><!-- New BB dig and meter fit (metalled) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New supplies aborted job</masterLabel>
+        <translation><!-- New supplies aborted job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Action</masterLabel>
+        <translation><!-- No Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Fault Found</masterLabel>
+        <translation><!-- No Fault Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Further Work</masterLabel>
+        <translation><!-- No Further Work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Specific Needs on Site</masterLabel>
+        <translation><!-- No Specific Needs on Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No connection until main is live</masterLabel>
+        <translation><!-- No connection until main is live --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No contact - no work completed</masterLabel>
+        <translation><!-- No contact - no work completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No contact with customer - no work compl</masterLabel>
+        <translation><!-- No contact with customer - no work compl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No inspection until main is laid</masterLabel>
+        <translation><!-- No inspection until main is laid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No inspection until main pieced through</masterLabel>
+        <translation><!-- No inspection until main pieced through --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non payment-Reconnection</masterLabel>
+        <translation><!-- Non payment-Reconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number of metered supply  disconnected</masterLabel>
+        <translation><!-- Number of metered supply  disconnected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number of unmetered supply -disconnted</masterLabel>
+        <translation><!-- Number of unmetered supply -disconnted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One</masterLabel>
+        <translation><!-- One --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overhaul</masterLabel>
+        <translation><!-- Overhaul --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overpumping</masterLabel>
+        <translation><!-- Overpumping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM Completed</masterLabel>
+        <translation><!-- PM Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM Incomplete</masterLabel>
+        <translation><!-- PM Incomplete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedestrian crossing re-location</masterLabel>
+        <translation><!-- Pedestrian crossing re-location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pensioner Permanently Living on Site</masterLabel>
+        <translation><!-- Pensioner Permanently Living on Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Bypass</masterLabel>
+        <translation><!-- Physical Bypass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe was free flowing on arrival</masterLabel>
+        <translation><!-- Pipe was free flowing on arrival --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant in Hand</masterLabel>
+        <translation><!-- Plant in Hand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant on Bypass</masterLabel>
+        <translation><!-- Plant on Bypass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Point lifting eyes</masterLabel>
+        <translation><!-- Point lifting eyes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-night cones</masterLabel>
+        <translation><!-- Pre-night cones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-warn notific. Up to 20 properties</masterLabel>
+        <translation><!-- Pre-warn notific. Up to 20 properties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Install. Aborted Job</masterLabel>
+        <translation><!-- Proactive Install. Aborted Job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Install. BB Dig Screw in Meter</masterLabel>
+        <translation><!-- Proactive Install. BB Dig Screw in Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Install. Reinstate BB</masterLabel>
+        <translation><!-- Proactive Install. Reinstate BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Install. Reinstatement Defect</masterLabel>
+        <translation><!-- Proactive Install. Reinstatement Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Install. Removal</masterLabel>
+        <translation><!-- Proactive Install. Removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Install. Screw in Meter</masterLabel>
+        <translation><!-- Proactive Install. Screw in Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Install. repair under warranty</masterLabel>
+        <translation><!-- Proactive Install. repair under warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive meter exchange</masterLabel>
+        <translation><!-- Proactive meter exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive meter exchange - aborted visit</masterLabel>
+        <translation><!-- Proactive meter exchange - aborted visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive radio unit exchange</masterLabel>
+        <translation><!-- Proactive radio unit exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem found meter exchanged</masterLabel>
+        <translation><!-- Problem found meter exchanged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property void - no access</masterLabel>
+        <translation><!-- Property void - no access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provide evidence of pipe depth</masterLabel>
+        <translation><!-- Provide evidence of pipe depth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Required</masterLabel>
+        <translation><!-- Quote Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rag Removal</masterLabel>
+        <translation><!-- Rag Removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-build chamber &amp; exch meter with dig</masterLabel>
+        <translation><!-- Re-build chamber &amp; exch meter with dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-site external to external</masterLabel>
+        <translation><!-- Re-site external to external --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-site external to internal</masterLabel>
+        <translation><!-- Re-site external to internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-site internal meter to ext screw in</masterLabel>
+        <translation><!-- Re-site internal meter to ext screw in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-site internal to internal</masterLabel>
+        <translation><!-- Re-site internal to internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-site internal to new external BB</masterLabel>
+        <translation><!-- Re-site internal to new external BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rearrage appointment</masterLabel>
+        <translation><!-- Rearrage appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebook after Bechning completed</masterLabel>
+        <translation><!-- Rebook after Bechning completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebook after laying service pipe</masterLabel>
+        <translation><!-- Rebook after laying service pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebook after scaffolding removed</masterLabel>
+        <translation><!-- Rebook after scaffolding removed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebook after work complete</masterLabel>
+        <translation><!-- Rebook after work complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reconnect to correct sewer</masterLabel>
+        <translation><!-- Reconnect to correct sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reconstruct chamber min 5m from POC</masterLabel>
+        <translation><!-- Reconstruct chamber min 5m from POC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redo pipe with correct/Approved material</masterLabel>
+        <translation><!-- Redo pipe with correct/Approved material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstate meter BB</masterLabel>
+        <translation><!-- Reinstate meter BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstatement Defects</masterLabel>
+        <translation><!-- Reinstatement Defects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstatement of  meter installation</masterLabel>
+        <translation><!-- Reinstatement of  meter installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove and install correct FCD</masterLabel>
+        <translation><!-- Remove and install correct FCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove backdrop,install at correct depth</masterLabel>
+        <translation><!-- Remove backdrop,install at correct depth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove customers meter for accuracy test</masterLabel>
+        <translation><!-- Remove customers meter for accuracy test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove external meter</masterLabel>
+        <translation><!-- Remove external meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove internal meter</masterLabel>
+        <translation><!-- Remove internal meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair</masterLabel>
+        <translation><!-- Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair Reinstatement</masterLabel>
+        <translation><!-- Repair Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair master stop tap</masterLabel>
+        <translation><!-- Repair master stop tap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace</masterLabel>
+        <translation><!-- Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace Existing Radio Unit</masterLabel>
+        <translation><!-- Replace Existing Radio Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace brick work with correct bricks</masterLabel>
+        <translation><!-- Replace brick work with correct bricks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace channels with clay type</masterLabel>
+        <translation><!-- Replace channels with clay type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace cover with correct type</masterLabel>
+        <translation><!-- Replace cover with correct type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace inspection chamber</masterLabel>
+        <translation><!-- Replace inspection chamber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace sewer with correct gradient</masterLabel>
+        <translation><!-- Replace sewer with correct gradient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace to correct depth/concrete sur&apos;nd</masterLabel>
+        <translation><!-- Replace to correct depth/concrete sur&apos;nd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replace with correct cover</masterLabel>
+        <translation><!-- Replace with correct cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requires calibration</masterLabel>
+        <translation><!-- Requires calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reset</masterLabel>
+        <translation><!-- Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revisit in 03 months</masterLabel>
+        <translation><!-- Revisit in 03 months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revisit in 06 months</masterLabel>
+        <translation><!-- Revisit in 06 months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revisit in 12 months</masterLabel>
+        <translation><!-- Revisit in 12 months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revisit in 24  months</masterLabel>
+        <translation><!-- Revisit in 24  months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Closure &amp; Diversion unlimited</masterLabel>
+        <translation><!-- Road Closure &amp; Diversion unlimited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Closure &amp; Diversion upto 40 mph</masterLabel>
+        <translation><!-- Road Closure &amp; Diversion upto 40 mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Closure and Diversion unlimited</masterLabel>
+        <translation><!-- Road Closure and Diversion unlimited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Closure and Diversion upto 40 mph</masterLabel>
+        <translation><!-- Road Closure and Diversion upto 40 mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safe to Operate</masterLabel>
+        <translation><!-- Safe to Operate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safe to Operate - Observation</masterLabel>
+        <translation><!-- Safe to Operate - Observation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safe to Operate for 30 Days</masterLabel>
+        <translation><!-- Safe to Operate for 30 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safe to Operate for 60 Days</masterLabel>
+        <translation><!-- Safe to Operate for 60 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrapped</masterLabel>
+        <translation><!-- Scrapped --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seal benching/chamber</masterLabel>
+        <translation><!-- Seal benching/chamber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send in Private Entry Land letter</masterLabel>
+        <translation><!-- Send in Private Entry Land letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Lane Closure over 40 mph</masterLabel>
+        <translation><!-- Single Lane Closure over 40 mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Lane Closure up to 40 mph</masterLabel>
+        <translation><!-- Single Lane Closure up to 40 mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Lane Closures over 40 mph</masterLabel>
+        <translation><!-- Single Lane Closures over 40 mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Lane Closures up to 40 mph</masterLabel>
+        <translation><!-- Single Lane Closures up to 40 mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Visit Complete</masterLabel>
+        <translation><!-- Site Visit Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Visit Complete - Revisit Required</masterLabel>
+        <translation><!-- Site Visit Complete - Revisit Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Works Complete</masterLabel>
+        <translation><!-- Site Works Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slave chamber, exch lid/frame &amp; meter</masterLabel>
+        <translation><!-- Slave chamber, exch lid/frame &amp; meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small MM Additional Meter</masterLabel>
+        <translation><!-- Small MM Additional Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small Mtr Maint Survey only-resite abort</masterLabel>
+        <translation><!-- Small Mtr Maint Survey only-resite abort --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small meter maintenance aborted job</masterLabel>
+        <translation><!-- Small meter maintenance aborted job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small meter maintenance track sheet</masterLabel>
+        <translation><!-- Small meter maintenance track sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small meter problem within warranty</masterLabel>
+        <translation><!-- Small meter problem within warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spares Fitted</masterLabel>
+        <translation><!-- Spares Fitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spares required</masterLabel>
+        <translation><!-- Spares required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standby in operation</masterLabel>
+        <translation><!-- Standby in operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop tap adaptor meter fit</masterLabel>
+        <translation><!-- Stop tap adaptor meter fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Alt Survey Only</masterLabel>
+        <translation><!-- Sub Alt Survey Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub-alt meter installation</masterLabel>
+        <translation><!-- Sub-alt meter installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Survey existing BB and screw-in meter</masterLabel>
+        <translation><!-- Survey existing BB and screw-in meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Survey fit additional meter</masterLabel>
+        <translation><!-- Survey fit additional meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taken Out of Service</masterLabel>
+        <translation><!-- Taken Out of Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tankering</masterLabel>
+        <translation><!-- Tankering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Three</masterLabel>
+        <translation><!-- Three --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turn slab</masterLabel>
+        <translation><!-- Turn slab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two</masterLabel>
+        <translation><!-- Two --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to connect until service secure</masterLabel>
+        <translation><!-- Unable to connect until service secure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unblock NRV</masterLabel>
+        <translation><!-- Unblock NRV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unblocked</masterLabel>
+        <translation><!-- Unblocked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmeasured Supply Verification</masterLabel>
+        <translation><!-- Unmeasured Supply Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update Records</masterLabel>
+        <translation><!-- Update Records --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warrant of Entry Process</masterLabel>
+        <translation><!-- Warrant of Entry Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn at time of inspection</masterLabel>
+        <translation><!-- Withdrawn at time of inspection --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

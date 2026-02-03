@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>JiraKeyToBackupJiraKey</name>
+        <label>JiraKeyToBackupJiraKey</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Backup_Jira_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Jira_Key__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Run only when record created</description>
+    <environments>Default</environments>
+    <interviewLabel>Copado Jira Key Update to Backup Jira Key {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Copado Jira Key Update to Backup Jira Key</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>JiraKeyToBackupJiraKey</targetReference>
+        </connector>
+        <object>copado__User_Story__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

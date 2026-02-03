@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>FSM_SystemAdmin</name>
+    </customPermissions>
+    <description>Temporary permission set created for Lisa Holt and Alex Judge to bypass the validation rules in the system.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>TEMP_System Admin Custom Permission</label>
+</PermissionSet>

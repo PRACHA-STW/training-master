@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MeterGridY__c</fullName>
+    <description>Created as part of SFS-1300
+Updated as a part of SFS-4087,4088,4089</description>
+    <externalId>false</externalId>
+    <label>Meter Grid Reference Y</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Created as a part of SF-259,SFS-2233</description>
+        <name>Adding_it_to_Collection_Variable</name>
+        <label>Adding it to Collection Variable</label>
+        <locationX>138</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>ShiftRecordCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Looping_over_all_shift_records</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Looping_over_all_shift_records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Created as a part of SFS-259, SFS-2233</description>
+        <name>Assigning_Business_Unit_field</name>
+        <label>Assigning Business Unit field</label>
+        <locationX>138</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Looping_over_all_shift_records.FSM_BusinessUnit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BusinessUnit</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Adding_it_to_Collection_Variable</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Error_Location</name>
+        <label>Error Location</label>
+        <locationX>314</locationX>
+        <locationY>866</locationY>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error while Bulk Updating Shift records in &apos;FSM Shift - Subflow - Bulk Update Shift&apos;</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Created as a part of SFS-259,SFS-2233</description>
+        <name>Are_Shift_records_there</name>
+        <label>Are Shift records there ?</label>
+        <locationX>314</locationX>
+        <locationY>242</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Record_exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Shift_records</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Looping_over_all_shift_records</targetReference>
+            </connector>
+            <label>Record exists</label>
+        </rules>
+    </decisions>
+    <description>Created as a part of SFS-2233</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM Shift - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Shift - Subflow - Bulk Update Shift</label>
+    <loops>
+        <description>Created as a part of SFS-259,SFS-2233</description>
+        <name>Looping_over_all_shift_records</name>
+        <label>Looping over all shift records</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <collectionReference>Get_Shift_records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assigning_Business_Unit_field</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Bulk_update_on_shift_record_collection</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Created as a part of SFS-259 , SFS-2233</description>
+        <name>Get_Shift_records</name>
+        <label>Get Shift records</label>
+        <locationX>314</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Are_Shift_records_there</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ServiceResourceId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ServiceResourceID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_StartDate__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Shift</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Created as a part of SFS-259, SFS-2233</description>
+        <name>Bulk_update_on_shift_record_collection</name>
+        <label>Bulk update on shift record collection</label>
+        <locationX>50</locationX>
+        <locationY>758</locationY>
+        <faultConnector>
+            <targetReference>Error_Location</targetReference>
+        </faultConnector>
+        <inputReference>ShiftRecordCollection</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Shift_records</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>BusinessUnit</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ErrorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>To Store Service Resource ID</description>
+        <name>ServiceResourceID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ShiftRecordCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Shift</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SiteStopDateTime__c</fullName>
+    <description>Created as part of SFS-4068.
+This field will remain in the backend and value will be captured when user fills the mandatory fields on TMA Stop screen.</description>
+    <label>Site Stop Date time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

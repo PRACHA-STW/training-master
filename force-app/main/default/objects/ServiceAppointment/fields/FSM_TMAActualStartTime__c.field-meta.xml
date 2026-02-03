@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TMAActualStartTime__c</fullName>
+    <description>Created as a part of SFS-4792 .This field is used to capture the TMA Actual Start value from TMA Object .</description>
+    <formula>FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_TMAActualStart__c</formula>
+    <label>TMA Actual Start</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

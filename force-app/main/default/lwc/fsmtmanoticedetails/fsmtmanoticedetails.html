@@ -1,0 +1,444 @@
+<template>
+<lightning-record-edit-form object-api-name={objectApiName}>
+    <template if:true={sectionone}>
+              <lightning-card>
+                  <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                      <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                  </ul>
+                </lightning-card>
+
+          <lightning-card title="TMA Notice Details">
+            <div class="slds-m-horizontal_xx-small">
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Activity Type</p>
+              </div>
+              <lightning-combobox name="FSM_INFRAFWRActivityType__c" class="activitycls" value={activity} options={activityoptions}
+              onchange={handleChangeactivity} variant="label-hidden" required></lightning-combobox>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Road Type</p>
+                  <p> <lightning-helptext content="Ask yourself do HGV's/Buses drive down the road. Please remember this will dictate the minimum passing widths. Page reference 52/53 in the Red book."></lightning-helptext></p>
+              </div>
+              <lightning-combobox name="FSM_RoadType__c" class="roadtypecls" value={roadtype} options={roadtypeoptions}
+              onchange={handleChangeroadtype} variant="label-hidden" required></lightning-combobox>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Method of work</p>
+                  <p><lightning-helptext content="Please select the correct method required to complete the work, Please refer to NRSWA red book"></lightning-helptext></p>
+              </div>
+              <lightning-combobox name="FSM_MethodOfWork__c" class="methodofworkcls" value={methodofwork} options={methodofworkoptions}
+              onchange={handleChangemethodofwork} variant="label-hidden" required></lightning-combobox>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Speed</p>
+                  <p><lightning-helptext content="Please select the correct road speed"></lightning-helptext></p>
+              </div>
+              <lightning-combobox name="FSM_Speed__c" class="speedcls" value={speed} options={speedoptions}
+              onchange={handleChangspeed} variant="label-hidden" required></lightning-combobox>
+                
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Footway Width (m)</p>
+              <p class="desktop-tooltip"><lightning-helptext content="Using your Measuring wheel please accurately input the footway width. We need this to be accurate as we send this information to the council to gain a permit approval"></lightning-helptext></p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text">Using your Measuring wheel please accurately input the footway width. We need this to be accurate as we send this information to the council to gain a permit approval</span>
+              </div>  
+            </div>
+              <lightning-input name="FSM_FootwayWidth__c" class="footwaywidthcls" type="number" step="0.01" required variant="label-hidden" value={footwaywidth} onchange={handlefootwaywidthchange} max-length="5"></lightning-input>     
+              <!-- added as part of sfs-7097 -->
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Carriageway Width (m)</p>
+                <p class="desktop-tooltip"><lightning-helptext content="Using your Measuring wheel please accurately input the Carriageway width.We need this to be accurate as we send this information to the council to gain a permit approval"></lightning-helptext></p>
+                <div class="tooltip-container mobile-tooltip">
+                  <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                  <span class="tooltip-text first">Using your Measuring wheel please accurately input the Carriageway width.We need this to be accurate as we send this information to the council to gain a permit approval</span>
+                </div>  
+              </div>
+                <lightning-input name="FSM_CarriagewayWidth__c" class="carriagewidthcls" type="number" step="0.01" max-length="5" required variant="label-hidden" value={carriagewidth} onchange={handlecarriagewidthchange}></lightning-input>     
+
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p class="required"> *</p>
+                  <p>	Verge (M)</p>
+                  <p><lightning-helptext content="Using your Measuring wheel please accurately input the Carriageway width. We need this to be accurate as we send this information to the council to gain a permit approval"></lightning-helptext></p>
+                  </div>
+                  <lightning-input name="FSM_VergeM__c" step="0.01" class="vergecls" type="number" required variant="label-hidden" value={verge} onchange={handlevergechange} max-length="5"></lightning-input>     
+             
+            
+            </div>
+              </lightning-card>
+      
+      </template>
+
+          <!-- <template if:true={sectiontwo}>
+                <lightning-card>
+                    <ul class="slds-m-around_medium">
+                      <template for:each={errormessages} for:item="field">
+                        <li key={field.Id} style="color:red;">{field}</li>
+                      </template>
+                    </ul>
+                  </lightning-card>
+
+                  <lightning-card>
+
+                    <div class="slds-m-horizontal_xx-small">
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                      <p class="required"> *</p>
+                      <p>Carriageway Width (m)</p>
+                      <p class="desktop-tooltip"><lightning-helptext content="Using your Measuring wheel please accurately input the Carriageway width.We need this to be accurate as we send this information to the council to gain a permit approval"></lightning-helptext></p>
+                      <div class="tooltip-container mobile-tooltip">
+                        <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                        <span class="tooltip-text first">Using your Measuring wheel please accurately input the Carriageway width.We need this to be accurate as we send this information to the council to gain a permit approval</span>
+                      </div>  
+                    </div>
+                      <lightning-input name="FSM_CarriagewayWidth__c" class="carriagewidthcls" type="number" required variant="label-hidden" value={carriagewidth} onchange={handlecarriagewidthchange}></lightning-input>     
+
+                      <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p class="required"> *</p>
+                        <p>	Verge (M)</p>
+                        <p><lightning-helptext content="Using your Measuring wheel please accurately input the Carriageway width. We need this to be accurate as we send this information to the council to gain a permit approval"></lightning-helptext></p>
+                        </div>
+                        <lightning-input name="FSM_VergeM__c" class="vergecls" type="number" required variant="label-hidden" value={verge} onchange={handlevergechange}></lightning-input>     
+                    </div>
+                  </lightning-card>
+          </template> -->
+
+          <template if:true={sectionthree}>
+              <lightning-card>
+                  <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                      <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                  </ul>
+                </lightning-card>
+
+          <lightning-card>
+            <div class="slds-m-horizontal_xx-small">
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <!-- <p class="required"> *</p> -->
+                  <p>Vehicle Requirements</p>
+              </div>
+              <lightning-combobox name="FSM_VehicleRequirements__c" class="vehiclereqcls" value={vehiclereq} options={vehiclereqoptions}
+              onchange={handleChangevehiclereq} variant="label-hidden" required></lightning-combobox>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Vehicle Position</p>
+                  <p><lightning-helptext content="Consider the best place to park vehicles on site, Can we utilise private driveways or large footways to minimise disruption to the carriageway.Please draw on sketch where vehicle will park if offsite."></lightning-helptext></p>
+              </div>
+              <lightning-combobox name="FSM_VehiclePosition__c" class="vehpositioncls" value={vehposition} options={vehpositionoptions}
+              onchange={handleChangevehposition} variant="label-hidden" required></lightning-combobox>
+
+              <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Location Type</p> 
+              </div>
+              <lightning-combobox name="FSM_LocationType__c" class="loctypecls" value={loctype} options={loctypeoptions}
+              onchange={handleChangeloctype} variant="label-hidden" required></lightning-combobox> -->
+
+          <!--added as part of sfs-6000-->
+              <div style="display: flex;" class="slds-m-vertical_x-small">           
+                <p>Location Type</p>
+                </div>
+
+                  <div style="display: flex;" class="slds-m-vertical_x-small">           
+                    <p>Carriageway</p>
+                    </div>
+                <lightning-input type="checkbox" checked={ischeckedcarriageway} variant="label-hidden" name="FSM_Carriageway__c" value={carriageaway} onchange={handleChangecarriageaway} class="carriageawaycls"></lightning-input>
+
+                <div style="display: flex;" class="slds-m-vertical_x-small">           
+                  <p>Verge</p>
+                  </div>
+              <lightning-input type="checkbox" checked={ischeckedverge} variant="label-hidden" name="FSM_Verge__c" value={vergeval} onchange={handleChangevergeselect} class="vergeselectcls"></lightning-input>
+                  
+              <div style="display: flex;" class="slds-m-vertical_x-small">           
+                <p>Bridleway/ Footpath</p>
+                </div>
+            <lightning-input type="checkbox" checked={ischeckedbridleway} variant="label-hidden" name="FSM_BridlewayFootpath__c" value={bridleaway} onchange={handleChangebridleaway} class="bridleawaycls"></lightning-input>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">           
+              <p>Private Land</p>
+              </div>
+          <lightning-input type="checkbox" checked={ischeckedprivateland} variant="label-hidden" name="FSM_PrivateLand__c" value={privateland} onchange={handleChangeprivateland} class="privatelandcls"></lightning-input>
+
+          <div style="display: flex;" class="slds-m-vertical_x-small">           
+            <p>Footway</p>
+            </div>
+        <lightning-input type="checkbox" checked={ischeckedfootway} variant="label-hidden" name="FSM_Footway__c" value={footway} onchange={handleChangefootway} class="footwaycls"></lightning-input>
+
+                  <div style="display: flex;" class="slds-m-vertical_x-small">           
+                    <p>Cycleway</p>
+                    </div>
+                <lightning-input type="checkbox" checked={ischeckedcycleway} variant="label-hidden" name="FSM_Cycleway__c" value={cycleway} onchange={handleChangecycleway} class="cyclewaycls"></lightning-input>
+
+                <div style="display: flex;" class="slds-m-vertical_x-small">           
+                  <p>Pedestrianised Zone</p>
+                  </div>
+              <lightning-input type="checkbox" checked={ischeckedpedestrianisedzone} variant="label-hidden" name="FSM_PedestrianZone__c" value={pedestrianizedzone} onchange={handleChangepedestrianizedzone} class="pedestrianizedzonecls"></lightning-input>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Traffic Flow</p> 
+                  <p><lightning-helptext content="Light traffic flow = residential road less than 20 vehicles over 3 min and 20 HGV's per hour. Moderate traffic flow = 42 vehicles over 3 min for example a local high street. Heavy traffic flow is above 42 vehicles for example a busy A road"></lightning-helptext></p> 
+              </div>
+              <lightning-combobox name="FSM_TrafficFlow__c" class="trafficflowcls" value={trafficflow} options={trafficflowoptions}
+              onchange={handleChangetrafficflow} variant="label-hidden" required></lightning-combobox>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Special Feature</p> 
+                  <p><lightning-helptext content="Unique conditions onsite"></lightning-helptext></p>   
+              </div>
+              <lightning-combobox name="FSM_SpecialFeature__c" class="specialfeaturecls" value={specialfeature} options={specialfeatureoptions}
+              onchange={handleChangespecialfeature} variant="label-hidden" required></lightning-combobox>
+        
+        </div>
+          </lightning-card>
+          </template>
+
+          <template if:true={sectionfour}>
+              <lightning-card>
+                  <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                      <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                  </ul>
+                </lightning-card>
+
+          <lightning-card>
+            <div class="slds-m-horizontal_xx-small">
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Pedestrian Walkway</p> 
+                  <p class="desktop-tooltip"><lightning-helptext content="Where will you set up a walkway? Refer to NRSWA red book for guidance"></lightning-helptext></p> 
+                  <div class="tooltip-container mobile-tooltip">
+                    <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                    <span class="tooltip-text first carrtxtadjust">Where will you set up a walkway? Refer to NRSWA red book for guidance</span>
+                  </div>  
+              </div>
+              <lightning-combobox name="FSM_PedestrianWalkway__c" class="pedestrianwalkwaycls" value={pedestrianwalkway} options={pedestrianwalkwayoptions}
+              onchange={handleChangepedestrianwalkway} variant="label-hidden" required></lightning-combobox>
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Visibility to Men at Work-Traffic light</p> 
+                  <p><lightning-helptext content="What will be the visibility to the first sign/traffic light head when the site is set up refer to NRSWA red book for guidance"></lightning-helptext></p> 
+              </div>
+              <lightning-combobox name="FSM_VisibilityToMenAtWork__c" class="visibilitycls" value={visibility} options={visibilityoptions}
+              onchange={handleChangevisibility} variant="label-hidden" required></lightning-combobox>  
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Pedestrian Lights</p> 
+                  <p><lightning-helptext content="What are the pedestrian lights onsite"></lightning-helptext></p> 
+              </div>
+              <lightning-combobox name="FSM_PedestrianLights__c" class="pedlightscls" value={pedlights} options={pedlightsoptions}
+              onchange={handleChangepedlights} variant="label-hidden" required></lightning-combobox> 
+          
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Train or Tram</p> 
+                  <p><lightning-helptext content="Is there a train/tram in the vicinity of the work? Please refer to SSOW on waterpedia and confirm with line manager "></lightning-helptext></p> 
+              </div>
+              <lightning-combobox name="FSM_TrainOrTram__c" class="traincls" value={train} options={trainoptions}
+              onchange={handleChangetrain} variant="label-hidden" required></lightning-combobox> 
+          
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Bus</p> 
+                  <p><lightning-helptext content="Is there any bus impact onsite"></lightning-helptext></p> 
+              </div>
+              <lightning-combobox name="FSM_Bus__c" class="buscls" value={bus} options={busoptions}
+              onchange={handleChangebus} variant="label-hidden" required></lightning-combobox> 
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                  <p>Cycle</p> 
+                  <p><lightning-helptext content="Is there any cycle impact onsite"></lightning-helptext></p> 
+              </div>
+              <lightning-combobox name="FSM_Cycle__c" class="cyclecls" value={cycle} options={cycleoptions}
+              onchange={handleChangecycle} variant="label-hidden" required></lightning-combobox> 
+          </div>
+          </lightning-card>
+          </template>
+
+          <template if:true={sectionfive}>
+
+              <lightning-card>
+                  <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                      <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                  </ul>
+                </lightning-card>
+
+          <lightning-card>
+            <div class="slds-m-horizontal_xx-small">
+
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p class="required"> *</p>
+                    <p>Carriageway Restriction</p> 
+                    <p class="desktop-tooltip"><lightning-helptext content="What type of TMA is required, Please refer to the red book to select the correct type."></lightning-helptext></p> 
+                    <div class="tooltip-container mobile-tooltip">
+                      <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                      <span class="tooltip-text first carrtxtadjust">What type of TMA is required, Please refer to the red book to select the correct type.</span>
+                    </div>
+                  </div>
+                <lightning-combobox name="FSM_CarriagewayRestriction__c" class="crestrictioncls" value={crestriction} options={crestrictionoptions}
+                onchange={handleChangecarriagewayrestriction} variant="label-hidden" required></lightning-combobox> 
+              <span if:true={isCarriagewaySpecifVisible}>
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p>Carriageway Specification </p> 
+                </div>
+                <lightning-combobox name="FSM_CarriagewaySpecification__c" class="cspeccls" value={cspec} options={cspecfilteredoptions}
+                onchange={handlecspecchange} variant="label-hidden"></lightning-combobox> 
+              </span>
+              <!-- <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p>Carriageway Specification 2</p> 
+              </div>
+              <lightning-combobox name="FSM_CarriagewaySpecification2__c" class="cspec2cls" value={cspec2} disabled={cspec2disabled} options={cspec2options}
+              onchange={handlecspec2change} variant="label-hidden"></lightning-combobox>  -->
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Surface Type</p> 
+              <p><lightning-helptext content="What is the surface type e.g. 6mm Tarmac"></lightning-helptext></p> 
+              </div>
+              <lightning-combobox name="FSM_SurfaceType__c" class="surftypecls" value={surftype} options={filteredsurftypeoptions}
+              onchange={handlesurftypechange} variant="label-hidden" required></lightning-combobox> 
+
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Footpath closed</p>    
+              <p><lightning-helptext content="If the footpath is being closed please state where you are putting the pedestrians. E.g through our site using TMA Banners on the sketch or mark where there is a safe place to cross on the sketch."></lightning-helptext></p>
+
+              </div>
+              <lightning-combobox name="FSM_FootpathClosed__c" class="footpathclosedcls" value={footpathclosed} options={yesnooptions}
+              onchange={handlefootpathclosedchange} variant="label-hidden" required=""></lightning-combobox>   
+
+        </div>
+          </lightning-card>
+
+          </template>
+
+          <template if:true={sectionsix}>
+            <lightning-card>
+              <lightning-card>
+                  <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                      <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                  </ul>
+                </lightning-card>
+                <div class="slds-m-horizontal_xx-small">
+
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p class="required"> *</p>
+                  <p>Specialist Treatment</p>    
+                  </div>
+                  <lightning-combobox name="FSM_SpecialistTreatment__c" class="specialtreatmentcls" value={specialtreatment} options={yesnooptions}
+                  onchange={specialtreatmentchange} variant="label-hidden" required></lightning-combobox>   
+              
+                  <template if:true={showspecialistcomments}>
+                <div style="display: flex;" class="slds-m-vertical_x-small">          
+                  <p>Specialist Treatment Comments</p>    
+                  </div>
+                <lightning-textarea name="FSM_SpecialistTreatmentComments__c" class="treatmentcls" type="text" variant="label-hidden" 
+                value={treatment} onchange={handletreatmentchange} max-length="1500"></lightning-textarea>  
+            </template>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Road Markings</p>    
+              </div>
+              <lightning-combobox name="FSM_RoadMarkings__c" class="roadmarkingscls" value={roadmarkings} options={yesnooptions}
+              onchange={roadmarkingchange} variant="label-hidden" required></lightning-combobox>   
+
+              <template if:true={showroadmarkingcomments}>
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p>Road markings comments</p>    
+                  </div>
+                <lightning-textarea name="FSM_RoadMarkingsComments__c" class="markingscommentscls" type="text" variant="label-hidden" 
+                value={markingscomments} onchange={handlemarkingscommentschange} max-length="500"></lightning-textarea> 
+            </template>
+
+            <div style="display: flex;" class="slds-m-vertical_x-small">
+              <p class="required"> *</p>
+              <p>Is the location traffic sensitive</p>   
+              <p class="desktop-tooltip"><lightning-helptext content="A traffic sensitive road is a street where roadworks will cause delays and disruption to road users"></lightning-helptext></p>
+              <div class="tooltip-container mobile-tooltip">
+                <lightning-icon icon-name="utility:info" alternative-text="Information" size="x-small" class="tooltip-icon"></lightning-icon>
+                <span class="tooltip-text">A traffic sensitive road is a street where roadworks will cause delays and disruption to road users</span>
+              </div>
+              </div>
+              <lightning-combobox name="FSM_IsTheLocationTrafficSensitive__c" class="locationtrafficcls" value={locationtraffic} options={yesnooptions}
+              onchange={handlelocationtrafficchange} variant="label-hidden" required></lightning-combobox>   
+              
+              <div style="display: flex;" class="slds-m-vertical_x-small">
+                <p class="required"> *</p>
+                <p>Is the job urgent</p>    
+                </div>
+                <lightning-combobox name="FSM_IsTheJobUrgent__c" class="joburgentcls" value={joburgent} options={joburgentoptions}
+                onchange={handlejoburgentchange} variant="label-hidden" required></lightning-combobox>   
+
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p class="required"> *</p>
+                  <p>Are no waiting cones required?</p>    
+                  </div>
+                  <lightning-combobox name="FSM_AreNoWaitingConesRequired__c" class="conesreqcls" value={conesreq} options={coneoptions}
+                  onchange={handleconesreqchange} variant="label-hidden" required></lightning-combobox>   
+
+                  
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p class="required"> *</p>
+                  <p>Parking suspension</p>    
+                  </div>
+                  <lightning-combobox name="FSM_ParkingSuspension__c" class="parkingsuspensioncls" value={parkingsuspension} options={yesnooptions}
+                  onchange={handleparkingsuspensionchange} variant="label-hidden" required></lightning-combobox>  
+
+                  
+                <div style="display: flex;" class="slds-m-vertical_x-small">
+                  <p class="required"> *</p>
+                  <p>Traffic lights less than 50m</p>    
+                  </div>
+                  <lightning-combobox name="FSM_TrafficLightsLessThan50m__c" class="trafficlightscls" value={trafficlights} options={yesnooptions}
+                  onchange={handletrafficlightschange} variant="label-hidden" required></lightning-combobox>  
+            </div>
+            <!--added as part of sfs-6000 add by brajesh-->
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small"> -->
+             
+                <!-- <p>Scheduling comments box</p> -->
+                <!-- <p> <lightning-helptext content="Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour Orange)"></lightning-helptext></p> -->
+            <!-- </div> -->
+            <!-- <lightning-textarea name="FSM_SchedulingCommentsBox__c"  class="schedulingcommcls" type="text" variant="label-hidden" value={schedulingcomm} onchange={handleschcommchange} max-length="500"></lightning-textarea>     -->
+          
+            <!-- <div style="display: flex;" class="slds-m-vertical_x-small"> -->
+             
+                <!-- <p>Gang comments</p> -->
+                <!-- <p> <lightning-helptext content="Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour Orange)"></lightning-helptext></p> -->
+            <!-- </div> -->
+            <!-- <lightning-textarea name="FSM_CommentsForTheGangs__c"  class="gangcommcls" type="text" variant="label-hidden" value={gangcomm} onchange={handlegangcommchange} max-length="500"></lightning-textarea>     -->
+          
+          
+          </lightning-card>
+          </template>
+
+        
+          <template if:true={enableprev}>
+            <lightning-button label="Previous" variant="brand" onclick={handlePrevious}>
+            </lightning-button>
+              </template>&nbsp;&nbsp;&nbsp;
+
+                <template if:true={isEnableNext}>
+                    <lightning-button label="Next" onclick={handleNext} variant="brand"></lightning-button>
+                </template>
+              </lightning-record-edit-form> 
+</template>

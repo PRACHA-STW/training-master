@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Proforma Action --></label>
+    <name>FSM_ProformaAction__c</name>
+    <picklistValues>
+        <masterLabel>Generate Only</masterLabel>
+        <translation><!-- Generate Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generate and Send</masterLabel>
+        <translation><!-- Generate and Send --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

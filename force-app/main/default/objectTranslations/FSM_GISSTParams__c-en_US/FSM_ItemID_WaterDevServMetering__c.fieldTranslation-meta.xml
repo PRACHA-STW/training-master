@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Item ID (Water DevServ Metering) --></label>
+    <name>FSM_ItemID_WaterDevServMetering__c</name>
+</CustomFieldTranslation>

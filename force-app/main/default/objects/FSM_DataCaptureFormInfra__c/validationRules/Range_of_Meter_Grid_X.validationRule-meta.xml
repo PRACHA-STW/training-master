@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Range_of_Meter_Grid_X</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISPICKVAL(FSM_FormType__c, &apos;Meter Details Form&apos;) ,OR( FSM_MeterGridX__c   &lt; 250000,  FSM_MeterGridX__c  &gt; 550000))</errorConditionFormula>
+    <errorDisplayField>FSM_MeterGridX__c</errorDisplayField>
+    <errorMessage>The value should be within 250000 and 550000</errorMessage>
+</ValidationRule>

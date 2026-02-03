@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TMAApprovalStatus__c</fullName>
+    <description>Created as part of user story #SFS-32
+Updated as part of SFI-1616
+Updated as part of  SFS-4792
+Approval Status of the TMA Permit/ Notice (eg. &quot;Created&quot;, &quot;PAA Requested, etc.)</description>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CRTD</fullName>
+                <default>false</default>
+                <label>Created</label>
+            </value>
+            <value>
+                <fullName>FPI</fullName>
+                <default>false</default>
+                <label>Forward Planning</label>
+            </value>
+            <value>
+                <fullName>API</fullName>
+                <default>false</default>
+                <label>Advanced Planning</label>
+            </value>
+            <value>
+                <fullName>RPA</fullName>
+                <default>false</default>
+                <label>PAA Requested</label>
+            </value>
+            <value>
+                <fullName>PADP</fullName>
+                <default>false</default>
+                <label>PAA Deemed Approved</label>
+            </value>
+            <value>
+                <fullName>PAA</fullName>
+                <default>false</default>
+                <label>PAA Approved</label>
+            </value>
+            <value>
+                <fullName>PLND</fullName>
+                <default>false</default>
+                <label>Planned Work</label>
+            </value>
+            <value>
+                <fullName>RP</fullName>
+                <default>false</default>
+                <label>Permit Applied For</label>
+            </value>
+            <value>
+                <fullName>PVAR</fullName>
+                <default>false</default>
+                <label>Permit Variation Applied For</label>
+            </value>
+            <value>
+                <fullName>PDP</fullName>
+                <default>false</default>
+                <label>Permit Deemed Approved</label>
+            </value>
+            <value>
+                <fullName>PA</fullName>
+                <default>false</default>
+                <label>Permit Approved</label>
+            </value>
+            <value>
+                <fullName>PRF</fullName>
+                <default>false</default>
+                <label>Permit Refused</label>
+            </value>
+            <value>
+                <fullName>PREV</fullName>
+                <default>false</default>
+                <label>Permit Revoked (Prpsd Works)</label>
+            </value>
+            <value>
+                <fullName>CANC</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>WIP</fullName>
+                <default>false</default>
+                <label>Works in Progress</label>
+            </value>
+            <value>
+                <fullName>COMP</fullName>
+                <default>false</default>
+                <label>Work Complete</label>
+            </value>
+            <value>
+                <fullName>PHCO</fullName>
+                <default>false</default>
+                <label>Phase Complete</label>
+            </value>
+            <value>
+                <fullName>PRRE</fullName>
+                <default>false</default>
+                <label>Partial Reinst</label>
+            </value>
+            <value>
+                <fullName>IREI</fullName>
+                <default>false</default>
+                <label>INTR Reinstated</label>
+            </value>
+            <value>
+                <fullName>PREI</fullName>
+                <default>false</default>
+                <label>PERM Reinstated</label>
+            </value>
+            <value>
+                <fullName>Any type except immediate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Any type except immediate</label>
+            </value>
+            <value>
+                <fullName>Immediate Permit or Notice only</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Immediate Permit or Notice only</label>
+            </value>
+            <value>
+                <fullName>Interim Reinstated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Interim Reinstated</label>
+            </value>
+            <value>
+                <fullName>Partial Reinstated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partial Reinstated</label>
+            </value>
+            <value>
+                <fullName>Permanent Reinstated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Permanent Reinstated</label>
+            </value>
+            <value>
+                <fullName>Revoked</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Revoked</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>CRTD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>RPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PADP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>RP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PVAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PDP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PRF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PREV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>CANC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>WIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>COMP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PHCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PRRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>IREI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRMT</controllingFieldValue>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <controllingFieldValue>REV</controllingFieldValue>
+            <valueName>PREI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <valueName>FPI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <valueName>API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NOTC</controllingFieldValue>
+            <valueName>PLND</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AccessPipeEnd1__c</fullName>
+    <description>Created as a part of SFS-4803</description>
+    <inlineHelpText>Access to the end of the pipe may be possible, but with suitable precautions makes it difficult to cross and therefore deters people from doing so. 	
+- End 1 has been determined as the end from which the flows begin</inlineHelpText>
+    <label>Access to Pipe End1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not accessible (unlikely)</fullName>
+                <default>false</default>
+                <label>Not accessible (unlikely)</label>
+            </value>
+            <value>
+                <fullName>Difficult i.e. fencing present</fullName>
+                <default>false</default>
+                <label>Difficult i.e. fencing present</label>
+            </value>
+            <value>
+                <fullName>Possible i.e deterrents in place but access possible</fullName>
+                <default>false</default>
+                <label>Possible i.e deterrents in place but access possible</label>
+            </value>
+            <value>
+                <fullName>Easy. Deterrents in place but not substantial</fullName>
+                <default>false</default>
+                <label>Easy. Deterrents in place but not substantial</label>
+            </value>
+            <value>
+                <fullName>Very Easy - No deterrents present</fullName>
+                <default>false</default>
+                <label>Very Easy - No deterrents present</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

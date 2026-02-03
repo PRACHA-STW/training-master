@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NoticeState__c</fullName>
+    <description>Notice state for the notice
+Created as part of user story #SFS-32
+Status of notice delivery to SM/ SWM</description>
+    <inlineHelpText>Notice state for the notice</inlineHelpText>
+    <label>Noticeable Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NNSE</fullName>
+                <default>false</default>
+                <label>Notice Not Sent</label>
+            </value>
+            <value>
+                <fullName>NSEN</fullName>
+                <default>false</default>
+                <label>Notice Sent</label>
+            </value>
+            <value>
+                <fullName>NSIT</fullName>
+                <default>false</default>
+                <label>Notice Sent Initial</label>
+            </value>
+            <value>
+                <fullName>NTBS</fullName>
+                <default>false</default>
+                <label>Notice To Be Sent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

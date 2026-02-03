@@ -1,0 +1,51 @@
+.selected-icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between */
+}
+.selected-icons img{
+ 
+    height:65px;
+    padding: 5px;
+}
+.selected-icons > div {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+@media (max-width: 767px) {
+   
+    /* .selected-icons {
+         width: 100%; 
+    } */
+    .selected-icons img {
+        margin-top: 0;
+    }
+}
+.Icons-font{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+/* Adjust the layout for larger screens */
+@media (min-width: 768px) {
+ 
+    .selected-icons img {
+        margin-left: 5px;
+        margin-left: 0;
+    }
+}
+.delete-icon {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slds-icon-action-delete {
+    padding: 5px !important;
+}
+/* .fileUploader{
+    border: 1px solid blue; 
+} */

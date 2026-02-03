@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NonInfraShiftRoundsAll</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND  (5 OR 6 OR 7 ) AND (4 OR (8 AND 9))</booleanFilter>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>FSM_ShiftRoundFrequency__c</columns>
+    <columns>FSM_ShiftType__c</columns>
+    <columns>LatestEndTime</columns>
+    <columns>FSM_ServiceTerritoryName__c</columns>
+    <columns>FSM_ServiceOrderType__c</columns>
+    <columns>FSM_SAPWorkorderNumber__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>equals</operation>
+        <value>Water Non Infra,Waste Non Infra</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>New,In Progress,Accepted</value>
+    </filters>
+    <filters>
+        <field>EarliestStartTime</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>FSM_IsBundle__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>WP1S</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>WW1S</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>contains</operation>
+        <value>WPS</value>
+    </filters>
+    <filters>
+        <field>FSM_IsBundle__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Relatedbundleidformula__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Non Infra Shift Rounds All</label>
+    <sharedTo>
+        <group>FSM_FW_Workmate</group>
+        <group>FSM_WasteNonInfra</group>
+        <group>FSM_WaterNonInfra</group>
+    </sharedTo>
+</ListView>

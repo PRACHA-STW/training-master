@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- During our visit we found --></label>
+    <name>FSM_NetTechDuringVisitWeFound__c</name>
+    <picklistValues>
+        <masterLabel>No problems - the drains are flowing as they should</masterLabel>
+        <translation><!-- No problems - the drains are flowing as they should --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We couldn&apos;t get access to the property/land located at:</masterLabel>
+        <translation><!-- We couldn&apos;t get access to the property/land located at: --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

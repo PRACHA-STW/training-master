@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSL__All_WorkCapacityUsages</fullName>
+    <columns>Name</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>IsSvcTerrOnlyLimit</columns>
+    <columns>SvcApptField</columns>
+    <columns>SvcApptFieldValDplyNm</columns>
+    <columns>TimePeriod</columns>
+    <columns>StartDate</columns>
+    <columns>EndDate</columns>
+    <columns>AvailCapacityHours</columns>
+    <columns>LimitationPercentage</columns>
+    <columns>CapacityLimitRelaxation</columns>
+    <columns>ConsumptionToLimitRatio</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Work Capacity Usages</label>
+</ListView>

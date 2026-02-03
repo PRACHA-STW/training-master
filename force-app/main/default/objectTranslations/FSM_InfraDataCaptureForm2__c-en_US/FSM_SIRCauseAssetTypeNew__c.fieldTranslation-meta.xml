@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cause Asset Type --></label>
+    <name>FSM_SIRCauseAssetTypeNew__c</name>
+    <picklistValues>
+        <masterLabel>CSO</masterLabel>
+        <translation><!-- CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical dosing</masterLabel>
+        <translation><!-- Chemical dosing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined sewer</masterLabel>
+        <translation><!-- Combined sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow control device</masterLabel>
+        <translation><!-- Flow control device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Former S24 sewer</masterLabel>
+        <translation><!-- Former S24 sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foul sewer</masterLabel>
+        <translation><!-- Foul sewer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interceptor</masterLabel>
+        <translation><!-- Interceptor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lateral</masterLabel>
+        <translation><!-- Lateral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRV</masterLabel>
+        <translation><!-- NRV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-ST-Surface Water</masterLabel>
+        <translation><!-- Non-ST-Surface Water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-ST-Watercourse</masterLabel>
+        <translation><!-- Non-ST-Watercourse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-STW Asset - Cncl</masterLabel>
+        <translation><!-- Non-STW Asset - Cncl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-STW Asset - Oth</masterLabel>
+        <translation><!-- Non-STW Asset - Oth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-STW Asset - Priv</masterLabel>
+        <translation><!-- Non-STW Asset - Priv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil interceptor</masterLabel>
+        <translation><!-- Oil interceptor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penstock</masterLabel>
+        <translation><!-- Penstock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising main</masterLabel>
+        <translation><!-- Rising main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPS</masterLabel>
+        <translation><!-- SPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STW dist. Asset</masterLabel>
+        <translation><!-- STW dist. Asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage tank</masterLabel>
+        <translation><!-- Storage tank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surface water pipe</masterLabel>
+        <translation><!-- Surface water pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telemetry</masterLabel>
+        <translation><!-- Telemetry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacuum sew. System</masterLabel>
+        <translation><!-- Vacuum sew. System --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

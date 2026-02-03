@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Type__c</fullName>
+    <description>sfi-692
+Updated as part of SFI-1616
+TMA Type that is required (ie. Permit or Notice)</description>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PRMT</fullName>
+                <default>false</default>
+                <label>Permit</label>
+            </value>
+            <value>
+                <fullName>NOTC</fullName>
+                <default>false</default>
+                <label>Notice</label>
+            </value>
+            <value>
+                <fullName>REV</fullName>
+                <default>false</default>
+                <label>Permit Revoked (In Progress)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

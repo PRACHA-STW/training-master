@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Property type --></label>
+    <name>FSM_SIRPropertyType__c</name>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation><!-- Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic</masterLabel>
+        <translation><!-- Domestic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital</masterLabel>
+        <translation><!-- Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial</masterLabel>
+        <translation><!-- Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School</masterLabel>
+        <translation><!-- School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shop</masterLabel>
+        <translation><!-- Shop --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

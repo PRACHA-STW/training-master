@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>MBR Plant Competence</description>
+    <label>MBR Plant Competence (Q50008093)</label>
+</Skill>

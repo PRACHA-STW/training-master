@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_JobAge__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(FSM_BusinessUnit__c, &apos;Waste Non Infra&apos;),
+ISPICKVAL(FSM_BusinessUnit__c, &apos;Water Non Infra&apos;)) ,
+IF(ISPICKVAL(Status, &apos;Completed&apos;), 
+         DATEVALUE(FSM_JobCompletionDate__c) - DATEVALUE(StartDate), 
+         TODAY() - DATEVALUE(StartDate)) ,
+
+IF(OR(ISPICKVAL(FSM_BusinessUnit__c, &apos;Waste Infra&apos;), 
+ISPICKVAL(FSM_BusinessUnit__c, &apos;Metering&apos;), 
+ISPICKVAL(FSM_BusinessUnit__c, &apos;Water Infra&apos;)) , 
+IF(ISPICKVAL(Status, &apos;Completed&apos;), 
+         DATEVALUE(FSM_JobCompletionDate__c) - DATEVALUE(FSM_JobCreatedDate__c),
+         TODAY() - DATEVALUE(FSM_JobCreatedDate__c)) ,
+
+IF(ISPICKVAL(FSM_BusinessUnit__c, &apos;Developer Services&apos;) ,
+IF(ISPICKVAL(Status, &apos;Completed&apos;), 
+         FSM_InspectionPassedDate__c - FSM_ConnectionPlannedDate__c  ,
+         TODAY() - DATEVALUE(FSM_ConnectionPlannedDate__c)) , 0                        
+
+                        )
+
+                    )
+
+            )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Job Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

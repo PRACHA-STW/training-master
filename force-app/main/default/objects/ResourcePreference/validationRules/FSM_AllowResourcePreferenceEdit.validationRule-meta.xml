@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AllowResourcePreferenceEdit</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR((ISNEW() = false &amp;&amp; $Permission.FSM_AllowResourcePreferenceEdit = false),AND(ISNEW() = true ,AND(($Permission.FSM_Admins = false), ($Permission.FSM_AllowResourcePreferenceCreate = false))))</errorConditionFormula>
+    <errorMessage>Insufficient access to create or edit Resource Preference</errorMessage>
+</ValidationRule>

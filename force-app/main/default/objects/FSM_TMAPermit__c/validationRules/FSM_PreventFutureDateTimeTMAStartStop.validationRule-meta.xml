@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PreventFutureDateTimeTMAStartStop</fullName>
+    <active>true</active>
+    <description>SFS-8737</description>
+    <errorConditionFormula>AND
+(
+   OR
+      (
+          FSM_TMAActualStart__c  &gt;  NOW(),
+          FSM_TMAActualEnd__c    &gt;  NOW()   
+      ),
+   NOT($Permission.FSM_SystemAdmin),
+   NOT($Permission.FSM_Integration),
+   NOT($Permission.FSM_Data_Migration_Admin)
+)</errorConditionFormula>
+    <errorMessage>Future date/time is not allowed</errorMessage>
+</ValidationRule>

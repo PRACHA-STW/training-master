@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AssignedtoCurrentResource__c</fullName>
+    <formula>IF(
+ AND(
+  OR( 
+  ISPICKVAL(FSSK__FSK_Assigned_Service_Resource__r.FSM_BusinessUnit__c,&apos;Waste Infra&apos;),       
+  ISPICKVAL(FSSK__FSK_Assigned_Service_Resource__r.FSM_BusinessUnit__c,&apos;Water Infra&apos;),
+  ISPICKVAL(FSSK__FSK_Assigned_Service_Resource__r.FSM_BusinessUnit__c,&apos;Metering&apos;) 
+  ),  
+ FSSK__FSK_Assigned_Service_Resource__r.FSM_SeniorTechnicalSupervisor__c,  
+ ISPICKVAL(FSSK__FSK_Assigned_Service_Resource__r.ResourceType,&apos;T&apos;),
+ FSSK__FSK_Assigned_Service_Resource__r.RelatedRecord.FSM_ExternalId__c = $User.FSM_ExternalId__c),
+ true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Assigned to Current Resource?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

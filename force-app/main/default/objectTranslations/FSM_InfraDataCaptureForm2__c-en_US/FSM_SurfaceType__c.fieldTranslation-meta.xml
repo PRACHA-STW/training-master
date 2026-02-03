@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What is the surface type e.g. 6mm Tarmac --></help>
+    <label><!-- Surface Type --></label>
+    <name>FSM_SurfaceType__c</name>
+    <picklistValues>
+        <masterLabel>10mm Bitmac (Tarmac)</masterLabel>
+        <translation><!-- 10mm Bitmac (Tarmac) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10mm StoneMastic Asphalt</masterLabel>
+        <translation><!-- 10mm StoneMastic Asphalt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14mm StoneMastic Asphalt</masterLabel>
+        <translation><!-- 14mm StoneMastic Asphalt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6mm Bitmac (Tarmac)</masterLabel>
+        <translation><!-- 6mm Bitmac (Tarmac) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any (non-specific)</masterLabel>
+        <translation><!-- Any (non-specific) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asphalt (footways)</masterLabel>
+        <translation><!-- Asphalt (footways) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bitumen Macadam (Tarmac)</masterLabel>
+        <translation><!-- Bitumen Macadam (Tarmac) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Block Paving</masterLabel>
+        <translation><!-- Block Paving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blue Bricks</masterLabel>
+        <translation><!-- Blue Bricks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concrete</masterLabel>
+        <translation><!-- Concrete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flags (area)</masterLabel>
+        <translation><!-- Flags (area) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grass</masterLabel>
+        <translation><!-- Grass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Rolled Asphalt</masterLabel>
+        <translation><!-- Hot Rolled Asphalt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Rolled Asphalt-30/14</masterLabel>
+        <translation><!-- Hot Rolled Asphalt-30/14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Rolled Asphalt-55/10</masterLabel>
+        <translation><!-- Hot Rolled Asphalt-55/10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kerbstones (area)</masterLabel>
+        <translation><!-- Kerbstones (area) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monolastic</masterLabel>
+        <translation><!-- Monolastic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paving Flags (dims.)</masterLabel>
+        <translation><!-- Paving Flags (dims.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm Hot Lay Rein fway</masterLabel>
+        <translation><!-- Perm Hot Lay Rein fway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Tarmac</masterLabel>
+        <translation><!-- Red Tarmac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roadmaster Coldlay</masterLabel>
+        <translation><!-- Roadmaster Coldlay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sets</masterLabel>
+        <translation><!-- Sets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stone Mastic Asphalt</masterLabel>
+        <translation><!-- Stone Mastic Asphalt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stone Sets</masterLabel>
+        <translation><!-- Stone Sets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tactile Paving</masterLabel>
+        <translation><!-- Tactile Paving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmade</masterLabel>
+        <translation><!-- Unmade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>York Paving Slabs</masterLabel>
+        <translation><!-- York Paving Slabs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

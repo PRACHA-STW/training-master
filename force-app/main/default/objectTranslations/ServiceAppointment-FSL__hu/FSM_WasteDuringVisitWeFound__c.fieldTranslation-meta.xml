@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- During our visit we found --></label>
+    <name>FSM_WasteDuringVisitWeFound__c</name>
+    <picklistValues>
+        <masterLabel>A blocked drain caused by Cooking fats/oils</masterLabel>
+        <translation><!-- A blocked drain caused by Cooking fats/oils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A blocked drain caused by Debris</masterLabel>
+        <translation><!-- A blocked drain caused by Debris --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A blocked drain caused by Roots</masterLabel>
+        <translation><!-- A blocked drain caused by Roots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A blocked drain caused by Sanitary products</masterLabel>
+        <translation><!-- A blocked drain caused by Sanitary products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A blocked drain caused by Wipes</masterLabel>
+        <translation><!-- A blocked drain caused by Wipes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A problem with the highway drain. To find out who your local highway authority is, please use this website gov.uk/find-local-council</masterLabel>
+        <translation><!-- A problem with the highway drain. To find out who your local highway authority is, please use this website gov.uk/find-local-council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A problem with your private drain. You&apos;ll need to contact a local drain cleaning contractor for further assistance</masterLabel>
+        <translation><!-- A problem with your private drain. You&apos;ll need to contact a local drain cleaning contractor for further assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The drains are flowing as they should be</masterLabel>
+        <translation><!-- The drains are flowing as they should be --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We attended an issue near your property. If you have experienced a flooding, please call us quoting the job reference on this card</masterLabel>
+        <translation><!-- We attended an issue near your property. If you have experienced a flooding, please call us quoting the job reference on this card --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We couldn&apos;t get access to the property/land located at:</masterLabel>
+        <translation><!-- We couldn&apos;t get access to the property/land located at: --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

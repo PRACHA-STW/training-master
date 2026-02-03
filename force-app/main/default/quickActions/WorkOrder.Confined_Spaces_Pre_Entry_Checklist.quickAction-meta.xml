@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Updated SFS-7374</description>
+    <flowDefinition>FSM_DCFConfinedSpacesPreEntryChecklist</flowDefinition>
+    <label>Confined Spaces Pre Entry Checklist</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

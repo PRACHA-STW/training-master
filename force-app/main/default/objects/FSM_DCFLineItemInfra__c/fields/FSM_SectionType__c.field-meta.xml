@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_SectionType__c</fullName>
+    <description>Created as part of SFS-1950</description>
+    <label>Section Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Valve Management</fullName>
+                <default>false</default>
+                <label>Valve Management</label>
+            </value>
+            <value>
+                <fullName>Supply Interruption and Validation</fullName>
+                <default>false</default>
+                <label>Supply Interruption and Validation</label>
+            </value>
+            <value>
+                <fullName>Proposed Valve Operation</fullName>
+                <default>false</default>
+                <label>Proposed Valve Operation</label>
+            </value>
+            <value>
+                <fullName>Risk Assessment - Site Specific</fullName>
+                <default>false</default>
+                <label>Risk Assessment - Site Specific</label>
+            </value>
+            <value>
+                <fullName>Short Duration Works Risk Assessment</fullName>
+                <default>false</default>
+                <label>Short Duration Works Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>Grid Ref for Excavation</fullName>
+                <default>false</default>
+                <label>Grid Ref for Excavation</label>
+            </value>
+            <value>
+                <fullName>HD Risk Assessment</fullName>
+                <default>false</default>
+                <label>HD Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>Reinstatement Site</fullName>
+                <default>false</default>
+                <label>Reinstatement Site</label>
+            </value>
+            <value>
+                <fullName>Original Hydrant</fullName>
+                <default>false</default>
+                <label>Original Hydrant</label>
+            </value>
+            <value>
+                <fullName>Additional Customer</fullName>
+                <default>false</default>
+                <label>Additional Customer</label>
+            </value>
+            <value>
+                <fullName>Sewerage Site Specific</fullName>
+                <default>false</default>
+                <label>Sewerage Site Specific</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

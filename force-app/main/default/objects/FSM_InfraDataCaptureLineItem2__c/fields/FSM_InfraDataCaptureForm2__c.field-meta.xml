@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_InfraDataCaptureForm2__c</fullName>
+    <description>Created as part of SFI-1204</description>
+    <label>Infra Data Capture Form 2</label>
+    <referenceTo>FSM_InfraDataCaptureForm2__c</referenceTo>
+    <relationshipLabel>FSM_InfraDataCaptureLineItem2</relationshipLabel>
+    <relationshipName>FSM_InfraDataCaptureLineItem2</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

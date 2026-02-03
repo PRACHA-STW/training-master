@@ -1,0 +1,123 @@
+<!--Lightning web component to display Job history response and Job Notification response-->
+<template>
+    <div>
+        
+				<template if:false={assetFlag}>
+        <template if:true={Screen1}>
+            <lightning-card>
+                <div class="container">
+                    <h5 class="title">{title}</h5>
+                    <div>
+                    <lightning-button class="button-container" disable="true" variant="brand" label={addSpace}  title="Look for Job or Asset History" onclick={handleRedirect}></lightning-button>
+                    <div  class="button-container">
+                        Look for Job History.
+     								</div>  
+                </div><br/>
+										 <!--BUTTON FOR MOVING TO ASSET HIERARCHY COMPONENT SCREEN SFI-1811-->
+                    <div>
+													<lightning-button name="FSM_AssetHierarchy" class="button-container" variant="brand" label="Asset Hierarchy" title="Look for Job or Asset History" onclick={handleClick}></lightning-button>
+																<div  class="button-container">
+															Once correct FLOC ID found, hold to copy and can be pasted to the desired field, Lvl 4 req'd for Operational Tasks, Lvl 6 req'd for Maintenance Tasks.
+																</div>
+               			</div>
+									
+              </div>
+            </lightning-card>
+        </template>
+		</template>
+				<template if:true={assetFlag} >
+							<c-floc-search-comp record-data={recordId}></c-floc-search-comp>
+		
+				</template>
+
+        <template if:true={Screen2}>
+            <lightning-card title="Job Search" icon-name="standard:work_order">
+                <div class="slds-p-around_medium">
+                   <template if:true={WorkorderFields}>
+                        <div class="input-container">
+                            <div class="input-item">
+                                <lightning-input label="Post Code" onchange={postcodeChange} value={WorkorderFields.PostalCode}></lightning-input>
+                            </div>
+                            <div class="input-item">
+                                <lightning-input label="DMA" onchange={dmaChange} value={firstFiveCharacters}></lightning-input>
+                            </div>
+                            <div class="input-item">
+                                <lightning-input label="Drainage Area" onchange={daChange} value={remainingCharacters}></lightning-input>
+                            </div>
+                            <div class="input-item">
+                                <lightning-input label="FLOC" onchange={flocChange} value={WorkorderFields.FSM_Floc__c}></lightning-input>
+                            </div>
+                        
+                            <div class="input-item">
+                                <lightning-combobox label="Order Type" value={selectedOption} options={customPicklistOptions} onchange={handleCustomPicklistChange}></lightning-combobox>
+                            </div>
+                        </div><br/>
+                        <div class="input-item">
+                            <lightning-button class="slds-float_left" label="BACK" icon-name="utility:back"  variant="brand" title="Look for Job or Asset History" onclick={handleBackClick}  padding="horizontal-medium" ></lightning-button>
+                        </div>
+                       <div class="input-item">
+                            <lightning-button variant="brand" label="Search" title="Search" icon-name="utility:search"
+                                class="slds-float_right" onclick={searchJob}></lightning-button>
+                        </div>
+                        
+                        <!--<template if:true={showError}>
+                            <div class="slds-text-color_error slds-m-top_medium">
+                                Please fill at least one of the Post Code, DMA, or Drainage Area fields.
+                            </div>
+                        </template>-->
+                    </template>
+                </div>
+            </lightning-card>
+        </template>
+        <template if:false={spining}>
+        <template if:true={Screen3}>
+            <div class="container">
+                <lightning-accordion allow-multiple-sections-open>
+                    <template for:each={workOrderReports} for:item="report">
+                        <lightning-accordion-section key={report.workOrderId} name={report.workOrderId} label={report.workOrderId}>
+                            <div class="slds-box slds-p-around_medium">
+                                <!-- Standard fields -->
+                                <p>Created Date: {report.createdOn}</p>
+                                <p>Last Updated Date: {report.modifiedOn}</p>
+                                <!-- Custom fields -->
+                                <p>Work Description: {report.codeText}</p>
+                                <p>Address: {report.formattedAddress}</p>
+                                <p>Notification Long Text: <a href="#" onclick={viewNotificationLongText} data-id={report.serviceNotificationId}>View</a></p>
+                            </div>
+                        </lightning-accordion-section>
+                    </template>
+                </lightning-accordion>
+                <div class="slds-p-around_medium">
+                    <lightning-button label="Back" class="slds-float_left" onclick={handleRedirect} variant="neutral"></lightning-button>
+                    <lightning-button label="Finish" class="slds-float_right" onclick={handleFinish} variant="brand"></lightning-button>
+                </div>
+            </div>
+        </template>
+    </template>
+    <template if:false={spining1}>
+        <template if:true={Screen4}>
+            <div class="container">
+                <lightning-card title="Notification Long Text">
+                    <div class="slds-p-around_medium">
+                        <lightning-formatted-rich-text value={wo}></lightning-formatted-rich-text>
+                    </div>
+                
+                <div class="slds-p-around_medium">
+                    <lightning-button label="Back" class="slds-float_left" onclick={searchJob} variant="neutral"></lightning-button>
+                    <lightning-button label="Finish" class="slds-float_right" onclick={handleFinish} variant="brand"></lightning-button>
+                </div>
+            </lightning-card>
+            </div>
+        </template>
+    </template>
+
+<template if:true={spining}>
+    <lightning-spinner alternative-text="Loading" variant="brand" size="x-large"></lightning-spinner>
+
+</template>
+<template if:true={spining1}>
+    <lightning-spinner alternative-text="Loading" variant="brand" size="x-large"></lightning-spinner>
+
+</template>
+    </div>
+</template>

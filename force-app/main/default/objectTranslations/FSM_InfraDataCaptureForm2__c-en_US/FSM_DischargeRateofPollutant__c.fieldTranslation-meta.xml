@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DISCHARGE RATE OF POLLUTANT --></label>
+    <name>FSM_DischargeRateofPollutant__c</name>
+    <picklistValues>
+        <masterLabel>A discharge to water found (at time of visit) – High Flow</masterLabel>
+        <translation><!-- A discharge to water found (at time of visit) – High Flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A discharge to water found (at time of visit) – Medium Flow</masterLabel>
+        <translation><!-- A discharge to water found (at time of visit) – Medium Flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A discharge to water found (at time of visit) – Trickle</masterLabel>
+        <translation><!-- A discharge to water found (at time of visit) – Trickle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evidence of recent discharge to water (not discharging at time of visit) – No Flow</masterLabel>
+        <translation><!-- Evidence of recent discharge to water (not discharging at time of visit) – No Flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No discharge to water found (at time of visit) – No Flow</masterLabel>
+        <translation><!-- No discharge to water found (at time of visit) – No Flow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

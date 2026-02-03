@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ApplyOpenWOMPValPermission__c</fullName>
+    <description>True if the user has &apos;Measuring Point Validation&apos; custom Permission. Used in FSL mobile to stop users from closing a WO as closed when there are open WOMP.  Custom permissions are not supported in FSL mobile flow. SFS-4065</description>
+    <formula>$Permission.FSM_MeasuringPointValdiation</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Apply Open WOMP Validation Permission</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

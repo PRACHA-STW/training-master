@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_OutfallType__c</fullName>
+    <description>Created as part of SFS-4810</description>
+    <label>Outfall Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CSO Outfall</fullName>
+                <default>false</default>
+                <label>CSO Outfall</label>
+            </value>
+            <value>
+                <fullName>SWO</fullName>
+                <default>false</default>
+                <label>SWO</label>
+            </value>
+            <value>
+                <fullName>Overland flow</fullName>
+                <default>false</default>
+                <label>Overland flow</label>
+            </value>
+            <value>
+                <fullName>Highway Drain</fullName>
+                <default>false</default>
+                <label>Highway Drain</label>
+            </value>
+            <value>
+                <fullName>SPS Outfall</fullName>
+                <default>false</default>
+                <label>SPS Outfall</label>
+            </value>
+            <value>
+                <fullName>Private</fullName>
+                <default>false</default>
+                <label>Private</label>
+            </value>
+            <value>
+                <fullName>Treatment Final Effluent</fullName>
+                <default>false</default>
+                <label>Treatment Final Effluent</label>
+            </value>
+            <value>
+                <fullName>No Problem Found</fullName>
+                <default>false</default>
+                <label>No Problem Found</label>
+            </value>
+            <value>
+                <fullName>Treatment Storm Overflow</fullName>
+                <default>false</default>
+                <label>Treatment Storm Overflow</label>
+            </value>
+            <value>
+                <fullName>Treatment Settled Storm Overflow</fullName>
+                <default>false</default>
+                <label>Treatment Settled Storm Overflow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

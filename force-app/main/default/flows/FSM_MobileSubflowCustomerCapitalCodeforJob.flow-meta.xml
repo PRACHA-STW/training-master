@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Created as a part of SFS-1428</description>
+        <name>FSM_AssignCapitalCode</name>
+        <label>Assign Capital Code</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>CapitalCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>FSM_CapitalCode</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Created as a part of SFS-1428</description>
+        <name>FSM_IsCapitalCodeValid</name>
+        <label>Is Capital Code Valid</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>FSM_InvalidCode</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>InValid Capital Code</defaultConnectorLabel>
+        <rules>
+            <name>Valid_or_No_Capital_Code</name>
+            <conditionLogic>(1 AND 2) OR (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>FSM_TestRegexCapitalCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>FSM_CheckEmptyString</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>FSM_CheckEmptyString</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>FSM_CapitalCode</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FSM_AssignCapitalCode</targetReference>
+            </connector>
+            <label>Valid or No Capital Code</label>
+        </rules>
+    </decisions>
+    <description>Created as a part of SFS-2233</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>FSM_CheckEmptyString</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!FSM_CapitalCode},{!BlankRegex})</expression>
+    </formulas>
+    <formulas>
+        <description>Created as a part of SFS-1428.To Compare Capital Code with Regex pattern.</description>
+        <name>FSM_TestRegexCapitalCode</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!FSM_CapitalCode},{!RegexFN})</expression>
+    </formulas>
+    <interviewLabel>FSM Capital Code {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
+    <label>FSM Mobile Subflow - Customer Capital Code for Job</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <screens>
+        <description>Created as a part of SFS-1428</description>
+        <name>FSM_CustomerCapitalCodeForJob</name>
+        <label>Customer Capital Code For Job</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>FSM_IsCapitalCodeValid</targetReference>
+        </connector>
+        <fields>
+            <name>FSM_CapitalCode</name>
+            <dataType>String</dataType>
+            <fieldText>Do you want to book the capital code for the Job?</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Created as a part of SFS-1428</description>
+        <name>FSM_InvalidCode</name>
+        <label>Invalid Capital Code</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>false</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>FSM_CustomerCapitalCodeForJob</targetReference>
+        </connector>
+        <fields>
+            <name>FSM_Invalid</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Invalid Customer Code&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>FSM_CustomerCapitalCodeForJob</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>BlankRegex</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>^$</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>CapitalCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Created as a part of SFS-1428. To check if Capital Code is valid or not</description>
+        <name>RegexFN</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>^[a-zA-Z0-9]{3}/[0-9]{5}/[0-9]{2}/[0-9]{2}(/([0-9]{2}))?$</stringValue>
+        </value>
+    </variables>
+</Flow>

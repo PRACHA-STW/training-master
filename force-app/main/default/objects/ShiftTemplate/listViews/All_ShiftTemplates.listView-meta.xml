@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_ShiftTemplates</fullName>
+    <columns>Name</columns>
+    <columns>JobProfile</columns>
+    <columns>StartTime</columns>
+    <columns>Duration</columns>
+    <columns>ShiftTemplateDurationType</columns>
+    <columns>IsActive</columns>
+    <columns>RecordsetFilterCriteria</columns>
+    <columns>TimeSlotType</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Name</field>
+        <operation>contains</operation>
+        <value>CLO</value>
+    </filters>
+    <label>All Shift Templates</label>
+</ListView>

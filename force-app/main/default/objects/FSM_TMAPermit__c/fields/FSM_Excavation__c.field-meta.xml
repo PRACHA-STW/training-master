@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Excavation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Created as part of SFI-1178
+Label updated as a part of SFS-4792</description>
+    <label>Excavation Required?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

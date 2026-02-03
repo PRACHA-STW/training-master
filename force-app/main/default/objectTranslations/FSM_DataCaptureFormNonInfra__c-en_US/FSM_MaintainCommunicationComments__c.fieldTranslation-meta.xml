@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Every 5 mins --></help>
+    <label><!-- Maintain communication with team comment --></label>
+    <name>FSM_MaintainCommunicationComments__c</name>
+</CustomFieldTranslation>

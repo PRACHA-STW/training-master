@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_EarliestSchedulableDate__c</fullName>
+    <description>Used in scheduling rules to ensure that a job could never be scheduled before this date if populated
+Created as a part of SFS-4792</description>
+    <label>Earliest Schedulable Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

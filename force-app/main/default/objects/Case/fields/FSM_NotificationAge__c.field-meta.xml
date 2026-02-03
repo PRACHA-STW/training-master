@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_NotificationAge__c</fullName>
+    <description>update as part of SFS-7996</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status , &apos;Closed&apos;),
+DATEVALUE(ClosedDate) - DATEVALUE( FSM_OpenDate__c ),
+TODAY() - DATEVALUE(FSM_OpenDate__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Notification Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

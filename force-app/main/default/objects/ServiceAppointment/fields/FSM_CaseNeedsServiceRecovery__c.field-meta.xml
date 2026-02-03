@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CaseNeedsServiceRecovery__c</fullName>
+    <description>Created as part of SFI-1279..</description>
+    <externalId>false</externalId>
+    <formula>IF(FSM_CaseManagingRequired__c, &apos;Fieldworker has flagged job for service recovery&apos;,&apos;&apos;)</formula>
+    <label>Case Needs Service Recovery</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

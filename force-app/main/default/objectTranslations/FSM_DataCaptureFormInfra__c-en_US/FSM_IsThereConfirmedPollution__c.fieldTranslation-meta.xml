@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If there is a risk of an environmental impact please contact Network Control immediately to mitigate any risk to the environment - Please carry out your impact assessment and feedback to your supervisor and assess mitigation options --></help>
+    <label><!-- Is there confirmed pollution --></label>
+    <name>FSM_IsThereConfirmedPollution__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

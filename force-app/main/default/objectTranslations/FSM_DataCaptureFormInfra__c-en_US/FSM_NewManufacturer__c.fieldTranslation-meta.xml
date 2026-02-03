@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New Meter Manufacturer --></label>
+    <name>FSM_NewManufacturer__c</name>
+    <picklistValues>
+        <masterLabel>ALTAIR V4</masterLabel>
+        <translation><!-- ALTAIR V4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Actaris</masterLabel>
+        <translation><!-- Actaris --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diehl Metering</masterLabel>
+        <translation><!-- Diehl Metering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elster</masterLabel>
+        <translation><!-- Elster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeywell</masterLabel>
+        <translation><!-- Honeywell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Itron</masterLabel>
+        <translation><!-- Itron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kent</masterLabel>
+        <translation><!-- Kent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neptune</masterLabel>
+        <translation><!-- Neptune --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schlumberger</masterLabel>
+        <translation><!-- Schlumberger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensus</masterLabel>
+        <translation><!-- Sensus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Meter</masterLabel>
+        <translation><!-- Smart Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Socam</masterLabel>
+        <translation><!-- Socam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wesan PG</masterLabel>
+        <translation><!-- Wesan PG --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

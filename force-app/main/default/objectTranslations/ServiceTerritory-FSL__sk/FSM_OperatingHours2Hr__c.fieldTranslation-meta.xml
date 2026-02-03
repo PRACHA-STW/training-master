@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Appointment Operating Hours (2Hr) --></label>
+    <name>FSM_OperatingHours2Hr__c</name>
+    <relationshipLabel><!-- Service Territories --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Interim Construction Method --></label>
+    <name>FSM_InterimConstructionMethod__c</name>
+    <picklistValues>
+        <masterLabel>Method B</masterLabel>
+        <translation><!-- Method B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Method C</masterLabel>
+        <translation><!-- Method C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Method D</masterLabel>
+        <translation><!-- Method D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Method E</masterLabel>
+        <translation><!-- Method E --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

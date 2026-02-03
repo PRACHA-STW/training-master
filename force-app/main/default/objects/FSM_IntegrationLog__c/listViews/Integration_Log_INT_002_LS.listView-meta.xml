@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Log_INT_002_LS</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>FSM_ServiceName__c</columns>
+    <columns>FSM_RecordId__c</columns>
+    <columns>FSM_ExternalId__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>FSM_RequestPayload__c</columns>
+    <columns>FSM_ResponsePayload__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>6/10/2025 1:39 PM</value>
+    </filters>
+    <filters>
+        <field>FSM_ServiceName__c</field>
+        <operation>startsWith</operation>
+        <value>Work Order Updates</value>
+    </filters>
+    <filters>
+        <field>FSM_ServiceName__c</field>
+        <operation>notContain</operation>
+        <value>Appointment</value>
+    </filters>
+    <label>Integration Log_INT-002_WorkOrderStat_LS</label>
+    <sharedTo>
+        <group>FSM_Tech_Support</group>
+    </sharedTo>
+</ListView>

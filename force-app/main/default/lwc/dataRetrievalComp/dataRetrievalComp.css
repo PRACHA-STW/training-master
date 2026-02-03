@@ -1,0 +1,15 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally at the center */
+}
+
+/* Additional styling for the buttons if needed */
+.button {
+    margin: 0 10px; /* Add some spacing between the buttons */
+    background-color: blue;
+    color: white;
+    
+    /*height: 40px; /* Set the height of the buttons */
+   /* min-width: 150px; /* Set the minimum width of the buttons */
+    
+}

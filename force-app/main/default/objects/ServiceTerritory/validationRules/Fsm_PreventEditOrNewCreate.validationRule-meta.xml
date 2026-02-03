@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fsm_PreventEditOrNewCreate</fullName>
+    <active>true</active>
+    <description>Prevent User to creat/Update service territory record
+Created as part of SFL-886</description>
+    <errorConditionFormula>$Permission.FSM_RestrictEditOtherRecords</errorConditionFormula>
+    <errorMessage>You do not have sufficient access to perform this action.</errorMessage>
+</ValidationRule>

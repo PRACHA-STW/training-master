@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ReadyForDispatch__c</fullName>
+    <description>SFS-1786</description>
+    <formula>AND(
+OR(
+ISBLANK(FSSK__FSK_Work_Order__r.FSM_CountMandatoryNotCompletedWOLIs__c),
+FSSK__FSK_Work_Order__r.FSM_CountMandatoryNotCompletedWOLIs__c &lt;= 0
+),
+OR(
+ISBLANK(FSSK__FSK_Work_Order__r.FSM_TMAPermit__c),
+AND(
+NOT(ISBLANK(FSSK__FSK_Work_Order__r.FSM_TMAPermit__c)),
+OR(
+NOT(FSSK__FSK_Work_Order__r.FSM_CoreTMAJob__c),
+AND(
+FSSK__FSK_Work_Order__r.FSM_CoreTMAJob__c,
+NOT(FSM_TMAConstraintDatesViolated__c),
+OR(
+OR(
+TEXT(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c) = &quot;05&quot;,
+TEXT(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c) = &quot;04&quot;,
+TEXT(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c) = &quot;00&quot;
+),
+AND(
+OR(
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c, &quot;01&quot;),
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c, &quot;02&quot;),
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_NoticeType__c, &quot;03&quot;)
+),
+OR(
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PLND&quot;),
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PDP&quot;),
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;PA&quot;),
+ISPICKVAL(FSSK__FSK_Work_Order__r.FSM_TMAPermit__r.FSM_TMAApprovalStatus__c, &quot;WIP&quot;)
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+    <label>Ready For Dispatch</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

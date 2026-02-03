@@ -1,0 +1,2313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Assign_blank_Field</name>
+        <label>Assign blank Field</label>
+        <locationX>50</locationX>
+        <locationY>1250</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_JobSummary__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Field_Supp_Info</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Assign_Leaflet_only_fields_Blank</name>
+        <label>Assign Leaflet only fields Blank</label>
+        <locationX>578</locationX>
+        <locationY>542</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CollectBlankFieldsLeaflet</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_type_not_Proforma</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Assign_Metering_only_fields_Blank</name>
+        <label>Assign Metering only fields Blank</label>
+        <locationX>578</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CollectBlankFieldsMetering</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_type_not_Leaflet</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Assign_Proforma_only_fields_Blank</name>
+        <label>Assign Proforma only fields Blank</label>
+        <locationX>578</locationX>
+        <locationY>842</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CollectBlankFieldsProforma</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Coordinator_ContactNumber</name>
+        <label>Coordinator Contact Number</label>
+        <locationX>578</locationX>
+        <locationY>4850</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustCoordinatorNumber__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_manhole_cover</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_12_of_Assign_blank_Field</name>
+        <label>ManholeDuringvisit</label>
+        <locationX>578</locationX>
+        <locationY>6050</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ManholeDuringVisitWeDid__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_11_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_13_of_Assign_blank_Field</name>
+        <label>Other Action Performed</label>
+        <locationX>578</locationX>
+        <locationY>6350</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ActionPerformedOther__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_14_of_Assign_blank_Field</name>
+        <label>what happens next</label>
+        <locationX>578</locationX>
+        <locationY>6650</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ManholeWhatHappensNext__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_15_of_Assign_blank_Field</name>
+        <label>Additional Information</label>
+        <locationX>578</locationX>
+        <locationY>6950</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ManholeAdditionalInfo__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_16_of_Assign_blank_Field</name>
+        <label>after receiving report</label>
+        <locationX>578</locationX>
+        <locationY>7250</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_WasteWeVisitedAfterReportOf__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_3_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_17_of_Assign_blank_Field</name>
+        <label>During our visit</label>
+        <locationX>578</locationX>
+        <locationY>7550</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_WasteDuringVisitWeFound__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_4_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_18_of_Assign_blank_Field</name>
+        <label>No Access to Location Reason</label>
+        <locationX>578</locationX>
+        <locationY>7850</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_NoLocationAccessReason__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_5_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_19_of_Assign_blank_Field</name>
+        <label>During visit</label>
+        <locationX>578</locationX>
+        <locationY>8150</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_WasteDuringVisitWeDid__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_6_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_1_of_Copy_20_of_Assign_blank_Field</name>
+        <label>Copy 1 of Copy 20 of Assign blank Field</label>
+        <locationX>578</locationX>
+        <locationY>8750</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_NetTechDuringVisitWeFound__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_7_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_1_of_TelephoneAssign</name>
+        <label>Copy 1 of TelephoneAssign</label>
+        <locationX>1106</locationX>
+        <locationY>1550</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_Telephone__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Check_Telephone</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_20_of_Assign_blank_Field</name>
+        <label>check Additional Information</label>
+        <locationX>578</locationX>
+        <locationY>8450</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_WasteAdditionalInfo__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Copy_6_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_21_of_Assign_blank_Field</name>
+        <label>No Access to location Reason</label>
+        <locationX>578</locationX>
+        <locationY>9050</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_NetTechNoLocationAccessReason__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_8_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_22_of_Assign_blank_Field</name>
+        <label>Copy 22 of Assign blank Field</label>
+        <locationX>578</locationX>
+        <locationY>9350</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_NetTechDuringVisitWeDid__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_9_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_23_of_Assign_blank_Field</name>
+        <label>What happens next</label>
+        <locationX>578</locationX>
+        <locationY>9650</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_NetTechWhatHappensNext__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_10_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_24_of_Assign_blank_Field</name>
+        <label>Neighbour Location</label>
+        <locationX>578</locationX>
+        <locationY>9950</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_NeighborLocation__c//</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_25_of_Assign_blank_Field</name>
+        <label>Date</label>
+        <locationX>1106</locationX>
+        <locationY>2750</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Date__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_26_of_Assign_blank_Field</name>
+        <label>Leak Showing</label>
+        <locationX>1106</locationX>
+        <locationY>3050</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_LeakShowing__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_27_of_Assign_blank_Field</name>
+        <label>Single or joint</label>
+        <locationX>1106</locationX>
+        <locationY>3350</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_SingleOrJoint__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_3_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_28_of_Assign_blank_Field</name>
+        <label>Property Numbers</label>
+        <locationX>1106</locationX>
+        <locationY>3650</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_PropertyNumbersIfJoint__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_4_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_29_of_Assign_blank_Field</name>
+        <label>attention of Owner</label>
+        <locationX>1106</locationX>
+        <locationY>3950</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ProformaCustomerAddress__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_5_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_2_of_Assign_blank_Field</name>
+        <label>Copy 2 of Assign blank Field</label>
+        <locationX>50</locationX>
+        <locationY>1550</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_SuppInfoURL__c//</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_2_of_TelephoneAssign</name>
+        <label>Copy 2 of TelephoneAssign</label>
+        <locationX>1106</locationX>
+        <locationY>1850</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_Telephone2__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CustomerAdditional_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_30_of_Assign_blank_Field</name>
+        <label>Leak Responsibility Declaration</label>
+        <locationX>1106</locationX>
+        <locationY>4250</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_LeakResponsibilityDeclaration__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_9_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_34_of_Assign_blank_Field</name>
+        <label>Owner Address is different Check</label>
+        <locationX>1106</locationX>
+        <locationY>4550</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ProformaOwnerAddressIfDifferent__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_10_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_35_of_Assign_blank_Field</name>
+        <label>Description of Works</label>
+        <locationX>1106</locationX>
+        <locationY>4850</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ProformaDescriptionOfWork__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_14_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_39_of_Assign_blank_Field</name>
+        <label>Location of Works</label>
+        <locationX>1106</locationX>
+        <locationY>5150</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_Location__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_15_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_3_of_Customer_Additional_Email</name>
+        <label>Copy 3 of Customer Additional Email</label>
+        <locationX>1106</locationX>
+        <locationY>2450</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerEmail__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_40_of_Assign_blank_Field</name>
+        <label>Surface Type</label>
+        <locationX>1106</locationX>
+        <locationY>5450</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_SurfaceType__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_16_of_Blank_Check_prof</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_41_of_Assign_blank_Field</name>
+        <label>Other surface type</label>
+        <locationX>1106</locationX>
+        <locationY>5750</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_OtherSurfaceType__c//</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Customer_Additional_Email3</name>
+        <label>Customer Additional Email3</label>
+        <locationX>578</locationX>
+        <locationY>2450</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerEmail3__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Customer_Additional_Email4</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Customer_Additional_Email4</name>
+        <label>Customer Additional Email4</label>
+        <locationX>578</locationX>
+        <locationY>2750</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerEmail4__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Customer_Additional_Email5</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Customer_Additional_Email5</name>
+        <label>Customer Additional Email5</label>
+        <locationX>578</locationX>
+        <locationY>3050</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerEmail5__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_FieldWorker_Vyn_URL</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Customer_AdditionalEmail2</name>
+        <label>Customer Additional Email2</label>
+        <locationX>578</locationX>
+        <locationY>2150</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerEmail2__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Customer_Additional_Email3</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>CustomerAdditional_Email1</name>
+        <label>Customer Additional Email1</label>
+        <locationX>578</locationX>
+        <locationY>1850</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerEmail1__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Customer_Additional_Email2</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>CustomerAdditionalEmail</name>
+        <label>Customer Additional Email</label>
+        <locationX>1106</locationX>
+        <locationY>2150</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerEmail1__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Customer_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>FieldWorkerVyn_URL</name>
+        <label>FieldWorker Vyn URL</label>
+        <locationX>578</locationX>
+        <locationY>3350</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_FieldworkerVynUrl__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Operative_Contact_Number</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>FSM_Flow</name>
+        <label>Flow</label>
+        <locationX>578</locationX>
+        <locationY>3950</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_Flow__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Pressure</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>FSM_ManholeResponsibleCompanyOther</name>
+        <label>ManholeResponsibleCompanyOther</label>
+        <locationX>578</locationX>
+        <locationY>5750</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_ManholeResponsibleCompanyOther__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_10_of_Check_Fields_un_common</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>FSM_Pressure</name>
+        <label>Pressure</label>
+        <locationX>578</locationX>
+        <locationY>4250</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_Pressure__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Role</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>FSM_Role</name>
+        <label>Role</label>
+        <locationX>578</locationX>
+        <locationY>4550</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_FWRole__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Coordinator_Contact_Number</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>identified_thatmanholecovers</name>
+        <label>identified that manholecovers</label>
+        <locationX>578</locationX>
+        <locationY>5450</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_IdentifiedManholeCovers__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_ManholeResponsibleCompanyOther</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>JobSummary</name>
+        <label>Job Summary</label>
+        <locationX>578</locationX>
+        <locationY>1250</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_JobSummary__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Supporting_Information</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>manholecover</name>
+        <label>manhole cover</label>
+        <locationX>578</locationX>
+        <locationY>5150</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_InspectedManholeCovers__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_identified_that_manhole_covers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Operative_ContactNumber</name>
+        <label>Operative Contact Number</label>
+        <locationX>578</locationX>
+        <locationY>3650</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_OperativeContactNumber__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Flow</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Supportingnformation</name>
+        <label>Supporting Information</label>
+        <locationX>578</locationX>
+        <locationY>1550</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_SuppInfoURL__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>check_Customer_Additional_Email1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>TelephoneAssign</name>
+        <label>TelephoneAssign</label>
+        <locationX>1106</locationX>
+        <locationY>1250</locationY>
+        <assignmentItems>
+            <assignToReference>BlankFields</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>FSM_CustomerTelephone__c//</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Check_Telephone</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Blank_Check_prof</name>
+        <label>Check Date</label>
+        <locationX>1238</locationX>
+        <locationY>2642</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Copy_25_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Blank Check Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Coordinator_Contact_Number</name>
+        <label>check Coordinator Contact Number</label>
+        <locationX>710</locationX>
+        <locationY>4742</locationY>
+        <defaultConnector>
+            <targetReference>check_manhole_cover</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Coordinator_Contact_Number</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustCoordinatorNumber__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Coordinator_ContactNumber</targetReference>
+            </connector>
+            <label>Coordinator Contact Number</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Customer_Additional_Email1</name>
+        <label>check Customer Additional Email1</label>
+        <locationX>710</locationX>
+        <locationY>1742</locationY>
+        <defaultConnector>
+            <targetReference>check_Customer_Additional_Email2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer_AdditionalEmail1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustomerEmail1__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CustomerAdditional_Email1</targetReference>
+            </connector>
+            <label>Customer Additional Email1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Customer_Additional_Email2</name>
+        <label>check Customer Additional Email2</label>
+        <locationX>710</locationX>
+        <locationY>2042</locationY>
+        <defaultConnector>
+            <targetReference>check_Customer_Additional_Email3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer_Additional_Email1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustomerEmail2__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Customer_AdditionalEmail2</targetReference>
+            </connector>
+            <label>Customer Additional Email1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Customer_Additional_Email3</name>
+        <label>check Customer Additional Email3</label>
+        <locationX>710</locationX>
+        <locationY>2342</locationY>
+        <defaultConnector>
+            <targetReference>check_Customer_Additional_Email4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Cust_Email_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustomerEmail3__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Customer_Additional_Email3</targetReference>
+            </connector>
+            <label>Copy 3 of Cust Email 1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Customer_Additional_Email4</name>
+        <label>check Customer Additional Email4</label>
+        <locationX>710</locationX>
+        <locationY>2642</locationY>
+        <defaultConnector>
+            <targetReference>check_Customer_Additional_Email5</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_Cust_Email_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustomerEmail4__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Customer_Additional_Email4</targetReference>
+            </connector>
+            <label>Copy 4 of Cust Email 1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Customer_Additional_Email5</name>
+        <label>check Customer Additional Email5</label>
+        <locationX>710</locationX>
+        <locationY>2942</locationY>
+        <defaultConnector>
+            <targetReference>check_FieldWorker_Vyn_URL</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer_AdditionalEmail5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustomerEmail5__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Customer_Additional_Email5</targetReference>
+            </connector>
+            <label>Customer Additional Email5</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Customer_Email</name>
+        <label>check Customer Email</label>
+        <locationX>1238</locationX>
+        <locationY>2342</locationY>
+        <defaultConnector>
+            <targetReference>Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer_Additional_Emai</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustomerEmail__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_3_of_Customer_Additional_Email</targetReference>
+            </connector>
+            <label>Customer Email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_Field_Job_Sum</name>
+        <label>Check Field Job Sum</label>
+        <locationX>182</locationX>
+        <locationY>1142</locationY>
+        <defaultConnector>
+            <targetReference>Check_Field_Supp_Info</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Job_Sum_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_JobSummary__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_blank_Field</targetReference>
+            </connector>
+            <label>Job Sum Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_Field_Supp_Info</name>
+        <label>Check Field Supp Info</label>
+        <locationX>182</locationX>
+        <locationY>1442</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Supp_Info_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_SuppInfoURL__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Supp Info Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_FieldWorker_Vyn_URL</name>
+        <label>check FieldWorker Vyn URL</label>
+        <locationX>710</locationX>
+        <locationY>3242</locationY>
+        <defaultConnector>
+            <targetReference>check_Operative_Contact_Number</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>FieldWorker_Vyn_URL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_FieldworkerVynUrl__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FieldWorkerVyn_URL</targetReference>
+            </connector>
+            <label>FieldWorker Vyn URL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Flow</name>
+        <label>check Flow</label>
+        <locationX>710</locationX>
+        <locationY>3842</locationY>
+        <defaultConnector>
+            <targetReference>check_Pressure</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Flow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_Flow__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FSM_Flow</targetReference>
+            </connector>
+            <label>Flow</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_identified_that_manhole_covers</name>
+        <label>Check identified that manhole covers</label>
+        <locationX>710</locationX>
+        <locationY>5342</locationY>
+        <defaultConnector>
+            <targetReference>check_ManholeResponsibleCompanyOther</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>identified_that_manhole_covers</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_IdentifiedManholeCovers__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>identified_thatmanholecovers</targetReference>
+            </connector>
+            <label>identified that manhole covers</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Job_Summary</name>
+        <label>check Job Summary</label>
+        <locationX>710</locationX>
+        <locationY>1142</locationY>
+        <defaultConnector>
+            <targetReference>check_Supporting_Information</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Job_Summary</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_JobSummary__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>JobSummary</targetReference>
+            </connector>
+            <label>Job Summary</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_manhole_cover</name>
+        <label>check manhole cover</label>
+        <locationX>710</locationX>
+        <locationY>5042</locationY>
+        <defaultConnector>
+            <targetReference>Check_identified_that_manhole_covers</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>manhole_cover</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_InspectedManholeCovers__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>manholecover</targetReference>
+            </connector>
+            <label>manhole cover</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_ManholeResponsibleCompanyOther</name>
+        <label>check ManholeResponsibleCompanyOther</label>
+        <locationX>710</locationX>
+        <locationY>5642</locationY>
+        <defaultConnector>
+            <targetReference>Copy_10_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>FSM_eResponsibleCompanyOther</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ManholeResponsibleCompanyOther__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FSM_ManholeResponsibleCompanyOther</targetReference>
+            </connector>
+            <label>ResponsibleCompanyOther</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Operative_Contact_Number</name>
+        <label>check Operative Contact Number</label>
+        <locationX>710</locationX>
+        <locationY>3542</locationY>
+        <defaultConnector>
+            <targetReference>check_Flow</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Operative_Contact_Number</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_OperativeContactNumber__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Operative_ContactNumber</targetReference>
+            </connector>
+            <label>Operative Contact Number</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Pressure</name>
+        <label>check Pressure</label>
+        <locationX>710</locationX>
+        <locationY>4142</locationY>
+        <defaultConnector>
+            <targetReference>check_Role</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Pressure</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_Pressure__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FSM_Pressure</targetReference>
+            </connector>
+            <label>Pressure</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Role</name>
+        <label>check Role</label>
+        <locationX>710</locationX>
+        <locationY>4442</locationY>
+        <defaultConnector>
+            <targetReference>check_Coordinator_Contact_Number</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Role</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_FWRole__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FSM_Role</targetReference>
+            </connector>
+            <label>Role</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>check_Supporting_Information</name>
+        <label>check Supporting Information</label>
+        <locationX>710</locationX>
+        <locationY>1442</locationY>
+        <defaultConnector>
+            <targetReference>check_Customer_Additional_Email1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Supporting_Information</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_SuppInfoURL__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Supportingnformation</targetReference>
+            </connector>
+            <label>Supporting Information</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_Telephone</name>
+        <label>Check Telephone</label>
+        <locationX>1238</locationX>
+        <locationY>1142</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Check_Telephone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Telephone_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CustTelephone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>TelephoneAssign</targetReference>
+            </connector>
+            <label>Telephone Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_Type</name>
+        <label>Check Type</label>
+        <locationX>710</locationX>
+        <locationY>1034</locationY>
+        <defaultConnector>
+            <targetReference>Check_Telephone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Proforma</defaultConnectorLabel>
+        <rules>
+            <name>Metering</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Metering</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Field_Job_Sum</targetReference>
+            </connector>
+            <label>Metering</label>
+        </rules>
+        <rules>
+            <name>Leaflet</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Leaflet</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>check_Job_Summary</targetReference>
+            </connector>
+            <label>Leaflet</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_type_not_Leaflet</name>
+        <label>Check type not Leaflet</label>
+        <locationX>710</locationX>
+        <locationY>434</locationY>
+        <defaultConnector>
+            <targetReference>Check_type_not_Proforma</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Defalut</defaultConnectorLabel>
+        <rules>
+            <name>Not_Leaflet</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Leaflet</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Leaflet_only_fields_Blank</targetReference>
+            </connector>
+            <label>Not Leaflet</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_type_not_Metering</name>
+        <label>Check type not Metering</label>
+        <locationX>710</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>Check_type_not_Leaflet</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Defalut</defaultConnectorLabel>
+        <rules>
+            <name>Not_Metering</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Metering</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Metering_only_fields_Blank</targetReference>
+            </connector>
+            <label>Not Metering</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Check_type_not_Proforma</name>
+        <label>Check type not Proforma</label>
+        <locationX>710</locationX>
+        <locationY>734</locationY>
+        <defaultConnector>
+            <targetReference>Check_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Defalut</defaultConnectorLabel>
+        <rules>
+            <name>Not_Proforma</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Proforma</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Proforma_only_fields_Blank</targetReference>
+            </connector>
+            <label>Not Proforma</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_10_of_Blank_Check_prof</name>
+        <label>check Description of Works</label>
+        <locationX>1238</locationX>
+        <locationY>4742</locationY>
+        <defaultConnector>
+            <targetReference>Copy_14_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_10_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ProformaDescriptionOfWork__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_35_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Description of Works</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_10_of_Check_Fields_un_common</name>
+        <label>Check ManholeDuringvisit</label>
+        <locationX>710</locationX>
+        <locationY>5942</locationY>
+        <defaultConnector>
+            <targetReference>Copy_11_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_10_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ManholeDuringVisitWeDid__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Copy_12_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>ManholeDuringvisit</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_10_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>Check Neighbour Location</label>
+        <locationX>710</locationX>
+        <locationY>9842</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_10_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_NeighborLocation__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_24_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Neighbour Location</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_11_of_Check_Fields_un_common</name>
+        <label>check Other Action Performed</label>
+        <locationX>710</locationX>
+        <locationY>6242</locationY>
+        <defaultConnector>
+            <targetReference>Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_11_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ActionPerformedOther__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_13_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Other Action Performed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_12_of_Check_Fields_un_common</name>
+        <label>check what happens next</label>
+        <locationX>710</locationX>
+        <locationY>6542</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ManholeWhatHappensNext__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_14_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>what happens next</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_14_of_Blank_Check_prof</name>
+        <label>check Location of Works</label>
+        <locationX>1238</locationX>
+        <locationY>5042</locationY>
+        <defaultConnector>
+            <targetReference>Copy_15_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_14_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_Location__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_39_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Location of Works</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_15_of_Blank_Check_prof</name>
+        <label>check Surface Type</label>
+        <locationX>1238</locationX>
+        <locationY>5342</locationY>
+        <defaultConnector>
+            <targetReference>Copy_16_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_15_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_SurfaceType__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_40_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Surface Type</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_16_of_Blank_Check_prof</name>
+        <label>check Other surface type</label>
+        <locationX>1238</locationX>
+        <locationY>5642</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_16_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_OtherSurfaceType__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_41_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Other surface type</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_1_of_Blank_Check_prof</name>
+        <label>Check Leak Showing</label>
+        <locationX>1238</locationX>
+        <locationY>2942</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_LeakShowing__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_26_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Leak Showing</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_1_of_Check_Telephone</name>
+        <label>Copy 1 of Check Telephone</label>
+        <locationX>1238</locationX>
+        <locationY>1442</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Check_Telephone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Telephone_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Telephone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_TelephoneAssign</targetReference>
+            </connector>
+            <label>Copy 1 of Telephone Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_1_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>check Additional Information</label>
+        <locationX>710</locationX>
+        <locationY>6842</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ManholeAdditionalInfo__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_15_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Additional Information</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_1_of_Copy_6_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>Copy 1 of Copy 6 of Copy 12 of Check Fields un common</label>
+        <locationX>710</locationX>
+        <locationY>8642</locationY>
+        <defaultConnector>
+            <targetReference>Copy_7_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Copy_6_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_NetTechDuringVisitWeFound__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_20_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Copy 1 of Copy 6 of Copy 12 of Uncomom Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_2_of_Blank_Check_prof</name>
+        <label>check Single or joint</label>
+        <locationX>1238</locationX>
+        <locationY>3242</locationY>
+        <defaultConnector>
+            <targetReference>Copy_3_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_SingleOrJoint__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_27_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Single or joint</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_2_of_Check_Telephone</name>
+        <label>Copy 2 of Check Telephone</label>
+        <locationX>1238</locationX>
+        <locationY>1742</locationY>
+        <defaultConnector>
+            <targetReference>CustomerAdditional_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Telephone_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Telephone2</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_TelephoneAssign</targetReference>
+            </connector>
+            <label>Copy 2 of Telephone Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_2_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>check after receiving report</label>
+        <locationX>710</locationX>
+        <locationY>7142</locationY>
+        <defaultConnector>
+            <targetReference>Copy_3_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_WasteWeVisitedAfterReportOf__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_16_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>after receiving report</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_3_of_Blank_Check_prof</name>
+        <label>check Property Numbers</label>
+        <locationX>1238</locationX>
+        <locationY>3542</locationY>
+        <defaultConnector>
+            <targetReference>Copy_4_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_PropertyNumbersIfJoint__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_28_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Property Numbers</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_3_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>check During our visit</label>
+        <locationX>710</locationX>
+        <locationY>7442</locationY>
+        <defaultConnector>
+            <targetReference>Copy_4_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_WasteDuringVisitWeFound__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_17_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>During our visit</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_4_of_Blank_Check_prof</name>
+        <label>check attention of Owner</label>
+        <locationX>1238</locationX>
+        <locationY>3842</locationY>
+        <defaultConnector>
+            <targetReference>Copy_5_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ProformaCustomerAddress__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_29_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>attention of Owner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_4_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>Check No Access to Location Reason</label>
+        <locationX>710</locationX>
+        <locationY>7742</locationY>
+        <defaultConnector>
+            <targetReference>Copy_5_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_NoLocationAccessReason__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_18_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>No Access to Location Reason</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_5_of_Blank_Check_prof</name>
+        <label>Check Leak Responsibility Declaration</label>
+        <locationX>1238</locationX>
+        <locationY>4142</locationY>
+        <defaultConnector>
+            <targetReference>Copy_9_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_5_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_LeakResponsibilityDeclaration__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_30_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Leak Responsibility Declaration</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_5_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>Check During visit</label>
+        <locationX>710</locationX>
+        <locationY>8042</locationY>
+        <defaultConnector>
+            <targetReference>Copy_6_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_5_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_WasteDuringVisitWeDid__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_19_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>During visit</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_6_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>check Additional Information</label>
+        <locationX>710</locationX>
+        <locationY>8342</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Copy_6_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_6_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_WasteAdditionalInfo__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_20_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Copy 6 of Copy 12 of Uncomom Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_7_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>check No Access to location Reason</label>
+        <locationX>710</locationX>
+        <locationY>8942</locationY>
+        <defaultConnector>
+            <targetReference>Copy_8_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_7_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_NetTechNoLocationAccessReason__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_21_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>No Access to location Reason</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_8_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>Copy 8 of Copy 12 of Check Fields un common</label>
+        <locationX>710</locationX>
+        <locationY>9242</locationY>
+        <defaultConnector>
+            <targetReference>Copy_9_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_8_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_NetTechDuringVisitWeDid__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_22_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Copy 8 of Copy 12 of Uncomom Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_9_of_Blank_Check_prof</name>
+        <label>check Owner Address is different</label>
+        <locationX>1238</locationX>
+        <locationY>4442</locationY>
+        <defaultConnector>
+            <targetReference>Copy_10_of_Blank_Check_prof</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_9_of_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_ProformaOwnerAddressIfDifferent__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_34_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>Owner Address is different Check</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Copy_9_of_Copy_12_of_Check_Fields_un_common</name>
+        <label>Check What happens next</label>
+        <locationX>710</locationX>
+        <locationY>9542</locationY>
+        <defaultConnector>
+            <targetReference>Copy_10_of_Copy_12_of_Check_Fields_un_common</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_9_of_Copy_12_of_Uncomom_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_NetTechWhatHappensNext__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_23_of_Assign_blank_Field</targetReference>
+            </connector>
+            <label>What happens next</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>CustomerAdditional_Email</name>
+        <label>check Customer_Additional_Email</label>
+        <locationX>1238</locationX>
+        <locationY>2042</locationY>
+        <defaultConnector>
+            <targetReference>check_Customer_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer_Additional_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SASingleRecordVar.FSM_CustomerEmail1__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CustomerAdditionalEmail</targetReference>
+            </connector>
+            <label>Customer Additional Email</label>
+        </rules>
+    </decisions>
+    <description>SFS-8264 and SFS-8263</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM_ProformaLeafletVariableAssignmentBlankSubFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
+    <label>FSM_ProformaLeafletVariableAssignmentBlankSubFlow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <start>
+        <locationX>584</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_type_not_Metering</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>CollectBlankFieldsLeaflet</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>FSM_FWRole__c//FSM_CustCoordinatorNumber__c//FSM_OperativeContactNumber__c//FSM_FieldworkerVynUrl__c//FSM_CustCoordinatorNumber__c//FSM_Flow__c//FSM_Pressure__c//FSM_InspectedManholeCovers__c//FSM_IdentifiedManholeCovers__c//FSM_ManholeResponsibleCompanyOther__c//FSM_ManholeDuringVisitWeDid__c//FSM_ActionPerformedOther__c//FSM_ManholeWhatHappensNext__c//FSM_ManholeAdditionalInfo__c//FSM_WasteWeVisitedAfterReportOf__c//FSM_WasteDuringVisitWeFound__c//FSM_NoLocationAccessReason__c//FSM_NeighborLocation__c//FSM_CustomerEmail2__c//FSM_CustomerEmail3__c//FSM_CustomerEmail4__c//FSM_CustomerEmail5__c//</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>CollectBlankFieldsMetering</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>FSM_CustOldMtrSerialNo__c//FSM_CustNewMtrSerialNo__c//FSM_CustNewMtrReading__c//FSM_ReasonForMaintenance__c//FSM_CustMeterLocation__c//FSM_CustLocation__c//FSM_ReasonForVisit__c//FSM_JobFeedbackMtrReading__c//</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>CollectBlankFieldsProforma</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>FSM_ProformaAction__c//Date__c//FSM_LeakShowing__c//FSM_SingleOrJoint__c//FSM_PropertyNumbersIfJoint__c//FSM_ProformaCustomerAddress__c//FSM_LeakResponsibilityDeclaration__c//FSM_CustomerTelephone__c//FSM_Telephone__c//FSM_Telephone2__c//FSM_ProformaOwnerAddressIfDifferent__c//FSM_ProformaDescriptionOfWork__c//FSM_Location__c//FSM_SurfaceType__c//FSM_OtherSurfaceType__c//</text>
+    </textTemplates>
+    <variables>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>BlankFields</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>SFS-8264</description>
+        <name>CustTelephone</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>SFS-8264 and SFS-8263</description>
+        <name>SASingleRecordVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+    <variables>
+        <description>SFS-8264</description>
+        <name>Telephone</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>SFS-8264</description>
+        <name>Telephone2</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>SFS-8263 and SFS-8264</description>
+        <name>Type</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,22 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+<aura:html tag="style">             
+    .slds-modal__container{        
+    width: 50% !important;
+    height: 100% !important;
+    max-width: 100rem !important;
+    } 
+    .slds-modal__header{
+        display:none !important;
+
+    }
+
+    <!-- .slds-modal__footer {
+        display:none !important;
+    }        -->
+</aura:html>
+
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+
+<c:productItemsList recordId="{!v.recordId}"></c:productItemsList>
+</aura:component>

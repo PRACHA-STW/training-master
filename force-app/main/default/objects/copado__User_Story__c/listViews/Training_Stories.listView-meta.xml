@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Stories</fullName>
+    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Jira_Key__c</columns>
+    <columns>copado__Project__c</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <columns>copado__Sprint__c</columns>
+    <columns>copado__Environment__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>copado__Base_Branch__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>PDS_Destructive__c</columns>
+    <columns>Next_Environment__c</columns>
+    <columns>Deployed_To__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Next_Environment__c</field>
+        <operation>equals</operation>
+        <value>FOR SIT</value>
+    </filters>
+    <filters>
+        <field>Next_Environment__c</field>
+        <operation>contains</operation>
+        <value>InSitPkg</value>
+    </filters>
+    <filters>
+        <field>Next_Environment__c</field>
+        <operation>contains</operation>
+        <value>NOSitPkg</value>
+    </filters>
+    <label>Training Stories</label>
+</ListView>

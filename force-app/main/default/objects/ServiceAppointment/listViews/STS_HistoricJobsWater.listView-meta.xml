@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>STS_HistoricJobsWater</fullName>
+    <columns>FSM_IconForWaterInfra__c</columns>
+    <columns>Status</columns>
+    <columns>FSM_AllocatedJob__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Rejected,Cannot Complete,Completed</value>
+    </filters>
+    <filters>
+        <field>SchedStartTime</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:7</value>
+    </filters>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>contains</operation>
+        <value>Water Infra</value>
+    </filters>
+    <filters>
+        <field>FSM_AssignedtoCurrentResource__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>WATER1 STS - Historic Jobs</label>
+    <sharedTo>
+        <group>FSM_FW_WaterInfra</group>
+    </sharedTo>
+</ListView>

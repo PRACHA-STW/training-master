@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Non Productive Category --></label>
+    <name>FSM_NonProductiveCategory__c</name>
+    <picklistValues>
+        <masterLabel>Health &amp; Safety</masterLabel>
+        <translation><!-- Health &amp; Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preparation</masterLabel>
+        <translation><!-- Preparation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party</masterLabel>
+        <translation><!-- Third Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tools/Plant/Vehicle</masterLabel>
+        <translation><!-- Tools/Plant/Vehicle --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

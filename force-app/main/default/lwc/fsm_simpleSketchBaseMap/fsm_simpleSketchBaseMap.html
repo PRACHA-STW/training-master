@@ -1,0 +1,108 @@
+<template> 
+    <div class="fileUploader">
+        <!-- base map layer--> 
+        <lightning-card style="width:50%;height:50%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Base map
+            </h3>
+            <lightning-input
+                type="file"
+                accept="image/*"
+                label="&zwnj;"
+                variant="label-hidden"
+                onchange={handlebaseFilesSelected}>
+            </lightning-input>
+            <img data-id="prev-image" src={imageData.data} if:true={isEditor} style="width:50%; height:300px;" /> 
+
+        </lightning-card>
+        
+        <!-- sketch icons-->
+        <lightning-card style="width:50%;height:100%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Sketch Icons
+            </h3>
+            <h4 class="Icons-font">(These icons will be populated on base map and should indicate setup & TMA)</h4>
+
+            <div>
+                <lightning-input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    variant="label-hidden"
+                    label="&zwnj;"
+                    onchange={handlesketchFilesSelected}>
+                </lightning-input>
+                <div class="selected-icons">
+                <!-- Selected Images Preview -->            
+                <template for:each={sketchImageData} for:item="item">
+                  
+                       <div key={item.id}  class="selected-icons">
+                         <div class="delete-icon" onclick={handleDeletesketchiconsClick} data-id={item.id} >
+                           
+                            <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" size="x-small"></lightning-icon>
+                        </div>  
+                       
+                        <img data-id={item.id} src={item.data} />
+                    </div>
+               
+                </template>                 
+            </div>
+        </div>
+        </lightning-card>
+
+         <!-- Site icons-->
+         <lightning-card style="width:50%;height:100%;">
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Inform Icons
+            </h3>
+
+            <div>
+                <lightning-input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    label="&zwnj;"
+                    variant="label-hidden"
+                    onchange={handledraggableFilesSelected}>
+                </lightning-input>
+                <div class="selected-icons">
+                <!-- Selected Images Preview -->            
+                <template for:each={draggableImageData} for:item="item">
+                    <div key={item.id} class="selected-icons">
+                        <div class="delete-icon" onclick={handleDeletesiteiconsClick} data-id={item.id}>
+                            <!-- Add your delete icon here (e.g., X or trash can icon) -->
+                            <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" size="x-small"></lightning-icon>
+                        </div>
+                        
+                        <img data-id={item.id} src={item.data}/>
+                    </div>
+                </template>                 
+            </div>
+            </div>
+        </lightning-card>
+
+
+
+
+    </div>
+    <lightning-card>
+        <div class="section footer ">
+            <div class="footer-content slds-grid slds-var-p-around_small">
+                <button
+                onclick={handlePrevious}
+                type="button"
+                class="slds-button slds-button_outline-brand slds-col slds-button_stretch">
+                <label>Previous</label></button>
+                <button
+                    onclick={handleNext}
+                    type="button"
+                    class="slds-button slds-button_outline-brand slds-col slds-button_stretch">
+                    <label>Next</label></button>&nbsp;&nbsp;
+                   
+            </div>
+        </div> 
+    </lightning-card>
+</template>

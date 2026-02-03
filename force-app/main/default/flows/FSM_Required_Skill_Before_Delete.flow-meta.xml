@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Copy_1_of_Error</name>
+        <label>Copy 1 of Error</label>
+        <locationX>182</locationX>
+        <locationY>695</locationY>
+        <customErrorMessages>
+            <errorMessage>Deletion of Skill Requirements is not permitted</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Error</name>
+        <label>Error</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <connector>
+            <targetReference>Copy_1_of_Check_Profile</targetReference>
+        </connector>
+        <customErrorMessages>
+            <errorMessage>This persona is not allowed to perform this operation on Required Skill object</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Check_Profile</name>
+        <label>Check Profile</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Check_Profile</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Dataloader</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FSM Dataloader</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error</targetReference>
+            </connector>
+            <label>If Dataloader</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>{!$Permission.FSM_RestrictSkillReqEdit }</description>
+        <name>Copy_1_of_Check_Profile</name>
+        <label>Copy 1 of Check Profile</label>
+        <locationX>182</locationX>
+        <locationY>587</locationY>
+        <defaultConnectorLabel>Admin user</defaultConnectorLabel>
+        <rules>
+            <name>Is_Busines_Admin_Scheduler_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.FSM_RestrictSkillReqEdit</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Skill.DeveloperName</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>P</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Is Busines Admin Scheduler User</label>
+        </rules>
+        <rules>
+            <name>Non_admin_user</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.FSM_AllowSkillReqDelete</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Error</targetReference>
+            </connector>
+            <label>Non-admin user</label>
+        </rules>
+    </decisions>
+    <description>SFS-6559
+Updated as part of SFS-7595
+Updated as part of SFL-433</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM Required Skill Before Delete {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Required Skill Before Delete</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Profile</targetReference>
+        </connector>
+        <object>SkillRequirement</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ValveOriginalHydrantReason__c</fullName>
+    <description>Created as part of SFS-8064</description>
+    <label>Reason Original Hydrant not flushed</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Parked cars</fullName>
+                <default>false</default>
+                <label>Parked cars</label>
+            </value>
+            <value>
+                <fullName>Behind locked gates</fullName>
+                <default>false</default>
+                <label>Behind locked gates</label>
+            </value>
+            <value>
+                <fullName>Unsafe</fullName>
+                <default>false</default>
+                <label>Unsafe</label>
+            </value>
+            <value>
+                <fullName>Unable to locate asset</fullName>
+                <default>false</default>
+                <label>Unable to locate asset</label>
+            </value>
+            <value>
+                <fullName>Poor drainage</fullName>
+                <default>false</default>
+                <label>Poor drainage</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MTRFWRJobType__c</fullName>
+    <label>Job Type (Work Type Code)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FSM_MTRFWRTask__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SWDB</fullName>
+                <default>false</default>
+                <label>Band 10 SWD Check C4 H1</label>
+            </value>
+            <value>
+                <fullName>CLCW</fullName>
+                <default>false</default>
+                <label>Complaint - Low Consumption</label>
+            </value>
+            <value>
+                <fullName>CACR</fullName>
+                <default>false</default>
+                <label>Complaints - Ad Hoc Check Reading</label>
+            </value>
+            <value>
+                <fullName>CFCC</fullName>
+                <default>false</default>
+                <label>Complaints - Foul Connection Check</label>
+            </value>
+            <value>
+                <fullName>CSAS</fullName>
+                <default>false</default>
+                <label>Complaints - HD Site Area &amp; SWD Check</label>
+            </value>
+            <value>
+                <fullName>CSAM</fullName>
+                <default>false</default>
+                <label>Complaints - HD Site Area Measurement</label>
+            </value>
+            <value>
+                <fullName>CHCW</fullName>
+                <default>false</default>
+                <label>Complaints - High Consumption</label>
+            </value>
+            <value>
+                <fullName>CHWW</fullName>
+                <default>false</default>
+                <label>Complaints - How &amp; What is Supplied</label>
+            </value>
+            <value>
+                <fullName>CINF</fullName>
+                <default>false</default>
+                <label>Complaints - Initial Final Reading</label>
+            </value>
+            <value>
+                <fullName>CLOC</fullName>
+                <default>false</default>
+                <label>Complaints - Low Consumption</label>
+            </value>
+            <value>
+                <fullName>CMEX</fullName>
+                <default>false</default>
+                <label>Complaints - Meter Exchange</label>
+            </value>
+            <value>
+                <fullName>COWC</fullName>
+                <default>false</default>
+                <label>Complaints - Other Water Company</label>
+            </value>
+            <value>
+                <fullName>CSLM</fullName>
+                <default>false</default>
+                <label>Complaints - Show Location of Meter</label>
+            </value>
+            <value>
+                <fullName>CSUA</fullName>
+                <default>false</default>
+                <label>Complaints - Sub Alt Check</label>
+            </value>
+            <value>
+                <fullName>CSWD</fullName>
+                <default>false</default>
+                <label>Complaints - SWD Check</label>
+            </value>
+            <value>
+                <fullName>CTED</fullName>
+                <default>false</default>
+                <label>Complaints - Temporary Disconnections</label>
+            </value>
+            <value>
+                <fullName>CTRS</fullName>
+                <default>false</default>
+                <label>Complaints - Trace Supply</label>
+            </value>
+            <value>
+                <fullName>CUNB</fullName>
+                <default>false</default>
+                <label>Complaints - Unbilled</label>
+            </value>
+            <value>
+                <fullName>CVOI</fullName>
+                <default>false</default>
+                <label>Complaints - Void</label>
+            </value>
+            <value>
+                <fullName>CWEC</fullName>
+                <default>false</default>
+                <label>Complaints - Water Efficiency Check</label>
+            </value>
+            <value>
+                <fullName>CMQN</fullName>
+                <default>false</default>
+                <label>Customer Metering Query Non HH C1 H5</label>
+            </value>
+            <value>
+                <fullName>GAPS</fullName>
+                <default>false</default>
+                <label>Gap Site Non Household Sewerage C2 C3</label>
+            </value>
+            <value>
+                <fullName>GAPW</fullName>
+                <default>false</default>
+                <label>Gap Site Non Household Water C2 C3</label>
+            </value>
+            <value>
+                <fullName>ACRD</fullName>
+                <default>false</default>
+                <label>HH - Ad Hoc Check Reading</label>
+            </value>
+            <value>
+                <fullName>FCOC</fullName>
+                <default>false</default>
+                <label>HH - Foul Connection Check</label>
+            </value>
+            <value>
+                <fullName>SASC</fullName>
+                <default>false</default>
+                <label>HH - HD Site Area &amp; SWD Check</label>
+            </value>
+            <value>
+                <fullName>SARM</fullName>
+                <default>false</default>
+                <label>HH - HD Site Area Measurement</label>
+            </value>
+            <value>
+                <fullName>HCWE</fullName>
+                <default>false</default>
+                <label>HH - High Consumption</label>
+            </value>
+            <value>
+                <fullName>HWSW</fullName>
+                <default>false</default>
+                <label>HH - How &amp; What is Supplied</label>
+            </value>
+            <value>
+                <fullName>INFR</fullName>
+                <default>false</default>
+                <label>HH - Initial Final Reading</label>
+            </value>
+            <value>
+                <fullName>LOCO</fullName>
+                <default>false</default>
+                <label>HH - Low Consumption</label>
+            </value>
+            <value>
+                <fullName>MEEX</fullName>
+                <default>false</default>
+                <label>HH - Meter Exchange</label>
+            </value>
+            <value>
+                <fullName>OWCO</fullName>
+                <default>false</default>
+                <label>HH - Other Water Company</label>
+            </value>
+            <value>
+                <fullName>SLOM</fullName>
+                <default>false</default>
+                <label>HH - Show Location of Meter</label>
+            </value>
+            <value>
+                <fullName>SUAC</fullName>
+                <default>false</default>
+                <label>HH - Sub Alt Check</label>
+            </value>
+            <value>
+                <fullName>SWCH</fullName>
+                <default>false</default>
+                <label>HH - SWD Check</label>
+            </value>
+            <value>
+                <fullName>TEDI</fullName>
+                <default>false</default>
+                <label>HH - Temporary Disconnections</label>
+            </value>
+            <value>
+                <fullName>TRSU</fullName>
+                <default>false</default>
+                <label>HH - Trace Supply</label>
+            </value>
+            <value>
+                <fullName>UNBL</fullName>
+                <default>false</default>
+                <label>HH - Unbilled</label>
+            </value>
+            <value>
+                <fullName>PVOI</fullName>
+                <default>false</default>
+                <label>HH - Void</label>
+            </value>
+            <value>
+                <fullName>WECH</fullName>
+                <default>false</default>
+                <label>HH - Water Efficiency Check</label>
+            </value>
+            <value>
+                <fullName>SACH</fullName>
+                <default>false</default>
+                <label>Site Area Check Non Household C4 H1 H5</label>
+            </value>
+            <value>
+                <fullName>SSWD</fullName>
+                <default>false</default>
+                <label>Site Area Check SWD Non HH C4 H1 H5</label>
+            </value>
+            <value>
+                <fullName>SUBS</fullName>
+                <default>false</default>
+                <label>Sub Alt Check Non HH Sewerage C1 C4 H1</label>
+            </value>
+            <value>
+                <fullName>SUBW</fullName>
+                <default>false</default>
+                <label>Sub Alt Check Non HH Water C1 C4 H1</label>
+            </value>
+            <value>
+                <fullName>SWDC</fullName>
+                <default>false</default>
+                <label>SWD Check Non Household C4 C5 C6 H1</label>
+            </value>
+            <value>
+                <fullName>SWDF</fullName>
+                <default>false</default>
+                <label>SWD Foul Check Non Household C4 C5 C6 H1</label>
+            </value>
+            <value>
+                <fullName>C1WM</fullName>
+                <default>false</default>
+                <label>C1W - MEASURED Supply Meter Verification</label>
+            </value>
+            <value>
+                <fullName>C1WU</fullName>
+                <default>false</default>
+                <label>C1W - UNMEASURED Supply Verification</label>
+            </value>
+            <value>
+                <fullName>CLER</fullName>
+                <default>false</default>
+                <label>Complaint - Low Consumption &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CLET</fullName>
+                <default>false</default>
+                <label>Complaint - Low Consumption &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CAER</fullName>
+                <default>false</default>
+                <label>Complaints - Ad hoc Check Read &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CAET</fullName>
+                <default>false</default>
+                <label>Complaints - Ad hoc Check Read &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CACW</fullName>
+                <default>false</default>
+                <label>Complaints - Ad hoc Check Reading &amp; WE</label>
+            </value>
+            <value>
+                <fullName>CARR</fullName>
+                <default>false</default>
+                <label>Complaints - Ad Hoc Check Reading RG</label>
+            </value>
+            <value>
+                <fullName>CART</fullName>
+                <default>false</default>
+                <label>Complaints - Ad Hoc Check Reading TG</label>
+            </value>
+            <value>
+                <fullName>CFCW</fullName>
+                <default>false</default>
+                <label>Complaints - Foul Connection Check &amp; WE</label>
+            </value>
+            <value>
+                <fullName>CHCR</fullName>
+                <default>false</default>
+                <label>Complaints - High Consumption &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CHCT</fullName>
+                <default>false</default>
+                <label>Complaints - High Consumption &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CHWR</fullName>
+                <default>false</default>
+                <label>Complaints - How &amp; What is Suppl &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CHWT</fullName>
+                <default>false</default>
+                <label>Complaints - How &amp; What is Suppl &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CIRR</fullName>
+                <default>false</default>
+                <label>Complaints - Initial Final Read &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CIRT</fullName>
+                <default>false</default>
+                <label>Complaints - Initial Final Read &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CIFW</fullName>
+                <default>false</default>
+                <label>Complaints - Initial Final Reading &amp; WE</label>
+            </value>
+            <value>
+                <fullName>CIFR</fullName>
+                <default>false</default>
+                <label>Complaints - Initial Final Reading RG</label>
+            </value>
+            <value>
+                <fullName>CIFT</fullName>
+                <default>false</default>
+                <label>Complaints - Initial Final Reading TG</label>
+            </value>
+            <value>
+                <fullName>CLCR</fullName>
+                <default>false</default>
+                <label>Complaints - Low Consumption RG</label>
+            </value>
+            <value>
+                <fullName>CLCT</fullName>
+                <default>false</default>
+                <label>Complaints - Low Consumption TG</label>
+            </value>
+            <value>
+                <fullName>COWR</fullName>
+                <default>false</default>
+                <label>Complaints - Other Water Company RG</label>
+            </value>
+            <value>
+                <fullName>COWT</fullName>
+                <default>false</default>
+                <label>Complaints - Other Water Company TG</label>
+            </value>
+            <value>
+                <fullName>CMER</fullName>
+                <default>false</default>
+                <label>Complaints-  Show Loc. of Meter &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CMET</fullName>
+                <default>false</default>
+                <label>Complaints-  Show Loc. of Meter &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CSLW</fullName>
+                <default>false</default>
+                <label>Complaints-  Show Location of Meter &amp; WE</label>
+            </value>
+            <value>
+                <fullName>CSMR</fullName>
+                <default>false</default>
+                <label>Complaints - Show Location of Meter RG</label>
+            </value>
+            <value>
+                <fullName>CSMT</fullName>
+                <default>false</default>
+                <label>Complaints - Show Location of Meter TG</label>
+            </value>
+            <value>
+                <fullName>CSUW</fullName>
+                <default>false</default>
+                <label>Complaints - Sub Alt Check &amp; WE</label>
+            </value>
+            <value>
+                <fullName>CSER</fullName>
+                <default>false</default>
+                <label>Complaints - Sub Alt Check &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CSET</fullName>
+                <default>false</default>
+                <label>Complaints - Sub Alt Check &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CSCR</fullName>
+                <default>false</default>
+                <label>Complaints - Sub Alt Check RG</label>
+            </value>
+            <value>
+                <fullName>CSCT</fullName>
+                <default>false</default>
+                <label>Complaints - Sub Alt Check TG</label>
+            </value>
+            <value>
+                <fullName>CSWW</fullName>
+                <default>false</default>
+                <label>Complaints - SWD Check &amp; Water WE</label>
+            </value>
+            <value>
+                <fullName>CTDR</fullName>
+                <default>false</default>
+                <label>Complaints - Temporary Disconnections RG</label>
+            </value>
+            <value>
+                <fullName>CTDT</fullName>
+                <default>false</default>
+                <label>Complaints - Temporary Disconnections TG</label>
+            </value>
+            <value>
+                <fullName>CTSW</fullName>
+                <default>false</default>
+                <label>Complaints - Trace Supply &amp; WE</label>
+            </value>
+            <value>
+                <fullName>CTER</fullName>
+                <default>false</default>
+                <label>Complaints - Trace Supply &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CTET</fullName>
+                <default>false</default>
+                <label>Complaints - Trace Supply &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CTSR</fullName>
+                <default>false</default>
+                <label>Complaints - Trace Supply RG</label>
+            </value>
+            <value>
+                <fullName>CTST</fullName>
+                <default>false</default>
+                <label>Complaints - Trace Supply TG</label>
+            </value>
+            <value>
+                <fullName>CUNW</fullName>
+                <default>false</default>
+                <label>Complaints - Unbilled &amp; WE</label>
+            </value>
+            <value>
+                <fullName>CUER</fullName>
+                <default>false</default>
+                <label>Complaints - Unbilled &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>CUET</fullName>
+                <default>false</default>
+                <label>Complaints - Unbilled &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>CUBR</fullName>
+                <default>false</default>
+                <label>Complaints - Unbilled RG</label>
+            </value>
+            <value>
+                <fullName>CUBT</fullName>
+                <default>false</default>
+                <label>Complaints - Unbilled TG</label>
+            </value>
+            <value>
+                <fullName>CVOR</fullName>
+                <default>false</default>
+                <label>Complaints - Void RG</label>
+            </value>
+            <value>
+                <fullName>CVOT</fullName>
+                <default>false</default>
+                <label>Complaints - Void TG</label>
+            </value>
+            <value>
+                <fullName>CWER</fullName>
+                <default>false</default>
+                <label>Complaints - Water Efficiency Check RG</label>
+            </value>
+            <value>
+                <fullName>CWET</fullName>
+                <default>false</default>
+                <label>Complaints - Water Efficiency Check TG</label>
+            </value>
+            <value>
+                <fullName>ACRW</fullName>
+                <default>false</default>
+                <label>HH - Ad hoc Check Reading &amp; WE</label>
+            </value>
+            <value>
+                <fullName>ARER</fullName>
+                <default>false</default>
+                <label>HH - Ad hoc Check Reading &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>ARWT</fullName>
+                <default>false</default>
+                <label>HH - Ad hoc Check Reading &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>ACRR</fullName>
+                <default>false</default>
+                <label>HH - Ad Hoc Check Reading RG</label>
+            </value>
+            <value>
+                <fullName>ACRT</fullName>
+                <default>false</default>
+                <label>HH - Ad Hoc Check Reading TG</label>
+            </value>
+            <value>
+                <fullName>FCWE</fullName>
+                <default>false</default>
+                <label>HH - Foul Connection Check &amp; WE</label>
+            </value>
+            <value>
+                <fullName>HCER</fullName>
+                <default>false</default>
+                <label>HH - High Consumption &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>HCET</fullName>
+                <default>false</default>
+                <label>HH - High Consumption &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>HWSR</fullName>
+                <default>false</default>
+                <label>HH - How &amp; What is Supplied &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>HWST</fullName>
+                <default>false</default>
+                <label>HH - How &amp; What is Supplied &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>IFRW</fullName>
+                <default>false</default>
+                <label>HH - Initial Final Reading &amp; WE</label>
+            </value>
+            <value>
+                <fullName>IRER</fullName>
+                <default>false</default>
+                <label>HH - Initial Final Reading &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>IRET</fullName>
+                <default>false</default>
+                <label>HH - Initial Final Reading &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>IFRR</fullName>
+                <default>false</default>
+                <label>HH - Initial Final Reading RG</label>
+            </value>
+            <value>
+                <fullName>IFRT</fullName>
+                <default>false</default>
+                <label>HH - Initial Final Reading TG</label>
+            </value>
+            <value>
+                <fullName>LCWE</fullName>
+                <default>false</default>
+                <label>HH - Low Consumption &amp; WE</label>
+            </value>
+            <value>
+                <fullName>LCER</fullName>
+                <default>false</default>
+                <label>HH - Low Consumption &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>LCET</fullName>
+                <default>false</default>
+                <label>HH - Low Consumption &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>LOCR</fullName>
+                <default>false</default>
+                <label>HH - Low Consumption RG</label>
+            </value>
+            <value>
+                <fullName>LOCT</fullName>
+                <default>false</default>
+                <label>HH - Low Consumption TG</label>
+            </value>
+            <value>
+                <fullName>OWCR</fullName>
+                <default>false</default>
+                <label>HH - Other Water Company  RG</label>
+            </value>
+            <value>
+                <fullName>OWCT</fullName>
+                <default>false</default>
+                <label>HH - Other Water Company  TG</label>
+            </value>
+            <value>
+                <fullName>SLMW</fullName>
+                <default>false</default>
+                <label>HH - Show Location of Meter &amp; WE</label>
+            </value>
+            <value>
+                <fullName>SMER</fullName>
+                <default>false</default>
+                <label>HH - Show Location of Meter &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>SMET</fullName>
+                <default>false</default>
+                <label>HH - Show Location of Meter &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>SLMR</fullName>
+                <default>false</default>
+                <label>HH - Show Location of Meter RG</label>
+            </value>
+            <value>
+                <fullName>SLMT</fullName>
+                <default>false</default>
+                <label>HH - Show Location of Meter TG</label>
+            </value>
+            <value>
+                <fullName>SUWE</fullName>
+                <default>false</default>
+                <label>HH - Sub Alt Check &amp; WE</label>
+            </value>
+            <value>
+                <fullName>SUER</fullName>
+                <default>false</default>
+                <label>HH - Sub Alt Check &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>SUET</fullName>
+                <default>false</default>
+                <label>HH - Sub Alt Check &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>SACR</fullName>
+                <default>false</default>
+                <label>HH - Sub Alt Check RG</label>
+            </value>
+            <value>
+                <fullName>SUCT</fullName>
+                <default>false</default>
+                <label>HH - Sub Alt Check TG</label>
+            </value>
+            <value>
+                <fullName>SWWE</fullName>
+                <default>false</default>
+                <label>HH - SWD Check &amp; WE</label>
+            </value>
+            <value>
+                <fullName>TDIR</fullName>
+                <default>false</default>
+                <label>HH - Temporary Disconnections RG</label>
+            </value>
+            <value>
+                <fullName>TDIT</fullName>
+                <default>false</default>
+                <label>HH - Temporary Disconnections TG</label>
+            </value>
+            <value>
+                <fullName>TSWE</fullName>
+                <default>false</default>
+                <label>HH - Trace Supply &amp; WE</label>
+            </value>
+            <value>
+                <fullName>TSER</fullName>
+                <default>false</default>
+                <label>HH - Trace Supply &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>TSET</fullName>
+                <default>false</default>
+                <label>HH - Trace Supply &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>TRSR</fullName>
+                <default>false</default>
+                <label>HH - Trace Supply RG</label>
+            </value>
+            <value>
+                <fullName>TRST</fullName>
+                <default>false</default>
+                <label>HH - Trace Supply TG</label>
+            </value>
+            <value>
+                <fullName>UNWE</fullName>
+                <default>false</default>
+                <label>HH - Unbilled &amp; WE</label>
+            </value>
+            <value>
+                <fullName>UWER</fullName>
+                <default>false</default>
+                <label>HH - Unbilled &amp; WE RG</label>
+            </value>
+            <value>
+                <fullName>UWET</fullName>
+                <default>false</default>
+                <label>HH - Unbilled &amp; WE TG</label>
+            </value>
+            <value>
+                <fullName>UBLR</fullName>
+                <default>false</default>
+                <label>HH - Unbilled RG</label>
+            </value>
+            <value>
+                <fullName>UBLT</fullName>
+                <default>false</default>
+                <label>HH - Unbilled TG</label>
+            </value>
+            <value>
+                <fullName>VFFC</fullName>
+                <default>false</default>
+                <label>HH - VF Foul Connection Check</label>
+            </value>
+            <value>
+                <fullName>VFHC</fullName>
+                <default>false</default>
+                <label>HH - VF High Consumption &amp; WE</label>
+            </value>
+            <value>
+                <fullName>VFPS</fullName>
+                <default>false</default>
+                <label>HH - VF How Property Supplied</label>
+            </value>
+            <value>
+                <fullName>VFLC</fullName>
+                <default>false</default>
+                <label>HH - VF Low Consumption</label>
+            </value>
+            <value>
+                <fullName>VFML</fullName>
+                <default>false</default>
+                <label>HH - VF Show Location of Meter</label>
+            </value>
+            <value>
+                <fullName>VFSC</fullName>
+                <default>false</default>
+                <label>HH - VF SWD Check</label>
+            </value>
+            <value>
+                <fullName>VFTS</fullName>
+                <default>false</default>
+                <label>HH - VF Trace Supply</label>
+            </value>
+            <value>
+                <fullName>PVOR</fullName>
+                <default>false</default>
+                <label>HH - Void RG</label>
+            </value>
+            <value>
+                <fullName>PVOT</fullName>
+                <default>false</default>
+                <label>HH - Void TG</label>
+            </value>
+            <value>
+                <fullName>WECR</fullName>
+                <default>false</default>
+                <label>HH - Water Efficiency Check RG</label>
+            </value>
+            <value>
+                <fullName>WECT</fullName>
+                <default>false</default>
+                <label>HH - Water Efficiency Check TG</label>
+            </value>
+            <value>
+                <fullName>INST</fullName>
+                <default>false</default>
+                <label>NHH B1.R - Meter Installation</label>
+            </value>
+            <value>
+                <fullName>LWCM</fullName>
+                <default>false</default>
+                <label>NHH B10.W - Wholesaler Change Large Metr</label>
+            </value>
+            <value>
+                <fullName>SWCM</fullName>
+                <default>false</default>
+                <label>NHH B10.W - Wholesaler Change Small Metr</label>
+            </value>
+            <value>
+                <fullName>NMRD</fullName>
+                <default>false</default>
+                <label>NHH B11.R - Non-Market Meter Read Reques</label>
+            </value>
+            <value>
+                <fullName>LACT</fullName>
+                <default>false</default>
+                <label>NHH B3.R - Large Meter Accuracy Test</label>
+            </value>
+            <value>
+                <fullName>SACT</fullName>
+                <default>false</default>
+                <label>NHH B3.R - Small Meter Accuracy Test</label>
+            </value>
+            <value>
+                <fullName>WLAC</fullName>
+                <default>false</default>
+                <label>NHH B3.W - Large Meter Accuracy Test</label>
+            </value>
+            <value>
+                <fullName>WSAC</fullName>
+                <default>false</default>
+                <label>NHH B3.W - Small Meter Accuracy Test</label>
+            </value>
+            <value>
+                <fullName>LMLK</fullName>
+                <default>false</default>
+                <label>NHH B5.R - Large Meter Burst / Leak</label>
+            </value>
+            <value>
+                <fullName>LREP</fullName>
+                <default>false</default>
+                <label>NHH B5.R - Large Meter Repair or Replace</label>
+            </value>
+            <value>
+                <fullName>SMLK</fullName>
+                <default>false</default>
+                <label>NHH B5.R - Small Meter Burst / Leak</label>
+            </value>
+            <value>
+                <fullName>SREP</fullName>
+                <default>false</default>
+                <label>NHH B5.R - Small Meter Repair or Replace</label>
+            </value>
+            <value>
+                <fullName>WLML</fullName>
+                <default>false</default>
+                <label>NHH B5.W - Large Meter Burst / Leak</label>
+            </value>
+            <value>
+                <fullName>WLRE</fullName>
+                <default>false</default>
+                <label>NHH B5.W - Large Meter Repair or Replace</label>
+            </value>
+            <value>
+                <fullName>WSML</fullName>
+                <default>false</default>
+                <label>NHH B5.W - Small Meter Burst / Leak</label>
+            </value>
+            <value>
+                <fullName>WSRE</fullName>
+                <default>false</default>
+                <label>NHH B5.W - Small Meter Repair or Replace</label>
+            </value>
+            <value>
+                <fullName>LCHG</fullName>
+                <default>false</default>
+                <label>NHH B7.R - Large Change of Meter</label>
+            </value>
+            <value>
+                <fullName>SCHG</fullName>
+                <default>false</default>
+                <label>NHH B7.R - Small Change of Meter</label>
+            </value>
+            <value>
+                <fullName>SRCS</fullName>
+                <default>false</default>
+                <label>Search Non HH Sewerage C1 C5 C6 H5</label>
+            </value>
+            <value>
+                <fullName>SRCW</fullName>
+                <default>false</default>
+                <label>Search Non HH Water C1 C5 C6 H5</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SWDB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>CMQN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>GAPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>GAPW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SACH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SSWD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SUBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SUBW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SWDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SWDF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>C1WM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>C1WU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>NMRD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SRCS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRNHME</controllingFieldValue>
+            <valueName>SRCW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CLCW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CACR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CFCC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CHCW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CHWW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CINF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CLOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CMEX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>COWC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSLM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSUA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSWD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTRS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CUNB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CVOI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CWEC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CLER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CLET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CAER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CAET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CACW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CARR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CART</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CFCW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CHCR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CHCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CHWR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CHWT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CIRR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CIRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CIFW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CIFR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CIFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CLCR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CLCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>COWR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>COWT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CMER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CMET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSLW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSMR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSMT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSUW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSCR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CSWW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTDR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTDT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTSW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CTST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CUNW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CUER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CUET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CUBR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CUBT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CVOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CVOT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CWER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CCRHHME</controllingFieldValue>
+            <valueName>CWET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>INST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>LACT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>SACT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>LMLK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>LREP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>SMLK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>SREP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>LCHG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHH</controllingFieldValue>
+            <valueName>SCHG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>LWCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>SWCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>WLAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>WSAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>WLML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>WLRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>WSML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEMNHW</controllingFieldValue>
+            <valueName>WSRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>ACRD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>FCOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SASC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SARM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>HCWE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>HWSW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>INFR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>LOCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>MEEX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>OWCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SLOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SUAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SWCH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TEDI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TRSU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>UNBL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>PVOI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>WECH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>ACRW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>ARER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>ARWT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>ACRR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>ACRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>FCWE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>HCER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>HCET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>HWSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>HWST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>IFRW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>IRER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>IRET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>IFRR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>IFRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>LCWE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>LCER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>LCET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>LOCR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>LOCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>OWCR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>OWCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SLMW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SMER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SMET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SLMR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SLMT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SUWE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SUER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SUET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SACR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SUCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>SWWE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TDIR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TDIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TSWE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TSER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TSET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TRSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>TRST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>UNWE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>UWER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>UWET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>UBLR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>UBLT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>VFFC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>VFHC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>VFPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>VFLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>VFML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>VFSC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>VFTS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>PVOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>PVOT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>WECR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRHHME</controllingFieldValue>
+            <valueName>WECT</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reinstatement Type --></label>
+    <name>FSM_ReinstatementType__c</name>
+    <picklistValues>
+        <masterLabel>Bar Hole</masterLabel>
+        <translation><!-- Bar Hole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Core Sample</masterLabel>
+        <translation><!-- Core Sample --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interim</masterLabel>
+        <translation><!-- Interim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Method A- left Open</masterLabel>
+        <translation><!-- Method A- left Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Method B- stoned</masterLabel>
+        <translation><!-- Method B- stoned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Rein Required</masterLabel>
+        <translation><!-- No Rein Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm REIN await sp. trt.</masterLabel>
+        <translation><!-- Perm REIN await sp. trt. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permanent</masterLabel>
+        <translation><!-- Permanent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pole Test Reinstatement</masterLabel>
+        <translation><!-- Pole Test Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Interim</masterLabel>
+        <translation><!-- Private Interim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Method A</masterLabel>
+        <translation><!-- Private Method A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Method B</masterLabel>
+        <translation><!-- Private Method B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remed Guar Perm no-reset</masterLabel>
+        <translation><!-- Remed Guar Perm no-reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remed Guar Perm reset</masterLabel>
+        <translation><!-- Remed Guar Perm reset --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

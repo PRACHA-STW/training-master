@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Watercourse Type --></label>
+    <name>FSM_WatercourseType__c</name>
+    <picklistValues>
+        <masterLabel>Canal</masterLabel>
+        <translation><!-- Canal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dry Ditch</masterLabel>
+        <translation><!-- Dry Ditch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lake/Pond</masterLabel>
+        <translation><!-- Lake/Pond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>River/Stream</masterLabel>
+        <translation><!-- River/Stream --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

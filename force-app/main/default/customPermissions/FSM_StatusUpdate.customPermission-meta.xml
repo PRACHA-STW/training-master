@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as part of user story #SFS-167.
+User with this custom permission will be able to access &apos;FSM ServiceAppointment Status Update&apos; flow.</description>
+    <isLicensed>false</isLicensed>
+    <label>Status Update</label>
+</CustomPermission>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Vandalism includes damage to the pipe and it&apos;s ancillary assets as well as signs of graffiti. --></help>
+    <label><!-- Signs of Vandalism --></label>
+    <name>FSM_Vandalism__c</name>
+    <picklistValues>
+        <masterLabel>Difficult / Negligible potential to vandalise</masterLabel>
+        <translation><!-- Difficult / Negligible potential to vandalise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No signs of vandalism</masterLabel>
+        <translation><!-- No signs of vandalism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs of vandalism i.e graffiti where the pipe has been compromised to access</masterLabel>
+        <translation><!-- Signs of vandalism i.e graffiti where the pipe has been compromised to access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Some signs of vandalism i.e minor graffiti from low level</masterLabel>
+        <translation><!-- Some signs of vandalism i.e minor graffiti from low level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unauthorised access on regular basis i.e fencing removed</masterLabel>
+        <translation><!-- Unauthorised access on regular basis i.e fencing removed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,127 @@
+.wrap-text {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+
+
+.main {
+    width: 100%;
+}
+
+.sizeTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.sizeSmall {
+    font-size: small;
+}
+
+.sizeSmaller {
+    font-size: smaller;
+}
+
+.sizeMedium {
+    font-size: medium;
+}
+
+
+
+/*  */
+.screen1-container,
+.screen3-container,
+.screen4-container {
+    background-color: white;
+}
+
+/* flex-direction: column; */
+.wrapper-section {
+    display: flex;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    flex-direction: column;
+}
+
+.table-container {
+    flex: 1;
+    max-height: calc(80vh - 2rem);
+    overflow-y: auto;
+}
+
+.button-section {
+    position: absolute;
+    bottom: 1rem;
+    width: calc(100% - 2rem);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    margin: 1rem 0;
+}
+
+.error-message:not(:empty) {
+    display: block;
+}
+
+.wrapper-section .table-container {
+    max-height: calc(70vh - 4rem);
+    /* Adjusting height when error message is displayed */
+
+}
+
+.main-container {
+    background-color: white;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .wrapper-section {
+        height: auto;
+        background: white;
+
+    }
+
+
+    .table-container {
+        max-height: calc(80vh - 2rem);
+    }
+
+    /* box-shadow: 0 -2px 5px rgba(0,0,0,0.1); */
+    .button-section {
+        position: fixed;
+        /* bottom: 1rem; */
+        width: calc(100% - 2rem);
+        background: white;
+
+    }
+
+    .main-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .screen1-container {
+        
+    }
+
+
+    .screen1-container,
+    .screen3-container,
+    .screen4-container {
+        
+    }
+    .content {
+        /* flex: 1; */
+        /* overflow: hidden; Prevents vertical scroll */
+    }
+    
+
+}

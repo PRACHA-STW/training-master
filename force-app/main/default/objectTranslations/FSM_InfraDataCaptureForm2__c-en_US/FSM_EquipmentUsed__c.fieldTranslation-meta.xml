@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment used --></label>
+    <name>FSM_EquipmentUsed__c</name>
+    <picklistValues>
+        <masterLabel>7.5t Jetter</masterLabel>
+        <translation><!-- 7.5t Jetter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV Van</masterLabel>
+        <translation><!-- CCTV Van --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV Van (Off-Road)</masterLabel>
+        <translation><!-- CCTV Van (Off-Road) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleanup Vehicle</masterLabel>
+        <translation><!-- Cleanup Vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jet/Vac</masterLabel>
+        <translation><!-- Jet/Vac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jetter (Off-Road)</masterLabel>
+        <translation><!-- Jetter (Off-Road) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhole Crew</masterLabel>
+        <translation><!-- Manhole Crew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation><!-- Not Applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair Crew</masterLabel>
+        <translation><!-- Repair Crew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair Crew (with Mini-Digger)</masterLabel>
+        <translation><!-- Repair Crew (with Mini-Digger) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Sweeper</masterLabel>
+        <translation><!-- Road Sweeper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Van Pack</masterLabel>
+        <translation><!-- Van Pack --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meter Size --></label>
+    <name>FSM_MeterSize__c</name>
+    <picklistValues>
+        <masterLabel>100mm</masterLabel>
+        <translation><!-- 100mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>125mm</masterLabel>
+        <translation><!-- 125mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>150mm</masterLabel>
+        <translation><!-- 150mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15mm</masterLabel>
+        <translation><!-- 15mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200mm</masterLabel>
+        <translation><!-- 200mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>205mm</masterLabel>
+        <translation><!-- 205mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20mm</masterLabel>
+        <translation><!-- 20mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>22mm</masterLabel>
+        <translation><!-- 22mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>250mm</masterLabel>
+        <translation><!-- 250mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25mm</masterLabel>
+        <translation><!-- 25mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>28mm</masterLabel>
+        <translation><!-- 28mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>300mm</masterLabel>
+        <translation><!-- 300mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30mm</masterLabel>
+        <translation><!-- 30mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>32mm</masterLabel>
+        <translation><!-- 32mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>40mm</masterLabel>
+        <translation><!-- 40mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>42mm</masterLabel>
+        <translation><!-- 42mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50mm</masterLabel>
+        <translation><!-- 50mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>65mm</masterLabel>
+        <translation><!-- 65mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>80mm</masterLabel>
+        <translation><!-- 80mm --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

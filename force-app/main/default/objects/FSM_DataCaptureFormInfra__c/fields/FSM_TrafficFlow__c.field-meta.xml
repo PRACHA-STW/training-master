@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_TrafficFlow__c</fullName>
+    <inlineHelpText>Light traffic flow = residential road less than 20 vehicles over 3 min and 20 HGV&apos;s per hour. Moderate traffic flow = 42 vehicles over 3 min for example a local high street. Heavy traffic flow is above 42 vehicles for example a busy A road</inlineHelpText>
+    <label>Traffic Flow</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Light</fullName>
+                <default>false</default>
+                <label>Light</label>
+            </value>
+            <value>
+                <fullName>Moderate</fullName>
+                <default>false</default>
+                <label>Moderate</label>
+            </value>
+            <value>
+                <fullName>Heavy</fullName>
+                <default>false</default>
+                <label>Heavy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

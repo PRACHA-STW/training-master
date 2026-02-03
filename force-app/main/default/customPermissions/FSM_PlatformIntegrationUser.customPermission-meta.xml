@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as part SFS-8677</description>
+    <isLicensed>false</isLicensed>
+    <label>FSM Platform Integration User</label>
+</CustomPermission>

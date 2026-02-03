@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>fsmintgqa1</label>
+    <protected>false</protected>
+    <values>
+        <field>FSM_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>FSM_EnvironmentName__c</field>
+        <value xsi:type="xsd:string">fsmintgqa1</value>
+    </values>
+    <values>
+        <field>FSM_NamedCredentialINT15__c</field>
+        <value xsi:type="xsd:string">callout:assetDataHistorySIT</value>
+    </values>
+    <values>
+        <field>FSM_NamedCredential__c</field>
+        <value xsi:type="xsd:string">Callout:SAPSIT</value>
+    </values>
+    <values>
+        <field>FSM_VendorId__c</field>
+        <value xsi:type="xsd:string">0000107728</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Created as a part of SFS-1010. Show an error message when user tries to delete record.</description>
+        <name>FSM_ErrorMessageForResourcePreferenceDeletion</name>
+        <label>Error Message for Resource Preference Deletion</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <actionName>FSM_InvocableCrash</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>errorMessages</name>
+            <value>
+                <stringValue>Error: Deletion of Resource Preference is not permitted.</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>FSM_InvocableCrash</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Created as a part of SFS-1010 . Checking If logged in User is either Scheduler , Virtual Resource or a Field Worker.</description>
+        <name>FSM_CheckIfLoggedInUserIsSchedulerVirtualResourceOrFieldWorker</name>
+        <label>Check If logged in user is Scheduler,Virtual Resource or Field Worker</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>FSM_IfSchedulerVirtualUserOrFieldWorker</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.FSM_ResourcePreferenceDeleteRestriction</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FSM_ErrorMessageForResourcePreferenceDeletion</targetReference>
+            </connector>
+            <label>If Scheduler , Virtual User or Field Worker</label>
+        </rules>
+    </decisions>
+    <description>This flow is used to throws an error message when user tries to delete the Resource Preference Record.
+Created as a part of SFS-1010 .</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM Resource Preference Before Delete Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM Resource Preference Before Delete Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>FSM_CheckIfLoggedInUserIsSchedulerVirtualResourceOrFieldWorker</targetReference>
+        </connector>
+        <object>ResourcePreference</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

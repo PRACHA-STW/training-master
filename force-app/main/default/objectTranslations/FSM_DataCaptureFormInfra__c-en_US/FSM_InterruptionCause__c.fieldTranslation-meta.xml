@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cause of Interruption --></label>
+    <name>FSM_InterruptionCause__c</name>
+    <picklistValues>
+        <masterLabel>Air Lock</masterLabel>
+        <translation><!-- Air Lock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrant Repair</masterLabel>
+        <translation><!-- Hydrant Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rehab</masterLabel>
+        <translation><!-- Rehab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reservoir - Valve</masterLabel>
+        <translation><!-- Reservoir - Valve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telemetry Fault</masterLabel>
+        <translation><!-- Telemetry Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

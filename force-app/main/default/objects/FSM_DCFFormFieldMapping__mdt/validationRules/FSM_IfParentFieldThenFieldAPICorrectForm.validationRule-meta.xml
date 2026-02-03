@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IfParentFieldThenFieldAPICorrectForm</fullName>
+    <active>true</active>
+    <description>SFI-35</description>
+    <errorConditionFormula>IF(AND(FSM_IsParentObjectField__c ,NOT(Contains( FSM_FieldAPIName__c,&apos;__r.&apos;))),true ,false )</errorConditionFormula>
+    <errorDisplayField>FSM_FieldAPIName__c</errorDisplayField>
+    <errorMessage>If Parent object field the Field API name must format like FSM_WorkOrder__r.Status</errorMessage>
+</ValidationRule>

@@ -1,0 +1,75 @@
+<template>
+		<template if:false={closeAction}>
+	 			<template if:false={spining}>
+										<template if:false={backToScreen4}>
+													 <lightning-card>
+															 				<!--LIST OF LEVEL 6 ASSET FLOC -->
+																			<lightning-card title="List of level 6 Asset(s)" class="title-container"></lightning-card>
+																					  If the FLOC you are searching for is not displayed, please try alternative search criteria (NB max 50 returns).
+																				<table class="padding-table-columns">
+																								<tr style="background-color:LightGray">
+																										<th>Asset Floc</th>
+																										<th>Floc Description</th>
+																								</tr>
+																							 <template for:each={visibleRecords} for:item="item">
+																								<tr key={item.subUnitId} class="row">
+																										<td>{item.subUnitId}</td>
+																										<td>{item.subUnitDesc}</td>
+																								</tr>
+																							 </template>
+																				 </table>
+																				 <lightning-modal-footer>
+																						 			<!-- Pagination Starts-->
+																													<lightning-layout>
+																																				<lightning-layout-item>
+
+																																						 <a  icon-name="utility:jump_to_left" onclick={handlePagiLeft} 	class="slds-float_left" size="medium">{leftarrow}</a>
+																																				</lightning-layout-item>
+
+
+																																				<lightning-layout-item  class="right_arrow">
+																																							{currenPage}/{totalpage}
+
+																																						 <a icon-name="utility:jump_to_right" onclick={handlePagiRight}  	class="slds-right" size="medium">{rightarrow}</a>
+																																				</lightning-layout-item>
+																													</lightning-layout>
+																									<!-- Pagination Starts-->
+																						 
+																							        <!--BACK AND FINISH BUTTONS-->
+																											<lightning-button
+																																icon-name="utility:back"
+																																style="margin-top:30px"
+																																class="slds-float_left"
+																																variant="brand"
+																																label="BACK"
+																																onclick={handleBack}>
+																											</lightning-button>
+
+
+
+																											<lightning-button
+																																icon-name="utility:close"
+																																style="margin-top:30px"
+																																class="slds-float_right"
+																																variant="neutral"
+																																label="FINISH"
+																																onclick={handleFinish}>
+																											</lightning-button>
+																					</lightning-modal-footer>
+													 </lightning-card>
+									</template>
+										<!--BACK TO SCRREN 4-->
+									<template if:true={backToScreen4}>
+															<c-asset-record-display current-record-name={flocData} current-record-description={flocDescription}></c-asset-record-display>
+									</template>
+				</template>
+				<template if:true={spining}>
+				 				<lightning-spinner alternative-text="Loading" variant="brand" size="medium"></lightning-spinner>
+				</template>	
+		</template>
+		<template if:true={closeAction}>
+				 			<p class="title-container"> Please click on the top left/right close icon to close this action
+							</p>
+	 	</template>
+		
+</template>

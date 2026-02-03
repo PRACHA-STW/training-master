@@ -1,0 +1,29 @@
+table {
+    border-spacing: 3px;
+  }
+  td, th {
+    padding: 7px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .slds-table thead {
+      display: none;
+  }
+  .slds-table tbody tr {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+  }
+  .slds-table tbody tr td {
+      display: block;
+      margin: 5px 0;
+  }
+  .slds-table tbody td:first-child {
+      font-weight: bold;
+  }
+}

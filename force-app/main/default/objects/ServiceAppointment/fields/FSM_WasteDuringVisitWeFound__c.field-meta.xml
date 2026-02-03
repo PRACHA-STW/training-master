@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_WasteDuringVisitWeFound__c</fullName>
+    <description>created as part of SFS-5347</description>
+    <label>During our visit we found</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A blocked drain caused by Cooking fats/oils</fullName>
+                <default>false</default>
+                <label>A blocked drain caused by Cooking fats/oils</label>
+            </value>
+            <value>
+                <fullName>A blocked drain caused by Sanitary products</fullName>
+                <default>false</default>
+                <label>A blocked drain caused by Sanitary products</label>
+            </value>
+            <value>
+                <fullName>A blocked drain caused by Wipes</fullName>
+                <default>false</default>
+                <label>A blocked drain caused by Wipes</label>
+            </value>
+            <value>
+                <fullName>A blocked drain caused by Roots</fullName>
+                <default>false</default>
+                <label>A blocked drain caused by Roots</label>
+            </value>
+            <value>
+                <fullName>A blocked drain caused by Debris</fullName>
+                <default>false</default>
+                <label>A blocked drain caused by Debris</label>
+            </value>
+            <value>
+                <fullName>A problem with your private drain. You&apos;ll need to contact a local drain cleaning contractor for further assistance</fullName>
+                <default>false</default>
+                <label>A problem with your private drain. You&apos;ll need to contact a local drain cleaning contractor for further assistance</label>
+            </value>
+            <value>
+                <fullName>A problem with the highway drain. To find out who your local highway authority is, please use this website gov.uk/find-local-council</fullName>
+                <default>false</default>
+                <label>A problem with the highway drain. To find out who your local highway authority is, please use this website gov.uk/find-local-council</label>
+            </value>
+            <value>
+                <fullName>The drains are flowing as they should be</fullName>
+                <default>false</default>
+                <label>The drains are flowing as they should be</label>
+            </value>
+            <value>
+                <fullName>We attended an issue near your property. If you have experienced a flooding, please call us quoting the job reference on this card</fullName>
+                <default>false</default>
+                <label>We attended an issue near your property. If you have experienced a flooding, please call us quoting the job reference on this card</label>
+            </value>
+            <value>
+                <fullName>We couldn&apos;t get access to the property/land located at:</fullName>
+                <default>false</default>
+                <label>We couldn&apos;t get access to the property/land located at:</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PipeBridgeSafety__c</fullName>
+    <description>Created as a part of SFS-4803</description>
+    <inlineHelpText>Signage should be installed on all pipe bridges. 	
+There may be a few exceptions where it is physically not possible or safe to install but where this is the case often signs can be installed nearby giving the same warning. 	
+Signs are available from H&amp;S Reps and should be taken on site inspections in case signs need replacing. 	
+If it is not safe to install but required raise to supervisor for advice on how to do safely.</inlineHelpText>
+    <label>Pipe Bridge Safety Signs Fitted ?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sign already installed and in good condition</fullName>
+                <default>false</default>
+                <label>Sign already installed and in good condition</label>
+            </value>
+            <value>
+                <fullName>PB Safety Warning signs installed during site inspection</fullName>
+                <default>false</default>
+                <label>PB Safety Warning signs installed during site inspection</label>
+            </value>
+            <value>
+                <fullName>Signs replaced during inspection as damaged / vandalised</fullName>
+                <default>false</default>
+                <label>Signs replaced during inspection as damaged / vandalised</label>
+            </value>
+            <value>
+                <fullName>Signs not required / safe to install in view of the operator</fullName>
+                <default>false</default>
+                <label>Signs not required / safe to install in view of the operator</label>
+            </value>
+            <value>
+                <fullName>Additional or replacement signs required - FOW raised</fullName>
+                <default>false</default>
+                <label>Additional or replacement signs required - FOW raised</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

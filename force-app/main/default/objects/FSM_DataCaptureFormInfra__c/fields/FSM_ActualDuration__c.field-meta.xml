@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ActualDuration__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(DATETIMEVALUE(FSM_ActualRestorationDateAndTime__c )&gt;DATETIMEVALUE(FSM_ActualInterruptionDateAndTime__c),                   
+  IF
+(
+    FLOOR((FSM_ActualRestorationDateAndTime__c  - FSM_ActualInterruptionDateAndTime__c)*24)&gt;9,
+    TEXT(FLOOR((FSM_ActualRestorationDateAndTime__c - FSM_ActualInterruptionDateAndTime__c)*24)),
+    &quot;0&quot; &amp; TEXT(FLOOR((FSM_ActualRestorationDateAndTime__c - FSM_ActualInterruptionDateAndTime__c)*24))
+    )
+&amp;&quot;.&quot;&amp;
+    IF
+    (
+    ROUND(MOD((FSM_ActualRestorationDateAndTime__c - FSM_ActualInterruptionDateAndTime__c)*1440,60),0)&gt;9,
+    TEXT(ROUND(MOD((FSM_ActualRestorationDateAndTime__c - FSM_ActualInterruptionDateAndTime__c)*1440,60),0)),
+    &quot;0&quot; &amp; TEXT(ROUND(MOD((FSM_ActualRestorationDateAndTime__c - FSM_ActualInterruptionDateAndTime__c)*1440,60),0))
+    ), 
+
+ 
+
+    IF
+    (
+    FLOOR(( FSM_ActualInterruptionDateAndTime__c- FSM_ActualRestorationDateAndTime__c  )*24)&gt;9,
+    TEXT(FLOOR(( FSM_ActualInterruptionDateAndTime__c- FSM_ActualRestorationDateAndTime__c  )*24)),
+    &quot;0&quot; &amp; TEXT(FLOOR(( FSM_ActualInterruptionDateAndTime__c- FSM_ActualRestorationDateAndTime__c )*24))
+    )
+&amp;&quot;.&quot;&amp;
+    IF
+    (
+    ROUND(MOD(( FSM_ActualInterruptionDateAndTime__c- FSM_ActualRestorationDateAndTime__c  )*1440,60),0)&gt;9,
+    TEXT(ROUND(MOD(( FSM_ActualInterruptionDateAndTime__c- FSM_ActualRestorationDateAndTime__c  )*1440,60),0)),
+    &quot;0&quot; &amp; TEXT(ROUND(MOD(( FSM_ActualInterruptionDateAndTime__c- FSM_ActualRestorationDateAndTime__c  )*1440,60),0))
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual Duration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

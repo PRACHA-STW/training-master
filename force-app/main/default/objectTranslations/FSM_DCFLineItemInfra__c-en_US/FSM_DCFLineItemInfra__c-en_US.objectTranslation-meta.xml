@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Infra Data Capture Line Item 1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Infra Data Capture Line Item 1</value>
+    </caseValues>
+    <layouts>
+        <layout>Additional Customer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Data Capture Form Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Grid Ref for Excavation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HD Risk Assessment</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Original Hydrant Used</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Proposed Valve Operation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Valves --></label>
+            <section>Valves</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reinstatement Form - Site</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Reinstatement Location Details --></label>
+            <section>Reinstatement Location Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reinstatement Form - XY Coordinates</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reinstatement Site</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Reinstatement Location Details --></label>
+            <section>Reinstatement Location Details</section>
+        </sections>
+        <sections>
+            <label><!-- Reinstatement Type --></label>
+            <section>Reinstatement Type</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Risk Assessment - Site Specific</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Excavation --></label>
+            <section>Excavation</section>
+        </sections>
+        <sections>
+            <label><!-- Extensions (initial &amp; date) --></label>
+            <section>Extensions (initial &amp; date)</section>
+        </sections>
+        <sections>
+            <label><!-- Moling Techniques --></label>
+            <section>Moling Techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Onsite Team Members --></label>
+            <section>Onsite Team Members</section>
+        </sections>
+        <sections>
+            <label><!-- Select which Safe Systems of Work (SSOW) / hazards are applicable to this work --></label>
+            <section>Select which Safe Systems of Work (SSOW) / hazards are applicable to this work</section>
+        </sections>
+        <sections>
+            <label><!-- Underground Services --></label>
+            <section>Underground Services</section>
+        </sections>
+        <sections>
+            <label><!-- Wellbeing --></label>
+            <section>Wellbeing</section>
+        </sections>
+        <sections>
+            <label><!-- What has been found by your Cat/Genny scan &amp; what modes have been used? --></label>
+            <section>What has been found by your Cat/Genny scan &amp; what modes have been used?</section>
+        </sections>
+        <sections>
+            <label><!-- What has been found on your pre-scan checks? Tick all that are appropriate --></label>
+            <section>What has been found on your pre-scan checks? Tick all that are appropriate</section>
+        </sections>
+        <sections>
+            <label><!-- Work Readiness &amp; Site Setup --></label>
+            <section>Work Readiness &amp; Site Setup</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sewerage Risk Assessment - Site Specific</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Excavation --></label>
+            <section>Excavation</section>
+        </sections>
+        <sections>
+            <label><!-- Extensions (initial &amp; date) --></label>
+            <section>Extensions (initial &amp; date)</section>
+        </sections>
+        <sections>
+            <label><!-- Jetting Activity Carried Out --></label>
+            <section>Jetting Activity Carried Out</section>
+        </sections>
+        <sections>
+            <label><!-- Lone Working Carried Out --></label>
+            <section>Lone Working Carried Out</section>
+        </sections>
+        <sections>
+            <label><!-- Onsite Team Members --></label>
+            <section>Onsite Team Members</section>
+        </sections>
+        <sections>
+            <label><!-- Select which Safe Systems of Work (SSOW) / hazards are applicable to this work --></label>
+            <section>Select which Safe Systems of Work (SSOW) / hazards are applicable to this work</section>
+        </sections>
+        <sections>
+            <label><!-- Underground Services --></label>
+            <section>Underground Services</section>
+        </sections>
+        <sections>
+            <label><!-- Wellbeing --></label>
+            <section>Wellbeing</section>
+        </sections>
+        <sections>
+            <label><!-- What has been found by your Cat/Genny scan &amp; what modes have been used? --></label>
+            <section>What has been found by your Cat/Genny scan &amp; what modes have been used?</section>
+        </sections>
+        <sections>
+            <label><!-- What has been found on your pre-scan checks? Tick all that are appropriate --></label>
+            <section>What has been found on your pre-scan checks? Tick all that are appropriate</section>
+        </sections>
+        <sections>
+            <label><!-- Work Readiness &amp; Site Setup --></label>
+            <section>Work Readiness &amp; Site Setup</section>
+        </sections>
+        <sections>
+            <label><!-- Working From Height --></label>
+            <section>Working From Height</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Short Duration Works Risk Assessment</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Supply Interruption and Validation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Valve Section</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Created as part of sfs-6000 --></description>
+        <label><!-- Additional Customer --></label>
+        <name>FSM_Additional_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-1318 --></description>
+        <label><!-- Grid Ref for Excavation --></label>
+        <name>FSM_GridRefForExcavation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HD Risk Assessment --></label>
+        <name>FSM_HDRiskAssessment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-5315 --></description>
+        <label><!-- Original Hydrant Used --></label>
+        <name>FSM_OriginalHydrantUsed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Risk Assessment - Site Specific --></label>
+        <name>FSM_RiskAssessmentSiteSpecific</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as apart of SFS-3048 --></description>
+        <label><!-- Short Duration Works Risk Assessment --></label>
+        <name>FSM_ShortDurationWorksRiskAssessment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created for SFS-1322 --></description>
+        <label><!-- Supply Interruption and Validation --></label>
+        <name>FSM_SupplyInterruptionandValidation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Valve Management --></label>
+        <name>FSM_ValveManagement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Proposed Valve Operation --></label>
+        <name>Proposed_Valve_Operation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reinstatement Site --></label>
+        <name>Reinstatement_Site</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reinstatement XY --></label>
+        <name>Reinstatement_XY</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as part of SFS-6895 --></description>
+        <label><!-- Sewerage Site Specific --></label>
+        <name>Sewerage_Risk_Assessment_Site_Specific</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

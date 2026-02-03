@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_MeterLocPick__c</fullName>
+    <description>Created for SAL-1321</description>
+    <label>Meter Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CHAMBER IN FIELD</fullName>
+                <default>false</default>
+                <label>CHAMBER IN FIELD</label>
+            </value>
+            <value>
+                <fullName>BB RURAL VERGE</fullName>
+                <default>false</default>
+                <label>BB RURAL VERGE</label>
+            </value>
+            <value>
+                <fullName>BB LEFT SIDE FRONT</fullName>
+                <default>false</default>
+                <label>BB LEFT SIDE FRONT</label>
+            </value>
+            <value>
+                <fullName>BB LEFT SIDE IN LINE</fullName>
+                <default>false</default>
+                <label>BB LEFT SIDE IN LINE</label>
+            </value>
+            <value>
+                <fullName>BB LEFT SIDE REAR</fullName>
+                <default>false</default>
+                <label>BB LEFT SIDE REAR</label>
+            </value>
+            <value>
+                <fullName>BB IN FIELD</fullName>
+                <default>false</default>
+                <label>BB IN FIELD</label>
+            </value>
+            <value>
+                <fullName>BB FRONT LEFT</fullName>
+                <default>false</default>
+                <label>BB FRONT LEFT</label>
+            </value>
+            <value>
+                <fullName>BB REAR LEFT</fullName>
+                <default>false</default>
+                <label>BB REAR LEFT</label>
+            </value>
+            <value>
+                <fullName>BOUNDARY BOX</fullName>
+                <default>false</default>
+                <label>BOUNDARY BOX</label>
+            </value>
+            <value>
+                <fullName>BB FRONT IN LINE</fullName>
+                <default>false</default>
+                <label>BB FRONT IN LINE</label>
+            </value>
+            <value>
+                <fullName>BB REAR IN LINE</fullName>
+                <default>false</default>
+                <label>BB REAR IN LINE</label>
+            </value>
+            <value>
+                <fullName>BB ACCESS REQD</fullName>
+                <default>false</default>
+                <label>BB ACCESS REQD</label>
+            </value>
+            <value>
+                <fullName>BB REAR RIGHT</fullName>
+                <default>false</default>
+                <label>BB REAR RIGHT</label>
+            </value>
+            <value>
+                <fullName>BB RIGHT SIDE FRONT</fullName>
+                <default>false</default>
+                <label>BB RIGHT SIDE FRONT</label>
+            </value>
+            <value>
+                <fullName>BB RIGHT SIDE IN LINE</fullName>
+                <default>false</default>
+                <label>BB RIGHT SIDE IN LINE</label>
+            </value>
+            <value>
+                <fullName>BB RIGHT SIDE REAR</fullName>
+                <default>false</default>
+                <label>BB RIGHT SIDE REAR</label>
+            </value>
+            <value>
+                <fullName>BB FRONT RIGHT</fullName>
+                <default>false</default>
+                <label>BB FRONT RIGHT</label>
+            </value>
+            <value>
+                <fullName>TP LOCATION UNKNOWN</fullName>
+                <default>false</default>
+                <label>TP LOCATION UNKNOWN</label>
+            </value>
+            <value>
+                <fullName>TP FRONT CENTRE</fullName>
+                <default>false</default>
+                <label>TP FRONT CENTRE</label>
+            </value>
+            <value>
+                <fullName>TP FRONT LEFT</fullName>
+                <default>false</default>
+                <label>TP FRONT LEFT</label>
+            </value>
+            <value>
+                <fullName>TP FRONT RIGHT</fullName>
+                <default>false</default>
+                <label>TP FRONT RIGHT</label>
+            </value>
+            <value>
+                <fullName>TP REAR CENTRE</fullName>
+                <default>false</default>
+                <label>TP REAR CENTRE</label>
+            </value>
+            <value>
+                <fullName>TP REAR LEFT</fullName>
+                <default>false</default>
+                <label>TP REAR LEFT</label>
+            </value>
+            <value>
+                <fullName>TP REAR RIGHT</fullName>
+                <default>false</default>
+                <label>TP REAR RIGHT</label>
+            </value>
+            <value>
+                <fullName>TP LEFT SIDE CENTRE</fullName>
+                <default>false</default>
+                <label>TP LEFT SIDE CENTRE</label>
+            </value>
+            <value>
+                <fullName>TP LEFT SIDE FRONT</fullName>
+                <default>false</default>
+                <label>TP LEFT SIDE FRONT</label>
+            </value>
+            <value>
+                <fullName>TP LEFT SIDE REAR</fullName>
+                <default>false</default>
+                <label>TP LEFT SIDE REAR</label>
+            </value>
+            <value>
+                <fullName>TP RIGHT SIDE CENTRE</fullName>
+                <default>false</default>
+                <label>TP RIGHT SIDE CENTRE</label>
+            </value>
+            <value>
+                <fullName>TP RIGHT SIDE FRONT</fullName>
+                <default>false</default>
+                <label>TP RIGHT SIDE FRONT</label>
+            </value>
+            <value>
+                <fullName>TP RIGHT SIDE REAR</fullName>
+                <default>false</default>
+                <label>TP RIGHT SIDE REAR</label>
+            </value>
+            <value>
+                <fullName>INTERNAL VISUAL</fullName>
+                <default>false</default>
+                <label>INTERNAL VISUAL</label>
+            </value>
+            <value>
+                <fullName>EXTERNAL CHAMBER</fullName>
+                <default>false</default>
+                <label>EXTERNAL CHAMBER</label>
+            </value>
+            <value>
+                <fullName>TP BASEMENT</fullName>
+                <default>false</default>
+                <label>TP BASEMENT</label>
+            </value>
+            <value>
+                <fullName>TP INTERNAL OTHER</fullName>
+                <default>false</default>
+                <label>TP INTERNAL OTHER</label>
+            </value>
+            <value>
+                <fullName>TP ACCESS REQD</fullName>
+                <default>false</default>
+                <label>TP ACCESS REQD</label>
+            </value>
+            <value>
+                <fullName>TP MTR CBOARD/RM</fullName>
+                <default>false</default>
+                <label>TP MTR CBOARD/RM</label>
+            </value>
+            <value>
+                <fullName>RD NO TP/SC</fullName>
+                <default>false</default>
+                <label>RD NO TP/SC</label>
+            </value>
+            <value>
+                <fullName>RD TP/SC ON RD</fullName>
+                <default>false</default>
+                <label>RD TP/SC ON RD</label>
+            </value>
+            <value>
+                <fullName>RD TP/SC OFF RD</fullName>
+                <default>false</default>
+                <label>RD TP/SC OFF RD</label>
+            </value>
+            <value>
+                <fullName>RD RADIO</fullName>
+                <default>false</default>
+                <label>RD RADIO</label>
+            </value>
+            <value>
+                <fullName>RADIO BB</fullName>
+                <default>false</default>
+                <label>RADIO BB</label>
+            </value>
+            <value>
+                <fullName>RADIO CHAMBER</fullName>
+                <default>false</default>
+                <label>RADIO CHAMBER</label>
+            </value>
+            <value>
+                <fullName>RADIO INTERNAL</fullName>
+                <default>false</default>
+                <label>RADIO INTERNAL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

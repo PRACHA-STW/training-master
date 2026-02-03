@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Update Customer On Enroute --></label>
+    <name>FSM_UpdateCustomerOnEnroute__c</name>
+    <picklistValues>
+        <masterLabel>Automated ETA message</masterLabel>
+        <translation><!-- Automated ETA message --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Called on way &amp; spoke to customer</masterLabel>
+        <translation><!-- Called on way &amp; spoke to customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Called on way, no answer &amp; no voicemail option</masterLabel>
+        <translation><!-- Called on way, no answer &amp; no voicemail option --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Called on way, no answer &amp; voicemail</masterLabel>
+        <translation><!-- Called on way, no answer &amp; voicemail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No contact details provided</masterLabel>
+        <translation><!-- No contact details provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No interaction due to incorrect contact details</masterLabel>
+        <translation><!-- No interaction due to incorrect contact details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Text customer</masterLabel>
+        <translation><!-- Text customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

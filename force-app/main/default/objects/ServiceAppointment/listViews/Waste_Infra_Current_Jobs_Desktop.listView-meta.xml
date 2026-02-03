@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waste_Infra_Current_Jobs_Desktop</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>SchedStartTime</columns>
+    <columns>FSM_IconForWasteInfra__c</columns>
+    <columns>Status</columns>
+    <columns>FSM_AllocatedJob__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Dispatched,En-Route,Onsite,On Hold,Return to Site</value>
+    </filters>
+    <filters>
+        <field>FSM_AssignedtoLoginUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>contains</operation>
+        <value>Waste Infra</value>
+    </filters>
+    <label>Waste Infra - Current Jobs - Desktop</label>
+    <sharedTo>
+        <group>FSM_FW_2100SW9_Waste_Networks_Resolution</group>
+        <group>FSM_FW_2101SW2_Leics_NET</group>
+        <group>FSM_FW_2101SW3_Insp_Leicestershire</group>
+        <group>FSM_FW_2101SW7_CSP_Serv_Repairs_Leics</group>
+        <group>FSM_FW_2101SW8_CSP_Covers_Frames_Leics</group>
+        <group>FSM_FW_2102SW2_Derbys_NET</group>
+        <group>FSM_FW_2102SW3_Insp_Derbyshire</group>
+        <group>FSM_FW_2102SW7_CSP_Serv_Repairs_Derbys</group>
+        <group>FSM_FW_2102SW8_CSP_Covers_Frames_Derbys</group>
+        <group>FSM_FW_2103SW2_Notts_S_NET</group>
+        <group>FSM_FW_2103SW3_Insp_Nottinghamshire</group>
+        <group>FSM_FW_2103SW7_CSP_Serv_Repairs_Notts</group>
+        <group>FSM_FW_2103SW8_CSP_Covers_Frames_Notts</group>
+        <group>FSM_FW_2104SW2_Notts_N_NET</group>
+        <group>FSM_FW_2200SW9_Waste_Networks_Resolution</group>
+        <group>FSM_FW_2201SW2_Mets_E_NET</group>
+        <group>FSM_FW_2201SW3_Insp_Mets_East</group>
+        <group>FSM_FW_2201SW7_CSP_Serv_Repairs_Mets_Eas</group>
+        <group>FSM_FW_2201SW8_CSP_Covers_Frames_Mets_Ea</group>
+        <group>FSM_FW_2202SW2_Mets_W_NET</group>
+        <group>FSM_FW_2202SW3_Insp_Mets_West</group>
+        <group>FSM_FW_2202SW7_CSP_Serv_Repairs_Mets_Wes</group>
+        <group>FSM_FW_2202SW8_CSP_Covers_Frames_Mets_We</group>
+        <group>FSM_FW_2203SW2_Staffs_NET</group>
+        <group>FSM_FW_2203SW3_Insp_Staffordshire</group>
+        <group>FSM_FW_2203SW7_CSP_Serv_Repairs_Staffs</group>
+        <group>FSM_FW_2203SW8_CSP_Covers_Frames_Staffs</group>
+        <group>FSM_FW_2204SW2_Shrops_NET</group>
+        <group>FSM_FW_2204SW3_Insp_Shropshire</group>
+        <group>FSM_FW_2204SW7_CSP_Serv_Repairs_Shrops</group>
+        <group>FSM_FW_2204SW8_CSP_Covers_Frames_Shrops</group>
+        <group>FSM_FW_2301SW2_Warks_NET</group>
+        <group>FSM_FW_2301SW3_Insp_Warwickshire</group>
+        <group>FSM_FW_2301SW7_CSP_Serv_Repairs_Warks</group>
+        <group>FSM_FW_2301SW8_CSP_Covers_Frames_Warks</group>
+        <group>FSM_FW_2302SW2_Worcs_and_Gloucs_NET</group>
+        <group>FSM_FW_2302SW3_Insp_Worcestershire</group>
+        <group>FSM_FW_2302SW7_CSP_Serv_Repairs_Worcs</group>
+        <group>FSM_FW_2302SW8_CSP_Covers_Frames_Worcs</group>
+        <group>FSM_FW_2303SW3_Insp_Gloucestershire</group>
+        <group>FSM_FW_2303SW7_CSP_Serv_Repairs_Gloucs</group>
+        <group>FSM_FW_2303SW8_CSP_Covers_Frames_Gloucs</group>
+    </sharedTo>
+</ListView>

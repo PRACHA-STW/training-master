@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Flow Control Device --></label>
+    <name>FSM_CSOFlowFlowControl__c</name>
+    <picklistValues>
+        <masterLabel>Good Condition, No FOW required</masterLabel>
+        <translation><!-- Good Condition, No FOW required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Risk - Blocked or Damaged</masterLabel>
+        <translation><!-- High Risk - Blocked or Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other - Call Catchment Lead</masterLabel>
+        <translation><!-- Other - Call Catchment Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Condition, FOW needed</masterLabel>
+        <translation><!-- Poor Condition, FOW needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Condition, Flow now restored</masterLabel>
+        <translation><!-- Poor Condition, Flow now restored --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Bundle_24_4_6_S6_PKG2</fullName>
+    <columns>NAME</columns>
+    <columns>Jira_Key__c</columns>
+    <columns>copado__Project__c</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <columns>copado__Sprint__c</columns>
+    <columns>copado__Environment__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>copado__Base_Branch__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>PDS_Destructive__c</columns>
+    <columns>Next_Environment__c</columns>
+    <columns>copado__Promote_Change__c</columns>
+    <columns>Deployed_To__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Next_Environment__c</field>
+        <operation>equals</operation>
+        <value>PKG2_10.04</value>
+    </filters>
+    <label>Training Bundle 24.4.6 S6 PKG2</label>
+</ListView>

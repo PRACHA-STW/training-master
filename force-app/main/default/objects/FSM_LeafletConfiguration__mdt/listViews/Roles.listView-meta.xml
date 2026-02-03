@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roles</fullName>
+    <columns>FSM_ConfigurationType__c</columns>
+    <columns>FSM_DisplayText__c</columns>
+    <columns>FSM_Water__c</columns>
+    <columns>FSM_HD__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_ConfigurationType__c</field>
+        <operation>equals</operation>
+        <value>Role</value>
+    </filters>
+    <label>Roles</label>
+</ListView>

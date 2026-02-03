@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Infra Data Capture Form 1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Infra Data Capture Form 1</value>
+    </caseValues>
+    <layouts>
+        <layout>Boards and Barriers</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DST Self Audit</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Data Capture Form Infra Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Digger Trailer Checks CandG Check</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Genny &amp; CAT Checks --></label>
+            <section>Genny &amp; CAT Checks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Distribution Feedback</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Environmental Impact --></label>
+            <section>Environmental Impact</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- GSS --></label>
+            <section>GSS</section>
+        </sections>
+        <sections>
+            <label><!-- Illegal Use --></label>
+            <section>Illegal Use</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Distribution Interruption</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Interruption Details - Field User --></label>
+            <section>Interruption Details - Field User</section>
+        </sections>
+        <sections>
+            <label><!-- Interruption Details - Users --></label>
+            <section>Interruption Details - Users</section>
+        </sections>
+        <sections>
+            <label><!-- Supply Interruption and Validation --></label>
+            <section>Supply Interruption and Validation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Gap Site</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- End --></label>
+            <section>End</section>
+        </sections>
+        <sections>
+            <label><!-- Gap Site Details --></label>
+            <section>Gap Site Details</section>
+        </sections>
+        <sections>
+            <label><!-- Main Meter Details --></label>
+            <section>Main Meter Details</section>
+        </sections>
+        <sections>
+            <label><!-- Meter Location --></label>
+            <section>Meter Location</section>
+        </sections>
+        <sections>
+            <label><!-- Site Area Details --></label>
+            <section>Site Area Details</section>
+        </sections>
+        <sections>
+            <label><!-- Surface Water Drainage Connection Details --></label>
+            <section>Surface Water Drainage Connection Details</section>
+        </sections>
+        <sections>
+            <label><!-- Waste Water Connection Details --></label>
+            <section>Waste Water Connection Details</section>
+        </sections>
+        <sections>
+            <label><!-- Water Connection Details --></label>
+            <section>Water Connection Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HD Risk Assessment Form</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Infra Follow On Work Request</layout>
+        <sections>
+            <label><!-- Asset --></label>
+            <section>Asset</section>
+        </sections>
+        <sections>
+            <label><!-- BOPPs --></label>
+            <section>BOPPs</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Health and Safety &amp; Environmental --></label>
+            <section>Health and Safety &amp; Environmental</section>
+        </sections>
+        <sections>
+            <label><!-- Site Specific Details --></label>
+            <section>Site Specific Details</section>
+        </sections>
+        <sections>
+            <label><!-- TMA Notice Details --></label>
+            <section>TMA Notice Details</section>
+        </sections>
+        <sections>
+            <label><!-- User Details --></label>
+            <section>User Details</section>
+        </sections>
+        <sections>
+            <label><!-- Value Operation Details --></label>
+            <section>Value Operation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job Completion - (Water Networks)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- R&amp;M Job Completion Form --></label>
+            <section>R&amp;M Job Completion Form</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Meter Details Form</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Form Details --></label>
+            <section>Form Details</section>
+        </sections>
+        <sections>
+            <label><!-- Meter Install Address --></label>
+            <section>Meter Install Address</section>
+        </sections>
+        <sections>
+            <label><!-- Meter Location and Dates --></label>
+            <section>Meter Location and Dates</section>
+        </sections>
+        <sections>
+            <label><!-- New Meter Details --></label>
+            <section>New Meter Details</section>
+        </sections>
+        <sections>
+            <label><!-- Old Meter Details --></label>
+            <section>Old Meter Details</section>
+        </sections>
+        <sections>
+            <label><!-- RSN Updates --></label>
+            <section>RSN Updates</section>
+        </sections>
+        <sections>
+            <label><!-- Transaction Type --></label>
+            <section>Transaction Type</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Meter readings (Infra)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Metering Follow on Work</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Metering Create Job / Further Work Request​ --></label>
+            <section>Metering Create Job / Further Work Request​</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Metering Job Feedback</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NHH Meter</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- NHH Meter --></label>
+            <section>NHH Meter</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rechargeable Works-Damage Description Report</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contractor Details --></label>
+            <section>Contractor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details of the Incident --></label>
+            <section>Details of the Incident</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Incident Address --></label>
+            <section>Incident Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reinstatement Form</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Risk Assessment - Site Specific</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sewerage Risk Assessment - Site Specific</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Short Duration Works Risk Assessment</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Site Area, SWD, Foul</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Final Comments --></label>
+            <section>Final Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Site Area Details --></label>
+            <section>Site Area Details</section>
+        </sections>
+        <sections>
+            <label><!-- Surface Water Drainage Connection Details --></label>
+            <section>Surface Water Drainage Connection Details</section>
+        </sections>
+        <sections>
+            <label><!-- Waste Water Connection Details --></label>
+            <section>Waste Water Connection Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Valve Management</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancel Form --></label>
+        <name>Cancel_Form_Desktop</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cancel Form --></label>
+        <name>Cancel_Form_Mobile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sketch --></label>
+        <name>FSM_SketchInfraFWR</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sketch Desktop --></label>
+        <name>FSM_SketchInfraFWRDesktop</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Created as part of SFS-6567 --></description>
+        <label><!-- Boards and Barriers --></label>
+        <name>FSM_BoardsAndBarriers</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as part of SFS-2982 --></description>
+        <label><!-- DST Self Audit --></label>
+        <name>FSM_DSTSelfAudit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digger/Trailer Checks/C&amp;G Check --></label>
+        <name>FSM_DiggerTrailerChecksCGCheck</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as a part of SFS-2996 --></description>
+        <label><!-- Distribution Feedback --></label>
+        <name>FSM_DistributionFeedback</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created for Distribution Interruption  form when any interruption occurs sfs-1322 --></description>
+        <label><!-- Distribution Interruption --></label>
+        <name>FSM_DistributionInterruption</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gap Site --></label>
+        <name>FSM_GapSite</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HD Risk Assessment Form --></label>
+        <name>FSM_HDRiskAssessmentForm</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Job Completion - (Water Networks) --></label>
+        <name>FSM_JobCompletionWaterNetworks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Meter Details Form --></label>
+        <name>FSM_MeterDetailsForm</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Meter Readings --></label>
+        <name>FSM_MeterReadings</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-1320 --></description>
+        <label><!-- Metering Job Feedback --></label>
+        <name>FSM_MeteringJobFeedback</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Metering Follow on Work --></label>
+        <name>FSM_Metering_Follow_on_Work</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rechargeable Works-Damage Description Report --></label>
+        <name>FSM_RechargeableWorksDamageDescriptionReport</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-1318 --></description>
+        <label><!-- Reinstatement Form --></label>
+        <name>FSM_ReinstatementForm</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Risk Assessment - Site Specific --></label>
+        <name>FSM_RiskAssessmentSiteSpecific</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as a part of SFS-3048 --></description>
+        <label><!-- Short Duration Works Risk Assessment --></label>
+        <name>FSM_ShortDurationWorksRiskAssessment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as a part of SFS-1314 --></description>
+        <label><!-- Site Area, SWD, Foul --></label>
+        <name>FSM_SiteAreaSWDFoul</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-1325 --></description>
+        <label><!-- Network Management Form --></label>
+        <name>FSM_ValveManagement</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-1317 --></description>
+        <label><!-- Infra Follow On Work Request --></label>
+        <name>Infra_Follow_On_Work_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SFS-3045 --></description>
+        <label><!-- NHH Meter --></label>
+        <name>NHH_Meter</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as part of SFS-6895 --></description>
+        <label><!-- Sewerage Risk Assessment - Site Specific --></label>
+        <name>Sewerage_Risk_Assessment_Site_Specific</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The value should be within 250000 and 550000 --></errorMessage>
+        <name>Range_of_Meter_Grid_X</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The value should be within 250000 and 550000 --></errorMessage>
+        <name>Range_of_Meter_Grid_X_MeterJobFeedback</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The value should be within 170000 and 440000 --></errorMessage>
+        <name>Range_of_Meter_Grid_Y</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Value should be within 170000 and 440000 --></errorMessage>
+        <name>Rule_For_Grid_Refrence_Y</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The value should be within 250000 and 550000 --></errorMessage>
+        <name>Rule_for_Grid_Reference_X</name>
+    </validationRules>
+</CustomObjectTranslation>

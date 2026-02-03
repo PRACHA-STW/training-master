@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Civils - Dig OVER 1.5 m less than 3m</description>
+    <label>Civils - Dig OVER 1.5 m less than 3m (P000000000003000172)</label>
+</Skill>

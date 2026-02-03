@@ -1,0 +1,64 @@
+<!-- Createdby:Aishwarya bhosale
+Description:Created as part of User story SFS-4083. -->
+<template>
+      
+    <div>
+         <template if:true={openFileUploader}>
+            <lightning-card>
+          <!-- <p>{deviceType}</p> -->
+          
+                <c-fsm_simple-sketch-photo-capture  onphotocapture={handlePhotoCaptureImages} onnextbtn={handleClickNext} siteicon={sitedataicon} selbsemap={mapdata} selectedimgs={selimgs} imgsarreditor={editorimgarr} shapearreditor={editorshapesarr} txtarreditor={editortxtarr} sketchimagesdata={sketchiconimages}> </c-fsm_simple-sketch-photo-capture>
+            
+            </lightning-card>
+            </template>
+
+         <template if:true={openbasemap}>
+            <lightning-card>
+                <c-fsm_simple-sketch-base-map
+                    onselectimages={handleImagesSelected}
+                    ondraggableimages={handleDraggableImages}
+                    onsketchimages={handlesketchimages}
+                    photo-images={photoCaptureImageList}
+                    onprevfrombasemap={handleprevformbase}
+                    onnextfrombasemap={handlenextformbase}
+                    retainsiteicon={sitedataicon}
+                    retainbasemap={mapdata}
+                    retainsketchimg={sketchiconimages}>
+                </c-fsm_simple-sketch-base-map>
+            </lightning-card>
+            </template>
+
+            <template if:true={openEditor}>
+                <!-- <lightning-card> -->
+                 
+                <c-fsm_simple-sketch-editor-screen
+                    base-image={baseImageData}
+                    site-image={draggableImageData} 
+                    sketch-image={sketchImageData}
+                    record-id={woId}
+                    sketch-text-fields={sketchText}
+                    photo-images={photoCaptureImageList}
+                    is-mobile={deviceType}
+                    onpreveditor={opensketchfileuploader}
+                    onendscreen={handlecloseform}
+                    textfromsketchmain={textoneditor}
+                    shapesfromsketchmain={shapesoneditor}
+                    imagesfromsketchmain={imagesoneditor}
+                    wo-number={woExternalId}
+                    fields-for-file-name={fieldsForFileName}
+                   >
+                   <!-- is-mobile={deviceType} -->
+                </c-fsm_simple-sketch-editor-screen>
+            <!--</lightning-card>-->
+            </template>
+
+            <template if:true={closewindow}>
+                <lightning-card>
+                <p class="slds-text-color_success slds-text-heading_large slds-text-align_center">Sketch is created successfully. Please close the screen to continue</p> 
+            </lightning-card>
+            </template>
+       
+
+    </div>
+   
+</template>

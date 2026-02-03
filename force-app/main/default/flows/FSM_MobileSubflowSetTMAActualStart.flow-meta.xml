@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_value_to_TMAActualStart_Variable</name>
+        <label>Assign value to TMAActualStart Variable</label>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>TMAActualStart</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TMA_Start_Date_Time</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <choices>
+        <name>SendActualStartConfirmation_No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>SendActualStartConfirmation_Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <description>Created as part of Bug SFS-2408 linked to user story SFS-1888</description>
+        <name>Check_if_TMA_Actual_Start_is_Set_Already</name>
+        <label>Check if TMA Actual Start is Set Already</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>Capture_TMA_Start_Date_Time</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Set</defaultConnectorLabel>
+        <rules>
+            <name>Already_Set</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FSM_TMAActualStart</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>TMA_Actual_Start_Already_Set</targetReference>
+            </connector>
+            <label>Already Set</label>
+        </rules>
+    </decisions>
+    <description>Created as  a part of SFS-2233
+Updated Bug-3939
+Updated as a part of SFS-4792
+Updated as part of SFI-2256
+Updated as part of SFS-7514
+Updated as part of SFS-8161
+Updated as part of SFS-8911</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM Mobile Subflow - Set TMA Actual Start {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
+    <label>FSM Mobile Subflow - Set TMA Actual Start</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <recordUpdates>
+        <description>Created as a part of SFS-4792
+Updated as part of SFI-2256</description>
+        <name>Update_TMA_Actual_Start_on_TMA_Permit_Object</name>
+        <label>Update TMA Actual Start on TMA Permit Object</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <connector>
+            <targetReference>Assign_value_to_TMAActualStart_Variable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>TMA_Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>FSM_EventType__c</field>
+            <value>
+                <stringValue>0400</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_TMAActualStart__c</field>
+            <value>
+                <elementReference>TMA_Start_Date_Time</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FSM_WorkOrderRefID__c</field>
+            <value>
+                <elementReference>ServiceApp.ParentRecordId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FSM_TMAPermit__c</object>
+    </recordUpdates>
+    <screens>
+        <name>Capture_TMA_Start_Date_Time</name>
+        <label>Capture TMA Start Date Time</label>
+        <locationX>314</locationX>
+        <locationY>242</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_TMA_Actual_Start_on_TMA_Permit_Object</targetReference>
+        </connector>
+        <fields>
+            <name>CaptureTMAStartDateTime</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Capture TMA Start Date Time&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>TMA_Start_Date_Time</name>
+            <dataType>DateTime</dataType>
+            <defaultValue>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </defaultValue>
+            <fieldText>TMA Start Date Time</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <validationRule>
+                <errorMessage>&lt;p&gt;Future date time is not allowed&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!TMA_Start_Date_Time}&lt;={!$Flow.CurrentDateTime}</formulaExpression>
+            </validationRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>TMA_Actual_Start_Already_Set</name>
+        <label>TMA Actual Start Already Set</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ActualStartAlreadySet</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;TMA Actual Start Already set. You cannot set it again.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_TMA_Actual_Start_is_Set_Already</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ErrorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>FSM_TMAActualStart</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>SFI-2256</description>
+        <name>ServiceApp</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+    <variables>
+        <description>To Store TMA Permit ID</description>
+        <name>TMA_Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>SFS-8911</description>
+        <name>TMAActualStart</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

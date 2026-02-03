@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notice_Period_Validation_Rule</fullName>
+    <active>true</active>
+    <description>Created as a part of SFS-4807</description>
+    <errorConditionFormula>FSM_NoticePeriod__c  &lt;  FSM_NoticePeriodThreshold__c</errorConditionFormula>
+    <errorDisplayField>FSM_NoticePeriod__c</errorDisplayField>
+    <errorMessage>Notice period cannot be amended below threshold value</errorMessage>
+</ValidationRule>

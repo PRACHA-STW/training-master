@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_RetriggerAutoSchedule__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Added as part of SFS-8474</description>
+    <label>Retrigger Auto Schedule</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

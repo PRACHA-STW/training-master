@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Form Type --></label>
+    <name>FSM_FormType__c</name>
+    <picklistValues>
+        <masterLabel>Asset Update Form</masterLabel>
+        <translation><!-- Asset Update Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boards and Barriers</masterLabel>
+        <translation><!-- Boards and Barriers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clean Water Chemical Acceptance and Authorisation to Discharge Assessment</masterLabel>
+        <translation><!-- Clean Water Chemical Acceptance and Authorisation to Discharge Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confined Spaces Pre Entry Checklist</masterLabel>
+        <translation><!-- Confined Spaces Pre Entry Checklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DST Self Audit</masterLabel>
+        <translation><!-- DST Self Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digger/Trailer Checks/C&amp;G Check</masterLabel>
+        <translation><!-- Digger/Trailer Checks/C&amp;G Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Feedback</masterLabel>
+        <translation><!-- Distribution Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Interruption</masterLabel>
+        <translation><!-- Distribution Interruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gap Site</masterLabel>
+        <translation><!-- Gap Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD Risk Assessment</masterLabel>
+        <translation><!-- HD Risk Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra Follow On Work Request</masterLabel>
+        <translation><!-- Infra Follow On Work Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Completion - (Water Networks)</masterLabel>
+        <translation><!-- Job Completion - (Water Networks) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Details Form</masterLabel>
+        <translation><!-- Meter Details Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Further Work Request</masterLabel>
+        <translation><!-- Meter Further Work Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Readings</masterLabel>
+        <translation><!-- Meter Readings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Follow on Work</masterLabel>
+        <translation><!-- Metering Follow on Work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metering Job Feedback</masterLabel>
+        <translation><!-- Metering Job Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHH Meter</masterLabel>
+        <translation><!-- NHH Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Management Form</masterLabel>
+        <translation><!-- Network Management Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-infra Raise new and follow on work</masterLabel>
+        <translation><!-- Non-infra Raise new and follow on work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-site checklist</masterLabel>
+        <translation><!-- Pre-site checklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rechargeable Works-Damage Description Report</masterLabel>
+        <translation><!-- Rechargeable Works-Damage Description Report --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstatement Form</masterLabel>
+        <translation><!-- Reinstatement Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Assessment - Paper</masterLabel>
+        <translation><!-- Risk Assessment - Paper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Assessment - Site Specific</masterLabel>
+        <translation><!-- Risk Assessment - Site Specific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Assessment - Waste Infra</masterLabel>
+        <translation><!-- Risk Assessment - Waste Infra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPS Complex</masterLabel>
+        <translation><!-- SPS Complex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPS Standard</masterLabel>
+        <translation><!-- SPS Standard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewerage Incident Report Form</masterLabel>
+        <translation><!-- Sewerage Incident Report Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewerage Risk Assessment - Site Specific</masterLabel>
+        <translation><!-- Sewerage Risk Assessment - Site Specific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewerage-Further Work Request (SCM)</masterLabel>
+        <translation><!-- Sewerage-Further Work Request (SCM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sewerage-Job Feedback</masterLabel>
+        <translation><!-- Sewerage-Job Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Duration Works Risk Assessment</masterLabel>
+        <translation><!-- Short Duration Works Risk Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Area, SWD, Foul</masterLabel>
+        <translation><!-- Site Area, SWD, Foul --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vehicle Check</masterLabel>
+        <translation><!-- Vehicle Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Water Chemical Acceptance and Authorisation to Discharge Form</masterLabel>
+        <translation><!-- Waste Water Chemical Acceptance and Authorisation to Discharge Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working Set Pre Use Inspection</masterLabel>
+        <translation><!-- Working Set Pre Use Inspection --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

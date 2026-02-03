@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Activity_Condition_Description</name>
+        <label>Assign Activity Condition Description</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSM_TMAPermitCondition__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_CMDT_Levele2_Metadata.FSM_TMAConditionDescription__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_TMA_Condition</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Activity_Condition_Code_is_inserted</name>
+        <label>Activity Condition Code is inserted</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Update_TMA_Condition</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Inserted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FSM_TMAPermitConditionType__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_CMDT_Levele2_Metadata</targetReference>
+            </connector>
+            <label>Inserted</label>
+        </rules>
+    </decisions>
+    <description>Created as part of SFS-8359</description>
+    <environments>Default</environments>
+    <interviewLabel>TMA Condition {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM TMA Condition Before Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_CMDT_Levele2_Metadata</name>
+        <label>Get CMDT Levele2 Metadata</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Activity_Condition_Description</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FSM_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TMA Condition</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FSM_TMAConditionCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.FSM_TMAPermitConditionType__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>FSM_CMDTLevel2__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_TMA_Condition</name>
+        <label>Update TMA Condition</label>
+        <locationX>182</locationX>
+        <locationY>695</locationY>
+        <inputAssignments>
+            <field>FSM_TMAPermitCondition__c</field>
+            <value>
+                <elementReference>Get_CMDT_Levele2_Metadata.FSM_TMAConditionDescription__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Activity_Condition_Code_is_inserted</targetReference>
+        </connector>
+        <object>FSM_TMAPermitConditions__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

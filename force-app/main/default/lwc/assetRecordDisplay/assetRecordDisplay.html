@@ -1,0 +1,51 @@
+<template>
+	<template if:false={screen5}>
+		<template if:false={backToScreen3}>
+			<lightning-card>
+				<!--ASSET DATA LEVEL 6 -->
+				<lightning-card title="Level 6 Assets" class="button-container"></lightning-card>
+				If the FLOC you are searching for is not displayed, please try alternative search criteria (NB max 50
+				returns).
+				<div>
+					<div class="container">
+						<div class="button-container">
+							<div class="format_container">
+								<lightning-formatted-text label="FLOC" class="temp" value={flocValue}>
+								</lightning-formatted-text>
+							</div>
+						</div></br>
+						<div class="button-container">
+							<lightning-input class="temp" label="Description Filter" value={currentRecordDescription}
+								type="String" onchange={inputDescriptionValue}></lightning-input>
+							<div class="title">
+								<lightning-helptext class="title"
+									content="Please ensure you populate with minimum 3 characters e.g., Pump, Tank etc…">
+								</lightning-helptext>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--BACK AND SEARCH BUTTONS-->
+				<div class="slds-grid" style="margin-top: 25px">
+					<div class="slds-col">
+						<lightning-button class="slds-float_left" label="BACK" icon-name="utility:back" variant="brand"
+							title="Look for Job or Asset History" onclick={handleBackClick}></lightning-button>
+					</div>
+					<div class="slds-col">
+						<lightning-button class="slds-float_right" label="SEARCH" icon-name="utility:search"
+							variant="brand" onclick={handleSearchClick}></lightning-button>
+					</div>
+				</div>
+			</lightning-card>
+		</template>
+		<!--BACK TO SCREEN 3-->
+		<template if:true={backToScreen3}>
+			<c-asset-record-data></c-asset-record-data>
+		</template>
+	</template>
+	<!--MOVE TO SCREEN 5-->
+	<template if:true={screen5}>
+		<c-fsm-floc-level-six-list floc-description={currentRecordDescription} floc-data={currentRecordName}>
+		</c-fsm-floc-level-six-list>
+	</template>
+</template>

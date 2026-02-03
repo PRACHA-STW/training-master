@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PIA_Codes</fullName>
+    <columns>NAME</columns>
+    <columns>FSM_Type__c</columns>
+    <columns>FSM_CodeGroup__c</columns>
+    <columns>FSM_CodeGroupText__c</columns>
+    <columns>FSM_NotificationCode__c</columns>
+    <columns>FSM_PIACode__c</columns>
+    <columns>FSM_PIACodeText__c</columns>
+    <columns>FSM_PIACodeType__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>PIA Codes</label>
+</ListView>

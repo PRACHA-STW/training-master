@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FSM System Administrator</label>
+    <permissionSets>FSL_Admin_Permissions</permissionSets>
+    <permissionSets>FSL_Agent_License</permissionSets>
+    <permissionSets>FSL_Dispatcher_License</permissionSets>
+    <permissionSets>FSM_AdminPermissions</permissionSets>
+    <permissionSets>FSM_DispatcherPermissions</permissionSets>
+    <permissionSets>FSM_RunCreateReports</permissionSets>
+    <permissionSets>FSM_SystemAdminPermissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

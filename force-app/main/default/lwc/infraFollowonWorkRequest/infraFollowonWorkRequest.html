@@ -1,0 +1,109 @@
+<template>
+    <lightning-record-edit-form
+    object-api-name={objectApiName}>
+    <template if:true={sectionone}>
+       
+        <lightning-card title="Site Specific details">
+
+            <lightning-card>
+                <ul class="slds-m-around_medium">
+                  <template for:each={errormessages} for:item="field">
+                    <li key={field.Id} style="color:red;">{field}</li>
+                  </template>
+                </ul>
+              </lightning-card>
+
+            <lightning-input-field field-name="FSM_GridRefOfProposedWorkX__c" required class="gridx" value={gridproposedworkx}></lightning-input-field>
+            <lightning-input-field field-name="FSM_GridRefOfProposedWorkY__c" required class="gridy" value={gridproposedworky}></lightning-input-field>
+           
+        </lightning-card>
+            </template>
+            <!--section 2-->
+            <template if:true={sectiontwo}>
+                <lightning-card>
+                    <ul class="slds-m-around_medium">
+                      <template for:each={errormessages} for:item="field">
+                        <li key={field.Id} style="color:red;">{field}</li>
+                      </template>
+                    </ul>
+                  </lightning-card>
+                <lightning-card>
+             <!--condition-->
+            <lightning-input-field field-name="FSM_SFWIsThisAtADifferentAddress__c" onchange={handleaddresschange} value={diffaddress}></lightning-input-field>
+            <lightning-input-field field-name="FSM_OccupiersName__c" disabled={isnotatdiffadrr} class="occname" value={occname}></lightning-input-field>
+            <lightning-input-field field-name="FSM_OccupiersTelephoneNumber__c" disabled={isnotatdiffadrr} class="occtelno" value={occtelno}></lightning-input-field>
+            <lightning-input-field field-name="FSM_OccupiersHouseNo__c" disabled={isnotatdiffadrr} class="occhseno" value={occhseno}></lightning-input-field>
+            <lightning-input-field field-name="FSM_OccupiersStreet__c" disabled={isnotatdiffadrr} required class="occstreet" value={occstreet}></lightning-input-field>
+            <lightning-input-field field-name="FSM_OccupiersTown__c" disabled={isnotatdiffadrr} class="occtown" value={occstown}></lightning-input-field>
+            <lightning-input-field field-name="FSM_OccupiersCity__c" disabled={isnotatdiffadrr} required class="occcity" value={occcity}></lightning-input-field>
+            <lightning-input-field field-name="FSM_OccupiersPostcode__c" disabled={isnotatdiffadrr} required class="occpostcode" value={occpostcode}></lightning-input-field>
+            <lightning-input-field field-name="FSM_Location__c" disabled={isnotatdiffadrr} required onchange={handlelocationchange} value={occlocation}></lightning-input-field>
+            <lightning-input-field field-name="FSM_LandComments__c" disabled={islocrestrictedland} required value={landcomm}></lightning-input-field>
+            <lightning-input-field field-name="FSM_PermissionToDigRequired__c" required disabled={isnotatdiffadrr} value={permissiontodigreq}></lightning-input-field>
+            <lightning-input-field field-name="FSM_WhichProformaSigned__c" required disabled={isnotatdiffadrr} class="proformasigned" value={proformasigned}></lightning-input-field>
+            <lightning-input-field field-name="FSM_PermissionToDig__c" required disabled={isnotatdiffadrr} value={permissiondig}></lightning-input-field>
+            
+            <!--end condition-->
+           
+      
+           <!-- <lightning-button
+            class="slds-m-top_small"
+            label="Reset Email"
+            onclick={handleReset}></lightning-button>-->
+            </lightning-card>
+            
+        </template>
+        <template if:true={sectionthree}>
+            
+            <lightning-card title="User Details">
+                <lightning-input-field field-name="FSM_Name__c"></lightning-input-field>
+                <lightning-input-field field-name="FSM_Number__c"></lightning-input-field>
+            </lightning-card>
+           
+        </template>
+        <template if:true={sectionfour}>
+           
+           <!-- <c-dependentpicklistsfwr value={selectedValue}></c-dependentpicklistsfwr>-->
+                <lightning-card title="Asset">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                          <template for:each={errormessages} for:item="field">
+                            <li key={field.Id} style="color:red;">{field}</li>
+                          </template>
+                        </ul>
+                      </lightning-card>
+                    <lightning-input-field field-name="FSM_Asset__c" value={assetinp} class="assetcls"  required></lightning-input-field>
+                    <lightning-input-field field-name="FSM_Task__c" value={taskinp} class="taskcls"  required></lightning-input-field>
+                    <lightning-input-field field-name="FSM_Technique__c" value={techniqueinp} class="techniquecls"  required></lightning-input-field>
+                    <lightning-input-field field-name="FSM_AssetSize__c" value={sizeinp}  class="sizecls" required></lightning-input-field>
+                    <lightning-input-field field-name="FSM_AssetMaterial__c" value={materialinp} class="materialcls" required></lightning-input-field>
+                    <lightning-input-field field-name="FSM_AssetUID__c" value={assetuuid} class="assetuidcls"></lightning-input-field>
+                </lightning-card>
+        </template>
+        <template if:true={sectionfive}>
+            <lightning-card>
+                <p>section 5</p>
+                
+              <!--  <lightning-card>
+                    <lightning-input-field field-name="FSM_Asset__c" onchange={handleassetchange}></lightning-input-field>
+                    <lightning-input-field field-name="FSM_Task__c" onchange={handletaskchange}></lightning-input-field>
+                    <lightning-input-field field-name="FSM_Technique__c" onchange={handletechniquechange}></lightning-input-field>
+                    <lightning-input-field field-name="FSM_AssetSize__c" onchange={handlesizechange}></lightning-input-field>
+                    <lightning-input-field field-name="FSM_AssetMaterial__c" onchange={handlematerialchange}></lightning-input-field>
+                    <lightning-input-field field-name="FSM_AssetUID__c"></lightning-input-field>
+                </lightning-card>-->
+              <!--  <c-dependentpicklistsfwr value={selectedValue}></c-dependentpicklistsfwr>-->
+            </lightning-card>
+            
+        </template>
+        <template if:true={isEnablePrev}>
+        <lightning-button label="Previous" variant="brand" onclick={handlePrevious} icon-name="utility:back"></lightning-button>
+          </template>
+            <template if:true={isEnableNext}>
+                <lightning-button label="Next" onclick={handleNext} variant="brand" icon-name="utility:chevronright"></lightning-button>
+            </template>
+            <template if:true={lastpage}>
+              <lightning-button label="Close" onclick={handleclose} variant="brand" type="Submit" icon-name="utility:chevronright"></lightning-button>
+            </template>
+        </lightning-record-edit-form>
+            </template>

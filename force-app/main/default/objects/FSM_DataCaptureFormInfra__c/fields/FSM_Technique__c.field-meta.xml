@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Technique__c</fullName>
+    <inlineHelpText>The Technique is how the asset is going to be repaired e.g. Under pressure</inlineHelpText>
+    <label>Technique</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>COLLAR</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>PIECE &lt;=2M</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>LENGTH &gt;2M</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>SPINDLE</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>CONE/GLAND</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>PIECE THROUGH</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>OVERLANDER</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>IN-LINE</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>END</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>FLUSH AND SAMPLE</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>FREE OF CHARGE</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>AT COST</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>BY CUSTOMER</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>STEP TEST</label>
+            </value>
+            <value>
+                <fullName>15</fullName>
+                <default>false</default>
+                <label>VANE</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>BATTERY</label>
+            </value>
+            <value>
+                <fullName>17</fullName>
+                <default>false</default>
+                <label>PULSE UNIT</label>
+            </value>
+            <value>
+                <fullName>18</fullName>
+                <default>false</default>
+                <label>UNBLOCK</label>
+            </value>
+            <value>
+                <fullName>19</fullName>
+                <default>false</default>
+                <label>OPERATIONAL CHANGE</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>ELECTROMAG</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>CONVERTOR</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>FOR LOGGER</label>
+            </value>
+            <value>
+                <fullName>23</fullName>
+                <default>false</default>
+                <label>DEVELOPER SERVICES</label>
+            </value>
+            <value>
+                <fullName>24</fullName>
+                <default>false</default>
+                <label>PLANNED</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>REACTIVE</label>
+            </value>
+            <value>
+                <fullName>26</fullName>
+                <default>false</default>
+                <label>DEFECT</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>UNDER PRESSURE</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>DRY HOLE</label>
+            </value>
+            <value>
+                <fullName>29</fullName>
+                <default>false</default>
+                <label>SHARED SUPPLY</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>LEAD REPLACE NON ODI</label>
+            </value>
+            <value>
+                <fullName>31</fullName>
+                <default>false</default>
+                <label>NON LEAD</label>
+            </value>
+            <value>
+                <fullName>32</fullName>
+                <default>false</default>
+                <label>HEAD CHANGE</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>PLUG CHANGE</label>
+            </value>
+            <value>
+                <fullName>34</fullName>
+                <default>false</default>
+                <label>CONSEQUENTIAL DAMAGE</label>
+            </value>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>FULL EXCAVATION</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>FULL EXC M/FOLD</label>
+            </value>
+            <value>
+                <fullName>37</fullName>
+                <default>false</default>
+                <label>MOLED</label>
+            </value>
+            <value>
+                <fullName>38</fullName>
+                <default>false</default>
+                <label>MOLED M/FOLD</label>
+            </value>
+            <value>
+                <fullName>39</fullName>
+                <default>false</default>
+                <label>NO EXCAVATION</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>FULL EXC 2PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>41</fullName>
+                <default>false</default>
+                <label>MOLED 2PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>42</fullName>
+                <default>false</default>
+                <label>NO EXC 2PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>43</fullName>
+                <default>false</default>
+                <label>FULL EXC 4PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>44</fullName>
+                <default>false</default>
+                <label>MOLED 4PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>NO EXC 4PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>46</fullName>
+                <default>false</default>
+                <label>FULL EXC 6PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>47</fullName>
+                <default>false</default>
+                <label>MOLED 6PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>48</fullName>
+                <default>false</default>
+                <label>NO EXC 6PT M/FOLD</label>
+            </value>
+            <value>
+                <fullName>49</fullName>
+                <default>false</default>
+                <label>RESTORE SUPPLY</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>METHOD A</label>
+            </value>
+            <value>
+                <fullName>51</fullName>
+                <default>false</default>
+                <label>METHOD B</label>
+            </value>
+            <value>
+                <fullName>52</fullName>
+                <default>false</default>
+                <label>INTERIM - METHOD C</label>
+            </value>
+            <value>
+                <fullName>53</fullName>
+                <default>false</default>
+                <label>FIX LEAK</label>
+            </value>
+            <value>
+                <fullName>54</fullName>
+                <default>false</default>
+                <label>CLEAR TO BOUNDARY</label>
+            </value>
+            <value>
+                <fullName>55</fullName>
+                <default>false</default>
+                <label>LEAD REPLACEMENT ODI</label>
+            </value>
+            <value>
+                <fullName>56</fullName>
+                <default>false</default>
+                <label>HV LEAD REP/MENT ODI</label>
+            </value>
+            <value>
+                <fullName>57</fullName>
+                <default>false</default>
+                <label>WITH PIECE</label>
+            </value>
+            <value>
+                <fullName>59</fullName>
+                <default>false</default>
+                <label>BOPPS</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>STD B AND B REP</label>
+            </value>
+            <value>
+                <fullName>61</fullName>
+                <default>false</default>
+                <label>NON-STD B AND B REP</label>
+            </value>
+            <value>
+                <fullName>63</fullName>
+                <default>false</default>
+                <label>LEAKAGE TEAM</label>
+            </value>
+            <value>
+                <fullName>70</fullName>
+                <default>false</default>
+                <label>DEFECT – DLO</label>
+            </value>
+            <value>
+                <fullName>71</fullName>
+                <default>false</default>
+                <label>DEFECT – CLO NON-PAY</label>
+            </value>
+            <value>
+                <fullName>72</fullName>
+                <default>false</default>
+                <label>DEFECT – CLO PAY</label>
+            </value>
+            <value>
+                <fullName>73</fullName>
+                <default>false</default>
+                <label>CHECKLIST ATTACHED</label>
+            </value>
+            <value>
+                <fullName>74</fullName>
+                <default>false</default>
+                <label>CHECKLIST NOT ATTACH</label>
+            </value>
+            <value>
+                <fullName>75</fullName>
+                <default>false</default>
+                <label>CAPITAL SCHEME</label>
+            </value>
+            <value>
+                <fullName>76</fullName>
+                <default>false</default>
+                <label>ORIGIN</label>
+            </value>
+            <value>
+                <fullName>79</fullName>
+                <default>false</default>
+                <label>LOGGER ADAPTOR</label>
+            </value>
+            <value>
+                <fullName>80</fullName>
+                <default>false</default>
+                <label>HIGH VOLUME</label>
+            </value>
+            <value>
+                <fullName>81</fullName>
+                <default>false</default>
+                <label>HV CLEAR TO BOUNDARY</label>
+            </value>
+            <value>
+                <fullName>82</fullName>
+                <default>false</default>
+                <label>HV LEAD REPL NON ODI</label>
+            </value>
+            <value>
+                <fullName>83</fullName>
+                <default>false</default>
+                <label>HV NON LEAD</label>
+            </value>
+            <value>
+                <fullName>99</fullName>
+                <default>false</default>
+                <label>NOT APPLICABLE</label>
+            </value>
+            <value>
+                <fullName>64</fullName>
+                <default>false</default>
+                <label>IN HIGHWAY</label>
+            </value>
+            <value>
+                <fullName>66</fullName>
+                <default>false</default>
+                <label>AERIAL REPLACED</label>
+            </value>
+            <value>
+                <fullName>67</fullName>
+                <default>false</default>
+                <label>SENSOR REPLACED</label>
+            </value>
+            <value>
+                <fullName>68</fullName>
+                <default>false</default>
+                <label>LOGGER REFITTED</label>
+            </value>
+            <value>
+                <fullName>98</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-DIV. AROUND DRAIN</label>
+            </value>
+            <value>
+                <fullName>86</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-GRANT SCHEME</label>
+            </value>
+            <value>
+                <fullName>69</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-GREEN RECOVERY</label>
+            </value>
+            <value>
+                <fullName>78</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-INSPECTION</label>
+            </value>
+            <value>
+                <fullName>96</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-INT EXCH TO B-BOX</label>
+            </value>
+            <value>
+                <fullName>97</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-INT RE-ROUTE PIPE</label>
+            </value>
+            <value>
+                <fullName>90</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-LEAD DETECTED</label>
+            </value>
+            <value>
+                <fullName>91</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-LEAD NOT DETECTED</label>
+            </value>
+            <value>
+                <fullName>95</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-LEAK W. EXIST POE</label>
+            </value>
+            <value>
+                <fullName>94</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-LEAK WITH NEW POE</label>
+            </value>
+            <value>
+                <fullName>77</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-LOGGER ADAPTOR</label>
+            </value>
+            <value>
+                <fullName>89</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-PERM. DISCONNECT</label>
+            </value>
+            <value>
+                <fullName>87</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-REPL LEAD LEAK</label>
+            </value>
+            <value>
+                <fullName>88</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-REPL NO LEAD LEAK</label>
+            </value>
+            <value>
+                <fullName>84</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-REPLACE LEAD</label>
+            </value>
+            <value>
+                <fullName>85</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-REPLACE NON LEAD</label>
+            </value>
+            <value>
+                <fullName>93</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-USING EXISTNG POE</label>
+            </value>
+            <value>
+                <fullName>92</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GR-WITH NEW POE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

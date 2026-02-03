@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_InterruptionCause__c</fullName>
+    <description>sfs-1322</description>
+    <label>Cause of Interruption</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air Lock</fullName>
+                <default>false</default>
+                <label>Air Lock</label>
+            </value>
+            <value>
+                <fullName>Hydrant Repair</fullName>
+                <default>false</default>
+                <label>Hydrant Repair</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Rehab</fullName>
+                <default>false</default>
+                <label>Rehab</label>
+            </value>
+            <value>
+                <fullName>Reservoir - Valve</fullName>
+                <default>false</default>
+                <label>Reservoir - Valve</label>
+            </value>
+            <value>
+                <fullName>Telemetry Fault</fullName>
+                <default>false</default>
+                <label>Telemetry Fault</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FSM_ST_FW_DeveloperServices</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Created as part of SFL-886</description>
+        <label>ST FW Developer Services</label>
+        <sharedTo>
+            <group>FSM_FW_DeveloperServices</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Developer Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Fsm_ST_FW_WasteInfra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Created as part of SFL-886</description>
+        <label>ST FW Waste Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WasteInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Waste Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ST_FW_Water_Infra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Created as part of SFL-886</description>
+        <label>ST FW Water Infra</label>
+        <sharedTo>
+            <group>FSM_FW_WaterInfra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>FSM_BusinessUnit__c</field>
+            <operation>equals</operation>
+            <value>Water Infra</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

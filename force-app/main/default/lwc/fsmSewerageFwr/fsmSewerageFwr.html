@@ -1,0 +1,896 @@
+<!--**************************************************************************************
+    - Description  : Created for DCF Sewerage Further Work Request 
+    - Created Date : 11th Dec 2023
+    - Modified By  : Brajesh Kumar
+**************************************************************************************** -->
+<template>
+    <lightning-card>
+        <!-- <div class="slds-form"> -->
+        <lightning-record-edit-form object-api-name={objectApiName}>
+            <!-- test -->
+            <template if:true={isEditOnProgress}>
+                <lightning-card>
+                    <div style="height: 50vh; display: flex; justify-content: center; align-items: center;">
+                        <p style="font-size: x-large; font-weight: 600; text-align: center;color: red;">
+                            The form is already completed and cannot be edited.
+                        </p>
+                    </div>
+                </lightning-card>
+            </template>
+            <!-- tes -->
+            <template if:true={Screen1}>
+                <lightning-card title="Enter job address / location details below including owner/occupier details">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Occupier's Name</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={occupiersName}
+                            onchange={handleOccupiersNameChange} class="occupiersNamecls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>House Name</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={occupiersHouseName}
+                            onchange={handleOccupiersHouseNameChange} class="occupiersHouseNamecls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>House No</p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-input type="number" pattern="[0-9\-]*" variant="label-hidden"
+                            value={occupiersHouseNo} onchange={handleOccupiersHouseNoChange}
+                            class="occupiersHouseNocls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Street</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={occupiersStreet}
+                            onchange={handleOccupiersStreetChange} class="occupiersStreetcls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Town</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={occupiersTown}
+                            onchange={handleOccupiersTownChange} class="occupiersTowncls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>City</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={occupiersCity}
+                            onchange={handleOccupiersCityChange} class="occupiersCitycls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Postal Code</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={occupiersPostalCode}
+                            onchange={handleOccupiersPostalCodeChange} class="occupiersPostalCodecls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Telephone</p>
+                        </div>
+                        <lightning-input type="text" variant="label-hidden"
+                            value={occupiersTelephone} onchange={handleOccupiersTelephoneChange}
+                            class="occupiersTelephonecls" max-length="30">
+                        </lightning-input>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen2}>
+                <lightning-card title="Grid Reference of proposed work">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>X co-ordinate </p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-input type="number" pattern="[0-9\-]*" variant="label-hidden" label=""
+                            value={xCoordinate} onchange={handlexCoordinateChange} class="xCoordinatecls"
+                            max-length="6">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Y co-ordinate</p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-input type="number" pattern="[0-9\-]*" variant="label-hidden" label=""
+                            value={yCoordinate} onchange={handleyCoordinateChange} class="yCoordinatecls"
+                            max-length="6">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>UID of Proposed Work </p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-input type="number" pattern="[0-9\-]*" variant="label-hidden" value={uidProposedWork}
+                            onchange={handleUidProposedWorkChange} class="uidProposedWorkcls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <lightning-input type="checkbox" variant="label-hidden" checked={FWDifferentAddress}
+                                onchange={handleFWDifferentAddressChange}
+                                class="fWDifferentAddresscls"></lightning-input>
+                            &nbsp;
+                            <p>Is this further work at a different address? </p>
+                        </div>
+                        <div style="display: flex;" class="slds-m-vertical_x-small" if:false={FWDifferentAddress}>
+                            <lightning-input type="checkbox" variant="label-hidden" checked={orderAddressUpdate}
+                                onchange={handleOrderAddressUpdateChange}
+                                class="orderAddressUpdatecls"></lightning-input>
+                            &nbsp;
+                            <p>Update address on order? </p>
+                        </div>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen3}>
+                <lightning-card title="Owners Details (if different from above) ">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Owner's Name</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={ownersName}
+                            onchange={handleOwnersNameChange} class="ownersNamecls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>House Name</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={ownersHouseName}
+                            onchange={handleOwnersHouseNameChange} class="ownersHouseNamecls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>House No</p>
+                        </div>
+                        <lightning-input type="number" pattern="[0-9\-]*" variant="label-hidden" value={ownersHouseNo}
+                            onchange={handleOwnersHouseNoChange} class="ownersHouseNocls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Street</p>
+                            <!-- <p class="required">*</p> -->
+                        </div>
+                        <lightning-input variant="label-hidden" value={ownersStreet} onchange={handleOwnersStreetChange}
+                            class="ownersStreetcls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Town</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={ownersTown} onchange={handleOwnersTownChange}
+                            class="ownersTowncls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>City</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={ownersCity} onchange={handleOwnersCityChange}
+                            class="ownersCitycls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Postal Code</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={ownersPostalCode}
+                            onchange={handleOwnersPostalCodeChange} class="ownersPostalCodecls">
+                        </lightning-input>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Telephone</p>
+                        </div>
+                        <lightning-input type="text" max-length="30" variant="label-hidden" value={ownersTelephone}
+                            onchange={handleOwnersTelephoneChange} class="ownersTelephonecls">
+                        </lightning-input>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen4}>
+                <lightning-card title="Location">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Location</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedLocation} options={Location}
+                            onchange={handleLocationChange}>
+                        </lightning-combobox>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen5}>
+                <lightning-card title="Permission to dig details :">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Permission to dig granted</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedPermissionToDig}
+                            options={permissionToDig} onchange={handlePermissionToDigChange}>
+                        </lightning-combobox>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen6}>
+                <lightning-card title="Proposed Work Details">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Task</p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedTask} options={taskRecords}
+                            onchange={handleTaskChange} required>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Asset</p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedAsset} options={filteredAsset}
+                            onchange={handleAssetChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Job Scope </p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedJobScope} options={filteredJobScope}
+                            onchange={handleJobScopeChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Transferred Asset </p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedTrAsset}
+                            options={filteredTransferredAsset} onchange={handleTransferredAssetChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Job Recipient </p>
+                            <p class="required"> *</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedJobRecepient}
+                            options={filteredJobRecepient} onchange={handleJobRecepientChange}>
+                        </lightning-combobox>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen8}>
+                <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                        <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                </ul>
+                <div class="slds-m-horizontal_xx-small">
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Requested Equipment</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedReqEquipment} options={reqEquipment}
+                        onchange={handleReqEquipmentChange}>
+                    </lightning-combobox>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Manhole ref</p>
+                    </div>
+                    <lightning-input variant="label-hidden" label="" value={manholeRef}
+                        onchange={handleManholeRefChange} class="manholeRefcls">
+                    </lightning-input>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Repair Length (m)</p>
+                    </div>
+                    <lightning-input type="number" step="0.01" pattern="[0-9\-]*(\.[0-9]{1,2})?$" variant="label-hidden"
+                        label="" value={repairLength} onchange={handleRepairLengthChange} class="repairLengthcls">
+                    </lightning-input>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Repair Depth (m)</p>
+                    </div>
+                    <lightning-input type="number" step="0.01" pattern="[0-9\-]*(\.[0-9]{1,2})?$" variant="label-hidden"
+                        label="" value={repairDepth} onchange={handleRepairDepthChange} class="repairDepthcls">
+                    </lightning-input>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Details of proposed work </p>
+                    </div>
+                    <lightning-input variant="label-hidden" label="" value={proposedWrkDetails}
+                        onchange={handleProposedWrkDetailsChange} class="proposedWrkDetailscls">
+                    </lightning-input>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Priority</p>
+                        <p class="required">*</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedPriority} options={priority}
+                        onchange={handlePriorityChange}>
+                    </lightning-combobox>
+                </div>
+            </template>
+            <template if:true={Screen9}>
+                <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                        <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                </ul>
+                <div class="slds-m-horizontal_xx-small">
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Restricted Days : </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-bottom_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Monday}
+                            onchange={handleMondayChange}></lightning-input>
+                        &nbsp;
+                        <p>Monday </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Tuesday}
+                            onchange={handleTuesdayChange}></lightning-input>
+                        &nbsp;
+                        <p>Tuesday </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Wednesday}
+                            onchange={handleWednesdayChange}></lightning-input>
+                        &nbsp;
+                        <p>Wednesday </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Thursday}
+                            onchange={handleThursdayChange}></lightning-input>
+                        &nbsp;
+                        <p>Thursday </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Friday}
+                            onchange={handleFridayChange}></lightning-input>
+                        &nbsp;
+                        <p>Friday </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Saturday}
+                            onchange={handleSaturdayChange}></lightning-input>
+                        &nbsp;
+                        <p>Saturday </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Sunday}
+                            onchange={handleSundayChange}></lightning-input>
+                        &nbsp;
+                        <p>Sunday </p>
+                    </div>
+                    <!-- sfs-6005 change start -->
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Times where work can <Strong> NOT </Strong> be carried out? </p>
+                        <lightning-helptext
+                            content="Work shouldn't be carried out at the times selected. For Example, If a job can only be done at night please select AM & PM"></lightning-helptext>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={RestrictedTimeAM}
+                            onchange={handleRestrictedTimeAMChange}></lightning-input>
+                        &nbsp;
+                        <p>AM</p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={RestrictedTimePM}
+                            onchange={handleRestrictedTimePMChange}></lightning-input>
+                        &nbsp;
+                        <p>PM</p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={RestrictedTimeNight}
+                            onchange={handleRestrictedTimeNightChange}></lightning-input>
+                        &nbsp;
+                        <p>Night</p>
+                    </div>
+                </div>
+                <!-- </lightning-card>    -->
+            </template>
+            <template if:true={Screen10}>
+                <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                        <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                </ul>
+                <div class="slds-m-horizontal_xx-small">
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Is Job traced and marked ?</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={isJobTracedMarked} options={Options}
+                        onchange={handleJobTracedChange}>
+                    </lightning-combobox>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Manholes / sewers accessible? </p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={manholesSewersAccessible} options={Options}
+                        onchange={handleManholesSewersChange}>
+                    </lightning-combobox>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Any hand dig? </p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={anyHandDig} options={Options}
+                        onchange={handleHandDigChange}>
+                    </lightning-combobox>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Overpumping required </p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={overPumpingRequired} options={Options}
+                        onchange={handleOverPumpingChange}>
+                    </lightning-combobox>
+                    <span if:true={ValuesCheck.overPumpingRequired}>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>If yes, details</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={overPumpingComments}
+                            onchange={handleOverPumpingCommentsChange}>
+                        </lightning-input>
+                    </span>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Tanker support required </p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={tankerSupportRequired} options={Options}
+                        onchange={handleTankerSupportChange}>
+                    </lightning-combobox>
+                    <span if:true={ValuesCheck.tankerSupportRequired}>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>If yes, details</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={tankerSupportComments}
+                            onchange={handleTankerSupportCommentsChange}>
+                        </lightning-input>
+                    </span>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Other support operations </p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={otherSupportOperations} options={Options}
+                        onchange={handleOtherSupportOperationsChange}>
+                    </lightning-combobox>
+                    <span if:true={ValuesCheck.otherSupportOperations}>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>If yes, details</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={otherSupportComments}
+                            onchange={handleOtherSupportCommentsChange}>
+                        </lightning-input>
+                    </span>
+                </div>
+            </template>
+            <template if:true={Screen11}>
+                <lightning-card title="Traffic Management and TMA Notice details">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Activity Type</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedActivity} options={activityType}
+                            onchange={handleActivityTypeChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Surface Type</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedSurfaceType} options={surfaceType}
+                            onchange={handleSurfaceTypeChange}>
+                        </lightning-combobox>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen12}>
+                <lightning-card  lwc:ref="topDiv" data-id="nav-screen12">
+                <ul class="slds-m-around_medium">
+                    <template for:each={errormessages} for:item="field">
+                        <li key={field.Id} style="color:red;">{field}</li>
+                    </template>
+                </ul>
+                <div class="slds-m-horizontal_xx-small">
+                    <div style="display: flex;">
+                        <p>Method of work</p>
+                        <p class="required">*</p>
+                        <lightning-helptext
+                            content="Please select the correct method required to complete the work, Please refer to NRSWA red book"></lightning-helptext>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedMethodOfWork} options={MethodOfWork}
+                        onchange={handleMethodOfWorkChange}>
+                    </lightning-combobox>
+                    <!-- Location Type Section added  -->
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <Strong>Location Type</Strong>
+                    </div>
+                    <!-- Location Type to CheckBox start -->
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Carriageway}
+                            onchange={handleCarriagewayChange}></lightning-input>
+                        &nbsp;
+                        <p>Carriageway </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Verge}
+                            onchange={handleVergeChange}></lightning-input>
+                        &nbsp;
+                        <p>Verge </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={BridlewayFootpath}
+                            onchange={handleBridlewayFootpathChange}></lightning-input>
+                        &nbsp;
+                        <p>Bridleway/ Footpath </p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={PrivateLand}
+                            onchange={handlePrivateLandChange}></lightning-input>
+                        &nbsp;
+                        <p>Private Land</p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Footway}
+                            onchange={handleFootwayChange}></lightning-input>
+                        &nbsp;
+                        <p>Footway</p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={Cycleway}
+                            onchange={handleCyclewayChange}></lightning-input>
+                        &nbsp;
+                        <p>Cycleway</p>
+                    </div>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <lightning-input type="checkbox" variant="label-hidden" checked={PedestrianisedZone}
+                            onchange={handlePedestrianisedZoneChange}></lightning-input>
+                        &nbsp;
+                        <p>Pedestrianised Zone</p>
+                    </div>
+                    <!-- SFS-6005 START -->
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Pedestrian Walkway</p>
+                        <lightning-helptext
+                            content="Where will you set up a walkway? Refer to NRSWA red book for guidance"></lightning-helptext>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedPedestrianWalkway}
+                        options={PedestrianWalkway} onchange={handlePedestrianWalkwayChange}>
+                    </lightning-combobox>
+
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Road Type</p>
+                        <p class="required">*</p>
+                        <lightning-helptext
+                            content="Ask yourself Can a HGV/Bus drive down the road? For Example :- a Low Bridge or weight limited bridge. If no then its classed as a standard road"></lightning-helptext>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedRoadType} options={RoadType}
+                        onchange={handleRoadTypeChange}>
+                    </lightning-combobox>
+
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Pedestrian lights</p>
+                        <p class="required">*</p>
+                        <lightning-helptext content="What are the pedestrian lights onsite"></lightning-helptext>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedPedestrianLights}
+                        options={PedestrianLights} onchange={handlePedestrianLightsChange}>
+                    </lightning-combobox>
+                    <!-- road speed here  need to change-->
+                    <span if:true={carriageway}>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Road Speed (mph)</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedSpeed} options={speed}
+                            onchange={handleSpeedChange}>
+                        </lightning-combobox>
+                    </span>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Visibility to Men at Work - Traffic light Head</p>
+                        <p class="required">*</p>
+                        <lightning-helptext
+                            content="What will be the visibility to the first sign/traffic light head when the site is set up refer to NRSWA red book for guidance"></lightning-helptext>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedVisibilityMenWork}
+                        options={VisibilityMenWork} onchange={handleVisibilityMenWorkChange}>
+                    </lightning-combobox>
+
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Footway Width (m)</p>
+                        <p class="required">*</p>
+                    </div>
+                    <lightning-input type="number" variant="label-hidden" step="0.01" max-length="5"
+                        value={selectedFootwayWidth} onchange={handleFootwayWidthChange}>
+                    </lightning-input>
+
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Carriageway width (m)</p>
+                        <p class="required">*</p>
+                    </div>
+                    <!-- step="0.01" pattern="[0-9\-]*(\.[0-9]{1,2})?$" -->
+                    <lightning-input type="number" variant="label-hidden" step="0.01" max-length="5"
+                        value={selectedCarriagewayWidth} onchange={handleCarriagewayWidthChange}>
+                    </lightning-input>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Traffic Flow</p>
+                        <p class="required">*</p>
+                        <lightning-helptext
+                            content="Dynamic box that populates on the sketch (able to move on sketch) (Box need to have a specific outline colour blue)"></lightning-helptext>
+                    </div>
+                    <lightning-input variant="label-hidden" label="" value={selectedTrafficFlow}
+                        onchange={handleTrafficFlowChange}>
+                    </lightning-input>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Specialist Treatment ?</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={specialistTreatment} options={Options}
+                        onchange={handleSpecialistTreatmentChange}>
+                    </lightning-combobox>
+                    <span if:true={ValuesCheck.specialistTreatment}>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>If yes, give details</p>
+                            <p class="required" if:true={ValuesCheck.specialistTreatment}>*</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={specialistTreatmentComments}
+                            onchange={handleSpecialistTreatmentCommentsChange}>
+                        </lightning-input>
+                    </span>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Road Markings ?</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={roadMarking} options={Options}
+                        onchange={handleRoadMarkingChange}>
+                    </lightning-combobox>
+                    <span if:true={ValuesCheck.roadMarking}>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>If yes, give details</p>
+                            <p class="required" if:true={ValuesCheck.roadMarking}>*</p>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={roadMarkingComments}
+                            onchange={handleRoadMarkingCommentsChange}>
+                        </lightning-input>
+                    </span>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Traffic lights less than 50m ?</p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={trafficLights50mm} options={Options}
+                        onchange={handleTrafficLights50mmChange}>
+                    </lightning-combobox>
+                    <!-- SFS-6005 START - REMOVE -->
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Traffic Light Restriction</p>
+                    </div>
+                    <lightning-input variant="label-hidden" label="" value={trafficLightRestriction}
+                        onchange={handletrafficLightRestrictionChange} max-length="255">
+                    </lightning-input>
+                    <div style="display: flex;" class="slds-m-vertical_x-small">
+                        <p>Is location Traffic Sensitive? </p>
+                    </div>
+                    <lightning-combobox variant="label-hidden" value={selectedTrafficSensitive}
+                        options={trafficSensitive} onchange={handleTrafficSensitiveChange}>
+                    </lightning-combobox>
+                </div>
+            </lightning-card>
+            </template>
+            <template if:true={Screen13}>
+                <lightning-card  lwc:ref="topDiv" data-id="nav-screen13">
+                    <ul class="slds-m-around_medium">
+                        <template for:each={errormessages} for:item="field">
+                            <li key={field.Id} style="color:red;">{field}</li>
+                        </template>
+                    </ul>
+                    <div class="slds-m-horizontal_xx-small slds-scrollable">
+                        <div style="display: flex;">
+                            <p>Is the job urgent? </p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" class="jobUrgentCombobox" value={selectedJobUrgent}
+                            options={jobUrgent} onchange={handleJobUrgentChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>No waiting cones required? </p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedWaitingCones} options={waitingCones}
+                            onchange={handleWaitingConesChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Footway closure? </p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedFootwayClosure}
+                            options={footwayClosure} onchange={handleFootwayClosureChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Parking suspension? </p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={parkingSuspension} options={Options}
+                            onchange={handleParkingSuspensionChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Carriageway restrictions </p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" options={carriagewayRestriction}
+                            value={selCarriagewayRestriction}
+                            onchange={handleCarriagewayRestrictionChange}></lightning-combobox>
+                        <!-- SFS-6005 -->
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Train or Tram</p>
+                            <p class="required">*</p>
+                            <lightning-helptext
+                                content="Is there a train/tram in the vicinity of the work? Please refer to SSOW on waterpedia and confirm with line manager"></lightning-helptext>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedTrainOrTram} options={trainOrTram}
+                            onchange={handletrainOrTramChange}>
+                        </lightning-combobox>
+
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Bus</p>
+                            <p class="required">*</p>
+                            <lightning-helptext content="Is there any bus impact onsite"></lightning-helptext>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedBus} options={Bus}
+                            onchange={handleBusChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Cycle</p>
+                            <p class="required">*</p>
+                            <lightning-helptext content="Is there any cycle impact onsite"></lightning-helptext>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedCycle} options={Cycle}
+                            onchange={handleCycleChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Special Feature</p>
+                            <p class="required">*</p>
+                            <lightning-helptext content="Unique Conditions on site"></lightning-helptext>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedSpecialFeature}
+                            options={SpecialFeature} onchange={handleSpecialFeatureChange}>
+                        </lightning-combobox>
+
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Comm's Method</p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={selectedCommsMethod} options={CommsMethod}
+                            onchange={handleCommsMethodChange}>
+                        </lightning-combobox>
+                        <!-- <div style="display: flex;" class="slds-m-vertical_x-small"> -->
+                        <div style="display: flex;" class="multiselect-picklist">
+                            <p>Comm's Type</p>
+                            <p class="required">*</p>
+                        </div>
+                        <div class="multiselectcls">
+                            <lightning-dual-listbox variant="label-hidden" options={CommsType} value={selectedCommsType}
+                                onchange={handleCommsTypeChange}></lightning-dual-listbox>
+                        </div>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Site Comments</p>
+                            <lightning-helptext content="Dynamic box that populates on the sketch"></lightning-helptext>
+                        </div>
+                        <lightning-input variant="label-hidden" label="" value={selectedSiteComments}
+                            onchange={handleSiteCommentsChange} max-length="500">
+                        </lightning-input>
+
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Planning information/Customer Comms</p>
+                            <lightning-helptext
+                                content="Dynamic box that populates on the sketch PDF"></lightning-helptext>
+                        </div>
+                        <!-- updated max length for below planning input from 500 to 1000 as part of SFL-967 -->
+                        <lightning-input variant="label-hidden" label="" value={selectedPlanningInfo}
+                            onchange={handlePlanningInfoChange} max-length="1000">
+                        </lightning-input>
+                    </div>
+                </lightning-card >
+                <!-- </lightning-card> -->
+            </template>
+            <template if:true={Screen14}>
+                <lightning-card title="Environmental impact">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Potential Environmental Impact ?</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={envImpact} options={Options}
+                            onchange={handleEnvImpactChange}>
+                        </lightning-combobox>
+                        <span if:true={ValuesCheck.envImpact}>
+                            <div style="display: flex;" class="slds-m-vertical_x-small">
+                                <p>If yes, details </p>
+                                <p class="required">*</p>
+                            </div>
+                            <lightning-input variant="label-hidden" value={envImpactComments}
+                                onchange={handleEnvImpactCommentsChange}>
+                            </lightning-input>
+                        </span>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Is there a risk to an environmental important site? SSSI/SAMs/NR </p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={evnImpSite} options={Options}
+                            onchange={handleEvnImpSiteChange}>
+                        </lightning-combobox>
+                    </div>
+                </lightning-card>
+            </template>
+            <template if:true={Screen15}>
+                <lightning-card title="Health and Safety information">
+                    <lightning-card>
+                        <ul class="slds-m-around_medium">
+                            <template for:each={errormessages} for:item="field">
+                                <li key={field.Id} style="color:red;">{field}</li>
+                            </template>
+                        </ul>
+                    </lightning-card>
+                    <div class="slds-m-horizontal_xx-small">
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Overhead power lines within 10m? </p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={overheadPowerlines} options={Options}
+                            onchange={handleOverheadPowerlinesChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Lamp support/removal required? </p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={lampSupport} options={Options}
+                            onchange={handleLampSupportChange}>
+                        </lightning-combobox>
+                        <!-- </span> -->
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Confined space working? </p>
+                        </div>
+                        <lightning-combobox variant="label-hidden" value={confinedSpace} options={Options}
+                            onchange={handleConfinedSpaceChange}>
+                        </lightning-combobox>
+                        <div style="display: flex;" class="slds-m-vertical_x-small">
+                            <p>Details and any additional safety information </p>
+                            <p class="required">*</p>
+                        </div>
+                        <lightning-input variant="label-hidden" value={additionalSafetyInfo}
+                            onchange={handleAdditionalSafetyInfoChange}>
+                        </lightning-input>
+                    </div>
+                </lightning-card>
+            </template>
+            <!-- Add more steps as needed -->
+            <!-- Next and Previous buttons -->
+        </lightning-record-edit-form>
+        <lightning-card>
+            <template if:true={isEnablePrev}>
+                <lightning-button label="Previous" variant="brand" onclick={handlePrevious}></lightning-button>
+            </template>&nbsp;&nbsp;&nbsp;
+            <template if:true={isEnableNext}>
+                <lightning-button label="Next" onclick={handleNext} variant="brand"></lightning-button>
+            </template>&nbsp;&nbsp;&nbsp;
+        </lightning-card>
+    </lightning-card>
+</template>

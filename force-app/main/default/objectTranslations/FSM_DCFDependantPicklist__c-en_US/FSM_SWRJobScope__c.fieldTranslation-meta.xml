@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SWR Job Scope --></label>
+    <name>FSM_SWRJobScope__c</name>
+    <picklistValues>
+        <masterLabel>0 to 1.5m</masterLabel>
+        <translation><!-- 0 to 1.5m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0 to 2m</masterLabel>
+        <translation><!-- 0 to 2m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0 to 3m</masterLabel>
+        <translation><!-- 0 to 3m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0-20m</masterLabel>
+        <translation><!-- 0-20m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 to 2m</masterLabel>
+        <translation><!-- 1 to 2m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1-1.45m^2</masterLabel>
+        <translation><!-- 1-1.45m^2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>100-200m</masterLabel>
+        <translation><!-- 100-200m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2-10m^2</masterLabel>
+        <translation><!-- 2-10m^2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20-50m</masterLabel>
+        <translation><!-- 20-50m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200-500m</masterLabel>
+        <translation><!-- 200-500m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50-100m</masterLabel>
+        <translation><!-- 50-100m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt; 3m</masterLabel>
+        <translation><!-- &lt; 3m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt; 500m</masterLabel>
+        <translation><!-- &lt; 500m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;= 1m^2</masterLabel>
+        <translation><!-- &lt;= 1m^2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;= 2m^2</masterLabel>
+        <translation><!-- &lt;= 2m^2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;= 4000 Gallons</masterLabel>
+        <translation><!-- &lt;= 4000 Gallons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;= 675mm^2</masterLabel>
+        <translation><!-- &lt;= 675mm^2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;= 750mm Deep</masterLabel>
+        <translation><!-- &lt;= 750mm Deep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt; 4000 Gallons</masterLabel>
+        <translation><!-- &gt; 4000 Gallons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt; 5m</masterLabel>
+        <translation><!-- &gt; 5m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt; 675mm^2</masterLabel>
+        <translation><!-- &gt; 675mm^2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt; 6m</masterLabel>
+        <translation><!-- &gt; 6m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt; 750mm Deep</masterLabel>
+        <translation><!-- &gt; 750mm Deep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;1.5 to 3m</masterLabel>
+        <translation><!-- &gt;1.5 to 3m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;10m^2</masterLabel>
+        <translation><!-- &gt;10m^2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;2 to 3m</masterLabel>
+        <translation><!-- &gt;2 to 3m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;2m</masterLabel>
+        <translation><!-- &gt;2m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;3 to 5m</masterLabel>
+        <translation><!-- &gt;3 to 5m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;3 to 6m</masterLabel>
+        <translation><!-- &gt;3 to 6m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_PermissionToDig__c</fullName>
+    <description>SFS-3010</description>
+    <label>Permission to dig?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer does not wish to sign</fullName>
+                <default>false</default>
+                <label>Customer does not wish to sign</label>
+            </value>
+            <value>
+                <fullName>Customer not available to sign</fullName>
+                <default>false</default>
+                <label>Customer not available to sign</label>
+            </value>
+            <value>
+                <fullName>Form left with customer</fullName>
+                <default>false</default>
+                <label>Form left with customer</label>
+            </value>
+            <value>
+                <fullName>Yes - customer signed</fullName>
+                <default>false</default>
+                <label>Yes - customer signed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

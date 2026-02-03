@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ManholeDuringVisitWeDid__c</fullName>
+    <description>created as part of SFS-5347</description>
+    <label>During the visit we</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Made the area safe; cones and barriers may be visible around the affected area</fullName>
+                <default>false</default>
+                <label>Made the area safe; cones and barriers may be visible around the affected area</label>
+            </value>
+            <value>
+                <fullName>Found no problem with the manhole</fullName>
+                <default>false</default>
+                <label>Found no problem with the manhole</label>
+            </value>
+            <value>
+                <fullName>Completed a survey to identify if further work is required</fullName>
+                <default>false</default>
+                <label>Completed a survey to identify if further work is required</label>
+            </value>
+            <value>
+                <fullName>Were unable to gain access to carry out the inspection, please call 0333 996 9800 to arrange a visit to re-attend</fullName>
+                <default>false</default>
+                <label>Were unable to gain access to carry out the inspection, please call 0333 996 9800 to arrange a visit to re-attend</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

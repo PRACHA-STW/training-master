@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VMT1</fullName>
+    <columns>Name</columns>
+    <columns>FSM_EmployeeNumber__c</columns>
+    <columns>FSL__GanttLabel__c</columns>
+    <columns>IsActive</columns>
+    <columns>FSM_WorkCentreExternalId__c</columns>
+    <columns>FSM_BaseLocation__c</columns>
+    <columns>FSM_CustomerAppointmentCapacity__c</columns>
+    <columns>FSM_CustomerAppointmentDurationCapacity__c</columns>
+    <columns>FSM_TravelRestriction__c</columns>
+    <columns>LastModifiedBy</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_BusinessUnit__c</field>
+        <operation>equals</operation>
+        <value>Metering</value>
+    </filters>
+    <filters>
+        <field>FSM_WorkCentreExternalId__c</field>
+        <operation>equals</operation>
+        <value>6000M03</value>
+    </filters>
+    <filters>
+        <field>IsActive</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>VMT - Capacity</label>
+    <sharedTo>
+        <group>FSM_Metering</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AddForContractorServiceResource</fullName>
+    <active>false</active>
+    <description>Description SFS-3038</description>
+    <errorConditionFormula>AND( NOT(ISNEW()),ServiceResource.FSM_Contractor__c  = False,  NOT(ISPICKVAL(ServiceResource.ResourceType, &apos;C&apos;)),($Permission.FSM_ModifyContractorSkills ),OR(
+        EffectiveStartDate &lt;&gt; PRIORVALUE(EffectiveStartDate),
+        EffectiveEndDate &lt;&gt; PRIORVALUE(EffectiveEndDate),
+        SkillLevel &lt;&gt; PRIORVALUE(SkillLevel) 
+))</errorConditionFormula>
+    <errorMessage>You are not allowed to assign or update the skill for an internal resource</errorMessage>
+</ValidationRule>

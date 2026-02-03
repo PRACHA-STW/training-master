@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current Traffic Mgmt. Type --></label>
+    <name>FSM_CurrentTrafficMgmtType__c</name>
+    <picklistValues>
+        <masterLabel>Contra-flow</masterLabel>
+        <translation><!-- Contra-flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO NOT USE (multi-way signals)</masterLabel>
+        <translation><!-- DO NOT USE (multi-way signals) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lane closure</masterLabel>
+        <translation><!-- Lane closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No carriageway incursion</masterLabel>
+        <translation><!-- No carriageway incursion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road closure</masterLabel>
+        <translation><!-- Road closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Some carriageway incursion</masterLabel>
+        <translation><!-- Some carriageway incursion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary Obstruction 15 minute delay</masterLabel>
+        <translation><!-- Temporary Obstruction 15 minute delay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (convoy working)</masterLabel>
+        <translation><!-- Traffic control (convoy working) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (five-way signals)</masterLabel>
+        <translation><!-- Traffic control (five-way signals) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (four-way signals)</masterLabel>
+        <translation><!-- Traffic control (four-way signals) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (give and take)</masterLabel>
+        <translation><!-- Traffic control (give and take) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (priority working)</masterLabel>
+        <translation><!-- Traffic control (priority working) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (stop/go boards)</masterLabel>
+        <translation><!-- Traffic control (stop/go boards) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (three-way signals)</masterLabel>
+        <translation><!-- Traffic control (three-way signals) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic control (two-way signals)</masterLabel>
+        <translation><!-- Traffic control (two-way signals) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

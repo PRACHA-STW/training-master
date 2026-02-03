@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What Activity Type are you carrying out? --></label>
+    <name>FSM_What_Activity_Type_are_you_carry_out__c</name>
+    <picklistValues>
+        <masterLabel>Capital</masterLabel>
+        <translation><!-- Capital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspector</masterLabel>
+        <translation><!-- Inspector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R&amp;M</masterLabel>
+        <translation><!-- R&amp;M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstatement</masterLabel>
+        <translation><!-- Reinstatement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

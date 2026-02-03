@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>FSM_FormType__c</columns>
+    <columns>FSM_WorkOrder__c</columns>
+    <columns>FSM_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>FSM_ServiceResource__c</columns>
+    <columns>FSM_NoOfEformsOfSameType__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSM_FormType__c</field>
+        <operation>equals</operation>
+        <value>Infra Follow On Work Request</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>4/23/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>contains</operation>
+        <value>Ashley Bradley</value>
+    </filters>
+    <label>All</label>
+</ListView>

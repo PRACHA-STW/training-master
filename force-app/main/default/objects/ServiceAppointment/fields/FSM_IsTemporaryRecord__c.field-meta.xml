@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_IsTemporaryRecord__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFI-1783, Background field, this records are created for appointment booking slots, and will de deleted automatically</description>
+    <label>Is Temporary Record?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

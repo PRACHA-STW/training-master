@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Update Customer On Job Complete --></label>
+    <name>FSM_UpdateCustomerOnComplete__c</name>
+    <picklistValues>
+        <masterLabel>Called customer &amp; updated</masterLabel>
+        <translation><!-- Called customer &amp; updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emailed calling card</masterLabel>
+        <translation><!-- Emailed calling card --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Left calling card</masterLabel>
+        <translation><!-- Left calling card --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No contact details provided</masterLabel>
+        <translation><!-- No contact details provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No interaction, due to incorrect contact details</masterLabel>
+        <translation><!-- No interaction, due to incorrect contact details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spoke to customer onsite</masterLabel>
+        <translation><!-- Spoke to customer onsite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Text customer with update</masterLabel>
+        <translation><!-- Text customer with update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VYN video used to update customer (If selected tab opens to insert link)</masterLabel>
+        <translation><!-- VYN video used to update customer (If selected tab opens to insert link) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voicemail left for customer</masterLabel>
+        <translation><!-- Voicemail left for customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

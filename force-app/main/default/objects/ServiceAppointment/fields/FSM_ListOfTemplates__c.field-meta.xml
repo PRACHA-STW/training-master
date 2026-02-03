@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_ListOfTemplates__c</fullName>
+    <label>Email Template</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Private Sewer Blockages</fullName>
+                <default>false</default>
+                <label>Private Sewer Blockages</label>
+            </value>
+            <value>
+                <fullName>Leak on Private Supply Pipe</fullName>
+                <default>false</default>
+                <label>Leak on Private Supply Pipe</label>
+            </value>
+            <value>
+                <fullName>BOPPs 3rd Party</fullName>
+                <default>false</default>
+                <label>BOPPs 3rd Party</label>
+            </value>
+            <value>
+                <fullName>Emergency Land Entry Notice</fullName>
+                <default>false</default>
+                <label>Emergency Land Entry Notice</label>
+            </value>
+            <value>
+                <fullName>7 Day Land Entry Notice</fullName>
+                <default>false</default>
+                <label>7 Day Land Entry Notice</label>
+            </value>
+            <value>
+                <fullName>Gas Leak Detection</fullName>
+                <default>false</default>
+                <label>Gas Leak Detection</label>
+            </value>
+            <value>
+                <fullName>Aquapea</fullName>
+                <default>false</default>
+                <label>Aquapea</label>
+            </value>
+            <value>
+                <fullName>Permission to Dig (Welsh version)</fullName>
+                <default>false</default>
+                <label>Permission to Dig (Welsh version)</label>
+            </value>
+            <value>
+                <fullName>HD - Leak on Private Supply Pipe (Welsh version)</fullName>
+                <default>false</default>
+                <label>HD - Leak on Private Supply Pipe (Welsh version)</label>
+            </value>
+            <value>
+                <fullName>HD - Leak on Private Supply Pipe (English version)</fullName>
+                <default>false</default>
+                <label>HD - Leak on Private Supply Pipe (English version)</label>
+            </value>
+            <value>
+                <fullName>HD - 7 Day Land Entry Notice</fullName>
+                <default>false</default>
+                <label>HD - 7 Day Land Entry Notice</label>
+            </value>
+            <value>
+                <fullName>HD - Emergency Notice Land Entry Notice</fullName>
+                <default>false</default>
+                <label>HD - Emergency Notice Land Entry Notice</label>
+            </value>
+            <value>
+                <fullName>HD - BOPPs 3rd Party</fullName>
+                <default>false</default>
+                <label>HD - BOPPs 3rd Party</label>
+            </value>
+            <value>
+                <fullName>All works complete</fullName>
+                <default>false</default>
+                <label>All works complete</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Further investigation - I need to reattend to continue my investigations</fullName>
+                <default>false</default>
+                <label>Further investigation - I need to reattend to continue my investigations</label>
+            </value>
+            <value>
+                <fullName>Non STW issue</fullName>
+                <default>false</default>
+                <label>Non STW issue</label>
+            </value>
+            <value>
+                <fullName>Private leak investigation – Further CI work required</fullName>
+                <default>false</default>
+                <label>Private leak investigation – Further CI work required</label>
+            </value>
+            <value>
+                <fullName>Private leak investigation – Further R&amp;M work required</fullName>
+                <default>false</default>
+                <label>Private leak investigation – Further R&amp;M work required</label>
+            </value>
+            <value>
+                <fullName>Private pressure - diagnosed, no further work</fullName>
+                <default>false</default>
+                <label>Private pressure - diagnosed, no further work</label>
+            </value>
+            <value>
+                <fullName>Private pressure investigation – further R&amp;M work required</fullName>
+                <default>false</default>
+                <label>Private pressure investigation – further R&amp;M work required</label>
+            </value>
+            <value>
+                <fullName>I have taken samples to test, it will take 10 working days for the results, and we will contact you when we have them</fullName>
+                <default>false</default>
+                <label>I have taken samples to test, it will take 10 working days for the results, and we will contact you when we have them</label>
+            </value>
+            <value>
+                <fullName>Further investigation – Someone from my team needs to reattend for further investigation</fullName>
+                <default>false</default>
+                <label>Further investigation – Someone from my team needs to reattend for further investigation</label>
+            </value>
+            <value>
+                <fullName>Further work R&amp;M - I have arranged for a team to reattend and complete more work</fullName>
+                <default>false</default>
+                <label>Further work R&amp;M - I have arranged for a team to reattend and complete more work</label>
+            </value>
+            <value>
+                <fullName>Waste issue</fullName>
+                <default>false</default>
+                <label>Waste issue</label>
+            </value>
+            <value>
+                <fullName>We have completed and reinstated one excavation, but will need to come back out and dig again to complete our investigations</fullName>
+                <default>false</default>
+                <label>We have completed and reinstated one excavation, but will need to come back out and dig again to complete our investigations</label>
+            </value>
+            <value>
+                <fullName>Our work is not finished, we have carried out some investigation to find out what we need to do next.</fullName>
+                <default>false</default>
+                <label>Our work is not finished, we have carried out some investigation to find out what we need to do next.</label>
+            </value>
+            <value>
+                <fullName>We have completed the work – No clean up</fullName>
+                <default>false</default>
+                <label>We have completed the work – No clean up</label>
+            </value>
+            <value>
+                <fullName>We have completed the work – someone will be back out to do further investigation, Clean Up has been requested</fullName>
+                <default>false</default>
+                <label>We have completed the work – someone will be back out to do further investigation, Clean Up has been requested</label>
+            </value>
+            <value>
+                <fullName>We have completed the work – someone will be back out to do further investigation</fullName>
+                <default>false</default>
+                <label>We have completed the work – someone will be back out to do further investigation</label>
+            </value>
+            <value>
+                <fullName>Our work is not finished, another dig team will be along to continue the work</fullName>
+                <default>false</default>
+                <label>Our work is not finished, another dig team will be along to continue the work</label>
+            </value>
+            <value>
+                <fullName>East</fullName>
+                <default>false</default>
+                <label>East</label>
+            </value>
+            <value>
+                <fullName>Job Feedback</fullName>
+                <default>false</default>
+                <label>Job Feedback</label>
+            </value>
+            <value>
+                <fullName>Leaflet Only</fullName>
+                <default>false</default>
+                <label>Leaflet Only</label>
+            </value>
+            <value>
+                <fullName>Manhole</fullName>
+                <default>false</default>
+                <label>Manhole</label>
+            </value>
+            <value>
+                <fullName>Meter Exchange</fullName>
+                <default>false</default>
+                <label>Meter Exchange</label>
+            </value>
+            <value>
+                <fullName>Meter Maintenance</fullName>
+                <default>false</default>
+                <label>Meter Maintenance</label>
+            </value>
+            <value>
+                <fullName>Net Tech</fullName>
+                <default>false</default>
+                <label>Net Tech</label>
+            </value>
+            <value>
+                <fullName>Permission to Dig</fullName>
+                <default>false</default>
+                <label>Permission to Dig</label>
+            </value>
+            <value>
+                <fullName>Private_Sewer_Blockages</fullName>
+                <default>false</default>
+                <label>Private_Sewer_Blockages</label>
+            </value>
+            <value>
+                <fullName>Private leak – diagnosed, no further work</fullName>
+                <default>false</default>
+                <label>Private leak – diagnosed, no further work</label>
+            </value>
+            <value>
+                <fullName>Waste</fullName>
+                <default>false</default>
+                <label>Waste</label>
+            </value>
+            <value>
+                <fullName>West</fullName>
+                <default>false</default>
+                <label>West</label>
+            </value>
+            <value>
+                <fullName>We have completed the work – Clean Up has been requested</fullName>
+                <default>false</default>
+                <label>We have completed the work – Clean Up has been requested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

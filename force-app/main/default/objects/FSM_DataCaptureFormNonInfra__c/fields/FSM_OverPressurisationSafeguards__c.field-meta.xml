@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_OverPressurisationSafeguards__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Ensure driver and operator are aware of any safeguards detailed in the LOP for Acceptance and Delivery for the relevant chemical to prevent over pressurisation during discharge. Common control are proving functionality of vents, overflows and ensuring maximum delivery pressures are known and not exceeded.</description>
+    <label>Over Pressurisation Safeguards</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

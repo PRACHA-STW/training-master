@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Short Text for Code --></label>
+    <name>FSM_ShortTextCode__c</name>
+    <picklistValues>
+        <masterLabel>Assist Contractor WP Operations</masterLabel>
+        <translation><!-- Assist Contractor WP Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Reported Works Problem</masterLabel>
+        <translation><!-- Customer Reported Works Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deliver Chemicals to site</masterLabel>
+        <translation><!-- Deliver Chemicals to site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Failed Electrical</masterLabel>
+        <translation><!-- Equipment Failed Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Failed Instrument</masterLabel>
+        <translation><!-- Equipment Failed Instrument --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Failed MS Electrical</masterLabel>
+        <translation><!-- Equipment Failed MS Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Failed MS Instrument</masterLabel>
+        <translation><!-- Equipment Failed MS Instrument --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Failed MS Mechanical</masterLabel>
+        <translation><!-- Equipment Failed MS Mechanical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Failed Mechanical</masterLabel>
+        <translation><!-- Equipment Failed Mechanical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Failed Operator</masterLabel>
+        <translation><!-- Equipment Failed Operator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Req Attention Electrical</masterLabel>
+        <translation><!-- Equipment Req Attention Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Req Attention Instrument</masterLabel>
+        <translation><!-- Equipment Req Attention Instrument --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Req Attention MS Electrical</masterLabel>
+        <translation><!-- Equipment Req Attention MS Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Req Attention MS Instrument</masterLabel>
+        <translation><!-- Equipment Req Attention MS Instrument --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Req Attention MS Mechanical</masterLabel>
+        <translation><!-- Equipment Req Attention MS Mechanical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Req Attention Mechanical</masterLabel>
+        <translation><!-- Equipment Req Attention Mechanical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Req Attention Operator</masterLabel>
+        <translation><!-- Equipment Req Attention Operator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receive Chemical Delivery</masterLabel>
+        <translation><!-- Receive Chemical Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety Related WP Maintenance</masterLabel>
+        <translation><!-- Safety Related WP Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety Related WP Operations</masterLabel>
+        <translation><!-- Safety Related WP Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security WP Operations</masterLabel>
+        <translation><!-- Security WP Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sludge req attention Maintainer</masterLabel>
+        <translation><!-- Sludge req attention Maintainer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urgent task - assign to self</masterLabel>
+        <translation><!-- Urgent task - assign to self --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Quality Issues</masterLabel>
+        <translation><!-- Water Quality Issues --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

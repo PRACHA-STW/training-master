@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Location_sharing_BAGroup</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFL-1090# This Sharing rule is for BA who can access location record.</description>
+        <label>Location_sharing_BAGroup</label>
+        <sharedTo>
+            <group>FSM_BusinessAdminGroup</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Location_sharing_CSROGroup</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SFL-1090# This Sharing rule is for Contractor Schedular who can access location record.</description>
+        <label>Location_sharing_CSROGroup</label>
+        <sharedTo>
+            <group>FSM_ContractorScheduler</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Location_sharing_SROGroup</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Location_sharing_SROGroup</label>
+        <sharedTo>
+            <group>FIELD_SERVICE_Default</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

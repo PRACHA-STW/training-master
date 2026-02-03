@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Coordinator - Contact Number --></label>
+    <name>FSM_CustCoordinatorNumber__c</name>
+    <picklistValues>
+        <masterLabel>Central - 07890948948</masterLabel>
+        <translation><!-- Central - 07890948948 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Leak Support – 03452 660036</masterLabel>
+        <translation><!-- Customer Leak Support – 03452 660036 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Derby  - 07890948949</masterLabel>
+        <translation><!-- Derby  - 07890948949 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leicester - 07890950118</masterLabel>
+        <translation><!-- Leicester - 07890950118 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nottingham – 07890948951</masterLabel>
+        <translation><!-- Nottingham – 07890948951 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shropshire – 07890948953</masterLabel>
+        <translation><!-- Shropshire – 07890948953 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staffordshire - 07583100439</masterLabel>
+        <translation><!-- Staffordshire - 07583100439 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warwickshire - 07890948950</masterLabel>
+        <translation><!-- Warwickshire - 07890948950 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worcester &amp; Gloucester - 07890950121</masterLabel>
+        <translation><!-- Worcester &amp; Gloucester - 07890950121 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+.dummyClass{color:black;}
+.row {
+    border-bottom:1px solid black; 
+}
+.row2 {
+  vertical-align: top;
+}
+.title-container {
+    display: flex;
+    justify-content: center; 
+		/* Align buttons horizontally at the center */
+	  
+}
+.right_arrow{
+		width:97%;
+}

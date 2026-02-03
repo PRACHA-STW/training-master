@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MET_MT_Completed_Jobs</fullName>
+    <columns>ActualEndTime</columns>
+    <columns>FSM_IconForMetering__c</columns>
+    <columns>Status</columns>
+    <columns>Name</columns>
+    <columns>FSM_SAPOrderOperationNumber__c</columns>
+    <columns>FSM_WorkTypeCode__c</columns>
+    <columns>FSSK__FSK_Assigned_Service_Resource__c</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>ArrivalWindowStartTime</columns>
+    <columns>ArrivalWindowEndTime</columns>
+    <columns>FSM_ConstraintStart__c</columns>
+    <columns>STREET</columns>
+    <columns>ZIP</columns>
+    <columns>FSM_AttendedJobWithinAptWindow__c</columns>
+    <columns>FSM_CaseManagingRequired__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Cannot Complete,Completed</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>notContain</operation>
+        <value>M01</value>
+    </filters>
+    <filters>
+        <field>ActualEndTime</field>
+        <operation>greaterOrEqual</operation>
+        <value>3/17/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>ServiceTerritory</field>
+        <operation>notContain</operation>
+        <value>6000M03</value>
+    </filters>
+    <label>MET - MT Completed Jobs</label>
+    <sharedTo>
+        <group>FSM_Metering</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_DoNotEditAddressFieldsForTechnician</fullName>
+    <active>true</active>
+    <description>This validation rule will not allow users to edit address fields for Techinician resource type</description>
+    <errorConditionFormula>AND(!ISPICKVAL(ResourceType, &apos;C&apos;),
+OR(ISCHANGED(FSM_Street__c),
+   ISCHANGED(FSM_City__c),
+   ISCHANGED(FSM_County__c),
+   ISCHANGED(FSM_Country__c),
+   ISCHANGED(FSM_PostCode__c)
+  ),
+!OR( $Permission.FSM_Integration, $Permission.FSM_Data_Migration_Admin)
+)</errorConditionFormula>
+    <errorMessage>You can’t update the address of a Service Resource</errorMessage>
+</ValidationRule>

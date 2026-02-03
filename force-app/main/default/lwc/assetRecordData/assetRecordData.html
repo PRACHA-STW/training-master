@@ -1,0 +1,88 @@
+<template>
+ <template if:false={closeAction}>
+	   <template if:false={spining}>
+		    	<template if:false={Screen4}>
+					  	<template if:false={flocScreen}>
+									<lightning-card >
+																	<lightning-card title="List of level 4 FLOC(s)" class="title-container" >
+																	</lightning-card>
+																						 If the FLOC you are searching for is not displayed, please try alternative search criteria (NB max 50 returns).
+																	<!--RECORD LIST VIEW -->
+																	<table>
+																				<tr style="background-color:LightGray">
+																						<th>Floc</th>
+																						<th>Floc Description</th>
+																						<th>Action</th>
+																				</tr>
+																			 	<template for:each={visibleRecords} for:item="item">
+																								<tr key={item.streamId} class="row">
+																																<td>{item.streamId}</td>
+																																<td>{item.flocDesp}</td>
+																																<td> <lightning-button-icon icon-name="utility:right" variant="brand"  alternative-text="Settings" title="Settings"  data-value = {item.streamId}  onclick={handleClick}></lightning-button-icon></td>
+																						  	</tr>
+																			 </template>
+																	</table>
+										 <lightning-card>
+									 		<lightning-modal-footer>
+																
+															<!--FOOTER PAGINATION START:-->
+																<lightning-layout>
+																		<lightning-layout-item>
+																					<a  icon-name="utility:jump_to_left" onclick={handlePagiLeft} 	class="slds-float_left" size="medium">{leftarrow}</a>
+																		</lightning-layout-item>
+
+
+																		<lightning-layout-item class="right_arrow">
+																    			{currenPage}/{totalpage}
+																					<a icon-name="utility:jump_to_right" onclick={handlePagiRight}  	class="slds-text-align_right" size="medium">{rightarrow}</a>
+																		</lightning-layout-item>
+																</lightning-layout>
+															<!-- FOOTER PAGINATION END -->
+
+																	<!--BUTTON ON FOOTER SECTION-->
+																<lightning-button style="margin-top:30px"
+																									class="slds-float_left"
+																									icon-name="utility:back"  
+																									variant="brand"
+																									label="BACK"
+																									onclick={handleBack}>
+																</lightning-button>
+
+
+
+																<lightning-button  
+																									class="slds-float_right" style="margin-top:30px"
+																									variant="neutral"
+																									icon-name="utility:close"
+																									label="FINISH"
+																									onclick={handleFinish}>
+																</lightning-button>
+
+											</lightning-modal-footer>
+									</lightning-card>
+										 	
+						</lightning-card>
+										
+					</template>
+					         	<!--BACK TO SCREEN 2 -->
+										<template if:true={flocScreen}>
+												<c-floc-search-comp ></c-floc-search-comp>
+
+										</template>
+			</template>
+			 	<!--	// MOVE TO SCREEN 4 -->
+				<template if:true={Screen4}>
+						<c-asset-record-display  current-record-name={clickedRowFloc} current-record-description={clickedRowDesp}></c-asset-record-display>
+				</template>
+
+ 	<!--SPINING-->
+  </template>
+	 		<template if:true={spining}>
+				 			<lightning-spinner alternative-text="Loading" variant="brand" size="medium"></lightning-spinner>
+	 		</template>
+  </template>
+		<template if:true={closeAction}>
+				 			<p class="title-container"> Please click on the top left/right close icon to close this action
+							</p>
+	 	</template>
+</template>

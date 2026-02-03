@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for visit --></label>
+    <name>FSM_ReasonForVisit__c</name>
+    <picklistValues>
+        <masterLabel>High Consumption</masterLabel>
+        <translation><!-- High Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>How Supplied</masterLabel>
+        <translation><!-- How Supplied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Consumption</masterLabel>
+        <translation><!-- Low Consumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Reading</masterLabel>
+        <translation><!-- Meter Reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missed Appointment</masterLabel>
+        <translation><!-- Missed Appointment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

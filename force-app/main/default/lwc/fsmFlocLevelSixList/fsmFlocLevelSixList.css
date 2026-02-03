@@ -1,0 +1,19 @@
+.dummyClass{color:black;}
+/* Align buttons horizontally at the center */
+.title-container {
+    display: flex;
+    justify-content: center; 
+		
+	  
+}
+.row {
+    border-bottom:1px solid black; 
+}
+ /* Only right padding*/
+.padding-table-columns td
+{
+    padding:0 75px 0 0;
+}
+.right_arrow{
+		width:97%;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- During the visit we --></label>
+    <name>FSM_NetTechDuringVisitWeDid__c</name>
+    <picklistValues>
+        <masterLabel>Carried out a camera survey of the drain</masterLabel>
+        <translation><!-- Carried out a camera survey of the drain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Checked the Non Return Valve (NRV)</masterLabel>
+        <translation><!-- Checked the Non Return Valve (NRV) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Checked the drains and found there are no problems with them</masterLabel>
+        <translation><!-- Checked the drains and found there are no problems with them --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flushed through the pipes</masterLabel>
+        <translation><!-- Flushed through the pipes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

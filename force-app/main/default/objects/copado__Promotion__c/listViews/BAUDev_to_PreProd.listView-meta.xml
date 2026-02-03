@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BAUDev_to_PreProd</fullName>
+    <columns>NAME</columns>
+    <columns>copado__Source_Environment__c</columns>
+    <columns>copado__Destination_Environment__c</columns>
+    <columns>copado__Project__c</columns>
+    <columns>copado__Release__c</columns>
+    <columns>copado__Back_Promotion__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>copado__Source_Environment__c</field>
+        <operation>contains</operation>
+        <value>Baudev</value>
+    </filters>
+    <filters>
+        <field>copado__Destination_Environment__c</field>
+        <operation>contains</operation>
+        <value>preprod</value>
+    </filters>
+    <filters>
+        <field>copado__Status__c</field>
+        <operation>equals</operation>
+        <value>Completed</value>
+    </filters>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>greaterThan</operation>
+        <value>3/4/2025 12:00 AM</value>
+    </filters>
+    <label>BAUDev to PreProd</label>
+</ListView>

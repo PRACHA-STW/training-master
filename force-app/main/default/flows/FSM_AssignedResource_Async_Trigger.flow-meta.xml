@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Create as part of SFS-8581
+Updated as part of SFL-434
+Updated as part of SFL-1067</description>
+    <environments>Default</environments>
+    <interviewLabel>FSM AssignedResource Async Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSM AssignedResource Async Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ServiceResourceId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>AssignedResource</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>FSM_Populate_Custom_Assigned_Service_Resource_Lookup</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Updated as Part of SFL-1067</description>
+        <name>FSM_Populate_Custom_Assigned_Service_Resource_Lookup</name>
+        <label>FSM Populate Custom Assigned Service Resource Lookup</label>
+        <locationX>308</locationX>
+        <locationY>276</locationY>
+        <flowName>FSM_PopulateCustomAssignedServiceResourceLookup</flowName>
+        <inputAssignments>
+            <name>ServiceAppointmentId</name>
+            <value>
+                <elementReference>$Record.ServiceAppointment.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

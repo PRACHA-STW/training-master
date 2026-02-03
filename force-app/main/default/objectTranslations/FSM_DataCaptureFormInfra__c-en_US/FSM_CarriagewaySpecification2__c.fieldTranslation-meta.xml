@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carriageway Specification 2 --></label>
+    <name>FSM_CarriagewaySpecification2__c</name>
+    <picklistValues>
+        <masterLabel>Speed over 40mph</masterLabel>
+        <translation><!-- Speed over 40mph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speed upto 40 mph</masterLabel>
+        <translation><!-- Speed upto 40 mph --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

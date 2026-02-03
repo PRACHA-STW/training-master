@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Details</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>FSM_FormName__c</columns>
+    <columns>FSM_ObjectAPIName__c</columns>
+    <columns>FSM_FieldAPIName__c</columns>
+    <columns>FSM_DataType__c</columns>
+    <columns>FSM_Node__c</columns>
+    <columns>FSM_JSONLabel__c</columns>
+    <columns>FSM_PlatformEventField__c</columns>
+    <columns>FSM_IsFormulaField__c</columns>
+    <columns>FSM_IsDCFLineItemField__c</columns>
+    <columns>FSM_Formula__c</columns>
+    <columns>Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Details</label>
+</ListView>

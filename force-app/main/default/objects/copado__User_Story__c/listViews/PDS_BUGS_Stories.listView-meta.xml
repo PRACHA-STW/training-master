@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PDS_BUGS_Stories</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9</booleanFilter>
+    <columns>NAME</columns>
+    <columns>copado__Promote_Change__c</columns>
+    <columns>Jira_Key__c</columns>
+    <columns>Stories_deployed_along_with__c</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <columns>For_PROD__c</columns>
+    <columns>copado__Sprint__c</columns>
+    <columns>copado__Environment__c</columns>
+    <columns>copado__Developer__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Deployed_To__c</columns>
+    <columns>copado__Org_Credential__c</columns>
+    <columns>PDS_Destructive__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>copado__Latest_Commit_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>For_Environment__c</field>
+        <operation>notEqual</operation>
+        <value>UAT_1_240724,UAT_2_1208,UAT_4_0509,UAT_5_1309,UAT_6_2709,UAT_7_0710,UAT_8_1510,UAT_9_1810,UAT_10_2210,UAT_11_2410</value>
+    </filters>
+    <filters>
+        <field>copado__Environment__c</field>
+        <operation>notEqual</operation>
+        <value>QA,Dev,SIT,PROD,Hotfix,NotInUse_Trial</value>
+    </filters>
+    <filters>
+        <field>PDS_Destructive__c</field>
+        <operation>notEqual</operation>
+        <value>,NO</value>
+    </filters>
+    <filters>
+        <field>copado__Org_Credential__c</field>
+        <operation>notContain</operation>
+        <value>Not</value>
+    </filters>
+    <filters>
+        <field>Deployed_To__c</field>
+        <operation>excludes</operation>
+        <value>PROD,QA</value>
+    </filters>
+    <filters>
+        <field>Jira_Key__c</field>
+        <operation>notContain</operation>
+        <value>,test,clone</value>
+    </filters>
+    <filters>
+        <field>For_PROD__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>copado__Latest_Commit_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>12/18/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>copado__Release__c</field>
+        <operation>notContain</operation>
+        <value>Test</value>
+    </filters>
+    <label>PDS BUGS/Stories</label>
+</ListView>
