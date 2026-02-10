@@ -37,10 +37,6 @@
                 <behavior>Edit</behavior>
                 <field>Copado_Data_Setup__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Copado_Session_1__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
