@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enables the user to create and access Code Builder environments.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Code Builder User_Clone</label>
+    <license>CodeBuilderUserPsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CodeBuilderUser</name>
+    </userPermissions>
+</PermissionSet>
