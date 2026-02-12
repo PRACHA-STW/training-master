@@ -41,11 +41,7 @@
                 <behavior>Edit</behavior>
                 <field>Copado_Session_4__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Copado_Session_4_1__c</field>
-            </layoutItems>
-        </layoutColumns>
+            </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
